@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ხელნაწერები — სიტყუა ართრონთათვს</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'parchment': '#faf8f5',
+                        'ink': '#1a1a1a',
+                        'manuscript': '#f5f2ed',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600&family=Noto+Serif+Georgian:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans Georgian', sans-serif; }
+        .font-serif-geo { font-family: 'Noto Serif Georgian', Georgia, serif; }
+        .greek { font-family: 'Times New Roman', serif; font-style: italic; }
+    </style>
+</head>
+<body class="bg-parchment text-ink antialiased">
+    
+    <!-- Navigation -->
+    <nav class="border-b border-gray-200 sticky top-0 bg-parchment/95 backdrop-blur-sm z-10">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-14">
+                <a href="../index.html" class="text-lg font-medium text-gray-800">
+                    სიტყუა ართრონთათჳს
+                </a>
+                <div class="flex items-center gap-6">
+                    <a href="../text/index.html" class="text-sm text-gray-600 hover:text-ink">ტექსტი</a>
+                    <a href="../lexicon/index.html" class="text-sm text-gray-600 hover:text-ink">ლექსიკონი</a>
+                    <a href="../sadziebeli.html" class="text-sm text-gray-600 hover:text-ink">საძიებელი</a>
+                    <a href="../about.html" class="text-sm text-gray-600 hover:text-ink">შესახებ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    
+    <!-- Header -->
+    <div class="mb-8">
+        <h1 class="text-2xl font-medium mb-2">ხელნაწერები</h1>
+        <p class="text-gray-500">ტრაქტატის ტექსტი დაცულია ორ ხელნაწერში</p>
+    </div>
+    
+    <!-- Witness Cards -->
+    <div class="space-y-6">
+        
+        <article class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+            <!-- Header -->
+            <div class="px-6 py-4 bg-gray-50 border-b border-gray-200 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <span class="inline-flex items-center justify-center w-8 h-8 rounded bg-gray-800 text-white text-sm font-medium">A</span>
+                    <div>
+                        <h2 class="font-medium">თბილისი</h2>
+                        <p class="text-sm text-gray-500">ხელნაწერთა ეროვნული ცენტრი</p>
+                    </div>
+                </div>
+                <a href="../text/index.html" class="text-xs text-gray-400 hover:text-gray-600">ტექსტის ნახვა →</a>
+            </div>
+            
+            <!-- Details -->
+            <div class="p-6">
+                <dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 text-sm">
+                    <div>
+                        <dt class="text-gray-400 text-xs uppercase tracking-wide mb-1">ადგილმდებარეობა</dt>
+                        <dd class="text-gray-700">თბილისი, ხელნაწერთა ეროვნული ცენტრი</dd>
+                    </div>
+                    <div>
+                        <dt class="text-gray-400 text-xs uppercase tracking-wide mb-1">ფოლიოები</dt>
+                        <dd class="text-gray-700">ff. 32r–36v</dd>
+                    </div>
+                    <div>
+                        <dt class="text-gray-400 text-xs uppercase tracking-wide mb-1">შიფრი</dt>
+                        <dd class="text-gray-500 italic"><!-- TODO: actual shelfmark -->მოსაძიებელია</dd>
+                    </div>
+                    <div>
+                        <dt class="text-gray-400 text-xs uppercase tracking-wide mb-1">თარიღი</dt>
+                        <dd class="text-gray-500 italic"><!-- TODO: dating -->მოსაძიებელია</dd>
+                    </div>
+                </dl>
+                
+                <!-- Expandable details (future) -->
+                <details class="mt-6 pt-4 border-t border-gray-100">
+                    <summary class="text-sm text-gray-500 cursor-pointer hover:text-gray-700">
+                        დამატებითი ინფორმაცია
+                    </summary>
+                    <div class="mt-4 text-sm text-gray-600 space-y-3">
+                        <p class="italic text-gray-400">კოდიკოლოგიური აღწერილობა მომზადდება კვლევის დასრულების შემდეგ.</p>
+                        
+                        <!-- Placeholder for future content -->
+                        <!--
+                        <div>
+                            <h4 class="font-medium text-gray-700 mb-1">მასალა</h4>
+                            <p>ეტრატი / ქაღალდი</p>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-700 mb-1">ზომები</h4>
+                            <p>... × ... მმ</p>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-700 mb-1">ნუსხა</h4>
+                            <p>ნუსხური / ასომთავრული</p>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-700 mb-1">მდგომარეობა</h4>
+                            <p>...</p>
+                        </div>
+                        -->
+                        
+                        <!-- Facsimile placeholder -->
+                        <!--
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <h4 class="font-medium text-gray-700 mb-2">ფაქსიმილე</h4>
+                            <div class="grid grid-cols-3 gap-2">
+                                <img src="..." alt="f. 32r" class="rounded border">
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                </details>
+            </div>
+        </article>
+        <article class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+            <!-- Header -->
+            <div class="px-6 py-4 bg-gray-50 border-b border-gray-200 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <span class="inline-flex items-center justify-center w-8 h-8 rounded bg-gray-800 text-white text-sm font-medium">S</span>
+                    <div>
+                        <h2 class="font-medium">სინა</h2>
+                        <p class="text-sm text-gray-500">წმ. ეკატერინეს მონასტერი</p>
+                    </div>
+                </div>
+                <a href="../text/index.html" class="text-xs text-gray-400 hover:text-gray-600">ტექსტის ნახვა →</a>
+            </div>
+            
+            <!-- Details -->
+            <div class="p-6">
+                <dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 text-sm">
+                    <div>
+                        <dt class="text-gray-400 text-xs uppercase tracking-wide mb-1">ადგილმდებარეობა</dt>
+                        <dd class="text-gray-700">სინა, წმ. ეკატერინეს მონასტერი</dd>
+                    </div>
+                    <div>
+                        <dt class="text-gray-400 text-xs uppercase tracking-wide mb-1">ფოლიოები</dt>
+                        <dd class="text-gray-700">ff. 106r–108v</dd>
+                    </div>
+                    <div>
+                        <dt class="text-gray-400 text-xs uppercase tracking-wide mb-1">შიფრი</dt>
+                        <dd class="text-gray-500 italic"><!-- TODO: actual shelfmark -->მოსაძიებელია</dd>
+                    </div>
+                    <div>
+                        <dt class="text-gray-400 text-xs uppercase tracking-wide mb-1">თარიღი</dt>
+                        <dd class="text-gray-500 italic"><!-- TODO: dating -->მოსაძიებელია</dd>
+                    </div>
+                </dl>
+                
+                <!-- Expandable details (future) -->
+                <details class="mt-6 pt-4 border-t border-gray-100">
+                    <summary class="text-sm text-gray-500 cursor-pointer hover:text-gray-700">
+                        დამატებითი ინფორმაცია
+                    </summary>
+                    <div class="mt-4 text-sm text-gray-600 space-y-3">
+                        <p class="italic text-gray-400">კოდიკოლოგიური აღწერილობა მომზადდება კვლევის დასრულების შემდეგ.</p>
+                        
+                        <!-- Placeholder for future content -->
+                        <!--
+                        <div>
+                            <h4 class="font-medium text-gray-700 mb-1">მასალა</h4>
+                            <p>ეტრატი / ქაღალდი</p>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-700 mb-1">ზომები</h4>
+                            <p>... × ... მმ</p>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-700 mb-1">ნუსხა</h4>
+                            <p>ნუსხური / ასომთავრული</p>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-700 mb-1">მდგომარეობა</h4>
+                            <p>...</p>
+                        </div>
+                        -->
+                        
+                        <!-- Facsimile placeholder -->
+                        <!--
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <h4 class="font-medium text-gray-700 mb-2">ფაქსიმილე</h4>
+                            <div class="grid grid-cols-3 gap-2">
+                                <img src="..." alt="f. 32r" class="rounded border">
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                </details>
+            </div>
+        </article>
+        
+    </div>
+    
+    <!-- Stemma placeholder -->
+    <div class="mt-12 p-8 bg-white rounded-lg border border-gray-200">
+        <h2 class="text-lg font-medium mb-4">სტემა</h2>
+        <p class="text-sm text-gray-500 italic mb-6">ხელნაწერთა ურთიერთმიმართება დადგინდება კვლევის შედეგად.</p>
+        
+        <!-- Future stemma diagram -->
+        <div class="flex justify-center py-8">
+            <div class="text-center text-gray-300">
+                <svg class="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/>
+                </svg>
+                <p class="text-sm">სტემატური დიაგრამა</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Link to research -->
+    <div class="mt-8 text-center">
+        <a href="../research/index.html" class="text-sm text-gray-500 hover:text-gray-700">
+            იხ. კვლევა ხელნაწერების შესახებ →
+        </a>
+    </div>
+    
+</main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 py-6 px-4 mt-12">
+        <div class="max-w-5xl mx-auto flex items-center justify-between text-xs text-gray-400">
+            <span>2025, ლინგვისტურ კვლევათა ინსტიტუტი</span>
+            <div class="flex items-center gap-4">
+                <a href="https://github.com" class="hover:text-gray-600">საიუბილეო ციფრული გამოცემა</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

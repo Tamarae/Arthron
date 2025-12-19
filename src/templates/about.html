@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block title %}შესახებ — სიტყუა ართრონთათვს{% endblock %}
+
+{% block content %}
+<main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    
+    <h1 class="text-xl font-medium mb-12">შესახებ</h1>
+    
+    <!-- Manuscripts -->
+    <section class="mb-12">
+        <h2 class="text-sm font-medium text-gray-500 uppercase tracking-wider mb-6">ხელნაწერები</h2>
+        <div class="bg-white rounded-lg border border-gray-200 divide-y divide-gray-100">
+            {% for wit in witnesses %}
+            <div class="p-5 flex items-start gap-4">
+                <span class="w-10 h-10 flex items-center justify-center {% if wit.id == 'A' %}bg-gray-800 text-white{% else %}bg-white border-2 border-gray-300 text-gray-600{% endif %} rounded font-medium">{{ wit.id }}</span>
+                <div>
+                    <p class="font-medium">{{ wit.id }}-რედაქცია</p>
+                    <p class="text-sm text-gray-500 mt-1">{{ wit.repository }}</p>
+                    <p class="text-xs text-gray-400 mt-1">{{ wit.locus }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    
+    <!-- Edition info -->
+    <section class="mb-12">
+        <h2 class="text-sm font-medium text-gray-500 uppercase tracking-wider mb-6">გამოცემა</h2>
+        <div class="bg-white rounded-lg border border-gray-200 p-5">
+            <dl class="space-y-3 text-sm">
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">რედაქტორი</dt>
+                    <dd class="font-medium">{{ editor }}</dd>
+                </div>
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">გამოცემა</dt>
+                    <dd>{{ publication_place }}, {{ publication_year }}</dd>
+                </div>
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">წყარო</dt>
+                    <dd>{{ source_title }}</dd>
+                </div>
+            </dl>
+            <hr class="my-5 border-gray-100">
+            <dl class="space-y-3 text-sm">
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">ციფრული გამოცემა</dt>
+                    <dd>2025</dd>
+                </div>
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">TEI კოდირება</dt>
+                    <dd>TEI P5 XML</dd>
+                </div>
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">ლიცენზია</dt>
+                    <dd>CC BY-NC-SA 4.0</dd>
+                </div>
+            </dl>
+        </div>
+    </section>
+    
+    <!-- Georgian description -->
+    <section class="mb-12">
+        <h2 class="text-sm font-medium text-gray-500 uppercase tracking-wider mb-6">პროექტის შესახებ</h2>
+        <div class="bg-white rounded-lg border border-gray-200 p-6">
+            <div class="font-serif-geo text-gray-700 leading-relaxed space-y-4">
+                <p>
+                    ეს ციფრული სამეცნიერო გამოცემა წარმოადგენს ძველი ქართული გრამატიკული ტრაქტატის 
+                    „სიტყუა ართრონთათვს" პირველ სრულ ინტერაქტიულ ელექტრონულ ვერსიას.
+                </p>
+                <p>
+                    ტექსტი კოდირებულია TEI-XML სტანდარტით და მოიცავს კრიტიკულ აპარატს, 
+                    ლექსიკონს და საძიებელს, რომლებიც ურთიერთდაკავშირებულია ჰიპერბმულებით.
+                </p>
+                <p>
+                    ტრაქტატი ეძღვნება ბერძნული არტიკლის (ართრონის) ქართულ ენაზე თარგმნის პრობლემატიკას 
+                    და წარმოადგენს უნიკალურ წყაროს ძველი ქართული ლინგვისტიკური აზროვნების შესასწავლად.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- English Summary -->
+    <section class="mb-12">
+        <h2 class="text-sm font-medium text-gray-500 uppercase tracking-wider mb-6">English Summary</h2>
+        <div class="bg-white rounded-lg border border-gray-200 p-6" lang="en">
+            <div class="text-gray-700 leading-relaxed space-y-4" style="font-family: Georgia, serif;">
+                <p>
+                    <strong>Discourse on Articles</strong> (<em>Sit'q'ua Art'ront'at'vis</em>) is an Old Georgian 
+                    grammatical treatise preserved in two manuscript witnesses (A and S). The text addresses a 
+                    fundamental problem in Georgian-Greek translation: how to render the Greek definite article 
+                    (ἄρθρον) in Georgian, a language that lacks articles.
+                </p>
+                <p>
+                    The treatise systematically presents the Greek article paradigms across all genders, numbers, 
+                    and cases, explaining their semantic functions and the theological implications of their 
+                    presence or absence—particularly in Christological contexts where the article distinguishes 
+                    between "God" (ὁ θεός, the one God) and "a god" (θεός).
+                </p>
+                <p>
+                    This digital edition, encoded in TEI-XML, provides the critical text with apparatus, 
+                    a comprehensive lexicon of grammatical terminology, and indices linking Georgian terms 
+                    to their Greek equivalents.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Technical -->
+    <section>
+        <h2 class="text-sm font-medium text-gray-500 uppercase tracking-wider mb-6">ტექნიკური ინფორმაცია</h2>
+        <div class="bg-white rounded-lg border border-gray-200 p-5">
+            <dl class="space-y-3 text-sm">
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">კოდირება</dt>
+                    <dd>TEI P5 XML</dd>
+                </div>
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">CTS URN</dt>
+                    <dd class="font-mono text-xs">{{ cts_urn }}</dd>
+                </div>
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">ჰოსტინგი</dt>
+                    <dd>GitHub Pages</dd>
+                </div>
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">წყარო</dt>
+                    <dd><a href="{{ github_url }}" class="text-gray-600 hover:text-ink underline">GitHub Repository</a></dd>
+                </div>
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">TEI ჩამოტვირთვა</dt>
+                    <dd><a href="tei/treatise.xml" class="text-gray-600 hover:text-ink underline">treatise.xml</a></dd>
+                </div>
+            </dl>
+        </div>
+    </section>
+    
+</main>
+{% endblock %}

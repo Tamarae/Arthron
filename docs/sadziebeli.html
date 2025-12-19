@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>საძიებელი — სიტყუა ართრონთათვს</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'parchment': '#faf8f5',
+                        'ink': '#1a1a1a',
+                        'manuscript': '#f5f2ed',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600&family=Noto+Serif+Georgian:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans Georgian', sans-serif; }
+        .font-serif-geo { font-family: 'Noto Serif Georgian', Georgia, serif; }
+        .greek { font-family: 'Times New Roman', serif; font-style: italic; }
+    </style>
+</head>
+<body class="bg-parchment text-ink antialiased">
+    
+    <!-- Navigation -->
+    <nav class="border-b border-gray-200 sticky top-0 bg-parchment/95 backdrop-blur-sm z-10">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-14">
+                <a href="index.html" class="text-lg font-medium text-gray-800">
+                    სიტყუა ართრონთათჳს
+                </a>
+                <div class="flex items-center gap-6">
+                    <a href="text/index.html" class="text-sm text-gray-600 hover:text-ink">ტექსტი</a>
+                    <a href="lexicon/index.html" class="text-sm text-gray-600 hover:text-ink">ლექსიკონი</a>
+                    <a href="sadziebeli.html" class="text-sm text-ink border-b border-gray-400 pb-0.5">საძიებელი</a>
+                    <a href="about.html" class="text-sm text-gray-600 hover:text-ink">შესახებ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    
+    <!-- Header with tabs -->
+    <div class="flex items-center justify-between mb-8">
+        <h1 class="text-xl font-medium">საძიებელი</h1>
+        <div class="flex gap-2">
+            <button id="tab-ka-grc" class="tab-btn px-4 py-2 text-sm bg-gray-800 text-white rounded">ქართულ-ბერძნული</button>
+            <button id="tab-ka" class="tab-btn px-4 py-2 text-sm bg-white border border-gray-200 text-gray-600 rounded hover:bg-gray-50">ქართული</button>
+        </div>
+    </div>
+    
+    <!-- Georgian-Greek Index -->
+    <section id="index-ka-grc" class="bg-white rounded-lg border border-gray-200 p-6 mb-8">
+        <h2 class="text-sm font-medium text-gray-500 uppercase tracking-wider mb-6">ა) ქართულ-ბერძნული საძიებელი</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3 text-sm">
+            <div class="flex items-baseline gap-2">
+                <span class="font-medium">ა—<span class="greek">ὁ</span></span>
+                <span class="text-gray-400">: <a href="text/3.html" class="hover:text-gray-600">3</a>; <a href="text/5.html" class="hover:text-gray-600">5</a>; <a href="text/6.html" class="hover:text-gray-600">6</a>.</span>
+            </div>
+            <div class="flex items-baseline gap-2">
+                <span class="font-medium">ტუ—<span class="greek">τοῦ</span></span>
+                <span class="text-gray-400">: <a href="text/3.html" class="hover:text-gray-600">3</a>; <a href="text/5.html" class="hover:text-gray-600">5</a>; <a href="text/7.html" class="hover:text-gray-600">7</a>.</span>
+            </div>
+            <div class="flex items-baseline gap-2">
+                <span class="font-medium">ტა—<span class="greek">τῷ</span></span>
+                <span class="text-gray-400">: <a href="text/3.html" class="hover:text-gray-600">3</a>; <a href="text/5.html" class="hover:text-gray-600">5</a>; <a href="text/7.html" class="hover:text-gray-600">7</a>; <a href="text/11.html" class="hover:text-gray-600">11</a>.</span>
+            </div>
+            <div class="flex items-baseline gap-2">
+                <span class="font-medium">თეას—<span class="greek">θεός</span></span>
+                <span class="text-gray-400">: <a href="text/4.html" class="hover:text-gray-600">4</a>; <a href="text/6.html" class="hover:text-gray-600">6</a>; <a href="text/22.html" class="hover:text-gray-600">22</a>.</span>
+            </div>
+            <div class="flex items-baseline gap-2">
+                <span class="font-medium">ტრიას—<span class="greek">τριάς</span></span>
+                <span class="text-gray-400">: <a href="text/13.html" class="hover:text-gray-600">13</a>.</span>
+            </div>
+            <div class="flex items-baseline gap-2">
+                <span class="font-medium">პნევმა—<span class="greek">πνεῦμა</span></span>
+                <span class="text-gray-400">: <a href="text/17.html" class="hover:text-gray-600">17</a>; <a href="text/18.html" class="hover:text-gray-600">18</a>.</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Georgian Word Index -->
+    <section id="index-ka" class="bg-white rounded-lg border border-gray-200 p-6 hidden">
+        <h2 class="text-sm font-medium text-gray-500 uppercase tracking-wider mb-6">ბ) ქართული საძიებელი</h2>
+        
+        <div class="mb-8">
+            <h3 class="text-lg font-medium mb-4 pb-2 border-b border-gray-100">ა</h3>
+            <div class="space-y-4 text-sm">
+                <div>
+                    <span class="font-medium">აევილაგით-ი:</span>
+                    <span class="text-gray-600"> აევილაგითად იჴუმევედენ 4; ა. ... აჴსენებედენ 6</span>
+                </div>
+                <div>
+                    <span class="font-medium">ართრონ-ი:</span>
+                    <span class="text-gray-600"> თითადულისა ნათესავისანი არიან ათცამეტ 3; ართრონსა დაუდებს...</span>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+</main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 py-6 px-4 mt-12">
+        <div class="max-w-5xl mx-auto flex items-center justify-between text-xs text-gray-400">
+            <span>2025, ლინგვისტურ კვლევათა ინსტიტუტი</span>
+            <div class="flex items-center gap-4">
+                <a href="https://github.com" class="hover:text-gray-600">საიუბილეო ციფრული გამოცემა</a>
+            </div>
+        </div>
+    </footer>
+    
+<script>
+// Tab switching
+document.getElementById('tab-ka-grc').addEventListener('click', function() {
+    document.getElementById('index-ka-grc').classList.remove('hidden');
+    document.getElementById('index-ka').classList.add('hidden');
+    this.classList.add('bg-gray-800', 'text-white');
+    this.classList.remove('bg-white', 'border', 'border-gray-200', 'text-gray-600');
+    document.getElementById('tab-ka').classList.remove('bg-gray-800', 'text-white');
+    document.getElementById('tab-ka').classList.add('bg-white', 'border', 'border-gray-200', 'text-gray-600');
+});
+
+document.getElementById('tab-ka').addEventListener('click', function() {
+    document.getElementById('index-ka').classList.remove('hidden');
+    document.getElementById('index-ka-grc').classList.add('hidden');
+    this.classList.add('bg-gray-800', 'text-white');
+    this.classList.remove('bg-white', 'border', 'border-gray-200', 'text-gray-600');
+    document.getElementById('tab-ka-grc').classList.remove('bg-gray-800', 'text-white');
+    document.getElementById('tab-ka-grc').classList.add('bg-white', 'border', 'border-gray-200', 'text-gray-600');
+});
+</script>
+</body>
+</html>

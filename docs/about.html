@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>შესახებ — სიტყუა ართრონთათვს</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'parchment': '#faf8f5',
+                        'ink': '#1a1a1a',
+                        'manuscript': '#f5f2ed',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600&family=Noto+Serif+Georgian:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans Georgian', sans-serif; }
+        .font-serif-geo { font-family: 'Noto Serif Georgian', Georgia, serif; }
+        .greek { font-family: 'Times New Roman', serif; font-style: italic; }
+    </style>
+</head>
+<body class="bg-parchment text-ink antialiased">
+    
+    <!-- Navigation -->
+    <nav class="border-b border-gray-200 sticky top-0 bg-parchment/95 backdrop-blur-sm z-10">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-14">
+                <a href="index.html" class="text-lg font-medium text-gray-800">
+                    სიტყუა ართრონთათჳს
+                </a>
+                <div class="flex items-center gap-6">
+                    <a href="text/index.html" class="text-sm text-gray-600 hover:text-ink">ტექსტი</a>
+                    <a href="lexicon/index.html" class="text-sm text-gray-600 hover:text-ink">ლექსიკონი</a>
+                    <a href="sadziebeli.html" class="text-sm text-gray-600 hover:text-ink">საძიებელი</a>
+                    <a href="about.html" class="text-sm text-ink border-b border-gray-400 pb-0.5">შესახებ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    
+    <h1 class="text-xl font-medium mb-12">შესახებ</h1>
+    
+    <!-- Manuscripts -->
+    <section class="mb-12">
+        <h2 class="text-sm font-medium text-gray-500 uppercase tracking-wider mb-6">ხელნაწერები</h2>
+        <div class="bg-white rounded-lg border border-gray-200 divide-y divide-gray-100">
+            <div class="p-5 flex items-start gap-4">
+                <span class="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded font-medium">A</span>
+                <div>
+                    <p class="font-medium">A-რედაქცია</p>
+                    <p class="text-sm text-gray-500 mt-1">ხელნაწერთა ეროვნული ცენტრი</p>
+                    <p class="text-xs text-gray-400 mt-1">ff. 32r–36v</p>
+                </div>
+            </div>
+            <div class="p-5 flex items-start gap-4">
+                <span class="w-10 h-10 flex items-center justify-center bg-white border-2 border-gray-300 text-gray-600 rounded font-medium">S</span>
+                <div>
+                    <p class="font-medium">S-რედაქცია</p>
+                    <p class="text-sm text-gray-500 mt-1">წმ. ეკატერინეს მონასტერი</p>
+                    <p class="text-xs text-gray-400 mt-1">ff. 106r–108v</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Edition info -->
+    <section class="mb-12">
+        <h2 class="text-sm font-medium text-gray-500 uppercase tracking-wider mb-6">გამოცემა</h2>
+        <div class="bg-white rounded-lg border border-gray-200 p-5">
+            <dl class="space-y-3 text-sm">
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">რედაქტორი</dt>
+                    <dd class="font-medium">მზექალა შანიძე</dd>
+                </div>
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">გამოცემა</dt>
+                    <dd>თბილისი, 1990</dd>
+                </div>
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">წყარო</dt>
+                    <dd>ძველი ქართული ენის კათედრის შრომები, 32</dd>
+                </div>
+            </dl>
+            <hr class="my-5 border-gray-100">
+            <dl class="space-y-3 text-sm">
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">ციფრული გამოცემა</dt>
+                    <dd>2025</dd>
+                </div>
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">TEI კოდირება</dt>
+                    <dd>TEI P5 XML</dd>
+                </div>
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">ლიცენზია</dt>
+                    <dd>CC BY-NC-SA 4.0</dd>
+                </div>
+            </dl>
+        </div>
+    </section>
+    
+    <!-- Georgian description -->
+    <section class="mb-12">
+        <h2 class="text-sm font-medium text-gray-500 uppercase tracking-wider mb-6">პროექტის შესახებ</h2>
+        <div class="bg-white rounded-lg border border-gray-200 p-6">
+            <div class="font-serif-geo text-gray-700 leading-relaxed space-y-4">
+                <p>
+                    ეს ციფრული სამეცნიერო გამოცემა წარმოადგენს ძველი ქართული გრამატიკული ტრაქტატის 
+                    „სიტყუა ართრონთათვს" პირველ სრულ ინტერაქტიულ ელექტრონულ ვერსიას.
+                </p>
+                <p>
+                    ტექსტი კოდირებულია TEI-XML სტანდარტით და მოიცავს კრიტიკულ აპარატს, 
+                    ლექსიკონს და საძიებელს, რომლებიც ურთიერთდაკავშირებულია ჰიპერბმულებით.
+                </p>
+                <p>
+                    ტრაქტატი ეძღვნება ბერძნული არტიკლის (ართრონის) ქართულ ენაზე თარგმნის პრობლემატიკას 
+                    და წარმოადგენს უნიკალურ წყაროს ძველი ქართული ლინგვისტიკური აზროვნების შესასწავლად.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- English Summary -->
+    <section class="mb-12">
+        <h2 class="text-sm font-medium text-gray-500 uppercase tracking-wider mb-6">English Summary</h2>
+        <div class="bg-white rounded-lg border border-gray-200 p-6" lang="en">
+            <div class="text-gray-700 leading-relaxed space-y-4" style="font-family: Georgia, serif;">
+                <p>
+                    <strong>Discourse on Articles</strong> (<em>Sit'q'ua Art'ront'at'vis</em>) is an Old Georgian 
+                    grammatical treatise preserved in two manuscript witnesses (A and S). The text addresses a 
+                    fundamental problem in Georgian-Greek translation: how to render the Greek definite article 
+                    (ἄρθρον) in Georgian, a language that lacks articles.
+                </p>
+                <p>
+                    The treatise systematically presents the Greek article paradigms across all genders, numbers, 
+                    and cases, explaining their semantic functions and the theological implications of their 
+                    presence or absence—particularly in Christological contexts where the article distinguishes 
+                    between "God" (ὁ θεός, the one God) and "a god" (θεός).
+                </p>
+                <p>
+                    This digital edition, encoded in TEI-XML, provides the critical text with apparatus, 
+                    a comprehensive lexicon of grammatical terminology, and indices linking Georgian terms 
+                    to their Greek equivalents.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Technical -->
+    <section>
+        <h2 class="text-sm font-medium text-gray-500 uppercase tracking-wider mb-6">ტექნიკური ინფორმაცია</h2>
+        <div class="bg-white rounded-lg border border-gray-200 p-5">
+            <dl class="space-y-3 text-sm">
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">კოდირება</dt>
+                    <dd>TEI P5 XML</dd>
+                </div>
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">CTS URN</dt>
+                    <dd class="font-mono text-xs">urn:cts:georgian:shanidze.arthron.ed2025</dd>
+                </div>
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">ჰოსტინგი</dt>
+                    <dd>GitHub Pages</dd>
+                </div>
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">წყარო</dt>
+                    <dd><a href="https://github.com" class="text-gray-600 hover:text-ink underline">GitHub Repository</a></dd>
+                </div>
+                <div class="flex">
+                    <dt class="w-32 text-gray-500">TEI ჩამოტვირთვა</dt>
+                    <dd><a href="tei/treatise.xml" class="text-gray-600 hover:text-ink underline">treatise.xml</a></dd>
+                </div>
+            </dl>
+        </div>
+    </section>
+    
+</main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 py-6 px-4 mt-12">
+        <div class="max-w-5xl mx-auto flex items-center justify-between text-xs text-gray-400">
+            <span>2025, ლინგვისტურ კვლევათა ინსტიტუტი</span>
+            <div class="flex items-center gap-4">
+                <a href="https://github.com" class="hover:text-gray-600">საიუბილეო ციფრული გამოცემა</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

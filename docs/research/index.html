@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კვლევა — სიტყუა ართრონთათვს</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'parchment': '#faf8f5',
+                        'ink': '#1a1a1a',
+                        'manuscript': '#f5f2ed',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600&family=Noto+Serif+Georgian:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans Georgian', sans-serif; }
+        .font-serif-geo { font-family: 'Noto Serif Georgian', Georgia, serif; }
+        .greek { font-family: 'Times New Roman', serif; font-style: italic; }
+.article-content h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+.article-content h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+.article-content p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+.article-content blockquote {
+    border-left: 3px solid #d1d5db;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: #6b7280;
+    font-style: italic;
+}
+.article-content a {
+    color: #1d4ed8;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+.article-content a:hover {
+    color: #1e40af;
+}
+.toc-link {
+    transition: all 0.15s;
+}
+.toc-link:hover {
+    color: #1f2937;
+}
+.toc-link.active {
+    color: #1f2937;
+    font-weight: 500;
+}
+    </style>
+</head>
+<body class="bg-parchment text-ink antialiased">
+    
+    <!-- Navigation -->
+    <nav class="border-b border-gray-200 sticky top-0 bg-parchment/95 backdrop-blur-sm z-10">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-14">
+                <a href="../index.html" class="text-lg font-medium text-gray-800">
+                    სიტყუა ართრონთათჳს
+                </a>
+                <div class="flex items-center gap-6">
+                    <a href="../text/index.html" class="text-sm text-gray-600 hover:text-ink">ტექსტი</a>
+                    <a href="../lexicon/index.html" class="text-sm text-gray-600 hover:text-ink">ლექსიკონი</a>
+                    <a href="../sadziebeli.html" class="text-sm text-gray-600 hover:text-ink">საძიებელი</a>
+                    <a href="../about.html" class="text-sm text-gray-600 hover:text-ink">შესახებ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    
+    <div class="lg:grid lg:grid-cols-4 lg:gap-12">
+        
+        <!-- Table of Contents (sticky sidebar) -->
+        <aside class="hidden lg:block">
+            <div class="sticky top-20">
+                <h2 class="text-xs font-medium text-gray-400 uppercase tracking-wide mb-4">სარჩევი</h2>
+                <nav class="space-y-2 text-sm">
+                    <a href="#intro" class="toc-link block text-gray-500">შესავალი</a>
+                    <a href="#manuscripts" class="toc-link block text-gray-500">ხელნაწერები</a>
+                    <a href="#language" class="toc-link block text-gray-500">ენობრივი ანალიზი</a>
+                    <a href="#dating" class="toc-link block text-gray-500">თარიღი და ავტორობა</a>
+                    <a href="#context" class="toc-link block text-gray-500">ისტორიული კონტექსტი</a>
+                    <a href="#bibliography" class="toc-link block text-gray-500">ბიბლიოგრაფია</a>
+                </nav>
+                
+                <div class="mt-8 pt-8 border-t border-gray-100">
+                    <a href="../text/index.html" class="text-xs text-gray-400 hover:text-gray-600">← ტექსტზე დაბრუნება</a>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- Article Content -->
+        <article class="lg:col-span-3">
+            
+            <!-- Header -->
+            <header class="mb-8 pb-8 border-b border-gray-200">
+                <h1 class="text-2xl font-medium mb-3">სიტყუა ართრონთათვს: კვლევა</h1>
+                <p class="text-gray-500">ძველი ქართული გრამატიკული ტრაქტატის კვლევა</p>
+                
+                <!-- Article metadata -->
+                <div class="mt-4 flex flex-wrap gap-4 text-xs text-gray-400">
+                    <span><!-- author --></span>
+                    <span><!-- date --></span>
+                </div>
+            </header>
+            
+            <!-- Article body -->
+            <div class="article-content text-gray-700">
+                
+                <!-- Placeholder content -->
+                <section id="intro">
+                    <h2>შესავალი</h2>
+                    <p class="text-gray-500 italic">კვლევის ტექსტი მომზადდება...</p>
+                    <p class="text-gray-500 italic">
+                        აქ განხილული იქნება ტრაქტატის მნიშვნელობა ძველი ქართული გრამატიკული აზროვნებისთვის, 
+                        მისი ადგილი შუა საუკუნეების ქართულ ფილოლოგიურ ტრადიციაში და კვლევის მიზნები.
+                    </p>
+                </section>
+                
+                <section id="manuscripts">
+                    <h2>ხელნაწერები</h2>
+                    <p class="text-gray-500 italic">
+                        აქ აღიწერება ორი ხელნაწერი (A და S), მათი კოდიკოლოგიური მახასიათებლები, 
+                        დამწერლობა, თარიღი და ტექსტოლოგიური ურთიერთმიმართება.
+                    </p>
+                    <p>
+                        <a href="../manuscripts/index.html">იხ. ხელნაწერების დეტალური აღწერილობა →</a>
+                    </p>
+                </section>
+                
+                <section id="language">
+                    <h2>ენობრივი ანალიზი</h2>
+                    <p class="text-gray-500 italic">
+                        აქ გაანალიზდება ტრაქტატის ენა: ძველი ქართულის ნორმები, ბერძნულიდან 
+                        ნასესხები ტერმინოლოგია, გრამატიკული კონცეფციები.
+                    </p>
+                    <p>
+                        მაგალითად, <a href="../text/3.html">§3</a>-ში განხილულია ართრონის ცნება...
+                    </p>
+                </section>
+                
+                <section id="dating">
+                    <h2>თარიღი და ავტორობა</h2>
+                    <p class="text-gray-500 italic">
+                        აქ განხილული იქნება ტრაქტატის სავარაუდო თარიღი და ავტორის ვინაობის საკითხი.
+                    </p>
+                </section>
+                
+                <section id="context">
+                    <h2>ისტორიული კონტექსტი</h2>
+                    <p class="text-gray-500 italic">
+                        აქ წარმოდგენილი იქნება ტრაქტატის ისტორიული და კულტურული კონტექსტი: 
+                        ბერძნული გრამატიკული ტრადიციის გავლენა, თარგმნის პრაქტიკა, 
+                        თეოლოგიური დისკუსიები.
+                    </p>
+                </section>
+                
+                <section id="bibliography">
+                    <h2>ბიბლიოგრაფია</h2>
+                    <div class="text-sm space-y-2 text-gray-600">
+                        <p class="text-gray-500 italic">ბიბლიოგრაფიული ჩამონათვალი დაემატება...</p>
+                        <!--
+                        <p>შანიძე, ა. (1990). <em>ქართული ენის გრამატიკის საფუძვლები</em>. თბილისი.</p>
+                        <p>...</p>
+                        -->
+                    </div>
+                </section>
+                
+            </div>
+            
+        </article>
+        
+    </div>
+    
+</main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 py-6 px-4 mt-12">
+        <div class="max-w-5xl mx-auto flex items-center justify-between text-xs text-gray-400">
+            <span>2025, ლინგვისტურ კვლევათა ინსტიტუტი</span>
+            <div class="flex items-center gap-4">
+                <a href="https://github.com" class="hover:text-gray-600">საიუბილეო ციფრული გამოცემა</a>
+            </div>
+        </div>
+    </footer>
+    
+<script>
+// Highlight active TOC link on scroll
+const sections = document.querySelectorAll('section[id]');
+const tocLinks = document.querySelectorAll('.toc-link');
+
+function highlightToc() {
+    let current = '';
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 100) {
+            current = section.getAttribute('id');
+        }
+    });
+    
+    tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active');
+        }
+    });
+}
+
+window.addEventListener('scroll', highlightToc);
+highlightToc();
+</script>
+</body>
+</html>

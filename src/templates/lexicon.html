@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+
+{% block title %}ლექსიკონი — სიტყუა ართრონთათჳს{% endblock %}
+
+{% block content %}
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-8">
+        <h1 class="text-xl font-medium">ლექსიკონი</h1>
+        <span class="text-sm text-gray-400">{{ entries|length }} ერთეული</span>
+    </div>
+    
+    <!-- Search -->
+    <div class="mb-8">
+        <input type="text" id="lexicon-search" placeholder="ძიება..." 
+               class="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:border-gray-400">
+    </div>
+    
+    <!-- Alphabet filter -->
+    <div class="flex flex-wrap gap-1 mb-8 text-sm">
+        {% for letter in alphabet %}
+        <button class="letter-filter w-8 h-8 rounded {% if letter == active_letter %}bg-gray-800 text-white{% else %}bg-white border border-gray-200 text-gray-600 hover:bg-gray-50{% endif %}" 
+                data-letter="{{ letter }}">{{ letter }}</button>
+        {% endfor %}
+    </div>
+    
+    <!-- Entries -->
+    <div id="entries-container" class="bg-white rounded-lg border border-gray-200 divide-y divide-gray-100">
+        
+        {% for entry in entries %}
+        <article id="{{ entry.id }}" class="entry p-5 hover:bg-gray-50/50" data-lemma="{{ entry.lemma }}" data-letter="{{ entry.lemma[0]|lower }}">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">{{ entry.lemma }}</h2>
+                        {% if entry.greek %}
+                        <span class="greek text-gray-500">({{ entry.greek }})</span>
+                        {% endif %}
+                        {% if entry.pos %}
+                        <span class="text-xs px-2 py-0.5 bg-gray-100 rounded text-gray-500">{{ entry.pos }}</span>
+                        {% endif %}
+                    </div>
+                    
+                    {% for sense in entry.senses %}
+                    <p class="text-sm text-gray-600 mb-2">
+                        {% if entry.senses|length > 1 %}<span class="text-gray-400">{{ loop.index }}.</span> {% endif %}
+                        {{ sense.def_ka }}
+                        {% if sense.def_en %}<span class="text-gray-400 text-xs ml-2">[{{ sense.def_en }}]</span>{% endif %}
+                    </p>
+                    {% endfor %}
+                    
+                    {% if entry.examples %}
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        {% for ex in entry.examples %}
+                        <p>{{ ex.quote }} <span class="text-xs not-italic">({{ ex.ref }})</span></p>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                    
+                    {% if entry.note %}
+                    <p class="text-xs text-gray-400 mt-2 border-l-2 border-gray-200 pl-2">{{ entry.note }}</p>
+                    {% endif %}
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        {% if entry.occurrences %}
+                        <p class="text-xs text-gray-400">
+                            {% for occ in entry.occurrences %}
+                            <a href="{{ url_for('section', n=occ) }}" class="hover:text-gray-600">§{{ occ }}</a>{% if not loop.last %}, {% endif %}
+                            {% endfor %}
+                        </p>
+                        {% endif %}
+                        {% if entry.see_also %}
+                        <span class="text-xs text-gray-400">
+                            იხ. {% for ref in entry.see_also %}<a href="#{{ ref }}" class="hover:text-gray-600">{{ ref }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
+                        </span>
+                        {% endif %}
+                    </div>
+                </div>
+                {% if entry.occurrence_count %}
+                <span class="text-xs text-gray-400 whitespace-nowrap">{{ entry.occurrence_count }} გამოყენება</span>
+                {% endif %}
+            </div>
+        </article>
+        {% endfor %}
+        
+    </div>
+    
+    <!-- Empty state -->
+    <div id="no-results" class="hidden text-center py-12 text-gray-400">
+        ვერ მოიძებნა
+    </div>
+    
+</main>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Search functionality
+const searchInput = document.getElementById('lexicon-search');
+const entriesContainer = document.getElementById('entries-container');
+const noResults = document.getElementById('no-results');
+const entries = document.querySelectorAll('.entry');
+
+searchInput.addEventListener('input', function() {
+    const query = this.value.toLowerCase().trim();
+    let visible = 0;
+    
+    // Reset letter filter
+    document.querySelectorAll('.letter-filter').forEach(b => {
+        b.classList.remove('bg-gray-800', 'text-white');
+        b.classList.add('bg-white', 'border', 'border-gray-200', 'text-gray-600');
+    });
+    
+    entries.forEach(entry => {
+        const lemma = entry.dataset.lemma.toLowerCase();
+        const text = entry.textContent.toLowerCase();
+        if (query === '' || lemma.includes(query) || text.includes(query)) {
+            entry.style.display = '';
+            visible++;
+        } else {
+            entry.style.display = 'none';
+        }
+    });
+    
+    noResults.classList.toggle('hidden', visible > 0);
+    entriesContainer.classList.toggle('hidden', visible === 0);
+});
+
+// Letter filter
+document.querySelectorAll('.letter-filter').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const letter = this.dataset.letter.toLowerCase();
+        
+        // Clear search
+        searchInput.value = '';
+        
+        document.querySelectorAll('.letter-filter').forEach(b => {
+            b.classList.remove('bg-gray-800', 'text-white');
+            b.classList.add('bg-white', 'border', 'border-gray-200', 'text-gray-600');
+        });
+        this.classList.remove('bg-white', 'border', 'border-gray-200', 'text-gray-600');
+        this.classList.add('bg-gray-800', 'text-white');
+        
+        let visible = 0;
+        entries.forEach(entry => {
+            if (entry.dataset.letter === letter) {
+                entry.style.display = '';
+                visible++;
+            } else {
+                entry.style.display = 'none';
+            }
+        });
+        
+        noResults.classList.toggle('hidden', visible > 0);
+        entriesContainer.classList.toggle('hidden', visible === 0);
+    });
+});
+
+// Scroll to entry if hash present
+if (window.location.hash) {
+    const target = document.querySelector(window.location.hash);
+    if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        target.classList.add('bg-yellow-50');
+        setTimeout(() => target.classList.remove('bg-yellow-50'), 2000);
+    }
+}
+</script>
+{% endblock %}

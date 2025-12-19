@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}საძიებელი — სიტყუა ართრონთათვს{% endblock %}
+
+{% block content %}
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    
+    <!-- Header with tabs -->
+    <div class="flex items-center justify-between mb-8">
+        <h1 class="text-xl font-medium">საძიებელი</h1>
+        <div class="flex gap-2">
+            <button id="tab-ka-grc" class="tab-btn px-4 py-2 text-sm bg-gray-800 text-white rounded">ქართულ-ბერძნული</button>
+            <button id="tab-ka" class="tab-btn px-4 py-2 text-sm bg-white border border-gray-200 text-gray-600 rounded hover:bg-gray-50">ქართული</button>
+        </div>
+    </div>
+    
+    <!-- Georgian-Greek Index -->
+    <section id="index-ka-grc" class="bg-white rounded-lg border border-gray-200 p-6 mb-8">
+        <h2 class="text-sm font-medium text-gray-500 uppercase tracking-wider mb-6">ა) ქართულ-ბერძნული საძიებელი</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3 text-sm">
+            {% for item in ka_grc_index %}
+            <div class="flex items-baseline gap-2">
+                <span class="font-medium">{{ item.ka }}—<span class="greek">{{ item.grc }}</span></span>
+                <span class="text-gray-400">: {% for ref in item.refs %}<a href="{{ url_for('section', n=ref) }}" class="hover:text-gray-600">{{ ref }}</a>{% if not loop.last %}; {% endif %}{% endfor %}.</span>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    
+    <!-- Georgian Word Index -->
+    <section id="index-ka" class="bg-white rounded-lg border border-gray-200 p-6 hidden">
+        <h2 class="text-sm font-medium text-gray-500 uppercase tracking-wider mb-6">ბ) ქართული საძიებელი</h2>
+        
+        {% for letter, words in ka_index.items() %}
+        <div class="mb-8">
+            <h3 class="text-lg font-medium mb-4 pb-2 border-b border-gray-100">{{ letter }}</h3>
+            <div class="space-y-4 text-sm">
+                {% for word in words %}
+                <div>
+                    <span class="font-medium">{{ word.term }}:</span>
+                    <span class="text-gray-600"> {{ word.contexts }}</span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+        
+    </section>
+    
+</main>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Tab switching
+document.getElementById('tab-ka-grc').addEventListener('click', function() {
+    document.getElementById('index-ka-grc').classList.remove('hidden');
+    document.getElementById('index-ka').classList.add('hidden');
+    this.classList.add('bg-gray-800', 'text-white');
+    this.classList.remove('bg-white', 'border', 'border-gray-200', 'text-gray-600');
+    document.getElementById('tab-ka').classList.remove('bg-gray-800', 'text-white');
+    document.getElementById('tab-ka').classList.add('bg-white', 'border', 'border-gray-200', 'text-gray-600');
+});
+
+document.getElementById('tab-ka').addEventListener('click', function() {
+    document.getElementById('index-ka').classList.remove('hidden');
+    document.getElementById('index-ka-grc').classList.add('hidden');
+    this.classList.add('bg-gray-800', 'text-white');
+    this.classList.remove('bg-white', 'border', 'border-gray-200', 'text-gray-600');
+    document.getElementById('tab-ka-grc').classList.remove('bg-gray-800', 'text-white');
+    document.getElementById('tab-ka-grc').classList.add('bg-white', 'border', 'border-gray-200', 'text-gray-600');
+});
+</script>
+{% endblock %}

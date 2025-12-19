@@ -1,0 +1,1108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ka">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="ka">ლექსიკონი: სიტყუა ართრონთათჳს</title>
+        <title xml:lang="en" type="sub">Lexicon: Discourse on Articles</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Digital Scholarly Edition</publisher>
+        <date when="2025">2025</date>
+        <idno type="cts-urn">urn:cts:georgian:shanidze.arthron.lexicon</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Compiled from the Old Georgian grammatical treatise.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  
+  <text>
+    <body>
+      <div type="lexicon">
+        
+        <entry xml:id="lex.arthron">
+          <form type="lemma">
+            <orth xml:lang="ka">ართრონი</orth>
+          </form>
+          <gramGrp><pos value="noun">n.</pos></gramGrp>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ἄρθρον</mentioned></etym>
+          <sense xml:id="lex.arthron.1">
+            <def xml:lang="ka">განსაზღვრებითი ნაწევარი</def>
+            <def xml:lang="en">definite article</def>
+          </sense>
+          <cit type="example"><quote xml:lang="ka">ართრონსა დაუდებს</quote><bibl>ჰ. 34</bibl></cit>
+          <cit type="example"><quote xml:lang="ka">ართრონითა უწოდა... „ესე ო თეოს“</quote><bibl>ჰ. 45</bibl></cit>
+          <cit type="example">
+             <quote xml:lang="ka">ვინაითგან ართრონთა ძლით უმეცრად და ბნელად საგონებელ არს ენასა ზედა ჩუენსა... ლექსი თარგმანებული</quote>
+             <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.1">§ 1</ref></bibl>
+          </cit>
+          <cit type="example">
+             <quote xml:lang="ka">რამეთუ ართრონნი სხუანი არანი არიან, თჳნიერ საძირკუელნი სახელთანი</quote>
+             <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.3">§ 3</ref></bibl>
+          </cit>
+        </entry>
+
+        <entry xml:id="lex.arthroniani">
+          <form type="lemma">
+            <orth xml:lang="ka">ართრონიანი</orth>
+          </form>
+          <sense xml:id="lex.arthroniani.1">
+            <def xml:lang="ka">არტიკლიანი</def>
+          </sense>
+          <cit type="example"><quote xml:lang="ka">„ო თეოს“ არს ღმერთი ართრონიანი</quote><bibl>ჰ. 34</bibl></cit>
+          <cit type="example">
+             <quote xml:lang="ka">რაჟამს გეგულებოდის ბერძულსა ართრონიანსა სახელსა თარგმანებაჲ</quote>
+             <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.6">§ 6</ref></bibl>
+          </cit>
+          <cit type="example">
+             <quote xml:lang="ka">ბნელად ვიდრემე და შეუგუარად იქმნების თარგმნად ართრონიანისა სიტყჳსად</quote>
+             <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.21">§ 21</ref></bibl>
+          </cit>
+        </entry>
+
+        <entry xml:id="lex.uarthrono">
+          <form type="lemma"><orth xml:lang="ka">უართრონო</orth></form>
+          <sense xml:id="lex.uarthrono.1"><def xml:lang="ka">უარტიკლო; ართრონის გარეშე</def></sense>
+          <cit type="example"><bibl>ჰ. 34</bibl></cit>
+          <cit type="example">
+            <quote xml:lang="ka">დაბნელდების უართრონობისათჳს ენისა ჩუენისა</quote>
+            <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.1">§ 1</ref></bibl>
+          </cit>
+          <cit type="example">
+            <quote xml:lang="ka">ხოლო უკუეთუ უართრონოდ იტყოდინ, გამოუღებენ ონ-სა</quote>
+            <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.6">§ 6</ref></bibl>
+          </cit>
+        </entry>
+
+        <entry xml:id="lex.leqsi">
+          <form type="lemma">
+            <orth xml:lang="ka">ლექსი</orth>
+          </form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">λέξις</mentioned></etym>
+          <sense xml:id="lex.leqsi.1">
+             <def xml:lang="ka">სიტყვა, ტერმინი</def>
+          </sense>
+          <cit type="example"><quote xml:lang="ka">არა-მპოვნელი ლექსისაი უღონოებს</quote><bibl>ჰ. 29</bibl></cit>
+          <cit type="example">
+             <quote xml:lang="ka">ბერძულსა შინა ვიდრემე ნათლად ძეს ლექსი იგი</quote>
+             <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.1">§ 1</ref></bibl>
+          </cit>
+          <cit type="example">
+             <quote xml:lang="ka">ქართულად ერთ ლექსად ითქუმის, დაღაცათუ ძალი ორი აქუს</quote>
+             <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.10">§ 10</ref></bibl>
+          </cit>
+        </entry>
+
+        <entry xml:id="lex.leqseulad">
+          <form type="lemma">
+            <orth xml:lang="ka">ლექსეულად</orth>
+          </form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">κατὰ λέξιν</mentioned></etym>
+          <sense xml:id="lex.leqseulad.1">
+             <def xml:lang="ka">სიტყვა-სიტყვით</def>
+          </sense>
+          <cit type="example"><quote xml:lang="ka">უკუეთუ განმარტებით ლექსეულად ითხოონ</quote><bibl>ჰ. 28</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.masc">
+            <form type="lemma"><orth xml:lang="ka">მამალი</orth></form>
+            <sense xml:id="lex.masc.1"><def xml:lang="ka">მამრობითი სქესი</def></sense>
+            <cit type="example">
+                <quote xml:lang="ka">მამალთა და დედალთა და შუათაგან</quote>
+                <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.2">§ 2</ref></bibl>
+            </cit>
+        </entry>
+
+        <entry xml:id="lex.fem">
+            <form type="lemma"><orth xml:lang="ka">დედალი</orth></form>
+            <sense xml:id="lex.fem.1"><def xml:lang="ka">მდედრობითი სქესი</def></sense>
+            <cit type="example">
+                <quote xml:lang="ka">სამებისა ვიდრემე სახელი დედალი არს</quote>
+                <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.4">§ 4</ref></bibl>
+            </cit>
+        </entry>
+
+        <entry xml:id="lex.neut">
+            <form type="lemma"><orth xml:lang="ka">შუაჲ</orth><orth type="variant" xml:lang="ka">შუა</orth></form>
+            <sense xml:id="lex.neut.1"><def xml:lang="ka">საშუალო სქესი</def></sense>
+            <cit type="example">
+                <quote xml:lang="ka">გინა თუ მამალი ეწოდების სახელი, გინა თუ დედალი, გინა თუ შუაჲ</quote>
+                <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.2">§ 2</ref></bibl>
+            </cit>
+        </entry>
+
+        <entry xml:id="lex.agebuli">
+          <form type="lemma"><orth xml:lang="ka">აგებული</orth></form>
+          <sense xml:id="lex.agebuli.1">
+            <def xml:lang="ka">შექმნილი, მატერიალური, არსებული</def>
+          </sense>
+          <cit type="example"><quote xml:lang="ka">გრძნობადი ნათელი უძღვს თუალსა აგებულთა გულის მის-ყოფად</quote></cit>
+        </entry>
+
+        <entry xml:id="lex.antipa">
+          <form type="lemma"><orth xml:lang="ka">ანტიპა</orth></form>
+          <note>See page 110</note>
+        </entry>
+
+        <entry xml:id="lex.arianozi">
+          <form type="lemma"><orth xml:lang="ka">არიანოზ-ი</orth></form>
+          <sense xml:id="lex.arianozi.1"><def xml:lang="ka">არიოსის მიმდევარი, მწვალებელი</def></sense>
+          <cit type="example"><bibl>ჰ. 27</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.aghgeba">
+          <form type="lemma"><orth xml:lang="ka">აღგება</orth></form>
+          <sense xml:id="lex.aghgeba.1"><def xml:lang="ka">შექმნა</def></sense>
+          <cit type="example"><quote xml:lang="ka">სამებისა მიერ აღვეგენით</quote><bibl>ჰ. 75</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.aghvseba">
+          <form type="lemma"><orth xml:lang="ka">აღვსება</orth></form>
+          <cit type="example"><quote xml:lang="ka">ზღაპარნი მათნი აღავსებდეს</quote><bibl>ჰ. 51</bibl></cit>
+          <cit type="example">
+            <quote xml:lang="ka">სიტყუასა მას უართრონოსა და აღუვსნის მრავალთა გამოსაჩინებელთა მიერ</quote>
+            <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.21">§ 21</ref></bibl>
+          </cit>
+        </entry>
+
+        <entry xml:id="lex.aghmgebeli">
+          <form type="lemma"><orth xml:lang="ka">აღმგებელი</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">τεκταινόμενος</mentioned></etym>
+          <sense xml:id="lex.aghmgebeli.1"><def xml:lang="ka">შემქმნელი</def></sense>
+          <cit type="example"><quote xml:lang="ka">მე ვარ აღმგებელი ქუეყანისად</quote><bibl>3. 60</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.aghmoceneba">
+          <form type="lemma"><orth xml:lang="ka">აღმოცენება</orth></form>
+          <cit type="example"><quote xml:lang="ka">აღმატებაი სიმართლისად აღმოეცენა</quote><bibl>11</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.aghmochra">
+          <form type="lemma"><orth xml:lang="ka">აღმოჭრა</orth></form>
+          <sense xml:id="lex.aghmochra.1"><def xml:lang="ka">მოსპობა</def></sense>
+          <cit type="example"><quote xml:lang="ka">ძირითგან აღმოსჭრას ცილისწამებად</quote><bibl>3. 44</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.aghmojdoma">
+          <form type="lemma"><orth xml:lang="ka">აღმოჯდომა</orth></form>
+          <sense xml:id="lex.aghmojdoma.1"><def xml:lang="ka">ამოსვლა</def></sense>
+          <cit type="example"><quote xml:lang="ka">მაღლით ცა აღმოჰადების</quote><bibl>ჰ. 9</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.aghrackhuli">
+          <form type="lemma"><orth xml:lang="ka">აღრაცხული</orth></form>
+          <sense xml:id="lex.aghrackhuli.1"><def xml:lang="ka">ჩათვლილი</def></sense>
+          <cit type="example"><bibl>ჰ. 9</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.aghqvaneba">
+          <form type="lemma"><orth xml:lang="ka">აღყვანება</orth></form>
+          <cit type="example"><quote xml:lang="ka">არა მთარგმანებელსა ზედა აღიყვანების სიტყუად</quote><bibl>ჰ. 14</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.borgneuli">
+          <form type="lemma"><orth xml:lang="ka">ბორგნეული</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">λυττώντες</mentioned></etym>
+          <sense xml:id="lex.borgneuli.1"><def xml:lang="ka">მებრძოლი</def></sense>
+          <cit type="example"><bibl>23. 40</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.brgunva">
+          <form type="lemma"><orth xml:lang="ka">ბრგუნვა</orth></form>
+          <sense xml:id="lex.brgunva.1"><def xml:lang="ka">ენამძიმედ, ენადაბმულად მეტყველება</def></sense>
+          <cit type="example"><bibl>ჰ. 18</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.brgunvili">
+          <form type="lemma"><orth xml:lang="ka">ბრგუნვილი</orth></form>
+          <sense xml:id="lex.brgunvili.1"><def xml:lang="ka">ცუდად, მძიმედ გამოთქმული</def></sense>
+          <cit type="example"><bibl>ჰ. 18</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.buneba">
+          <form type="lemma"><orth xml:lang="ka">ბუნება</orth></form>
+          <sense xml:id="lex.buneba.1"><def xml:lang="ka">მატერიალური, ფიზიკური ნაწილი (სხეულისა)</def></sense>
+          <cit type="example"><bibl>ჰ. 3</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.gamometqueli">
+          <form type="lemma"><orth xml:lang="ka">გამომეტყუელი</orth></form>
+          <sense xml:id="lex.gamometqueli.1"><def xml:lang="ka">მთხრობი, ავტორი</def></sense>
+          <cit type="example"><bibl>3. 48</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.gamomtkhovneli">
+          <form type="lemma"><orth xml:lang="ka">გამომთხოვნელი</orth></form>
+          <cit type="example"><bibl>ჰ. 47</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.gamoparva">
+          <form type="lemma"><orth xml:lang="ka">გამოპარვა</orth></form>
+          <sense xml:id="lex.gamoparva.1"><def xml:lang="ka">უჩუმრად, შეუმჩნევლად შემოსვლა</def></sense>
+          <cit type="example"><bibl>ჰ. 53</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.gamosachinebeli">
+          <form type="lemma"><orth xml:lang="ka">გამოსაჩინებელი</orth></form>
+          <sense xml:id="lex.gamosachinebeli.1"><def xml:lang="ka">მაგალითი</def></sense>
+          <cit type="example"><bibl>ჰ. 7</bibl></cit>
+          <cit type="example">
+            <quote xml:lang="ka">აღუვსნის მრავალთა გამოსაჩინებელთა მიერ</quote>
+            <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.21">§ 21</ref></bibl>
+          </cit>
+        </entry>
+
+        <entry xml:id="lex.ganmtkumeli">
+          <form type="lemma"><orth xml:lang="ka">განმთქუმელი</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">καταγγελεύς</mentioned></etym>
+          <sense xml:id="lex.ganmtkumeli.1"><def xml:lang="ka">განმცხადებელი, ამბის გამავრცელებელი</def></sense>
+          <cit type="example"><bibl>3. 51</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.ganmkacreba">
+          <form type="lemma"><orth xml:lang="ka">განმკაცრება</orth><orth xml:lang="ka" type="variant">გამოწულილვა</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ἀκρίβεια</mentioned></etym>
+          <sense xml:id="lex.ganmkacreba.1"><def xml:lang="ka">დაწვრილებით გამოძიება, ჩაძიება</def></sense>
+          <cit type="example"><quote xml:lang="ka">განმკაცრდი ჩემდა გამოწულილვით</quote><bibl>ჰ. 56</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.ganmcdeloba">
+          <form type="lemma"><orth xml:lang="ka">განმცდელობა</orth></form>
+          <sense xml:id="lex.ganmcdeloba.1"><def xml:lang="ka">ცდა</def></sense>
+          <cit type="example"><bibl>ჰ. 30</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.ganmkhilveli">
+          <form type="lemma"><orth xml:lang="ka">განმხილველი</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">διορατικοί</mentioned></etym>
+          <sense xml:id="lex.ganmkhilveli.1"><def xml:lang="ka">განხილვა, მოფიქრება (მთხრელები?)</def></sense>
+          <cit type="example"><bibl>გვ. 48</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.ganmvedreba">
+          <form type="lemma"><orth xml:lang="ka">განმვედრება</orth></form>
+          <sense xml:id="lex.ganmvedreba.1"><def xml:lang="ka">გაძლიერება</def></sense>
+          <cit type="example"><bibl>ჰ. 48</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.gansazghvreba">
+          <form type="lemma"><orth xml:lang="ka">განსაზღვრება</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ὥρισεν</mentioned></etym>
+          <sense xml:id="lex.gansazghvreba.1"><def xml:lang="ka">განსაზღვრა, დადგენა</def></sense>
+          <cit type="example"><bibl>3. 50</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.gansazghvrebuli">
+          <form type="lemma"><orth xml:lang="ka">განსაზღვრებული</orth></form>
+          <sense xml:id="lex.gansazghvrebuli.1"><def xml:lang="ka">დადგენილი</def></sense>
+          <cit type="example"><bibl>ჰ. 50</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.ganqofileba">
+          <form type="lemma"><orth xml:lang="ka">განყოფილება</orth></form>
+          <sense xml:id="lex.ganqofileba.1"><def xml:lang="ka">განსხვავებულობა, სხვადასხვაობა</def></sense>
+          <cit type="example"><bibl>ჰ. 31</bibl></cit>
+          <cit type="example">
+            <quote xml:lang="ka">ბერძულად განყოფილებად აქუს მიცემითსა და მიზეზობითსა</quote>
+            <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.10">§ 10</ref></bibl>
+          </cit>
+        </entry>
+
+        <entry xml:id="lex.ganchineba">
+          <form type="lemma"><orth xml:lang="ka">განჩინებაი</orth></form>
+          <cit type="example"><quote xml:lang="ka">დასჯასა მას ადამისსა პირველად განჩინებაი შემოიღო</quote><bibl>ჰ. 10</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.gancdili">
+          <form type="lemma"><orth xml:lang="ka">განცდილი</orth></form>
+          <sense xml:id="lex.gancdili.1"><def xml:lang="ka">ნახული</def></sense>
+          <cit type="example"><bibl>ჰ. 60</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.ganckhadebuli">
+          <form type="lemma"><orth xml:lang="ka">განცხადებული</orth></form>
+          <sense xml:id="lex.ganckhadebuli.1"><def xml:lang="ka">აშკარა, თვალით სახილველი</def></sense>
+          <cit type="example"><bibl>ჰ. 37</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.gardadgoma">
+          <form type="lemma"><orth xml:lang="ka">გარდადგომა</orth></form>
+          <sense xml:id="lex.gardadgoma.1"><def xml:lang="ka">გადაადგილება, ადგილის შეცვლა</def></sense>
+          <cit type="example"><bibl>ჰ. 21</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.gonieri">
+          <form type="lemma"><orth xml:lang="ka">გონიერი</orth></form>
+          <sense xml:id="lex.gonieri.1"><def xml:lang="ka">გონებით წარმოდგენილი, არამატერიალური</def></sense>
+          <cit type="example"><bibl>ჰ. 3</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.grdznobadi">
+          <form type="lemma"><orth xml:lang="ka">გრძნობადი</orth></form>
+          <sense xml:id="lex.grdznobadi.1"><def xml:lang="ka">შეგრძნებადი, მატერიალური</def></sense>
+          <cit type="example"><bibl>ჰ. 3</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.gulvebadi">
+          <form type="lemma"><orth xml:lang="ka">გულვებადი</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">μέλλουσα</mentioned></etym>
+          <sense xml:id="lex.gulvebadi.1"><def xml:lang="ka">მომავალი, მყოფადი</def></sense>
+          <cit type="example"><bibl>გვ. 42</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.dadgineba">
+          <form type="lemma"><orth xml:lang="ka">დადგინება</orth></form>
+          <sense xml:id="lex.dadgineba.1"><def xml:lang="ka">დაყენება, გაჩერება</def></sense>
+          <cit type="example"><bibl>ჰ. 61</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.daknineba">
+          <form type="lemma"><orth xml:lang="ka">დაკნინებაი</orth></form>
+          <sense xml:id="lex.daknineba.1"><def xml:lang="ka">დამცირება</def></sense>
+          <cit type="example"><bibl>ჰ. 2</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.dambechdveli">
+          <form type="lemma"><orth xml:lang="ka">დამბეჭდველი</orth></form>
+          <sense xml:id="lex.dambechdveli.1"><def xml:lang="ka">განმამტკიცებელი, დამმოწმებელი</def></sense>
+          <cit type="example"><bibl>ჰ. 20</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.damtkhuevit">
+          <form type="lemma"><orth xml:lang="ka">დამთხუევით</orth></form>
+          <cit type="example"><bibl>ჰ. 57</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.dampqrobeli">
+          <form type="lemma"><orth xml:lang="ka">დამპყრობელი</orth></form>
+          <sense xml:id="lex.dampqrobeli.1"><def xml:lang="ka">ძლევამოსილი, გაბატონებული</def></sense>
+          <cit type="example"><bibl>ჰ. 46</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.dasabami">
+          <form type="lemma"><orth xml:lang="ka">დასაბამი</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ἐν ἀρχῇ</mentioned></etym>
+          <cit type="example"><quote xml:lang="ka">დასაბამსა იყო სიტყუად</quote><bibl>ი. 1, 1</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.dasatevneli">
+          <form type="lemma"><orth xml:lang="ka">დასატევნელი</orth></form>
+          <sense xml:id="lex.dasatevneli.1"><def xml:lang="ka">შესაძლებელი</def></sense>
+          <cit type="example"><bibl>3. 1</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.datevna">
+          <form type="lemma"><orth xml:lang="ka">დატევნა</orth></form>
+          <cit type="example"><bibl>3. 51</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.daqenebuli">
+          <form type="lemma"><orth xml:lang="ka">დაყენებული</orth></form>
+          <sense xml:id="lex.daqenebuli.1"><def xml:lang="ka">აკრძალული, მიუღებელი</def></sense>
+          <cit type="example"><bibl>3. 28</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.daqofili">
+          <form type="lemma"><orth xml:lang="ka">დაყოფილი</orth></form>
+          <sense xml:id="lex.daqofili.1"><def xml:lang="ka">დახშული, დახურული</def></sense>
+          <cit type="example"><quote xml:lang="ka">დაყოფილ იქმნენინ პირნი მწვალებელთანი</quote><bibl>ჰ. 41</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.dajsna">
+          <form type="lemma"><orth xml:lang="ka">დაჯსნა</orth></form>
+          <sense xml:id="lex.dajsna.1"><def xml:lang="ka">მოსპობა</def></sense>
+          <cit type="example"><bibl>ჰ. 10</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.dreka">
+            <form type="lemma"><orth xml:lang="ka">დრეკა</orth></form>
+            <sense xml:id="lex.dreka.1"><def xml:lang="ka">ბრუნება</def></sense>
+            <cit type="example">
+                <quote xml:lang="ka">სცავს თითოეული დრეკასა სახელთასა</quote>
+                <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.2">§ 2</ref></bibl>
+            </cit>
+            <cit type="example">
+                <quote xml:lang="ka">ამას ეწოდების შობილობითი და ნათესაობითი დრეკად სახელისად</quote>
+                <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.9">§ 9</ref></bibl>
+            </cit>
+        </entry>
+
+        <entry xml:id="lex.eksoria">
+          <form type="lemma"><orth xml:lang="ka">ექსორია</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ἐξορία</mentioned></etym>
+          <sense xml:id="lex.eksoria.1"><def xml:lang="ka">გაძევება</def></sense>
+          <cit type="example"><bibl>ჰ. 10</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.vidreme">
+          <form type="lemma"><orth xml:lang="ka">ვიდრემე</orth></form>
+          <note>See page 95</note>
+        </entry>
+
+        <entry xml:id="lex.vrcelmetqueleba">
+          <form type="lemma"><orth xml:lang="ka">ვრცელ-მეტყუელებაი</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">μακρηγορία</mentioned></etym>
+          <sense xml:id="lex.vrcelmetqueleba.1"><def xml:lang="ka">ვრცლად, გრძლად ლაპარაკი</def></sense>
+          <cit type="example"><bibl>3. 48</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.tanamoqmedi">
+          <form type="lemma"><orth xml:lang="ka">თანა-მოქმედი</orth></form>
+          <sense xml:id="lex.tanamoqmedi.1"><def xml:lang="ka">ერთად მოქმედი</def></sense>
+          <cit type="example"><bibl>ჰ. 6</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.tanaqceva">
+          <form type="lemma"><orth xml:lang="ka">თანა-ქცევა</orth></form>
+          <sense xml:id="lex.tanaqceva.1"><def xml:lang="ka">ერთად ყოფნა</def></sense>
+          <cit type="example"><bibl>44</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.theos">
+            <form type="lemma"><orth xml:lang="ka">ღმერთი</orth></form>
+            <etym><lang>grc</lang> <mentioned xml:lang="grc">θεός</mentioned></etym>
+            <cit type="example">
+                <quote xml:lang="ka">ღმერთსა ვიდრემე ეწოდების თეოს</quote>
+                <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.4">§ 4</ref></bibl>
+            </cit>
+        </entry>
+
+        <entry xml:id="lex.trias">
+            <form type="lemma"><orth xml:lang="ka">სამება</orth></form>
+            <etym><lang>grc</lang> <mentioned xml:lang="grc">τριάς</mentioned></etym>
+            <cit type="example">
+                <quote xml:lang="ka">სამებისა ვიდრემე სახელი დედალი არს</quote>
+                <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.4">§ 4</ref></bibl>
+            </cit>
+        </entry>
+
+        <entry xml:id="lex.iataki">
+          <form type="lemma"><orth xml:lang="ka">იატაკი</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ἔδαφος</mentioned></etym>
+          <sense xml:id="lex.iataki.1"><def xml:lang="ka">საფუძველი, ძირი</def></sense>
+          <cit type="example"><bibl>33. 46</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.iefoba">
+          <form type="lemma"><orth xml:lang="ka">იეფობაი</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ἐν ἐυθηνίᾳ</mentioned></etym>
+          <sense xml:id="lex.iefoba.1"><def xml:lang="ka">სიუხვე, მრავლად ყოფნა</def></sense>
+          <cit type="example"><bibl>23. 49</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.kacobrivi">
+          <form type="lemma"><orth xml:lang="ka">კაცობრივი</orth></form>
+          <sense xml:id="lex.kacobrivi.1"><def xml:lang="ka">ადამიანური, ადამიანისათzს დამახასიათებელი</def></sense>
+          <cit type="example"><bibl>3. 4</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.martivi">
+          <form type="lemma"><orth xml:lang="ka">მარტივი</orth></form>
+          <sense xml:id="lex.martivi.1"><def xml:lang="ka">უბრალო, განუსწავლელი</def></sense>
+          <cit type="example"><bibl>3. 47</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.mgulebeli">
+          <form type="lemma"><orth xml:lang="ka">მგულებელი</orth></form>
+          <sense xml:id="lex.mgulebeli.1"><def xml:lang="ka">მსურველი, განზრახველი</def></sense>
+          <cit type="example"><bibl>67</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.mezobloba">
+          <form type="lemma"><orth xml:lang="ka">მეზობლობა</orth></form>
+          <sense xml:id="lex.mezobloba.1"><def xml:lang="ka">ახლოს ცხოვრება, მეზობლად ყოფნა</def></sense>
+          <cit type="example"><bibl>ჰ. 52</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.mecnieri">
+          <form type="lemma"><orth xml:lang="ka">მეცნიერი</orth></form>
+          <sense xml:id="lex.mecnieri.1"><def xml:lang="ka">მცოდნე</def></sense>
+          <cit type="example"><bibl>ჰ. 2</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.mitualva">
+          <form type="lemma"><orth xml:lang="ka">მითუალვა</orth></form>
+          <sense xml:id="lex.mitualva.1"><def xml:lang="ka">მიღება</def></sense>
+          <cit type="example"><bibl>ჰ. 2</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.mifarulqmnili">
+          <form type="lemma"><orth xml:lang="ka">მიფარულ-ქმნილი</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">οἰκουμένη</mentioned></etym>
+          <sense xml:id="lex.mifarulqmnili.1"><def xml:lang="ka">დაფარული</def></sense>
+          <cit type="example"><bibl>33. 47</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.miquma">
+          <form type="lemma"><orth xml:lang="ka">მიქუმა</orth></form>
+          <sense xml:id="lex.miquma.1"><def xml:lang="ka">აყვანა</def></sense>
+        </entry>
+
+        <entry xml:id="lex.mmcqseli">
+          <form type="lemma"><orth xml:lang="ka">მმწყსელი</orth></form>
+          <cit type="example"><bibl>3. 60</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.mnebebeloba">
+          <form type="lemma"><orth xml:lang="ka">მნებებელობა</orth></form>
+          <sense xml:id="lex.mnebebeloba.1"><def xml:lang="ka">მოსურვება</def></sense>
+          <cit type="example"><bibl>3. 60</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.moakhleba">
+          <form type="lemma"><orth xml:lang="ka">მოახლება</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ἐγγίζει</mentioned></etym>
+          <sense xml:id="lex.moakhleba.1"><def xml:lang="ka">მოახლოვება</def></sense>
+          <cit type="example"><quote xml:lang="ka">მოახლდების სიადრით სიმართლე ჩემი</quote><bibl>3. 4</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.mogoneba">
+          <form type="lemma"><orth xml:lang="ka">მოგონებაი</orth></form>
+          <sense xml:id="lex.mogoneba.1"><def xml:lang="ka">გააზრება, გაგება</def></sense>
+          <cit type="example"><bibl>3. 13</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.molodebadi">
+          <form type="lemma"><orth xml:lang="ka">მოლოდებადი</orth></form>
+          <sense xml:id="lex.molodebadi.1"><def xml:lang="ka">მომავალი, მყოფადი</def></sense>
+          <cit type="example"><bibl>ჰ. 45</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.momvachrebeli">
+          <form type="lemma"><orth xml:lang="ka">მომვაჭრებელი</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">πραγματευόμενος</mentioned></etym>
+          <sense xml:id="lex.momvachrebeli.1"><def xml:lang="ka">შემსრულებელი, საქმის აღმსრულებელი</def></sense>
+          <cit type="example"><bibl>23. 39</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.momchirneoba">
+          <form type="lemma"><orth xml:lang="ka">მომჭირნეობაი</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ὑπομονή</mentioned></etym>
+          <sense xml:id="lex.momchirneoba.1"><def xml:lang="ka">მოთმინება, ჭირთა თმენა</def></sense>
+          <cit type="example"><bibl>83. 49</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.mosajuloba">
+          <form type="lemma"><orth xml:lang="ka">მოსაჯულობაი</orth></form>
+          <cit type="example"><bibl>3. 19</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.moqaduli">
+          <form type="lemma"><orth xml:lang="ka">მოქადული</orth></form>
+          <cit type="example"><bibl>4. 15</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.moqalaqoba">
+          <form type="lemma"><orth xml:lang="ka">მოქალაქობა</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ἐμπολιτεύεται</mentioned></etym>
+          <sense xml:id="lex.moqalaqoba.1"><def xml:lang="ka">ცხოვრება, მოქმედება</def></sense>
+          <cit type="example"><bibl>ჰ. 51</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.mocapeqofa">
+          <form type="lemma"><orth xml:lang="ka">მოწაფე-ყოფაი</orth></form>
+          <sense xml:id="lex.mocapeqofa.1"><def xml:lang="ka">დამოწაფება, დამორჩილება</def></sense>
+          <cit type="example"><bibl>ჰ. 13</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.mravalghmrteeba">
+          <form type="lemma"><orth xml:lang="ka">მრავალღმრთეებაი</orth></form>
+          <cit type="example"><bibl>3. 48</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.mqcevaroba">
+          <form type="lemma"><orth xml:lang="ka">მქცევარობაი</orth></form>
+          <sense xml:id="lex.mqcevaroba.1"><def xml:lang="ka">სიარული, მიმოსვლა</def></sense>
+          <cit type="example"><bibl>ჰ. 44</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.mqceoba">
+          <form type="lemma"><orth xml:lang="ka">მქცეობაი</orth></form>
+          <sense xml:id="lex.mqceoba.1"><def xml:lang="ka">თვისება, საქციელი</def></sense>
+          <cit type="example"><bibl>3. 44</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.mdzlavrebuli">
+          <form type="lemma"><orth xml:lang="ka">მძლავრებული</orth></form>
+          <sense xml:id="lex.mdzlavrebuli.1"><def xml:lang="ka">დაძლეული, დაჯაბნებული</def></sense>
+          <cit type="example"><bibl>ჰ. 56</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.mknoba">
+          <form type="lemma"><orth xml:lang="ka">მკნობა</orth></form>
+          <cit type="example"><bibl>ჰ. 48</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.nametavi">
+          <form type="lemma"><orth xml:lang="ka">ნამეტავი</orth></form>
+          <cit type="example"><bibl>3. 21</bibl></cit>
+          <cit type="example">
+            <quote xml:lang="ka">ნამეტავად ვჰგონეთ ამათთჳს სიტყჳსა განვრცობას</quote>
+            <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.24">§ 24</ref></bibl>
+          </cit>
+        </entry>
+
+        <entry xml:id="lex.orghano">
+          <form type="lemma"><orth xml:lang="ka">ორღანო</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ὄργανον</mentioned></etym>
+          <sense xml:id="lex.orghano.1"><def xml:lang="ka">იარაღი, ორგანო</def></sense>
+          <cit type="example"><bibl>3. 56</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.ridoba">
+          <form type="lemma"><orth xml:lang="ka">რიდობაი</orth></form>
+          <sense xml:id="lex.ridoba.1"><def xml:lang="ka">მოკრძალება, კრძალვა</def></sense>
+          <cit type="example"><bibl>3. 65</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.ritori">
+          <form type="lemma"><orth xml:lang="ka">რიტორი</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ῥήτωρ</mentioned></etym>
+          <sense xml:id="lex.ritori.1"><def xml:lang="ka">ორატორი, მჭევრმეტყველი</def></sense>
+          <cit type="example"><bibl>ჰ. 48</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.satanasdebo">
+          <form type="lemma"><orth xml:lang="ka">სათანამდებოი</orth></form>
+          <sense xml:id="lex.satanasdebo.1"><def xml:lang="ka">საჭირო, დასაშვები</def></sense>
+          <cit type="example"><bibl>3. 13</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.samscuali">
+          <form type="lemma"><orth xml:lang="ka">სამსჭუალი</orth></form>
+          <sense xml:id="lex.samscuali.1"><def xml:lang="ka">ლურსმანი</def></sense>
+          <cit type="example"><bibl>ჰ. 37</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.sanadiro">
+          <form type="lemma"><orth xml:lang="ka">სანადიროი</orth></form>
+          <sense xml:id="lex.sanadiro.1"><def xml:lang="ka">მისაგნებელი, დასაჭერი</def></sense>
+          <cit type="example"><bibl>3. 61</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.saolavi">
+          <form type="lemma"><orth xml:lang="ka">საოლავი</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ὤα</mentioned></etym>
+          <sense xml:id="lex.saolavi.1"><def xml:lang="ka">აშია; კიდე</def></sense>
+          <cit type="example"><bibl>გვ. 109</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.sartuli">
+          <form type="lemma"><orth xml:lang="ka">სართული</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ὄροφος</mentioned></etym>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">οὐρανόν</mentioned></etym>
+          <sense xml:id="lex.sartuli.1"><def xml:lang="ka">სახურავი; ზეცა (მეტაფორულად)</def></sense>
+          <cit type="example"><bibl>გვ. 46</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.sasmeneli">
+          <form type="lemma"><orth xml:lang="ka">სასმენელი</orth></form>
+          <sense xml:id="lex.sasmeneli.1"><def xml:lang="ka">ყური</def></sense>
+          <cit type="example"><bibl>ჰ. 47</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.sasjelisqueshe">
+          <form type="lemma"><orth xml:lang="ka">სასჯელის-ქუეშე</orth></form>
+          <sense xml:id="lex.sasjelisqueshe.1"><def xml:lang="ka">დასასჯელი</def></sense>
+          <cit type="example"><bibl>3. 13</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.sashuro">
+          <form type="lemma"><orth xml:lang="ka">საშუროი</orth></form>
+          <sense xml:id="lex.sashuro.1"><def xml:lang="ka">საჩქარო</def></sense>
+          <cit type="example"><bibl>ჰ. 19</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.sacuto">
+          <form type="lemma"><orth xml:lang="ka">საწუთოი</orth></form>
+          <sense xml:id="lex.sacuto.1"><def xml:lang="ka">წუთისოფელი</def></sense>
+          <cit type="example"><bibl>ჰ. 5</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.sactomeli">
+          <form type="lemma"><orth xml:lang="ka">საცთომელი</orth></form>
+          <sense xml:id="lex.sactomeli.1"><def xml:lang="ka">შესაცდენელი</def></sense>
+          <cit type="example"><bibl>ჰ. 48</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.sakmareba">
+          <form type="lemma"><orth xml:lang="ka">საკმარებაი</orth></form>
+          <sense xml:id="lex.sakmareba.1"><def xml:lang="ka">საჭიროება</def></sense>
+          <cit type="example"><bibl>პ. 27</bibl></cit>
+          <cit type="example">
+            <quote xml:lang="ka">თითოეულისა საკმარებისაებრცა წარმოგჳჩენიან</quote>
+            <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.11">§ 11</ref></bibl>
+          </cit>
+          <cit type="example">
+            <quote xml:lang="ka">ამათისა ძალისა განმარტებაჲ არარად ეკმარებოდა</quote>
+            <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.24">§ 24</ref></bibl>
+          </cit>
+        </entry>
+
+        <entry xml:id="lex.siadre">
+          <form type="lemma"><orth xml:lang="ka">სიადრე</orth></form>
+          <sense xml:id="lex.siadre.1"><def xml:lang="ka">სიჩქარე</def></sense>
+          <cit type="example"><bibl>ჰ. 26</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.sircxvleuli">
+          <form type="lemma"><orth xml:lang="ka">სირცხვლეული</orth></form>
+          <sense xml:id="lex.sircxvleuli.1"><def xml:lang="ka">შერცხვენილი</def></sense>
+          <cit type="example"><bibl>3. 2</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.sruleba">
+          <form type="lemma"><orth xml:lang="ka">სრულებაი</orth></form>
+          <sense xml:id="lex.sruleba.1"><def xml:lang="ka">სრულყოფილება, სავსება</def></sense>
+          <cit type="example"><bibl>ჰ. 18</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.sulisambrdzoli">
+          <form type="lemma"><orth xml:lang="ka">სულისა მბრძოლი</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">πνευματομάχος</mentioned></etym>
+          <sense xml:id="lex.sulisambrdzoli.1"><def xml:lang="ka">მწვალებელი (მაკედონიანელი)</def></sense>
+          <cit type="example"><bibl>ჰ. 27</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.skntema">
+          <form type="lemma"><orth xml:lang="ka">სკნთემაი</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">σύνθεμα</mentioned></etym>
+          <sense xml:id="lex.skntema.1"><def xml:lang="ka">თან-შედგმა, შეწყობა</def></sense>
+          <cit type="example"><bibl>83. 110</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.tanjva">
+          <form type="lemma"><orth xml:lang="ka">ტანჯვა</orth></form>
+          <sense xml:id="lex.tanjva.1"><def xml:lang="ka">ბრძოლა</def></sense>
+          <cit type="example"><bibl>ჰ. 42</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.turtva">
+          <form type="lemma"><orth xml:lang="ka">ტურთვა</orth></form>
+          <sense xml:id="lex.turtva.1"><def xml:lang="ka">აღება, ხელში აყვანა</def></sense>
+          <cit type="example"><bibl>ჰ. 5</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.uidzulebeli">
+          <form type="lemma"><orth xml:lang="ka">უიძულებელი</orth></form>
+          <sense xml:id="lex.uidzulebeli.1"><def xml:lang="ka">თავისთავადი, არა-ნაძალადევი</def></sense>
+          <cit type="example"><bibl>ჰ. 64</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.ukunsaqceveli">
+          <form type="lemma"><orth xml:lang="ka">უკუნსაქცეველი</orth></form>
+          <sense xml:id="lex.ukunsaqceveli.1"><def xml:lang="ka">უარსაყოფელი</def></sense>
+          <cit type="example"><bibl>ჰ. 39</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.umkuetelesi">
+          <form type="lemma"><orth xml:lang="ka">უმკუეთელესი</orth></form>
+          <sense xml:id="lex.umkuetelesi.1"><def xml:lang="ka">უფრო მჭრელი</def></sense>
+          <cit type="example"><bibl>3. 27</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.usamartloeba">
+          <form type="lemma"><orth xml:lang="ka">უსამართლოება</orth></form>
+          <sense xml:id="lex.usamartloeba.1"><def xml:lang="ka">უსამართლოების ჩადენა</def></sense>
+          <cit type="example"><bibl>3. 69</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.uqorcinebeli">
+          <form type="lemma"><orth xml:lang="ka">უქორწინებელი</orth></form>
+          <sense xml:id="lex.uqorcinebeli.1"><def xml:lang="ka">გაუთხოვარი</def></sense>
+          <cit type="example"><bibl>ს. 5</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.uquenaesi">
+          <form type="lemma"><orth xml:lang="ka">უქუენაესი</orth></form>
+          <sense xml:id="lex.uquenaesi.1"><def xml:lang="ka">უმდაბლესი</def></sense>
+        </entry>
+
+        <entry xml:id="lex.ughelvo">
+          <form type="lemma"><orth xml:lang="ka">უღელვო</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ἀκύμαντον</mentioned></etym>
+          <sense xml:id="lex.ughelvo.1"><def xml:lang="ka">დაწყნარებული, დამშვიდებული</def></sense>
+          <cit type="example"><bibl>83. 44</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.ughono">
+          <form type="lemma"><orth xml:lang="ka">უღონო</orth></form>
+          <sense xml:id="lex.ughono.1"><def xml:lang="ka">უძლური</def></sense>
+          <cit type="example"><bibl>ჰ. 35</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.ughonoeba">
+          <form type="lemma"><orth xml:lang="ka">უღონოება</orth></form>
+          <sense xml:id="lex.ughonoeba.1"><def xml:lang="ka">საშუალების, ღონის ვერ პოვნა</def></sense>
+          <cit type="example"><bibl>ჰ. 29</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.frtoanqmna">
+          <form type="lemma"><orth xml:lang="ka">ფრთოან-ქმნაი</orth></form>
+          <sense xml:id="lex.frtoanqmna.1"><def xml:lang="ka">ფრთების შესხმა</def></sense>
+          <cit type="example"><bibl>ჰ. 25</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.qandakebuli">
+          <form type="lemma"><orth xml:lang="ka">ქანდაკებული</orth></form>
+          <sense xml:id="lex.qandakebuli.1"><def xml:lang="ka">გამოძერწილი</def></sense>
+          <cit type="example"><bibl>ჰ. 41</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.quequemo">
+          <form type="lemma"><orth xml:lang="ka">ქუე-ქუემოი</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">τà σκέλη</mentioned></etym>
+          <sense xml:id="lex.quequemo.1"><def xml:lang="ka">ქვედა ჩასაცმელი?</def></sense>
+          <cit type="example"><bibl>გვ. 110</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.ghuacli">
+          <form type="lemma"><orth xml:lang="ka">ღუაწლი</orth></form>
+          <sense xml:id="lex.ghuacli.1"><def xml:lang="ka">ბრძოლა</def></sense>
+          <cit type="example"><bibl>ჰ. 2</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.qovlisampqrobeli">
+          <form type="lemma"><orth xml:lang="ka">ყოვლისა მპყრობელი</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">παντοκράτωρ</mentioned></etym>
+          <cit type="example"><bibl>3. 19</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.qovlisampqrobelibri">
+          <form type="lemma"><orth xml:lang="ka">ყოვლისამპყრობელებრი</orth></form>
+          <cit type="example"><bibl>ჰ. 71</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.sharavandedi">
+          <form type="lemma"><orth xml:lang="ka">შარავანდედი</orth></form>
+          <cit type="example"><bibl>3. 8</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.sheachrdilebuli">
+          <form type="lemma"><orth xml:lang="ka">შეაჩრდილებული</orth></form>
+          <sense xml:id="lex.sheachrdilebuli.1"><def xml:lang="ka">ბნელი, გაუგებარი, არანათელი</def></sense>
+          <cit type="example"><bibl>ჰ. 47</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.shebavteba">
+          <form type="lemma"><orth xml:lang="ka">შებავთება</orth></form>
+          <sense xml:id="lex.shebavteba.1"><def xml:lang="ka">სიტყვსა ცუდის თქმა</def></sense>
+          <cit type="example"><bibl>ჰ. 49</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.shemdgomoba">
+          <form type="lemma"><orth xml:lang="ka">შემდგომობაი</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ἀκολουθία</mentioned></etym>
+          <cit type="example"><bibl>33. 46</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.shemomnivtebeli">
+          <form type="lemma"><orth xml:lang="ka">შემომნივთებელი</orth></form>
+          <sense xml:id="lex.shemomnivtebeli.1"><def xml:lang="ka">მატერიალურად გარდამქცეველი</def></sense>
+          <cit type="example"><bibl>ჰ. 21</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.shemortuma">
+          <form type="lemma"><orth xml:lang="ka">შემორთუმა</orth></form>
+          <sense xml:id="lex.shemortuma.1"><def xml:lang="ka">დამატება, შემატება</def></sense>
+          <cit type="example"><bibl>ჰ. 20</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.shemosruli">
+          <form type="lemma"><orth xml:lang="ka">შემოსრული</orth></form>
+          <cit type="example"><bibl>ჰ. 1</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.shemrghueva">
+          <form type="lemma"><orth xml:lang="ka">შემრღუევა</orth></form>
+          <sense xml:id="lex.shemrghueva.1"><def xml:lang="ka">გონების არევა, ამღვრევა</def></sense>
+          <cit type="example"><bibl>ჰ. 46</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.shemchrdilveli">
+          <form type="lemma"><orth xml:lang="ka">შემჩრდილველი</orth></form>
+          <sense xml:id="lex.shemchrdilveli.1"><def xml:lang="ka">დამაბნელებელი, დამფარველი</def></sense>
+        </entry>
+
+        <entry xml:id="lex.shemcinquleba">
+          <form type="lemma"><orth xml:lang="ka">შემწინკულება</orth></form>
+          <sense xml:id="lex.shemcinquleba.1"><def xml:lang="ka">წაბილწვა, დასვრა</def></sense>
+          <cit type="example"><bibl>3. 49</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.shenacevreba">
+          <form type="lemma"><orth xml:lang="ka">შენაწევრება</orth></form>
+          <sense xml:id="lex.shenacevreba.1"><def xml:lang="ka">შეერთება</def></sense>
+          <cit type="example"><bibl>ჰ. 12</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.shesadginebeli">
+          <form type="lemma"><orth xml:lang="ka">შესადგინებელი</orth></form>
+          <sense xml:id="lex.shesadginebeli.1"><def xml:lang="ka">შემდგომად მოსასვლელი, მომდევნო</def></sense>
+          <cit type="example"><bibl>გვ. 47</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.shishueli">
+          <form type="lemma"><orth xml:lang="ka">შიშუელი</orth></form>
+          <sense xml:id="lex.shishueli.1"><def xml:lang="ka">დაუფარავი, აშკარა, უშუალო</def></sense>
+          <cit type="example"><bibl>ჰ. 22</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.cmeli">
+          <form type="lemma"><orth xml:lang="ka">ცმელი</orth></form>
+          <sense xml:id="lex.cmeli.1"><def xml:lang="ka">ცხიმი, ქონი</def></sense>
+          <cit type="example"><bibl>3. 69</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.dzvnad">
+          <form type="lemma"><orth xml:lang="ka">ძვნად</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">κατὰ τῆς... τριάδος</mentioned></etym>
+          <sense xml:id="lex.dzvnad.1"><def xml:lang="ka">საწინააღმდეგოდ</def></sense>
+          <cit type="example"><bibl>გვ. 40</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.dzlit">
+          <form type="lemma"><orth xml:lang="ka">ძლით</orth></form>
+          <sense xml:id="lex.dzlit.1"><def xml:lang="ka">მიზეზით, საშუალებით</def></sense>
+          <cit type="example"><bibl>ჰ. 37</bibl></cit>
+          <cit type="example">
+             <quote xml:lang="ka">ართრონთა ძლით უმეცრად და ბნელად საგონებელ არს</quote>
+             <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.1">§ 1</ref></bibl>
+          </cit>
+        </entry>
+
+        <entry xml:id="lex.carmodgineba">
+          <form type="lemma"><orth xml:lang="ka">წარმოდგინება</orth></form>
+          <sense xml:id="lex.carmodgineba.1"><def xml:lang="ka">ჩვენება</def></sense>
+          <cit type="example"><bibl>ჰ. 44</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.caroteba">
+          <form type="lemma"><orth xml:lang="ka">წაროტება</orth></form>
+          <sense xml:id="lex.caroteba.1"><def xml:lang="ka">გაგდება, გაძევება</def></sense>
+          <cit type="example"><bibl>11</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.cdeva">
+          <form type="lemma"><orth xml:lang="ka">წდევა</orth></form>
+          <sense xml:id="lex.cdeva.1"><def xml:lang="ka">დასხმა სითხისა</def></sense>
+          <cit type="example"><bibl>ჰ. 54</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.cesi">
+          <form type="lemma"><orth xml:lang="ka">წესი</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">τάξις</mentioned></etym>
+          <sense xml:id="lex.cesi.1"><def xml:lang="ka">დაწყობილება, განლაგება</def></sense>
+          <cit type="example"><bibl>გვ. 46</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.ciagh">
+          <form type="lemma"><orth xml:lang="ka">წიაღ</orth></form>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">κόλπος</mentioned></etym>
+          <sense xml:id="lex.ciagh.1"><def xml:lang="ka">კალთა, უბე</def></sense>
+          <cit type="example"><bibl>გვ. 48</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.khelovanmetqueleba">
+          <form type="lemma"><orth xml:lang="ka">ჴელოვან-მეტყუელება</orth></form>
+          <sense xml:id="lex.khelovanmetqueleba.1"><def xml:lang="ka">არასწორის თქმა</def></sense>
+          <cit type="example"><bibl>ჰ. 36</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.khumeuli">
+          <form type="lemma"><orth xml:lang="ka">ჴუმეული</orth></form>
+          <sense xml:id="lex.khumeuli.1"><def xml:lang="ka">დაკლებული</def></sense>
+          <cit type="example"><bibl>ჰ. 16</bibl></cit>
+        </entry>
+
+        <entry xml:id="lex.adviloba">
+            <form type="lemma"><orth xml:lang="ka">ადვილობა</orth></form>
+            <sense xml:id="lex.adviloba.1">
+                <def xml:lang="ka">მარტივი, სახელობითი ბრუნვა</def>
+            </sense>
+            <cit type="example">
+                <quote xml:lang="ka">რაჟამს ადვილობითად იკუმევდენ ხსენებასა სახელისასა</quote>
+                <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.4">§ 4</ref></bibl>
+            </cit>
+        </entry>
+
+        <entry xml:id="lex.gen">
+            <form type="lemma"><orth xml:lang="ka">შობილობითი</orth></form>
+            <sense xml:id="lex.gen.1"><def xml:lang="ka">ნათესაობითი ბრუნვა</def></sense>
+            <cit type="example">
+                <quote xml:lang="ka">შობილობითად რაჲ იტყოდინ საზღვართაებრ მათთა</quote>
+                <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.7">§ 7</ref></bibl>
+            </cit>
+        </entry>
+
+        <entry xml:id="lex.dat">
+            <form type="lemma"><orth xml:lang="ka">მიცემითი</orth></form>
+            <sense xml:id="lex.dat.1"><def xml:lang="ka">მიცემითი ბრუნვა</def></sense>
+            <cit type="example">
+                <quote xml:lang="ka">მიცემითად რად იტყოდინ</quote>
+                <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.7">§ 7</ref></bibl>
+            </cit>
+        </entry>
+
+        <entry xml:id="lex.acc">
+            <form type="lemma"><orth xml:lang="ka">მიზეზობითი</orth></form>
+            <sense xml:id="lex.acc.1"><def xml:lang="ka">ბრალდებითი ბრუნვა</def></sense>
+            <cit type="example">
+                <quote xml:lang="ka">მიზეზობითად რად</quote>
+                <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.7">§ 7</ref></bibl>
+            </cit>
+        </entry>
+
+        <entry xml:id="lex.voc">
+            <form type="lemma"><orth xml:lang="ka">წოდებითი</orth></form>
+            <sense xml:id="lex.voc.1"><def xml:lang="ka">წოდებითი ბრუნვა</def></sense>
+            <cit type="example">
+                <quote xml:lang="ka">წოდებითად რად</quote>
+                <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.7">§ 7</ref></bibl>
+            </cit>
+        </entry>
+
+        <entry xml:id="lex.sing">
+            <form type="lemma"><orth xml:lang="ka">ერთობითი</orth></form>
+            <sense xml:id="lex.sing.1"><def xml:lang="ka">მხოლობითი რიცხვი</def></sense>
+            <cit type="example">
+                <quote xml:lang="ka">ერთისა პირისა სახელის-დრეკანი არიან ხუთნი, რომელსა ერთობითად უწოდენ</quote>
+                <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.13">§ 13</ref></bibl>
+            </cit>
+        </entry>
+
+        <entry xml:id="lex.dual">
+            <form type="lemma"><orth xml:lang="ka">ორობითი</orth></form>
+            <sense xml:id="lex.dual.1"><def xml:lang="ka">ორობითი რიცხვი</def></sense>
+            <cit type="example">
+                <quote xml:lang="ka">ორობითნი მათ ეწოდებიან, რომელნი მხოლოდ ორთა პირთა საცნაურ-ჰყოფენ</quote>
+                <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.8">§ 8</ref></bibl>
+            </cit>
+        </entry>
+
+        <entry xml:id="lex.plural">
+            <form type="lemma"><orth xml:lang="ka">განმრავლებითი</orth></form>
+            <sense xml:id="lex.plural.1"><def xml:lang="ka">მრავლობითი რიცხვი</def></sense>
+            <cit type="example">
+                <quote xml:lang="ka">განმრავლებითთანიცა</quote>
+                <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.5">§ 5</ref></bibl>
+            </cit>
+        </entry>
+
+        <entry xml:id="lex.pneuma">
+            <form type="lemma"><orth xml:lang="ka">სული</orth></form>
+            <etym><lang>grc</lang> <mentioned xml:lang="grc">πνεῦμα</mentioned></etym>
+            <cit type="example">
+                <quote xml:lang="ka">სულსა წმიდასა არა მამალი ეწოდების სახელი... არამედ შუად</quote>
+                <bibl><title>სიტყუაჲ ართრონთათჳს</title>, <ref target="treatise.xml#sec.17">§ 17</ref></bibl>
+            </cit>
+        </entry>
+
+
+
+      </div>
+    </body>
+  </text>
+</TEI>

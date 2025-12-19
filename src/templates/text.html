@@ -1,0 +1,641 @@
+{% extends "base.html" %}
+
+{% block title %}ტექსტი — სიტყუა ართრონთათჳს{% endblock %}
+
+{% block extra_css %}
+.term-link { 
+    text-decoration: underline; 
+    text-decoration-color: #a5b4fc; 
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+.term-link:hover { 
+    text-decoration-color: #6366f1;
+    background: #eef2ff;
+    border-radius: 2px;
+}
+.folio-marker { 
+    font-size: 0.7em; 
+    color: #888;
+    font-family: 'Noto Sans Georgian', sans-serif;
+}
+.apparatus-marker { 
+    color: #b45309; 
+    font-size: 0.5em; 
+    margin-left: -5px; 
+    cursor: pointer;
+    vertical-align: super;
+    font-weight: 500;
+}
+.apparatus-marker:hover { color: #92400e; }
+.apparatus-inline {
+    border-bottom: 1px dotted #d97706;
+}
+.reading-s {
+    background: #fef3c7;
+    padding: 0 2px;
+    border-radius: 2px;
+}
+.witness-toggle.active { 
+    background: #1a1a1a; 
+    color: white; 
+}
+.section-anchor {
+    color: #9ca3af;
+    opacity: 0;
+    transition: opacity 0.15s;
+    margin-left: 0.5rem;
+}
+section:hover .section-anchor {
+    opacity: 1;
+}
+.apparatus-entry.highlighted {
+    background: #fef9c3;
+    margin: -0.25rem -0.5rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+.section-divider {
+    border-top: 1px solid #e5e7eb;
+    margin: 2rem 0;
+    position: relative;
+}
+.section-divider::before {
+    content: '§';
+    position: absolute;
+    top: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 0 0.5rem;
+    color: #d1d5db;
+    font-size: 0.875rem;
+}
+.witness-bar {
+    transition: all 0.2s ease;
+}
+
+/* Lexicon Popup - Margin note style */
+.lexicon-popup {
+    position: absolute;
+    z-index: 50;
+    width: 260px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.15s, visibility 0.15s;
+}
+.lexicon-popup.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Connector line to term (large screens) */
+.lexicon-popup::before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: -20px;
+    width: 20px;
+    height: 1px;
+    background: #d1d5db;
+}
+.lexicon-popup::after {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: -6px;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 50%;
+}
+
+/* Small screens - popup below term */
+@media (max-width: 1280px) {
+    .lexicon-popup::before,
+    .lexicon-popup::after {
+        display: none;
+    }
+}
+{% endblock %}
+
+{% block content %}
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-6">
+        <div class="flex items-center gap-4">
+            <h1 class="text-xl font-medium">ტრაქტატის ტექსტი</h1>
+            <span class="text-sm text-gray-400">{{ section_count }} პარაგრაფი</span>
+        </div>
+        <div class="flex items-center gap-3 text-sm">
+            <span class="text-gray-400">ხელნაწერი:</span>
+            <button id="wit-a" class="witness-toggle active px-3 py-1 rounded text-xs border border-gray-300" data-witness="A" title="ხელნაწერი A (თბილისი)">A</button>
+            <button id="wit-s" class="witness-toggle px-3 py-1 bg-white border border-gray-300 text-gray-600 rounded text-xs hover:bg-gray-50" data-witness="S" title="ხელნაწერი S (სინა)">S</button>
+        </div>
+    </div>
+    
+    <!-- Witness Info Bar -->
+    <div class="witness-bar bg-gray-50 border border-gray-200 rounded-lg px-4 py-2.5 mb-6 flex items-center justify-between text-sm">
+        <div class="flex items-center gap-2">
+            <span class="inline-flex items-center justify-center w-6 h-6 rounded bg-gray-800 text-white text-xs font-medium" id="witness-sigil">A</span>
+            <div class="text-gray-600">
+                <span id="witness-settlement">{{ witnesses.A.settlement if witnesses else 'თბილისი' }}</span><span class="text-gray-300 mx-1.5">·</span><span id="witness-repository" class="text-gray-500">{{ witnesses.A.repository if witnesses else 'ხელნაწერთა ეროვნული ცენტრი' }}</span><span class="text-gray-300 mx-1.5">·</span><span id="witness-locus" class="text-gray-400">{{ witnesses.A.locus if witnesses else 'ff. 32r–36v' }}</span>
+            </div>
+        </div>
+        <a href="{{ url_for('manuscripts') }}" class="text-xs text-gray-400 hover:text-gray-600 flex items-center gap-1">
+            ხელნაწერების შესახებ
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Text Container -->
+    <article id="text-article" class="bg-white rounded-lg border border-gray-200 relative">
+        
+        <!-- Navigation bar -->
+        <div class="border-b border-gray-100 px-6 py-3 flex items-center justify-between">
+            <!-- Left: Section navigation -->
+            <div class="flex items-center gap-3">
+                {% if not show_all %}
+                <a href="{% if prev_section %}{{ url_for('section', n=prev_section) }}{% else %}#{% endif %}" 
+                   class="{% if not prev_section %}text-gray-300 cursor-not-allowed{% else %}text-gray-400 hover:text-gray-600{% endif %}"
+                   title="წინა პარაგრაფი">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                </a>
+                <select id="section-select" class="text-sm text-gray-600 border-0 bg-transparent focus:ring-0 cursor-pointer" onchange="window.location.href=this.value">
+                    {% for sec in sections %}
+                    <option value="{{ url_for('section', n=sec.n) }}" {% if sec.n == current_section %}selected{% endif %}>
+                        § {{ sec.n }}. {{ sec.incipit|truncate(25) }}
+                    </option>
+                    {% endfor %}
+                </select>
+                <a href="{% if next_section %}{{ url_for('section', n=next_section) }}{% else %}#{% endif %}"
+                   class="{% if not next_section %}text-gray-300 cursor-not-allowed{% else %}text-gray-400 hover:text-gray-600{% endif %}"
+                   title="შემდეგი პარაგრაფი">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <span class="text-gray-300 mx-1">|</span>
+                <a href="{{ url_for('text_all') }}" class="text-xs text-gray-400 hover:text-gray-600" title="აჩვენე ყველა პარაგრაფი ერთად">ყველა ერთად</a>
+                {% else %}
+                <span class="text-sm text-gray-600">ყველა პარაგრაფი</span>
+                <span class="text-gray-300 mx-1">|</span>
+                <a href="{{ url_for('text') }}" class="text-xs text-gray-400 hover:text-gray-600">პარაგრაფებად</a>
+                {% endif %}
+            </div>
+            
+            <!-- Right: Display options -->
+            <div class="flex items-center gap-4">
+                <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer" title="კრიტიკული აპარატის ჩვენება/დამალვა">
+                    <input type="checkbox" id="show-apparatus" checked class="rounded border-gray-300 text-gray-800 focus:ring-gray-400">
+                    აპარატი
+                </label>
+                <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer" title="ფოლიოს მარკერების ჩვენება">
+                    <input type="checkbox" id="show-folios" checked class="rounded border-gray-300 text-gray-800 focus:ring-gray-400">
+                    ფოლიო
+                </label>
+            </div>
+        </div>
+        
+        <!-- Text content -->
+        <div class="p-8 md:p-12">
+            
+            {% for section in displayed_sections %}
+            {% if not loop.first and show_all %}
+            <div class="section-divider"></div>
+            {% endif %}
+            
+            <section id="sec-{{ section.n }}" class="{% if not show_all %}mb-8{% endif %}" data-urn="{{ section.urn }}">
+                
+                <!-- Section header with folio markers -->
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center">
+                        <span class="text-sm font-medium text-gray-400">§ {{ section.n }}</span>
+                        <a href="#sec-{{ section.n }}" class="section-anchor text-xs" title="ბმული ამ პარაგრაფზე">#</a>
+                    </div>
+                    {% if section.folios %}
+                    <div class="flex gap-2 folio-markers">
+                        {% for folio in section.folios %}
+                        <span class="folio-marker px-2 py-0.5 bg-gray-50 rounded border border-gray-100" title="{{ folio.ed }}: ფოლიო {{ folio.n }}">
+                            {{ folio.ed }} {{ folio.n }}
+                        </span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+                
+                <!-- Section content -->
+                <div class="font-serif-geo text-lg leading-loose text-gray-800">
+                    <p class="text-justify">
+                        {% for node in section.content %}
+                            {% if node.type == 'text' %}
+                                {{ node.value }}
+                            {% elif node.type == 'term' %}
+                                <a href="{{ url_for('lexicon') }}#{{ node.target }}" class="term-link" data-term="{{ node.target }}" title="იხ. ლექსიკონში">{{ node.text }}</a>
+                            {% elif node.type == 'app' %}
+                                <span class="apparatus-inline" data-app-id="{{ node.id }}">
+                                    <span class="reading-a">{{ node.lem }}</span>
+                                    <span class="reading-s hidden">{{ node.rdg_s or node.lem }}</span>
+                                </span><sup class="apparatus-marker" data-app="{{ node.id }}" title="იხ. აპარატი">{{ node.index }}</sup>
+                            {% elif node.type == 'folio' %}
+                                <span class="folio-marker inline-folio text-xs mx-1">[{{ node.ed }} {{ node.n }}]</span>
+                            {% elif node.type == 'greek' %}
+                                <span class="greek text-gray-600">({{ node.text }})</span>
+                            {% elif node.type == 'mentioned' %}
+                                <span class="font-medium">{{ node.ka }}</span>{% if node.grc %} <span class="greek text-gray-500">({{ node.grc }})</span>{% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </p>
+                </div>
+                
+                <!-- Per-section apparatus (for single section view) -->
+                {% if not show_all and section.apparatus %}
+                <div class="section-apparatus mt-8 pt-6 border-t border-gray-100" id="apparatus-{{ section.n }}">
+                    <h3 class="text-xs font-medium text-gray-400 uppercase tracking-wide mb-3">კრიტიკული აპარატი</h3>
+                    <div class="text-sm text-gray-600 space-y-1.5">
+                        {% for app in section.apparatus %}
+                        <p id="app-{{ app.id }}" class="apparatus-entry pl-4 border-l-2 border-gray-100">
+                            <sup class="text-amber-600 mr-1">{{ app.index }}</sup>
+                            <span class="font-medium">{{ app.lem }}</span><span class="text-gray-400">]</span>
+                            {% for rdg in app.readings %}
+                                {% if rdg.note %}<span class="italic text-gray-500">{{ rdg.note }}</span> {% endif %}
+                                {% if rdg.text %}<span>{{ rdg.text }}</span> {% endif %}
+                                <span class="text-gray-400">{{ rdg.wit }}</span>{% if not loop.last %}<span class="text-gray-300">,</span> {% endif %}
+                            {% endfor %}
+                        </p>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+            </section>
+            {% endfor %}
+            
+            <!-- Combined apparatus (for all sections view) -->
+            {% if show_all and apparatus %}
+            <div class="combined-apparatus mt-12 pt-8 border-t-2 border-gray-200" id="apparatus-panel">
+                <h3 class="text-sm font-medium text-gray-500 mb-6 flex items-center gap-2">
+                    <span>კრიტიკული აპარატი</span>
+                    <span class="text-xs font-normal text-gray-400">({{ apparatus|length }} ჩანაწერი)</span>
+                </h3>
+                <div class="text-sm text-gray-600 space-y-2 columns-1 md:columns-2 gap-8">
+                    {% for app in apparatus %}
+                    <p id="app-{{ app.id }}" class="apparatus-entry pl-4 border-l-2 border-gray-100 break-inside-avoid mb-2">
+                        <sup class="text-amber-600 mr-1">{{ app.index }}</sup>
+                        <span class="font-medium">{{ app.lem }}</span><span class="text-gray-400">]</span>
+                        {% for rdg in app.readings %}
+                            {% if rdg.note %}<span class="italic text-gray-500">{{ rdg.note }}</span> {% endif %}
+                            {% if rdg.text %}<span>{{ rdg.text }}</span> {% endif %}
+                            <span class="text-gray-400">{{ rdg.wit }}</span>{% if not loop.last %}<span class="text-gray-300">,</span> {% endif %}
+                        {% endfor %}
+                    </p>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+            
+        </div>
+        
+        <!-- Lexicon Popup (positioned by JS) -->
+        <div id="lexicon-popup" class="lexicon-popup">
+            <div class="p-3">
+                <div class="flex items-start justify-between gap-2 mb-1.5">
+                    <h4 id="popup-lemma" class="font-medium text-gray-900"></h4>
+                    <span id="popup-pos" class="text-xs px-1.5 py-0.5 bg-gray-100 rounded text-gray-500"></span>
+                </div>
+                <p id="popup-greek" class="text-sm text-gray-500 greek mb-1.5"></p>
+                <p id="popup-def" class="text-sm text-gray-600 leading-relaxed"></p>
+            </div>
+            <div class="px-3 py-2 bg-gray-50 border-t border-gray-100 rounded-b-lg">
+                <a id="popup-link" href="#" class="text-xs text-indigo-600 hover:text-indigo-800 flex items-center gap-1">
+                    სრულად ლექსიკონში
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+    </article>
+    
+    <!-- Pagination (single section view only) -->
+    {% if not show_all %}
+    <div class="flex items-center justify-between mt-8 text-sm">
+        <div class="flex items-center gap-4">
+            <span class="text-gray-400">{{ current_section }} / {{ section_count }}</span>
+            <a href="{{ url_for('text_all') }}#sec-{{ current_section }}" class="text-xs text-gray-400 hover:text-gray-600">კონტექსტში ნახვა</a>
+        </div>
+        <div class="flex gap-2">
+            <a href="{% if prev_section %}{{ url_for('section', n=prev_section) }}{% else %}#{% endif %}" 
+               class="px-4 py-2 border border-gray-200 rounded {% if not prev_section %}text-gray-300 cursor-not-allowed{% else %}text-gray-600 hover:bg-gray-50{% endif %}">
+                <span class="hidden sm:inline">წინა</span>
+                <span class="sm:hidden">←</span>
+            </a>
+            <a href="{% if next_section %}{{ url_for('section', n=next_section) }}{% else %}#{% endif %}"
+               class="px-4 py-2 border border-gray-200 rounded {% if not next_section %}text-gray-300 cursor-not-allowed{% else %}text-gray-600 hover:bg-gray-50{% endif %}">
+                <span class="hidden sm:inline">შემდეგი</span>
+                <span class="sm:hidden">→</span>
+            </a>
+        </div>
+    </div>
+    {% endif %}
+    
+    <!-- Jump to top (all sections view) -->
+    {% if show_all %}
+    <div class="fixed bottom-8 right-8">
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" 
+                class="p-3 bg-white border border-gray-200 rounded-full shadow-lg hover:bg-gray-50 text-gray-400 hover:text-gray-600"
+                title="დასაწყისში">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 15l7-7 7 7"/>
+            </svg>
+        </button>
+    </div>
+    {% endif %}
+    
+</main>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Lexicon data embedded from build
+const lexiconData = {{ lexicon | tojson | safe }};
+const lexiconBaseUrl = '{{ url_for("lexicon") }}';
+
+// Witness data
+const witnessData = {
+    A: {
+        sigil: 'A',
+        settlement: '{{ witnesses.A.settlement if witnesses else "თბილისი" }}',
+        repository: '{{ witnesses.A.repository if witnesses else "ხელნაწერთა ეროვნული ცენტრი" }}',
+        locus: '{{ witnesses.A.locus if witnesses else "ff. 32r–36v" }}'
+    },
+    S: {
+        sigil: 'S',
+        settlement: '{{ witnesses.S.settlement if witnesses else "სინა" }}',
+        repository: '{{ witnesses.S.repository if witnesses else "წმ. ეკატერინეს მონასტერი" }}',
+        locus: '{{ witnesses.S.locus if witnesses else "ff. 106r–108v" }}'
+    }
+};
+
+// Lexicon popup functionality
+const popup = document.getElementById('lexicon-popup');
+const article = document.getElementById('text-article');
+const popupLemma = document.getElementById('popup-lemma');
+const popupGreek = document.getElementById('popup-greek');
+const popupPos = document.getElementById('popup-pos');
+const popupDef = document.getElementById('popup-def');
+const popupLink = document.getElementById('popup-link');
+
+let popupTimeout;
+let currentTermLink = null;
+
+function showPopup(termLink) {
+    const termId = termLink.dataset.term.replace('lex.', '');
+    const entry = lexiconData[termId];
+    
+    if (!entry) {
+        return;
+    }
+    
+    currentTermLink = termLink;
+    
+    // Populate popup
+    popupLemma.textContent = entry.lemma;
+    popupGreek.textContent = entry.greek ? `(${entry.greek})` : '';
+    popupGreek.style.display = entry.greek ? '' : 'none';
+    popupPos.textContent = entry.pos || '';
+    popupPos.style.display = entry.pos ? '' : 'none';
+    popupDef.textContent = entry.def || 'განმარტება არ არის';
+    popupLink.href = `${lexiconBaseUrl}#${termId}`;
+    
+    // Get positions
+    const termRect = termLink.getBoundingClientRect();
+    const articleRect = article.getBoundingClientRect();
+    const popupWidth = 260;
+    const popupHeight = popup.offsetHeight || 140;
+    
+    // Check if we have room to the right (large screen margin note style)
+    const spaceRight = window.innerWidth - articleRect.right;
+    const isLargeScreen = window.innerWidth >= 1280;
+    
+    if (isLargeScreen && spaceRight >= popupWidth + 40) {
+        // Position as margin note to the right of article
+        popup.style.position = 'absolute';
+        popup.style.left = (articleRect.width + 20) + 'px';
+        popup.style.top = (termRect.top - articleRect.top + article.scrollTop - 4) + 'px';
+    } else {
+        // Position below the term (small screen fallback)
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Check if there's room below
+        const spaceBelow = window.innerHeight - termRect.bottom;
+        
+        popup.style.position = 'fixed';
+        
+        if (spaceBelow >= popupHeight + 20) {
+            popup.style.top = (termRect.bottom + 8) + 'px';
+        } else {
+            popup.style.top = (termRect.top - popupHeight - 8) + 'px';
+        }
+        
+        // Horizontal centering on term
+        let left = termRect.left + (termRect.width / 2) - (popupWidth / 2);
+        if (left < 16) left = 16;
+        if (left + popupWidth > window.innerWidth - 16) {
+            left = window.innerWidth - popupWidth - 16;
+        }
+        popup.style.left = left + 'px';
+    }
+    
+    popup.classList.add('visible');
+}
+
+function hidePopup() {
+    popup.classList.remove('visible');
+    currentTermLink = null;
+}
+
+// Event listeners for term links
+document.querySelectorAll('.term-link').forEach(link => {
+    link.addEventListener('mouseenter', function(e) {
+        clearTimeout(popupTimeout);
+        popupTimeout = setTimeout(() => showPopup(this), 200);
+    });
+    
+    link.addEventListener('mouseleave', function(e) {
+        clearTimeout(popupTimeout);
+        popupTimeout = setTimeout(hidePopup, 300);
+    });
+    
+    link.addEventListener('click', function(e) {
+        const termId = this.dataset.term.replace('lex.', '');
+        if (lexiconData[termId]) {
+            e.preventDefault();
+            if (popup.classList.contains('visible') && currentTermLink === this) {
+                hidePopup();
+            } else {
+                showPopup(this);
+            }
+        }
+    });
+});
+
+// Keep popup visible when hovering over it
+popup.addEventListener('mouseenter', function() {
+    clearTimeout(popupTimeout);
+});
+
+popup.addEventListener('mouseleave', function() {
+    popupTimeout = setTimeout(hidePopup, 200);
+});
+
+// Close popup on escape or click outside
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') hidePopup();
+});
+
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('.term-link') && !e.target.closest('.lexicon-popup')) {
+        hidePopup();
+    }
+});
+
+// Hide popup on scroll (for fixed positioning mode)
+let scrollTimeout;
+window.addEventListener('scroll', function() {
+    if (popup.style.position === 'fixed' && popup.classList.contains('visible')) {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(hidePopup, 100);
+    }
+});
+
+// Update witness info bar
+function updateWitnessBar(witness) {
+    const data = witnessData[witness];
+    document.getElementById('witness-sigil').textContent = data.sigil;
+    document.getElementById('witness-settlement').textContent = data.settlement;
+    document.getElementById('witness-repository').textContent = data.repository;
+    document.getElementById('witness-locus').textContent = data.locus;
+}
+
+// Witness toggle
+document.querySelectorAll('.witness-toggle').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const witness = this.dataset.witness;
+        document.querySelectorAll('.witness-toggle').forEach(b => {
+            b.classList.remove('active');
+            b.classList.add('bg-white', 'text-gray-600');
+        });
+        this.classList.add('active');
+        this.classList.remove('bg-white', 'text-gray-600');
+        
+        // Update text readings
+        document.querySelectorAll('.apparatus-inline').forEach(span => {
+            const readingA = span.querySelector('.reading-a');
+            const readingS = span.querySelector('.reading-s');
+            if (witness === 'A') {
+                readingA.classList.remove('hidden');
+                readingS.classList.add('hidden');
+            } else {
+                readingA.classList.add('hidden');
+                readingS.classList.remove('hidden');
+            }
+        });
+        
+        // Update witness bar
+        updateWitnessBar(witness);
+        
+        // Store preference
+        localStorage.setItem('preferred-witness', witness);
+    });
+});
+
+// Restore witness preference
+const savedWitness = localStorage.getItem('preferred-witness');
+if (savedWitness) {
+    const btn = document.querySelector(`.witness-toggle[data-witness="${savedWitness}"]`);
+    if (btn) btn.click();
+}
+
+// Toggle apparatus visibility
+const apparatusCheckbox = document.getElementById('show-apparatus');
+if (apparatusCheckbox) {
+    apparatusCheckbox.addEventListener('change', function() {
+        const panels = document.querySelectorAll('.section-apparatus, .combined-apparatus');
+        const markers = document.querySelectorAll('.apparatus-marker');
+        panels.forEach(p => p.style.display = this.checked ? '' : 'none');
+        markers.forEach(m => m.style.display = this.checked ? '' : 'none');
+    });
+}
+
+// Toggle folio markers visibility
+const folioCheckbox = document.getElementById('show-folios');
+if (folioCheckbox) {
+    folioCheckbox.addEventListener('change', function() {
+        const markers = document.querySelectorAll('.folio-marker, .folio-markers, .inline-folio');
+        markers.forEach(m => m.style.display = this.checked ? '' : 'none');
+    });
+}
+
+// Highlight apparatus on marker click/hover
+document.querySelectorAll('.apparatus-marker').forEach(marker => {
+    marker.addEventListener('click', function(e) {
+        e.preventDefault();
+        const appId = this.dataset.app;
+        const entry = document.getElementById('app-' + appId);
+        if (entry) {
+            entry.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            entry.classList.add('highlighted');
+            setTimeout(() => entry.classList.remove('highlighted'), 2000);
+        }
+    });
+    
+    marker.addEventListener('mouseenter', function() {
+        const appId = this.dataset.app;
+        const entry = document.getElementById('app-' + appId);
+        if (entry) entry.classList.add('highlighted');
+    });
+    
+    marker.addEventListener('mouseleave', function() {
+        const appId = this.dataset.app;
+        const entry = document.getElementById('app-' + appId);
+        if (entry) entry.classList.remove('highlighted');
+    });
+});
+
+// Scroll to section if hash present
+if (window.location.hash) {
+    const target = document.querySelector(window.location.hash);
+    if (target) {
+        setTimeout(() => {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+    }
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', function(e) {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+    
+    const prevLink = document.querySelector('a[title="წინა პარაგრაფი"]:not(.cursor-not-allowed)');
+    const nextLink = document.querySelector('a[title="შემდეგი პარაგრაფი"]:not(.cursor-not-allowed)');
+    
+    if (e.key === 'ArrowLeft' && prevLink) {
+        window.location.href = prevLink.href;
+    } else if (e.key === 'ArrowRight' && nextLink) {
+        window.location.href = nextLink.href;
+    }
+});
+</script>
+{% endblock %}

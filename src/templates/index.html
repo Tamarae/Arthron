@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block html_class %} class="scroll-smooth"{% endblock %}
+{% block body_class %} min-h-screen flex flex-col bg-gray-50{% endblock %} <!-- Added bg-gray-50 for subtle contrast with cards -->
+{% block nav_class %}{% endblock %}
+
+{% block content %}
+<main class="flex-1 flex flex-col items-center justify-center px-4 py-16">
+    <div class="max-w-4xl mx-auto text-center">
+        
+        <!-- Title SVG -->
+        <!-- Added a drop shadow to the SVG container if it helps legibility -->
+        <div class="mb-8 w-full max-w-lg mx-auto">
+            {% include "partials/title.svg" ignore missing %}
+        </div>
+        
+        <!-- Subtitle -->
+        <!-- Added font-serif-geo class -->
+        <p class="text-xl text-gray-600 font-serif-geo tracking-wide mb-16">
+            ციფრული სამეცნიერო გამოცემა
+        </p>
+        
+        <!-- Navigation cards -->
+        <!-- Changed gap to gap-6 for better spacing -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full mx-auto font-serif-geo">
+            
+            <!-- 1. TEXT -->
+            <a href="{{ url_for('text') }}" class="group p-6 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-indigo-300 hover:-translate-y-1 transition-all duration-300">
+                <div class="mb-3 text-indigo-500 opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform">
+                    <!-- Document Icon -->
+                    <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                </div>
+                <div class="text-lg font-medium text-gray-800 group-hover:text-indigo-600">ტექსტი</div>
+                <div class="text-xs text-gray-500 mt-1 font-sans">{{ section_count }} თავი</div>
+            </a>
+
+            <!-- 2. LEXICON -->
+            <a href="{{ url_for('lexicon') }}" class="group p-6 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-emerald-300 hover:-translate-y-1 transition-all duration-300">
+                <div class="mb-3 text-emerald-500 opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform">
+                    <!-- Book/Dictionary Icon -->
+                    <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 4.168 6.253v13C4.168 19.624 5.81 20 7.5 20s3.332-.477 4.5-1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 19.624 18.247 20 16.5 20a4.5 4.5 0 01-1.5-.25"></path></svg>
+                </div>
+                <div class="text-lg font-medium text-gray-800 group-hover:text-emerald-600">ლექსიკონი</div>
+                <div class="text-xs text-gray-500 mt-1 font-sans">{{ entry_count }} ერთეული</div>
+            </a>
+
+            <!-- 3. INDEX -->
+            <a href="{{ url_for('sadziebeli') }}" class="group p-6 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-amber-300 hover:-translate-y-1 transition-all duration-300">
+                <div class="mb-3 text-amber-500 opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform">
+                    <!-- List/Search Icon -->
+                    <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12"></path></svg>
+                </div>
+                <div class="text-lg font-medium text-gray-800 group-hover:text-amber-600">საძიებელი</div>
+                <!-- Added placeholder text to balance the grid -->
+                <div class="text-xs text-gray-500 mt-1 font-sans">სახელები და ტერმინები</div>
+            </a>
+
+            <!-- 4. ABOUT -->
+            <a href="{{ url_for('about') }}" class="group p-6 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-gray-400 hover:-translate-y-1 transition-all duration-300">
+                <div class="mb-3 text-gray-500 opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform">
+                    <!-- Info Icon -->
+                    <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <div class="text-lg font-medium text-gray-800 group-hover:text-gray-900">შესახებ</div>
+                <!-- Added placeholder text -->
+                <div class="text-xs text-gray-500 mt-1 font-sans">გამოცემის აღწერა</div>
+            </a>
+        </div>
+        
+        <!-- Attribution -->
+        <div class="mt-20 border-t border-gray-200 pt-8">
+            <p class="font-serif-geo text-gray-600">
+                რედაქტორი
+            </p>
+            <p class="font-serif-geo text-lg font-medium text-gray-900 mt-1">
+                მზექალა შანიძე
+            </p>
+            <p class="text-sm text-gray-400 mt-2 font-sans">
+                თბილისი, 1990
+            </p>
+        </div>
+    </div>
+</main>
+{% endblock %}
+
+<!-- Removed duplicate link to About in footer, unless you have a specific legal/privacy page -->
+{% block footer_extra %}{% endblock %}

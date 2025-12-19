@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI>
+    <text>
+        <body>
+            <div type="article" xml:id="art.arthron">
+                <head>სიტყუა ართრონთათვს: კვლევა</head>
+                <div type="section" xml:id="res.intro">...</div>
+                <div type="section" xml:id="res.manuscripts">
+                    <ref target="treatise.xml#sec.3">§3</ref>...
+                </div>
+                <div type="section" xml:id="res.language">...</div>
+            </div>
+        </body>
+    </text>
+</TEI>

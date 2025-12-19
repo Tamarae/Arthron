@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ka">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="ka">ლექსიკონი: სიტყუა ართრონთათჳს</title>
+        <title xml:lang="en" type="sub">Lexicon: Discourse on Articles</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Digital Scholarly Edition</publisher>
+        <date when="2025">2025</date>
+        <idno type="cts-urn">urn:cts:georgian:shanidze.arthron.lexicon</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Compiled from the Old Georgian grammatical treatise.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Lexicon of grammatical terminology for the digital edition.</p>
+      </projectDesc>
+    </encodingDesc>
+  </teiHeader>
+  
+  <text>
+    <body>
+      <div type="lexicon">
+        
+        <!-- CORE GRAMMATICAL TERMS -->
+        
+        <entry xml:id="lex.arthron">
+          <form type="lemma">
+            <orth xml:lang="ka">ართრონი</orth>
+            <orth xml:lang="ka" type="variant">ართრონ-ი</orth>
+          </form>
+          <gramGrp>
+            <pos value="noun">n.</pos>
+            <gen value="masc">მამრ.</gen>
+          </gramGrp>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ἄρθρον</mentioned></etym>
+          <sense xml:id="lex.arthron.1">
+            <def xml:lang="ka">განსაზღვრული არტიკლი; წინასართი, რომელიც სახელს წინ უსწრებს ბერძნულ ენაში</def>
+            <def xml:lang="en">definite article; prefix attached to nouns in Greek</def>
+          </sense>
+          <cit type="example">
+            <quote xml:lang="ka">ართრონნი თითოეულისა ნათესავისანი არიან ათცამეტ</quote>
+            <bibl><ref target="#sec.3">§3</ref></bibl>
+          </cit>
+          <note xml:lang="en">Central concept of the treatise. The author explains that Georgian lacks articles entirely, making Greek constructions untranslatable.</note>
+        </entry>
+        
+        <entry xml:id="lex.dreka">
+          <form type="lemma">
+            <orth xml:lang="ka">დრეკა</orth>
+          </form>
+          <gramGrp>
+            <pos value="noun">n.</pos>
+          </gramGrp>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">κλίσις</mentioned></etym>
+          <sense xml:id="lex.dreka.1">
+            <def xml:lang="ka">ბრუნვა; სახელის ფორმათა ცვლა</def>
+            <def xml:lang="en">declension; case inflection of nouns</def>
+          </sense>
+          <cit type="example">
+            <quote xml:lang="ka">ესრეთ ათცამეტ არიან დრეკანი სახელთა მამალთანი</quote>
+            <bibl><ref target="#sec.11">§11</ref></bibl>
+          </cit>
+        </entry>
+        
+        <!-- GENDER TERMS -->
+        
+        <entry xml:id="lex.masc">
+          <form type="lemma">
+            <orth xml:lang="ka">მამალი</orth>
+            <orth xml:lang="ka" type="variant">მამლ-ი</orth>
+          </form>
+          <gramGrp>
+            <pos value="adj">adj.</pos>
+          </gramGrp>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ἀρσενικόν</mentioned></etym>
+          <sense xml:id="lex.masc.1">
+            <def xml:lang="ka">მამრობითი სქესი</def>
+            <def xml:lang="en">masculine gender</def>
+          </sense>
+          <xr type="contrast"><ref target="#lex.fem">დედალი</ref></xr>
+          <xr type="contrast"><ref target="#lex.neut">შუა</ref></xr>
+        </entry>
+        
+        <entry xml:id="lex.fem">
+          <form type="lemma">
+            <orth xml:lang="ka">დედალი</orth>
+            <orth xml:lang="ka" type="variant">დედლ-ი</orth>
+          </form>
+          <gramGrp>
+            <pos value="adj">adj.</pos>
+          </gramGrp>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">θηλυκόν</mentioned></etym>
+          <sense xml:id="lex.fem.1">
+            <def xml:lang="ka">მდედრობითი სქესი</def>
+            <def xml:lang="en">feminine gender</def>
+          </sense>
+          <cit type="example">
+            <quote xml:lang="ka">სამებისა სახელი დედალი არს</quote>
+            <bibl><ref target="#sec.13">§13</ref></bibl>
+          </cit>
+        </entry>
+        
+        <entry xml:id="lex.neut">
+          <form type="lemma">
+            <orth xml:lang="ka">შუა</orth>
+            <orth xml:lang="ka" type="variant">შუაჲ</orth>
+          </form>
+          <gramGrp>
+            <pos value="adj">adj.</pos>
+          </gramGrp>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">οὐδέτερον</mentioned></etym>
+          <sense xml:id="lex.neut.1">
+            <def xml:lang="ka">საშუალო სქესი</def>
+            <def xml:lang="en">neuter gender</def>
+          </sense>
+          <cit type="example">
+            <quote xml:lang="ka">სულსა წმიდასა არა მამალი ეწოდების სახელი არცა დედალი, არამედ შუად</quote>
+            <bibl><ref target="#sec.17">§17</ref></bibl>
+          </cit>
+        </entry>
+        
+        <!-- NUMBER TERMS -->
+        
+        <entry xml:id="lex.sing">
+          <form type="lemma">
+            <orth xml:lang="ka">ერთობითი</orth>
+          </form>
+          <gramGrp>
+            <pos value="adj">adj.</pos>
+          </gramGrp>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ἑνικόν</mentioned></etym>
+          <sense xml:id="lex.sing.1">
+            <def xml:lang="ka">მხოლობითი რიცხვი</def>
+            <def xml:lang="en">singular number</def>
+          </sense>
+        </entry>
+        
+        <entry xml:id="lex.dual">
+          <form type="lemma">
+            <orth xml:lang="ka">ორობითი</orth>
+          </form>
+          <gramGrp>
+            <pos value="adj">adj.</pos>
+          </gramGrp>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">δυϊκόν</mentioned></etym>
+          <sense xml:id="lex.dual.1">
+            <def xml:lang="ka">ორობითი რიცხვი</def>
+            <def xml:lang="en">dual number</def>
+          </sense>
+          <note xml:lang="en">The author notes that Georgian lacks dual number, making these Greek forms untranslatable.</note>
+          <cit type="example">
+            <quote xml:lang="ka">ორობითნი მათ ეწოდებიან, რომელნი მხოლოდ ორთა პირთა საცნაურ-ჰყოფენ</quote>
+            <bibl><ref target="#sec.8">§8</ref></bibl>
+          </cit>
+        </entry>
+        
+        <entry xml:id="lex.plural">
+          <form type="lemma">
+            <orth xml:lang="ka">განმრავლებითი</orth>
+          </form>
+          <gramGrp>
+            <pos value="adj">adj.</pos>
+          </gramGrp>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">πληθυντικόν</mentioned></etym>
+          <sense xml:id="lex.plural.1">
+            <def xml:lang="ka">მრავლობითი რიცხვი</def>
+            <def xml:lang="en">plural number</def>
+          </sense>
+        </entry>
+        
+        <!-- CASE TERMS -->
+        
+        <entry xml:id="lex.adviloba">
+          <form type="lemma">
+            <orth xml:lang="ka">ადვილობითი</orth>
+          </form>
+          <gramGrp>
+            <pos value="adj">adj.</pos>
+          </gramGrp>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ὀνομαστική (πτῶσις)</mentioned></etym>
+          <sense xml:id="lex.adviloba.1">
+            <def xml:lang="ka">სახელობითი ბრუნვა</def>
+            <def xml:lang="en">nominative case</def>
+          </sense>
+          <note xml:lang="en">Lit. "easy/simple case" — calque of Greek ὀρθή "straight, upright"</note>
+        </entry>
+        
+        <entry xml:id="lex.gen">
+          <form type="lemma">
+            <orth xml:lang="ka">შობილობითი</orth>
+            <orth xml:lang="ka" type="variant">ნათესაობითი</orth>
+          </form>
+          <gramGrp>
+            <pos value="adj">adj.</pos>
+          </gramGrp>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">γενική (πτῶσις)</mentioned></etym>
+          <sense xml:id="lex.gen.1">
+            <def xml:lang="ka">ნათესაობითი ბრუნვა</def>
+            <def xml:lang="en">genitive case</def>
+          </sense>
+          <note xml:lang="en">Two variant terms are used: შობილობითი (from "birth") and ნათესაობითი (from "kinship")</note>
+        </entry>
+        
+        <entry xml:id="lex.dat">
+          <form type="lemma">
+            <orth xml:lang="ka">მიცემითი</orth>
+          </form>
+          <gramGrp>
+            <pos value="adj">adj.</pos>
+          </gramGrp>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">δοτική (πτῶσις)</mentioned></etym>
+          <sense xml:id="lex.dat.1">
+            <def xml:lang="ka">მიცემითი ბრუნვა</def>
+            <def xml:lang="en">dative case</def>
+          </sense>
+          <cit type="example">
+            <quote xml:lang="ka">მიცემითი ამისთჳს ეწოდების ლექსსა მას: რაჟამს ეტყოდი ვისმე, ვითარმედ: „ვის მის-ცემ ამას რასმე?!"</quote>
+            <bibl><ref target="#sec.10">§10</ref></bibl>
+          </cit>
+        </entry>
+        
+        <entry xml:id="lex.acc">
+          <form type="lemma">
+            <orth xml:lang="ka">მიზეზობითი</orth>
+          </form>
+          <gramGrp>
+            <pos value="adj">adj.</pos>
+          </gramGrp>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">αἰτιατική (πτῶσις)</mentioned></etym>
+          <sense xml:id="lex.acc.1">
+            <def xml:lang="ka">ბრალდებითი ბრუნვა</def>
+            <def xml:lang="en">accusative case</def>
+          </sense>
+          <note xml:lang="en">Lit. "causal case" — calque of Greek αἰτιατική from αἰτία "cause"</note>
+          <cit type="example">
+            <quote xml:lang="ka">მიზეზობითი — ამისთჳს, ვინაითგან, იკითხვიდე, რად ვისგანმე, ვითარმედ: „ვის ეძიებ?"</quote>
+            <bibl><ref target="#sec.10">§10</ref></bibl>
+          </cit>
+        </entry>
+        
+        <entry xml:id="lex.voc">
+          <form type="lemma">
+            <orth xml:lang="ka">წოდებითი</orth>
+          </form>
+          <gramGrp>
+            <pos value="adj">adj.</pos>
+          </gramGrp>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">κλητική (πτῶσις)</mentioned></etym>
+          <sense xml:id="lex.voc.1">
+            <def xml:lang="ka">წოდებითი ბრუნვა</def>
+            <def xml:lang="en">vocative case</def>
+          </sense>
+          <note xml:lang="en">The author notes that vocative is the only case where Georgian has an equivalent to the Greek article, namely the interjection ჰოი/ო.</note>
+        </entry>
+        
+        <!-- THEOLOGICAL TERMS -->
+        
+        <entry xml:id="lex.theos">
+          <form type="lemma">
+            <orth xml:lang="ka">თეოს</orth>
+          </form>
+          <gramGrp>
+            <pos value="noun">n.</pos>
+            <gen value="masc">მამრ.</gen>
+          </gramGrp>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">θεός</mentioned></etym>
+          <sense xml:id="lex.theos.1">
+            <def xml:lang="ka">ღმერთი (ბერძნულის ფონეტიკური გადმოცემა)</def>
+            <def xml:lang="en">God (phonetic rendering of Greek)</def>
+          </sense>
+          <note xml:lang="en">Used as paradigm example for masculine noun declension throughout the treatise.</note>
+        </entry>
+        
+        <entry xml:id="lex.trias">
+          <form type="lemma">
+            <orth xml:lang="ka">ტრიას</orth>
+          </form>
+          <gramGrp>
+            <pos value="noun">n.</pos>
+            <gen value="fem">მდედრ.</gen>
+          </gramGrp>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">τριάς</mentioned></etym>
+          <sense xml:id="lex.trias.1">
+            <def xml:lang="ka">სამება (ბერძნულის ფონეტიკური გადმოცემა)</def>
+            <def xml:lang="en">Trinity (phonetic rendering of Greek)</def>
+          </sense>
+          <note xml:lang="en">Used as paradigm example for feminine noun declension.</note>
+        </entry>
+        
+        <entry xml:id="lex.pneuma">
+          <form type="lemma">
+            <orth xml:lang="ka">პნევმა</orth>
+          </form>
+          <gramGrp>
+            <pos value="noun">n.</pos>
+            <gen value="neut">საშ.</gen>
+          </gramGrp>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">πνεῦμα</mentioned></etym>
+          <sense xml:id="lex.pneuma.1">
+            <def xml:lang="ka">სული (ბერძნულის ფონეტიკური გადმოცემა)</def>
+            <def xml:lang="en">Spirit (phonetic rendering of Greek)</def>
+          </sense>
+          <note xml:lang="en">Used as paradigm example for neuter noun declension; specifically "Holy Spirit" (სული წმიდა).</note>
+        </entry>
+        
+        <!-- ADDITIONAL TERMS -->
+        
+        <entry xml:id="lex.grammatikos">
+          <form type="lemma">
+            <orth xml:lang="ka">ღრამმატიკოსი</orth>
+            <orth xml:lang="ka" type="variant">ღრმამატიკოსი</orth>
+          </form>
+          <gramGrp>
+            <pos value="noun">n.</pos>
+          </gramGrp>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">γραμματικός</mentioned></etym>
+          <sense xml:id="lex.grammatikos.1">
+            <def xml:lang="ka">გრამატიკოსი; ენის მეცნიერი</def>
+            <def xml:lang="en">grammarian; linguist</def>
+          </sense>
+        </entry>
+        
+        <entry xml:id="lex.arthronian">
+          <form type="lemma">
+            <orth xml:lang="ka">ართრონიანი</orth>
+          </form>
+          <gramGrp>
+            <pos value="adj">adj.</pos>
+          </gramGrp>
+          <sense xml:id="lex.arthronian.1">
+            <def xml:lang="ka">არტიკლიანი; ართრონით აღჭურვილი</def>
+            <def xml:lang="en">with article; articulated</def>
+          </sense>
+          <xr type="contrast"><ref target="#lex.uarthrono">უართრონო</ref></xr>
+        </entry>
+        
+        <entry xml:id="lex.uarthrono">
+          <form type="lemma">
+            <orth xml:lang="ka">უართრონო</orth>
+          </form>
+          <gramGrp>
+            <pos value="adj">adj.</pos>
+          </gramGrp>
+          <sense xml:id="lex.uarthrono.1">
+            <def xml:lang="ka">უარტიკლო; ართრონის გარეშე</def>
+            <def xml:lang="en">without article; anarthrous</def>
+          </sense>
+          <note xml:lang="en">Key concept in the theological argument: heretics claimed that John 1:1 uses θεός without article to indicate the Son's inferiority to the Father.</note>
+        </entry>
+        
+        <entry xml:id="lex.damorcilebithi">
+          <form type="lemma">
+            <orth xml:lang="ka">დამორჩილებითი</orth>
+          </form>
+          <gramGrp>
+            <pos value="adj">adj.</pos>
+          </gramGrp>
+          <etym><lang>grc</lang> <mentioned xml:lang="grc">ὑποτακτικόν (ἄρθρον)</mentioned></etym>
+          <sense xml:id="lex.damorcilebithi.1">
+            <def xml:lang="ka">მიმართებითი (ნაცვალსახელი/არტიკლი)</def>
+            <def xml:lang="en">relative (pronoun/article)</def>
+          </sense>
+          <note xml:lang="en">Section 23 introduces the relative pronouns ὅς, ἥ, ὅ as "subordinate articles".</note>
+        </entry>
+        
+      </div>
+    </body>
+  </text>
+</TEI>

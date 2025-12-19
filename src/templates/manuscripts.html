@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block title %}ხელნაწერები — სიტყუა ართრონთათვს{% endblock %}
+
+{% block content %}
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    
+    <!-- Header -->
+    <div class="mb-8">
+        <h1 class="text-2xl font-medium mb-2">ხელნაწერები</h1>
+        <p class="text-gray-500">ტრაქტატის ტექსტი დაცულია ორ ხელნაწერში</p>
+    </div>
+    
+    <!-- Witness Cards -->
+    <div class="space-y-6">
+        
+        {% for witness in witnesses %}
+        <article class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+            <!-- Header -->
+            <div class="px-6 py-4 bg-gray-50 border-b border-gray-200 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <span class="inline-flex items-center justify-center w-8 h-8 rounded bg-gray-800 text-white text-sm font-medium">{{ witness.id }}</span>
+                    <div>
+                        <h2 class="font-medium">{{ witness.settlement }}</h2>
+                        <p class="text-sm text-gray-500">{{ witness.repository }}</p>
+                    </div>
+                </div>
+                <a href="{{ url_for('text') }}" class="text-xs text-gray-400 hover:text-gray-600">ტექსტის ნახვა →</a>
+            </div>
+            
+            <!-- Details -->
+            <div class="p-6">
+                <dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 text-sm">
+                    <div>
+                        <dt class="text-gray-400 text-xs uppercase tracking-wide mb-1">ადგილმდებარეობა</dt>
+                        <dd class="text-gray-700">{{ witness.settlement }}, {{ witness.repository }}</dd>
+                    </div>
+                    <div>
+                        <dt class="text-gray-400 text-xs uppercase tracking-wide mb-1">ფოლიოები</dt>
+                        <dd class="text-gray-700">{{ witness.locus or '—' }}</dd>
+                    </div>
+                    <div>
+                        <dt class="text-gray-400 text-xs uppercase tracking-wide mb-1">შიფრი</dt>
+                        <dd class="text-gray-500 italic"><!-- TODO: actual shelfmark -->მოსაძიებელია</dd>
+                    </div>
+                    <div>
+                        <dt class="text-gray-400 text-xs uppercase tracking-wide mb-1">თარიღი</dt>
+                        <dd class="text-gray-500 italic"><!-- TODO: dating -->მოსაძიებელია</dd>
+                    </div>
+                </dl>
+                
+                <!-- Expandable details (future) -->
+                <details class="mt-6 pt-4 border-t border-gray-100">
+                    <summary class="text-sm text-gray-500 cursor-pointer hover:text-gray-700">
+                        დამატებითი ინფორმაცია
+                    </summary>
+                    <div class="mt-4 text-sm text-gray-600 space-y-3">
+                        <p class="italic text-gray-400">კოდიკოლოგიური აღწერილობა მომზადდება კვლევის დასრულების შემდეგ.</p>
+                        
+                        <!-- Placeholder for future content -->
+                        <!--
+                        <div>
+                            <h4 class="font-medium text-gray-700 mb-1">მასალა</h4>
+                            <p>ეტრატი / ქაღალდი</p>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-700 mb-1">ზომები</h4>
+                            <p>... × ... მმ</p>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-700 mb-1">ნუსხა</h4>
+                            <p>ნუსხური / ასომთავრული</p>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-700 mb-1">მდგომარეობა</h4>
+                            <p>...</p>
+                        </div>
+                        -->
+                        
+                        <!-- Facsimile placeholder -->
+                        <!--
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <h4 class="font-medium text-gray-700 mb-2">ფაქსიმილე</h4>
+                            <div class="grid grid-cols-3 gap-2">
+                                <img src="..." alt="f. 32r" class="rounded border">
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                </details>
+            </div>
+        </article>
+        {% endfor %}
+        
+    </div>
+    
+    <!-- Stemma placeholder -->
+    <div class="mt-12 p-8 bg-white rounded-lg border border-gray-200">
+        <h2 class="text-lg font-medium mb-4">სტემა</h2>
+        <p class="text-sm text-gray-500 italic mb-6">ხელნაწერთა ურთიერთმიმართება დადგინდება კვლევის შედეგად.</p>
+        
+        <!-- Future stemma diagram -->
+        <div class="flex justify-center py-8">
+            <div class="text-center text-gray-300">
+                <svg class="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/>
+                </svg>
+                <p class="text-sm">სტემატური დიაგრამა</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Link to research -->
+    <div class="mt-8 text-center">
+        <a href="{{ url_for('research') }}" class="text-sm text-gray-500 hover:text-gray-700">
+            იხ. კვლევა ხელნაწერების შესახებ →
+        </a>
+    </div>
+    
+</main>
+{% endblock %}

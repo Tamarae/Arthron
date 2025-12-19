@@ -1,0 +1,3212 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ლექსიკონი — სიტყუა ართრონთათჳს</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'parchment': '#faf8f5',
+                        'ink': '#1a1a1a',
+                        'manuscript': '#f5f2ed',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600&family=Noto+Serif+Georgian:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans Georgian', sans-serif; }
+        .font-serif-geo { font-family: 'Noto Serif Georgian', Georgia, serif; }
+        .greek { font-family: 'Times New Roman', serif; font-style: italic; }
+    </style>
+</head>
+<body class="bg-parchment text-ink antialiased">
+    
+    <!-- Navigation -->
+    <nav class="border-b border-gray-200 sticky top-0 bg-parchment/95 backdrop-blur-sm z-10">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-14">
+                <a href="../index.html" class="text-lg font-medium text-gray-800">
+                    სიტყუა ართრონთათჳს
+                </a>
+                <div class="flex items-center gap-6">
+                    <a href="../text/index.html" class="text-sm text-gray-600 hover:text-ink">ტექსტი</a>
+                    <a href="../lexicon/index.html" class="text-sm text-ink border-b border-gray-400 pb-0.5">ლექსიკონი</a>
+                    <a href="../sadziebeli.html" class="text-sm text-gray-600 hover:text-ink">საძიებელი</a>
+                    <a href="../about.html" class="text-sm text-gray-600 hover:text-ink">შესახებ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-8">
+        <h1 class="text-xl font-medium">ლექსიკონი</h1>
+        <span class="text-sm text-gray-400">156 ერთეული</span>
+    </div>
+    
+    <!-- Search -->
+    <div class="mb-8">
+        <input type="text" id="lexicon-search" placeholder="ძიება..." 
+               class="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:border-gray-400">
+    </div>
+    
+    <!-- Alphabet filter -->
+    <div class="flex flex-wrap gap-1 mb-8 text-sm">
+        <button class="letter-filter w-8 h-8 rounded bg-gray-800 text-white" 
+                data-letter="ა">ა</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ბ">ბ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="გ">გ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="დ">დ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ე">ე</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ვ">ვ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ზ">ზ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ჱ">ჱ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="თ">თ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ი">ი</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="კ">კ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ლ">ლ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="მ">მ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ნ">ნ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ჲ">ჲ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ო">ო</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="პ">პ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ჟ">ჟ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="რ">რ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ს">ს</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ტ">ტ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ჳ">ჳ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="უ">უ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ფ">ფ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ქ">ქ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ღ">ღ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ყ">ყ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="შ">შ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ჩ">ჩ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ც">ც</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ძ">ძ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="წ">წ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ჭ">ჭ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ხ">ხ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ჴ">ჴ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ჯ">ჯ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ჰ">ჰ</button>
+        <button class="letter-filter w-8 h-8 rounded bg-white border border-gray-200 text-gray-600 hover:bg-gray-50" 
+                data-letter="ჵ">ჵ</button>
+    </div>
+    
+    <!-- Entries -->
+    <div id="entries-container" class="bg-white rounded-lg border border-gray-200 divide-y divide-gray-100">
+        
+        <article id="agebuli" class="entry p-5 hover:bg-gray-50/50" data-lemma="აგებული" data-letter="ა">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">აგებული</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        შექმნილი, მატერიალური, არსებული
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>გრძნობადი ნათელი უძღვს თუალსა აგებულთა გულის მის-ყოფად <span class="text-xs not-italic">()</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="adviloba" class="entry p-5 hover:bg-gray-50/50" data-lemma="ადვილობა" data-letter="ა">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ადვილობა</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მარტივი, სახელობითი ბრუნვა
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>რაჟამს ადვილობითად იკუმევდენ ხსენებასა სახელისასა <span class="text-xs not-italic">(§ 4)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/4.html" class="hover:text-gray-600">§4</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">1 გამოყენება</span>
+            </div>
+        </article>
+        <article id="antipa" class="entry p-5 hover:bg-gray-50/50" data-lemma="ანტიპა" data-letter="ა">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ანტიპა</h2>
+                    </div>
+                    
+                    
+                    
+                    <p class="text-xs text-gray-400 mt-2 border-l-2 border-gray-200 pl-2">See page 110</p>
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="arthron" class="entry p-5 hover:bg-gray-50/50" data-lemma="ართრონი" data-letter="ა">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ართრონი</h2>
+                        <span class="greek text-gray-500">(ἄρθρον)</span>
+                        <span class="text-xs px-2 py-0.5 bg-gray-100 rounded text-gray-500">n.</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        განსაზღვრებითი ნაწევარი
+<span class="text-gray-400 text-xs ml-2">[definite article]</span>                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>ართრონსა დაუდებს <span class="text-xs not-italic">()</span></p>
+                        <p>ართრონითა უწოდა... „ესე ო თეოს“ <span class="text-xs not-italic">()</span></p>
+                        <p>ვინაითგან ართრონთა ძლით უმეცრად და ბნელად საგონებელ არს ენასა ზედა ჩუენსა... ლექსი თარგმანებული <span class="text-xs not-italic">(§ 1)</span></p>
+                        <p>რამეთუ ართრონნი სხუანი არანი არიან, თჳნიერ საძირკუელნი სახელთანი <span class="text-xs not-italic">(§ 3)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/1.html" class="hover:text-gray-600">§1</a>,                             <a href="../text/3.html" class="hover:text-gray-600">§3</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">2 გამოყენება</span>
+            </div>
+        </article>
+        <article id="arthroniani" class="entry p-5 hover:bg-gray-50/50" data-lemma="ართრონიანი" data-letter="ა">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ართრონიანი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        არტიკლიანი
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>„ო თეოს“ არს ღმერთი ართრონიანი <span class="text-xs not-italic">()</span></p>
+                        <p>რაჟამს გეგულებოდის ბერძულსა ართრონიანსა სახელსა თარგმანებაჲ <span class="text-xs not-italic">(§ 6)</span></p>
+                        <p>ბნელად ვიდრემე და შეუგუარად იქმნების თარგმნად ართრონიანისა სიტყჳსად <span class="text-xs not-italic">(§ 21)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/6.html" class="hover:text-gray-600">§6</a>,                             <a href="../text/21.html" class="hover:text-gray-600">§21</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">2 გამოყენება</span>
+            </div>
+        </article>
+        <article id="arianozi" class="entry p-5 hover:bg-gray-50/50" data-lemma="არიანოზ-ი" data-letter="ა">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">არიანოზ-ი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        არიოსის მიმდევარი, მწვალებელი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="aghgeba" class="entry p-5 hover:bg-gray-50/50" data-lemma="აღგება" data-letter="ა">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">აღგება</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        შექმნა
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>სამებისა მიერ აღვეგენით <span class="text-xs not-italic">()</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="aghvseba" class="entry p-5 hover:bg-gray-50/50" data-lemma="აღვსება" data-letter="ა">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">აღვსება</h2>
+                    </div>
+                    
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>ზღაპარნი მათნი აღავსებდეს <span class="text-xs not-italic">()</span></p>
+                        <p>სიტყუასა მას უართრონოსა და აღუვსნის მრავალთა გამოსაჩინებელთა მიერ <span class="text-xs not-italic">(§ 21)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/21.html" class="hover:text-gray-600">§21</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">1 გამოყენება</span>
+            </div>
+        </article>
+        <article id="aghmgebeli" class="entry p-5 hover:bg-gray-50/50" data-lemma="აღმგებელი" data-letter="ა">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">აღმგებელი</h2>
+                        <span class="greek text-gray-500">(τεκταινόμενος)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        შემქმნელი
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>მე ვარ აღმგებელი ქუეყანისად <span class="text-xs not-italic">()</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="aghmoceneba" class="entry p-5 hover:bg-gray-50/50" data-lemma="აღმოცენება" data-letter="ა">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">აღმოცენება</h2>
+                    </div>
+                    
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>აღმატებაი სიმართლისად აღმოეცენა <span class="text-xs not-italic">()</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="aghmochra" class="entry p-5 hover:bg-gray-50/50" data-lemma="აღმოჭრა" data-letter="ა">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">აღმოჭრა</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მოსპობა
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>ძირითგან აღმოსჭრას ცილისწამებად <span class="text-xs not-italic">()</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="aghmojdoma" class="entry p-5 hover:bg-gray-50/50" data-lemma="აღმოჯდომა" data-letter="ა">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">აღმოჯდომა</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ამოსვლა
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>მაღლით ცა აღმოჰადების <span class="text-xs not-italic">()</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="aghrackhuli" class="entry p-5 hover:bg-gray-50/50" data-lemma="აღრაცხული" data-letter="ა">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">აღრაცხული</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ჩათვლილი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="aghqvaneba" class="entry p-5 hover:bg-gray-50/50" data-lemma="აღყვანება" data-letter="ა">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">აღყვანება</h2>
+                    </div>
+                    
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>არა მთარგმანებელსა ზედა აღიყვანების სიტყუად <span class="text-xs not-italic">()</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="borgneuli" class="entry p-5 hover:bg-gray-50/50" data-lemma="ბორგნეული" data-letter="ბ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ბორგნეული</h2>
+                        <span class="greek text-gray-500">(λυττώντες)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მებრძოლი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="brgunva" class="entry p-5 hover:bg-gray-50/50" data-lemma="ბრგუნვა" data-letter="ბ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ბრგუნვა</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ენამძიმედ, ენადაბმულად მეტყველება
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="brgunvili" class="entry p-5 hover:bg-gray-50/50" data-lemma="ბრგუნვილი" data-letter="ბ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ბრგუნვილი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ცუდად, მძიმედ გამოთქმული
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="buneba" class="entry p-5 hover:bg-gray-50/50" data-lemma="ბუნება" data-letter="ბ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ბუნება</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მატერიალური, ფიზიკური ნაწილი (სხეულისა)
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="gamometqueli" class="entry p-5 hover:bg-gray-50/50" data-lemma="გამომეტყუელი" data-letter="გ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">გამომეტყუელი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მთხრობი, ავტორი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="gamomtkhovneli" class="entry p-5 hover:bg-gray-50/50" data-lemma="გამომთხოვნელი" data-letter="გ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">გამომთხოვნელი</h2>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="gamoparva" class="entry p-5 hover:bg-gray-50/50" data-lemma="გამოპარვა" data-letter="გ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">გამოპარვა</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        უჩუმრად, შეუმჩნევლად შემოსვლა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="gamosachinebeli" class="entry p-5 hover:bg-gray-50/50" data-lemma="გამოსაჩინებელი" data-letter="გ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">გამოსაჩინებელი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მაგალითი
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>აღუვსნის მრავალთა გამოსაჩინებელთა მიერ <span class="text-xs not-italic">(§ 21)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/21.html" class="hover:text-gray-600">§21</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">1 გამოყენება</span>
+            </div>
+        </article>
+        <article id="ganmvedreba" class="entry p-5 hover:bg-gray-50/50" data-lemma="განმვედრება" data-letter="გ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">განმვედრება</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        გაძლიერება
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="ganmtkumeli" class="entry p-5 hover:bg-gray-50/50" data-lemma="განმთქუმელი" data-letter="გ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">განმთქუმელი</h2>
+                        <span class="greek text-gray-500">(καταγγελεύς)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        განმცხადებელი, ამბის გამავრცელებელი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="ganmkacreba" class="entry p-5 hover:bg-gray-50/50" data-lemma="განმკაცრება" data-letter="გ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">განმკაცრება</h2>
+                        <span class="greek text-gray-500">(ἀκρίβεια)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        დაწვრილებით გამოძიება, ჩაძიება
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>განმკაცრდი ჩემდა გამოწულილვით <span class="text-xs not-italic">()</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="plural" class="entry p-5 hover:bg-gray-50/50" data-lemma="განმრავლებითი" data-letter="გ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">განმრავლებითი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მრავლობითი რიცხვი
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>განმრავლებითთანიცა <span class="text-xs not-italic">(§ 5)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/5.html" class="hover:text-gray-600">§5</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">1 გამოყენება</span>
+            </div>
+        </article>
+        <article id="ganmcdeloba" class="entry p-5 hover:bg-gray-50/50" data-lemma="განმცდელობა" data-letter="გ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">განმცდელობა</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ცდა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="ganmkhilveli" class="entry p-5 hover:bg-gray-50/50" data-lemma="განმხილველი" data-letter="გ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">განმხილველი</h2>
+                        <span class="greek text-gray-500">(διορατικοί)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        განხილვა, მოფიქრება (მთხრელები?)
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="gansazghvreba" class="entry p-5 hover:bg-gray-50/50" data-lemma="განსაზღვრება" data-letter="გ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">განსაზღვრება</h2>
+                        <span class="greek text-gray-500">(ὥρισεν)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        განსაზღვრა, დადგენა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="gansazghvrebuli" class="entry p-5 hover:bg-gray-50/50" data-lemma="განსაზღვრებული" data-letter="გ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">განსაზღვრებული</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        დადგენილი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="ganqofileba" class="entry p-5 hover:bg-gray-50/50" data-lemma="განყოფილება" data-letter="გ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">განყოფილება</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        განსხვავებულობა, სხვადასხვაობა
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>ბერძულად განყოფილებად აქუს მიცემითსა და მიზეზობითსა <span class="text-xs not-italic">(§ 10)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/10.html" class="hover:text-gray-600">§10</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">1 გამოყენება</span>
+            </div>
+        </article>
+        <article id="ganchineba" class="entry p-5 hover:bg-gray-50/50" data-lemma="განჩინებაი" data-letter="გ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">განჩინებაი</h2>
+                    </div>
+                    
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>დასჯასა მას ადამისსა პირველად განჩინებაი შემოიღო <span class="text-xs not-italic">()</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="gancdili" class="entry p-5 hover:bg-gray-50/50" data-lemma="განცდილი" data-letter="გ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">განცდილი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ნახული
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="ganckhadebuli" class="entry p-5 hover:bg-gray-50/50" data-lemma="განცხადებული" data-letter="გ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">განცხადებული</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        აშკარა, თვალით სახილველი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="gardadgoma" class="entry p-5 hover:bg-gray-50/50" data-lemma="გარდადგომა" data-letter="გ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">გარდადგომა</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        გადაადგილება, ადგილის შეცვლა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="gonieri" class="entry p-5 hover:bg-gray-50/50" data-lemma="გონიერი" data-letter="გ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">გონიერი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        გონებით წარმოდგენილი, არამატერიალური
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="grdznobadi" class="entry p-5 hover:bg-gray-50/50" data-lemma="გრძნობადი" data-letter="გ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">გრძნობადი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        შეგრძნებადი, მატერიალური
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="gulvebadi" class="entry p-5 hover:bg-gray-50/50" data-lemma="გულვებადი" data-letter="გ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">გულვებადი</h2>
+                        <span class="greek text-gray-500">(μέλλουσα)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მომავალი, მყოფადი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="dadgineba" class="entry p-5 hover:bg-gray-50/50" data-lemma="დადგინება" data-letter="დ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">დადგინება</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        დაყენება, გაჩერება
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="daknineba" class="entry p-5 hover:bg-gray-50/50" data-lemma="დაკნინებაი" data-letter="დ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">დაკნინებაი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        დამცირება
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="dambechdveli" class="entry p-5 hover:bg-gray-50/50" data-lemma="დამბეჭდველი" data-letter="დ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">დამბეჭდველი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        განმამტკიცებელი, დამმოწმებელი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="damtkhuevit" class="entry p-5 hover:bg-gray-50/50" data-lemma="დამთხუევით" data-letter="დ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">დამთხუევით</h2>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="dampqrobeli" class="entry p-5 hover:bg-gray-50/50" data-lemma="დამპყრობელი" data-letter="დ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">დამპყრობელი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ძლევამოსილი, გაბატონებული
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="dasabami" class="entry p-5 hover:bg-gray-50/50" data-lemma="დასაბამი" data-letter="დ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">დასაბამი</h2>
+                        <span class="greek text-gray-500">(ἐν ἀρχῇ)</span>
+                    </div>
+                    
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>დასაბამსა იყო სიტყუად <span class="text-xs not-italic">()</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="dasatevneli" class="entry p-5 hover:bg-gray-50/50" data-lemma="დასატევნელი" data-letter="დ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">დასატევნელი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        შესაძლებელი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="datevna" class="entry p-5 hover:bg-gray-50/50" data-lemma="დატევნა" data-letter="დ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">დატევნა</h2>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="daqenebuli" class="entry p-5 hover:bg-gray-50/50" data-lemma="დაყენებული" data-letter="დ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">დაყენებული</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        აკრძალული, მიუღებელი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="daqofili" class="entry p-5 hover:bg-gray-50/50" data-lemma="დაყოფილი" data-letter="დ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">დაყოფილი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        დახშული, დახურული
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>დაყოფილ იქმნენინ პირნი მწვალებელთანი <span class="text-xs not-italic">()</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="dajsna" class="entry p-5 hover:bg-gray-50/50" data-lemma="დაჯსნა" data-letter="დ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">დაჯსნა</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მოსპობა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="fem" class="entry p-5 hover:bg-gray-50/50" data-lemma="დედალი" data-letter="დ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">დედალი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მდედრობითი სქესი
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>სამებისა ვიდრემე სახელი დედალი არს <span class="text-xs not-italic">(§ 4)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/4.html" class="hover:text-gray-600">§4</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">1 გამოყენება</span>
+            </div>
+        </article>
+        <article id="dreka" class="entry p-5 hover:bg-gray-50/50" data-lemma="დრეკა" data-letter="დ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">დრეკა</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ბრუნება
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>სცავს თითოეული დრეკასა სახელთასა <span class="text-xs not-italic">(§ 2)</span></p>
+                        <p>ამას ეწოდების შობილობითი და ნათესაობითი დრეკად სახელისად <span class="text-xs not-italic">(§ 9)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/2.html" class="hover:text-gray-600">§2</a>,                             <a href="../text/9.html" class="hover:text-gray-600">§9</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">2 გამოყენება</span>
+            </div>
+        </article>
+        <article id="sing" class="entry p-5 hover:bg-gray-50/50" data-lemma="ერთობითი" data-letter="ე">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ერთობითი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მხოლობითი რიცხვი
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>ერთისა პირისა სახელის-დრეკანი არიან ხუთნი, რომელსა ერთობითად უწოდენ <span class="text-xs not-italic">(§ 13)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/13.html" class="hover:text-gray-600">§13</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">1 გამოყენება</span>
+            </div>
+        </article>
+        <article id="eksoria" class="entry p-5 hover:bg-gray-50/50" data-lemma="ექსორია" data-letter="ე">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ექსორია</h2>
+                        <span class="greek text-gray-500">(ἐξορία)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        გაძევება
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="vidreme" class="entry p-5 hover:bg-gray-50/50" data-lemma="ვიდრემე" data-letter="ვ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ვიდრემე</h2>
+                    </div>
+                    
+                    
+                    
+                    <p class="text-xs text-gray-400 mt-2 border-l-2 border-gray-200 pl-2">See page 95</p>
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="vrcelmetqueleba" class="entry p-5 hover:bg-gray-50/50" data-lemma="ვრცელ-მეტყუელებაი" data-letter="ვ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ვრცელ-მეტყუელებაი</h2>
+                        <span class="greek text-gray-500">(μακρηγορία)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ვრცლად, გრძლად ლაპარაკი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="tanamoqmedi" class="entry p-5 hover:bg-gray-50/50" data-lemma="თანა-მოქმედი" data-letter="თ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">თანა-მოქმედი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ერთად მოქმედი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="tanaqceva" class="entry p-5 hover:bg-gray-50/50" data-lemma="თანა-ქცევა" data-letter="თ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">თანა-ქცევა</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ერთად ყოფნა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="iataki" class="entry p-5 hover:bg-gray-50/50" data-lemma="იატაკი" data-letter="ი">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">იატაკი</h2>
+                        <span class="greek text-gray-500">(ἔδαφος)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        საფუძველი, ძირი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="iefoba" class="entry p-5 hover:bg-gray-50/50" data-lemma="იეფობაი" data-letter="ი">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">იეფობაი</h2>
+                        <span class="greek text-gray-500">(ἐν ἐυθηνίᾳ)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        სიუხვე, მრავლად ყოფნა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="kacobrivi" class="entry p-5 hover:bg-gray-50/50" data-lemma="კაცობრივი" data-letter="კ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">კაცობრივი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ადამიანური, ადამიანისათzს დამახასიათებელი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="leqseulad" class="entry p-5 hover:bg-gray-50/50" data-lemma="ლექსეულად" data-letter="ლ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ლექსეულად</h2>
+                        <span class="greek text-gray-500">(κατὰ λέξιν)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        სიტყვა-სიტყვით
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>უკუეთუ განმარტებით ლექსეულად ითხოონ <span class="text-xs not-italic">()</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="leqsi" class="entry p-5 hover:bg-gray-50/50" data-lemma="ლექსი" data-letter="ლ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ლექსი</h2>
+                        <span class="greek text-gray-500">(λέξις)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        სიტყვა, ტერმინი
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>არა-მპოვნელი ლექსისაი უღონოებს <span class="text-xs not-italic">()</span></p>
+                        <p>ბერძულსა შინა ვიდრემე ნათლად ძეს ლექსი იგი <span class="text-xs not-italic">(§ 1)</span></p>
+                        <p>ქართულად ერთ ლექსად ითქუმის, დაღაცათუ ძალი ორი აქუს <span class="text-xs not-italic">(§ 10)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/1.html" class="hover:text-gray-600">§1</a>,                             <a href="../text/10.html" class="hover:text-gray-600">§10</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">2 გამოყენება</span>
+            </div>
+        </article>
+        <article id="masc" class="entry p-5 hover:bg-gray-50/50" data-lemma="მამალი" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მამალი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მამრობითი სქესი
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>მამალთა და დედალთა და შუათაგან <span class="text-xs not-italic">(§ 2)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/2.html" class="hover:text-gray-600">§2</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">1 გამოყენება</span>
+            </div>
+        </article>
+        <article id="martivi" class="entry p-5 hover:bg-gray-50/50" data-lemma="მარტივი" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მარტივი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        უბრალო, განუსწავლელი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="mgulebeli" class="entry p-5 hover:bg-gray-50/50" data-lemma="მგულებელი" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მგულებელი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მსურველი, განზრახველი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="mezobloba" class="entry p-5 hover:bg-gray-50/50" data-lemma="მეზობლობა" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მეზობლობა</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ახლოს ცხოვრება, მეზობლად ყოფნა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="mecnieri" class="entry p-5 hover:bg-gray-50/50" data-lemma="მეცნიერი" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მეცნიერი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მცოდნე
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="acc" class="entry p-5 hover:bg-gray-50/50" data-lemma="მიზეზობითი" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მიზეზობითი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ბრალდებითი ბრუნვა
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>მიზეზობითად რად <span class="text-xs not-italic">(§ 7)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/7.html" class="hover:text-gray-600">§7</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">1 გამოყენება</span>
+            </div>
+        </article>
+        <article id="mitualva" class="entry p-5 hover:bg-gray-50/50" data-lemma="მითუალვა" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მითუალვა</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მიღება
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="mifarulqmnili" class="entry p-5 hover:bg-gray-50/50" data-lemma="მიფარულ-ქმნილი" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მიფარულ-ქმნილი</h2>
+                        <span class="greek text-gray-500">(οἰκουμένη)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        დაფარული
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="miquma" class="entry p-5 hover:bg-gray-50/50" data-lemma="მიქუმა" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მიქუმა</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        აყვანა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="dat" class="entry p-5 hover:bg-gray-50/50" data-lemma="მიცემითი" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მიცემითი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მიცემითი ბრუნვა
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>მიცემითად რად იტყოდინ <span class="text-xs not-italic">(§ 7)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/7.html" class="hover:text-gray-600">§7</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">1 გამოყენება</span>
+            </div>
+        </article>
+        <article id="mknoba" class="entry p-5 hover:bg-gray-50/50" data-lemma="მკნობა" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მკნობა</h2>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="mmcqseli" class="entry p-5 hover:bg-gray-50/50" data-lemma="მმწყსელი" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მმწყსელი</h2>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="mnebebeloba" class="entry p-5 hover:bg-gray-50/50" data-lemma="მნებებელობა" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მნებებელობა</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მოსურვება
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="moakhleba" class="entry p-5 hover:bg-gray-50/50" data-lemma="მოახლება" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მოახლება</h2>
+                        <span class="greek text-gray-500">(ἐγγίζει)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მოახლოვება
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>მოახლდების სიადრით სიმართლე ჩემი <span class="text-xs not-italic">()</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="mogoneba" class="entry p-5 hover:bg-gray-50/50" data-lemma="მოგონებაი" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მოგონებაი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        გააზრება, გაგება
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="molodebadi" class="entry p-5 hover:bg-gray-50/50" data-lemma="მოლოდებადი" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მოლოდებადი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მომავალი, მყოფადი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="momvachrebeli" class="entry p-5 hover:bg-gray-50/50" data-lemma="მომვაჭრებელი" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მომვაჭრებელი</h2>
+                        <span class="greek text-gray-500">(πραγματευόμενος)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        შემსრულებელი, საქმის აღმსრულებელი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="momchirneoba" class="entry p-5 hover:bg-gray-50/50" data-lemma="მომჭირნეობაი" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მომჭირნეობაი</h2>
+                        <span class="greek text-gray-500">(ὑπομονή)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მოთმინება, ჭირთა თმენა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="mosajuloba" class="entry p-5 hover:bg-gray-50/50" data-lemma="მოსაჯულობაი" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მოსაჯულობაი</h2>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="moqaduli" class="entry p-5 hover:bg-gray-50/50" data-lemma="მოქადული" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მოქადული</h2>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="moqalaqoba" class="entry p-5 hover:bg-gray-50/50" data-lemma="მოქალაქობა" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მოქალაქობა</h2>
+                        <span class="greek text-gray-500">(ἐμπολιτεύεται)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ცხოვრება, მოქმედება
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="mocapeqofa" class="entry p-5 hover:bg-gray-50/50" data-lemma="მოწაფე-ყოფაი" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მოწაფე-ყოფაი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        დამოწაფება, დამორჩილება
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="mravalghmrteeba" class="entry p-5 hover:bg-gray-50/50" data-lemma="მრავალღმრთეებაი" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მრავალღმრთეებაი</h2>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="mqcevaroba" class="entry p-5 hover:bg-gray-50/50" data-lemma="მქცევარობაი" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მქცევარობაი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        სიარული, მიმოსვლა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="mqceoba" class="entry p-5 hover:bg-gray-50/50" data-lemma="მქცეობაი" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მქცეობაი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        თვისება, საქციელი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="mdzlavrebuli" class="entry p-5 hover:bg-gray-50/50" data-lemma="მძლავრებული" data-letter="მ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">მძლავრებული</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        დაძლეული, დაჯაბნებული
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="nametavi" class="entry p-5 hover:bg-gray-50/50" data-lemma="ნამეტავი" data-letter="ნ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ნამეტავი</h2>
+                    </div>
+                    
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>ნამეტავად ვჰგონეთ ამათთჳს სიტყჳსა განვრცობას <span class="text-xs not-italic">(§ 24)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/24.html" class="hover:text-gray-600">§24</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">1 გამოყენება</span>
+            </div>
+        </article>
+        <article id="dual" class="entry p-5 hover:bg-gray-50/50" data-lemma="ორობითი" data-letter="ო">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ორობითი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ორობითი რიცხვი
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>ორობითნი მათ ეწოდებიან, რომელნი მხოლოდ ორთა პირთა საცნაურ-ჰყოფენ <span class="text-xs not-italic">(§ 8)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/8.html" class="hover:text-gray-600">§8</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">1 გამოყენება</span>
+            </div>
+        </article>
+        <article id="orghano" class="entry p-5 hover:bg-gray-50/50" data-lemma="ორღანო" data-letter="ო">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ორღანო</h2>
+                        <span class="greek text-gray-500">(ὄργανον)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        იარაღი, ორგანო
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="ridoba" class="entry p-5 hover:bg-gray-50/50" data-lemma="რიდობაი" data-letter="რ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">რიდობაი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მოკრძალება, კრძალვა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="ritori" class="entry p-5 hover:bg-gray-50/50" data-lemma="რიტორი" data-letter="რ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">რიტორი</h2>
+                        <span class="greek text-gray-500">(ῥήτωρ)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ორატორი, მჭევრმეტყველი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="satanasdebo" class="entry p-5 hover:bg-gray-50/50" data-lemma="სათანამდებოი" data-letter="ს">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">სათანამდებოი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        საჭირო, დასაშვები
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="sakmareba" class="entry p-5 hover:bg-gray-50/50" data-lemma="საკმარებაი" data-letter="ს">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">საკმარებაი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        საჭიროება
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>თითოეულისა საკმარებისაებრცა წარმოგჳჩენიან <span class="text-xs not-italic">(§ 11)</span></p>
+                        <p>ამათისა ძალისა განმარტებაჲ არარად ეკმარებოდა <span class="text-xs not-italic">(§ 24)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/11.html" class="hover:text-gray-600">§11</a>,                             <a href="../text/24.html" class="hover:text-gray-600">§24</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">2 გამოყენება</span>
+            </div>
+        </article>
+        <article id="trias" class="entry p-5 hover:bg-gray-50/50" data-lemma="სამება" data-letter="ს">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">სამება</h2>
+                        <span class="greek text-gray-500">(τριάς)</span>
+                    </div>
+                    
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>სამებისა ვიდრემე სახელი დედალი არს <span class="text-xs not-italic">(§ 4)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/4.html" class="hover:text-gray-600">§4</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">1 გამოყენება</span>
+            </div>
+        </article>
+        <article id="samscuali" class="entry p-5 hover:bg-gray-50/50" data-lemma="სამსჭუალი" data-letter="ს">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">სამსჭუალი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ლურსმანი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="sanadiro" class="entry p-5 hover:bg-gray-50/50" data-lemma="სანადიროი" data-letter="ს">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">სანადიროი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მისაგნებელი, დასაჭერი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="saolavi" class="entry p-5 hover:bg-gray-50/50" data-lemma="საოლავი" data-letter="ს">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">საოლავი</h2>
+                        <span class="greek text-gray-500">(ὤα)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        აშია; კიდე
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="sartuli" class="entry p-5 hover:bg-gray-50/50" data-lemma="სართული" data-letter="ს">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">სართული</h2>
+                        <span class="greek text-gray-500">(ὄροφος)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        სახურავი; ზეცა (მეტაფორულად)
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="sasmeneli" class="entry p-5 hover:bg-gray-50/50" data-lemma="სასმენელი" data-letter="ს">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">სასმენელი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ყური
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="sasjelisqueshe" class="entry p-5 hover:bg-gray-50/50" data-lemma="სასჯელის-ქუეშე" data-letter="ს">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">სასჯელის-ქუეშე</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        დასასჯელი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="sashuro" class="entry p-5 hover:bg-gray-50/50" data-lemma="საშუროი" data-letter="ს">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">საშუროი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        საჩქარო
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="sactomeli" class="entry p-5 hover:bg-gray-50/50" data-lemma="საცთომელი" data-letter="ს">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">საცთომელი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        შესაცდენელი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="sacuto" class="entry p-5 hover:bg-gray-50/50" data-lemma="საწუთოი" data-letter="ს">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">საწუთოი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        წუთისოფელი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="siadre" class="entry p-5 hover:bg-gray-50/50" data-lemma="სიადრე" data-letter="ს">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">სიადრე</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        სიჩქარე
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="sircxvleuli" class="entry p-5 hover:bg-gray-50/50" data-lemma="სირცხვლეული" data-letter="ს">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">სირცხვლეული</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        შერცხვენილი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="skntema" class="entry p-5 hover:bg-gray-50/50" data-lemma="სკნთემაი" data-letter="ს">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">სკნთემაი</h2>
+                        <span class="greek text-gray-500">(σύνθεμα)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        თან-შედგმა, შეწყობა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="sruleba" class="entry p-5 hover:bg-gray-50/50" data-lemma="სრულებაი" data-letter="ს">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">სრულებაი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        სრულყოფილება, სავსება
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="pneuma" class="entry p-5 hover:bg-gray-50/50" data-lemma="სული" data-letter="ს">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">სული</h2>
+                        <span class="greek text-gray-500">(πνεῦμα)</span>
+                    </div>
+                    
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>სულსა წმიდასა არა მამალი ეწოდების სახელი... არამედ შუად <span class="text-xs not-italic">(§ 17)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/17.html" class="hover:text-gray-600">§17</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">1 გამოყენება</span>
+            </div>
+        </article>
+        <article id="sulisambrdzoli" class="entry p-5 hover:bg-gray-50/50" data-lemma="სულისა მბრძოლი" data-letter="ს">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">სულისა მბრძოლი</h2>
+                        <span class="greek text-gray-500">(πνευματομάχος)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მწვალებელი (მაკედონიანელი)
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="tanjva" class="entry p-5 hover:bg-gray-50/50" data-lemma="ტანჯვა" data-letter="ტ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ტანჯვა</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ბრძოლა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="turtva" class="entry p-5 hover:bg-gray-50/50" data-lemma="ტურთვა" data-letter="ტ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ტურთვა</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        აღება, ხელში აყვანა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="uarthrono" class="entry p-5 hover:bg-gray-50/50" data-lemma="უართრონო" data-letter="უ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">უართრონო</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        უარტიკლო; ართრონის გარეშე
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>დაბნელდების უართრონობისათჳს ენისა ჩუენისა <span class="text-xs not-italic">(§ 1)</span></p>
+                        <p>ხოლო უკუეთუ უართრონოდ იტყოდინ, გამოუღებენ ონ-სა <span class="text-xs not-italic">(§ 6)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/1.html" class="hover:text-gray-600">§1</a>,                             <a href="../text/6.html" class="hover:text-gray-600">§6</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">2 გამოყენება</span>
+            </div>
+        </article>
+        <article id="uidzulebeli" class="entry p-5 hover:bg-gray-50/50" data-lemma="უიძულებელი" data-letter="უ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">უიძულებელი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        თავისთავადი, არა-ნაძალადევი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="ukunsaqceveli" class="entry p-5 hover:bg-gray-50/50" data-lemma="უკუნსაქცეველი" data-letter="უ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">უკუნსაქცეველი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        უარსაყოფელი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="umkuetelesi" class="entry p-5 hover:bg-gray-50/50" data-lemma="უმკუეთელესი" data-letter="უ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">უმკუეთელესი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        უფრო მჭრელი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="usamartloeba" class="entry p-5 hover:bg-gray-50/50" data-lemma="უსამართლოება" data-letter="უ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">უსამართლოება</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        უსამართლოების ჩადენა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="uqorcinebeli" class="entry p-5 hover:bg-gray-50/50" data-lemma="უქორწინებელი" data-letter="უ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">უქორწინებელი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        გაუთხოვარი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="uquenaesi" class="entry p-5 hover:bg-gray-50/50" data-lemma="უქუენაესი" data-letter="უ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">უქუენაესი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        უმდაბლესი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="ughelvo" class="entry p-5 hover:bg-gray-50/50" data-lemma="უღელვო" data-letter="უ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">უღელვო</h2>
+                        <span class="greek text-gray-500">(ἀκύμαντον)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        დაწყნარებული, დამშვიდებული
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="ughono" class="entry p-5 hover:bg-gray-50/50" data-lemma="უღონო" data-letter="უ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">უღონო</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        უძლური
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="ughonoeba" class="entry p-5 hover:bg-gray-50/50" data-lemma="უღონოება" data-letter="უ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">უღონოება</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        საშუალების, ღონის ვერ პოვნა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="frtoanqmna" class="entry p-5 hover:bg-gray-50/50" data-lemma="ფრთოან-ქმნაი" data-letter="ფ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ფრთოან-ქმნაი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ფრთების შესხმა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="qandakebuli" class="entry p-5 hover:bg-gray-50/50" data-lemma="ქანდაკებული" data-letter="ქ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ქანდაკებული</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        გამოძერწილი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="quequemo" class="entry p-5 hover:bg-gray-50/50" data-lemma="ქუე-ქუემოი" data-letter="ქ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ქუე-ქუემოი</h2>
+                        <span class="greek text-gray-500">(τà σκέλη)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ქვედა ჩასაცმელი?
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="theos" class="entry p-5 hover:bg-gray-50/50" data-lemma="ღმერთი" data-letter="ღ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ღმერთი</h2>
+                        <span class="greek text-gray-500">(θεός)</span>
+                    </div>
+                    
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>ღმერთსა ვიდრემე ეწოდების თეოს <span class="text-xs not-italic">(§ 4)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/4.html" class="hover:text-gray-600">§4</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">1 გამოყენება</span>
+            </div>
+        </article>
+        <article id="ghuacli" class="entry p-5 hover:bg-gray-50/50" data-lemma="ღუაწლი" data-letter="ღ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ღუაწლი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ბრძოლა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="qovlisampqrobeli" class="entry p-5 hover:bg-gray-50/50" data-lemma="ყოვლისა მპყრობელი" data-letter="ყ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ყოვლისა მპყრობელი</h2>
+                        <span class="greek text-gray-500">(παντοκράτωρ)</span>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="qovlisampqrobelibri" class="entry p-5 hover:bg-gray-50/50" data-lemma="ყოვლისამპყრობელებრი" data-letter="ყ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ყოვლისამპყრობელებრი</h2>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="sharavandedi" class="entry p-5 hover:bg-gray-50/50" data-lemma="შარავანდედი" data-letter="შ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">შარავანდედი</h2>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="sheachrdilebuli" class="entry p-5 hover:bg-gray-50/50" data-lemma="შეაჩრდილებული" data-letter="შ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">შეაჩრდილებული</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ბნელი, გაუგებარი, არანათელი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="shebavteba" class="entry p-5 hover:bg-gray-50/50" data-lemma="შებავთება" data-letter="შ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">შებავთება</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        სიტყვსა ცუდის თქმა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="shemdgomoba" class="entry p-5 hover:bg-gray-50/50" data-lemma="შემდგომობაი" data-letter="შ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">შემდგომობაი</h2>
+                        <span class="greek text-gray-500">(ἀκολουθία)</span>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="shemomnivtebeli" class="entry p-5 hover:bg-gray-50/50" data-lemma="შემომნივთებელი" data-letter="შ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">შემომნივთებელი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მატერიალურად გარდამქცეველი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="shemortuma" class="entry p-5 hover:bg-gray-50/50" data-lemma="შემორთუმა" data-letter="შ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">შემორთუმა</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        დამატება, შემატება
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="shemosruli" class="entry p-5 hover:bg-gray-50/50" data-lemma="შემოსრული" data-letter="შ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">შემოსრული</h2>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="shemrghueva" class="entry p-5 hover:bg-gray-50/50" data-lemma="შემრღუევა" data-letter="შ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">შემრღუევა</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        გონების არევა, ამღვრევა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="shemchrdilveli" class="entry p-5 hover:bg-gray-50/50" data-lemma="შემჩრდილველი" data-letter="შ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">შემჩრდილველი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        დამაბნელებელი, დამფარველი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="shemcinquleba" class="entry p-5 hover:bg-gray-50/50" data-lemma="შემწინკულება" data-letter="შ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">შემწინკულება</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        წაბილწვა, დასვრა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="shenacevreba" class="entry p-5 hover:bg-gray-50/50" data-lemma="შენაწევრება" data-letter="შ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">შენაწევრება</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        შეერთება
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="shesadginebeli" class="entry p-5 hover:bg-gray-50/50" data-lemma="შესადგინებელი" data-letter="შ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">შესადგინებელი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        შემდგომად მოსასვლელი, მომდევნო
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="shishueli" class="entry p-5 hover:bg-gray-50/50" data-lemma="შიშუელი" data-letter="შ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">შიშუელი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        დაუფარავი, აშკარა, უშუალო
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="gen" class="entry p-5 hover:bg-gray-50/50" data-lemma="შობილობითი" data-letter="შ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">შობილობითი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ნათესაობითი ბრუნვა
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>შობილობითად რაჲ იტყოდინ საზღვართაებრ მათთა <span class="text-xs not-italic">(§ 7)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/7.html" class="hover:text-gray-600">§7</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">1 გამოყენება</span>
+            </div>
+        </article>
+        <article id="neut" class="entry p-5 hover:bg-gray-50/50" data-lemma="შუაჲ" data-letter="შ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">შუაჲ</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        საშუალო სქესი
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>გინა თუ მამალი ეწოდების სახელი, გინა თუ დედალი, გინა თუ შუაჲ <span class="text-xs not-italic">(§ 2)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/2.html" class="hover:text-gray-600">§2</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">1 გამოყენება</span>
+            </div>
+        </article>
+        <article id="cmeli" class="entry p-5 hover:bg-gray-50/50" data-lemma="ცმელი" data-letter="ც">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ცმელი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ცხიმი, ქონი
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="dzvnad" class="entry p-5 hover:bg-gray-50/50" data-lemma="ძვნად" data-letter="ძ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ძვნად</h2>
+                        <span class="greek text-gray-500">(κατὰ τῆς... τριάδος)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        საწინააღმდეგოდ
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="dzlit" class="entry p-5 hover:bg-gray-50/50" data-lemma="ძლით" data-letter="ძ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ძლით</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        მიზეზით, საშუალებით
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>ართრონთა ძლით უმეცრად და ბნელად საგონებელ არს <span class="text-xs not-italic">(§ 1)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/1.html" class="hover:text-gray-600">§1</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">1 გამოყენება</span>
+            </div>
+        </article>
+        <article id="carmodgineba" class="entry p-5 hover:bg-gray-50/50" data-lemma="წარმოდგინება" data-letter="წ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">წარმოდგინება</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        ჩვენება
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="caroteba" class="entry p-5 hover:bg-gray-50/50" data-lemma="წაროტება" data-letter="წ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">წაროტება</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        გაგდება, გაძევება
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="cdeva" class="entry p-5 hover:bg-gray-50/50" data-lemma="წდევა" data-letter="წ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">წდევა</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        დასხმა სითხისა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="cesi" class="entry p-5 hover:bg-gray-50/50" data-lemma="წესი" data-letter="წ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">წესი</h2>
+                        <span class="greek text-gray-500">(τάξις)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        დაწყობილება, განლაგება
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="ciagh" class="entry p-5 hover:bg-gray-50/50" data-lemma="წიაღ" data-letter="წ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">წიაღ</h2>
+                        <span class="greek text-gray-500">(κόλπος)</span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        კალთა, უბე
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="voc" class="entry p-5 hover:bg-gray-50/50" data-lemma="წოდებითი" data-letter="წ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">წოდებითი</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        წოდებითი ბრუნვა
+                    </p>
+                    
+                    <div class="text-sm text-gray-500 mt-2 italic">
+                        <p>წოდებითად რად <span class="text-xs not-italic">(§ 7)</span></p>
+                    </div>
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                        <p class="text-xs text-gray-400">
+                            <a href="../text/7.html" class="hover:text-gray-600">§7</a>                        </p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-400 whitespace-nowrap">1 გამოყენება</span>
+            </div>
+        </article>
+        <article id="khelovanmetqueleba" class="entry p-5 hover:bg-gray-50/50" data-lemma="ჴელოვან-მეტყუელება" data-letter="ჴ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ჴელოვან-მეტყუელება</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        არასწორის თქმა
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="khumeuli" class="entry p-5 hover:bg-gray-50/50" data-lemma="ჴუმეული" data-letter="ჴ">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-lg font-medium">ჴუმეული</h2>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-2">
+                        დაკლებული
+                    </p>
+                    
+                    
+                    
+                    <div class="flex items-center gap-4 mt-3">
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+    
+    <!-- Empty state -->
+    <div id="no-results" class="hidden text-center py-12 text-gray-400">
+        ვერ მოიძებნა
+    </div>
+    
+</main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 py-6 px-4 mt-12">
+        <div class="max-w-5xl mx-auto flex items-center justify-between text-xs text-gray-400">
+            <span>2025, ლინგვისტურ კვლევათა ინსტიტუტი</span>
+            <div class="flex items-center gap-4">
+                <a href="https://github.com" class="hover:text-gray-600">საიუბილეო ციფრული გამოცემა</a>
+            </div>
+        </div>
+    </footer>
+    
+<script>
+// Search functionality
+const searchInput = document.getElementById('lexicon-search');
+const entriesContainer = document.getElementById('entries-container');
+const noResults = document.getElementById('no-results');
+const entries = document.querySelectorAll('.entry');
+
+searchInput.addEventListener('input', function() {
+    const query = this.value.toLowerCase().trim();
+    let visible = 0;
+    
+    // Reset letter filter
+    document.querySelectorAll('.letter-filter').forEach(b => {
+        b.classList.remove('bg-gray-800', 'text-white');
+        b.classList.add('bg-white', 'border', 'border-gray-200', 'text-gray-600');
+    });
+    
+    entries.forEach(entry => {
+        const lemma = entry.dataset.lemma.toLowerCase();
+        const text = entry.textContent.toLowerCase();
+        if (query === '' || lemma.includes(query) || text.includes(query)) {
+            entry.style.display = '';
+            visible++;
+        } else {
+            entry.style.display = 'none';
+        }
+    });
+    
+    noResults.classList.toggle('hidden', visible > 0);
+    entriesContainer.classList.toggle('hidden', visible === 0);
+});
+
+// Letter filter
+document.querySelectorAll('.letter-filter').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const letter = this.dataset.letter.toLowerCase();
+        
+        // Clear search
+        searchInput.value = '';
+        
+        document.querySelectorAll('.letter-filter').forEach(b => {
+            b.classList.remove('bg-gray-800', 'text-white');
+            b.classList.add('bg-white', 'border', 'border-gray-200', 'text-gray-600');
+        });
+        this.classList.remove('bg-white', 'border', 'border-gray-200', 'text-gray-600');
+        this.classList.add('bg-gray-800', 'text-white');
+        
+        let visible = 0;
+        entries.forEach(entry => {
+            if (entry.dataset.letter === letter) {
+                entry.style.display = '';
+                visible++;
+            } else {
+                entry.style.display = 'none';
+            }
+        });
+        
+        noResults.classList.toggle('hidden', visible > 0);
+        entriesContainer.classList.toggle('hidden', visible === 0);
+    });
+});
+
+// Scroll to entry if hash present
+if (window.location.hash) {
+    const target = document.querySelector(window.location.hash);
+    if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        target.classList.add('bg-yellow-50');
+        setTimeout(() => target.classList.remove('bg-yellow-50'), 2000);
+    }
+}
+</script>
+</body>
+</html>

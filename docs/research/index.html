@@ -23,10 +23,16 @@
         body { font-family: 'Noto Sans Georgian', sans-serif; }
         .font-serif-geo { font-family: 'Noto Serif Georgian', Georgia, serif; }
         .greek { font-family: 'Times New Roman', serif; font-style: italic; }
+<style>
+/* Article typography */
+.article-content {
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
 .article-content h2 {
     font-size: 1.25rem;
     font-weight: 500;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #e5e7eb;
@@ -34,28 +40,195 @@
 .article-content h3 {
     font-size: 1.1rem;
     font-weight: 500;
-    margin-top: 1.5rem;
+    margin-top: 1.75rem;
     margin-bottom: 0.75rem;
+    color: #374151;
 }
 .article-content p {
     margin-bottom: 1rem;
-    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
 }
-.article-content blockquote {
-    border-left: 3px solid #d1d5db;
-    padding-left: 1rem;
-    margin: 1.5rem 0;
-    color: #6b7280;
+.article-content q.quote {
     font-style: italic;
+    quotes: none;
 }
-.article-content a {
+.article-content a:not(.note-ref) {
     color: #1d4ed8;
     text-decoration: underline;
     text-underline-offset: 2px;
 }
-.article-content a:hover {
+.article-content a:not(.note-ref):hover {
     color: #1e40af;
 }
+
+/* Semantic styling */
+.person-name {
+    color: #1f2937;
+}
+.place-name {
+    color: #065f46;
+}
+.org-name {
+    color: #1e40af;
+}
+.work-title {
+    font-style: italic;
+}
+.mentioned {
+    background-color: #fef3c7;
+    padding: 0 0.15em;
+    border-radius: 2px;
+}
+.mentioned.lang-ka-Geok {
+    font-family: 'Noto Sans Georgian', 'DejaVu Sans', sans-serif;
+}
+.mentioned.lang-grc {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+}
+.foreign[lang="grc"] {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+}
+.term {
+    font-weight: 500;
+}
+.ms-ref {
+    font-family: monospace;
+    background: #f3f4f6;
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.date {
+    white-space: nowrap;
+}
+.editorial-note {
+    color: #6b7280;
+    font-size: 0.9em;
+}
+
+/* Footnote references in text */
+.note-ref {
+    color: #b45309;
+    text-decoration: none;
+    margin-left: 0.2em;
+    cursor: pointer;
+}
+.note-ref:hover {
+    color: #92400e;
+}
+.note-ref sup {
+    font-size: 0.75em;
+    font-weight: 500;
+}
+
+/* Note popup - Margin note style (like lexicon) */
+.note-popup {
+    position: absolute;
+    z-index: 50;
+    width: 320px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.15s, visibility 0.15s;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+.note-popup.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Connector line (large screens) */
+.note-popup::before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: -20px;
+    width: 20px;
+    height: 1px;
+    background: #d1d5db;
+}
+.note-popup::after {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: -6px;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 50%;
+}
+
+/* Small screens - popup below term */
+@media (max-width: 1280px) {
+    .note-popup::before,
+    .note-popup::after {
+        display: none;
+    }
+}
+
+.note-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #f3f4f6;
+    background: #f9fafb;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.note-popup-number {
+    font-weight: 600;
+    color: #b45309;
+    font-size: 0.8rem;
+}
+.note-popup-close {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #9ca3af;
+    padding: 0;
+    line-height: 1;
+}
+.note-popup-close:hover {
+    color: #4b5563;
+}
+.note-popup-content {
+    padding: 0.75rem 1rem;
+    color: #4b5563;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.note-popup-content .bibl {
+    display: block;
+    margin: 0.25rem 0;
+}
+.note-popup-content cite {
+    font-style: italic;
+}
+.note-popup-footer {
+    padding: 0.5rem 1rem;
+    border-top: 1px solid #f3f4f6;
+    text-align: right;
+}
+.note-popup-footer a {
+    font-size: 0.75rem;
+    color: #6b7280;
+    text-decoration: none;
+}
+.note-popup-footer a:hover {
+    color: #374151;
+    text-decoration: underline;
+}
+
+/* TOC sidebar */
 .toc-link {
     transition: all 0.15s;
 }
@@ -66,6 +239,101 @@
     color: #1f2937;
     font-weight: 500;
 }
+.toc-link.level-2 {
+    padding-left: 0.75rem;
+    font-size: 0.85em;
+}
+
+/* Front matter */
+.front-matter {
+    margin-bottom: 3rem;
+}
+.foreword {
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+.foreword-header {
+    font-size: 0.85rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+.foreword-author {
+    margin-top: 1rem;
+    text-align: right;
+    font-style: italic;
+    color: #4b5563;
+}
+.dedication {
+    text-align: center;
+    font-style: italic;
+    color: #4b5563;
+    margin: 2rem 0;
+    padding: 1rem;
+}
+.introduction {
+    margin-bottom: 2rem;
+}
+.introduction h2 {
+    font-size: 1.15rem;
+    color: #374151;
+}
+
+/* Notes section at bottom */
+.notes-section {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e5e7eb;
+}
+.notes-section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+.note-item {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+.note-number {
+    flex-shrink: 0;
+    min-width: 2.5rem;
+}
+.note-number a.note-backlink {
+    font-weight: 600;
+    color: #b45309;
+    text-decoration: none;
+}
+.note-number a.note-backlink:hover {
+    text-decoration: underline;
+}
+.note-content {
+    color: #4b5563;
+}
+.note-content .bibl {
+    display: block;
+    margin: 0.25rem 0;
+}
+
+/* Highlight animation for navigation targets */
+.highlight-target {
+    animation: highlightFade 2s ease-out;
+}
+@keyframes highlightFade {
+    0% { background-color: #fef08a; }
+    100% { background-color: transparent; }
+}
+.note-item.highlight-target {
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+}
+</style>
     </style>
 </head>
 <body class="bg-parchment text-ink antialiased">
@@ -96,12 +364,26 @@
             <div class="sticky top-20">
                 <h2 class="text-xs font-medium text-gray-400 uppercase tracking-wide mb-4">სარჩევი</h2>
                 <nav class="space-y-2 text-sm">
-                    <a href="#intro" class="toc-link block text-gray-500">შესავალი</a>
-                    <a href="#manuscripts" class="toc-link block text-gray-500">ხელნაწერები</a>
-                    <a href="#language" class="toc-link block text-gray-500">ენობრივი ანალიზი</a>
-                    <a href="#dating" class="toc-link block text-gray-500">თარიღი და ავტორობა</a>
-                    <a href="#context" class="toc-link block text-gray-500">ისტორიული კონტექსტი</a>
-                    <a href="#bibliography" class="toc-link block text-gray-500">ბიბლიოგრაფია</a>
+                    <a href="#foreword" class="toc-link block text-gray-500">წინასიტყვაობა</a>
+                    <a href="#introduction" class="toc-link block text-gray-500">შესავალი</a>
+                    
+                    <a href="#section.a" class="toc-link block text-gray-500 ">
+                        ა. ა. ნაწარმოების შესწავლის ისტორ...
+                    </a>
+                    <a href="#section.b" class="toc-link block text-gray-500 ">
+                        ბ. ბ. ცნობები თხზულების შემცველ ხ...
+                    </a>
+                    <a href="#section.b.1" class="toc-link block text-gray-500 level-2">
+                        ბ.1. ათონის ხელნაწერი (A)
+                    </a>
+                    <a href="#section.b.2" class="toc-link block text-gray-500 level-2">
+                        ბ.2. საფარული ხელნაწერი (S)
+                    </a>
+                    <a href="#section.b.3" class="toc-link block text-gray-500 level-2">
+                        ბ.3. ორთოგრაფიული თავისებურებანი S ...
+                    </a>
+                    
+                    <a href="#notes" class="toc-link block text-gray-500">შენიშვნები</a>
                 </nav>
                 
                 <div class="mt-8 pt-8 border-t border-gray-100">
@@ -111,82 +393,834 @@
         </aside>
         
         <!-- Article Content -->
-        <article class="lg:col-span-3">
+        <article id="article-container" class="lg:col-span-3 relative">
             
             <!-- Header -->
             <header class="mb-8 pb-8 border-b border-gray-200">
-                <h1 class="text-2xl font-medium mb-3">სიტყუა ართრონთათვს: კვლევა</h1>
+                <h1 class="text-2xl font-medium mb-3">„სიტყუაჲ ართრონთათჳს&#34; — ძველი ქართული გრამატიკული ტრაქტატი</h1>
                 <p class="text-gray-500">ძველი ქართული გრამატიკული ტრაქტატის კვლევა</p>
                 
                 <!-- Article metadata -->
                 <div class="mt-4 flex flex-wrap gap-4 text-xs text-gray-400">
-                    <span><!-- author --></span>
-                    <span><!-- date --></span>
+                    <span>
+                            მზექალა
+                            შანიძე
+                        </span>
+                    <span>1990</span>
                 </div>
             </header>
             
             <!-- Article body -->
             <div class="article-content text-gray-700">
                 
-                <!-- Placeholder content -->
-                <section id="intro">
-                    <h2>შესავალი</h2>
-                    <p class="text-gray-500 italic">კვლევის ტექსტი მომზადდება...</p>
-                    <p class="text-gray-500 italic">
-                        აქ განხილული იქნება ტრაქტატის მნიშვნელობა ძველი ქართული გრამატიკული აზროვნებისთვის, 
-                        მისი ადგილი შუა საუკუნეების ქართულ ფილოლოგიურ ტრადიციაში და კვლევის მიზნები.
+                
+                <!-- Front Matter -->
+                <div class="front-matter">
+                    
+                    <!-- Foreword -->
+                    <section id="foreword" class="foreword">
+                        <div class="foreword-header">წინასიტყვაობა</div>
+                        <p>აქ წარმოდგენილი ძეგლი <cite class="title">„სიტყუაჲ ართრონთათჳს&quot;</cite> მცირე, მაგრამ მეტად საყურადღებო ორიგინალური საენათმეცნიერო ნაწარმოებია, რომელიც მეთერთმეტე საუკუნეშია შექმნილი და საბედნიეროდ ჩვენამდის მოღწეული. მისი ავტორი აშკარად არ ჩანს, მაგრამ ვინც უნდა იყოს იგი, დიდად განსწავლული პიროვნება კია.</p>
+                    
+                    
+<p>ნაწერი ეხება ბერძნულ <span class="term" data-target="">ართრონს</span>, ანუ ნაწევარს, რომელიც არსებით სახელს წინ დაესმის. ბერძნული სახელი კი შეიძლება იყოს <span class="term" data-target="">„მამალი&quot;</span>, <span class="term" data-target="">„დედალი&quot;</span> ან <span class="term" data-target="">„შუა&quot;</span>, ე. ი. გაირჩეს სქესის მიხედვით. როგორც მრავალ სხვა ენაში (<span class="term" data-target="">„მამრი&quot;</span>, <span class="term" data-target="">„მდედრი&quot;</span>, <span class="term" data-target="">„საშუალი&quot;</span>). ამას გარდა, ბერძნულში სამი გრამატიკული რიცხვია: <span class="term" data-target="">მხოლობითი</span> (<span class="term" data-target="">„ერთობითი&quot;</span>), <span class="term" data-target="">ორობითი</span> და <span class="term" data-target="">მრავლობითი</span> (<span class="term" data-target="">„განმრავლებითი&quot;</span>). მაშინ როდესაც ქართულში ორი გრამატიკული რიცხვი გვაქვს: მხოლობითი და მრავლობითი. ყველა ეს დიდად განასხვავებს ქართულს ბერძნულისაგან, საიდანაც ძველად მრავალი ძეგლი ითარგმნებოდა ქართულად; თარგმნისას კი სიზუსტეა საჭირო და ამას გამოუწვევია, რომ სპეციალური გამოკვლევა დაეწერათ, თუ რას წარმოადგენს ბერძნული ართრონი.</p>
+                    
+                    
+<p>ძველ ქართულში, რომელიც მეთერთმეტე საუკუნეში ჯერ კიდევ საკმაოდ მოქმედი სალიტერატურო ენა იყო, ართრონი ანუ ნაწევარი, რა თქმა უნდა, არსებობდა, მაგრამ იგი სულ სხვა ბუნებისა იყო. ვიდრე ბერძნული ართრონი. ადგილის მიხედვით იგი სახელს ჩვეულებრივ ბოლოს მოუდიოდა და არა წინ, როგორც ბერძნულში (<span class="mentioned" lang="ka-Geok">კაცი იგი</span>, შდრ. <span class="mentioned" lang="grc">Ο άνθρωπος</span>). ამას გარდა, ნაწევარი ქართულში გაირჩეოდა პირთა მიხედვით (<span class="mentioned" lang="ka-Geok">კაცი ესე</span>, <span class="mentioned" lang="ka-Geok">კაცი ეგე</span>, <span class="mentioned" lang="ka-Geok">კაცი იგი</span>). რაიც სრულიად უცნობი იყო ბერძნულისათვის. ამიტომ არ არის გასაკვირველი, რომ ჩვენი ავტორი, რომელიც კარგად ერკვევა ბერძნული ართრონის საკითხებში, ქართულში ართრონს ვერ ამჩნევს ან ერევა იგი წოდებითში დასმული სახელის წინ წამძღვარებულ ხმოვანში (<span class="mentioned" lang="ka-Geok">ჵ კაცო</span>).</p>
+                    
+                    
+<p>მიუხედავად ამისა, ეს მისი ნაშრომი ჩინებული საენათმეცნიერო თხზულებაა; იგი მოწმობს, რომ ძველი მწიგნობრები კარგად ერკვეოდნენ ენის საკითხებში, იცნობდნენ ბერძნულ გრამატიკას და ამასთან ერთად ცდილობდნენ ქართული ენის ბუნებისა და გრამატიკული წესების შესწავლასაც. ამ ნაწარმოებში ნახმარ გრამატიკულ ტერმინთაგან ზოგიერთი დღესაც საყოველთაოდ არის ქართულში მიღებული (<span class="term" data-target="">ნათესაობითი</span>, <span class="term" data-target="">მიცემითი</span>). აშკარაა ისიც, რომ პირველი ქართული გრამატიკული თხზულებანი მეჩვიდმეტე საუკუნეში კი არ არის დაწერილი, როგორც აქამდე იყო ცნობილი; <cite class="title">„სიტყუაჲ ართრონთათჳს&quot;</cite> ადასტურებს, რომ ამგვარი შრომები რამდენიმე საუკუნით ადრეც გვქონია, როგორც ვარაუდობდა <span class="person" data-ref="">ივანე ჯავახიშვილი</span>. ამ გრამატიკულმა თხზულებამ, რომელიც აქ სათანადოდ არის გამოცემული, ქართული ენათმეცნიერების ისტორიისათვის მეტად ძვირფასი მასალა შეგვძინა. აღსანიშნავია ისიც, რომ ათონური ხელნაწერი, რომელიც საფუძვლად დაედო ამ გამოცემას, სხვა მხრივაც საინტერესო გამოდგა: მასში შეტანილი სხვა ნათარგმნი თხზულებები, რომელთაგან დღეს ჩვიდმეტია შემორჩენილი, ქართულ ენაზე დღემდე ცნობილი არ ყოფილა. ამრიგად, მისმა შესწავლამ ძველი ქართული მწერლობისათვის საგულისხმო ცნობები გამოავლინა. ერთ-ერთი ამ თხზულებათაგანი აგრეთვე არის ამ წიგნში გამოქვეყნებული — სახელდობრ, ის ნაწარმოები, რომლის თარგმნაც შეიქნა მიზეზი გრამატიკული ნაშრომის დაწერისა.</p>
+                    
+                    
+                        <div class="foreword-author">— აკაკი შანიძე</div>
+                    </section>
+                    
+                    <!-- Dedication -->
+                    <section id="dedication" class="dedication">
+                        <p><span class="person" data-ref="">რიჩარდ ამირეჯიბის</span> ხსოვნას</p>
+                    
+<p><span class="person" data-ref="#mshanidze">მზექალა შანიძე</span></p>
+                
+                    </section>
+                    
+                    <!-- Introduction (შესავალი) -->
+                    <section id="introduction" class="introduction">
+                        <h2>შესავალი</h2>
+                        <p>ძველი ქართული მწერლობის ძეგლთა თანდათანობითი შესწავლისა და გამოქვეყნების შედეგად სულ უფრო და უფრო აშკარად ჩნდება ქართველ მწიგნობართა ცხოველი ინტერესი ენისა და ენათმეცნიერების საკითხებისადმი. ამ ინტერესის აღმოცენებისა და გაღრმავების ერთ-ერთი მიზეზი ის იყო, რომ დომინანტური როლი ძველ ქართულ სასულიერო მწერლობაში ნათარგმნ ლიტერატურას ეკუთვნოდა. უკვე მეხუთე საუკუნიდან ფართოდ გაშლილი მთარგმნელობითი და რედაქტორული მოღვაწეობის პროცესში ენის პრობლემები აუცილებლად ხვდებოდა ჩვენი წინაპრების თვალთახედვის არეში. ამ გარემოებისათვის მრავალი ისტორიული პარალელის მითითება შეიძლება: ინტენსიური მთარგმნელობითი საქმიანობისას ენასთან დაკავშირებულ საკითხებს ქრისტიანული კულტურის ქვეყნებში ადრევე ექცევა ყურადღება<a href="#note1" class="note-ref" data-note="note1">[]</a>. გარდა ამისა, მხედველობაში არის მისაღები შემდეგიც: იმ კულტურულ სამყაროში, რომელსაც მჭიდროდ უკავშირდებოდა ძველი ქართული სასულიერო მწერლობა, თვალსაჩინო ადგილი სწორედ ფილოლოგიურ დისციპლინებს ეჭირა<a href="#note2" class="note-ref" data-note="note2">[]</a>. ბიზანტიურ მეცნიერებასა და მწიგნობრობაში, რომელთა მასაზრდოებელ ერთ-ერთ ძირითად წყაროს ძველი ბერძნული კულტურული ტრადიცია წარმოადგენდა, გრამატიკა, რიტორიკასა და ფილოსოფიასთან ერთად, დიდ პატივში იყო<a href="#note3" class="note-ref" data-note="note3">[]</a>. კარგად არის ცნობილი, რომ თვითონ ბიზანტიაშიც და მასთან ისტორიული და კულტურული კავშირების მქონე სხვა ქვეყნებშიც ბერძნულმა ფილოლოგიურმა გრამატიკამ მრავალი საუკუნის განმავლობაში განსაზღვრა გრამატიკული აზროვნების შემდგომი განვითარება. <span class="person" data-ref="">ალექსანდრიული სკოლის</span> წარმომადგენლის <span class="person" data-ref="">დიონისიოს თრაკიელის</span> გრამატიკამ, რომელიც საყოველთაოდ ცნობილი გახდა, და მისი კომენტატორების თხზულებებმა<a href="#note4" class="note-ref" data-note="note4">[]</a> დიდი როლი შეასრულა სხვა გრამატიკულ სისტემათა ჩამოყალიბებისას ადრეულ შუა საუკუნეებში. მეტად საინტერესოდ და ხშირად დამოუკიდებელი გზით ვითარდებოდა აგრეთვე გრამატიკული აზროვნება მუსლიმანურ და იუდაისტურ მწიგნობრულ წრეებშიც. სირიულ, სომხურ, არაბულ და ებრაულ ენებზე დაწერილი მრავალრიცხოვანი ტრაქტატები, რომლებშიც იმდროინდელი გრამატიკული აზროვნება პოულობდა თავის გამოხატულებას, ადრეულ ენათმეცნიერულ კონცეფციათა განვითარების მეტად საინტერესო სურათს გვიჩვენებს<a href="#note5" class="note-ref" data-note="note5">[]</a>. ამგვარი თხზულებები, განსაკუთრებით კი ბერძნული, ჩვენშიც კარგად უნდა ყოფილიყო ცნობილი. მეტად საყურადღებოა ამ თვალსაზრისით <span class="person" data-ref="">ეფრემ მცირის</span> ერთი ანდერძი, რომელშიც იგი წერს, რომ <q>„ათორმეტ არიან ჴელოვნებანი ბერძენთა სწავლულებისანი&quot;</q> და მათგან პირველსავე ადგილზე ასახელებს <q>„გრამატიკოსობას&quot;</q>. მომდევნოდ კი — <q>„ფილოსოფოსობას&quot;</q> და <q>„რიტორებას&quot;</q><a href="#note6" class="note-ref" data-note="note6">[]</a>. ენის საკითხებისადმი ინტერესის დამადასტურებელი მასალა ძველი ქართული მწერლობის ძეგლებში უკვე საკმაოდ დიდი რაოდენობით არის გამოვლინებული. შემთხვევითი არ არის, რომ მეათე საუკუნის სამოცდაათიან წლებში შედგენილ <cite class="title">შატბერდის კრებულში</cite>, რომელიც შინაარსის მიხედვით ენციკლოპედიური ხასიათისა არის და იმდროინდელი მეცნიერული ცოდნის დონეს ასახავს, შეტანილია ნაწყვეტები სწორედ <span class="person" data-ref="#dionysius">დიონისიოს თრაკიელის</span> გრამატიკის კომენტარებიდან ბერძნული ანბანის შესახებ<a href="#note7" class="note-ref" data-note="note7">[]</a>, აგრეთვე ის ფრაგმენტი <span class="person" data-ref="">ეპიფანე კვიპრელის</span> ერთ-ერთი თხზულებიდან (<cite class="title">„ზომათათვს და საწყაულთა&quot;</cite>), რომელიც ებრაულ ანბანს ეხება<a href="#note8" class="note-ref" data-note="note8">[]</a>.</p>
+                    
+                    
+<p>ლექსიკოგრაფიის საწყისი ელემენტები ჩანს იმ სიტყვათა განმარტებებში და ლექსიკურ გლოსებში, რომლებიც უხვად არის გაბნეული ძველ თხზულებებში, განსაკუთრებით კი ეგზეგეტიკური ხასიათის შრომებში<a href="#note9" class="note-ref" data-note="note9">[]</a>. ეს გარემოება ჯერ კიდევ <span class="person" data-ref="">ა. ცაგარელმა</span> შენიშნა<a href="#note10" class="note-ref" data-note="note10">[]</a>. ასეთი ხასიათის ცალკეული განმარტებები გვხვდება უკვე <cite class="title">სინურ მრავალთავში</cite><a href="#note11" class="note-ref" data-note="note11">[]</a>; ძალზე ხშირია ასეთი კომენტარები <cite class="title">შატბერდის კრებულში</cite><a href="#note12" class="note-ref" data-note="note12">[]</a>. მსგავსი განმარტებები შემდგომ თავს იყრის საგანგებო ონომასტიკონ-ლექსიკონებში; მათ ნიმუშად შეიძლება დავასახელოთ <span class="person" data-ref="">კირილე ალექსანდრიელის</span> ლექსიკონის ქართული თარგმანი 1188—1210 წწ. ხელნაწერში: <cite class="title">„წმიდისა კურილე ალექსანდრიელისაჲ ლექსი მათეს თავის სახარებისა ძნელოანთა სიტყუათა განმარტებაჲ ლექსიკონი&quot;</cite><a href="#note13" class="note-ref" data-note="note13">[]</a>. ლექსიკონის სახეს იღებს აგრეთვე სახისმეტყველებითი (სიმბოლური და ალეგორიული) განმარტებები, გაბნეული სხვადასხვა ეგზეგეტიკურ თხზულებებში; სწორედ ასეთ განმარტებათაგან, რომლებიც <q>„მიმოგანფენილ და ძნელ საპოვნელად&quot;</q> იყვნენ მის მიერ შედგენილ ფსალმუნთა თარგმანებაში, შეუდგენია <span class="person" data-ref="#ephrem">ეფრემ მცირეს</span> თავისი ლექსიკონი — <cite class="title">„ლექსთაჲ, ესე იგი არს ღრმათა სიტყუათაჲ&quot;</cite><a href="#note14" class="note-ref" data-note="note14">[]</a>. ეს ნაშრომი, რომელშიც ეფრემს სიტყვები შეუტანია <q>„არა ლიტონად, არცა ურთიერთას აღრეულად, არამედ ასოთა ზედა ანბანისათა განწყობილად და განკარგულად&quot;</q>, არსებითად ჯერხნობით ცნობილთაგან პირველ ქართულ ორიგინალურ ლექსიკონს წარმოადგენს.</p>
+                    
+                    
+<p>ათონელ მოღვაწეთა და <span class="person" data-ref="#ephrem">ეფრემ მცირის</span> თხზულებებში. განსაკუთრებით ეფრემისაში, უკვე სრულიად გამოკვეთილად ჩანს, რომ ამ ავტორების ინტერესი ენის საკითხებისადმი ხშირად უკვე წმინდა მეცნიერულ ხასიათს იღებს. ამას მოწმობს ის მრავალმხრივი შენიშვნები და კომენტარები მათ მიერ ნათარგმნ შრომებში, რომლებიც საღვთისმეტყველო კომენტარის ფარგლებს სცილდება. სამწუხაროდ, არც <span class="person" data-ref="">ეფთვიმე</span> და <span class="person" data-ref="">გიორგი მთაწმიდლების</span>, არც <span class="person" data-ref="#ephrem">ეფრემ მცირის</span> შრომები ამ თვალსაზრისით ჯერჯერობით სათანადოდ შესწავლილი არ არის. მაგრამ ის მცირედიც, რაც ამჟამად არის ცნობილი, თვალნათლივ გვიჩვენებს მათ ფილოლოგიურ ინტერესებსა და ცოდნას<a href="#note15" class="note-ref" data-note="note15">[]</a>.</p>
+                    
+                    
+<p>ძალიან საინტერესო ენობრივი დაკვირვებები აქვს გამოთქმული თავის შენიშვნებში <span class="person" data-ref="">არსენი იყალთოელსაც</span><a href="#note16" class="note-ref" data-note="note16">[]</a>.</p>
+                    
+                    
+<p>ენისა და გრამატიკის საკითხებს დიდ ყურადღებას აქცევდა <span class="person" data-ref="">იოანე პეტრიწიც</span>. დიდი შრომა გაუწევია მას ქართული მეცნიერული, განსაკუთრებით კი ფილოსოფიური, ტერმინოლოგიის შესაქმნელადაც<a href="#note17" class="note-ref" data-note="note17">[]</a>. შემთხვევითი არ არის არც ის გარემოება, რომ <span class="person" data-ref="">იოანე იტალოსის</span> <cite class="title">„აბაზგი გრამატიკოსისადმი&quot;</cite> მიმართული წერილის ადრესატად სწორედ <span class="person" data-ref="#petritsi">იოანე პეტრიწს</span> ვარაუდობენ<a href="#note18" class="note-ref" data-note="note18">[]</a>. ცნობილია, რომ მას <span class="person" data-ref="#dionysius">დიონისიოს თრაკიელის</span> გრამატიკა გამოუყენებია წყაროდ თავისი ერთ-ერთი ორიგინალური ნაშრომის ბოლოსიტყვაობისათვის (<cite class="title">„განმარტებაჲ პროკლესთჳს დიადოხოსისა და პლატონურისა ფილოსოფიისათჳს&quot;</cite>)<a href="#note19" class="note-ref" data-note="note19">[]</a>.</p>
+                    
+                    
+<p><span class="person" data-ref="">სულხან-საბა ორბელიანის</span> ლექსიკონში მოცემული გრამატიკული ტერმინები და მათი განმარტებები ზოგიერთ შემთხვევაში გვავარაუდებინებს, რომ საბა იყენებდა უფრო ადრე არსებულ სათანადო ლიტერატურას და საზოგადოდ ეყრდნობოდა ამგვარ განმარტებათა შექმნისას ძველ ტრადიციებს<a href="#note20" class="note-ref" data-note="note20">[]</a>. ისტორიული ხასიათის ცნობებიც, რომლებიც სხვადასხვა ავტორთა თხზულებებში გვხვდება, უეჭველად მიგვანიშნებს იმაზე, რომ ქართველებს თავის დროზე ჰქონიათ ნაშრომები, რომლებიც საგანგებოდ ეხებოდა ენის საკითხებს. ქართველებს ერთი ლექსიკონი ჰქონოდათ და დაჰკარგოდათო, გულისტკივილით ჩივის <span class="person" data-ref="#saba">სულხან-საბა ორბელიანი</span><a href="#note21" class="note-ref" data-note="note21">[]</a>. საყურადღებო, თუმცა არც თუ მთლად გარკვეულ ცნობებს ძველი გრამატიკული ლიტერატურის შესახებ გვაწვდის <span class="person" data-ref="">ანტონ კათალიკოსი</span><a href="#note22" class="note-ref" data-note="note22">[]</a>. <q>„ძველ გრამატიკებს&quot;</q> ახსენებენ <span class="person" data-ref="">თეიმურაზ</span> და <span class="person" data-ref="">დავით ბაგრატიონებიც</span><a href="#note23" class="note-ref" data-note="note23">[]</a>.</p>
+                    
+                    
+<p>ზემოთ დასახელებული მაგალითები მხოლოდ სანიმუშოდ არის მოყვანილი და სრულიადაც არ ამოწურავს იმ საბუთებს, რომლებიც ქართული გრამატიკული ლიტერატურის ადრე არსებობის დასამტკიცებლად არის ხოლმე მოხსენებული. მაგრამ, მიუხედავად იმისა, რომ გრამატიკულ თხზულებათა ძველად არსებობა საეჭვოდ აღარ არის მიჩნეული დღეს, უკანასკნელ დრომდე ამგვარი ნაწარმოებები ძველ ქართულ მწერლობაში მიკვლეული არ ყოფილა. 1937 წელს გამოქვეყნებულ წიგნში <span class="person" data-ref="">ივანე ჯავახიშვილი</span> წერდა: <q>„მომავალში ხელნაწერების შესწავლამ შესაძლებელია ძველ ქართველ გრამატიკოსთა და მთარგმნელების დაკვირვება აღმოაჩინოს კიდევაც და მაშინ ამ საკითხზე მსჯელობა გაადვილდეს, მაგრამ ჯერჯერობით <span class="person" data-ref="">ზურაბ შანშოვანის</span> 1737 წლისა და <span class="person" data-ref="#antonI">ანტონ კათალიკოზის</span> 1753 და 1767 წწ.-ზე უწინარესი არც ერთი ქართული გრამატიკული ნაშრომი აღმოჩენილი არ არის. თვით ის ცალკეული დაკვირვებანი, რომელნიც <span class="person" data-ref="#euthymius">ეფთვიმე</span> და <span class="person" data-ref="#giorgi">გიორგი მთაწმიდლებს</span>, <span class="person" data-ref="#ephrem">ეფრემ მცირეს</span>, <span class="person" data-ref="#arseniqaltoeli">არსენი იყალთოელსა</span> და სხვებს სქოლიოებისა და კიდურწერილობის სახით მოეპოვებათ, ჯერ არავის ამოუკრეფია და გამოუქვეყნებია. ამიტომ იმ საგულისხმო საკითხის გასათვალისწინებლად, თუ რა თვისებისა და ღირებულებისა იყო ძველ ქართველ მეცნიერთა ქართული და ბერძნული ენების რაბამობის ცოდნა, ჯერ თითქმის არავითარი მასალები არ მოგვეპოვება&quot;</q><a href="#note24" class="note-ref" data-note="note24">[]</a>. მას შემდეგ მდგომარეობა არსებითად არ შეცვლილა და <span class="person" data-ref="#javakhishvili">ი. ჯავახიშვილის</span> ნათქვამს სხვებიც იმეორებენ: <q>„ქართული გრამატიკული ლიტერატურის ძეგლთაგან XVIII ს-ის დამდეგზე ადრინდელი ჯერხნობით არ მოიპოვება&quot;</q><a href="#note25" class="note-ref" data-note="note25">[]</a>; <q>„ქართული გრამატიკული აზროვნების სათავეები ჯერჯერობით წყვდიადითაა მოცული. ჩვენამდე არ მოღწეულა მე-18 საუკუნეზე ადრინდელი არც ერთი შრომა, რომელშიც საგანგებოდ იყოს გაშუქებული გრამატიკის საკითხები&quot;</q><a href="#note26" class="note-ref" data-note="note26">[]</a>.</p>
+                    
+                    
+<p><cite class="title">„სიტყუაჲ ართრონთათვს&quot;</cite> ამ დანაკლისს ნაწილობრივ ავსებს. დღესდღეობით ცნობილთაგან სწორედ ის არის უძველესი ქართული თხზულება, რომელშიც საგანგებოდ არის განხილული გრამატიკის საკითხები. მართალია, მისი დაწერის მიზეზი ყოფილა ერთ-ერთი სასულიერო თხზულების თარგმნისას წამოჭრილი პრაქტიკული საკითხი (ამის შესახებ ქვემოთ არის დაწვრილებითი მსჯელობა), მაგრამ <cite class="title">„სიტყუაჲ ართრონთათჳს&quot;</cite> თავისთავად დამოუკიდებელ სამეცნიერო შრომას წარმოადგენს: ეს არის ქართველი ავტორის მიერ დაწერილი ორიგინალური ტრაქტატი, რომელშიც განხილულია გრამატიკის ერთი საკითხი და გარკვეული თვალსაზრისით ერთმანეთს არის შედარებული ქართული და ბერძნული ენა. ამასთანავე ავტორს ჩინებულად სცოდნია, <span class="person" data-ref="#ephrem">ეფრემ მცირის</span> სიტყვით რომ ვთქვათ, <q>„რაბამობაჲ ქართველთა და ბერძენთა ენებისად&quot;</q><a href="#note27" class="note-ref" data-note="note27">[]</a>. თხზულების ანალიზი და ზოგიერთი სხვა მოსაზრებაც საშუალებას გვაძლევს გამოვთქვათ ვარაუდი, რომ <cite class="title">„სიტყუაჲ ართრონთათვს&quot;</cite> დაწერილია XI ს-ში, ე. ი. სწორედ იმ ეპოქაში, როდესაც საერთო ვითარებისა და სამეცნიერო ინტერესების შესაბამისად მსგავსი თხზულების შექმნა ყველაზე უფრო არის საგულვებელი. თვითონ თხზულებასა და მის შემცველ ათონურ ხელნაწერსაც აშკარად ატყვია <span class="person" data-ref="#ephrem">ეფრემ მცირის</span> ფილოლოგიური სკოლის კვალი. საფიქრებელია, რომ გრამატიკული ტრაქტატის ავტორი არის თვითონ ეფრემი, ან მისი მოწაფე <span class="person" data-ref="#arseniqaltoeli">არსენი იყალთოელი</span>. ეს მოსაზრება ჩვენ გამოვთქვით ჯერ კიდევ 1977 წელს, როდესაც ხელთ გვქონდა მხოლოდ გვიანდელი, საფარული ნუსხა<a href="#note28" class="note-ref" data-note="note28">[]</a>. მას შემდეგ კი, რაც შესაძლებელი გახდა ძველი, ათონური ნუსხის გამოყენებაც, ჩვენი ვარაუდი უფრო სარწმუნო გამოჩნდა.</p>
+                    
+                    
+<p><cite class="title">„სიტყუაჲ ართრონთათჳს&quot;</cite>, მიუხედავად მისი მცირე მოცულობისა, ქართული მეცნიერული აზრის ისტორიისათვის დიდი მნიშვნელობის მქონე ნაწარმოებია, როგორც ადრე არსებული გრამატიკული ლიტერატურის რეალური ნიმუში. ეს თხზულება გვაძლევს იმის სარწმუნო საბუთს, რომ მოგვიანებით შექმნილი ქართული გრამატიკული ლიტერატურა ემყარება ენათმეცნიერული აზროვნების ხანგრძლივ ტრადიციებს, რომელთა საწყისები XI—XII საუკუნეებში სავსებით ჩამოყალიბებული ჩანს.</p>
+                    
+                    
+<p>წინამდებარე წიგნში <cite class="title">„სიტყუაჲ ართრონთათჳს&quot;</cite> პირველად ქვეყნდება სრული სახით და სათანადო სამეცნიერო კრიტიკული აპარატით<a href="#note29" class="note-ref" data-note="note29">[]</a>.</p>
+                    
+                    
+<p>აქვეა დაბეჭდილი აგრეთვე ის ნათარგმნი თხზულებაც, რომლის ტექსტშიც არის ჩართული ათონურ ხელნაწერში <cite class="title">„სიტყუაჲ ართრონთათვს&quot;</cite>: <cite class="title">„იოანე ოქროპირისად... სიტყუსა მისთვს, ვითარმედ: „ქრისტე აღმოსავალი აღმოსავალთა...&quot;</cite>. ამრიგად, მკითხველს შესაძლებლობა ექნება გაეცნოს იმ ნაწარმოებსაც, რომლის თარგმნასაც მიუცია ბიძგი ქართველი მწიგნობრისათვის ორიგინალური ქართული გრამატიკული ნაშრომის შესაქმნელად. ამ ჰომილიის ტექსტზე დაკვირვება საშუალებას მოგვცემს, უფრო სრული წარმოდგენა ვიქონიოთ გრამატიკული ტრაქტატის რაობის შესახებ და გავარკვიოთ ამ უკანასკნელთან დაკავშირებული ზოგიერთი საკითხიც. რა თქმა უნდა, თხზულება, რომლის ავტორადაც ათონურ ხელნაწერში <span class="person" data-ref="">იოანე ოქროპირი</span> არის დასახელებული (ისევე, როგორც ამ კრებულში შეტანილი ყველა ნაწარმოებისათვის), მარტო ამ თვალსაზრისით არ არის მნიშვნელოვანი: ათონური კრებული საზოგადოდ მეტად საყურადღებოა, რადგან იგი შეიცავს თარგმანებს, რომლებიც დღემდე სრულიად უცნობი იყო და რომლებიც ფილოლოგიური და ენობრივი კვლევისათვის ზოგჯერ მეტად საინტერესო მასალას გვაწვდის.</p>
+                
+                    </section>
+                    
+                </div>
+                
+                <!-- Main Sections -->
+                <section id="section.a">
+                    <h2>ა. ა. ნაწარმოების შესწავლის ისტორიიდან</h2>
+                    
+                    <p data-n="1">
+                        <time datetime="1981">1981 წლამდე</time> <cite class="title">„სიტყუაჲ ართრონთათჲს&quot;</cite> ხელმისაწვდომი იყო ერთადერთი ნუსხის მიხედვით; ეს იყო <span class="org">საქ. მეცნ. აკად. ხელნაწერთა ინსტიტუტის</span> <a href="#ms.S">S—312</a> ხელნაწერი, გადაწერილი <span class="person" data-ref="">სვიმონ კარგარეთლის</span> მიერ <time datetime="1541">1541 წელს</time> <span class="place">საფარის ლავრაში</span>. ამ ხელნაწერს ადრევე მიაქცია ყურადღება აწ განსვენებულმა მკვლევარმა <span class="person" data-ref="https://prosopography.iliauni.edu.ge/persons/9401-qristine-chito-giorgis-asuli-sharashidze">ქრისტინე (ჩიტო) შარაშიძემ</span>, რომელიც ჯერ კიდევ <time datetime="1951">1951 წელს</time> წერდა: <q>„ხელნაწერი განსაკუთრებით ძვირფასია, როგორც XVI ს. განათლებული ქართველების მეცნიერული ინტერესების ცოცხალი ძეგლი&quot;</q><a href="#note30" class="note-ref" data-note="note30">[]</a>. მაშინ <span class="person" data-ref="#sharasidze">ქ. შარაშიძემ</span> ხელნაწერში შეტანილ თხზულებათაგან მხოლოდ <span class="person" data-ref="">აბუსერისძე ტბელის</span> ასტრონომიული ტრაქტატი მოიხსენა. შემდგომ მან მთლიანად აღწერა <a href="#ms.S">S—312</a> ხელნაწერი, რომელსაც <q>„პოლემიკურ-დოგმატიკური და სამეცნიერო კრებული&quot;</q> შეარქვა<a href="#note31" class="note-ref" data-note="note31">[]</a>. აღწერილობაში, დღეს მიღებული საერთო წესის შესაბამისად, დასახელებულია კრებულში შეტანილი ყველა თხზულების სათაური და მოყვანილია ტექსტის დასაწყისი. ამათ ზოგჯერ მოსდევს <span class="person" data-ref="#sharasidze">ქ. შარაშიძის</span> საყურადღებო შენიშვნა-კომენტარებიც, მაგრამ გრამატიკული თხზულების შესახებ არც აღწერილობაში არის რაიმე თქმული. ის, რომ <span class="person" data-ref="#sharasidze">ქ. შარაშიძეს</span> ეს ნაწარმოები მნიშვნელოვნად მიაჩნდა, ჩანს მხოლოდ ამით: აღწერილობაში დამოწმებული ფრაგმენტი ტექსტისა უფრო ვრცელია, ვიდრე სხვებისა: დაბეჭდილია ამ პატარა თხზულების ერთ მეხუთედამდე. მიუხედავად ამისა, <cite class="title">„სიტყუაჲ ართრონთათჳს&quot;</cite> სპეციალისტებს დღემდე შეუმჩნეველი დარჩა, შესაძლოა იმიტომაც, რომ ტექსტის გამოქვეყნებულ მონაკვეთში აღმწერელს ართრონთა პარადიგმა არასრული სახით აქვს მოცემული — გამოტოვებულია ესა თუ ის ფორმა. ამიტომ მთლიანი ნაწარმოების ხასიათი აღწერილობაში ნათლად არ ჩანს.</p>
+                    
+                    
+                    </p>
+                    <p data-n="2">
+                        ამ სტრიქონების ავტორსაც პირველი ცნობა გრამატიკული ტრაქტატის შესახებ ისევ <span class="person" data-ref="#sharasidze">ქრისტინე შარაშიძემ</span> მიაწოდა. მან <cite class="title">„სიტყუაჲ ართრონთათჳს&quot;</cite> ხელნაწერში მაჩვენა და დასძინა: <q>„გააცანით ბატონ აკაკისაც <span class="editorial-note">((იგულისხმებოდა <span class="person" data-ref="#ashanidze">აკაკი შანიძე</span>. მ. შ.))</span> ეს მისთვის საინტერესო იქნება&quot;</q>. დღეს მინდა მადლობით გავიხსენო ქალბატონი ჩიტო, რომელმაც მისთვის ჩვეული თავმდაბლობითა და დაუშურველობით მის მიერ მიკვლეული მნიშვნელოვანი თხზულება შესასწავლად სხვებს დაუტოვა.</p>
+                    
+                    
+                    </p>
+                    <p data-n="3">
+                        <cite class="title">„სიტყუაჲ ართრონთათჳს&quot;</cite> თავდაპირველად შესწავლილი იყო და გამოსაცემად მომზადებული (<time datetime="1977">1977 წ.</time>) სწორედ საფარული ნუსხის მიხედვით. ეს ხელნაწერი (წინამდებარე გამოცემის — <a href="#ms.S">S</a>) მართლაც ძალზე მნიშვნელოვანია, მაგრამ მარტო მის მიხედვით ძნელი იყო ამ თხზულების ყოველმხრივი შესწავლა: გრამატიკული ტრაქტატის ტექსტი ამ ხელნაწერში საკმაოდ შერყვნილი სახით არის წარმოდგენილი (ამის შესახებ დაწვრილებით ქვემოთ არის მსჯელობა). გარდა ამისა, ეს თხზულება თავისი შინაარსის მიხედვითაც განცალკევებულია ამავე ხელნაწერში შეტანილ სხვა ნაწარმოებთაგან; გადამწერს არ დაუსახელებია ავტორი, არც მოუცია რაიმე დამატებითი მასალა თხზულების რაობის დასადგენად. ამგვარ საკითხთა კვლევისას მაშინ იძულებული ვიყავით, დავსჯერებოდით მხოლოდ იმ ზოგად ცნობებს, რომლებიც თვითონ გრამატიკულ ტრაქტატში მოიძებნება. ამ ნაწარმოების დასაწყისიდანვე აშკარა არის, რომ მისი დაწერა განუზრახავს <span class="person" data-ref="#chrysostom">იოანე ოქროპირის</span> რომელიღაც თხზულების თარგმნის დროს. მისი სათაური ნახსენები არ არის, ჩანს მხოლოდ, რომ ამ ნაწარმოებში თეოლოგიური დისპუტის ერთ-ერთი არგუმენტი ყოფილა მსჯელობა სამების წევრთა სახელებთან ართრონის სხვადასხვაგვარად ხმარების შესახებ. ოქროპირის თხზულების ბერძნულ ორიგინალში განსხვავებული მნიშვნელობით ნახმარი ართრონიანი და უართრონო ფორმების ქართულ თარგმანში ზუსტად გადმოცემა მთარგმნელს შეუძლებლად მიუჩნევია: ამიტომ <cite class="title">„სიტყუაჲ ართრონთათჳს&quot;</cite> მას საგანგებოდ დაუწერია, რომ ქართველი მკითხველისათვის გაეადვილებინა იმ ადგილის აზრის გაგება თარგმანში. ამიტომაც ვივარაუდეთ, რომ გრამატიკული ტრაქტატი თავდაპირველად შენიშვნის სახით უნდა ჰქონოდა დართული ოქროპირისეული თხზულების ქართულ ტექსტს.</p>
+                    
+                    
+                    </p>
+                    <p data-n="4">
+                        <span class="person" data-ref="#chrysostom">იოანე ოქროპირის</span> ნაწარმოებთა იმ ქართულ თარგმანებში, რომლებზეც მაშინ მიგვიწვდებოდა ხელი, ამგვარი შინაარსის თხზულებას ვერ მივაკვლიეთ, მაგრამ ამ ძიების დროს ჩვენი ყურადღება მიიქცია <span class="place">ათონის ქართველთა მონასტრის</span> წიგნსაცავში დაცულ ხელნაწერთა კატალოგმა, რომელიც <time datetime="1836">1836 წელს</time> შეადგინა <span class="person" data-ref="">ილარიონ ბერმა</span> და გამოაქვეყნა <span class="person" data-ref="#tsagareli">ა. ცაგარელმა</span><a href="#note32" class="note-ref" data-note="note32">[]</a>. <span class="person" data-ref="#ilarioni">ილარიონის</span> კატალოგი ძალზე მოკლეა და სქემატური, მაგრამ მან მაინც საყურადღებო მასალა მოგვცა: <span class="person" data-ref="#ilarioni">ილარიონის</span> სიაში დასახელებულია ერთი <q>„სიძუელისაგან განრყუნილი ხელნაწერი&quot;</q>, რომელიც, მისი ცნობით, შეიცავდა <span class="person" data-ref="#chrysostom">იოანე ოქროპირის</span> თხზულებებს. ზოგიერთი მათგანის სათაური ავტორმა დაასახელა კიდევაც. სათაურების ჩამოთვლისას მან ერთგან შენიშნა, რომ ამავე თავში <span class="person" data-ref="#euthymius">ეფთვიმე მთაწმიდელი</span> ამბობს: <q>ბერძნულს ენას კეთილად მოუვალს ართრონი და ქართულს ენაზე არ მოვაო</q>. <span class="person" data-ref="#ilarioni">ილარიონის</span> სიის შედარებამ <span class="person" data-ref="#tsagareli">ა. ცაგარლისა</span> და <span class="person" data-ref="">რ. ბლეიკის</span> აღწერილობებთან გვაფიქრებინა, რომ ათონელი ბერის მიერ დასახელებული ხელნაწერი შეიძლებოდა ყოფილიყო <a href="#ms.A">ათონის ხელნაწერი N6</a> <span class="person" data-ref="#blake">რ. ბლეიკის</span> კატალოგის მიხედვით (შესაბამისად N 85 <span class="person" data-ref="#tsagareli">ა. ცაგარლის</span> აღწერილობაში). ჩვენ მაშინ ვივარაუდეთ, რომ სწორედ <a href="#ms.A">ათ. N 6</a> ხელნაწერში უნდა გვქონოდა ჩართული <span class="person" data-ref="#chrysostom">იოანე ოქროპირის</span> ერთ-ერთი თხზულების თარგმანში <span class="person" data-ref="#ilarioni">ილარიონის</span> მიერ <span class="person" data-ref="#euthymius">ეფთვიმე მთაწმიდლისეულად</span> მიჩნეული მსჯელობა ქართულში ართრონის არ არსებობის შესახებ, და რომ ეს უნდა ყოფილიყო ის ორიგინალური გრამატიკული ტრაქტატი, რომელიც ჩვენთვის <a href="#ms.S">S-312</a> ხელნაწერის მიხედვით იყო ცნობილი. მაშინ ამ ვარაუდის შემოწმება შეუძლებელი იყო, რადგან ათონურ ხელნაწერებზე ხელი არ მიგვიწვდებოდა; <span class="person" data-ref="#blake">რ. ბლეიკისა</span> და <span class="person" data-ref="#tsagareli">ა. ცაგარლის</span> აღწერილობებში ხელნაწერის შედგენილობა არ არის ნაჩვენები, სხვაგან კი <span class="person" data-ref="#chrysostom">იოანე ოქროპირის</span> ქართულ თარგმანებში ამგვარივე სათაურის მქონე თხზულების ნუსხა არ დაიძებნა. მხოლოდ <time datetime="1981">1981 წლის გაზაფხულზე</time>, როდესაც <span class="org">თბილისის უნივერსიტეტმა</span> მიიღო <span class="place">ათონის ივერთა მონასტრის</span> ქართულ ხელნაწერთა მიკროფილმები (გადაღებული <span class="person" data-ref="">გურამ პატარაიას</span> თაოსნობით), მოგვეცა საშუალება, გავცნობოდით ამ კოლექციას. ჩვენდა სასიხარულოდ, ვარაუდი გაგვიმართლდა: <a href="#ms.A">N6</a> ხელნაწერში აღმოჩნდა არა მარტო გრამატიკული ტრაქტატის ადრეული, XII—XIII სს-ში გადაწერილი ტექსტი, არამედ ოქროპირის სახელით ცნობილი ის ნაწარმოებიც, რომლის თარგმნაც გამხდარა გრამატიკული ნაშრომის დაწერის უშუალო მიზეზი. როგორც მოსალოდნელი იყო, ეს უკანასკნელი ოქროპირისეული თხზულების თარგმანში იყო ჩართული. ამრიგად, საშუალება მოგვეცა ორივეს შესწავლისა და მათი ურთიერთმიმართების დადგენისა. გარდა ამისა, გაირკვა, რომ მთლიანი კრებული სხვა მხრივაც საგულისხმო მასალას შეიცავს.</p>
+                    
+                    
+                    </p>
+                    <p data-n="5">
+                        ყველა ზემოაღნიშნული მიზეზის გამო, ძირითად ნუსხად წინამდებარე გამოცემაში მივიჩნიეთ სწორედ ათონური ხელნაწერი (<a href="#ms.A">A</a>).</p>
+                
+                    </p>
+                </section>
+                <section id="section.b">
+                    <h2>ბ. ბ. ცნობები თხზულების შემცველ ხელნაწერთა შესახებ</h2>
+                    
+                </section>
+                <section id="section.b.1">
+                    <h3>ბ.1. ათონის ხელნაწერი (A)</h3>
+                    
+                    <p data-n="1">
+                        <span class="place">ათონის ივერთა მონასტრის</span> წიგნსაცავის <a href="#ms.A">N6</a> ხელნაწერი (ჩვენი გამოცემის <a href="#ms.A">A</a>) დღემდე დაწვრილებით არავის შეუსწავლია. როგორც ზემოთ აღვნიშნეთ, პირველი ცნობები მის შესახებ მოცემულია <span class="person" data-ref="#ilarioni">ილარიონის</span> კატალოგში, სადაც ნათქვამია (ავტორისეულ ორთოგრაფიას და პუნქტუაციას უცვლელად ვტოვებთ):</p>
+                        
+                        
+                    </p>
+                    <p data-n="2">
+                        <span class="person" data-ref="#tsagareli">ა. ცაგარელმა</span> თავის აღწერილობაში ამ (N 85) ხელნაწერს სულ ოთხი სტრიქონი დაუთმო: მოგვცა ზოგიერთი ტექნიკური მონაცემი ხელნაწერის შესახებ, მიუთითა, რომ ხელნაწერი დაზიანებულია და თავ-ბოლო ნაკლული. ხელნაწერი <span class="person" data-ref="#tsagareli">ა. ცაგარელს</span> XIV-XVI სს.-ით დაუთარიღებია. შედგენილობის შესახებ ნათქვამია მხოლოდ, რომ ხელნაწერში მოიპოვება <span class="person" data-ref="#chrysostom">იოანე ოქროპირის</span> სწავლანი<a href="#note34" class="note-ref" data-note="note34">[]</a>.</p>
+                        
+                        
+                    </p>
+                    <p data-n="3">
+                        <span class="person" data-ref="#blake">რ. ბლეიკი</span> <span class="place">ათონზე</span> იყო <time datetime="1931-08">1931 წლის აგვისტოში</time> და ხელნაწერებზე მუშაობდა ექვსი დღე<a href="#note35" class="note-ref" data-note="note35">[]</a>. მიუხედავად იმისა, რომ მას ასეთი მცირე დრო ჰქონდა, მისი კატალოგი <span class="person" data-ref="#tsagareli">ცაგარლისაზე</span> ბევრად უფრო ვრცელია და დაწვრილებითი. მის მიერ შესწავლილ ხელნაწერთა უმეტესობისათვის <span class="person" data-ref="#blake">რ. ბლეიკი</span> ტექნიკურ აღწერილობასთან ერთად იძლევა ცნობებს მასში შეტანილ თხზულებათა შესახებ და ხშირად მათ ბერძნულ დედნებსაც მიუთითებს (<span class="person" data-ref="#blake">რ. ბლეიკი</span> თვითონ წერს, რომ კატალოგის დამუშავებაში <span class="person" data-ref="">პ. პეეტერსი</span> დახმარებია). სამწუხაროდ, <span class="person" data-ref="#blake">რ. ბლეიკს</span> სწორედ <a href="#ms.A">№ 6</a> ხელნაწერის საფუძვლიანი შესწავლა ვერ მოუხერხებია, ალბათ იმიტომ, რომ იგი ძალზე დაზიანებული და დაშლილი ყოფილა. ამ ხელნაწერის აღწერილობა სულ თხუთმეტიოდე სტრიქონია და რაც არის, უმეტესად ტექნიკური დეტალების გადმოცემას წარმოადგენს.</p>
+                        
+                        
+                    </p>
+                    <p data-n="4">
+                        <span class="person" data-ref="#blake">რ. ბლეიკის</span> აღწერილობაში ნათქვამია, რომ ხელნაწერისათვის უხმარიათ ოდნავ გალესილი აღმოსავლური ქაღალდი, რომელსაც დაჰყვება ვერტიკალური ზოლები (ე. წ. <span class="term" data-target="">„ვერჟერები&quot;</span>). ასეთი ქაღალდი ჩვეულებრივ ძველია, გავრცელებული იყო XII—XIII საუკუნეებში<a href="#note36" class="note-ref" data-note="note36">[]</a>. ხელნაწერის ზომები ყოფილა 370×255 მმ; ნაწერისა — 275×165 მმ. მიკროფილმზე არ გადაუღიათ ყდა, რომელიც, <span class="person" data-ref="#blake">რ. ბლეიკის</span> სიტყვით, ფიცარზე გადაკრული სადა შავი ტყავისა ყოფილა. ხელნაწერის ტექსტი ნაწერი ყოფილა შავი, ხოლო სათაურები — მუქი წითელი ფერის მელნით (მიკროფილმი და მიკროფილმიდან დამზადებული ფოტოები შავ-თეთრია და ფერთა სხვაობა მათზე თითქმის შეუმჩნეველია). ტექსტი ნაწერია ორ სვეტად, ნუსხურით, საზედაო ასოებად გამოყენებულია ასომთავრული ასოები (იხ. ფოტო N 2). თითოეულ სვეტში 33 სტრიქონია, გარდა იმ სვეტებისა, სადაც ტექსტი იწყება (აქ ადგილი უჭირავს თავსამკაულს) ან სადაც მთავრდება: ხელნაწერის შედგენილობა <span class="person" data-ref="#blake">რ. ბლეიკს</span> აღწერილობაში არ მოუცია; იგი წერს მხოლოდ, რომ <a href="#ms.A">ათ. № 6</a> შეიცავს მონაკვეთებს (<span class="foreign" lang="fr">extraits</span>) <span class="person" data-ref="#chrysostom">იოანე ოქროპირის</span> თხზულებებიდან. ასეთი ნაწყვეტები, მისი სათვალავით, 35 ყოფილა. <span class="person" data-ref="#blake">რ. ბლეიკი</span> წერს: <q>„ტექსტი იმ ზომაზეა დაზიანებული, რომ შეუძლებელია ცალკეული ნაწილების მოცულობის დადგენა&quot;</q><a href="#note37" class="note-ref" data-note="note37">[]</a>.</p>
+                        
+                        
+                    </p>
+                    <p data-n="5">
+                        მიკროფილმი გვიჩვენებს, რომ ხელნაწერი უარეს დღეშია, ვიდრე აღწერილობათა მიხედვით შეიძლებოდა გვეფიქრა. ამის მთავარი მიზეზი ის არის, რომ მელანს, რომლითაც ტექსტი არის ნაწერი, ქაღალდი დაუწვავს. მელანს ისე ამოუჭამია ხელნაწერის დიდი ნაწილი, რომ მრავალი ფურცელი სულ დაშლილა და ნაფლეთებად ქცეულა (ნ. ფოტო 8). სწორედ ამის გამოა, ალბათ, რომ ხელნაწერის ნახევარიღა არის დარჩენილი და რაც არის, ისიც ძალზე დაზიანებული, განსაკუთრებით დასაწყისში, სადაც ფურცლის გარეთა კიდის მხარეს ნაწერი. სვეტის ტექსტი ზოგჯერ მთლიანად ჩაშლილია; დარჩენილია მხოლოდ შიდა, ყუისმხრივი სვეტის ნაწილები. ქაღალდის ამოწვა და დაშლა მელნის დაჟანგვის გამო ჩვეულებრივ გვხვდება გვიანდელი პერიოდის (XVII-XVIII სს.) ქართულ ხელნაწერებში, რომლებიც ე. წ. <span class="term" data-target="">„რუსული მელნით&quot;</span> არის ნაწერი, მაგრამ ასეთი რამ ადრეც შეიძლებოდა მომხდარიყო. მელანი, რომლის შემადგენლობაში შედიოდა გოგირდმჟავა რკინა, ანუ <span class="term" data-target="">არჯასპი</span>, საშუალო საუკუნეებში ხშირად აზიანებს ბერძნულ ხელნაწერებს. იგი ფურცლის მეორე მხარეზე გადის და ეტრატსაც კი შლის. ცნობილია ასეთი მელნის რეცეპტებიც<a href="#note38" class="note-ref" data-note="note38">[]</a>. სავარაუდებელია, რომ ხელნაწერისათვის ნახმარი იყო სწორედ გოგირდმჟავა არჯასპის შემცველი მელანი. ამ ვარაუდს ისიც უჭერს მხარს, რომ <span class="person" data-ref="#blake">რ. ბლეიკის</span> აღწერილობის მიხედვით ტექსტი შავი ფერის მელნით არის ნაწერი. უნდა შეინიშნოს, რომ შავი მელნის ხმარება ძველ ხელნაწერებში საკმაოდ ხშირ მოვლენას წარმოადგენს: მაგალითებად შეიძლება დავასახელოთ ისევ <span class="place">ათონის</span> კოლექციის ხელნაწერები: N9 (<span class="person" data-ref="">ეფრემ ასურისა</span> და <span class="person" data-ref="#chrysostom">იოანე ოქროპირის</span> ჰომილიათა კრებული, გადაწერილი <span class="place">ოშკში</span> <time datetime="0977">977 წ.</time>); N3 (ჰაგიოგრაფიული კრებული, გადაწერილი <span class="place">ოშკში</span> <time datetime="0958">958 წ.</time> <span class="person" data-ref="">იოვანე ჩირაჲს</span> მიერ); № 68 (<span class="person" data-ref="">მაქსიმე აღმსარებელის</span> თხზულებათა კრებული, X-XI ს.); N75 (ოთხთავი, XII-XIII სს.). შავი მელნით არის აგრეთვე ნაწერი <a href="">S-1276</a> ხელნაწერში <span class="person" data-ref="#ephrem">ეფრემ მცირის</span> ავტოგრაფი (მის შესახებ იხ. ქვემოთ). მაშასადამე, არ არის გამორიცხული შესაძლებლობა, რომ ადრეულ ხელნაწერშიც მელნით დამწვარი ტექსტი გვქონდეს, მით უმეტეს, თუ სავარაუდებელია მისი შექმნა იქ, სადაც ხელნაწერის შესრულების ბერძნული ტექნიკა არის დასაშვები.</p>
+                        
+                        
+                    </p>
+                    <p data-n="6">
+                        <span class="person" data-ref="#tsagareli">ა. ცაგარლისა</span> და <span class="person" data-ref="#blake">რ. ბლეიკის</span> აღწერილობათა მიხედვით, ხელნაწერში 167 ფურცელია. მიკროფილმის პირველ კადრად გადაღებული გვერდი, რომელზეც <span class="person" data-ref="#tsagareli">ა. ცაგარლის</span> (?) ხელით წერია ნომერი (85), ყდის საცავი ფურცლის ნაწილი უნდა იყოს. პირველი ცხრა ფურცელი, როგორც აღვნიშნეთ, ძალზე არის დაზიანებული; დარჩენილია მხოლოდ მათი ნაშთები, რომელთა მიხედვით ფურცელთა თანმიმდევრობის დადგენა ჭირს. ერთ-ერთი მათგანი ი̃ჱ რვეულის ბოლო ფურცელია. ხელნაწერს პაგინაცია არა აქვს, მაგრამ შემდგომ ნაწილში მიკროფილმზე რვეულობრივი სათვალავი კარგად ჩანს; იგი გატარებულია ჩვეულებრივი წესით: რვეულის დასაწყისი ნაჩვენებია ზედა, ბოლო კი — ქვედა აშიაზე ტექსტის ხელით, ნუსხურით, რომელშიც აქა-იქ მთავრულიც ურევია. რვეულებში რვა-რვა ფურცელია. ამჟამად შემორჩენილია ი̃ჱ — ლ̃ზ რვეულები. უკანასკნელი (ლ̃ზ) რვეულის შემდეგ კიდევ არის რვა ფურცელი, რომლებზეც სათვალავი არ ჩანს. კიდევ ერთი ფურცელი ბოლოში თავდაპირველად დაუწერელი ყოფილა; მასზე არის სხვადასხვა მინაწერი. ამრიგად, ამჟამად ხელნაწერში სულ 170 ფ. უნდა იყოს. ხელნაწერს თავში დაჰკლებია დაახლოებით 135 ფურცელი. დარჩენილ ნაწილში, რვეულობრივი სათვალავისა და თხზულებათა სათაურებთან ნაჩვენები ნუმერაციის მიხედვით, ფურცელთა თანმიმდევრობა სწორი ჩანს. წინამდებარე ნაშრომში მითითებული პაგინაცია ჩვენ მიერ არის შესრულებული ფოტოპირის მიხედვით.</p>
+                        
+                        
+                    </p>
+                    <p data-n="7">
+                        ხელნაწერი წარმოადგენს კრებულს, რომელშიც თავდაპირველად შეტანილი ყოფილა ოცდაცამეტი სხვადასხვა თხზულება (იქნებ მეტიც: ხელნაწერი შეიძლება ბოლონაკლული იყოს), ამას მოწმობს სათაურებთან გარეთა აშიაზე ან სვეტებს შუა დასმული ასოები, რომლებიც ნაწარმოებთა რიგით სათვალავს გვიჩვენებს კრებულში: ი̃ზ — ლ̃გ: ამჟამად პირველი, ხოლო კრებულის შედგენისას მეჩვიდმეტე თხზულება იწყება ი̃თ რვეულის პირველი ფურცლის უკანა მხარეს. მას წინ მიუძღვის, სავარაუდებელია, წინამავალი თხზულების ცალკეული ფრაგმენტები. ამრიგად, დღეს კრებულში შენახულია (მეტ-ნაკლები სისრულით) ჩვიდმეტი ნაწარმოები.</p>
+                        
+                        
+                    </p>
+                    <p data-n="8">
+                        ხელნაწერში გვხვდება მთავრული ასოები, რომლებიც ტექსტის გარკვეული მონაკვეთების დასაწყისში ზის. საზედაო ასოები (რომელთა ფერი მიკროფილმის მიხედვით გაურკვეველია) მთლიანად მოთავსებულია იმ ვერტიკალური ხაზის გარეთ, რომელსაც ნაწერი სვეტის საზღვარი ქმნის. მხოლოდ ცალკეულ შემთხვევებში ზოგიერთ ასოთა ნაწილები შედის ტექსტში (გ, ხ ასოთა ქვედა ნაწილი, ა-ს რკალის ბოლო). მაგრამ ისე, რომ სტრიქონთა წყობა ან სულ არ ირღვევა, ან ძალზე მცირედ იცვლება. საზედაო ასოებს დეკორი არა აქვს, ზომით კი საკმაოდ დიდია; ვერტიკალური ხაზების მქონე ასოები (ე, ვ, გ, ი და სხვ.) საგრძნობლად ჩამოგრძელებულია (2-5 სტრიქონის ზომაზე).</p>
+                        
+                        
+                    </p>
+                    <p data-n="9">
+                        ტექსტში გვხვდება მარტივი ლიგატურები, რომლებშიც ასოთა თანმიმდევრობა სიტყვისას ეთანხმება: <span class="mentioned" lang="ka">იყ</span> (იყო), <span class="mentioned" lang="ka">ეს</span> (ესე), <span class="mentioned" lang="ka">იხ</span> (იხილე), <span class="mentioned" lang="ka">ის</span> (ისმინე), <span class="mentioned" lang="ka">გნ</span> (გნკვრვებაჲ) და სხვ. საკმაოდ ხშირია ასოების ერთმანეთში ჩასმა, განსაკუთრებით მაშინ, როცა მრგვალი მოხაზულობის ასოებია დაწერილი (ა, დ, ო): <span class="mentioned" lang="ka">ად</span>, <span class="mentioned" lang="ka">აწ</span>, <span class="mentioned" lang="ka">აღ</span> (აღმოიკითხე), <span class="mentioned" lang="ka">ამ</span> (ამისთჳს) და სხვ. ამრიგად, საზედაო ასოები დამოუკიდებლად აღიქმება; ისინი გამიჯნულია ტექსტის ელემენტებისაგან, რაც საზოგადოდ ადრეული პერიოდის ხელნაწერებისათვის არის დამახასიათებელი<a href="#note41" class="note-ref" data-note="note41">[]</a>.</p>
+                        
+                        
+                    </p>
+                    <p data-n="10">
+                        მთავრული ასოები (განსაკუთრებით ა, დ, მ, ნ) თავისი გრაფიკული მოხაზულობით XII—XIII ს. ხელნაწერის მთავრულებს ემსგავსება. საზოგადოდ, <a href="#ms.A">A</a> ხელნაწერის დაწერილობა — როგორც ნუსხური, ისე მთავრული — ტიპობრივ მსგავსებას იჩენს XIII ს. ძეგლებთან<a href="#note42" class="note-ref" data-note="note42">[]</a>. ამიტომ შეიძლება ვივარაუდოთ, რომ იგი გადაწერილია XII ს. ბოლოს ან XIII ს. დამდეგს. ამ მოსაზრებას მხარს უჭერს აგრეთვე დაკვირვება იმ სპეციალურ ნიშნებზე, რომლებიც ხელნაწერში გვხვდება.</p>
+                        
+                        
+                    </p>
+                    <p data-n="11">
+                        ხელნაწერში პუნქტუაციის ნიშნებად გამოყენებულია წერტილი, ორწერტილი, სამწერტილი და ექვსწერტილი, ნახმარია მძიმეც. კითხვით წინადადებებში გვხვდება მძიმის მსგავსი ნიშანი, რომელიც თავზე დაესმის სიტყვას. პუნქტუაციის ნიშნები გასდევს მთელ ტექსტს (ნ. ფოტო 1, 4). ოღონდ, როგორც მოსალოდნელი იყო, მათი ხმარება ყოველთვის თანმიმდევრული და თანამედროვე თვალსაზრისით მისაღები არ არის. მაგალითად: <q>„ამათ მამალთა და დედალთა და შუათა სახელთაგან, არა თითოეულსა სახელსა სამნივე და სამთაგანვე სახელისდებათა ეწოდებიან, არამედ ყოველთა სახელთა შორის, გინა თუ მამალი჻ ეწოდების სახელი: გინა თუ დედალი: გინა თუ შუაჲ, და თჳსისა სახელისა აქუს განკუთვნილებად჻&quot;</q><a href="#note43" class="note-ref" data-note="note43">[]</a></p>
+                        
+                        
+                    </p>
+                    <p data-n="12">
+                        პუნქტუაციის სისტემა, რომელშიც წერტილთა სხვადასხვა რაოდენობა არის გამოყენებული სასვენ ნიშნებად, შექმნილია, როგორც ცნობილია, <span class="person" data-ref="#ephrem">ეფრემ მცირის</span> მიერ. იგი თვითონ წერს, რომ მას უხმარია <q>„ერთი წერტილი უკუე მცირედ სასუჱნად, ორ წერტილი გასაკუჱთელად სიტყჳსა (ე. ი. წინადადებისა, მ. შ.) და სამ წერტილი დიდად სასუენად და ექუს წერტილი სრულად დასაბოლოებელად და ახლად დასაწყებელად სიტყჳსა&quot;</q><a href="#note44" class="note-ref" data-note="note44">[]</a>. <span class="person" data-ref="#ephrem">ეფრემის</span> წინასიტყვაობა, საიდანაც ამოღებულია ეს სიტყვები, შენახულია XI ს. II ნახევრის ხელნაწერ კრებულში (<a href="">A—24</a>). მასში შემავალ თხზულებათა მთარგმნელიც ეფრემია და სრულიად ბუნებრივია, რომ პუნქტუაციაც ამ ხელნაწერში ეფრემისეულია. შეიძლება კიდევ დავასახელოთ ხელნაწ. <a href="">S-1276</a> (XI ს.), რომლის ცალკეული ნაწილები თვით <span class="person" data-ref="#ephrem">ეფრემის</span> ავტოგრაფად არის მიჩნეული<a href="#note45" class="note-ref" data-note="note45">[]</a>. ასეთივე პუნქტუაცია არის <a href="">Q-37</a> ხელნაწერში — <span class="person" data-ref="#ephrem">ეფრემ მცირის</span> შედგენილ ფსალმუნთა თარგმანებაში, რომელიც გადაწერილია <time datetime="1091">1091 წელს</time> <span class="person" data-ref="">იოანე მთავარაჲსძის</span> მიერ თვით ეფრემისათვის განკუთვნილი დედნიდან. ამ ხელნაწერში ეფრემისეული პუნქტუაცია არის გატარებული; ამასთან ერთად გადამწერი ანდერძში საგანგებოდ წერს, რომ სასვენი ნიშნები მას დედნიდან უცვლელად გადმოუტანია: <q>„ვითა ვპოე, ეგრე დავწერე ყოველი და წენტილიცა&quot;</q><a href="#note46" class="note-ref" data-note="note46">[]</a>. ამგვარი პუნქტუაცია დამახასიათებელია ისეთი ხელნაწერებისათვის, რომლებიც <span class="person" data-ref="#ephrem">ეფრემის</span> ლიტერატურულ სკოლას განეკუთვნებიან<a href="#note47" class="note-ref" data-note="note47">[]</a>. საინტერესოა დაკვირვება, რომ ექვსწერტილი (რომელიც <a href="#ms.A">ათონ. № 6</a> ხელნაწერში საკმაოდ ხშირად არის გამოყენებული), XII ს. ხელნაწერებში მხოლოდ მაშინ იხმარება, თუ ისინი <span class="person" data-ref="#ephrem">ეფრემ მცირის</span> სახელთან არის დაკავშირებული: გადაწერილია ან ეფრემის დედნიდან, ან <span class="place">შავ მთაზე</span>, ან რაიმე სხვაგვარი კავშირი აქვთ ამ სკრიპტორიუმთან<a href="#note48" class="note-ref" data-note="note48">[]</a>.</p>
+                        
+                        
+                    </p>
+                    <p data-n="13">
+                        ხელნაწერში იხმარება მახვილის აღმნიშვნელი ნიშნებიც. ამისათჳს გამოყენებულია ხმოვნის თავზე დაწერილი დახრილი ხაზი. იგი საკმაოდ ხშირად გვხვდება, თუმცა ყოველ სიტყვას არ ახლავს და ზოგჯერ იმის გარკვევაც ჭირს, თუ რა წესს მისდევს გადამწერი ამ ნიშნის ხმარებისას. მახვილის ნიშანი უმეტესად მოუდის სიტყვის ბოლოდან მეორე მარცვალს. მაგალითები: <span class="mentioned" lang="ka-Geok">ორობითთასა ორთა ართრონთა</span> 5; <span class="mentioned" lang="ka-Geok">წოდებითი განმრავლებითთაი</span> 11; <span class="mentioned" lang="ka-Geok">უართრონოდ... ართრონიანად</span> 13; <span class="mentioned" lang="ka-Geok">ნათესაობითად უართრონოდ</span> 15; <span class="mentioned" lang="ka-Geok">შუათაცა მოქენე არს კუმევად</span> 17; <span class="mentioned" lang="ka-Geok">არა თუ.... დაუსხნეს, სხუჱბრ შეუძლებ̃ლ არს თარგმნაჲ</span> 19. იგივე ნიშანია დასმული კითხვით სიტყვასა ან ნაწილაკზე: <span class="mentioned" lang="ka-Geok">სადაით მოგიჴუმან... პავლესგ̃ნა... ჰპოვეა</span> ჰ. 35.</p>
+                        
+                        
+                    </p>
+                    <p data-n="14">
+                        მახვილის ნიშნის და საზოგადო პროსოდიის სხვადასხვა ნიშანთა ხმარება აგრეთვე დამახასიათებელია <span class="person" data-ref="#ephrem">ეფრემ მცირის</span> სკოლისათვის. ამ ნიშნების ხმარება დადასტურებულია ზემოთ დასახელებულ ხელნაწერებში, რომლებშიც ეფრემისეული პუნქტუაცია გვხვდება. <span class="person" data-ref="#ephrem">ეფრემის</span> სახელთან დაკავშირებულ ხელნაწერებთან აახლოებს <a href="#ms.A">A</a>-ს აგრეთვე ის ნიშანი, რომელიც იხმარება აზრობრივად ერთი მთლიანობის შემქმნელ სიტყვათა შესაკავშირებლად. ეს არის რკალი<a href="#note49" class="note-ref" data-note="note49">[]</a>, რომლის ბოლოები აერთიანებს კომპოზიტის ცალკეულ ნაწილებს, შედგენილი შემასმენლის სახელად და ზმნურ ნაწილებს და სხ. მისი ხმარება საკმაოდ ხშირია, მაგალითად: <span class="mentioned" lang="ka-Geok">„ო͜ თეოს&quot;-სა ესრეთ სთარგმნი</span> 6; <span class="mentioned" lang="ka-Geok">შობილობითად͜ რაჲ იტყოდინ</span> 7; <span class="mentioned" lang="ka-Geok">ჭეშმარიტების͜ მოყუარებითა</span> ჰ. 2; <span class="mentioned" lang="ka-Geok">კეთილმსახურების͜ ძლითთა</span> ჰ. 2; <span class="mentioned" lang="ka-Geok">მახჳლ͜ მწერლისა</span> ჰ. 17; <span class="mentioned" lang="ka-Geok">ნაცვალ͜ საკუეთებელსა</span> ჰ. 35.</p>
+                        
+                        
+                    </p>
+                    <p data-n="15">
+                        <a href="#ms.A">A</a> ხელნაწერში ძალიან ხშირად (თითქმის ყოველ გვერდზე) არის პირობითი ნიშნები ციტატების აღსანიშნავად. ერთი მათგანია ორკბილიანი კლაკნილი ხაზი, ქვევით დაშვებული (ზოგჯერ ორ-ორი), და მოკლე ჰორიზონტალური ხაზი, მის ზემოთ და ქვემოთ დასმული წერტილებით, რომელიც ერთიანად პატარა ჯვარს წააგავს; ეს ნიშნები ციტატას მიჰყვება ნაწერი სვეტის მარცხენა მხარეს; ზოგჯერ, თუ ციტატა ვრცელია, ეს ნიშნები 10-12 სტრიქონზე ჩამოჰყვება სვეტს.</p>
+                        
+                        
+                    </p>
+                    <p data-n="16">
+                        აშიაზე გატანილი კომენტარი, ჩამატება ან <span class="term" data-target="">„შეისწავე&quot;</span>, რომელიც ჩვეულებრივ უფრო წვრილი ხელით არის ნაწერი, ტექსტში მითითებულია მძიმის მსგავსი მარჯვნივ წაწვეტებული ნიშნით.</p>
+                        
+                        
+                    </p>
+                    <p data-n="17">
+                        ცნობილია, რომ ციტატებისა და კომენტარების აღმნიშვნელი პირობითი ნიშნებიც, რომლებიც ქართულ ხელნაწერებში არის ნახმარი, გადმოღებულია ბერძნული დამწერლობიდან და გვხვდება უმთავრესად XI—XIII ს. ხელნაწერებში (<a href="">S-1276</a>, XI-XIII სს.; <a href="">A-124</a>, XI-XII ს.; <a href="">A-1108</a>, XII ს.; <a href="">A-109</a>, XII ს.; <a href="">A-110</a>, XII ს.; <a href="">Q-1152</a>, XII-XIII ს.; <a href="">H-669</a>, XII-XIII ს.; <a href="">S-1413</a>, XII-XIII ს.; <a href="">Jer. 15</a>, XII ს.; <a href="">A-189</a>, XIII ს.; <a href="">A-39</a>, XIII ს.<a href="#note50" class="note-ref" data-note="note50">[]</a>) აქაც ყურადღება უნდა მიექცეს იმ გარემოებას, რომ ზემოთ ჩამოთვლილ ხელნაწერთა შორის, <span class="person" data-ref="#ephrem">ეფრემის</span> უკვე ნახსენები ავტოგრაფული (<a href="">S-1276</a>) ხელნაწერის გარდა, არის სხვებიც, რომლებიც ეფრემის ნათარგმნ თხზულებებს შეიცავენ და მის სკოლას უკავშირდებიან.</p>
+                        
+                        
+                    </p>
+                    <p data-n="18">
+                        დასასრულ, ნიმუშისათვის შეიძლება მივუთითოთ <a href="">S-1276</a> ხელნაწერის იმ ნაწილებიდან, რომლებიც <span class="person" data-ref="#ephrem">ეფრემის</span> ავტოგრაფად არის მიჩნეული (72r-80v, 99r-106v, 111r-115v), ზემოთ დასახელებულ პუნქტუაციურ და სხვა ნიშანთა ნიმუშები: ეფრემის ხელით ნაწერი უნდა იყოს <span class="person" data-ref="">ბასილი ისავრიელის</span> <cite class="title">„სიტყუაჲ ჩჩულთათჳს ბეთლემს მოწყუედილთა&quot;</cite>, რომლის დასაწყისშივე ვკითხულობთ: <q>„კ̃დ მე́ვე ბერი, სიტყუათ͜ სტადიო́ნად შევიყვანები: კ̃დ დედო́ბრივ მრა́ვლითა შვილთ მზრდელობი́თა გ̃ნკაფუ́ლი, სიმდაბლისა ჩემისა ძუძუსა ჭირვებად ვიიძულები, გამოზრდად ესოდენისა ერისა:. და ვი́ნ არს ამის მაიძულებელ. მდინარე ესე დიდი ევფრატი&quot;</q>: <a href="">S 1276</a>, 72r. ამ ნაწყვეტიდან ნათლად ჩანს, რომ <a href="#ms.A">ათონურ № 6</a> ხელნაწერში ხმარებული პროსოდიისა და პუნქტუაციის ნიშნები იმ სისტემას მისდევს, რომელიც <span class="person" data-ref="#ephrem">ეფრემის</span> ავტოგრაფში ჩანს. ციტატებისა და კომენტარების ნიშნებიც თავისი მოხაზულობით ამავე ხელნაწერში ხმარებულს ემთხვევა. მათ ნიმუშად შეიძლება დავასახელოთ: ჯვარი 76r, კლაკნილი ხაზი 76v, 99, 100, 112r, კომენტარის ან ჩამატების ნიშანი 113, 115r. ამრიგად, შეიძლება დავასკვნათ, რომ ყველა ზემონახსენები ნიშანი <a href="#ms.A">ათ. № 6</a> ხელნაწერში გვავარაუდებინებს, რომ ხელნაწერი <span class="person" data-ref="#ephrem">ეფრემ მცირის</span> ლიტერატურულ სკოლასთან არის დაკავშირებული.</p>
+                        
+                        
+                    </p>
+                    <p data-n="19">
+                        გრამატიკული ტრაქტატის ტექსტში გვხვდება კიდევ ისეთი ნიშნები, რომლებიც სხვაგან ხელნაწერში არ ჩანს: ამ თხზულებაში დასახელებულ ბერძნულ სიტყვებსა და ართრონებს, რომლებიც ქართული ასოებით არის გადმოცემული, ბერძნულ დამწერლობაში ხმარებული ასპირაციისა და მახვილების ნიშანთა გამოსახატავად ზევიდან საგანგებო ნიშნები უზის (ნ. ფოტო 3). ეს ნიშნები ყოველთვის თანმიმდევრულად და სწორად არ არის დასმული, რაც უთუოდ გადამწერის ბრალია; მაგრამ ნიშნების შესწავლითა და ერთმანეთის შეპირისპირებით შესაძლოა გავარკვიოთ, თუ როგორი უნდა ყოფილიყო თითოეულის დანიშნულება ავტორისეულ დედანში. ფშვინვის აღსანიშნავად ავტორს უხმარია ხმოვნის ზემოთ დაწერილი, მარჯვნივ მიბრუნებული კუთხისებრი ნიშანი (= <span class="term" data-target="">sp. asper</span>); ისეთი ფორმები, რომლებიც საჭიროებენ სუსტი ფშვინვის ნიშანს, მთელ ტექსტში ორიოდეღა არის; მისი მაჩვენებელი უნდა ყოფილიყო ისეთივე ნიშანი, როგორიც ძლიერ ასპირაციას აქვს, ოღონდ მარცხნივ მობრუნებული (= <span class="term" data-target="">sp. lenis</span>); მარცხნივ ან მარჯვნივ დახრილი ხაზები გამოხატავდა შესაბამისად მკვეთრსა და მძიმე მახვილს (' = <span class="term" data-target="">acc. acutus</span>, ` = <span class="term" data-target="">acc. gravis</span>). ამასთან მკვეთრი მახვილის ნიშანი ისეთივეა, როგორიც ქართულ სიტყვებში მახვილის აღსანიშნავად ნახმარი; შემოსილი მახვილის გამოსახატავად გრამატიკულ ტრაქტატში გამოყენებულია რკალი (ⴈ = <span class="term" data-target="">acc. circumflex</span>). ნიშანთა მოხაზულობა ცხადყოფს, რომ ავტორს ისინი X—XI ს. ბერძნული ხელნაწერებიდან გადმოუღია<a href="#note51" class="note-ref" data-note="note51">[]</a>. როგორც უკვე ვთქვით, გადამწერს ეს ნიშნები ყველგან სწორად არა აქვს ნახმარი. ხან ერთის მაგიერ მეორეს ხმარობს, ხან ორს წერს ერთის ნაცვლად. ზოგჯერ კი სულ არ ხმარობს ნიშანს. ეს მოწმობს, რომ გადამწერს, რომელიც სხვაგან ჩვეულებრივ თითქმის არ უშვებს შეცდომებს, ბერძნული ან სულ არ სცოდნია, ან თუ სცოდნია, ნაკლებად; ისიც არის საფიქრებელი რომ მას დედანად ჰქონდა არა ავტორის ხელიდან გამოსული ტექსტი, არამედ უკვე დამახინჯებული გადანაწერი ნუსხა.</p>
+                        
+                        
+                    </p>
+                    <p data-n="20">
+                        ხელნაწერის გადამწერი დახელოვნებული მწერალი ყოფილა. გარდა კალიგრაფიისა, ამას ისიც ამტკიცებს, რომ ტექსტში კალმის შეცდომები ძალიან ცოტაა; ორთოგრაფია ერთიანია და თანმიმდევრული; მასში არ არის ის სიჭრელე, რომელიც გვიანდელ ხელნაწერებს სჩვევიათ, ეს კარგად ჩანს, როდესაც გრამატიკული ტრაქტატის ორთოგრაფიას <a href="#ms.A">A</a> ხელნაწერში ვუდარებთ წინამდებარე გამოცემაში გამოყენებული მეორე (<a href="#ms.S">S</a>) ნუსხისას. ისეთი ორთოგრაფია, რომელიც ახასიათებს ათონურ ნუსხას როგორც გრამატიკულ თხზულებაში, ისე საზოგადოდ ყველგან, ნაკლებ მოსალოდნელი იქნებოდა XVII საუკუნის ხელნაწერში (როგორც ზემოთ აღვნიშნეთ, ასე დაუთარიღებია ეს ხელნაწერი <span class="person" data-ref="#blake">რ. ბლეიკს</span>).</p>
+                    
+                    </p>
+                </section>
+                <section id="section.b.2">
+                    <h3>ბ.2. საფარული ხელნაწერი (S)</h3>
+                    
+                    <p data-n="1">
+                        <span class="org">საქართველოს მეცნიერებათა აკადემიის ხელნაწერთა ინსტიტუტის</span> ხელნაწერი <a href="#ms.S">S-312</a> (დათქმით <a href="#ms.S">S</a>), რომელიც დაწერილია 22,5 × 17 სმ. ზომის ქაღალდზე, შეიცავს 108 ფურცელს. ნაწერია წვრილი, ლამაზი ნუსხურით, კალიგრაფიული ხელით. მარგინალური შენიშვნები გამოყვანილია ვერტიკალურ ხაზებად, ანდა რთული გეომეტრიული სახის მქონე ჩარჩოებად (20v, 39r—48r, 78r და სხვ.). ხელნაწერი გადაუწერია <span class="person" data-ref="#svimon">სვიმონ კარგარეთელს</span> <span class="place">საფარის ლავრაში</span>, რასაც მოწმობს მისი ანდერძი (გაუხსნელად ვტოვებთ ზოგიერთ ქარაგმას):</p>
+                    
+                    
+                    </p>
+                    <p data-n="2">
+                        ეს ანდერძი მოთავსებულია ხელნაწერის უკანასკნელ გვერდზე, 108v-ზე, სამ აბზაცად, რომელთა დასაწყისი ასოები (ჩვენს გამოცემაში შავით დაბეჭდილი) მთავრულით არის გამოყვანილი. გადაწერის თარიღს არკვევს გადამწერის შენიშვნა, რომელიც ტექსტშია ჩართული (ასტრონომიულ ტრაქტატში): <q>„ესე ზემო დაწერილი სათუალავი შავთელის ი̃ნეს (იოანეს) ანდერძი არს, და ქრ̃ნისა მოქცევამ̃ნ (ასეა!) მეაცამეტე ყოფილა. და ოდეს მე, სჳიმონ (ასეა!) დიაკონმან, დავწერე, ქ̃კნი იყო ს̃კთ და მოქცევი (ასეა!). ხოლო ბერძულად დასაბამითგანნი წელნი ვიდრე აქამომდე შვიდი ათასი წელი გარდაჴდა.&quot;</q> (92r). ორივე სათვალავი — ქართულიცა და ბერძნულიც — <time datetime="1541">1541 წელს</time> გვაძლევს.</p>
+                    
+                    
+                    </p>
+                    <p data-n="3">
+                        <span class="person" data-ref="#svimon">სვიმონ კარგარეთელი</span> საკმაოდ ცნობილი გადამწერია. კარგარეთლების გვარში, რომელიც <span class="place">მესხეთიდან</span> ყოფილა გადმოსახლებული, გადამწერის ხელობა ტრადიციული ჩანს<a href="#note52" class="note-ref" data-note="note52">[]</a>. <span class="person" data-ref="#svimon">სვიმონის</span> გარდა, ცნობილია ამ გვარის მქონე რამდენიმე გადამწერი (XVI-XVII საუკუნეებში)<a href="#note53" class="note-ref" data-note="note53">[]</a>. <span class="person" data-ref="#svimon">სვიმონს</span>, გარდა <a href="#ms.S">S—312</a> ხელნაწერისა, გადაუწერია კიდევ გულანი (ამჟამად <span class="org">ქუთაისის სახელმწ. მუზეუმის</span> ხელნაწ. № 16), რომლის ანდერძების მიხედვით შესაძლებელია <span class="person" data-ref="#svimon">სვიმონის</span> ჩამომავლობის გარკვევა<a href="#note54" class="note-ref" data-note="note54">[]</a>. <span class="person" data-ref="#svimon">სვიმონისავე</span> გადაწერილია <span class="org">ხელნაწ. ინსტიტუტის</span> <a href="">A—197</a> ხელნაწერი — გულანის სადღესასწაულო ნაწილი<a href="#note55" class="note-ref" data-note="note55">[]</a>.</p>
+                    
+                    
+                    </p>
+                    <p data-n="4">
+                        <a href="#ms.S">S—312</a> ხელნაწერი მეტად საინტერესო შედგენილობის კრებულია. იგი ძალიან წვრილი ხელით არის ნაწერი: ამის წყალობით <span class="person" data-ref="#svimon">სვიმონს</span> ამ მომცრო ზომის ხელნაწერში დაუტევია ორმოცდათხუთმეტი თხზულება, რომელთა მეტი წილი დოგმატიკური და პოლემიკური ხასიათისაა, მიმართული <span class="term" data-target="">„ნისტორიანთა&quot;</span>, <span class="term" data-target="">„ჰურიათა&quot;</span> და <span class="term" data-target="">„სარკინოზთა&quot;</span> წინააღმდეგ<a href="#note56" class="note-ref" data-note="note56">[]</a>. მათგან თერთმეტი ის თხზულებებია, რომლებიც <span class="person" data-ref="">არსენ ვაჩესძის</span> ცნობილ დოგმატიკონში (<a href="">S-1463</a>, XII სს.) გვხვდება. გარდა ამისა, ხელნაწერში <span class="person" data-ref="#svimon">სვიმონს</span> შეუტანია (92r—101v) <span class="person" data-ref="">აბუსერისძე ტბელის</span> კალენდარულ-ასტრონომიული ტრაქტატი, რომლისთვისაც გადამწერს დედნად <a href="">A-85</a> ხელნაწერი (ძველი ნაწილი — XIII ს.) ჰქონია. ამას, სხვათა შორის, მოწმობს უკანასკნელის ზოგიერთი მინაწერიც<a href="#note57" class="note-ref" data-note="note57">[]</a>. <a href="#ms.S">S-312</a> ხელნაწერის თარიღის მაჩვენებელი შენიშვნაც <span class="person" data-ref="#svimon">სვიმონს</span> სწორედ ამ ტრაქტატის ტექსტში ჩაურთავს და ეს თხზულებაც <a href="">A-85</a> ხელნაწერის მიხედვით <span class="person" data-ref="">იოანე შავთელის</span> ნაწარმოებად მიუჩნევია<a href="#note58" class="note-ref" data-note="note58">[]</a>. ხელნაწერში არის კიდევ <cite class="title">„წმიდისა კჳრილე ალექსანდრიელისა [ლექსნი] მათეს თავისა სახარებისა ძნელოანთა სიტყუათა განმარტებაჲ, ლექსიკონი&quot;</cite> (104r—106r), რომლის უძველესი ნუსხა, როგორც აღვნიშნეთ, არის <a href="">A-65</a> ხელნაწერში.</p>
+                    
+                    
+                    </p>
+                    <p data-n="5">
+                        ზემოთქმულის მიხედვით აშკარაა, რომ <a href="#ms.S">S-312</a> ხელნაწერი მეტწილად ძველი და მნიშვნელოვანი წყაროებიდან ამოკრეფილ მასალას შეიცავს. კრებულის შედგენილობაზე დაკვირვება გვიჩვენებს, რომ <span class="person" data-ref="#sharasidze">ქ. შარაშიძის</span> შეფასება სავსებით სამართლიანია: ხელნაწერი მართლაც ამჟღავნებს, რომ მისი შედგენის ინიციატორი, ვინც უნდა ყოფილიყო იგი — თვით <span class="person" data-ref="#svimon">სვიმონ კარგარეთელი</span>, თუ სხვა ვინმე — განსაკუთრებულ გულისყურს იჩენდა მეცნიერების საკითხებისადმი. ამის გამო ჩვენთვის საინტერესო გრამატიკული თხზულების შეტანა ამ კრებულში, რომელსაც მისი გადამწერი <q>„საფილოფოსო წიგნს&quot;</q> უწოდებს, სრულიად კანონზომიერი ჩანს.</p>
+                    
+                    
+                    </p>
+                    <p data-n="6">
+                        <cite class="title">„სიტყუაი ართრონთათჳს&quot;</cite> საფარულ ხელნაწერში სულ ბოლოს არის მოთავსებული: 106r—108v. ხელნაწერის წვრილი ნაწერი ბოლოში კიდევ უფრო მცირდება და გამადიდებელი შუშის გარეშე თითქმის არც კი იკითხება. ამიტომ არის, რომ არც თუ ისე მცირე მოცულობის თხზულება გადამწერმა პატარა ზომის ხელნაწერის ექვსიოდე გვერდზე დაატია. სათაური <cite class="title">„სიტყუაჲ ართრონთათჳს&quot;</cite> ნაწერია წითელი მელნით. როგორც უკვე ვთქვით, ხელნაწერში არ არის დასახელებული თხზულების ავტორი: მასში არ მოიპოვება არც რაიმე სხვა ცნობა, რომელიც საშუალებას მოგვცემდა გაგვერკვია, თუ საიდან ამოუღია <span class="person" data-ref="#svimon">სვიმონ კარგარეთელს</span> ძველი ქართული გრამატიკული ლიტერატურის ეს საინტერესო ნიმუში.</p>
+                
+                    </p>
+                </section>
+                <section id="section.b.3">
+                    <h3>ბ.3. ორთოგრაფიული თავისებურებანი S ხელნაწერში</h3>
+                    
+                    <p data-n="1">
+                        მთლიანად ხელნაწერში და შესაბამისად გრამატიკულ ტრაქტატშიც ორთოგრაფიის მხრივ სიჭრელე გვაქვს: <span class="mentioned" lang="ka">ჱ</span>-ს დაწერილობა, როგორც მოსალოდნელი იყო, აღარ გვხვდება იქ, სადაც ძველი ქართულის ნორმების მიხედვით უნდა ყოფილიყო: <span class="mentioned" lang="ka-Geok">ესრეთ</span> 3; <span class="mentioned" lang="ka">ჱ</span> გვხვდება უმარცვლო <span class="mentioned" lang="ka">უ</span>-ს შემდეგ: <span class="mentioned" lang="ka-Geok">საძირკუჱლნი</span> 3, <span class="mentioned" lang="ka-Geok">შუჱნიერ</span> 6, <span class="mentioned" lang="ka-Geok">ქუჱ</span> 19; <span class="mentioned" lang="ka-Geok">სხუჱბ</span> 19; <span class="mentioned" lang="ka-Geok">შუჱნის</span> 19; <span class="mentioned" lang="ka-Geok">მეტყუჱლი</span> 20, 21; <span class="mentioned" lang="ka-Geok">აჩუჱნოს</span> 22, <span class="mentioned" lang="ka-Geok">უკუნარღუჱვს</span> 21. უმარცვლო <span class="mentioned" lang="ka">უ</span> იხმარება არათანმიმდევრულად: <span class="mentioned" lang="ka-Geok">იჴუმევენ</span> 1; <span class="mentioned" lang="ka-Geok">ითქუმის</span> 19; <span class="mentioned" lang="ka-Geok">დაუსუმენ</span> 13; მაგრამ: <span class="mentioned" lang="ka-Geok">ითქმოდენვე</span> 8. იშვიათად უმარცვლო <span class="mentioned" lang="ka">უ</span>-ს <span class="mentioned" lang="ka">ჳ</span> გამოხატავს: <span class="mentioned" lang="ka-Geok">იჴჳმია</span> 20.</p>
+                    
+                    
+                    </p>
+                    <p data-n="2">
+                        <span class="mentioned" lang="ka">აჲ</span> დიფთონგების დაწერილობა ყველგან თანმიმდევრული არ არის: <span class="mentioned" lang="ka-Geok">გეგულებოდის თარგმანებაჲ</span> 6; <span class="mentioned" lang="ka-Geok">სახელთა ცვალებულებაჲ</span> 2; <span class="mentioned" lang="ka-Geok">ამათისა ძალისა განმარტებაჲ</span> 23. მაგრამ: <span class="mentioned" lang="ka-Geok">თარგმნა მისი</span> 1; <span class="mentioned" lang="ka-Geok">შობილობითი დრეკა სახელისა</span> 9; გვაქვს კიდევ: <span class="mentioned" lang="ka-Geok">სიტყუაჲ იგი უართრონო</span> 21; ზოგ შემთხვევაში კი <span class="mentioned" lang="ka">აჲ</span> გვხვდება მოსალოდნელი <span class="mentioned" lang="ka">ა</span>-ს მაგიერ: <span class="mentioned" lang="ka-Geok">ენაჲსა ზედა</span> 1; შდრ. <span class="mentioned" lang="ka-Geok">ენასა ზედა ქართულსაჲ</span> 1.</p>
+                    
+                    
+                    </p>
+                    <p data-n="3">
+                        თხზულება საზოგადოდ რიგიანად არის გადაწერილი, მაგრამ აქა-იქ გვხვდება შეცდომები, რომლებიც მოწმობს, რომ გადამწერს ყოველთვის სწორად ვერ გაუგია აზრი: <span class="mentioned" lang="ka-Geok">ქართულად ერთ ლექსად ითქუმის, დაღაცათუ ძალი (სწერია: რ̃ი) ორი აქუს</span> 9; <span class="mentioned" lang="ka-Geok">ძალი (სწერია: რ̃ი) ართრონთა ვითარებისაი (სწერია: ვედრებისაჲ)</span> 23 და სხვ.</p>
+                    
+                    
+                    </p>
+                    <p data-n="4">
+                        <a href="#ms.A">A</a>-სთან შედარებით ჩანს, რომ ტექსტში <span class="person" data-ref="#svimon">სვიმონ კარგარეთელს</span> აქა-იქ გამოუტოვებია ან უადგილოდ ჩაუსვამს სიტყვები. განსაკუთრებით ბევრი შეცდომა მოსვლია გადამწერს ბერძნული ართრონებისა და სიტყვების დაწერილობაში. თითო-ოროლა შეცდომა, როგორც ზემოთ ვნახეთ, <a href="#ms.A">A</a> ხელნაწერშიც არის; იქაც გადამწერს ბერძნულ ართრონებსა და სიტყვებში მახვილები არასწორად დაუსვამს. მაგრამ <span class="person" data-ref="#svimon">სვიმონის</span> გადანაწერ ტექსტში ბერძნული ენის უცოდინარობით გამოწვეული შეცდომები ბევრად უფრო მეტია. მდედრობითი სქესის ართრონთა დასახელებისას <span class="person" data-ref="#svimon">სვიმონს</span> ცამეტი ართრონიდან გამორჩენია სამი; მიმართებითი ნაცვალსახელების (თხზულების მიხედვით — დამორჩილებით ართრონთა) ჩამოთვლისას გადამწერს გამოუტოვებია ათი ფორმა — მდ. სქ. მრ. რიცხვის ნათ. ბრუნვიდან საშ. სქ. მრ. რ. ნათ. ბრუნვის ჩათვლით. თვითონ ართრონები მას ხშირ შემთხვევაში შეცდომით აქვს დასახელებული (იხ. ტექსტის შენიშვნები); გადამწერი ერთმანეთში ურევს სხვადასხვა ბრუნვის ფორმებს ანდა არარსებულ ფორმებს ასახელებს. ასეთივე შეცდომები მოსდის მას ბერძნული სიტყვების გადმოცემაში. მახვილის ნიშნები <span class="person" data-ref="#svimon">სვიმონს</span> კი გადმოუტანია თავის გადანაწერში, მაგრამ გადმოტანისას ბევრი შეცდომა დაუშვია. მახვილის ნიშანი ხშირად სულ აკლია, ზოგჯერ კი სიტყვას ორი ნიშანი აქვს; ხანდახან მახვილი სხვა ადგილზე არის გადატანილი, ზოგჯერ თანხმოვანსაც ახლავს. არის შემთხვევები, როცა მახვილის ნიშნები გადამწერს დაუსვამს ბერძნული სიტყვის მეზობლად დაწერილ სიტყვაზეც. ყველაფერი ეს მოწმობს, რომ <span class="person" data-ref="#svimon">სვიმონ კარგარეთელს</span> ბერძნული ენა საერთოდ არ სცოდნია.</p>
+                
                     </p>
                 </section>
                 
-                <section id="manuscripts">
-                    <h2>ხელნაწერები</h2>
-                    <p class="text-gray-500 italic">
-                        აქ აღიწერება ორი ხელნაწერი (A და S), მათი კოდიკოლოგიური მახასიათებლები, 
-                        დამწერლობა, თარიღი და ტექსტოლოგიური ურთიერთმიმართება.
-                    </p>
-                    <p>
-                        <a href="../manuscripts/index.html">იხ. ხელნაწერების დეტალური აღწერილობა →</a>
-                    </p>
-                </section>
-                
-                <section id="language">
-                    <h2>ენობრივი ანალიზი</h2>
-                    <p class="text-gray-500 italic">
-                        აქ გაანალიზდება ტრაქტატის ენა: ძველი ქართულის ნორმები, ბერძნულიდან 
-                        ნასესხები ტერმინოლოგია, გრამატიკული კონცეფციები.
-                    </p>
-                    <p>
-                        მაგალითად, <a href="../text/3.html">§3</a>-ში განხილულია ართრონის ცნება...
-                    </p>
-                </section>
-                
-                <section id="dating">
-                    <h2>თარიღი და ავტორობა</h2>
-                    <p class="text-gray-500 italic">
-                        აქ განხილული იქნება ტრაქტატის სავარაუდო თარიღი და ავტორის ვინაობის საკითხი.
-                    </p>
-                </section>
-                
-                <section id="context">
-                    <h2>ისტორიული კონტექსტი</h2>
-                    <p class="text-gray-500 italic">
-                        აქ წარმოდგენილი იქნება ტრაქტატის ისტორიული და კულტურული კონტექსტი: 
-                        ბერძნული გრამატიკული ტრადიციის გავლენა, თარგმნის პრაქტიკა, 
-                        თეოლოგიური დისკუსიები.
-                    </p>
-                </section>
-                
-                <section id="bibliography">
-                    <h2>ბიბლიოგრაფია</h2>
-                    <div class="text-sm space-y-2 text-gray-600">
-                        <p class="text-gray-500 italic">ბიბლიოგრაფიული ჩამონათვალი დაემატება...</p>
-                        <!--
-                        <p>შანიძე, ა. (1990). <em>ქართული ენის გრამატიკის საფუძვლები</em>. თბილისი.</p>
-                        <p>...</p>
-                        -->
+                <!-- Notes Section -->
+                <section id="notes" class="notes-section">
+                    <h2>შენიშვნები</h2>
+                    
+                    <div class="note-item" id="note1">
+                        <span class="note-number">
+                            <a href="#ref-note1" class="note-backlink" data-ref="ref-note1" title="ტექსტში დაბრუნება">[1]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">Л. С. Ковтун, <cite class="title">Лексикография в Московской Руси XVI — начала XVII века</cite>, Л., 1975, с. 7.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note2">
+                        <span class="note-number">
+                            <a href="#ref-note2" class="note-backlink" data-ref="ref-note2" title="ტექსტში დაბრუნება">[2]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">Э. Гранстрем, <cite class="title">Византийская филология в древнерусских и славянских рукописях</cite>. Конференция по вопросам археографии и изучения древних рукописей. Тезисы докладов. Тб., 1969, с. 9.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note3">
+                        <span class="note-number">
+                            <a href="#ref-note3" class="note-backlink" data-ref="ref-note3" title="ტექსტში დაბრუნება">[3]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">H. Hunger, <cite class="title">Die hochsprachliche profane Literatur der Byzantiner</cite>. München, 1978, Bd. II, S. 10.</span>
+                        <span class="bibl">A. Guillou, <cite class="title">La civilisation byzantine</cite>, Paris, 1974, p. 29.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note4">
+                        <span class="note-number">
+                            <a href="#ref-note4" class="note-backlink" data-ref="ref-note4" title="ტექსტში დაბრუნება">[4]</a>
+                        </span>
+                        <div class="note-content">
+                        <p>დიონისიოს თრაკიელის გრამატიკისა და მისი კომენტარების ტექსტისათვის:</p>
+                        <span class="bibl"><cite class="title">Dionysii Thracis Ars Grammatica</cite>. Ed. Uhlig, Lipsiae, 1883;</span>
+                        <span class="bibl"><cite class="title">Scholia in Dionysii Thracis Artem Grammaticam</cite>. Gramm. Graeci, v. I, Pars III, Ed. Hilgard. Lipsiae, 1901.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note5">
+                        <span class="note-number">
+                            <a href="#ref-note5" class="note-backlink" data-ref="ref-note5" title="ტექსტში დაბრუნება">[5]</a>
+                        </span>
+                        <div class="note-content">
+                        <p>ამომწურავი ბიბლიოგრაფიის მითითება ჩვენს მიზანს არ შეადგენს. სანიმუშოდ დავასახელებთ რამდენიმე მიმოხილვითი ხასიათის ნაშრომს:</p>
+                        <span class="bibl">А. В. Десницкая, <cite class="title">История лингвистических учений, Средневековой Восток</cite>. Л., 1981;</span>
+                        <span class="bibl">თ. გამყრელიძე, <cite class="title">შუა საუკუნეების ფონეტიკური თეორიის ძირითადი საკითხები (VIII—XIII სს.)</cite>, თბ., 1980;</span>
+                        <span class="bibl">В. Звегинцев, <cite class="title">История арабского языкознания, Краткий очерк</cite>. М., 1958;</span>
+                        <span class="bibl">R. H. Robins, <cite class="title">Ancient and Mediaeval Grammatical Theory in Europe</cite>, London, 1951;</span>
+                        <span class="bibl">H. Hirschfeld, <cite class="title">Literary History of Hebrew Grammarians</cite>, London, 1926;</span>
+                        <span class="bibl">W. Bacher, <cite class="title">Die Anfänge der Hebräischen Grammatik</cite>, ZDMG, B. 49, 1895;</span>
+                        <span class="bibl">W. Bacher, <cite class="title">Die hebräische Sprachwissenschaft 10. bis zum 15. Jahrhundert</cite>, Trier, 1892;</span>
+                        <span class="bibl">A. Merx, <cite class="title">L'Origine de la grammaire arabe</cite>, Le Caire, 1891;</span>
+                        <span class="bibl">A. Merx, <cite class="title">Historia artis grammaticae apud Syros</cite>. Leipzig, 1889;</span>
+                        <span class="bibl">G. Flügel, <cite class="title">Die grammatischen Schulen der Araber</cite>, Leipzig, 1861;</span>
+                        <span class="bibl">В. Гиргас, <cite class="title">Очерк грамматической системы арабов</cite>, СПб., 1873.</span>
+                        <p>ქვემოთ მივუთითებთ აგრეთვე სხვადასხვა ენაზე დაწერილ მნიშვნელოვან გრამატიკულ თხზულებათა ზოგიერთ გამოცემას:</p>
+                        <span class="bibl">B. Ахвледиани, <cite class="title">Фонетический трактат Авиценны</cite>, Тб., 1966;</span>
+                        <span class="bibl">Р. Г. Рылова, <cite class="title">Грамматика сирийского языка Ильи Тирханского, ХІ в.</cite>, Палестинский Сборник, вып. 14 (77), Л., 1965;</span>
+                        <span class="bibl"><cite class="title">Книга сравнения еврейского языка с арабским Абу Ибрагима (Исаака) ибн Баруна</cite>, испанского еврея конца ХІ и начала ХІІ в., исследования П. Коковцева; К истории средневековой еврейской филологии и еврейско-арабской литературы. І, СПб., 1893;</span>
+                        <span class="bibl"><cite class="title">Новые материалы для характеристики Иехуды Хаюджа, Самуила Нагида и некоторых других представителей еврейской филологической науки в Х, ХІ и ХІІ веках</cite>. Собрал, исследовал и издал П. Коковцев. К истории средневековой еврейской филологии и еврейско-арабской литературы. Петроград, 1916;</span>
+                        <span class="bibl"><cite class="title">Дионисий Фракийский и армянские толкователи</cite>. Издал и изследовал Н. Адонц. Bibliotheca Armeno-Georgica, IV, 1915.</span>
+                        <span class="bibl">იმავე წიგნის ფრანგული გამოცემაა <cite class="title">Denys de Thrace et les commentateurs arméniens</cite>, Louvain, 1970.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note6">
+                        <span class="note-number">
+                            <a href="#ref-note6" class="note-backlink" data-ref="ref-note6" title="ტექსტში დაბრუნება">[6]</a>
+                        </span>
+                        <div class="note-content">
+                        <p>ეს ანდერძი ერთვის გრიგოლ ღვთისმეტყველის თხზულებას: <cite class="title">„სიტყუაი იულიანეს განსაქიქებელი მეორე&quot;</cite>, რომელიც გვხვდება 1800 წელს გადაწერილ <a href="">A-292</a> ხელნაწერში. ანდერძში დასახელებულია შემდეგი „კელოვნებანი&quot;: გრამატიკოსობა, ფილოსოფოსობა, რიტორება, მკურნალობა, მუსიკელობა, ქუეყნისმზომელობა, ვარსკულავთმრიცხუველობა, რიცხვთმოქმედება, ბუნებათმეტყუელება, ნივთთმეტყუელება, კელოვნებათა საქმე, წესი ბრძოლისაი. ანდერძის სრული ტექსტისათვის იხ.</p>
+                        <span class="bibl"><cite class="title">ქართულ ხელნაწერთა აღწერილობა... A კოლექციისა</cite>, ტ. I, თბ., 1980, გვ. 188.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note7">
+                        <span class="note-number">
+                            <a href="#ref-note7" class="note-backlink" data-ref="ref-note7" title="ტექსტში დაბრუნება">[7]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">ს. ყაუხჩიშვილი, <cite class="title">შატბერდის კრებულის სასწავლო წიგნი</cite>, ტფილ. უნივ. მოამბე, III, 1923, გვ. 182.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note8">
+                        <span class="note-number">
+                            <a href="#ref-note8" class="note-backlink" data-ref="ref-note8" title="ტექსტში დაბრუნება">[8]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">მ. შანიძე, <cite class="title">ებრაული ანბანის გადმოცემის შემთხვევები ძველი აღთქმის ქართულ ხელნაწერებში</cite>, ენათმეცნიერების ინსტიტუტის შრომები, აღმოსავლურ ენათა სერია, I, თბ., 1957, გვ. 169.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note9">
+                        <span class="note-number">
+                            <a href="#ref-note9" class="note-backlink" data-ref="ref-note9" title="ტექსტში დაბრუნება">[9]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">Л. С. Ковтун, <cite class="title">Русская лексикография эпохи средневековья</cite>, Л., 1963.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note10">
+                        <span class="note-number">
+                            <a href="#ref-note10" class="note-backlink" data-ref="ref-note10" title="ტექსტში დაბრუნება">[10]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">А. Цагарели, <cite class="title">О грамматической литературе грузинского языка</cite>, СПб, 1883, с. 3.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note11">
+                        <span class="note-number">
+                            <a href="#ref-note11" class="note-backlink" data-ref="ref-note11" title="ტექსტში დაბრუნება">[11]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl"><cite class="title">სინური მრავალთავი 864 წლისა</cite>, ა. შანიძის რედაქციით, წინასიტყვაობითა და გამოკვლევით, თბ., 1959:</span>
+                        <p><q>„ქალდეელ&quot; ასურთა ენისაგან ბერძენთა ენასა „სტეფანოს&quot;, და ბერძენთა ენისაგან ქართველთა ენად „გურგჯნ&quot;</q>, გვ. 69 და სხვ.</p>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note12">
+                        <span class="note-number">
+                            <a href="#ref-note12" class="note-backlink" data-ref="ref-note12" title="ტექსტში დაბრუნება">[12]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl"><cite class="title">შატბერდის კრებული მეათე საუკუნისა</cite>, გამოსაცემად მოამზადეს ბ. გიგინეიშვილმა და ე. გიუნაშვილმა, თბ., 1979;</span>
+                        <p><q>ითარგმანების ბეთლემ „სახლ ნაყოფიერების&quot;</q>, გვ. 104 და სხვ.</p>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note13">
+                        <span class="note-number">
+                            <a href="#ref-note13" class="note-backlink" data-ref="ref-note13" title="ტექსტში დაბრუნება">[13]</a>
+                        </span>
+                        <div class="note-content">
+                        <p>ხელნაწერი <a href="">A 65</a>, 171r—176r.</p>
+                        <span class="bibl"><cite class="title">ქართულ ხელნაწერთა აღწერილობა... A კოლექციისა</cite>, ტ. I, თბ., 1973, გვ. 226,</span>
+                        <p>ტექსტი ამ ხელნაწერის მიხედვით გამოცემულია: იხ.</p>
+                        <span class="bibl">ა. ღლონტი, <cite class="title">კირილე ალექსანდრიელის ლექსიკონი</cite>, გორის პედინსტ. შრომები, II, 1947, გვ. 170-177;</span>
+                        <span class="bibl">მისივე, <cite class="title">ქართული ლექსიკოგრაფიის ისტორიიდან, ნარკვევები</cite>, სტალინირი, 1955, გვ. 105.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note14">
+                        <span class="note-number">
+                            <a href="#ref-note14" class="note-backlink" data-ref="ref-note14" title="ტექსტში დაბრუნება">[14]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">მ. შანიძე, <cite class="title">შესავალი ეფრემ მცირის ფსალმუნთა თარგმანებისა</cite>, საიუბილეო, ძველი ქართული ენის კათედრის შრომები, 11, თბ., 1968, გვ. 96 და 82.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note15">
+                        <span class="note-number">
+                            <a href="#ref-note15" class="note-backlink" data-ref="ref-note15" title="ტექსტში დაბრუნება">[15]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">ი. ჯავახიშვილი, <cite class="title">ძველი ქართული საისტორიო მწერლობა</cite>. თხზულებანი, ტ. VIII, თბ., 1977, გვ. 159;</span>
+                        <span class="bibl">კ. კეკელიძე, <cite class="title">მთარგმნელობითი მეთოდი ძველ ქართულ ლიტერატურაში და მისი ხასიათი</cite>, ეტიუდები ძველი ქართული ლიტერატურის ისტორიიდან, ტ. 1, თბ., 1956, გვ. 186.</span>
+                        <span class="bibl">M. Шанидзе, <cite class="title">Некоторые сведения Ефрема Мцире о грузинской и греческой филологии</cite>, მაცნე, IV, თბ., 1974, გვ. 80;</span>
+                        <span class="bibl">კ. დანელია, <cite class="title">ახალი მასალები ეფრემ მცირის მთარგმნელობითი მეთოდისა და მისი რედაქციის სამოციქულოს ისტორიის შესწავლისათვის</cite>: მაცნე, ენისა და ლიტერატურის სერია, 1974, № 4, გვ. 127.</span>
+                        <span class="bibl">З. А. Сарджвеладзе, <cite class="title">У истоков грузинской лингвистической мысли</cite>, Вопросы языкознания, 1983, № 1, c. 113.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note16">
+                        <span class="note-number">
+                            <a href="#ref-note16" class="note-backlink" data-ref="ref-note16" title="ტექსტში დაბრუნება">[16]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">კ. კეკელიძე, <cite class="title">ძველი ქართული ლიტერატურის ისტორია</cite>, I, თბ., 1980, გვ. 275.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note17">
+                        <span class="note-number">
+                            <a href="#ref-note17" class="note-backlink" data-ref="ref-note17" title="ტექსტში დაბრუნება">[17]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">ნ. კეჭაღმაძე, <cite class="title">იოანე პეტრიწის ენის საკითხისათვის</cite>, თსუ შრომები, ტ. 61, 1953, გვ. 99;</span>
+                        <span class="bibl">დ. მელიქიშვილი, <cite class="title">იოანე პეტრიწის ფილოსოფიურ შრომათა ენა და სტილი</cite>, თბ., 1975, გვ. 71.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note18">
+                        <span class="note-number">
+                            <a href="#ref-note18" class="note-backlink" data-ref="ref-note18" title="ტექსტში დაბრუნება">[18]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">ნ. კეჭაღმაძე, <cite class="title">იოანე იტალოსის წერილი აბაზგი გრამატიკოსისადმი და წერილის ადრესატი</cite>, აღმოსავლური ფილოლოგია, I, თბ., 1969, გვ. 243.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note19">
+                        <span class="note-number">
+                            <a href="#ref-note19" class="note-backlink" data-ref="ref-note19" title="ტექსტში დაბრუნება">[19]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">ს. ყაუხჩიშვილი, <cite class="title">პეტრიწის განმარტების ბოლოსიტყვაობის ერთი წყარო</cite>, ენიმკის მოამბე, II, № 8, 1941, გვ. 755.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note20">
+                        <span class="note-number">
+                            <a href="#ref-note20" class="note-backlink" data-ref="ref-note20" title="ტექსტში დაბრუნება">[20]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">დ. გეწაძე, <cite class="title">ქართული გრამატიკული ტერმინოლოგიის ისტორიიდან</cite>, თსუ შრომები, ტ. 200, ენათმეცნიერება, თბ., 1978, გვ. 50.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note21">
+                        <span class="note-number">
+                            <a href="#ref-note21" class="note-backlink" data-ref="ref-note21" title="ტექსტში დაბრუნება">[21]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">სულხან-საბა ორბელიანი, <cite class="title">თხზულებანი</cite>, ტ. IV, თბ., 1965, გვ. 31.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note22">
+                        <span class="note-number">
+                            <a href="#ref-note22" class="note-backlink" data-ref="ref-note22" title="ტექსტში დაბრუნება">[22]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">ე. ბაბუნაშვილი, <cite class="title">ანტონ პირველი და ქართული გრამატიკის საკითხები</cite>, თბ., 1970, გვ. 13;</span>
+                        <span class="bibl">ა. ფოცხიშვილი, <cite class="title">ქართული გრამატიკული აზრის ისტორიიდან</cite>, თბ., 1979, გვ. 47.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note23">
+                        <span class="note-number">
+                            <a href="#ref-note23" class="note-backlink" data-ref="ref-note23" title="ტექსტში დაბრუნება">[23]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">ა. ფოცხიშვილი, დასახ. ნაშრომი, გვ. 51.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note24">
+                        <span class="note-number">
+                            <a href="#ref-note24" class="note-backlink" data-ref="ref-note24" title="ტექსტში დაბრუნება">[24]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">ი. ჯავახიშვილი, <cite class="title">ქართული და კავკასიური ენების თავდაპირველი ბუნება და ნათესაობა</cite>, თბ., 1937, გვ. 4.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note25">
+                        <span class="note-number">
+                            <a href="#ref-note25" class="note-backlink" data-ref="ref-note25" title="ტექსტში დაბრუნება">[25]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">ილია აბულაძე, <cite class="title">ქართული გრამატიკული ლიტერატურის ადრინდელი ძეგლები</cite>, შრომები, ტ. II, თბ., 1976 (ნაშრომი პირველად გამოქვეყნებულია 1940 წ.: საქ. სახ. მუზეუმის მოამბე, X-B), გვ. 169.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note26">
+                        <span class="note-number">
+                            <a href="#ref-note26" class="note-backlink" data-ref="ref-note26" title="ტექსტში დაბრუნება">[26]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">ა. ფოცხიშვილი, <cite class="title">ქართული გრამატიკული აზრის ისტორიიდან</cite>, გვ. 45.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note27">
+                        <span class="note-number">
+                            <a href="#ref-note27" class="note-backlink" data-ref="ref-note27" title="ტექსტში დაბრუნება">[27]</a>
+                        </span>
+                        <div class="note-content">
+                        <p>ეს სიტყვები ეფრემს ნახმარი აქვს ეპისტოლეში, რომელიც მას წაუმძღვარებია გრიგოლ ღვთისმეტყველის თხზულებათა თარგმანისათვის (ხელნაწერი. იერ. 43 რ. ბლეიკის კატალოგის მიხედვით).</p>
+                        <span class="bibl">ნ. მიმომხილველი, თბ., 1926, გვ. 167;</span>
+                        <span class="bibl">ნ. მარი, <cite class="title">იერუსალიმის ქართულ ხელნაწერთა მოკლე აღწერილობა</cite>, თბ., 1955, გვ. 71.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note28">
+                        <span class="note-number">
+                            <a href="#ref-note28" class="note-backlink" data-ref="ref-note28" title="ტექსტში დაბრუნება">[28]</a>
+                        </span>
+                        <div class="note-content">
+                        <p><cite class="title">„სიტყუაჲ ართრონთათვს&quot; — ძველი ქართული გრამატიკული ტრაქტატი</cite>. მოხსენება წაკითხული იყო საქ. მეცნ. აკად. გ. წერეთლის სახ. აღმოსავლეთმცოდნეობის ინსტიტუტის სესიაზე 1977 წ., 27 ივნისს;</p>
+                        <span class="bibl">იხ. კიდევ M. Shanidze, <cite class="title">Вопросы языка и грамматики в древнегрузинских рукописях</cite>. Конференция по истории письменности и книги. Археографическая комиссия АН СССР. Институт древних рукописей им. Маштоца — Матенадаран, 25-27 окт. 1977. c. 114.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note29">
+                        <span class="note-number">
+                            <a href="#ref-note29" class="note-backlink" data-ref="ref-note29" title="ტექსტში დაბრუნება">[29]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">იხ. M. Shanidze, <cite class="title">An Old Georgian Grammatical Treatise in a Collection of Homilies Attributed to John Chrysostom</cite>, Bedi Kartlisa, Revue de Kartvélologie, v. 42, Paris, 1984, p. 53-68.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note30">
+                        <span class="note-number">
+                            <a href="#ref-note30" class="note-backlink" data-ref="ref-note30" title="ტექსტში დაბრუნება">[30]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl"><cite class="title">საქართველოს სახელმწიფო მუზეუმის ძველ ხელნაწერთა მკვლევი</cite>, თბ., 1951, გვ. 37.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note31">
+                        <span class="note-number">
+                            <a href="#ref-note31" class="note-backlink" data-ref="ref-note31" title="ტექსტში დაბრუნება">[31]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl"><cite class="title">ქართულ ხელნაწერთა აღწერილობა... S კოლექციისა</cite>, 1, თბ., 1959, გვ. 365.</span>
+                        <p><a href="">S-312</a> ხელნაწერი, რომელიც თავდაპირველად წერა-კითხვის გამავრცელებელ საზოგადოებას ეკუთვნოდა, ე. თაყაიშვილის ცნობილ აღწერილობაში შეტანილი არ არის (იხ.</p>
+                        <span class="bibl">ა. შანიძე და ა. ბარამიძე, <cite class="title">საქართველოს მუზეუმის S ფონდის აღწერილ ხელნაწერთა საძიებელი</cite>, მასალები საქართველოსა და კავკასიის ისტორიისათვის, თბ., 1939, ნაკვ. 2, გვ. 9).</span>
+                        <p>ე. თაყაიშვილის არქივში დაცულ მასალებში მოიპოვება ამ ხელნაწერის აღწერილობა, რომელიც პირველადი შავი ნაწერის შთაბეჭდილებას ტოვებს (ხელნაწ. ინსტ., ე. თაყაიშვილის ფ. 128: იხ.</p>
+                        <span class="bibl"><cite class="title">აკად. ე. თაყაიშვილის არქივი, აღწერილობა</cite>, შეადგინა ე. კელენჯერაძემ, თბ., 1972, გვ. 74—546).</span>
+                        <p>აღწერილობაში სულ 29 ერთეულია შეტანილი და <cite class="title">„სიტყუაჲ ართრონთათვს&quot;</cite> არ არის დასახელებული; იგი მიჩნეულია წინა თხზულების (კირილე ალექსანდრიელის „ლექსიკონის&quot;) შემადგენელ ნაწილად, რაც ჩანს ე. თაყაიშვილის მიერ მითითებული გვერდების მიხედვით: „ლექსიკონს&quot; უკავია, მისი სიტყვით, ხელნაწერის ბოლო გვერდები მთლიანად. ქ. შარაშიძის აღწერილობის მიხედვით, ხელნაწერში შეტანილია 55 სხვადასხვა თხზულება.</p>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note32">
+                        <span class="note-number">
+                            <a href="#ref-note32" class="note-backlink" data-ref="ref-note32" title="ტექსტში დაბრუნება">[32]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">А. Цагарели, <cite class="title">Сведения о памятниках грузинской письменности</cite>, Вып. 1, 1889, СПб., прилож., І., 33.</span>
+                        <p><cite class="title">„სია ქართული წიგნების სახელები ივერიის მონასტერსა შინა მდებარეთა მთაწმიდას&quot;</cite>. ა. ცაგარლის ცნობით, ილარიონი ყოფილა იმერეთის უკანასკნელი მეფის სოლომონ მეორის მოძღვარი, რომელიც სოლომონის სიკვდილის შემდეგ 1815 წ. ათონს წასულა. მისი შედგენილი კატალოგი ა. ცაგარელს უნახავს დავით დადიანის წიგნსაცავში და დაუბეჭდავს (იქვე, 1, გვ. XVI—XVII). ილარიონი ყოფილა გვარად ყანჩიშვილი. მისი მოღვაწეობის შესახებ ნახეთ:</p>
+                        <span class="bibl">ლ. მენაბდე, <cite class="title">ძველი ქართული მწერლობის კერები</cite>, II, თბ., 1980, გვ. 239.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note33">
+                        <span class="note-number">
+                            <a href="#ref-note33" class="note-backlink" data-ref="ref-note33" title="ტექსტში დაბრუნება">[33]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">А. Цагарели, <cite class="title">Сведения</cite>, Вып. І, Прилож. І, 33-3.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note34">
+                        <span class="note-number">
+                            <a href="#ref-note34" class="note-backlink" data-ref="ref-note34" title="ტექსტში დაბრუნება">[34]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">А. Цагарели, <cite class="title">Сведения</cite>, 1, 33, 94.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note35">
+                        <span class="note-number">
+                            <a href="#ref-note35" class="note-backlink" data-ref="ref-note35" title="ტექსტში დაბრუნება">[35]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl"><cite class="title">Catalogue des manuscrits géorgiens de la bibliothèque de la Laure d'Iviron au Mont Athos</cite>, par Robert P. Blake, Extrait de la Revue de l'Orient chrétien, 3e Série, T. VIII (XXVIII), Nos 3 et 4 (1931-32), Paris, 1932, p. 1.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note36">
+                        <span class="note-number">
+                            <a href="#ref-note36" class="note-backlink" data-ref="ref-note36" title="ტექსტში დაბრუნება">[36]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">V. Gardthausen, <cite class="title">Griechische Palaeographie</cite>, Leipzig, 1879, S. 49.</span>
+                        <span class="bibl">Н. Т. Лихачев, <cite class="title">Палеографическое значение бумажных водяных знаков</cite>, І, СПб., 1899, ΧΙ.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note37">
+                        <span class="note-number">
+                            <a href="#ref-note37" class="note-backlink" data-ref="ref-note37" title="ტექსტში დაბრუნება">[37]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">R. Blake, <cite class="title">Catalogue</cite>, p. 26.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note38">
+                        <span class="note-number">
+                            <a href="#ref-note38" class="note-backlink" data-ref="ref-note38" title="ტექსტში დაბრუნება">[38]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">V. Gardthausen, <cite class="title">Griechische Palaeographie</cite>, S. 78.</span>
+                        <p>მძიმე ლინონთა სულფატები, რომელთა საერთო სახელწოდებაა <span class="term" data-target="">არჯასპი</span> ან <span class="term" data-target="">აჯასპი</span> (შდრ: სომ. <span class="foreign" lang="hy">արdelays</span>) საქართველოში საკმაო ხმარებაში ყოფილა მოგვიანებითაც. რკინის აჯასპს იყენებდნენ სხვადასხვა საჭიროებისათვის, მათ შორის, როგორც ჩანს, შავი მელნის გასაკეთებლადაც. საბას ლექსიკონში ასეთი განმარტება არის: <q>„არჯასპი სომხურია, ქართულად მიწალები ჰქვიან, შავის საღებავია&quot;</q>.</p>
+                        <span class="bibl">(სულხან-საბა ორბელიანი, <cite class="title">თხზულებანი</cite>. ტ. IV, თბ., 1965).</span>
+                        <p>ვახტანგ მეექვსე ასახელებს არჯასპის სხვადასხვა სახეობას</p>
+                        <span class="bibl">(<cite class="title">წიგნი ზეთების შემზადებისა და ქიმიისა ქმნისა</cite>, ტექსტი გამოსაცემად მოამზადეს თ. ენუქიძემ და ვ. კოკოჩაშვილმა, თბ., 1981, გვ. 164);</span>
+                        <p>იგი აგრეთვე აღნიშნავს, რომ არჯასპი იხმარება ქაღალდის შესაღებავად და წერს: <q>„არჯასპი თუ ბევრი გარიე, დაწვავს ქაღალდს&quot;</q> (გვ. 185). აქ, საფიქრებელია, ივარაუდება ე. წ. „მწვანე შაბი&quot;, ე. ი. რკინის ქვეჟანგის სულფატი — (FeSO₄ · 7H₂O) იხ. დასახ. თხზ. გვ. 23).</p>
+                        <span class="bibl">ნ. ჩუბინაშვილის ლექსიკონში ნათქვამია: <q>„არჯასპი — მიწალები, მომწუანო შავის საღებავი, ხმარებული ტყავთათვს მეპრატაკეთაგან ანუ მელნისათვს&quot;</q> (ნ. ჩუბინაშვილი, <cite class="title">ქართული ლექსიკონი</cite>, თბ., 1961).</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note39">
+                        <span class="note-number">
+                            <a href="#ref-note39" class="note-backlink" data-ref="ref-note39" title="ტექსტში დაბრუნება">[39]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">Р. Шмерлинг, <cite class="title">Художественное оформление грузинской рукописной книги IX-XI вв.</cite> I, Тб., 1967, 83, 101.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note40">
+                        <span class="note-number">
+                            <a href="#ref-note40" class="note-backlink" data-ref="ref-note40" title="ტექსტში დაბრუნება">[40]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">А. Цагарели, <cite class="title">Сведения</cite>, вып. I, 94;</span>
+                        <span class="bibl">R. Blake, <cite class="title">Catalogue</cite>, p. 26.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note41">
+                        <span class="note-number">
+                            <a href="#ref-note41" class="note-backlink" data-ref="ref-note41" title="ტექსტში დაბრუნება">[41]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">ე. მაჭავარიანი, <cite class="title">ასომთავრული დამწერლობის მხატვრული თავისებურებანი ქართული ხელნაწერების მიხედვით (V—XIII ს.)</cite>, მრავალთავი, ტ. II, თბ., 1973, გვ. 240.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note42">
+                        <span class="note-number">
+                            <a href="#ref-note42" class="note-backlink" data-ref="ref-note42" title="ტექსტში დაბრუნება">[42]</a>
+                        </span>
+                        <div class="note-content">
+                        <p>შდრ.:</p>
+                        <span class="bibl">ე. მაჭავარიანი, <cite class="title">ქართული დამწერლობის განვითარების ტაბულა</cite>, პალეოგრაფიული ძიებანი, II, თბ., 1969, გვ. 116;</span>
+                        <span class="bibl">ილ. აბულაძე, <cite class="title">ქართული წერის ნიმუშები, პალეოგრაფიული ალბომი</cite>, თბ., 1972, ტაბ. 109—113.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note43">
+                        <span class="note-number">
+                            <a href="#ref-note43" class="note-backlink" data-ref="ref-note43" title="ტექსტში დაბრუნება">[43]</a>
+                        </span>
+                        <div class="note-content">
+                        <p>გრამატიკული ტრაქტატისა და იოანე ოქროპირის სახელით ცნობილი თხზულების ტექსტი წინამდებარე გამოცემაში ჩვენ მიერ დაყოფილია პარაგრაფებად დამოწმების გასაადვილებლად. პირველი მათგანის მაგალითების დამოწმებისას ნაჩვენებია პარაგრაფი, მეორისათვის კი პარაგრაფის რიცხვს წინ მიუძღვის აღნიშვნა: ჰ. (ჰომილია).</p>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note44">
+                        <span class="note-number">
+                            <a href="#ref-note44" class="note-backlink" data-ref="ref-note44" title="ტექსტში დაბრუნება">[44]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl"><cite class="title">ქართულ ხელნაწერთა აღწერილობა... A კოლექციისა</cite>, ტ. II, თბ., 1974, გვ. 85.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note45">
+                        <span class="note-number">
+                            <a href="#ref-note45" class="note-backlink" data-ref="ref-note45" title="ტექსტში დაბრუნება">[45]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">ე. მეტრეველი, <cite class="title">ეფრემ მცირის ავტოგრაფი</cite>; ხელნ. ინსტ. მოამბე, I, თბ., 1959, გვ. 115.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note46">
+                        <span class="note-number">
+                            <a href="#ref-note46" class="note-backlink" data-ref="ref-note46" title="ტექსტში დაბრუნება">[46]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">მ. შანიძე, <cite class="title">ეფრემ მცირის ფსალმუნთა თარგმანების ტექსტისათვის</cite>; ქართული წყაროთმცოდნეობა, III, თბ., 1971, გვ. 72.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note47">
+                        <span class="note-number">
+                            <a href="#ref-note47" class="note-backlink" data-ref="ref-note47" title="ტექსტში დაბრუნება">[47]</a>
+                        </span>
+                        <div class="note-content">
+                        <p>ეს საკითხი საგანგებოდ არის შესწავლილი ლ. ქაჯაიას ხელნაწერ ნაშრომში <cite class="title">„პუნქტუაცია V—XII საუკუნეების ქართულ ხელნაწერებში&quot;</cite> (1969), სადაც დასახელებულია კიდევ შემდეგი ხელნაწერები:</p>
+                        <ul>
+                            <li><a href="">S—384</a>, XI-XII ს. (ამ კრებულში, რომელიც შავ მთაზე ჩანს გადაწერილი, შეტანილია ეფრემისა და მისი მოწაფის არსენი იყალთოელის თარგმანები);</li>
+                            <li><a href="">Q—1158</a>, XI ს., სამოციქულოს თარგმანება ეფრემ მცირისა;</li>
+                            <li><a href="">A-677</a>, საქმე მოციქულთა, XI—XII ს., ნარედაქციევი ეფრემის მიერ;</li>
+                            <li><a href="">A-1115</a>, XII ს., ეფრემ ასურის ასკეტიკონი, თარგმნილი ეფრემ მცირის მიერ და კიდევ რამდენიმე სხვა (დასახ. ნაშრომი, მანქ. გადაბეჭდილი, გვ. 178-180).</li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note48">
+                        <span class="note-number">
+                            <a href="#ref-note48" class="note-backlink" data-ref="ref-note48" title="ტექსტში დაბრუნება">[48]</a>
+                        </span>
+                        <div class="note-content">
+                        <p>შდრ.</p>
+                        <span class="bibl">ლ. ქაჯაია, <cite class="title">პუნქტუაცია...</cite>, გვ. 204;</span>
+                        <span class="bibl">Л. Каджая, <cite class="title">Пунктуация в грузинских рукописях V-XII вв.</cite> Автореферат диссертационной работы, представленной на соискание ученой степени кандидата филологических наук, Тб., 1939, გვ. 10.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note49">
+                        <span class="note-number">
+                            <a href="#ref-note49" class="note-backlink" data-ref="ref-note49" title="ტექსტში დაბრუნება">[49]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">Л. Каджая, <cite class="title">Пунктуация в грузинских рукописях</cite>, გვ. 11.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note50">
+                        <span class="note-number">
+                            <a href="#ref-note50" class="note-backlink" data-ref="ref-note50" title="ტექსტში დაბრუნება">[50]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">ლ. ქაჯაია, <cite class="title">პირობითი ნიშნები ქართულ კომენტარებიან ხელნაწერებში</cite>, პალეოგრაფიული ძიებანი, II, თბ., 1969, გვ. 34.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note51">
+                        <span class="note-number">
+                            <a href="#ref-note51" class="note-backlink" data-ref="ref-note51" title="ტექსტში დაბრუნება">[51]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">V. Gardthausen, <cite class="title">Griechische Palaeographie</cite>, S. 286.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note52">
+                        <span class="note-number">
+                            <a href="#ref-note52" class="note-backlink" data-ref="ref-note52" title="ტექსტში დაბრუნება">[52]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl"><cite class="title">ქრონიკები და სხვა მასალა საქართველოს ისტორიისა და მწერლობისა...</cite> შეკრებილი... თ. ჟორდანიას მიერ, II, თბ., 1897, გვ. 111.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note53">
+                        <span class="note-number">
+                            <a href="#ref-note53" class="note-backlink" data-ref="ref-note53" title="ტექსტში დაბრუნება">[53]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl">ვ. ბერიძე, <cite class="title">ძველი ქართველი ოსტატები</cite>, თბ., 1967, გვ. 137.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note54">
+                        <span class="note-number">
+                            <a href="#ref-note54" class="note-backlink" data-ref="ref-note54" title="ტექსტში დაბრუნება">[54]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl"><cite class="title">ქართულ ხელნაწერთა აღწერილობა... S კოლექციისა</cite>, ტ. III, თბ., 1967, გვ. 647.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note55">
+                        <span class="note-number">
+                            <a href="#ref-note55" class="note-backlink" data-ref="ref-note55" title="ტექსტში დაბრუნება">[55]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl"><cite class="title">ქართულ ხელნაწერთა აღწერილობა... A კოლექციისა</cite>, ტ. I, თბ., 1976 (?), გვ. 338.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note56">
+                        <span class="note-number">
+                            <a href="#ref-note56" class="note-backlink" data-ref="ref-note56" title="ტექსტში დაბრუნება">[56]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl"><cite class="title">ქართულ ხელნაწერთა აღწერილობა... S კოლექციისა</cite>, ტ. I, თბ., 1960, გვ. 365-375.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note57">
+                        <span class="note-number">
+                            <a href="#ref-note57" class="note-backlink" data-ref="ref-note57" title="ტექსტში დაბრუნება">[57]</a>
+                        </span>
+                        <div class="note-content">
+                        <span class="bibl"><cite class="title">ქართულ ხელნაწერთა აღწერილობა... A კოლექციისა</cite>, ტ. I, 1974, გვ. 297.</span>
+                    </div>
+                    </div>
+                    <div class="note-item" id="note58">
+                        <span class="note-number">
+                            <a href="#ref-note58" class="note-backlink" data-ref="ref-note58" title="ტექსტში დაბრუნება">[58]</a>
+                        </span>
+                        <div class="note-content">
+                        <p>ქ. შარაშიძე მიუთითებს, რომ <a href="">A-85</a> საზოგადოდ სვიმონის ხელით არის შევსებული და რესტავრირებული. გზამკვლევი, გვ. 37.</p>
+                        <span class="bibl">თ. ჟორდანიას <a href="">A-85</a> ხელნაწერის მეორე, გვიანდელი ნაწილის გადამწერად სვიმონი მიაჩნია (<cite class="title">ქრონიკები</cite>, II, გვ. 102).</span>
+                    </div>
                     </div>
                 </section>
                 
+                
+            </div>
+            
+            <!-- Note Popup (positioned dynamically) -->
+            <div id="note-popup" class="note-popup">
+                <div class="note-popup-header">
+                    <span class="note-popup-number"></span>
+                    <button class="note-popup-close" aria-label="დახურვა">&times;</button>
+                </div>
+                <div class="note-popup-content"></div>
+                <div class="note-popup-footer">
+                    <a href="#" class="note-popup-more">ვრცლად ↓</a>
+                </div>
             </div>
             
         </article>
@@ -206,6 +1240,174 @@
     </footer>
     
 <script>
+// Notes data embedded from build
+const notesData = {"note1": {"n": "1", "html": "\n                        <span class=\"bibl\">Л. С. Ковтун, <cite class=\"title\">Лексикография в Московской Руси XVI — начала XVII века</cite>, Л., 1975, с. 7.</span>\n                    "}, "note2": {"n": "2", "html": "\n                        <span class=\"bibl\">Э. Гранстрем, <cite class=\"title\">Византийская филология в древнерусских и славянских рукописях</cite>. Конференция по вопросам археографии и изучения древних рукописей. Тезисы докладов. Тб., 1969, с. 9.</span>\n                    "}, "note3": {"n": "3", "html": "\n                        <span class=\"bibl\">H. Hunger, <cite class=\"title\">Die hochsprachliche profane Literatur der Byzantiner</cite>. München, 1978, Bd. II, S. 10.</span>\n                        <span class=\"bibl\">A. Guillou, <cite class=\"title\">La civilisation byzantine</cite>, Paris, 1974, p. 29.</span>\n                    "}, "note4": {"n": "4", "html": "\n                        <p>დიონისიოს თრაკიელის გრამატიკისა და მისი კომენტარების ტექსტისათვის:</p>\n                        <span class=\"bibl\"><cite class=\"title\">Dionysii Thracis Ars Grammatica</cite>. Ed. Uhlig, Lipsiae, 1883;</span>\n                        <span class=\"bibl\"><cite class=\"title\">Scholia in Dionysii Thracis Artem Grammaticam</cite>. Gramm. Graeci, v. I, Pars III, Ed. Hilgard. Lipsiae, 1901.</span>\n                    "}, "note5": {"n": "5", "html": "\n                        <p>ამომწურავი ბიბლიოგრაფიის მითითება ჩვენს მიზანს არ შეადგენს. სანიმუშოდ დავასახელებთ რამდენიმე მიმოხილვითი ხასიათის ნაშრომს:</p>\n                        <span class=\"bibl\">А. В. Десницкая, <cite class=\"title\">История лингвистических учений, Средневековой Восток</cite>. Л., 1981;</span>\n                        <span class=\"bibl\">თ. გამყრელიძე, <cite class=\"title\">შუა საუკუნეების ფონეტიკური თეორიის ძირითადი საკითხები (VIII—XIII სს.)</cite>, თბ., 1980;</span>\n                        <span class=\"bibl\">В. Звегинцев, <cite class=\"title\">История арабского языкознания, Краткий очерк</cite>. М., 1958;</span>\n                        <span class=\"bibl\">R. H. Robins, <cite class=\"title\">Ancient and Mediaeval Grammatical Theory in Europe</cite>, London, 1951;</span>\n                        <span class=\"bibl\">H. Hirschfeld, <cite class=\"title\">Literary History of Hebrew Grammarians</cite>, London, 1926;</span>\n                        <span class=\"bibl\">W. Bacher, <cite class=\"title\">Die Anfänge der Hebräischen Grammatik</cite>, ZDMG, B. 49, 1895;</span>\n                        <span class=\"bibl\">W. Bacher, <cite class=\"title\">Die hebräische Sprachwissenschaft 10. bis zum 15. Jahrhundert</cite>, Trier, 1892;</span>\n                        <span class=\"bibl\">A. Merx, <cite class=\"title\">L'Origine de la grammaire arabe</cite>, Le Caire, 1891;</span>\n                        <span class=\"bibl\">A. Merx, <cite class=\"title\">Historia artis grammaticae apud Syros</cite>. Leipzig, 1889;</span>\n                        <span class=\"bibl\">G. Flügel, <cite class=\"title\">Die grammatischen Schulen der Araber</cite>, Leipzig, 1861;</span>\n                        <span class=\"bibl\">В. Гиргас, <cite class=\"title\">Очерк грамматической системы арабов</cite>, СПб., 1873.</span>\n                        <p>ქვემოთ მივუთითებთ აგრეთვე სხვადასხვა ენაზე დაწერილ მნიშვნელოვან გრამატიკულ თხზულებათა ზოგიერთ გამოცემას:</p>\n                        <span class=\"bibl\">B. Ахвледиани, <cite class=\"title\">Фонетический трактат Авиценны</cite>, Тб., 1966;</span>\n                        <span class=\"bibl\">Р. Г. Рылова, <cite class=\"title\">Грамматика сирийского языка Ильи Тирханского, ХІ в.</cite>, Палестинский Сборник, вып. 14 (77), Л., 1965;</span>\n                        <span class=\"bibl\"><cite class=\"title\">Книга сравнения еврейского языка с арабским Абу Ибрагима (Исаака) ибн Баруна</cite>, испанского еврея конца ХІ и начала ХІІ в., исследования П. Коковцева; К истории средневековой еврейской филологии и еврейско-арабской литературы. І, СПб., 1893;</span>\n                        <span class=\"bibl\"><cite class=\"title\">Новые материалы для характеристики Иехуды Хаюджа, Самуила Нагида и некоторых других представителей еврейской филологической науки в Х, ХІ и ХІІ веках</cite>. Собрал, исследовал и издал П. Коковцев. К истории средневековой еврейской филологии и еврейско-арабской литературы. Петроград, 1916;</span>\n                        <span class=\"bibl\"><cite class=\"title\">Дионисий Фракийский и армянские толкователи</cite>. Издал и изследовал Н. Адонц. Bibliotheca Armeno-Georgica, IV, 1915.</span>\n                        <span class=\"bibl\">იმავე წიგნის ფრანგული გამოცემაა <cite class=\"title\">Denys de Thrace et les commentateurs arméniens</cite>, Louvain, 1970.</span>\n                    "}, "note6": {"n": "6", "html": "\n                        <p>ეს ანდერძი ერთვის გრიგოლ ღვთისმეტყველის თხზულებას: <cite class=\"title\">„სიტყუაი იულიანეს განსაქიქებელი მეორე&quot;</cite>, რომელიც გვხვდება 1800 წელს გადაწერილ <a href=\"\">A-292</a> ხელნაწერში. ანდერძში დასახელებულია შემდეგი „კელოვნებანი&quot;: გრამატიკოსობა, ფილოსოფოსობა, რიტორება, მკურნალობა, მუსიკელობა, ქუეყნისმზომელობა, ვარსკულავთმრიცხუველობა, რიცხვთმოქმედება, ბუნებათმეტყუელება, ნივთთმეტყუელება, კელოვნებათა საქმე, წესი ბრძოლისაი. ანდერძის სრული ტექსტისათვის იხ.</p>\n                        <span class=\"bibl\"><cite class=\"title\">ქართულ ხელნაწერთა აღწერილობა... A კოლექციისა</cite>, ტ. I, თბ., 1980, გვ. 188.</span>\n                    "}, "note7": {"n": "7", "html": "\n                        <span class=\"bibl\">ს. ყაუხჩიშვილი, <cite class=\"title\">შატბერდის კრებულის სასწავლო წიგნი</cite>, ტფილ. უნივ. მოამბე, III, 1923, გვ. 182.</span>\n                    "}, "note8": {"n": "8", "html": "\n                        <span class=\"bibl\">მ. შანიძე, <cite class=\"title\">ებრაული ანბანის გადმოცემის შემთხვევები ძველი აღთქმის ქართულ ხელნაწერებში</cite>, ენათმეცნიერების ინსტიტუტის შრომები, აღმოსავლურ ენათა სერია, I, თბ., 1957, გვ. 169.</span>\n                    "}, "note9": {"n": "9", "html": "\n                        <span class=\"bibl\">Л. С. Ковтун, <cite class=\"title\">Русская лексикография эпохи средневековья</cite>, Л., 1963.</span>\n                    "}, "note10": {"n": "10", "html": "\n                        <span class=\"bibl\">А. Цагарели, <cite class=\"title\">О грамматической литературе грузинского языка</cite>, СПб, 1883, с. 3.</span>\n                    "}, "note11": {"n": "11", "html": "\n                        <span class=\"bibl\"><cite class=\"title\">სინური მრავალთავი 864 წლისა</cite>, ა. შანიძის რედაქციით, წინასიტყვაობითა და გამოკვლევით, თბ., 1959:</span>\n                        <p><q>„ქალდეელ&quot; ასურთა ენისაგან ბერძენთა ენასა „სტეფანოს&quot;, და ბერძენთა ენისაგან ქართველთა ენად „გურგჯნ&quot;</q>, გვ. 69 და სხვ.</p>\n                    "}, "note12": {"n": "12", "html": "\n                        <span class=\"bibl\"><cite class=\"title\">შატბერდის კრებული მეათე საუკუნისა</cite>, გამოსაცემად მოამზადეს ბ. გიგინეიშვილმა და ე. გიუნაშვილმა, თბ., 1979;</span>\n                        <p><q>ითარგმანების ბეთლემ „სახლ ნაყოფიერების&quot;</q>, გვ. 104 და სხვ.</p>\n                    "}, "note13": {"n": "13", "html": "\n                        <p>ხელნაწერი <a href=\"\">A 65</a>, 171r—176r.</p>\n                        <span class=\"bibl\"><cite class=\"title\">ქართულ ხელნაწერთა აღწერილობა... A კოლექციისა</cite>, ტ. I, თბ., 1973, გვ. 226,</span>\n                        <p>ტექსტი ამ ხელნაწერის მიხედვით გამოცემულია: იხ.</p>\n                        <span class=\"bibl\">ა. ღლონტი, <cite class=\"title\">კირილე ალექსანდრიელის ლექსიკონი</cite>, გორის პედინსტ. შრომები, II, 1947, გვ. 170-177;</span>\n                        <span class=\"bibl\">მისივე, <cite class=\"title\">ქართული ლექსიკოგრაფიის ისტორიიდან, ნარკვევები</cite>, სტალინირი, 1955, გვ. 105.</span>\n                    "}, "note14": {"n": "14", "html": "\n                        <span class=\"bibl\">მ. შანიძე, <cite class=\"title\">შესავალი ეფრემ მცირის ფსალმუნთა თარგმანებისა</cite>, საიუბილეო, ძველი ქართული ენის კათედრის შრომები, 11, თბ., 1968, გვ. 96 და 82.</span>\n                    "}, "note15": {"n": "15", "html": "\n                        <span class=\"bibl\">ი. ჯავახიშვილი, <cite class=\"title\">ძველი ქართული საისტორიო მწერლობა</cite>. თხზულებანი, ტ. VIII, თბ., 1977, გვ. 159;</span>\n                        <span class=\"bibl\">კ. კეკელიძე, <cite class=\"title\">მთარგმნელობითი მეთოდი ძველ ქართულ ლიტერატურაში და მისი ხასიათი</cite>, ეტიუდები ძველი ქართული ლიტერატურის ისტორიიდან, ტ. 1, თბ., 1956, გვ. 186.</span>\n                        <span class=\"bibl\">M. Шанидзе, <cite class=\"title\">Некоторые сведения Ефрема Мцире о грузинской и греческой филологии</cite>, მაცნე, IV, თბ., 1974, გვ. 80;</span>\n                        <span class=\"bibl\">კ. დანელია, <cite class=\"title\">ახალი მასალები ეფრემ მცირის მთარგმნელობითი მეთოდისა და მისი რედაქციის სამოციქულოს ისტორიის შესწავლისათვის</cite>: მაცნე, ენისა და ლიტერატურის სერია, 1974, № 4, გვ. 127.</span>\n                        <span class=\"bibl\">З. А. Сарджвеладзе, <cite class=\"title\">У истоков грузинской лингвистической мысли</cite>, Вопросы языкознания, 1983, № 1, c. 113.</span>\n                    "}, "note16": {"n": "16", "html": "\n                        <span class=\"bibl\">კ. კეკელიძე, <cite class=\"title\">ძველი ქართული ლიტერატურის ისტორია</cite>, I, თბ., 1980, გვ. 275.</span>\n                    "}, "note17": {"n": "17", "html": "\n                        <span class=\"bibl\">ნ. კეჭაღმაძე, <cite class=\"title\">იოანე პეტრიწის ენის საკითხისათვის</cite>, თსუ შრომები, ტ. 61, 1953, გვ. 99;</span>\n                        <span class=\"bibl\">დ. მელიქიშვილი, <cite class=\"title\">იოანე პეტრიწის ფილოსოფიურ შრომათა ენა და სტილი</cite>, თბ., 1975, გვ. 71.</span>\n                    "}, "note18": {"n": "18", "html": "\n                        <span class=\"bibl\">ნ. კეჭაღმაძე, <cite class=\"title\">იოანე იტალოსის წერილი აბაზგი გრამატიკოსისადმი და წერილის ადრესატი</cite>, აღმოსავლური ფილოლოგია, I, თბ., 1969, გვ. 243.</span>\n                    "}, "note19": {"n": "19", "html": "\n                        <span class=\"bibl\">ს. ყაუხჩიშვილი, <cite class=\"title\">პეტრიწის განმარტების ბოლოსიტყვაობის ერთი წყარო</cite>, ენიმკის მოამბე, II, № 8, 1941, გვ. 755.</span>\n                    "}, "note20": {"n": "20", "html": "\n                        <span class=\"bibl\">დ. გეწაძე, <cite class=\"title\">ქართული გრამატიკული ტერმინოლოგიის ისტორიიდან</cite>, თსუ შრომები, ტ. 200, ენათმეცნიერება, თბ., 1978, გვ. 50.</span>\n                    "}, "note21": {"n": "21", "html": "\n                        <span class=\"bibl\">სულხან-საბა ორბელიანი, <cite class=\"title\">თხზულებანი</cite>, ტ. IV, თბ., 1965, გვ. 31.</span>\n                    "}, "note22": {"n": "22", "html": "\n                        <span class=\"bibl\">ე. ბაბუნაშვილი, <cite class=\"title\">ანტონ პირველი და ქართული გრამატიკის საკითხები</cite>, თბ., 1970, გვ. 13;</span>\n                        <span class=\"bibl\">ა. ფოცხიშვილი, <cite class=\"title\">ქართული გრამატიკული აზრის ისტორიიდან</cite>, თბ., 1979, გვ. 47.</span>\n                    "}, "note23": {"n": "23", "html": "\n                        <span class=\"bibl\">ა. ფოცხიშვილი, დასახ. ნაშრომი, გვ. 51.</span>\n                    "}, "note24": {"n": "24", "html": "\n                        <span class=\"bibl\">ი. ჯავახიშვილი, <cite class=\"title\">ქართული და კავკასიური ენების თავდაპირველი ბუნება და ნათესაობა</cite>, თბ., 1937, გვ. 4.</span>\n                    "}, "note25": {"n": "25", "html": "\n                        <span class=\"bibl\">ილია აბულაძე, <cite class=\"title\">ქართული გრამატიკული ლიტერატურის ადრინდელი ძეგლები</cite>, შრომები, ტ. II, თბ., 1976 (ნაშრომი პირველად გამოქვეყნებულია 1940 წ.: საქ. სახ. მუზეუმის მოამბე, X-B), გვ. 169.</span>\n                    "}, "note26": {"n": "26", "html": "\n                        <span class=\"bibl\">ა. ფოცხიშვილი, <cite class=\"title\">ქართული გრამატიკული აზრის ისტორიიდან</cite>, გვ. 45.</span>\n                    "}, "note27": {"n": "27", "html": "\n                        <p>ეს სიტყვები ეფრემს ნახმარი აქვს ეპისტოლეში, რომელიც მას წაუმძღვარებია გრიგოლ ღვთისმეტყველის თხზულებათა თარგმანისათვის (ხელნაწერი. იერ. 43 რ. ბლეიკის კატალოგის მიხედვით).</p>\n                        <span class=\"bibl\">ნ. მიმომხილველი, თბ., 1926, გვ. 167;</span>\n                        <span class=\"bibl\">ნ. მარი, <cite class=\"title\">იერუსალიმის ქართულ ხელნაწერთა მოკლე აღწერილობა</cite>, თბ., 1955, გვ. 71.</span>\n                    "}, "note28": {"n": "28", "html": "\n                        <p><cite class=\"title\">„სიტყუაჲ ართრონთათვს&quot; — ძველი ქართული გრამატიკული ტრაქტატი</cite>. მოხსენება წაკითხული იყო საქ. მეცნ. აკად. გ. წერეთლის სახ. აღმოსავლეთმცოდნეობის ინსტიტუტის სესიაზე 1977 წ., 27 ივნისს;</p>\n                        <span class=\"bibl\">იხ. კიდევ M. Shanidze, <cite class=\"title\">Вопросы языка и грамматики в древнегрузинских рукописях</cite>. Конференция по истории письменности и книги. Археографическая комиссия АН СССР. Институт древних рукописей им. Маштоца — Матенадаран, 25-27 окт. 1977. c. 114.</span>\n                    "}, "note29": {"n": "29", "html": "\n                        <span class=\"bibl\">იხ. M. Shanidze, <cite class=\"title\">An Old Georgian Grammatical Treatise in a Collection of Homilies Attributed to John Chrysostom</cite>, Bedi Kartlisa, Revue de Kartvélologie, v. 42, Paris, 1984, p. 53-68.</span>\n                    "}, "note30": {"n": "30", "html": "\n                        <span class=\"bibl\"><cite class=\"title\">საქართველოს სახელმწიფო მუზეუმის ძველ ხელნაწერთა მკვლევი</cite>, თბ., 1951, გვ. 37.</span>\n                    "}, "note31": {"n": "31", "html": "\n                        <span class=\"bibl\"><cite class=\"title\">ქართულ ხელნაწერთა აღწერილობა... S კოლექციისა</cite>, 1, თბ., 1959, გვ. 365.</span>\n                        <p><a href=\"\">S-312</a> ხელნაწერი, რომელიც თავდაპირველად წერა-კითხვის გამავრცელებელ საზოგადოებას ეკუთვნოდა, ე. თაყაიშვილის ცნობილ აღწერილობაში შეტანილი არ არის (იხ.</p>\n                        <span class=\"bibl\">ა. შანიძე და ა. ბარამიძე, <cite class=\"title\">საქართველოს მუზეუმის S ფონდის აღწერილ ხელნაწერთა საძიებელი</cite>, მასალები საქართველოსა და კავკასიის ისტორიისათვის, თბ., 1939, ნაკვ. 2, გვ. 9).</span>\n                        <p>ე. თაყაიშვილის არქივში დაცულ მასალებში მოიპოვება ამ ხელნაწერის აღწერილობა, რომელიც პირველადი შავი ნაწერის შთაბეჭდილებას ტოვებს (ხელნაწ. ინსტ., ე. თაყაიშვილის ფ. 128: იხ.</p>\n                        <span class=\"bibl\"><cite class=\"title\">აკად. ე. თაყაიშვილის არქივი, აღწერილობა</cite>, შეადგინა ე. კელენჯერაძემ, თბ., 1972, გვ. 74—546).</span>\n                        <p>აღწერილობაში სულ 29 ერთეულია შეტანილი და <cite class=\"title\">„სიტყუაჲ ართრონთათვს&quot;</cite> არ არის დასახელებული; იგი მიჩნეულია წინა თხზულების (კირილე ალექსანდრიელის „ლექსიკონის&quot;) შემადგენელ ნაწილად, რაც ჩანს ე. თაყაიშვილის მიერ მითითებული გვერდების მიხედვით: „ლექსიკონს&quot; უკავია, მისი სიტყვით, ხელნაწერის ბოლო გვერდები მთლიანად. ქ. შარაშიძის აღწერილობის მიხედვით, ხელნაწერში შეტანილია 55 სხვადასხვა თხზულება.</p>\n                    "}, "note32": {"n": "32", "html": "\n                        <span class=\"bibl\">А. Цагарели, <cite class=\"title\">Сведения о памятниках грузинской письменности</cite>, Вып. 1, 1889, СПб., прилож., І., 33.</span>\n                        <p><cite class=\"title\">„სია ქართული წიგნების სახელები ივერიის მონასტერსა შინა მდებარეთა მთაწმიდას&quot;</cite>. ა. ცაგარლის ცნობით, ილარიონი ყოფილა იმერეთის უკანასკნელი მეფის სოლომონ მეორის მოძღვარი, რომელიც სოლომონის სიკვდილის შემდეგ 1815 წ. ათონს წასულა. მისი შედგენილი კატალოგი ა. ცაგარელს უნახავს დავით დადიანის წიგნსაცავში და დაუბეჭდავს (იქვე, 1, გვ. XVI—XVII). ილარიონი ყოფილა გვარად ყანჩიშვილი. მისი მოღვაწეობის შესახებ ნახეთ:</p>\n                        <span class=\"bibl\">ლ. მენაბდე, <cite class=\"title\">ძველი ქართული მწერლობის კერები</cite>, II, თბ., 1980, გვ. 239.</span>\n                    "}, "note33": {"n": "33", "html": "\n                        <span class=\"bibl\">А. Цагарели, <cite class=\"title\">Сведения</cite>, Вып. І, Прилож. І, 33-3.</span>\n                    "}, "note34": {"n": "34", "html": "\n                        <span class=\"bibl\">А. Цагарели, <cite class=\"title\">Сведения</cite>, 1, 33, 94.</span>\n                    "}, "note35": {"n": "35", "html": "\n                        <span class=\"bibl\"><cite class=\"title\">Catalogue des manuscrits géorgiens de la bibliothèque de la Laure d'Iviron au Mont Athos</cite>, par Robert P. Blake, Extrait de la Revue de l'Orient chrétien, 3e Série, T. VIII (XXVIII), Nos 3 et 4 (1931-32), Paris, 1932, p. 1.</span>\n                    "}, "note36": {"n": "36", "html": "\n                        <span class=\"bibl\">V. Gardthausen, <cite class=\"title\">Griechische Palaeographie</cite>, Leipzig, 1879, S. 49.</span>\n                        <span class=\"bibl\">Н. Т. Лихачев, <cite class=\"title\">Палеографическое значение бумажных водяных знаков</cite>, І, СПб., 1899, ΧΙ.</span>\n                    "}, "note37": {"n": "37", "html": "\n                        <span class=\"bibl\">R. Blake, <cite class=\"title\">Catalogue</cite>, p. 26.</span>\n                    "}, "note38": {"n": "38", "html": "\n                        <span class=\"bibl\">V. Gardthausen, <cite class=\"title\">Griechische Palaeographie</cite>, S. 78.</span>\n                        <p>მძიმე ლინონთა სულფატები, რომელთა საერთო სახელწოდებაა <span class=\"term\" data-target=\"\">არჯასპი</span> ან <span class=\"term\" data-target=\"\">აჯასპი</span> (შდრ: სომ. <span class=\"foreign\" lang=\"hy\">արdelays</span>) საქართველოში საკმაო ხმარებაში ყოფილა მოგვიანებითაც. რკინის აჯასპს იყენებდნენ სხვადასხვა საჭიროებისათვის, მათ შორის, როგორც ჩანს, შავი მელნის გასაკეთებლადაც. საბას ლექსიკონში ასეთი განმარტება არის: <q>„არჯასპი სომხურია, ქართულად მიწალები ჰქვიან, შავის საღებავია&quot;</q>.</p>\n                        <span class=\"bibl\">(სულხან-საბა ორბელიანი, <cite class=\"title\">თხზულებანი</cite>. ტ. IV, თბ., 1965).</span>\n                        <p>ვახტანგ მეექვსე ასახელებს არჯასპის სხვადასხვა სახეობას</p>\n                        <span class=\"bibl\">(<cite class=\"title\">წიგნი ზეთების შემზადებისა და ქიმიისა ქმნისა</cite>, ტექსტი გამოსაცემად მოამზადეს თ. ენუქიძემ და ვ. კოკოჩაშვილმა, თბ., 1981, გვ. 164);</span>\n                        <p>იგი აგრეთვე აღნიშნავს, რომ არჯასპი იხმარება ქაღალდის შესაღებავად და წერს: <q>„არჯასპი თუ ბევრი გარიე, დაწვავს ქაღალდს&quot;</q> (გვ. 185). აქ, საფიქრებელია, ივარაუდება ე. წ. „მწვანე შაბი&quot;, ე. ი. რკინის ქვეჟანგის სულფატი — (FeSO₄ · 7H₂O) იხ. დასახ. თხზ. გვ. 23).</p>\n                        <span class=\"bibl\">ნ. ჩუბინაშვილის ლექსიკონში ნათქვამია: <q>„არჯასპი — მიწალები, მომწუანო შავის საღებავი, ხმარებული ტყავთათვს მეპრატაკეთაგან ანუ მელნისათვს&quot;</q> (ნ. ჩუბინაშვილი, <cite class=\"title\">ქართული ლექსიკონი</cite>, თბ., 1961).</span>\n                    "}, "note39": {"n": "39", "html": "\n                        <span class=\"bibl\">Р. Шмерлинг, <cite class=\"title\">Художественное оформление грузинской рукописной книги IX-XI вв.</cite> I, Тб., 1967, 83, 101.</span>\n                    "}, "note40": {"n": "40", "html": "\n                        <span class=\"bibl\">А. Цагарели, <cite class=\"title\">Сведения</cite>, вып. I, 94;</span>\n                        <span class=\"bibl\">R. Blake, <cite class=\"title\">Catalogue</cite>, p. 26.</span>\n                    "}, "note41": {"n": "41", "html": "\n                        <span class=\"bibl\">ე. მაჭავარიანი, <cite class=\"title\">ასომთავრული დამწერლობის მხატვრული თავისებურებანი ქართული ხელნაწერების მიხედვით (V—XIII ს.)</cite>, მრავალთავი, ტ. II, თბ., 1973, გვ. 240.</span>\n                    "}, "note42": {"n": "42", "html": "\n                        <p>შდრ.:</p>\n                        <span class=\"bibl\">ე. მაჭავარიანი, <cite class=\"title\">ქართული დამწერლობის განვითარების ტაბულა</cite>, პალეოგრაფიული ძიებანი, II, თბ., 1969, გვ. 116;</span>\n                        <span class=\"bibl\">ილ. აბულაძე, <cite class=\"title\">ქართული წერის ნიმუშები, პალეოგრაფიული ალბომი</cite>, თბ., 1972, ტაბ. 109—113.</span>\n                    "}, "note43": {"n": "43", "html": "\n                        <p>გრამატიკული ტრაქტატისა და იოანე ოქროპირის სახელით ცნობილი თხზულების ტექსტი წინამდებარე გამოცემაში ჩვენ მიერ დაყოფილია პარაგრაფებად დამოწმების გასაადვილებლად. პირველი მათგანის მაგალითების დამოწმებისას ნაჩვენებია პარაგრაფი, მეორისათვის კი პარაგრაფის რიცხვს წინ მიუძღვის აღნიშვნა: ჰ. (ჰომილია).</p>\n                    "}, "note44": {"n": "44", "html": "\n                        <span class=\"bibl\"><cite class=\"title\">ქართულ ხელნაწერთა აღწერილობა... A კოლექციისა</cite>, ტ. II, თბ., 1974, გვ. 85.</span>\n                    "}, "note45": {"n": "45", "html": "\n                        <span class=\"bibl\">ე. მეტრეველი, <cite class=\"title\">ეფრემ მცირის ავტოგრაფი</cite>; ხელნ. ინსტ. მოამბე, I, თბ., 1959, გვ. 115.</span>\n                    "}, "note46": {"n": "46", "html": "\n                        <span class=\"bibl\">მ. შანიძე, <cite class=\"title\">ეფრემ მცირის ფსალმუნთა თარგმანების ტექსტისათვის</cite>; ქართული წყაროთმცოდნეობა, III, თბ., 1971, გვ. 72.</span>\n                    "}, "note47": {"n": "47", "html": "\n                        <p>ეს საკითხი საგანგებოდ არის შესწავლილი ლ. ქაჯაიას ხელნაწერ ნაშრომში <cite class=\"title\">„პუნქტუაცია V—XII საუკუნეების ქართულ ხელნაწერებში&quot;</cite> (1969), სადაც დასახელებულია კიდევ შემდეგი ხელნაწერები:</p>\n                        <ul>\n                            <li><a href=\"\">S—384</a>, XI-XII ს. (ამ კრებულში, რომელიც შავ მთაზე ჩანს გადაწერილი, შეტანილია ეფრემისა და მისი მოწაფის არსენი იყალთოელის თარგმანები);</li>\n                            <li><a href=\"\">Q—1158</a>, XI ს., სამოციქულოს თარგმანება ეფრემ მცირისა;</li>\n                            <li><a href=\"\">A-677</a>, საქმე მოციქულთა, XI—XII ს., ნარედაქციევი ეფრემის მიერ;</li>\n                            <li><a href=\"\">A-1115</a>, XII ს., ეფრემ ასურის ასკეტიკონი, თარგმნილი ეფრემ მცირის მიერ და კიდევ რამდენიმე სხვა (დასახ. ნაშრომი, მანქ. გადაბეჭდილი, გვ. 178-180).</li>\n                        </ul>\n                    "}, "note48": {"n": "48", "html": "\n                        <p>შდრ.</p>\n                        <span class=\"bibl\">ლ. ქაჯაია, <cite class=\"title\">პუნქტუაცია...</cite>, გვ. 204;</span>\n                        <span class=\"bibl\">Л. Каджая, <cite class=\"title\">Пунктуация в грузинских рукописях V-XII вв.</cite> Автореферат диссертационной работы, представленной на соискание ученой степени кандидата филологических наук, Тб., 1939, გვ. 10.</span>\n                    "}, "note49": {"n": "49", "html": "\n                        <span class=\"bibl\">Л. Каджая, <cite class=\"title\">Пунктуация в грузинских рукописях</cite>, გვ. 11.</span>\n                    "}, "note50": {"n": "50", "html": "\n                        <span class=\"bibl\">ლ. ქაჯაია, <cite class=\"title\">პირობითი ნიშნები ქართულ კომენტარებიან ხელნაწერებში</cite>, პალეოგრაფიული ძიებანი, II, თბ., 1969, გვ. 34.</span>\n                    "}, "note51": {"n": "51", "html": "\n                        <span class=\"bibl\">V. Gardthausen, <cite class=\"title\">Griechische Palaeographie</cite>, S. 286.</span>\n                    "}, "note52": {"n": "52", "html": "\n                        <span class=\"bibl\"><cite class=\"title\">ქრონიკები და სხვა მასალა საქართველოს ისტორიისა და მწერლობისა...</cite> შეკრებილი... თ. ჟორდანიას მიერ, II, თბ., 1897, გვ. 111.</span>\n                    "}, "note53": {"n": "53", "html": "\n                        <span class=\"bibl\">ვ. ბერიძე, <cite class=\"title\">ძველი ქართველი ოსტატები</cite>, თბ., 1967, გვ. 137.</span>\n                    "}, "note54": {"n": "54", "html": "\n                        <span class=\"bibl\"><cite class=\"title\">ქართულ ხელნაწერთა აღწერილობა... S კოლექციისა</cite>, ტ. III, თბ., 1967, გვ. 647.</span>\n                    "}, "note55": {"n": "55", "html": "\n                        <span class=\"bibl\"><cite class=\"title\">ქართულ ხელნაწერთა აღწერილობა... A კოლექციისა</cite>, ტ. I, თბ., 1976 (?), გვ. 338.</span>\n                    "}, "note56": {"n": "56", "html": "\n                        <span class=\"bibl\"><cite class=\"title\">ქართულ ხელნაწერთა აღწერილობა... S კოლექციისა</cite>, ტ. I, თბ., 1960, გვ. 365-375.</span>\n                    "}, "note57": {"n": "57", "html": "\n                        <span class=\"bibl\"><cite class=\"title\">ქართულ ხელნაწერთა აღწერილობა... A კოლექციისა</cite>, ტ. I, 1974, გვ. 297.</span>\n                    "}, "note58": {"n": "58", "html": "\n                        <p>ქ. შარაშიძე მიუთითებს, რომ <a href=\"\">A-85</a> საზოგადოდ სვიმონის ხელით არის შევსებული და რესტავრირებული. გზამკვლევი, გვ. 37.</p>\n                        <span class=\"bibl\">თ. ჟორდანიას <a href=\"\">A-85</a> ხელნაწერის მეორე, გვიანდელი ნაწილის გადამწერად სვიმონი მიაჩნია (<cite class=\"title\">ქრონიკები</cite>, II, გვ. 102).</span>\n                    "}};
+
+// Elements
+const article = document.getElementById('article-container');
+const popup = document.getElementById('note-popup');
+const popupNumber = popup.querySelector('.note-popup-number');
+const popupContent = popup.querySelector('.note-popup-content');
+const popupClose = popup.querySelector('.note-popup-close');
+const popupMore = popup.querySelector('.note-popup-more');
+
+let currentNoteRef = null;
+let popupTimeout;
+
+function showNotePopup(noteRef) {
+    const noteId = noteRef.dataset.note;
+    const note = notesData[noteId];
+    if (!note) return;
+    
+    currentNoteRef = noteRef;
+    
+    popupNumber.textContent = `შენიშვნა ${note.n}`;
+    popupContent.innerHTML = note.html;
+    popupMore.href = `#${noteId}`;
+    
+    // Position popup
+    const articleRect = article.getBoundingClientRect();
+    const refRect = noteRef.getBoundingClientRect();
+    const popupWidth = 320;
+    const popupHeight = 280;
+    
+    // Check if we have room to the right (large screen margin note style)
+    const spaceRight = window.innerWidth - articleRect.right;
+    const isLargeScreen = window.innerWidth >= 1280;
+    
+    if (isLargeScreen && spaceRight >= popupWidth + 40) {
+        // Position as margin note to the right of article
+        popup.style.position = 'absolute';
+        popup.style.left = (articleRect.width + 20) + 'px';
+        popup.style.top = (refRect.top - articleRect.top + article.scrollTop - 4) + 'px';
+    } else {
+        // Position below the reference (small screen fallback)
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        popup.style.position = 'fixed';
+        
+        // Check if there's room below
+        const spaceBelow = window.innerHeight - refRect.bottom;
+        
+        if (spaceBelow >= popupHeight + 20) {
+            popup.style.top = (refRect.bottom + 8) + 'px';
+        } else {
+            popup.style.top = (refRect.top - popupHeight - 8) + 'px';
+        }
+        
+        // Horizontal positioning
+        let left = refRect.left + (refRect.width / 2) - (popupWidth / 2);
+        if (left < 16) left = 16;
+        if (left + popupWidth > window.innerWidth - 16) {
+            left = window.innerWidth - popupWidth - 16;
+        }
+        popup.style.left = left + 'px';
+    }
+    
+    popup.classList.add('visible');
+}
+
+function hideNotePopup() {
+    popup.classList.remove('visible');
+    currentNoteRef = null;
+}
+
+// Smooth scroll to element with offset and highlight
+function scrollToElement(elementId, offset = 80) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        const top = element.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+        
+        // Highlight the target briefly
+        element.classList.add('highlight-target');
+        setTimeout(() => element.classList.remove('highlight-target'), 2000);
+        
+        return true;
+    }
+    return false;
+}
+
+// Event listeners for note references (in text)
+document.querySelectorAll('.note-ref').forEach(ref => {
+    ref.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        if (popup.classList.contains('visible') && currentNoteRef === this) {
+            hideNotePopup();
+        } else {
+            showNotePopup(this);
+        }
+    });
+});
+
+// Keep popup visible when hovering over it
+popup.addEventListener('mouseenter', function() {
+    clearTimeout(popupTimeout);
+});
+
+popup.addEventListener('mouseleave', function() {
+    popupTimeout = setTimeout(hideNotePopup, 200);
+});
+
+// Close popup button
+popupClose.addEventListener('click', function(e) {
+    e.stopPropagation();
+    hideNotePopup();
+});
+
+// "See more" link in popup - go to full note
+popupMore.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').slice(1);
+    hideNotePopup();
+    if (scrollToElement(targetId)) {
+        history.pushState(null, null, `#${targetId}`);
+    }
+});
+
+// Close popup on escape or click outside
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') hideNotePopup();
+});
+
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('.note-ref') && !e.target.closest('.note-popup')) {
+        hideNotePopup();
+    }
+});
+
+// Hide popup on scroll (for fixed positioning mode)
+let scrollTimeout;
+window.addEventListener('scroll', function() {
+    if (popup.style.position === 'fixed' && popup.classList.contains('visible')) {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(hideNotePopup, 100);
+    }
+});
+
+// Event listeners for note back-links (in notes section)
+document.querySelectorAll('.note-backlink').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const refId = this.dataset.ref;
+        if (scrollToElement(refId)) {
+            history.pushState(null, null, `#${refId}`);
+        }
+    });
+});
+
+// Handle direct URL navigation (e.g., page load with #note30)
+function handleHashNavigation() {
+    const hash = window.location.hash.slice(1);
+    if (hash) {
+        setTimeout(() => scrollToElement(hash), 100);
+    }
+}
+window.addEventListener('load', handleHashNavigation);
+window.addEventListener('hashchange', handleHashNavigation);
+
 // Highlight active TOC link on scroll
 const sections = document.querySelectorAll('section[id]');
 const tocLinks = document.querySelectorAll('.toc-link');
@@ -214,7 +1416,7 @@ function highlightToc() {
     let current = '';
     sections.forEach(section => {
         const rect = section.getBoundingClientRect();
-        if (rect.top <= 100) {
+        if (rect.top <= 120) {
             current = section.getAttribute('id');
         }
     });
@@ -229,6 +1431,17 @@ function highlightToc() {
 
 window.addEventListener('scroll', highlightToc);
 highlightToc();
+
+// Smooth scroll for TOC links
+tocLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').slice(1);
+        if (scrollToElement(targetId)) {
+            history.pushState(null, null, `#${targetId}`);
+        }
+    });
+});
 </script>
 </body>
 </html>

@@ -44,194 +44,796 @@
         </div>
     </nav>
 
-<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<main class="min-h-screen" style="background: var(--parchment);">
     
-    <!-- Header -->
-    <div class="mb-8">
-        <h1 class="text-2xl font-medium mb-2">ხელნაწერები</h1>
-        <p class="text-gray-500">ტრაქტატის ტექსტი დაცულია ორ ხელნაწერში</p>
-    </div>
-    
-    <!-- Witness Cards -->
-    <div class="space-y-6">
-        
-        <article class="bg-white rounded-lg border border-gray-200 overflow-hidden">
-            <!-- Header -->
-            <div class="px-6 py-4 bg-gray-50 border-b border-gray-200 flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                    <span class="inline-flex items-center justify-center w-8 h-8 rounded bg-gray-800 text-white text-sm font-medium">A</span>
-                    <div>
-                        <h2 class="font-medium">თბილისი</h2>
-                        <p class="text-sm text-gray-500">ხელნაწერთა ეროვნული ცენტრი</p>
-                    </div>
+    <!-- Page Header -->
+    <header class="border-b" style="border-color: #e5e0d8; background: white;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex items-end justify-between">
+                <div>
+                    <p class="text-xs font-ui uppercase tracking-[0.2em] mb-2" style="color: var(--rubric);">
+                        კოდიკოლოგია <span class="en not-italic">Codicology</span>
+                    </p>
+                    <h1 class="text-3xl font-georgian font-semibold" style="color: var(--ink);">ხელნაწერები</h1>
+                    <p class="mt-2 font-georgian" style="color: var(--ink-light);">ტრაქტატის ტექსტი დაცულია ორ ხელნაწერში</p>
                 </div>
-                <a href="../text/index.html" class="text-xs text-gray-400 hover:text-gray-600">ტექსტის ნახვა →</a>
-            </div>
-            
-            <!-- Details -->
-            <div class="p-6">
-                <dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 text-sm">
-                    <div>
-                        <dt class="text-gray-400 text-xs uppercase tracking-wide mb-1">ადგილმდებარეობა</dt>
-                        <dd class="text-gray-700">თბილისი, ხელნაწერთა ეროვნული ცენტრი</dd>
-                    </div>
-                    <div>
-                        <dt class="text-gray-400 text-xs uppercase tracking-wide mb-1">ფოლიოები</dt>
-                        <dd class="text-gray-700">ff. 32r–36v</dd>
-                    </div>
-                    <div>
-                        <dt class="text-gray-400 text-xs uppercase tracking-wide mb-1">შიფრი</dt>
-                        <dd class="text-gray-500 italic"><!-- TODO: actual shelfmark -->მოსაძიებელია</dd>
-                    </div>
-                    <div>
-                        <dt class="text-gray-400 text-xs uppercase tracking-wide mb-1">თარიღი</dt>
-                        <dd class="text-gray-500 italic"><!-- TODO: dating -->მოსაძიებელია</dd>
-                    </div>
-                </dl>
                 
-                <!-- Expandable details (future) -->
-                <details class="mt-6 pt-4 border-t border-gray-100">
-                    <summary class="text-sm text-gray-500 cursor-pointer hover:text-gray-700">
-                        დამატებითი ინფორმაცია
-                    </summary>
-                    <div class="mt-4 text-sm text-gray-600 space-y-3">
-                        <p class="italic text-gray-400">კოდიკოლოგიური აღწერილობა მომზადდება კვლევის დასრულების შემდეგ.</p>
+                <!-- View Controls -->
+                <div class="flex items-center gap-4">
+                    <button 
+                        id="comparison-toggle"
+                        onclick="toggleComparison()"
+                        class="font-ui text-xs px-3 py-2 rounded border transition-all hover:shadow-sm"
+                        style="border-color: #d4cfc5; color: var(--ink-light);"
+                    >
+                        <svg class="w-4 h-4 inline mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7"/>
+                        </svg>
+                        შედარება <span class="en not-italic text-[10px]">Compare</span>
+                    </button>
+                    
+                    <a href="../text/index.html" 
+                       class="font-ui text-xs px-3 py-2 rounded transition-all hover:shadow-sm"
+                       style="background: var(--ink); color: var(--parchment);">
+                        ტექსტის კითხვა →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Manuscript Cards Container -->
+    <div id="ms-container" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div id="ms-cards" class="flex flex-col lg:flex-row gap-8 transition-all duration-300">
+            
+            <!-- MANUSCRIPT CARD -->
+            <article 
+                id="ms-A" 
+                class="ms-card flex-1 bg-white rounded-sm shadow-sm border overflow-hidden transition-all duration-300"
+                style="border-color: #e5e0d8;"
+                itemscope 
+                itemtype="https://schema.org/Manuscript"
+            >
+                <!-- Card Header: Siglum + Identity -->
+                <header class="relative p-6 border-b" style="border-color: #e5e0d8; background: linear-gradient(to bottom, white, var(--parchment-dark));">
+                    
+                    <!-- Siglum Badge -->
+                    <div class="absolute -top-0 -left-0 w-16 h-16 flex items-center justify-center"
+                         style="background: var(--ink);">
+                        <span class="text-2xl font-bold" style="color: var(--parchment);" itemprop="identifier">
+                            A
+                        </span>
+                    </div>
+                    
+                    <div class="ml-20">
+                        <!-- Shelfmark -->
+                        <h2 class="text-xl font-georgian font-semibold" style="color: var(--ink);" itemprop="name">
+                                Athos No. 6
+                        </h2>
                         
-                        <!-- Placeholder for future content -->
-                        <!--
-                        <div>
-                            <h4 class="font-medium text-gray-700 mb-1">მასალა</h4>
-                            <p>ეტრატი / ქაღალდი</p>
-                        </div>
-                        <div>
-                            <h4 class="font-medium text-gray-700 mb-1">ზომები</h4>
-                            <p>... × ... მმ</p>
-                        </div>
-                        <div>
-                            <h4 class="font-medium text-gray-700 mb-1">ნუსხა</h4>
-                            <p>ნუსხური / ასომთავრული</p>
-                        </div>
-                        <div>
-                            <h4 class="font-medium text-gray-700 mb-1">მდგომარეობა</h4>
-                            <p>...</p>
-                        </div>
-                        -->
+                        <!-- Repository with LOD link -->
+                        <p class="mt-1 font-georgian" style="color: var(--ink-light);">
+                                <span class="lod-link" title="View in authority file" itemprop="holdingArchive">
+                                    ივერიის (ივერთა) მონასტერი
+                                </span>
+                        </p>
                         
-                        <!-- Facsimile placeholder -->
-                        <!--
-                        <div class="mt-4 pt-4 border-t border-gray-100">
-                            <h4 class="font-medium text-gray-700 mb-2">ფაქსიმილე</h4>
-                            <div class="grid grid-cols-3 gap-2">
-                                <img src="..." alt="f. 32r" class="rounded border">
+                        <!-- Location breadcrumb -->
+                        <p class="mt-2 text-xs font-ui flex items-center gap-1.5" style="color: var(--ink-light);">
+                            <span class="lod-link" title="GeoNames">ათონი</span>
+                        </p>
+                        
+                        <!-- Alt identifiers -->
+                    </div>
+                    
+                    <!-- Quick Stats Row -->
+                    <div class="mt-5 ml-20 flex flex-wrap gap-x-6 gap-y-2 text-xs font-ui" style="color: var(--ink-light);">
+                        <!-- Locus Badge -->
+                        <span class="inline-flex items-center gap-1.5">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--rubric);">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                            </svg>
+                            <span class="font-medium" style="color: var(--ink);">ff. 32r–36v</span>
+                        </span>
+                        
+                        <!-- Date Badge -->
+                        <span class="inline-flex items-center gap-1.5">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--gold);">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                            <span class="font-medium" style="color: var(--ink);">
+XII ს. ბოლოს ან XIII ს. დამდეგი
+                            </span>
+                        </span>
+                        
+                        <!-- Script Badge -->
+                        <span class="inline-flex items-center gap-1.5">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--azure);">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+                            </svg>
+                            <span class="px-1.5 py-0.5 rounded text-[10px] font-medium"
+                                  style="background: rgba(184, 134, 11, 0.15); color: #8b6914;">
+ნუსხური                            </span>
+                        </span>
+                    </div>
+                </header>
+                
+                <!-- Summary Block -->
+                <div class="px-6 py-5 border-b font-georgian text-sm leading-relaxed" 
+                     style="border-color: #e5e0d8; color: var(--ink-light); background: white;">
+                    <p>კრებული თავდაპირველად შეიცავდა სულ მცირე 33 თხზულებას (ამჟამად შემორჩენილია 17), მათ შორის იოანე ოქროპირის ჰომილიებსა და ეგზეგეტიკურ ნაშრომებს. ილარიონ ბერის 1836 წლის კატალოგში მხოლოდ ხუთი თავის ამოკითხვაა შესაძლებელი, დანარჩენი კი „სიძუჱლისაგან განრყვნილად“ არის მიჩნეული .</p>
+                </div>
+                
+                <!-- CODICOLOGICAL DATA GRID -->
+                <div class="codicology-viz">
+                    
+                    <!-- Tab Navigation -->
+                    <nav class="flex border-b text-xs font-ui" style="border-color: #e5e0d8;">
+                        <button onclick="showTab(this, 'physical-A')" 
+                                class="tab-btn tab-active px-4 py-3 border-b-2 transition-colors"
+                                style="color: var(--ink);">
+                            ფიზიკური <span class="en not-italic hidden sm:inline">Physical</span>
+                        </button>
+                        <button onclick="showTab(this, 'paleo-A')"
+                                class="tab-btn px-4 py-3 border-b-2 border-transparent transition-colors"
+                                style="color: var(--ink-light);">
+                            პალეოგრაფია <span class="en not-italic hidden sm:inline">Script</span>
+                        </button>
+                        <button onclick="showTab(this, 'history-A')"
+                                class="tab-btn px-4 py-3 border-b-2 border-transparent transition-colors"
+                                style="color: var(--ink-light);">
+                            ისტორია <span class="en not-italic hidden sm:inline">History</span>
+                        </button>
+                        <button onclick="showTab(this, 'contents-A')"
+                                class="tab-btn px-4 py-3 border-b-2 border-transparent transition-colors"
+                                style="color: var(--ink-light);">
+                            შინაარსი <span class="en not-italic hidden sm:inline">Contents</span>
+                        </button>
+                    </nav>
+                    
+                    <!-- Tab: Physical Description -->
+                    <div id="physical-A" class="tab-content p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            
+                            <!-- Left: Textual Data -->
+                            <div class="space-y-5">
+                                <!-- Material -->
+                                <div>
+                                    <dt class="text-[10px] font-ui uppercase tracking-wider mb-1" style="color: var(--ink-light);">
+                                        მასალა <span class="en not-italic">Material</span>
+                                    </dt>
+                                    <dd class="font-georgian text-sm" style="color: var(--ink);">
+                                        <span class="lod-link" title="Getty AAT: paper">
+ქაღალდი
+                                        </span>
+                                    </dd>
+                                    <p class="mt-2 text-xs font-georgian leading-relaxed" style="color: var(--ink-light);">
+                                        ოდნავ გალესილი აღმოსავლური ქაღალდი ვერტიკალური ზოლებით (vergeures), რაც დამახასიათებელია XII-XIII სს-ისათვის .
+                                    </p>
+                                </div>
+                                
+                                <!-- Extent -->
+                                <div>
+                                    <dt class="text-[10px] font-ui uppercase tracking-wider mb-1" style="color: var(--ink-light);">
+                                        მოცულობა <span class="en not-italic">Extent</span>
+                                    </dt>
+                                    <dd class="font-georgian text-sm" style="color: var(--ink);">
+                                        170 ff.
+                                    </dd>
+                                    <p class="mt-1 text-xs font-georgian" style="color: var(--ink-light);">ხელნაწერს თავში დაჰკლებია დაახლოებით 135 ფურცელი.</p>
+                                    <p class="mt-1 text-xs font-georgian" style="color: var(--ink-light);">Approximately 135 leaves are missing from the beginning of the manuscript.</p>
+                                </div>
+                                
+                                <!-- Layout -->
+                                <div>
+                                    <dt class="text-[10px] font-ui uppercase tracking-wider mb-1" style="color: var(--ink-light);">
+                                        განლაგება <span class="en not-italic">Layout</span>
+                                    </dt>
+                                    <dd class="font-georgian text-sm" style="color: var(--ink);">
+                                        2 სვეტი
+                                        <span class="text-xs" style="color: var(--ink-light);">— ტექსტი ნაწერია ორ სვეტად, თითოეულში 33 სტრიქონია. საზედაო ასოები (ასომთავრული) მოთავსებულია სვეტის საზღვარს გარეთ, რაც ადრეული პერიოდის ნიშანია .</span>
+                                    </dd>
+                                </div>
+                                
+                                <!-- Binding -->
+                                <div>
+                                    <dt class="text-[10px] font-ui uppercase tracking-wider mb-1" style="color: var(--ink-light);">
+                                        აკინძვა <span class="en not-italic">Binding</span>
+                                    </dt>
+                                    <dd class="font-georgian text-sm" style="color: var(--ink);">
+                                        ფიცარზე გადაკრული სადა შავი ტყავი .
+                                    </dd>
+                                    <dd class="en text-[11px] mt-0.5">Plain black leather over wooden boards .</dd>
+                                </div>
+                            </div>
+                            
+                            <!-- Right: Dimension Visualization -->
+                            <div>
+                                
+                                <dt class="text-[10px] font-ui uppercase tracking-wider mb-3" style="color: var(--ink-light);">
+                                    ზომები <span class="en not-italic">Dimensions</span>
+                                </dt>
+                                
+                                <!-- Proportional Bounding Box Visualization -->
+                                <div class="relative mx-auto" style="max-width: 180px;">
+                                    <!-- Leaf outline (scaled proportionally) -->
+                                    <div class="relative border-2 rounded-sm mx-auto"
+                                         style="width: 115px; height: 166px; border-color: var(--ink); background: var(--parchment);">
+                                        
+                                        <!-- Written area (inner box) -->
+                                        <div class="absolute border rounded-sm"
+                                             style="width: 74px; height: 124px; 
+                                                    top: 21px; left: 20px;
+                                                    border-color: var(--rubric); border-style: dashed;
+                                                    background: repeating-linear-gradient(
+                                                        0deg,
+                                                        transparent,
+                                                        transparent 7px,
+                                                        rgba(139, 44, 26, 0.08) 7px,
+                                                        rgba(139, 44, 26, 0.08) 8px
+                                                    );">
+                                        </div>
+                                        
+                                        <!-- Center cross mark -->
+                                        <div class="absolute inset-0 flex items-center justify-center opacity-20">
+                                            <div class="w-3 h-px" style="background: var(--ink);"></div>
+                                            <div class="absolute w-px h-3" style="background: var(--ink);"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Dimension labels -->
+                                    <div class="mt-4 text-center font-ui">
+                                        <p class="text-xs" style="color: var(--ink);">
+                                            <span class="font-medium">370 × 255</span> 
+                                            <span style="color: var(--ink-light);">mm</span>
+                                        </p>
+                                        <p class="text-[10px] mt-1" style="color: var(--rubric);">
+                                            ტექსტური არე: 275 × 165
+                                        </p>
+                                    </div>
+                                    
+                                    <!-- Legend -->
+                                    <div class="mt-4 flex justify-center gap-4 text-[10px] font-ui" style="color: var(--ink-light);">
+                                        <span class="flex items-center gap-1">
+                                            <span class="w-3 h-3 border-2 rounded-sm" style="border-color: var(--ink);"></span>
+                                            ფურცელი
+                                        </span>
+                                        <span class="flex items-center gap-1">
+                                            <span class="w-3 h-3 border rounded-sm" style="border-color: var(--rubric); border-style: dashed;"></span>
+                                            ტექსტი
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        -->
                     </div>
-                </details>
-            </div>
-        </article>
-        <article class="bg-white rounded-lg border border-gray-200 overflow-hidden">
-            <!-- Header -->
-            <div class="px-6 py-4 bg-gray-50 border-b border-gray-200 flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                    <span class="inline-flex items-center justify-center w-8 h-8 rounded bg-gray-800 text-white text-sm font-medium">S</span>
-                    <div>
-                        <h2 class="font-medium">სინა</h2>
-                        <p class="text-sm text-gray-500">წმ. ეკატერინეს მონასტერი</p>
-                    </div>
-                </div>
-                <a href="../text/index.html" class="text-xs text-gray-400 hover:text-gray-600">ტექსტის ნახვა →</a>
-            </div>
-            
-            <!-- Details -->
-            <div class="p-6">
-                <dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 text-sm">
-                    <div>
-                        <dt class="text-gray-400 text-xs uppercase tracking-wide mb-1">ადგილმდებარეობა</dt>
-                        <dd class="text-gray-700">სინა, წმ. ეკატერინეს მონასტერი</dd>
-                    </div>
-                    <div>
-                        <dt class="text-gray-400 text-xs uppercase tracking-wide mb-1">ფოლიოები</dt>
-                        <dd class="text-gray-700">ff. 106r–108v</dd>
-                    </div>
-                    <div>
-                        <dt class="text-gray-400 text-xs uppercase tracking-wide mb-1">შიფრი</dt>
-                        <dd class="text-gray-500 italic"><!-- TODO: actual shelfmark -->მოსაძიებელია</dd>
-                    </div>
-                    <div>
-                        <dt class="text-gray-400 text-xs uppercase tracking-wide mb-1">თარიღი</dt>
-                        <dd class="text-gray-500 italic"><!-- TODO: dating -->მოსაძიებელია</dd>
-                    </div>
-                </dl>
-                
-                <!-- Expandable details (future) -->
-                <details class="mt-6 pt-4 border-t border-gray-100">
-                    <summary class="text-sm text-gray-500 cursor-pointer hover:text-gray-700">
-                        დამატებითი ინფორმაცია
-                    </summary>
-                    <div class="mt-4 text-sm text-gray-600 space-y-3">
-                        <p class="italic text-gray-400">კოდიკოლოგიური აღწერილობა მომზადდება კვლევის დასრულების შემდეგ.</p>
-                        
-                        <!-- Placeholder for future content -->
-                        <!--
-                        <div>
-                            <h4 class="font-medium text-gray-700 mb-1">მასალა</h4>
-                            <p>ეტრატი / ქაღალდი</p>
-                        </div>
-                        <div>
-                            <h4 class="font-medium text-gray-700 mb-1">ზომები</h4>
-                            <p>... × ... მმ</p>
-                        </div>
-                        <div>
-                            <h4 class="font-medium text-gray-700 mb-1">ნუსხა</h4>
-                            <p>ნუსხური / ასომთავრული</p>
-                        </div>
-                        <div>
-                            <h4 class="font-medium text-gray-700 mb-1">მდგომარეობა</h4>
-                            <p>...</p>
-                        </div>
-                        -->
-                        
-                        <!-- Facsimile placeholder -->
-                        <!--
-                        <div class="mt-4 pt-4 border-t border-gray-100">
-                            <h4 class="font-medium text-gray-700 mb-2">ფაქსიმილე</h4>
-                            <div class="grid grid-cols-3 gap-2">
-                                <img src="..." alt="f. 32r" class="rounded border">
+                    
+                    <!-- Tab: Palaeography -->
+                    <div id="paleo-A" class="tab-content hidden p-6">
+                        <div class="space-y-6">
+                            <div class="" style="border-color: #e5e0d8;">
+                                <!-- Script badge -->
+                                <div class="flex items-center gap-3 mb-3">
+                                    <span class="px-2.5 py-1 rounded text-xs font-ui font-medium"
+                                          style="background: rgba(184, 134, 11, 0.15); color: #8b6914;">
+ნუსხური
+                                    </span>
+                                </div>
+                                
+                                <p class="font-georgian text-sm leading-relaxed" style="color: var(--ink-light);">
+                                    პროფესიული ნუსხური, ტიპობრივად ახლოსაა XIII ს. ძეგლებთან . გამოყენებულია შავი მელანი, სათაურებისათვის — მუქი წითელი. საზედაო ასოები ასომთავრულია, დეკორის გარეშე, ვერტიკალურად დაგრძელებული (2-5 სტრიქონის სიმაღლეზე).
+                                </p>
                             </div>
                         </div>
-                        -->
+                        
+                        <!-- Orthography -->
+                        <div class="mt-6 pt-5 border-t" style="border-color: #e5e0d8;">
+                            <h4 class="text-[10px] font-ui uppercase tracking-wider mb-3" style="color: var(--ink-light);">
+                                ორთოგრაფია & პუნქტუაცია <span class="en not-italic">Orthography & Punctuation</span>
+                            </h4>
+                            <p class="font-georgian text-sm leading-relaxed" style="color: var(--ink-light);">
+                                გამოყენებულია ეფრემ მცირისეული პუნქტუაციის სისტემა: ერთი წერტილი (მცირე სასვენი), ორწერტილი (გასაკვეთელი), სამწერტილი (დიდი სასვენი) და ექვსწერტილი (სრული დასაბოლოებელი) . გრამატიკულ ტრაქტატში ბერძნული ართრონების გადმოსაცემად გამოყენებულია სპეციფიკური დიაკრიტიკული ნიშნები: sp. asper (მარჯვნივ მიბრუნებული კუთხე), sp. lenis (მარცხნივ მიბრუნებული კუთხე), acc. acutus (ხაზი), acc. gravis და acc. circumflex (რკალი) .
+                            </p>
+                        </div>
                     </div>
-                </details>
-            </div>
-        </article>
-        
-    </div>
-    
-    <!-- Stemma placeholder -->
-    <div class="mt-12 p-8 bg-white rounded-lg border border-gray-200">
-        <h2 class="text-lg font-medium mb-4">სტემა</h2>
-        <p class="text-sm text-gray-500 italic mb-6">ხელნაწერთა ურთიერთმიმართება დადგინდება კვლევის შედეგად.</p>
-        
-        <!-- Future stemma diagram -->
-        <div class="flex justify-center py-8">
-            <div class="text-center text-gray-300">
-                <svg class="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/>
-                </svg>
-                <p class="text-sm">სტემატური დიაგრამა</p>
-            </div>
+                    
+                    <!-- Tab: History -->
+                    <div id="history-A" class="tab-content hidden p-6">
+                        <div class="space-y-6">
+                            <!-- Origin -->
+                            <div>
+                                <h4 class="text-[10px] font-ui uppercase tracking-wider mb-3" style="color: var(--ink-light);">
+                                    წარმოშობა <span class="en not-italic">Origin</span>
+                                </h4>
+                                
+                                <div class="flex items-baseline gap-4 mb-3">
+                                    <!-- Date -->
+                                    <div class="text-center px-4 py-2 rounded" style="background: var(--parchment-dark);">
+                                        <p class="font-georgian font-semibold" style="color: var(--ink);">
+XII ს. ბოლოს ან XIII ს. დამდეგი
+                                        </p>
+                                    </div>
+                                    
+                                    <!-- Place -->
+                                </div>
+                                
+                                <p class="font-georgian text-sm leading-relaxed" style="color: var(--ink-light);">
+                                    ხელნაწერი მჭიდროდ უკავშირდება ეფრემ მცირის ლიტერატურულ სკოლას, რასაც ადასტურებს ეფრემისთვის დამახასიათებელი პუნქტუაცია, პროსოდიული ნიშნები (მათ შორის „რკალი“ კომპოზიტებისათვის) და ბერძნული ტექნიკით შესრულებული ციტატების აღნიშვნის სისტემა , , .
+                                </p>
+                            </div>
+                            
+                            <!-- Provenance -->
+                            <div class="pt-5 border-t" style="border-color: #e5e0d8;">
+                                <h4 class="text-[10px] font-ui uppercase tracking-wider mb-3" style="color: var(--ink-light);">
+                                    პროვენანსი <span class="en not-italic">Provenance</span>
+                                </h4>
+                                <p class="font-georgian text-sm leading-relaxed" style="color: var(--ink-light);">
+                                    ხელნაწერი აღწერილია ა. ცაგარლის მიერ (N 85), რომელმაც იგი XIV-XVI სს-ით დაათარიღა . მოგვიანებით, 1931 წელს, იგი შეისწავლა რ. ბლეიკმა, რომელმაც არასწორად მიაკუთვნა XVII საუკუნეს, თუმცა აღწერა მისი უძველესი აღმოსავლური ქაღალდი .
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tab: Contents -->
+                    <div id="contents-A" class="tab-content hidden p-6">
+                        <div class="space-y-4">
+                            <div class="flex gap-4 " style="border-color: #e5e0d8;">
+                                <!-- Item number -->
+                                <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-xs font-ui font-medium"
+                                      style="background: var(--parchment-dark); color: var(--ink-light);">
+                                    17
+                                </span>
+                                
+                                <div class="flex-1">
+                                    <p class="font-georgian font-medium" style="color: var(--ink);">სიტყუაჲ ართრონთათჳს</p>
+                                    
+                                    <p class="mt-1 text-xs font-ui" style="color: var(--rubric);">ff. 32r–36v</p>
+                                    
+                                    <p class="mt-1 text-xs font-georgian italic" style="color: var(--ink-light);">Pseudo-John Chrysostom</p>
+                                    
+                                    <p class="mt-2 text-xs font-georgian leading-relaxed" style="color: var(--ink-light);">
+                                        თხზულება ნუმერაციით მეჩვიდმეტეა კრებულში (აღნიშნულია აშიაზე ასოთი
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Card Footer: Actions -->
+                <footer class="px-6 py-4 border-t flex items-center justify-between" style="border-color: #e5e0d8; background: var(--parchment-dark);">
+                    <a href="../text/index.html?witness=A" 
+                       class="text-xs font-ui flex items-center gap-1.5 transition-colors hover:opacity-80"
+                       style="color: var(--azure);">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                        ტექსტის კითხვა
+                    </a>
+                    
+                    <a href="tei/treatise.xml" download 
+                       class="text-xs font-ui flex items-center gap-1.5 transition-colors hover:opacity-80"
+                       style="color: var(--ink-light);">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                        </svg>
+                        TEI-XML
+                    </a>
+                </footer>
+                
+            </article>
+            <!-- MANUSCRIPT CARD -->
+            <article 
+                id="ms-S" 
+                class="ms-card flex-1 bg-white rounded-sm shadow-sm border overflow-hidden transition-all duration-300"
+                style="border-color: #e5e0d8;"
+                itemscope 
+                itemtype="https://schema.org/Manuscript"
+            >
+                <!-- Card Header: Siglum + Identity -->
+                <header class="relative p-6 border-b" style="border-color: #e5e0d8; background: linear-gradient(to bottom, white, var(--parchment-dark));">
+                    
+                    <!-- Siglum Badge -->
+                    <div class="absolute -top-0 -left-0 w-16 h-16 flex items-center justify-center"
+                         style="background: var(--ink);">
+                        <span class="text-2xl font-bold" style="color: var(--parchment);" itemprop="identifier">
+                            S
+                        </span>
+                    </div>
+                    
+                    <div class="ml-20">
+                        <!-- Shelfmark -->
+                        <h2 class="text-xl font-georgian font-semibold" style="color: var(--ink);" itemprop="name">
+                                S-312
+                        </h2>
+                        
+                        <!-- Repository with LOD link -->
+                        <p class="mt-1 font-georgian" style="color: var(--ink-light);">
+                                <span class="lod-link" title="View in authority file" itemprop="holdingArchive">
+                                    ხელნაწერთა ეროვნული ცენტრი
+                                </span>
+                        </p>
+                        
+                        <!-- Location breadcrumb -->
+                        <p class="mt-2 text-xs font-ui flex items-center gap-1.5" style="color: var(--ink-light);">
+                            <span class="lod-link" title="GeoNames"></span>
+                        </p>
+                        
+                        <!-- Alt identifiers -->
+                    </div>
+                    
+                    <!-- Quick Stats Row -->
+                    <div class="mt-5 ml-20 flex flex-wrap gap-x-6 gap-y-2 text-xs font-ui" style="color: var(--ink-light);">
+                        <!-- Locus Badge -->
+                        <span class="inline-flex items-center gap-1.5">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--rubric);">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                            </svg>
+                            <span class="font-medium" style="color: var(--ink);">ff. 106r–108v</span>
+                        </span>
+                        
+                        <!-- Date Badge -->
+                        <span class="inline-flex items-center gap-1.5">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--gold);">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                            <span class="font-medium" style="color: var(--ink);">
+1541 წ.
+                            </span>
+                        </span>
+                        
+                        <!-- Script Badge -->
+                        <span class="inline-flex items-center gap-1.5">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--azure);">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+                            </svg>
+                            <span class="px-1.5 py-0.5 rounded text-[10px] font-medium"
+                                  style="background: rgba(184, 134, 11, 0.15); color: #8b6914;">
+ნუსხური                            </span>
+                        </span>
+                    </div>
+                </header>
+                
+                <!-- Summary Block -->
+                <div class="px-6 py-5 border-b font-georgian text-sm leading-relaxed" 
+                     style="border-color: #e5e0d8; color: var(--ink-light); background: white;">
+                    <p>55 თხზულებისგან შემდგარი სამეცნიერო კრებული („საფილოსოფოსო წიგნი“). შეიცავს დოგმატიკურ, პოლემიკურ, ასტრონომიულ და ლექსიკოგრაფიულ ნაშრომებს.</p>
+                </div>
+                
+                <!-- CODICOLOGICAL DATA GRID -->
+                <div class="codicology-viz">
+                    
+                    <!-- Tab Navigation -->
+                    <nav class="flex border-b text-xs font-ui" style="border-color: #e5e0d8;">
+                        <button onclick="showTab(this, 'physical-S')" 
+                                class="tab-btn tab-active px-4 py-3 border-b-2 transition-colors"
+                                style="color: var(--ink);">
+                            ფიზიკური <span class="en not-italic hidden sm:inline">Physical</span>
+                        </button>
+                        <button onclick="showTab(this, 'paleo-S')"
+                                class="tab-btn px-4 py-3 border-b-2 border-transparent transition-colors"
+                                style="color: var(--ink-light);">
+                            პალეოგრაფია <span class="en not-italic hidden sm:inline">Script</span>
+                        </button>
+                        <button onclick="showTab(this, 'history-S')"
+                                class="tab-btn px-4 py-3 border-b-2 border-transparent transition-colors"
+                                style="color: var(--ink-light);">
+                            ისტორია <span class="en not-italic hidden sm:inline">History</span>
+                        </button>
+                        <button onclick="showTab(this, 'contents-S')"
+                                class="tab-btn px-4 py-3 border-b-2 border-transparent transition-colors"
+                                style="color: var(--ink-light);">
+                            შინაარსი <span class="en not-italic hidden sm:inline">Contents</span>
+                        </button>
+                    </nav>
+                    
+                    <!-- Tab: Physical Description -->
+                    <div id="physical-S" class="tab-content p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            
+                            <!-- Left: Textual Data -->
+                            <div class="space-y-5">
+                                <!-- Material -->
+                                <div>
+                                    <dt class="text-[10px] font-ui uppercase tracking-wider mb-1" style="color: var(--ink-light);">
+                                        მასალა <span class="en not-italic">Material</span>
+                                    </dt>
+                                    <dd class="font-georgian text-sm" style="color: var(--ink);">
+                                        <span class="lod-link" title="Getty AAT: paper">
+ქაღალდი
+                                        </span>
+                                    </dd>
+                                </div>
+                                
+                                <!-- Extent -->
+                                <div>
+                                    <dt class="text-[10px] font-ui uppercase tracking-wider mb-1" style="color: var(--ink-light);">
+                                        მოცულობა <span class="en not-italic">Extent</span>
+                                    </dt>
+                                    <dd class="font-georgian text-sm" style="color: var(--ink);">
+                                        108 ff.
+                                    </dd>
+                                </div>
+                                
+                                <!-- Layout -->
+                                <div>
+                                    <dt class="text-[10px] font-ui uppercase tracking-wider mb-1" style="color: var(--ink-light);">
+                                        განლაგება <span class="en not-italic">Layout</span>
+                                    </dt>
+                                    <dd class="font-georgian text-sm" style="color: var(--ink);">
+                                        1 სვეტი
+                                        <span class="text-xs" style="color: var(--ink-light);">— წვრილი ნუსხური, რთული გეომეტრიული ჩარჩოები (მაგ. 20v, 39r—48r).</span>
+                                    </dd>
+                                </div>
+                                
+                                <!-- Binding -->
+                            </div>
+                            
+                            <!-- Right: Dimension Visualization -->
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tab: Palaeography -->
+                    <div id="paleo-S" class="tab-content hidden p-6">
+                        <div class="space-y-6">
+                            <div class="" style="border-color: #e5e0d8;">
+                                <!-- Script badge -->
+                                <div class="flex items-center gap-3 mb-3">
+                                    <span class="px-2.5 py-1 rounded text-xs font-ui font-medium"
+                                          style="background: rgba(184, 134, 11, 0.15); color: #8b6914;">
+ნუსხური
+                                    </span>
+                                    <span class="text-sm font-georgian" style="color: var(--ink);">სვიმონ კარგარეთელი</span>
+                                </div>
+                                
+                                <p class="font-georgian text-sm leading-relaxed" style="color: var(--ink-light);">
+                                    გადამწერი ავლენს ბერძნული ენის სრულ უცოდინარობას: ბერძნული სიტყვების გადმოცემისას დაშვებულია უამრავი შეცდომა, მახვილის ნიშნები ხშირად აკლია, დასმულია არასწორ ადგილას ან გადატანილია მეზობელ ქართულ სიტყვებზე .
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Orthography -->
+                        <div class="mt-6 pt-5 border-t" style="border-color: #e5e0d8;">
+                            <h4 class="text-[10px] font-ui uppercase tracking-wider mb-3" style="color: var(--ink-light);">
+                                ორთოგრაფია & პუნქტუაცია <span class="en not-italic">Orthography & Punctuation</span>
+                            </h4>
+                            <p class="font-georgian text-sm leading-relaxed" style="color: var(--ink-light);">
+                                ორთოგრაფია ხასიათდება „სიჭრელით“ (არათანმიმდევრულობით):
+                                        
+                                            ჱ აღარ გვხვდება ძველი ნორმით გათვალისწინებულ ადგილებში, გარდა უმარცვლო უ-ს მომდევნო პოზიციისა (მაგ. საძირკუჱლნი, შუჱნიერ).
+                                            უმარცვლო უ-ს ხმარება არათანმიმდევრულია; იშვიათად მის ნაცვლად გვხვდება ჳ (მაგ. იჴჳმია).
+                                            აჲ დიფთონგების მართლწერა მერყევია: ხან დაცულია (თარგმანებაჲ), ხან კი დაკარგული (თარგმნა მისი).
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Tab: History -->
+                    <div id="history-S" class="tab-content hidden p-6">
+                        <div class="space-y-6">
+                            <!-- Origin -->
+                            <div>
+                                <h4 class="text-[10px] font-ui uppercase tracking-wider mb-3" style="color: var(--ink-light);">
+                                    წარმოშობა <span class="en not-italic">Origin</span>
+                                </h4>
+                                
+                                <div class="flex items-baseline gap-4 mb-3">
+                                    <!-- Date -->
+                                    <div class="text-center px-4 py-2 rounded" style="background: var(--parchment-dark);">
+                                        <p class="font-georgian font-semibold" style="color: var(--ink);">
+1541 წ.
+                                        </p>
+                                    </div>
+                                    
+                                    <!-- Place -->
+                                    <div>
+                                        <p class="text-[10px] font-ui uppercase" style="color: var(--ink-light);">ადგილი</p>
+                                        <p class="font-georgian text-sm lod-link" style="color: var(--ink);" title="Pleiades">
+                                            საფარის საბა ლავრა
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            <!-- Provenance -->
+                        </div>
+                    </div>
+                    
+                    <!-- Tab: Contents -->
+                    <div id="contents-S" class="tab-content hidden p-6">
+                        <div class="space-y-4">
+                            <div class="flex gap-4 " style="border-color: #e5e0d8;">
+                                <!-- Item number -->
+                                <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-xs font-ui font-medium"
+                                      style="background: var(--parchment-dark); color: var(--ink-light);">
+                                    55
+                                </span>
+                                
+                                <div class="flex-1">
+                                    <p class="font-georgian font-medium" style="color: var(--ink);">სიტყუაჲ ართრონთათჳს</p>
+                                    
+                                    <p class="mt-1 text-xs font-ui" style="color: var(--rubric);">ff. 106r–108v</p>
+                                    
+                                    
+                                    <p class="mt-2 text-xs font-georgian leading-relaxed" style="color: var(--ink-light);">
+                                        ტექსტი შეიცავს მექანიკურ შეცდომებს, გამოტოვებულ სიტყვებსა და ბერძნული ფორმების დამახინჯებებს, რაც მიუთითებს, რომ გადამწერი დედნად იყენებდა უკვე დაზიანებულ ნუსხას ან ვერ აჰყვებოდა ორიგინალის აზრს
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Card Footer: Actions -->
+                <footer class="px-6 py-4 border-t flex items-center justify-between" style="border-color: #e5e0d8; background: var(--parchment-dark);">
+                    <a href="../text/index.html?witness=S" 
+                       class="text-xs font-ui flex items-center gap-1.5 transition-colors hover:opacity-80"
+                       style="color: var(--azure);">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                        ტექსტის კითხვა
+                    </a>
+                    
+                    <a href="tei/treatise.xml" download 
+                       class="text-xs font-ui flex items-center gap-1.5 transition-colors hover:opacity-80"
+                       style="color: var(--ink-light);">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                        </svg>
+                        TEI-XML
+                    </a>
+                </footer>
+                
+            </article>
+            
         </div>
     </div>
     
-    <!-- Link to research -->
-    <div class="mt-8 text-center">
-        <a href="../research/index.html" class="text-sm text-gray-500 hover:text-gray-700">
-            იხ. კვლევა ხელნაწერების შესახებ →
+    <!-- STEMMA SECTION -->
+    <section class="border-t" style="border-color: #e5e0d8; background: white;">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <header class="text-center mb-8">
+                <p class="text-[10px] font-ui uppercase tracking-[0.2em] mb-2" style="color: var(--rubric);">
+                    ტექსტის გადაცემა <span class="en not-italic">Textual Transmission</span>
+                </p>
+                <h2 class="text-2xl font-georgian font-semibold" style="color: var(--ink);">სტემა</h2>
+                <p class="en text-sm mt-1">Stemma Codicum</p>
+            </header>
+            
+            <!-- SVG Stemma -->
+            <div class="flex justify-center">
+                <svg width="300" height="220" viewBox="0 0 300 220" class="overflow-visible">
+                    <!-- Definitions -->
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="#8b8578"/>
+                        </marker>
+                    </defs>
+                    
+                    <!-- Archetype (hypothetical) -->
+                    <g class="stemma-node" style="cursor: pointer;">
+                        <circle cx="150" cy="30" r="20" fill="none" stroke="#8b8578" stroke-width="1.5" stroke-dasharray="4,2"/>
+                        <text x="150" y="34" text-anchor="middle" font-size="14" fill="#8b8578" font-family="Noto Serif Georgian">ω</text>
+                        <text x="150" y="55" text-anchor="middle" font-size="9" fill="#8b8578" font-family="Noto Sans" font-style="italic">Archetype</text>
+                    </g>
+                    
+                    <!-- Lines to witnesses -->
+                    <line x1="130" y1="50" x2="80" y2="130" stroke="#8b8578" stroke-width="1" marker-end="url(#arrowhead)"/>
+                    <line x1="170" y1="50" x2="220" y2="130" stroke="#8b8578" stroke-width="1" marker-end="url(#arrowhead)"/>
+                    
+                    <!-- Witness A -->
+                    <g class="stemma-node" onclick="location.href='#ms-A'" style="cursor: pointer;">
+                        <rect x="40" y="140" width="80" height="60" rx="4" fill="var(--ink)" stroke="var(--ink)" stroke-width="2"/>
+                        <text x="80" y="165" text-anchor="middle" font-size="20" fill="var(--parchment)" font-weight="bold" font-family="Noto Sans">A</text>
+                        <text x="80" y="185" text-anchor="middle" font-size="9" fill="var(--parchment)" font-family="Noto Sans" opacity="0.8">XII–XIII ს.</text>
+                    </g>
+                    
+                    <!-- Witness S -->
+                    <g class="stemma-node" onclick="location.href='#ms-S'" style="cursor: pointer;">
+                        <rect x="180" y="140" width="80" height="60" rx="4" fill="var(--ink)" stroke="var(--ink)" stroke-width="2"/>
+                        <text x="220" y="165" text-anchor="middle" font-size="20" fill="var(--parchment)" font-weight="bold" font-family="Noto Sans">S</text>
+                        <text x="220" y="185" text-anchor="middle" font-size="9" fill="var(--parchment)" font-family="Noto Sans" opacity="0.8">1541 წ.</text>
+                    </g>
+                    
+                    <!-- Legend -->
+                    <g transform="translate(90, 210)">
+                        <circle cx="0" cy="0" r="6" fill="none" stroke="#8b8578" stroke-dasharray="2,1"/>
+                        <text x="12" y="4" font-size="9" fill="#8b8578" font-family="Noto Sans">= ჰიპოთეტური</text>
+                        <rect x="80" y="-6" width="12" height="12" rx="2" fill="var(--ink)"/>
+                        <text x="98" y="4" font-size="9" fill="#8b8578" font-family="Noto Sans">= შემონახული</text>
+                    </g>
+                </svg>
+            </div>
+            
+            <p class="text-center mt-8 text-xs font-ui" style="color: var(--ink-light);">
+                სტემატური ურთიერთობა დაზუსტდება კვლევის დასრულების შემდეგ
+            </p>
+        </div>
+    </section>
+    
+    <!-- HOW TO CITE -->
+    <section class="border-t" style="border-color: #e5e0d8;">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <h2 class="text-[10px] font-ui uppercase tracking-[0.2em] mb-4" style="color: var(--ink-light);">
+                ციტირება <span class="en not-italic">How to Cite</span>
+            </h2>
+            <div class="p-5 rounded" style="background: var(--parchment-dark); border: 1px solid #e5e0d8;">
+                <p class="font-georgian text-sm" style="color: var(--ink);">
+                    „სიტყუაჲ ართრონთათჳს: ხელნაწერები." <em>სიტყუა ართრონთათვს: ციფრული სამეცნიერო გამოცემა.</em> 2025.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Related Links -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex justify-center gap-8 text-sm font-georgian">
+        <a href="../text/index.html" class="transition-colors hover:opacity-70" style="color: var(--azure);">
+            ტექსტი →
+        </a>
+        <a href="../research/index.html" class="transition-colors hover:opacity-70" style="color: var(--azure);">
+            კვლევა →
         </a>
     </div>
     
 </main>
+
+<script>
+// Tab switching
+function showTab(btn, tabId) {
+    const card = btn.closest('article');
+    
+    // Hide all tabs, show selected
+    card.querySelectorAll('.tab-content').forEach(t => t.classList.add('hidden'));
+    card.querySelector('#' + tabId).classList.remove('hidden');
+    
+    // Update button states
+    card.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.remove('tab-active');
+        b.style.borderColor = 'transparent';
+        b.style.color = 'var(--ink-light)';
+    });
+    btn.classList.add('tab-active');
+    btn.style.borderColor = 'var(--rubric)';
+    btn.style.color = 'var(--ink)';
+}
+
+// Comparison mode toggle
+function toggleComparison() {
+    const container = document.getElementById('ms-cards');
+    const btn = document.getElementById('comparison-toggle');
+    
+    container.classList.toggle('flex-col');
+    container.classList.toggle('lg:flex-row');
+    
+    if (container.classList.contains('flex-col')) {
+        btn.style.background = 'transparent';
+        btn.style.color = 'var(--ink-light)';
+    } else {
+        btn.style.background = 'var(--azure)';
+        btn.style.color = 'var(--parchment)';
+    }
+}
+
+// Initialize tabs with active style
+document.querySelectorAll('.tab-btn.tab-active').forEach(btn => {
+    btn.style.borderColor = 'var(--rubric)';
+});
+
+// Scroll to hash on load
+if (window.location.hash) {
+    setTimeout(() => {
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }, 100);
+}
+</script>
 
     <!-- Footer -->
     <footer class="border-t border-gray-200 py-6 px-4 mt-12">

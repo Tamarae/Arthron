@@ -25,206 +25,238 @@
                 </availability>
                 <idno type="cts-urn">urn:cts:georgian:shanidze.arthron.ed2025</idno>
             </publicationStmt>
-            <sourceDesc>
+            
+                   <sourceDesc>
                 <listWit>
-                    <!-- WITNESS A: THE ATHOS MANUSCRIPT -->
+                    
                     <witness xml:id="A">
-                        <msDesc>
+                        <msDesc xml:id="A-6">
                             <msIdentifier>
-                                <country>
-                                    <placeName xml:lang="ka">საბერძნეთი</placeName>
-                                    <placeName xml:lang="en">Greece</placeName>
-                                </country>
-                                <region>
-                                    <placeName xml:lang="ka">ათონი</placeName>
-                                    <placeName xml:lang="en">Mount Athos</placeName>
-                                </region>
-                                <settlement>
-                                    <seg xml:lang="ka">ათონი</seg>
-                                    <seg xml:lang="en">Athos</seg>
-                                </settlement>
-                                <repository>
-                                    <orgName xml:lang="ka">ივერიის (ივერთა) მონასტერი</orgName>
-                                    <orgName xml:lang="en">Iviron Monastery</orgName>
-                                </repository>
-                                <idno>Athos No. 6</idno>
-                              
+                                <country>საბერძნეთი</country>
+                                <settlement>ათონის მთა</settlement>
+                                <repository>ივერთა მონასტერი</repository>
+                                <collection>ქართულ ხელნაწერთა კოლექცია</collection>
+                                <idno>A-6</idno>
                             </msIdentifier>
                             
                             <msContents>
-                                <summary>
-                                    <p xml:lang="ka">კრებული თავდაპირველად შეიცავდა სულ მცირე 33 თხზულებას (ამჟამად შემორჩენილია 17), მათ შორის <persName ref="#chrysostom">იოანე ოქროპირის</persName> ჰომილიებსა და ეგზეგეტიკურ ნაშრომებს. <persName ref="#ilarioni">ილარიონ ბერის</persName> 1836 წლის კატალოგში მხოლოდ ხუთი თავის ამოკითხვაა შესაძლებელი, დანარჩენი კი „სიძუჱლისაგან განრყვნილად“ არის მიჩნეული <ptr target="#note33"/>.</p>
-                                    <p xml:lang="en">A miscellany originally containing at least 33 works (17 extant), primarily homilies and exegetical works by <persName ref="#chrysostom">John Chrysostom</persName>. According to <persName ref="#ilarioni">Monk Ilarion's</persName> 1836 catalog, only five chapters were legible, with the rest described as "corrupted by antiquity" <ptr target="#note33"/>.</p>
-                                </summary>
-                                <msItem n="17">
-                                    <locus from="32r" to="36v">ff. 32r–36v</locus>
-                                    <title>
-                                        <seg xml:lang="ka">სიტყუაჲ ართრონთათჳს</seg>
-                                        <seg xml:lang="en">Discourse on Articles (Grammatical Treatise)</seg>
-                                    </title>
-                                    <author ref="#chrysostom" cert="low">Pseudo-John Chrysostom</author>
-                                    <note>
-                                        <p xml:lang="ka">თხზულება ნუმერაციით მეჩვიდმეტეა კრებულში (აღნიშნულია აშიაზე ასოთი <num value="17">ი̃ზ</num>). იგი მოთავსებულია ოქროპირის ჰომილიაში „ქრისტე აღმოსავალი აღმოსავალთაჲ“ და განმარტავს ბერძნული ართრონის ბუნებას ქართული თარგმანების უკეთ აღსაქმელად.</p>
-                                        <p xml:lang="en">The treatise is the 17th item in the collection (marked on the margin as <num value="17">ი̃ზ</num>). It is embedded within Chrysostom’s homily "Christ the East of Easts" and explains the Greek article to assist readers of translated theological texts <ptr target="#note29"/>.</p>
-                                    </note>
+                                <summary>იოანე ოქროპირის თხზულებათა კრებული (შემონახულია ი̃ზ - ლ̃გ თავები)</summary>
+                                <textLang mainLang="ka-Geok">ძველი ქართული</textLang>
+                                
+                                <msItem n="1" xml:id="A-main">
+                                    <locus from="1r" to="170v">170 ფ.</locus>
+                                    <title xml:lang="ka">იოანე ოქროპირის სწავლანი და გრამატიკული ტრაქტატი</title>
+                                    <rubric xml:lang="ka">იოანე ოქროპირის სწავლანი და გრამატიკული ტრაქტატი</rubric>
+                                    <incipit>თქმული იოანე ოქროპირისა «სიტყვისა მისთვს», ვითარმედ: «ქრისტე აღმოსავალი აღმოსავალთაჲ»...</incipit>
+                                    <note>ხელნაწერი წარმოადგენს კრებულს, რომელიც თავდაპირველად 33 თხზულებას შეიცავდა (შემორჩენილია 17). მათ შორის უმნიშვნელოვანესია გრამატიკული ტრაქტატის ადრეული ტექსტი, რომელიც ჩართულია ოქროპირისეული თხზულების თარგმანში.</note>
+                                </msItem>
+                                
+                                <msItem n="2" xml:id="A-arthron">
+                                    <locus from="32r" to="37r">32r—37r</locus>
+                                    <title xml:lang="ka">სიტყუაი ართრონთათჳს</title>
+                                    <rubric xml:lang="ka">სიტყუაჲ ართრონთათჳს</rubric>
+                                    <note>გრამატიკული ტრაქტატის ადრეული რედაქცია, ჩართული ოქროპირის თხზულებაში.</note>
+                                </msItem>
+                                
+                                <msItem>
+                                    <colophon>
+                                    <note>ორიგინალი ანდერძი დაკარგულია (თავ-ბოლო ნაკლული ხელნაწერი). ბოლო ფურცელზე (170v) დაცულია გვიანდელი მინაწერები:</note>
+                                    <persName role="binder" key="Michael_Chuchuashvili">მიქაელ ჭუჭაშვილი</persName> (შემკაზმელი)
+                                    <persName role="owner" key="Venedikton">ვენედიქტონ</persName> (1823 წ.)
+                                   <persName role="scholar" key="Ilarion_Ber">ილარიონ ბერი</persName> (XIX ს.)
+                                </colophon>
                                 </msItem>
                             </msContents>
                             
                             <physDesc>
                                 <objectDesc form="codex">
                                     <supportDesc material="paper">
-                                        <support>
-                                            <p xml:lang="ka">ოდნავ გალესილი აღმოსავლური ქაღალდი ვერტიკალური ზოლებით (<term xml:lang="fr">vergeures</term>), რაც დამახასიათებელია XII-XIII სს-ისათვის <ptr target="#note36"/>.</p>
-                                            <p xml:lang="en">Slightly polished oriental paper featuring vertical lines (<term xml:lang="fr">vergeures</term>), typical of the 12th–13th centuries <ptr target="#note36"/>.</p>
-                                        </support>
+                                        <support>აღმოსავლური ქაღალდი, ოდნავ გალესილი, ვერტიკალური ზოლებით („ვერჟერები").</support>
                                         <extent>
-                                            <measure unit="leaf" quantity="170">170 ff.</measure>
-                                            <dimensions type="leaf" unit="mm">
+                                            <measure unit="leaf" quantity="170">170 ფ. (აკლია დაახლოებით 135)</measure>
+                                            <dimensions unit="mm" type="leaf">
                                                 <height>370</height>
                                                 <width>255</width>
                                             </dimensions>
-                                            <dimensions type="written" unit="mm">
+                                            <dimensions unit="mm" type="written">
                                                 <height>275</height>
                                                 <width>165</width>
                                             </dimensions>
-                                            <note xml:lang="ka">ხელნაწერს თავში დაჰკლებია დაახლოებით 135 ფურცელი.</note>
-                                            <note xml:lang="en">Approximately 135 leaves are missing from the beginning of the manuscript.</note>
                                         </extent>
                                         <collation>
-                                            <p xml:lang="ka">რვეულები შედგება რვა-რვა ფურცლისაგან. შემორჩენილია რვეულები <num value="18">ი̃ჱ</num>-დან <num value="37">ლ̃ზ</num>-მდე. რვეულების ნუმერაცია შესრულებულია ნუსხურით (მთავრულის ელემენტებით): დასაწყისი ზედა აშიაზე, დასასრული — ქვედა აშიაზე.</p>
-                                            <p xml:lang="en">Quires consist of eight leaves each. Extant quires range from 18 (<num value="18">ი̃ჱ</num>) to 37 (<num value="37">ლ̃ზ</num>). Quire signatures are written in Nuskhuri (with Mtavruli elements), placed on the upper margin at the start and lower margin at the end of each quire.</p>
+                                            <signatures>რვეულებრივი სათვალავი (ი̃ჱ — ლ̃ზ) გატარებულია ნუსხურით ზედა და ქვედა აშიებზე.</signatures>
                                         </collation>
-                                        <condition>
-                                            <p xml:lang="ka">ხელნაწერი მძიმედაა დაზიანებული. მელნის შემადგენლობაში არსებულმა გოგირდმჟავა რკინამ (<term xml:lang="ka">არჯასპი</term>) ქაღალდი ამოწვა, რამაც გამოიწვია ტექსტის სრული ჩაშლა, განსაკუთრებით ფურცლების გარეთა კიდეებზე <ptr target="#note38"/>. რ. ბლეიკის შეფასებით, დაზიანების გამო ცალკეული ნაწილების მოცულობის დადგენა შეუძლებელია <ptr target="#note37"/>.</p>
-                                            <p xml:lang="en">Severely damaged. The iron sulfate content (<term xml:lang="ka">arjaspi</term>) in the ink has corroded the paper, leading to significant text loss, particularly in the outer columns <ptr target="#note38"/>. R. Blake noted that the extent of the damage makes determining the original volume of specific sections impossible <ptr target="#note37"/>.</p>
-                                        </condition>
+                                        <condition>ძალზე დაზიანებული. მელანს ქაღალდი დაუწვავს (გოგირდმჟავა რკინის შემცველობის გამო), რის გამოც მრავალი ფურცელი დაშლილია.</condition>
                                     </supportDesc>
+                                    
                                     <layoutDesc>
                                         <layout columns="2" writtenLines="33">
-                                            <p xml:lang="ka">ტექსტი ნაწერია ორ სვეტად, თითოეულში 33 სტრიქონია. საზედაო ასოები (ასომთავრული) მოთავსებულია სვეტის საზღვარს გარეთ, რაც ადრეული პერიოდის ნიშანია <ptr target="#note41"/>.</p>
-                                            <p xml:lang="en">Written in two columns with 33 lines per column. Large initials (Asomtavruli) are placed entirely outside the column margins, a feature characteristic of earlier manuscripts <ptr target="#note41"/>.</p>
+                                            <!-- <p>ორსვეტიანი ნაწერი, თითოეულ სვეტში 33 სტრიქონია.</p> -->
                                         </layout>
                                     </layoutDesc>
                                 </objectDesc>
                                 
                                 <handDesc hands="1">
-                                    <handNote xml:id="hand-A" script="nuskhuri" medium="black-ink">
-                                        <p xml:lang="ka">პროფესიული ნუსხური, ტიპობრივად ახლოსაა XIII ს. ძეგლებთან <ptr target="#note42"/>. გამოყენებულია შავი მელანი, სათაურებისათვის — მუქი წითელი. საზედაო ასოები ასომთავრულია, დეკორის გარეშე, ვერტიკალურად დაგრძელებული (2-5 სტრიქონის სიმაღლეზე).</p>
-                                        <p xml:lang="en">Professional Nuskhuri, paleographically similar to 13th-century monuments <ptr target="#note42"/>. Written in black ink with dark red headings. Initials are Asomtavruli, undecorated, and vertically elongated (spanning 2-5 lines).</p>
+                                    <handNote xml:id="A-scribe01" script="Nuskhuri" medium="black-ink">
+                                        <persName role="scribe">უცნობი გადამწერი (ეფრემ მცირის სკოლის მიმდევარი)</persName>
+                                        <note resp="#M_Shanidze">პალეოგრაფიული ნიშნები (პუნქტუაცია, მახვილები, პროსოდიული ნიშნები) მიუთითებს ეფრემ მცირის ლიტერატურულ სკოლასთან კავშირზე.</note>
+                                        <p>ერთგვაროვანი, სწორი, მომრგვალებული და კუთხოვანი ნუსხური. საზედაო ასოებად გამოყენებულია ასომთავრული.</p>
                                     </handNote>
                                 </handDesc>
                                 
-                                <typeDesc>
-                                    <p xml:lang="ka">გამოყენებულია <persName ref="#ephrem">ეფრემ მცირისეული</persName> პუნქტუაციის სისტემა: ერთი წერტილი (მცირე სასვენი), ორწერტილი (გასაკვეთელი), სამწერტილი (დიდი სასვენი) და ექვსწერტილი (სრული დასაბოლოებელი) <ptr target="#note44"/>. გრამატიკულ ტრაქტატში ბერძნული ართრონების გადმოსაცემად გამოყენებულია სპეციფიკური დიაკრიტიკული ნიშნები: <term xml:lang="la">sp. asper</term> (მარჯვნივ მიბრუნებული კუთხე), <term xml:lang="la">sp. lenis</term> (მარცხნივ მიბრუნებული კუთხე), <term xml:lang="la">acc. acutus</term> (ხაზი), <term xml:lang="la">acc. gravis</term> და <term xml:lang="la">acc. circumflex</term> (რკალი) <ptr target="#note51"/>.</p>
-                                    <p xml:lang="en">Employs <persName ref="#ephrem">Ephrem Mtsire's</persName> punctuation system: 1 dot (minor pause), 2 dots (phrase division), 3 dots (major pause), and 6 dots (final stop) <ptr target="#note44"/>. The grammatical treatise utilizes specialized Greek diacritics for transcription: <term xml:lang="la">sp. asper</term> (right-facing angle), <term xml:lang="la">sp. lenis</term> (left-facing angle), <term xml:lang="la">acc. acutus</term> (oblique stroke), <term xml:lang="la">acc. gravis</term>, and <term xml:lang="la">acc. circumflex</term> (arch) <ptr target="#note51"/>.</p>
-                                </typeDesc>
+                                <decoDesc>
+                                    <decoNote type="headpiece">
+                                        <p>სწორკუთხა თავსამკაულები წრეებითა და მცენარეული ორნამენტებით. შესრულებულია მუქი წითელი მელნით.</p>
+                                    </decoNote>
+                                </decoDesc>
                                 
                                 <bindingDesc>
-                                    <binding>
-                                        <p xml:lang="ka">ფიცარზე გადაკრული სადა შავი ტყავი <ptr target="#note35"/>.</p>
-                                        <p xml:lang="en">Plain black leather over wooden boards <ptr target="#note35"/>.</p>
+                                    <binding contemporary="false">
+                                        <p>ფიცარზე გადაკრული სადა შავი ტყავი.</p>
                                     </binding>
                                 </bindingDesc>
                             </physDesc>
                             
                             <history>
                                 <origin>
-                                    <origDate notBefore="1180" notAfter="1220" evidence="paleography paper-type">
-                                        <seg xml:lang="ka">XII ს. ბოლოს ან XIII ს. დამდეგი</seg>
-                                        <seg xml:lang="en">Late 12th or early 13th century</seg>
-                                    </origDate>
-                                    <note>
-                                        <p xml:lang="ka">ხელნაწერი მჭიდროდ უკავშირდება <persName ref="#ephrem">ეფრემ მცირის</persName> ლიტერატურულ სკოლას, რასაც ადასტურებს ეფრემისთვის დამახასიათებელი პუნქტუაცია, პროსოდიული ნიშნები (მათ შორის „რკალი“ კომპოზიტებისათვის) და ბერძნული ტექნიკით შესრულებული ციტატების აღნიშვნის სისტემა <ptr target="#note48"/>, <ptr target="#note49"/>, <ptr target="#note50"/>.</p>
-                                        <p xml:lang="en">The manuscript is closely linked to the literary school of <persName ref="#ephrem">Ephrem Mtsire</persName>, as evidenced by the characteristically Ephremic punctuation, prosodic marks (including the linking arc for composites), and the Greek-style citation marking system <ptr target="#note48"/>, <ptr target="#note49"/>, <ptr target="#note50"/>.</p>
-                                    </note>
+                                    <origDate notBefore="1180" notAfter="1220">XII ს. დასასრული - XIII ს. დასაწყისი</origDate>
+                                    <origPlace>ათონის ივერთა მონასტერი (სავარაუდოდ)</origPlace>
+                                    <note resp="#M_Shanidze">რ. ბლეიკი ხელნაწერს XVII ს-ით ათარიღებდა, ა. ცაგარელი - XIV-XVI სს-ით, თუმცა პალეოგრაფიული ანალიზი XII-XIII სს-ზე მიუთითებს.</note>
                                 </origin>
                                 <provenance>
-                                    <p xml:lang="ka">ხელნაწერი აღწერილია <persName ref="#tsagareli">ა. ცაგარლის</persName> მიერ (N 85), რომელმაც იგი XIV-XVI სს-ით დაათარიღა <ptr target="#note34"/>. მოგვიანებით, 1931 წელს, იგი შეისწავლა <persName ref="#blake">რ. ბლეიკმა</persName>, რომელმაც არასწორად მიაკუთვნა XVII საუკუნეს, თუმცა აღწერა მისი უძველესი აღმოსავლური ქაღალდი <ptr target="#note36"/>.</p>
-                                    <p xml:lang="en">Described by <persName ref="#tsagareli">A. Tsagareli</persName> (N 85), who dated it to the 14th–16th centuries <ptr target="#note34"/>. It was subsequently studied by <persName ref="#blake">R. Blake</persName> in 1931, who incorrectly attributed it to the 17th century despite noting its ancient oriental paper characteristics <ptr target="#note36"/>.</p>
+                                    <p>მფლობელი: <persName role="owner">ათონის ივერთა მონასტრის წიგნსაცავი (N6)</persName></p>
                                 </provenance>
                             </history>
+                            
+                            <additional>
+                                <adminInfo>
+                                    <custodialHist>
+                                        <custEvent type="microfilm" when="1981">მიკროფილმი გადაღებულია გურამ პატარაიას თაოსნობით.</custEvent>
+                                    </custodialHist>
+                                </adminInfo>
+                                <listBibl>
+                                    <bibl n="1">Shanidze, M. (1990). გრამატიკული ტრაქტატის გამოცემა.</bibl>
+                                    <bibl n="2">Blake, R. P. Catalogue of the Georgian Manuscripts in the Convent of Iviron on Mount Athos.</bibl>
+                                    <bibl n="3">ცაგარელი, ა. (N 85 ხელნაწერის აღწერილობა).</bibl>
+                                </listBibl>
+                            </additional>
                         </msDesc>
                     </witness>
                     
-                    <!-- WITNESS S: THE SAFARA MANUSCRIPT -->
                     <witness xml:id="S">
-                        <msDesc>
+                        <msDesc xml:id="S-312">
                             <msIdentifier>
-                                <country>
-                                    <placeName xml:lang="ka">საქართველო</placeName>
-                                    <placeName xml:lang="en">Georgia</placeName>
-                                </country>
-                                <settlement>
-                                    <placeName xml:lang="ka">თბილისი</placeName>
-                                    <placeName xml:lang="en">Tbilisi</placeName>
-                                </settlement>
-                                <repository>
-                                    <orgName xml:lang="ka">ხელნაწერთა ეროვნული ცენტრი</orgName>
-                                    <orgName xml:lang="en">National Centre of Manuscripts</orgName>
-                                </repository>
-                                
+                                <country>საქართველო</country>
+                                <settlement>თბილისი</settlement>
+                                <repository>ხელნაწერთა ეროვნული ცენტრი</repository>
+                                <collection>S-კოლექცია</collection>
                                 <idno>S-312</idno>
                             </msIdentifier>
                             
                             <msContents>
-                                <summary>
-                                    <p xml:lang="ka">55 თხზულებისგან შემდგარი სამეცნიერო კრებული („საფილოსოფოსო წიგნი“). შეიცავს დოგმატიკურ, პოლემიკურ, ასტრონომიულ და ლექსიკოგრაფიულ ნაშრომებს.</p>
-                                </summary>
-                                <msItem n="55">
-                                    <locus from="106r" to="108v">ff. 106r–108v</locus>
-                                    <title xml:lang="ka">სიტყუაჲ ართრონთათჳს</title>
-                                    <note>
-                                        <p xml:lang="ka">ტექსტი შეიცავს მექანიკურ შეცდომებს, გამოტოვებულ სიტყვებსა და ბერძნული ფორმების დამახინჯებებს, რაც მიუთითებს, რომ გადამწერი დედნად იყენებდა უკვე დაზიანებულ ნუსხას ან ვერ აჰყვებოდა ორიგინალის აზრს <ptr target="#section.b.3"/>.</p>
-                                    </note>
+                                <summary>პოლემიკურ-დოგმატიკური და სამეცნიერო კრებული (resp. ქ. შარაშიძე)</summary>
+                                <textLang mainLang="ka-Geok">ძველი ქართული</textLang>
+                                
+                                <msItem n="1" xml:id="S-main">
+                                    <locus from="1r" to="105v">1r—105v</locus>
+                                    <title xml:lang="ka">პოლემიკურ-დოგმატიკური და სამეცნიერო კრებული</title>
+                                    <incipit>ამა წიგნსა შინა იპოების მრავალი მრავლად საძიებელი მართლმადიდებელთა სიტყჳსგებაჲ ჰურიათა. ჰრქ[უ]ა ქრისტეანემან: ვის ეტყოდა ღმერთი — ვქმნეთ კაცი ხატებად ჩ̃ნდა და მსგავსებად, ანუ არა მხოლოდშობილსა და თანაარსსა ძესა მისსა?</incipit>
                                 </msItem>
-                            </msContents>
+                                
+                                <msItem n="2" xml:id="S-arthron">
+                                    <locus from="106r" to="108v">106r—108v</locus>
+                                    <title xml:lang="ka">სიტყუაი ართრონთათჳს</title>
+                                    <rubric xml:lang="ka">„სიტყუაი ართრონთათჳს"</rubric>
+                                    <note>ხელნაწერი არ არის დასახელებული თხზულების ავტორი: მასში არ მოიპოვება არც რაიმე სხვა ცნობა, რომელიც საშუალებას მოგვცემდა გაგვერკვია, თუ საიდან ამოუღია სვიმონ კარგარეთელს ძველი ქართული გრამატიკული ლიტერატურის ეს საინტერესო ნიმუში.</note>
+                                </msItem>
+                                
+                                <msItem>
+                                    <colophon>
+                                        <locus from="108v" to="108v">108v</locus>
+                                        <note>ანდერძი მოთავსებულია ხელნაწერის უკანასკნელ გვერდზე, 108v-ზე, სამ აბზაცად, რომელთა დასაწყისი ასოები მთავრულით არის გამოყვანილი.</note>
+                                        ადიდოს ღმერთმან ორთავე სუფევათა შინა <persName key="იოაკიმე მაწყვერელი">მღ̃დლთ მთავარი ეპისკოპოსი მაწყუჱრელი იოაკიმ</persName>, 
+                                        რომლისა ბრძანებითა დაიწერა წ̃ჲ ესე უზაკველი და ყოვლითურთ უნაკლულო საფილოსოფოსი (ასეა!) წიგნი. დღეგრძელებით ყოველნივე ცოდვანი მისნი შ̃ნს ღმერთმან. ამინ.
+                                        და მე, მონამან მისმან, კარგარეთელმან <persName key="სვიმონ კარგარეთელი">დ̃კნ ს̃ნ</persName> დავწერე. აწ გევედრები ყოველთავე, რომელნიცა მიემთხჳნეთ წიგნსა ამას, რ̃ა მეცა მომიჴსენოთ შენდობით, რ̃ა თქუენცა მოგიჴსენოს ქრისტემან ღმერთმან სასუფეველსა მისსა.
+                                        დიდებაჲ ღმერთსა. გათავდა საფარას საბა ლავრისსა (ასეა!).
+                                    </colophon>
+                                </msItem>                            </msContents>
                             
                             <physDesc>
                                 <objectDesc form="codex">
-                                    <supportDesc material="paper">
+                                    <supportDesc material="parchment">
+                                        <support>ეტრატი</support>
                                         <extent>
-                                            <measure unit="leaf" quantity="108">108 ff.</measure>
-                                            <dimensions unit="cm">
-                                                <height>22.5</height>
-                                                <width>17</width>
+                                            <measure unit="leaf" quantity="108">108 ფ.</measure>
+                                            <dimensions unit="mm" type="leaf">
+                                                <height>225</height>
+                                                <width>170</width>
                                             </dimensions>
                                         </extent>
+                                        <collation>
+                                            <signatures>ყდის შიგნით: <persName type="attested">ძილიხან შარაშიძის ქალი</persName>.
+                                                „<persName type="attested">თუთა შანგელიას ქალი</persName>" იქვე, XVIII ს. მხედრულით.
+                                                „ღმერთო! შეიწყალე <persName type="attested">მაქსიმე მღდელ-მონაზონი</persName>" 108v. XVII ს.
+                                                ლამაზი ნუსხურით.
+                                                „კბ იანვრისას იყო <persName type="attested">დავით დადიანი</persName> გაენათს." II ყდის შიგნით XIX ს. მხედრულით
+                                            </signatures>
+                                        </collation>
+                                        <condition>ძალზე დაზიანებული 103-104 ფ.</condition>
                                     </supportDesc>
                                     <layoutDesc>
-                                        <layout columns="1">
-                                            <p xml:lang="ka">წვრილი ნუსხური, რთული გეომეტრიული ჩარჩოები (მაგ. 20v, 39r—48r).</p>
+                                        <layout>
+                                            <p>არც თუ ისე მცირე მოცულობის თხზულება გადამწერმა პატარა ზომის ხელნაწერის ექვსიოდე გვერდზე დაატია.</p>
                                         </layout>
                                     </layoutDesc>
                                 </objectDesc>
                                 
                                 <handDesc hands="1">
-                                    <handNote xml:id="hand-S" script="nuskhuri">
-                                        <p xml:lang="ka">გადამწერი: <persName role="scribe" ref="#scribe_svimon">სვიმონ კარგარეთელი</persName>. ნაწერია წვრილი, კალიგრაფიული ნუსხურით. ხელწერის ზომა ტექსტის ბოლოსკენ კიდევ უფრო მცირდება.</p>
-                                        <p xml:lang="ka">გადამწერი ავლენს ბერძნული ენის სრულ უცოდინარობას: ბერძნული სიტყვების გადმოცემისას დაშვებულია უამრავი შეცდომა, მახვილის ნიშნები ხშირად აკლია, დასმულია არასწორ ადგილას ან გადატანილია მეზობელ ქართულ სიტყვებზე <ptr target="#section.b.3"/>.</p>
+                                    <handNote xml:id="S-scribe01" script="Nuskhuri" medium="iron-gall-ink">
+                                        <persName role="scribe" key="სვიმონ კარგარეთელი">დეკანოზი სვიმონ კარგარეთელი</persName>
+                                        <note resp="#მ_შანიძე">სვიმონ კარგარეთელი საკმაოდ ცნობილი გადამწერია. კარგარეთლების გვარში, რომელიც მესხეთიდან ყოფილა გადმოსახლებული, გადამწერის ხელობა ტრადიციული ჩანს. სვიმონის გარდა, ცნობილია ამ გვარის მქონე რამდენიმე გადამწერი (XVI-XVII საუკუნეებში). სვიმონს, გარდა S—312 ხელნაწერისა, გადაუწერია კიდევ გულანი (ამჟამად ქუთაისის სახელმწ. მუზეუმის ხელნაწ. № 16), რომლის ანდერძების მიხედვით შესაძლებელია სვიმონის ჩამომავლობის გარკვევა. სვიმონისავე გადაწერილია ხელნაწ. ინსტიტუტის A—197 ხელნაწერი — გულანის სადღესასწაულო ნაწილი</note>
+                                        <p>ჩინებული, სწორი, ლამაზი მეტად წვრილი ნუსხური;</p>
+                                        <p>ხელნაწერის წვრილი ნაწერი ბოლოში კიდევ უფრო მცირდება და გამადიდებელი შუშის გარეშე თითქმის არც კი იკითხება.</p>
                                     </handNote>
                                 </handDesc>
                                 
-                                <typeDesc>
-                                    <p xml:lang="ka">ორთოგრაფია ხასიათდება „სიჭრელით“ (არათანმიმდევრულობით):
-                                        <list>
-                                            <item><mentioned>ჱ</mentioned> აღარ გვხვდება ძველი ნორმით გათვალისწინებულ ადგილებში, გარდა უმარცვლო <mentioned>უ</mentioned>-ს მომდევნო პოზიციისა (მაგ. <mentioned xml:lang="ka-Geok">საძირკუჱლნი</mentioned>, <mentioned xml:lang="ka-Geok">შუჱნიერ</mentioned>).</item>
-                                            <item>უმარცვლო <mentioned>უ</mentioned>-ს ხმარება არათანმიმდევრულია; იშვიათად მის ნაცვლად გვხვდება <mentioned>ჳ</mentioned> (მაგ. <mentioned xml:lang="ka-Geok">იჴჳმია</mentioned>).</item>
-                                            <item><mentioned>აჲ</mentioned> დიფთონგების მართლწერა მერყევია: ხან დაცულია (<mentioned xml:lang="ka-Geok">თარგმანებაჲ</mentioned>), ხან კი დაკარგული (<mentioned xml:lang="ka-Geok">თარგმნა მისი</mentioned>).</item>
-                                        </list>
-                                    </p>
-                                    <p xml:lang="en">The orthography is inconsistent (so-called "variegated"): 
-                                        The letter <mentioned>ჱ</mentioned> (He) is largely absent from traditional positions except after a non-syllabic <mentioned>უ</mentioned> (e.g., <mentioned xml:lang="ka-Geok">საძირკუჱლნი</mentioned>). Use of non-syllabic <mentioned>უ</mentioned> and <mentioned>აჲ</mentioned> (ay) diphthongs is erratic, alternating between archaic and simplified forms <ptr target="#section.b.3"/>.</p>
-                                </typeDesc>
+                                <decoDesc>
+                                    <decoNote type="headpiece">სათაურები და დასაწყისები სინგურით.
+                                        თავკაზმულობა 92r. <placeName>გელათიდან</placeName>
+                                    </decoNote>
+                                </decoDesc>
+                                
+                                <bindingDesc>
+                                    <binding contemporary="true">
+                                        <p>მაგარი, ტვიფრული ტყავით შემოსილი ფიცრული ყდა; XVIII საუკუნის უნდა იყოს (resp. ქ. შარაშიძე)</p>
+                                    </binding>
+                                </bindingDesc>
                             </physDesc>
                             
                             <history>
                                 <origin>
-                                    <origPlace xml:lang="ka">საფარის საბა ლავრა</origPlace>
-                                    <origDate when="1541">1541 წ.</origDate>
+                                    <origDate notBefore="1540" notAfter="1542">1541</origDate>
+                                    <origPlace>საფარა, საბას ლავრა</origPlace>
+                                    <note resp="#მ_შანიძე">გადაწერის თარიღს არკვევს გადამწერის შენიშვნა, რომელიც ტექსტშია ჩართული (ასტრონომიულ ტრაქტატში) 92r. „ესე ზემო დაწერილი სათუალავი შავთელის ი̃ნეს (იოანეს)  ანდერძი არს, და ქრ̃ნისა მოქცევამ̃ნ (ასეა!) მეაცამეტე ყოფილა. და ოდეს მე, სჳიმონ (ასეა!) დიაკონმან, დავწერე, ქ̃კნი იყო ს̃კთ და მოქცევი (ასეა!). 
+                                        ხოლო ბერძულად დასაბამითგანნი წელნი ვიდრე აქამომდე შვიდი ათასი წელი გარდაჴდა.</note>
                                 </origin>
+                                <provenance>
+                                    <p>შემკვეთი: <persName role="donor" key="იოაკიმე_მაწყვერელი">იოაკიმე მაწყვერელი</persName></p>
+                                </provenance>
                             </history>
+                            
+                            <additional>
+                                <adminInfo>
+                                    <custodialHist>
+                                        <custEvent type="restoration" when="1959">მრავალი ფურცელი რესტავრირებულია (ფურცლები: 2—10, 16, 18—23, 33—40, 56—57, 64, 67—69, 72—78, 80—108); ყდა გაკეთებული უნდა იყოს ხელნაწერის I რესტავრაციის დროს.</custEvent>
+                                    </custodialHist>
+                                </adminInfo>
+                                <listBibl>
+                                    <bibl n="1">Shanidze, M. (1990). Grammatical Treatises...</bibl>
+                                    <bibl n="2">ხელნაწერთა აღწერილობა ტ. 1</bibl>
+                                </listBibl>
+                            </additional>
                         </msDesc>
                     </witness>
+                    
                 </listWit>
             </sourceDesc>
             

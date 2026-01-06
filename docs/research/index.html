@@ -442,20 +442,112 @@
     text-decoration: underline;
 }
 
+/* Sticky article header */
+.article-header-sticky {
+    position: sticky;
+    top: 57px; /* Account for site nav height */
+    z-index: 30;
+    background: #fdfbf7;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+/* Fade effect at bottom of sticky header */
+.article-header-sticky::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    right: 0;
+    height: 12px;
+    background: linear-gradient(to bottom, #fdfbf7, transparent);
+    pointer-events: none;
+}
+.article-header-sticky h1 {
+    font-size: 1.375rem;
+    line-height: 1.3;
+}
+.article-header-sticky .subtitle {
+    font-size: 1rem;
+}
+.article-header-sticky .meta {
+    font-size: 0.875rem;
+}
+
 /* TOC sidebar */
+.toc-sidebar {
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+    padding-right: 1.5rem;
+    border-right: 1px solid #e5e7eb;
+}
+/* Collapsible TOC */
+.toc-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #f3f4f6;
+}
+.toc-toggle {
+    background: none;
+    border: none;
+    padding: 0.25rem;
+    cursor: pointer;
+    color: #9ca3af;
+    transition: transform 0.2s, color 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toc-toggle:hover {
+    color: #6b7280;
+}
+.toc-toggle svg {
+    width: 16px;
+    height: 16px;
+}
+.toc-toggle.collapsed {
+    transform: rotate(-90deg);
+}
+.toc-nav {
+    max-height: 1000px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.2s ease-out;
+    opacity: 1;
+    font-size: 0.875rem;
+}
+.toc-nav.collapsed {
+    max-height: 0;
+    opacity: 0;
+}
 .toc-link {
     transition: all 0.15s;
+    line-height: 1.5;
+    padding: 0.25rem 0;
+    display: block;
+    color: #6b7280;
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    padding-left: 0.5rem;
+    margin-left: -0.5rem;
 }
 .toc-link:hover {
     color: #1f2937;
+    border-left-color: #d1d5db;
 }
 .toc-link.active {
     color: #1f2937;
     font-weight: 500;
+    border-left-color: #b45309;
 }
 .toc-link.level-2 {
-    padding-left: 0.75rem;
+    padding-left: 1.25rem;
     font-size: 0.85em;
+    margin-left: 0;
+    border-left: none;
 }
 
 /* Front matter */
@@ -463,7 +555,7 @@
     margin-bottom: 3rem;
 }
 .foreword {
-    background: #f9fafb;
+   
     border-radius: 8px;
     padding: 1.5rem;
     margin-bottom: 2rem;
@@ -569,75 +661,83 @@
         </div>
     </nav>
 
-<main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     
-    <div class="lg:grid lg:grid-cols-4 lg:gap-12">
+    <div class="lg:grid lg:grid-cols-12 lg:gap-12">
         
         <!-- Table of Contents (sticky sidebar) -->
-        <aside class="hidden lg:block">
-            <div class="sticky top-20">
-                <h2 class="text-xs font-medium text-gray-400 uppercase tracking-wide mb-4">სარჩევი</h2>
-                <nav class="space-y-2 text-sm">
-                    <a href="#foreword" class="toc-link block text-gray-500">წინასიტყვაობა</a>
-                    <a href="#introduction" class="toc-link block text-gray-500">შესავალი</a>
+        <aside class="hidden lg:block lg:col-span-3">
+            <div class="sticky top-20 toc-sidebar pr-4">
+                <div class="toc-header" id="toc-header">
+                    <span class="text-xs font-medium text-gray-400 uppercase tracking-wide">სარჩევი</span>
+                    <button class="toc-toggle" id="toc-toggle" aria-label="Toggle table of contents">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                </div>
+                <nav class="toc-nav" id="toc-nav">
+                    <a href="#foreword" class="toc-link">წინასიტყვაობა</a>
+                    <a href="#introduction" class="toc-link">შესავალი</a>
                     
-                    <a href="#section.a" class="toc-link block text-gray-500 ">
-                        ა. ნაწარმოების შესწავლის ისტორიიდ...
+                    <a href="#section.a" class="toc-link ">
+                        ა. ნაწარმოების შესწავლის ისტორიიდან
                     </a>
-                    <a href="#section.b" class="toc-link block text-gray-500 ">
-                        ბ. ცნობები თხზულების შემცველ ხელნ...
+                    <a href="#section.b" class="toc-link ">
+                        ბ. ცნობები თხზულების შემცველ ხელნაწერთა შესახებ
                     </a>
-                    <a href="#section.b.1" class="toc-link block text-gray-500 level-2">
+                    <a href="#section.b.1" class="toc-link level-2">
                         ბ.1. ათონის ხელნაწერი (A)
                     </a>
-                    <a href="#section.b.2" class="toc-link block text-gray-500 level-2">
+                    <a href="#section.b.2" class="toc-link level-2">
                         ბ.2. საფარული ხელნაწერი (S)
                     </a>
-                    <a href="#section.b.3" class="toc-link block text-gray-500 level-2">
-                        ბ.3. ორთოგრაფიული თავისებურებანი S ...
+                    <a href="#section.b.3" class="toc-link level-2">
+                        ბ.3. ორთოგრაფიული თავისებურებანი S ხელნაწერში
                     </a>
-                    <a href="#section.g" class="toc-link block text-gray-500 ">
-                        გ. იოანე ოქროპირის სახელით ცნობილ...
+                    <a href="#section.g" class="toc-link ">
+                        გ. იოანე ოქროპირის სახელით ცნობილი თხზულებანი ათონურ ხელნაწერში
                     </a>
-                    <a href="#section.d" class="toc-link block text-gray-500 ">
-                        დ. გრამატიკული ტრაქტატი და მისი მ...
+                    <a href="#section.d" class="toc-link ">
+                        დ. გრამატიკული ტრაქტატი და მისი მიმართება ოქროპირისეულ ჰომილიასთან
                     </a>
-                    <a href="#section.e" class="toc-link block text-gray-500 ">
-                        ე. „სიტყუაჲ ართრონთათჳს“, როგორც ...
+                    <a href="#section.e" class="toc-link ">
+                        ე. „სიტყუაჲ ართრონთათჳს“, როგორც გრამატიკული თხზულება
                     </a>
-                    <a href="#section.v" class="toc-link block text-gray-500 ">
-                        ვ. შენიშვნები ენისა და სტილის შეს...
+                    <a href="#section.v" class="toc-link ">
+                        ვ. შენიშვნები ენისა და სტილის შესახებ
                     </a>
-                    <a href="#section.v.orthography" class="toc-link block text-gray-500 level-2">
+                    <a href="#section.v.orthography" class="toc-link level-2">
                         . ორთოგრაფიული თავისებურებანი
                     </a>
-                    <a href="#section.v.phonetics" class="toc-link block text-gray-500 level-2">
+                    <a href="#section.v.phonetics" class="toc-link level-2">
                         . ფონეტიკური მოვლენები
                     </a>
                     
-                    <a href="#notes" class="toc-link block text-gray-500">შენიშვნები</a>
+                    <a href="#notes" class="toc-link">შენიშვნები</a>
                 </nav>
                 
-                <div class="mt-8 pt-8 border-t border-gray-100">
-                    <a href="../text/index.html" class="text-xs text-gray-400 hover:text-gray-600">← ტექსტზე დაბრუნება</a>
+                <div class="mt-6 pt-4">
+                    <a href="../text/index.html" class="text-xs text-gray-400 hover:text-gray-600 flex items-center gap-1">
+                        <span>←</span> ტექსტზე დაბრუნება
+                    </a>
                 </div>
             </div>
         </aside>
         
         <!-- Article Content -->
-        <article id="article-container" class="lg:col-span-3 relative">
+        <article id="article-container" class="lg:col-span-9 relative lg:pl-8">
             
             <!-- Header -->
-            <header class="mb-8 pb-8 border-b border-gray-200">
-                <h1 class="text-2xl font-medium mb-3">„სიტყუაჲ ართრონთათჳს&#34; — ძველი ქართული გრამატიკული ტრაქტატი</h1>
-                <p class="text-gray-500">გამოკვლევა</p>
-                
-                <!-- Article metadata -->
-                <div class="mt-4 flex flex-wrap gap-4 text-xs text-gray-400">
-                    <span>
+            <header class="article-header-sticky mb-8">
+                <h1 class="font-medium mb-1">„სიტყუაჲ ართრონთათჳს&#34; — ძველი ქართული გრამატიკული ტრაქტატი</h1>
+                <p class="subtitle text-gray-500">გამოკვლევა</p>
+                <div class="meta mt-2 flex flex-wrap items-center gap-2 text-gray-500">
+                    <span class="font-medium">
                             მზექალა
                             შანიძე
                         </span>
+                    <span class="text-gray-300">·</span>
                     <span>1990</span>
                 </div>
             </header>
@@ -3433,6 +3533,37 @@ function handleHashNavigation() {
 }
 window.addEventListener('load', handleHashNavigation);
 window.addEventListener('hashchange', handleHashNavigation);
+
+// ========================================
+// TOC COLLAPSE/EXPAND (Feature)
+// ========================================
+const tocHeader = document.getElementById('toc-header');
+const tocToggle = document.getElementById('toc-toggle');
+const tocNav = document.getElementById('toc-nav');
+
+if (tocHeader && tocToggle && tocNav) {
+    // Load saved state from localStorage
+    const tocCollapsed = localStorage.getItem('tocCollapsed') === 'true';
+    if (tocCollapsed) {
+        tocToggle.classList.add('collapsed');
+        tocNav.classList.add('collapsed');
+    }
+    
+    function toggleToc() {
+        const isCollapsed = tocNav.classList.contains('collapsed');
+        if (isCollapsed) {
+            tocToggle.classList.remove('collapsed');
+            tocNav.classList.remove('collapsed');
+            localStorage.setItem('tocCollapsed', 'false');
+        } else {
+            tocToggle.classList.add('collapsed');
+            tocNav.classList.add('collapsed');
+            localStorage.setItem('tocCollapsed', 'true');
+        }
+    }
+    
+    tocHeader.addEventListener('click', toggleToc);
+}
 
 // Highlight active TOC link on scroll
 const sections = document.querySelectorAll('section[id]');

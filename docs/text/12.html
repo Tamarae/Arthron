@@ -101,7 +101,7 @@ section:hover .section-anchor {
 .lexicon-popup {
     position: absolute;
     z-index: 50;
-    width: 260px;
+    width: 280px;
     background: white;
     border: 1px solid #e5e7eb;
     border-radius: 0.5rem;
@@ -143,6 +143,22 @@ section:hover .section-anchor {
     .lexicon-popup::after {
         display: none;
     }
+}
+
+/* LOD badge styling */
+.lod-badge {
+    font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, monospace;
+    font-size: 0.6rem;
+    padding: 1px 4px;
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 3px;
+    color: #6b7280;
+    text-decoration: none;
+}
+.lod-badge:hover {
+    background: #e5e7eb;
+    color: #374151;
 }
     </style>
 </head>
@@ -213,7 +229,8 @@ section:hover .section-anchor {
                 <select id="section-select" class="text-sm text-gray-600 border-0 bg-transparent focus:ring-0 cursor-pointer" onchange="window.location.href=this.value">
                     <option value="../text/1.html" >
                         § 1. 
-                 შეისწავ...
+                 
+      ...
                     </option>
                     <option value="../text/2.html" >
                         § 2. 
@@ -253,11 +270,13 @@ section:hover .section-anchor {
                     </option>
                     <option value="../text/11.html" >
                         § 11. 
-                 ესრეთ  ...
+                 
+      ...
                     </option>
                     <option value="../text/12.html" selected>
                         § 12. 
-                 დედალნი...
+                 
+      ...
                     </option>
                     <option value="../text/13.html" >
                         § 13. 
@@ -273,12 +292,13 @@ section:hover .section-anchor {
                     </option>
                     <option value="../text/16.html" >
                         § 16. 
-                 შუანი 
-...
+                 
+      ...
                     </option>
                     <option value="../text/17.html" >
                         § 17. 
-                 და  სულ...
+                 
+      ...
                     </option>
                     <option value="../text/18.html" >
                         § 18. 
@@ -353,62 +373,110 @@ section:hover .section-anchor {
                     <p class="text-justify">
                                 
                 
-                                დედალნი
+                                
+                    დედალნი
+                    Written in majuscule in both MSS; in cinnabar in S
+                
                                 
                 
-                                <span class="apparatus-inline" data-app-id="app.12.1">
-                                    <span class="reading-a">ხოლო</span>
-                                    <span class="reading-s hidden">om.</span>
-                                </span><sup class="apparatus-marker" data-app="app.12.1" title="იხ. აპარატი">93</sup>
-                                 
-                                <a href="../lexicon/index.html#lex.fem" class="term-link" data-term="lex.fem" title="იხ. ლექსიკონში">დედლისა</a>
+                                ხოლო 
+                                <a href="../lexicon/index.html#lex.fem" class="term-link" data-term="lex.fem" data-ana="#gramm.fem" data-corresp="http://purl.org/olia/olia.owl#Feminine" title="იხ. ლექსიკონში">დედლისა</a>
                                  სახელისა 
-                                <a href="../lexicon/index.html#lex.arthron" class="term-link" data-term="lex.arthron" title="იხ. ლექსიკონში">ართრონნი</a>
-                                 თავით კერძო დასასხმელნი, ვითარცა 
+                                <a href="../lexicon/index.html#lex.arthron" class="term-link" data-term="lex.arthron" data-ana="#gramm.arthron" data-corresp="http://purl.org/olia/olia.owl#Article" title="იხ. ლექსიკონში">ართრონნი</a>
+                                 თავით კერძო დასასხმელნი, ვითარცა საფუძველნი რაჲმე და 
+                                <span class="apparatus-inline" data-app-id="app.12.1">
+                                    <span class="reading-a">საშუენებელნი</span>
+                                    <span class="reading-s hidden">ს̃შუჱბლნი</span>
+                                </span><sup class="apparatus-marker" data-app="app.12.1" title="იხ. აპარატი">101</sup>
+                                , ვითარცა 
                                 <span class="apparatus-inline" data-app-id="app.12.2">
-                                    <span class="reading-a">საფუძველნი</span>
-                                    <span class="reading-s hidden">ს̃შუბლნი</span>
-                                </span><sup class="apparatus-marker" data-app="app.12.2" title="იხ. აპარატი">94</sup>
-                                 რაჲმე და საშუენებელნი, ვითარცა ზემო გჳთქუამს, არიან ესე: 
+                                    <span class="reading-a">ზემო</span>
+                                    <span class="reading-s hidden">om.</span>
+                                </span><sup class="apparatus-marker" data-app="app.12.2" title="იხ. აპარატი">102</sup>
+                                 გჳთქუამს, არიან ესე:
+                                
+                
+                
+                                
+                
+                                
+                    
                                 <span class="font-medium">ი</span>                                 
                                 ἡ
                                 , 
-                                <span class="font-medium">ტის</span>                                 
+                    
+                                <span class="font-medium">ტეს</span>                                 
                                 τῆς
                                 , 
-                                <span class="font-medium">ტი</span>                                 
-                                τῇ
+                    
+                                <span class="apparatus-inline" data-app-id="app.12.3">
+                                    <span class="reading-a">ტი τῇ</span>
+                                    <span class="reading-s hidden">om.</span>
+                                </span><sup class="apparatus-marker" data-app="app.12.3" title="იხ. აპარატი">103</sup>
                                 , 
-                                <span class="font-medium">ტინ</span>                                 
+                    
+                                <span class="font-medium">ტენ</span>                                 
                                 τήν
                                 , 
+                    
                                 <span class="font-medium">ო</span>                                 
                                 ὦ
-                                ; 
+                                ;
+                
+                                
+                
+                
+                                
+                
+                                
+                    
                                 <span class="font-medium">ტა</span>                                 
                                 τά
                                 , 
-                                <span class="font-medium">ტაინ</span>                                 
-                                ταῖν
+                    
+                                <span class="apparatus-inline" data-app-id="app.12.4">
+                                    <span class="reading-a">ტენ ταῖν</span>
+                                    <span class="reading-s hidden">om.</span>
+                                </span><sup class="apparatus-marker" data-app="app.12.4" title="იხ. აპარატი">104</sup>
                                 , 
+                    
                                 <span class="font-medium">ო</span>                                 
                                 ὦ
-                                ; 
+                                ;
+                
+                                
+                
+                
+                                
+                
+                                
+                    
                                 <span class="font-medium">ე</span>                                 
                                 αἱ
                                 , 
-                                <span class="font-medium">ტონ</span>                                 
+                    
+                                <span class="apparatus-inline" data-app-id="app.12.5">
+                                    <span class="reading-a">ტონ</span>
+                                    <span class="reading-s hidden">ტჳნ</span>
+                                </span><sup class="apparatus-marker" data-app="app.12.5" title="იხ. აპარატი">105</sup>
+                                 
                                 τῶν
                                 , 
-                                <span class="font-medium">ტეს</span>                                 
-                                ταῖς
+                    
+                                <span class="apparatus-inline" data-app-id="app.12.6">
+                                    <span class="reading-a">ტეს ταῖς</span>
+                                    <span class="reading-s hidden">om.</span>
+                                </span><sup class="apparatus-marker" data-app="app.12.6" title="იხ. აპარატი">106</sup>
                                 , 
+                    
                                 <span class="font-medium">ტას</span>                                 
                                 τάς
                                 , 
+                    
                                 <span class="font-medium">ო</span>                                 
                                 ὦ
                                 .
+                
                                 
             
                     </p>
@@ -419,13 +487,29 @@ section:hover .section-anchor {
                     <h3 class="text-xs font-medium text-gray-400 uppercase tracking-wide mb-3">კრიტიკული აპარატი</h3>
                     <div class="text-sm text-gray-600 space-y-1.5">
                         <p id="app-app.12.1" class="apparatus-entry pl-4 border-l-2 border-gray-100">
-                            <sup class="text-amber-600 mr-1">93</sup>
-                            <span class="font-medium">ხოლო</span><span class="text-gray-400">]</span>
-<span class="italic text-gray-500">om.</span>                                 <span class="text-gray-400">S</span>                        </p>
+                            <sup class="text-amber-600 mr-1">101</sup>
+                            <span class="font-medium">საშუენებელნი</span><span class="text-gray-400">]</span>
+<span>ს̃შუჱბლნი</span>                                 <span class="text-gray-400">S</span>                        </p>
                         <p id="app-app.12.2" class="apparatus-entry pl-4 border-l-2 border-gray-100">
-                            <sup class="text-amber-600 mr-1">94</sup>
-                            <span class="font-medium">საფუძველნი</span><span class="text-gray-400">]</span>
-<span>ს̃შუბლნი</span>                                 <span class="text-gray-400">S</span>                        </p>
+                            <sup class="text-amber-600 mr-1">102</sup>
+                            <span class="font-medium">ზემო</span><span class="text-gray-400">]</span>
+<span class="italic text-gray-500">om.</span>                                 <span class="text-gray-400">S</span>                        </p>
+                        <p id="app-app.12.3" class="apparatus-entry pl-4 border-l-2 border-gray-100">
+                            <sup class="text-amber-600 mr-1">103</sup>
+                            <span class="font-medium">ტი τῇ</span><span class="text-gray-400">]</span>
+<span class="italic text-gray-500">om.</span>                                 <span class="text-gray-400">S</span>                        </p>
+                        <p id="app-app.12.4" class="apparatus-entry pl-4 border-l-2 border-gray-100">
+                            <sup class="text-amber-600 mr-1">104</sup>
+                            <span class="font-medium">ტენ ταῖν</span><span class="text-gray-400">]</span>
+<span class="italic text-gray-500">om.</span>                                 <span class="text-gray-400">S</span>                        </p>
+                        <p id="app-app.12.5" class="apparatus-entry pl-4 border-l-2 border-gray-100">
+                            <sup class="text-amber-600 mr-1">105</sup>
+                            <span class="font-medium">ტონ</span><span class="text-gray-400">]</span>
+<span>ტჳნ</span>                                 <span class="text-gray-400">S</span>                        </p>
+                        <p id="app-app.12.6" class="apparatus-entry pl-4 border-l-2 border-gray-100">
+                            <sup class="text-amber-600 mr-1">106</sup>
+                            <span class="font-medium">ტეს ταῖς</span><span class="text-gray-400">]</span>
+<span class="italic text-gray-500">om.</span>                                 <span class="text-gray-400">S</span>                        </p>
                     </div>
                 </div>
             </section>
@@ -434,7 +518,7 @@ section:hover .section-anchor {
             
         </div>
         
-        <!-- Lexicon Popup (positioned by JS) -->
+        <!-- Lexicon Popup (positioned by JS) with LOD support -->
         <div id="lexicon-popup" class="lexicon-popup">
             <div class="p-3">
                 <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -444,11 +528,21 @@ section:hover .section-anchor {
                 <p id="popup-greek" class="text-sm text-gray-500 greek mb-1.5"></p>
                 <p id="popup-def" class="text-sm text-gray-600 leading-relaxed"></p>
             </div>
-            <div class="px-3 py-2 bg-gray-50 border-t border-gray-100 rounded-b-lg">
+            <div class="px-3 py-2 bg-gray-50 border-t border-gray-100 rounded-b-lg flex items-center justify-between">
                 <a id="popup-link" href="#" class="text-xs text-indigo-600 hover:text-indigo-800 flex items-center gap-1">
                     სრულად ლექსიკონში
                     <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                </a>
+                <!-- LOD Link (shown when entry has corresp) -->
+                <a id="popup-lod" href="#" target="_blank" rel="noopener"
+                   class="lod-badge flex items-center gap-1"
+                   style="display: none;"
+                   title="Linked Open Data">
+                    <span id="popup-lod-label">OLiA</span>
+                    <svg class="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                     </svg>
                 </a>
             </div>
@@ -491,8 +585,8 @@ section:hover .section-anchor {
     </footer>
     
 <script>
-// Lexicon data embedded from build
-const lexiconData = {"lex.arthron": {"lemma": "ართრონი", "greek": null, "pos": null, "def": "განსაზღვრებითი ნაწევარი", "def_en": "definite article"}, "lex.arthroniani": {"lemma": "ართრონიანი", "greek": null, "pos": null, "def": "არტიკლიანი", "def_en": ""}, "lex.uarthrono": {"lemma": "უართრონო", "greek": null, "pos": null, "def": "უარტიკლო; ართრონის გარეშე", "def_en": ""}, "lex.leqsi": {"lemma": "ლექსი", "greek": null, "pos": null, "def": "სიტყვა, ტერმინი", "def_en": ""}, "lex.leqseulad": {"lemma": "ლექსეულად", "greek": null, "pos": null, "def": "სიტყვა-სიტყვით", "def_en": ""}, "lex.masc": {"lemma": "მამალი", "greek": null, "pos": null, "def": "მამრობითი სქესი", "def_en": ""}, "lex.fem": {"lemma": "დედალი", "greek": null, "pos": null, "def": "მდედრობითი სქესი", "def_en": ""}, "lex.neut": {"lemma": "შუაჲ", "greek": null, "pos": null, "def": "საშუალო სქესი", "def_en": ""}, "lex.agebuli": {"lemma": "აგებული", "greek": null, "pos": null, "def": "შექმნილი, მატერიალური, არსებული", "def_en": ""}, "lex.antipa": {"lemma": "ანტიპა", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.arianozi": {"lemma": "არიანოზ-ი", "greek": null, "pos": null, "def": "არიოსის მიმდევარი, მწვალებელი", "def_en": ""}, "lex.aghgeba": {"lemma": "აღგება", "greek": null, "pos": null, "def": "შექმნა", "def_en": ""}, "lex.aghvseba": {"lemma": "აღვსება", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.aghmgebeli": {"lemma": "აღმგებელი", "greek": null, "pos": null, "def": "შემქმნელი", "def_en": ""}, "lex.aghmoceneba": {"lemma": "აღმოცენება", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.aghmochra": {"lemma": "აღმოჭრა", "greek": null, "pos": null, "def": "მოსპობა", "def_en": ""}, "lex.aghmojdoma": {"lemma": "აღმოჯდომა", "greek": null, "pos": null, "def": "ამოსვლა", "def_en": ""}, "lex.aghrackhuli": {"lemma": "აღრაცხული", "greek": null, "pos": null, "def": "ჩათვლილი", "def_en": ""}, "lex.aghqvaneba": {"lemma": "აღყვანება", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.borgneuli": {"lemma": "ბორგნეული", "greek": null, "pos": null, "def": "მებრძოლი", "def_en": ""}, "lex.brgunva": {"lemma": "ბრგუნვა", "greek": null, "pos": null, "def": "ენამძიმედ, ენადაბმულად მეტყველება", "def_en": ""}, "lex.brgunvili": {"lemma": "ბრგუნვილი", "greek": null, "pos": null, "def": "ცუდად, მძიმედ გამოთქმული", "def_en": ""}, "lex.buneba": {"lemma": "ბუნება", "greek": null, "pos": null, "def": "მატერიალური, ფიზიკური ნაწილი (სხეულისა)", "def_en": ""}, "lex.gamometqueli": {"lemma": "გამომეტყუელი", "greek": null, "pos": null, "def": "მთხრობი, ავტორი", "def_en": ""}, "lex.gamomtkhovneli": {"lemma": "გამომთხოვნელი", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.gamoparva": {"lemma": "გამოპარვა", "greek": null, "pos": null, "def": "უჩუმრად, შეუმჩნევლად შემოსვლა", "def_en": ""}, "lex.gamosachinebeli": {"lemma": "გამოსაჩინებელი", "greek": null, "pos": null, "def": "მაგალითი", "def_en": ""}, "lex.ganmtkumeli": {"lemma": "განმთქუმელი", "greek": null, "pos": null, "def": "განმცხადებელი, ამბის გამავრცელებელი", "def_en": ""}, "lex.ganmkacreba": {"lemma": "განმკაცრება", "greek": null, "pos": null, "def": "დაწვრილებით გამოძიება, ჩაძიება", "def_en": ""}, "lex.ganmcdeloba": {"lemma": "განმცდელობა", "greek": null, "pos": null, "def": "ცდა", "def_en": ""}, "lex.ganmkhilveli": {"lemma": "განმხილველი", "greek": null, "pos": null, "def": "განხილვა, მოფიქრება (მთხრელები?)", "def_en": ""}, "lex.ganmvedreba": {"lemma": "განმვედრება", "greek": null, "pos": null, "def": "გაძლიერება", "def_en": ""}, "lex.gansazghvreba": {"lemma": "განსაზღვრება", "greek": null, "pos": null, "def": "განსაზღვრა, დადგენა", "def_en": ""}, "lex.gansazghvrebuli": {"lemma": "განსაზღვრებული", "greek": null, "pos": null, "def": "დადგენილი", "def_en": ""}, "lex.ganqofileba": {"lemma": "განყოფილება", "greek": null, "pos": null, "def": "განსხვავებულობა, სხვადასხვაობა", "def_en": ""}, "lex.ganchineba": {"lemma": "განჩინებაი", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.gancdili": {"lemma": "განცდილი", "greek": null, "pos": null, "def": "ნახული", "def_en": ""}, "lex.ganckhadebuli": {"lemma": "განცხადებული", "greek": null, "pos": null, "def": "აშკარა, თვალით სახილველი", "def_en": ""}, "lex.gardadgoma": {"lemma": "გარდადგომა", "greek": null, "pos": null, "def": "გადაადგილება, ადგილის შეცვლა", "def_en": ""}, "lex.gonieri": {"lemma": "გონიერი", "greek": null, "pos": null, "def": "გონებით წარმოდგენილი, არამატერიალური", "def_en": ""}, "lex.grdznobadi": {"lemma": "გრძნობადი", "greek": null, "pos": null, "def": "შეგრძნებადი, მატერიალური", "def_en": ""}, "lex.gulvebadi": {"lemma": "გულვებადი", "greek": null, "pos": null, "def": "მომავალი, მყოფადი", "def_en": ""}, "lex.dadgineba": {"lemma": "დადგინება", "greek": null, "pos": null, "def": "დაყენება, გაჩერება", "def_en": ""}, "lex.daknineba": {"lemma": "დაკნინებაი", "greek": null, "pos": null, "def": "დამცირება", "def_en": ""}, "lex.dambechdveli": {"lemma": "დამბეჭდველი", "greek": null, "pos": null, "def": "განმამტკიცებელი, დამმოწმებელი", "def_en": ""}, "lex.damtkhuevit": {"lemma": "დამთხუევით", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.dampqrobeli": {"lemma": "დამპყრობელი", "greek": null, "pos": null, "def": "ძლევამოსილი, გაბატონებული", "def_en": ""}, "lex.dasabami": {"lemma": "დასაბამი", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.dasatevneli": {"lemma": "დასატევნელი", "greek": null, "pos": null, "def": "შესაძლებელი", "def_en": ""}, "lex.datevna": {"lemma": "დატევნა", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.daqenebuli": {"lemma": "დაყენებული", "greek": null, "pos": null, "def": "აკრძალული, მიუღებელი", "def_en": ""}, "lex.daqofili": {"lemma": "დაყოფილი", "greek": null, "pos": null, "def": "დახშული, დახურული", "def_en": ""}, "lex.dajsna": {"lemma": "დაჯსნა", "greek": null, "pos": null, "def": "მოსპობა", "def_en": ""}, "lex.dreka": {"lemma": "დრეკა", "greek": null, "pos": null, "def": "ბრუნება", "def_en": ""}, "lex.eksoria": {"lemma": "ექსორია", "greek": null, "pos": null, "def": "გაძევება", "def_en": ""}, "lex.vidreme": {"lemma": "ვიდრემე", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.vrcelmetqueleba": {"lemma": "ვრცელ-მეტყუელებაი", "greek": null, "pos": null, "def": "ვრცლად, გრძლად ლაპარაკი", "def_en": ""}, "lex.tanamoqmedi": {"lemma": "თანა-მოქმედი", "greek": null, "pos": null, "def": "ერთად მოქმედი", "def_en": ""}, "lex.tanaqceva": {"lemma": "თანა-ქცევა", "greek": null, "pos": null, "def": "ერთად ყოფნა", "def_en": ""}, "lex.theos": {"lemma": "ღმერთი", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.trias": {"lemma": "სამება", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.iataki": {"lemma": "იატაკი", "greek": null, "pos": null, "def": "საფუძველი, ძირი", "def_en": ""}, "lex.iefoba": {"lemma": "იეფობაი", "greek": null, "pos": null, "def": "სიუხვე, მრავლად ყოფნა", "def_en": ""}, "lex.kacobrivi": {"lemma": "კაცობრივი", "greek": null, "pos": null, "def": "ადამიანური, ადამიანისათzს დამახასიათებელი", "def_en": ""}, "lex.martivi": {"lemma": "მარტივი", "greek": null, "pos": null, "def": "უბრალო, განუსწავლელი", "def_en": ""}, "lex.mgulebeli": {"lemma": "მგულებელი", "greek": null, "pos": null, "def": "მსურველი, განზრახველი", "def_en": ""}, "lex.mezobloba": {"lemma": "მეზობლობა", "greek": null, "pos": null, "def": "ახლოს ცხოვრება, მეზობლად ყოფნა", "def_en": ""}, "lex.mecnieri": {"lemma": "მეცნიერი", "greek": null, "pos": null, "def": "მცოდნე", "def_en": ""}, "lex.mitualva": {"lemma": "მითუალვა", "greek": null, "pos": null, "def": "მიღება", "def_en": ""}, "lex.mifarulqmnili": {"lemma": "მიფარულ-ქმნილი", "greek": null, "pos": null, "def": "დაფარული", "def_en": ""}, "lex.miquma": {"lemma": "მიქუმა", "greek": null, "pos": null, "def": "აყვანა", "def_en": ""}, "lex.mmcqseli": {"lemma": "მმწყსელი", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.mnebebeloba": {"lemma": "მნებებელობა", "greek": null, "pos": null, "def": "მოსურვება", "def_en": ""}, "lex.moakhleba": {"lemma": "მოახლება", "greek": null, "pos": null, "def": "მოახლოვება", "def_en": ""}, "lex.mogoneba": {"lemma": "მოგონებაი", "greek": null, "pos": null, "def": "გააზრება, გაგება", "def_en": ""}, "lex.molodebadi": {"lemma": "მოლოდებადი", "greek": null, "pos": null, "def": "მომავალი, მყოფადი", "def_en": ""}, "lex.momvachrebeli": {"lemma": "მომვაჭრებელი", "greek": null, "pos": null, "def": "შემსრულებელი, საქმის აღმსრულებელი", "def_en": ""}, "lex.momchirneoba": {"lemma": "მომჭირნეობაი", "greek": null, "pos": null, "def": "მოთმინება, ჭირთა თმენა", "def_en": ""}, "lex.mosajuloba": {"lemma": "მოსაჯულობაი", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.moqaduli": {"lemma": "მოქადული", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.moqalaqoba": {"lemma": "მოქალაქობა", "greek": null, "pos": null, "def": "ცხოვრება, მოქმედება", "def_en": ""}, "lex.mocapeqofa": {"lemma": "მოწაფე-ყოფაი", "greek": null, "pos": null, "def": "დამოწაფება, დამორჩილება", "def_en": ""}, "lex.mravalghmrteeba": {"lemma": "მრავალღმრთეებაი", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.mqcevaroba": {"lemma": "მქცევარობაი", "greek": null, "pos": null, "def": "სიარული, მიმოსვლა", "def_en": ""}, "lex.mqceoba": {"lemma": "მქცეობაი", "greek": null, "pos": null, "def": "თვისება, საქციელი", "def_en": ""}, "lex.mdzlavrebuli": {"lemma": "მძლავრებული", "greek": null, "pos": null, "def": "დაძლეული, დაჯაბნებული", "def_en": ""}, "lex.mknoba": {"lemma": "მკნობა", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.nametavi": {"lemma": "ნამეტავი", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.orghano": {"lemma": "ორღანო", "greek": null, "pos": null, "def": "იარაღი, ორგანო", "def_en": ""}, "lex.ridoba": {"lemma": "რიდობაი", "greek": null, "pos": null, "def": "მოკრძალება, კრძალვა", "def_en": ""}, "lex.ritori": {"lemma": "რიტორი", "greek": null, "pos": null, "def": "ორატორი, მჭევრმეტყველი", "def_en": ""}, "lex.satanasdebo": {"lemma": "სათანამდებოი", "greek": null, "pos": null, "def": "საჭირო, დასაშვები", "def_en": ""}, "lex.samscuali": {"lemma": "სამსჭუალი", "greek": null, "pos": null, "def": "ლურსმანი", "def_en": ""}, "lex.sanadiro": {"lemma": "სანადიროი", "greek": null, "pos": null, "def": "მისაგნებელი, დასაჭერი", "def_en": ""}, "lex.saolavi": {"lemma": "საოლავი", "greek": null, "pos": null, "def": "აშია; კიდე", "def_en": ""}, "lex.sartuli": {"lemma": "სართული", "greek": null, "pos": null, "def": "სახურავი; ზეცა (მეტაფორულად)", "def_en": ""}, "lex.sasmeneli": {"lemma": "სასმენელი", "greek": null, "pos": null, "def": "ყური", "def_en": ""}, "lex.sasjelisqueshe": {"lemma": "სასჯელის-ქუეშე", "greek": null, "pos": null, "def": "დასასჯელი", "def_en": ""}, "lex.sashuro": {"lemma": "საშუროი", "greek": null, "pos": null, "def": "საჩქარო", "def_en": ""}, "lex.sacuto": {"lemma": "საწუთოი", "greek": null, "pos": null, "def": "წუთისოფელი", "def_en": ""}, "lex.sactomeli": {"lemma": "საცთომელი", "greek": null, "pos": null, "def": "შესაცდენელი", "def_en": ""}, "lex.sakmareba": {"lemma": "საკმარებაი", "greek": null, "pos": null, "def": "საჭიროება", "def_en": ""}, "lex.siadre": {"lemma": "სიადრე", "greek": null, "pos": null, "def": "სიჩქარე", "def_en": ""}, "lex.sircxvleuli": {"lemma": "სირცხვლეული", "greek": null, "pos": null, "def": "შერცხვენილი", "def_en": ""}, "lex.sruleba": {"lemma": "სრულებაი", "greek": null, "pos": null, "def": "სრულყოფილება, სავსება", "def_en": ""}, "lex.sulisambrdzoli": {"lemma": "სულისა მბრძოლი", "greek": null, "pos": null, "def": "მწვალებელი (მაკედონიანელი)", "def_en": ""}, "lex.skntema": {"lemma": "სკნთემაი", "greek": null, "pos": null, "def": "თან-შედგმა, შეწყობა", "def_en": ""}, "lex.tanjva": {"lemma": "ტანჯვა", "greek": null, "pos": null, "def": "ბრძოლა", "def_en": ""}, "lex.turtva": {"lemma": "ტურთვა", "greek": null, "pos": null, "def": "აღება, ხელში აყვანა", "def_en": ""}, "lex.uidzulebeli": {"lemma": "უიძულებელი", "greek": null, "pos": null, "def": "თავისთავადი, არა-ნაძალადევი", "def_en": ""}, "lex.ukunsaqceveli": {"lemma": "უკუნსაქცეველი", "greek": null, "pos": null, "def": "უარსაყოფელი", "def_en": ""}, "lex.umkuetelesi": {"lemma": "უმკუეთელესი", "greek": null, "pos": null, "def": "უფრო მჭრელი", "def_en": ""}, "lex.usamartloeba": {"lemma": "უსამართლოება", "greek": null, "pos": null, "def": "უსამართლოების ჩადენა", "def_en": ""}, "lex.uqorcinebeli": {"lemma": "უქორწინებელი", "greek": null, "pos": null, "def": "გაუთხოვარი", "def_en": ""}, "lex.uquenaesi": {"lemma": "უქუენაესი", "greek": null, "pos": null, "def": "უმდაბლესი", "def_en": ""}, "lex.ughelvo": {"lemma": "უღელვო", "greek": null, "pos": null, "def": "დაწყნარებული, დამშვიდებული", "def_en": ""}, "lex.ughono": {"lemma": "უღონო", "greek": null, "pos": null, "def": "უძლური", "def_en": ""}, "lex.ughonoeba": {"lemma": "უღონოება", "greek": null, "pos": null, "def": "საშუალების, ღონის ვერ პოვნა", "def_en": ""}, "lex.frtoanqmna": {"lemma": "ფრთოან-ქმნაი", "greek": null, "pos": null, "def": "ფრთების შესხმა", "def_en": ""}, "lex.qandakebuli": {"lemma": "ქანდაკებული", "greek": null, "pos": null, "def": "გამოძერწილი", "def_en": ""}, "lex.quequemo": {"lemma": "ქუე-ქუემოი", "greek": null, "pos": null, "def": "ქვედა ჩასაცმელი?", "def_en": ""}, "lex.ghuacli": {"lemma": "ღუაწლი", "greek": null, "pos": null, "def": "ბრძოლა", "def_en": ""}, "lex.qovlisampqrobeli": {"lemma": "ყოვლისა მპყრობელი", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.qovlisampqrobelibri": {"lemma": "ყოვლისამპყრობელებრი", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.sharavandedi": {"lemma": "შარავანდედი", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.sheachrdilebuli": {"lemma": "შეაჩრდილებული", "greek": null, "pos": null, "def": "ბნელი, გაუგებარი, არანათელი", "def_en": ""}, "lex.shebavteba": {"lemma": "შებავთება", "greek": null, "pos": null, "def": "სიტყვსა ცუდის თქმა", "def_en": ""}, "lex.shemdgomoba": {"lemma": "შემდგომობაი", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.shemomnivtebeli": {"lemma": "შემომნივთებელი", "greek": null, "pos": null, "def": "მატერიალურად გარდამქცეველი", "def_en": ""}, "lex.shemortuma": {"lemma": "შემორთუმა", "greek": null, "pos": null, "def": "დამატება, შემატება", "def_en": ""}, "lex.shemosruli": {"lemma": "შემოსრული", "greek": null, "pos": null, "def": "", "def_en": ""}, "lex.shemrghueva": {"lemma": "შემრღუევა", "greek": null, "pos": null, "def": "გონების არევა, ამღვრევა", "def_en": ""}, "lex.shemchrdilveli": {"lemma": "შემჩრდილველი", "greek": null, "pos": null, "def": "დამაბნელებელი, დამფარველი", "def_en": ""}, "lex.shemcinquleba": {"lemma": "შემწინკულება", "greek": null, "pos": null, "def": "წაბილწვა, დასვრა", "def_en": ""}, "lex.shenacevreba": {"lemma": "შენაწევრება", "greek": null, "pos": null, "def": "შეერთება", "def_en": ""}, "lex.shesadginebeli": {"lemma": "შესადგინებელი", "greek": null, "pos": null, "def": "შემდგომად მოსასვლელი, მომდევნო", "def_en": ""}, "lex.shishueli": {"lemma": "შიშუელი", "greek": null, "pos": null, "def": "დაუფარავი, აშკარა, უშუალო", "def_en": ""}, "lex.cmeli": {"lemma": "ცმელი", "greek": null, "pos": null, "def": "ცხიმი, ქონი", "def_en": ""}, "lex.dzvnad": {"lemma": "ძვნად", "greek": null, "pos": null, "def": "საწინააღმდეგოდ", "def_en": ""}, "lex.dzlit": {"lemma": "ძლით", "greek": null, "pos": null, "def": "მიზეზით, საშუალებით", "def_en": ""}, "lex.carmodgineba": {"lemma": "წარმოდგინება", "greek": null, "pos": null, "def": "ჩვენება", "def_en": ""}, "lex.caroteba": {"lemma": "წაროტება", "greek": null, "pos": null, "def": "გაგდება, გაძევება", "def_en": ""}, "lex.cdeva": {"lemma": "წდევა", "greek": null, "pos": null, "def": "დასხმა სითხისა", "def_en": ""}, "lex.cesi": {"lemma": "წესი", "greek": null, "pos": null, "def": "დაწყობილება, განლაგება", "def_en": ""}, "lex.ciagh": {"lemma": "წიაღ", "greek": null, "pos": null, "def": "კალთა, უბე", "def_en": ""}, "lex.khelovanmetqueleba": {"lemma": "ჴელოვან-მეტყუელება", "greek": null, "pos": null, "def": "არასწორის თქმა", "def_en": ""}, "lex.khumeuli": {"lemma": "ჴუმეული", "greek": null, "pos": null, "def": "დაკლებული", "def_en": ""}, "lex.adviloba": {"lemma": "ადვილობა", "greek": null, "pos": null, "def": "მარტივი, სახელობითი ბრუნვა", "def_en": ""}, "lex.gen": {"lemma": "შობილობითი", "greek": null, "pos": null, "def": "ნათესაობითი ბრუნვა", "def_en": ""}, "lex.dat": {"lemma": "მიცემითი", "greek": null, "pos": null, "def": "მიცემითი ბრუნვა", "def_en": ""}, "lex.acc": {"lemma": "მიზეზობითი", "greek": null, "pos": null, "def": "ბრალდებითი ბრუნვა", "def_en": ""}, "lex.voc": {"lemma": "წოდებითი", "greek": null, "pos": null, "def": "წოდებითი ბრუნვა", "def_en": ""}, "lex.sing": {"lemma": "ერთობითი", "greek": null, "pos": null, "def": "მხოლობითი რიცხვი", "def_en": ""}, "lex.dual": {"lemma": "ორობითი", "greek": null, "pos": null, "def": "ორობითი რიცხვი", "def_en": ""}, "lex.plural": {"lemma": "განმრავლებითი", "greek": null, "pos": null, "def": "მრავლობითი რიცხვი", "def_en": ""}, "lex.pneuma": {"lemma": "სული", "greek": null, "pos": null, "def": "", "def_en": ""}};
+// Lexicon data embedded from build (now includes corresp for LOD)
+const lexiconData = {"lex.agebuli": {"lemma": "აგებული", "greek": null, "pos": null, "def": "შექმნილი, მატერიალური, არსებული.", "def_en": "", "corresp": null}, "lex.adviloba": {"lemma": "ადვილობა", "greek": null, "pos": null, "def": "მარტივი, სახელობითი ბრუნვა (ბერძნ. ὀνομαστική).", "def_en": "", "corresp": "http://purl.org/olia/olia.owl#Nominative"}, "lex.nom": {"lemma": "სახელობითი", "greek": null, "pos": null, "def": "", "def_en": "", "corresp": "http://purl.org/olia/olia.owl#Nominative"}, "lex.antipa": {"lemma": "ანტიპა", "greek": null, "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.arthron": {"lemma": "ართრონი", "greek": "ἄρθρον", "pos": null, "def": "განსაზღვრებითი ნაწევარი, არტიკლი.", "def_en": "", "corresp": "http://purl.org/olia/olia.owl#Article"}, "lex.arthroniani": {"lemma": "ართრონიანი", "greek": null, "pos": null, "def": "არტიკლიანი (სახელი).", "def_en": "", "corresp": null}, "lex.arianozi": {"lemma": "არიანოზი", "greek": null, "pos": null, "def": "არიოსის მიმდევარი, მწვალებელი.", "def_en": "", "corresp": null}, "lex.aghgeba": {"lemma": "აღგება", "greek": null, "pos": null, "def": "შექმნა.", "def_en": "", "corresp": null}, "lex.aghvseba": {"lemma": "აღვსება", "greek": null, "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.aghmgebeli": {"lemma": "აღმგებელი", "greek": "τεκταιნόμενος", "pos": null, "def": "შემქმნელი.", "def_en": "", "corresp": null}, "lex.aghmoceneba": {"lemma": "აღმოცენება", "greek": null, "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.aghmochra": {"lemma": "აღმოჭრა", "greek": null, "pos": null, "def": "მოსპობა.", "def_en": "", "corresp": null}, "lex.aghmokhdoma": {"lemma": "აღმოჴდომა", "greek": null, "pos": null, "def": "ამოსვლა.", "def_en": "", "corresp": null}, "lex.aghrackhuli": {"lemma": "აღრაცხული", "greek": null, "pos": null, "def": "ჩათვლილი.", "def_en": "", "corresp": null}, "lex.aghqvaneba": {"lemma": "აღყვანება", "greek": null, "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.borgneuli": {"lemma": "ბორგნეული", "greek": "λυττῶντες", "pos": null, "def": "მებრძოლი, აღგზნებული.", "def_en": "", "corresp": null}, "lex.brgunva": {"lemma": "ბრგუნვა", "greek": null, "pos": null, "def": "ენამძიმედ, ენადაბმულად მეტყველება.", "def_en": "", "corresp": null}, "lex.brgunvili": {"lemma": "ბრგუნვილი", "greek": null, "pos": null, "def": "ცუდად, მძიმედ გამოთქმული.", "def_en": "", "corresp": null}, "lex.buneba": {"lemma": "ბუნება", "greek": null, "pos": null, "def": "მატერიალური, ფიზიკური ნაწილი (სხეულისა).", "def_en": "", "corresp": null}, "lex.gamometqueli": {"lemma": "გამომეტყუელი", "greek": null, "pos": null, "def": "მთხრობი, ავტორი.", "def_en": "", "corresp": null}, "lex.gamomtkhovneli": {"lemma": "გამომთხოვნელი", "greek": null, "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.gamoparva": {"lemma": "გამოპარვა", "greek": null, "pos": null, "def": "უჩუმრად, შეუმჩნევლად შემოსვლა.", "def_en": "", "corresp": null}, "lex.gamosachinebeli": {"lemma": "გამოსაჩინებელი", "greek": null, "pos": null, "def": "მაგალითი.", "def_en": "", "corresp": null}, "lex.ganmtkumeli": {"lemma": "განმთქუმელი", "greek": "καταγγελεύς", "pos": null, "def": "განმცხადებელი, ამბის გამავრცელებელი.", "def_en": "", "corresp": null}, "lex.ganmkacreba": {"lemma": "განმკაცრება", "greek": "ἀκρίβεια", "pos": null, "def": "დაწვრილებით გამოძიება, ჩაძიება.", "def_en": "", "corresp": null}, "lex.ganmcdeloba": {"lemma": "განმცდელობა", "greek": null, "pos": null, "def": "ცდა.", "def_en": "", "corresp": null}, "lex.ganmkhilveli": {"lemma": "განმხილველი", "greek": null, "pos": null, "def": "განხილვა, მოფიქრება.", "def_en": "", "corresp": null}, "lex.ganmvedreba": {"lemma": "განმვედრება", "greek": null, "pos": null, "def": "გაძლიერება.", "def_en": "", "corresp": null}, "lex.gansazghvreba": {"lemma": "განსაზღვრება", "greek": "ὥρισεν", "pos": null, "def": "დადგენა.", "def_en": "", "corresp": null}, "lex.gansazghvrebuli": {"lemma": "განსაზღვრებული", "greek": null, "pos": null, "def": "დადგენილი.", "def_en": "", "corresp": null}, "lex.ganqofileba": {"lemma": "განყოფილება", "greek": null, "pos": null, "def": "განსხვავებულობა, სხვადასხვაობა.", "def_en": "", "corresp": null}, "lex.ganchineba": {"lemma": "განჩინება", "greek": null, "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.gancdili": {"lemma": "განცდილი", "greek": null, "pos": null, "def": "ნახული.", "def_en": "", "corresp": null}, "lex.ganckhadebuli": {"lemma": "განცხადებული", "greek": null, "pos": null, "def": "აშკარა, თვალით სახილველი.", "def_en": "", "corresp": null}, "lex.gardadgoma": {"lemma": "გარდადგომა", "greek": null, "pos": null, "def": "გადაადგილება, ადგილის შეცვლა.", "def_en": "", "corresp": null}, "lex.gonieri": {"lemma": "გონიერი", "greek": null, "pos": null, "def": "გონებით წარმოდგენილი, არამატერიალური.", "def_en": "", "corresp": null}, "lex.grdznobadi": {"lemma": "გრძნობადი", "greek": null, "pos": null, "def": "შეგრძნებადი, მატერიალური.", "def_en": "", "corresp": null}, "lex.gulvebadi": {"lemma": "გულვებადი", "greek": "μέλλουσα", "pos": null, "def": "მომავალი, მყოფადი.", "def_en": "", "corresp": null}, "lex.dadgineba": {"lemma": "დადგინება", "greek": null, "pos": null, "def": "დაყენება, გაჩერება.", "def_en": "", "corresp": null}, "lex.daknineba": {"lemma": "დაკნინება", "greek": null, "pos": null, "def": "დამცირება.", "def_en": "", "corresp": null}, "lex.dambechdveli": {"lemma": "დამბეჭდველი", "greek": null, "pos": null, "def": "განმამტკიცებელი, დამმოწმებელი.", "def_en": "", "corresp": null}, "lex.damtkhuevit": {"lemma": "დამთხუევით", "greek": null, "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.dampqrobeli": {"lemma": "დამპყრობელი", "greek": null, "pos": null, "def": "ძლევამოსილი, გაბატონებული.", "def_en": "", "corresp": null}, "lex.dasabami": {"lemma": "დასაბამი", "greek": "ἐν ἀρχῇ", "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.dasatevneli": {"lemma": "დასატევნელი", "greek": null, "pos": null, "def": "შესაძლებელი.", "def_en": "", "corresp": null}, "lex.datevna": {"lemma": "დატევნა", "greek": null, "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.daqenebuli": {"lemma": "დაყენებული", "greek": null, "pos": null, "def": "აკრძალული, მიუღებელი.", "def_en": "", "corresp": null}, "lex.daqofili": {"lemma": "დაყოფილი", "greek": null, "pos": null, "def": "დახშული, დახურული.", "def_en": "", "corresp": null}, "lex.dajsna": {"lemma": "დაჴსნა", "greek": null, "pos": null, "def": "მოსპობა.", "def_en": "", "corresp": null}, "lex.dreka": {"lemma": "დრეკა", "greek": null, "pos": null, "def": "ბრუნება (სახელთა).", "def_en": "Declension.", "corresp": "http://purl.org/olia/olia.owl#Case"}, "lex.ertpativi": {"lemma": "ერთ-პატივი", "greek": null, "pos": null, "def": "თანასწორპატივდებული.", "def_en": "", "corresp": null}, "lex.ertkhmaoba": {"lemma": "ერთ-ჴმაობა", "greek": null, "pos": null, "def": "ერთიანობა, შეთანხმებულობა.", "def_en": "", "corresp": null}, "lex.eksoria": {"lemma": "ექსორია", "greek": "ἐξορία", "pos": null, "def": "გაძევება.", "def_en": "", "corresp": null}, "lex.vidreme": {"lemma": "ვიდრემე", "greek": null, "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.vrcelmetqueleba": {"lemma": "ვრცელ-მეტყუელება", "greek": "μακρηγορία", "pos": null, "def": "ვრცლად, გრძლად ლაპარაკი.", "def_en": "", "corresp": null}, "lex.tanamoqmedi": {"lemma": "თანა-მოქმედი", "greek": null, "pos": null, "def": "ერთად მოქმედი.", "def_en": "", "corresp": null}, "lex.tanaqceva": {"lemma": "თანა-ქცევა", "greek": null, "pos": null, "def": "ერთად ყოფნა.", "def_en": "", "corresp": null}, "lex.theos": {"lemma": "ღმერთი", "greek": "θεός", "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.iataki": {"lemma": "იატაკი", "greek": "ἔდაφος", "pos": null, "def": "საფუძველი, ძირი.", "def_en": "", "corresp": null}, "lex.iefoba": {"lemma": "იეფობა", "greek": "ἐν ἐυθηნίᾳ", "pos": null, "def": "სიუხვე, მრავლად ყოფნა.", "def_en": "", "corresp": null}, "lex.kacobrivi": {"lemma": "კაცობრივი", "greek": null, "pos": null, "def": "ადამიანური, ადამიანისათვის დამახასიათებელი.", "def_en": "", "corresp": null}, "lex.leqsi": {"lemma": "ლექსი", "greek": "λέξις", "pos": null, "def": "სიტყვა, ტერმინი.", "def_en": "", "corresp": null}, "lex.leqseulad": {"lemma": "ლექსეულად", "greek": "καტὰ λέξιν", "pos": null, "def": "სიტყვა-სიტყვით.", "def_en": "", "corresp": null}, "lex.masc": {"lemma": "მამალი", "greek": null, "pos": null, "def": "მამრობითი სქესი (ბერძნ. ἀρσενικόν).", "def_en": "", "corresp": "http://purl.org/olia/olia.owl#Masculine"}, "lex.fem": {"lemma": "დედალი", "greek": null, "pos": null, "def": "მდედრობითი სქესი (ბერძნ. θηλυκόν).", "def_en": "", "corresp": "http://purl.org/olia/olia.owl#Feminine"}, "lex.neut": {"lemma": "შუაჲ", "greek": null, "pos": null, "def": "საშუალო სქესი (ბერძნ. οὐδέτερον).", "def_en": "", "corresp": "http://purl.org/olia/olia.owl#Neuter"}, "lex.martivi": {"lemma": "მარტივი", "greek": null, "pos": null, "def": "უბრალო, განუსწავლელი.", "def_en": "", "corresp": null}, "lex.mgulebeli": {"lemma": "მგულებელი", "greek": null, "pos": null, "def": "მსურველი, განზრახველი.", "def_en": "", "corresp": null}, "lex.mecnieri": {"lemma": "მეცნიერი", "greek": null, "pos": null, "def": "მცოდნე.", "def_en": "", "corresp": null}, "lex.mitualva": {"lemma": "მითუალვა", "greek": null, "pos": null, "def": "მიღება.", "def_en": "", "corresp": null}, "lex.mifarulqmnili": {"lemma": "მიფარულ-ქმნილი", "greek": "οἰκουμένη", "pos": null, "def": "დაფარული.", "def_en": "", "corresp": null}, "lex.miquma": {"lemma": "მიქუმა", "greek": null, "pos": null, "def": "აყვანა.", "def_en": "", "corresp": null}, "lex.mmcqseli": {"lemma": "მმწყსელი", "greek": null, "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.mnebebeloba": {"lemma": "მნებებელობა", "greek": null, "pos": null, "def": "მოსურვება.", "def_en": "", "corresp": null}, "lex.moakhleba": {"lemma": "მოახლება", "greek": "ἐγγίζει", "pos": null, "def": "მოახლოვება.", "def_en": "", "corresp": null}, "lex.mogoneba": {"lemma": "მოგონება", "greek": null, "pos": null, "def": "გააზრება, გაგება.", "def_en": "", "corresp": null}, "lex.molodebadi": {"lemma": "მოლოდებადი", "greek": null, "pos": null, "def": "მომავალი, მყოფადი.", "def_en": "", "corresp": null}, "lex.momvachrebeli": {"lemma": "მომვაჭრებელი", "greek": "πραγματευόμενος", "pos": null, "def": "შემსრულებელი, საქმის აღმსრულებელი.", "def_en": "", "corresp": null}, "lex.momchirneoba": {"lemma": "მომჭირნეობა", "greek": "ὑπομονή", "pos": null, "def": "მოთმინება, ჭირთა თმენა.", "def_en": "", "corresp": null}, "lex.mosajuloba": {"lemma": "მოსაჯულობა", "greek": null, "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.moqaduli": {"lemma": "მოქადული", "greek": null, "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.moqalaqoba": {"lemma": "მოქალაქობა", "greek": "ἐμπολιτεύεται", "pos": null, "def": "ცხოვრება, მოქმედება.", "def_en": "", "corresp": null}, "lex.mocapeqofa": {"lemma": "მოწაფე-ყოფა", "greek": null, "pos": null, "def": "დამოწაფება, დამორჩილება.", "def_en": "", "corresp": null}, "lex.mravalghmrteeba": {"lemma": "მრავალღმრთეება", "greek": null, "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.mqcevaroba": {"lemma": "მქცევარობა", "greek": null, "pos": null, "def": "სიარული, მიმოსვლა.", "def_en": "", "corresp": null}, "lex.mqceoba": {"lemma": "მქცეობაი", "greek": null, "pos": null, "def": "თვისება, საქციელი, ბუნება.", "def_en": "", "corresp": null}, "lex.mdzlavrebuli": {"lemma": "მძლავრებული", "greek": null, "pos": null, "def": "დაძლეული, დაჯაბნებული.", "def_en": "", "corresp": null}, "lex.mkhnoba": {"lemma": "მჴნობა", "greek": null, "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.nametavi": {"lemma": "ნამეტავი", "greek": null, "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.orghano": {"lemma": "ორღანო", "greek": "ὄργανον", "pos": null, "def": "იარაღი, ორგანო.", "def_en": "", "corresp": null}, "lex.ridoba": {"lemma": "რიდობა", "greek": null, "pos": null, "def": "მოკრძალება, კრძალვა.", "def_en": "", "corresp": null}, "lex.ritori": {"lemma": "რიტორი", "greek": "ῥήτωρ", "pos": null, "def": "ორატორი, მჭევრმეტყველი.", "def_en": "", "corresp": null}, "lex.satanasdebo": {"lemma": "სათანამდებო", "greek": null, "pos": null, "def": "საჭირო, დასაშვები.", "def_en": "", "corresp": null}, "lex.samscuali": {"lemma": "სამსჭუალი", "greek": null, "pos": null, "def": "ლურსმანი.", "def_en": "", "corresp": null}, "lex.sanadiro": {"lemma": "სანადირო", "greek": null, "pos": null, "def": "მისაგნებელი, დასაჭერი.", "def_en": "", "corresp": null}, "lex.saolavi": {"lemma": "საოლავი", "greek": null, "pos": null, "def": "აშია, კიდე.", "def_en": "", "corresp": null}, "lex.sartuli": {"lemma": "სართული", "greek": "ὄροφος", "pos": null, "def": "სახურავი; ზეცა (მეტაფორულად).", "def_en": "", "corresp": null}, "lex.sasmeneli": {"lemma": "სასმენელი", "greek": null, "pos": null, "def": "ყური.", "def_en": "", "corresp": null}, "lex.sasjelisqueshe": {"lemma": "სასჯელის-ქუეშე", "greek": null, "pos": null, "def": "დასასჯელი.", "def_en": "", "corresp": null}, "lex.sashuro": {"lemma": "საშურო", "greek": null, "pos": null, "def": "საჩქარო.", "def_en": "", "corresp": null}, "lex.sacuto": {"lemma": "საწუთო", "greek": null, "pos": null, "def": "წუთისოფელი.", "def_en": "", "corresp": null}, "lex.sactomeli": {"lemma": "საცთომელი", "greek": null, "pos": null, "def": "შესაცდენელი.", "def_en": "", "corresp": null}, "lex.sakmareba": {"lemma": "საკმარება", "greek": null, "pos": null, "def": "საჭიროება.", "def_en": "", "corresp": null}, "lex.siadre": {"lemma": "სიადრე", "greek": null, "pos": null, "def": "სიჩქარე.", "def_en": "", "corresp": null}, "lex.sircxvleuli": {"lemma": "სირცხჳლეული", "greek": null, "pos": null, "def": "შერცხვენილი.", "def_en": "", "corresp": null}, "lex.sruleba": {"lemma": "სრულება", "greek": null, "pos": null, "def": "სრულყოფილება, სავსება.", "def_en": "", "corresp": null}, "lex.sulisambrdzoli": {"lemma": "სულისა მბრძოლი", "greek": "πνევματομάχος", "pos": null, "def": "პნევმატომახი; მწვალებელი.", "def_en": "", "corresp": null}, "lex.skntema": {"lemma": "სკნთემა", "greek": "σύνθεμα", "pos": null, "def": "თან-შედგმა, შეწყობა.", "def_en": "", "corresp": null}, "lex.tanjva": {"lemma": "ტანჯვა", "greek": null, "pos": null, "def": "ბრძოლა.", "def_en": "", "corresp": null}, "lex.turtva": {"lemma": "ტურთვა", "greek": null, "pos": null, "def": "აღება, ხელში აყვანა.", "def_en": "", "corresp": null}, "lex.uarthrono": {"lemma": "უართრონო", "greek": null, "pos": null, "def": "უარტიკლო (ბერძნ. ἀνάρθρον).", "def_en": "", "corresp": null}, "lex.uidzulebeli": {"lemma": "უიძულებელი", "greek": null, "pos": null, "def": "თავისთავადი, არა-ნაძალადევი.", "def_en": "", "corresp": null}, "lex.ukunsaqceveli": {"lemma": "უკუნსაქცეველი", "greek": null, "pos": null, "def": "უარსაყოფელი.", "def_en": "", "corresp": null}, "lex.umkuetelesi": {"lemma": "უმკუეთელესი", "greek": null, "pos": null, "def": "უფრო მჭრელი.", "def_en": "", "corresp": null}, "lex.usamartloeba": {"lemma": "უსამართლოება", "greek": null, "pos": null, "def": "უსამართლოების ჩადენა.", "def_en": "", "corresp": null}, "lex.uqorcinebeli": {"lemma": "უქორწინებელი", "greek": null, "pos": null, "def": "გაუთხოვარი.", "def_en": "", "corresp": null}, "lex.uquenaesi": {"lemma": "უქუენაესი", "greek": null, "pos": null, "def": "უმდაბლესი.", "def_en": "", "corresp": null}, "lex.ughelvo": {"lemma": "უღელვო", "greek": "ἀκύმαντον", "pos": null, "def": "დაწყნარებული, დამშვიდებული.", "def_en": "", "corresp": null}, "lex.ughono": {"lemma": "უღონო", "greek": null, "pos": null, "def": "უძლური.", "def_en": "", "corresp": null}, "lex.ughonoeba": {"lemma": "უღონოება", "greek": null, "pos": null, "def": "საშუალების, ღონის ვერ პოვნა.", "def_en": "", "corresp": null}, "lex.frtoanqmna": {"lemma": "ფრთოან-ქმნა", "greek": null, "pos": null, "def": "ფრთების შესხმა.", "def_en": "", "corresp": null}, "lex.qandakebuli": {"lemma": "ქანდაკებული", "greek": null, "pos": null, "def": "გამოძერწილი.", "def_en": "", "corresp": null}, "lex.quequemo": {"lemma": "ქუე-ქუემო", "greek": null, "pos": null, "def": "ქვედა ჩასაცმელი.", "def_en": "", "corresp": null}, "lex.ghuacli": {"lemma": "ღუაწლი", "greek": null, "pos": null, "def": "ბრძოლა.", "def_en": "", "corresp": null}, "lex.qovlisampqrobeli": {"lemma": "ყოვლისა მპყრობელი", "greek": "παντοκράτωρ", "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.qovlisampqrobelibri": {"lemma": "ყოვლისამპყრობელებრი", "greek": null, "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.sharavandedi": {"lemma": "შარავანდედი", "greek": null, "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.sheachrdilebuli": {"lemma": "შეაჩრდილებული", "greek": null, "pos": null, "def": "ბნელი, გაუგებარი, არანათელი.", "def_en": "", "corresp": null}, "lex.shebavteba": {"lemma": "შებავთება", "greek": null, "pos": null, "def": "სიტყჳსა ცუდის თქმა.", "def_en": "", "corresp": null}, "lex.shemdgomoba": {"lemma": "შემდგომობა", "greek": "ἀκολουθία", "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.shemomnivtebeli": {"lemma": "შემომნივთებელი", "greek": null, "pos": null, "def": "მატერიალურად გარდამქცეველი.", "def_en": "", "corresp": null}, "lex.shemortuma": {"lemma": "შემორთუმა", "greek": null, "pos": null, "def": "დამატება, შემატება.", "def_en": "", "corresp": null}, "lex.shemosruli": {"lemma": "შემოსრული", "greek": null, "pos": null, "def": "", "def_en": "", "corresp": null}, "lex.shemrghueva": {"lemma": "შემრღუევა", "greek": null, "pos": null, "def": "გონების არევა, ამღვრევა.", "def_en": "", "corresp": null}, "lex.shemchrdilveli": {"lemma": "შემჩრდილველი", "greek": null, "pos": null, "def": "დამაბნელებელი, დამფარველი.", "def_en": "", "corresp": null}, "lex.shemcinquleba": {"lemma": "შემწინკულება", "greek": null, "pos": null, "def": "წაბილწვა, დასვრა.", "def_en": "", "corresp": null}, "lex.shenacevreba": {"lemma": "შენაწევრება", "greek": null, "pos": null, "def": "შეერთება.", "def_en": "", "corresp": null}, "lex.shesadginebeli": {"lemma": "შესადგინებელი", "greek": null, "pos": null, "def": "შემდგომად მოსასვლელი, მომდევნო.", "def_en": "", "corresp": null}, "lex.shishueli": {"lemma": "შიშუელი", "greek": null, "pos": null, "def": "დაუფარავი, აშკარა, უშუალო.", "def_en": "", "corresp": null}, "lex.cmeli": {"lemma": "ცმელი", "greek": null, "pos": null, "def": "ცხიმი, ქონი.", "def_en": "", "corresp": null}, "lex.dzvnad": {"lemma": "ძვნად", "greek": "κατὰ τῆς... τριάδος", "pos": null, "def": "საწინააღმდეგოდ.", "def_en": "", "corresp": null}, "lex.dzlit": {"lemma": "ძლით", "greek": null, "pos": null, "def": "მიზეზით, საშუალებით.", "def_en": "", "corresp": null}, "lex.carmodgineba": {"lemma": "წარმოდგინება", "greek": null, "pos": null, "def": "ჩვენება.", "def_en": "", "corresp": null}, "lex.caroteba": {"lemma": "წაროტება", "greek": null, "pos": null, "def": "გაგდება, გაძევება.", "def_en": "", "corresp": null}, "lex.cdeva": {"lemma": "წდევა", "greek": null, "pos": null, "def": "დასხმა სითხისა.", "def_en": "", "corresp": null}, "lex.cesi": {"lemma": "წესი", "greek": "τάξις", "pos": null, "def": "დაწყობილება, განლაგება.", "def_en": "", "corresp": null}, "lex.ciagh": {"lemma": "წიაღ", "greek": "κόλπος", "pos": null, "def": "კალთა, უბე.", "def_en": "", "corresp": null}, "lex.khelovanmetqueleba": {"lemma": "ჴელოვან-მეტყუელება", "greek": null, "pos": null, "def": "არასწორის თქმა, სოფისტიკა.", "def_en": "", "corresp": null}, "lex.khumeuli": {"lemma": "ჴუმეული", "greek": null, "pos": null, "def": "დაკლებული.", "def_en": "", "corresp": null}, "lex.gen": {"lemma": "შობილობითი", "greek": null, "pos": null, "def": "ნათესაობითი ბრუნვა.", "def_en": "", "corresp": "http://purl.org/olia/olia.owl#Genitive"}, "lex.dat": {"lemma": "მიცემითი", "greek": null, "pos": null, "def": "მიცემითი ბრუნვა.", "def_en": "", "corresp": "http://purl.org/olia/olia.owl#DativeCase"}, "lex.acc": {"lemma": "მიზეზობითი", "greek": null, "pos": null, "def": "ბრალდებითი ბრუნვა.", "def_en": "", "corresp": "http://purl.org/olia/olia.owl#Accusative"}, "lex.voc": {"lemma": "წოდებითი", "greek": null, "pos": null, "def": "წოდებითი ბრუნვა.", "def_en": "", "corresp": "http://purl.org/olia/olia.owl#VocativeCase"}, "lex.sing": {"lemma": "ერთობითი", "greek": null, "pos": null, "def": "მხოლობითი რიცხვი.", "def_en": "", "corresp": "http://purl.org/olia/olia.owl#Singular"}, "lex.dual": {"lemma": "ორობითი", "greek": null, "pos": null, "def": "ორობითი რიცხვი.", "def_en": "", "corresp": "http://purl.org/olia/olia.owl#Dual"}, "lex.plural": {"lemma": "განმრავლებითი", "greek": null, "pos": null, "def": "მრავლობითი რიცხვი.", "def_en": "", "corresp": "http://purl.org/olia/olia.owl#Plural"}, "lex.pneuma": {"lemma": "სული", "greek": "πνεῦმა", "pos": null, "def": "სული (წმიდა); გრამატიკულად საშუალო სქესის სახელი.", "def_en": "", "corresp": null}, "lex.trias": {"lemma": "სამება", "greek": "τριάς", "pos": null, "def": "", "def_en": "", "corresp": null}};
 const lexiconBaseUrl = '../lexicon/index.html';
 
 // Witness data
@@ -511,7 +605,7 @@ const witnessData = {
     }
 };
 
-// Lexicon popup functionality
+// Lexicon popup functionality with LOD support
 const popup = document.getElementById('lexicon-popup');
 const article = document.getElementById('text-article');
 const popupLemma = document.getElementById('popup-lemma');
@@ -519,6 +613,8 @@ const popupGreek = document.getElementById('popup-greek');
 const popupPos = document.getElementById('popup-pos');
 const popupDef = document.getElementById('popup-def');
 const popupLink = document.getElementById('popup-link');
+const popupLod = document.getElementById('popup-lod');
+const popupLodLabel = document.getElementById('popup-lod-label');
 
 let popupTimeout;
 let currentTermLink = null;
@@ -533,7 +629,7 @@ function showPopup(termLink) {
     
     currentTermLink = termLink;
     
-    // Populate popup
+    // Populate basic fields
     popupLemma.textContent = entry.lemma;
     popupGreek.textContent = entry.greek ? `(${entry.greek})` : '';
     popupGreek.style.display = entry.greek ? '' : 'none';
@@ -542,10 +638,26 @@ function showPopup(termLink) {
     popupDef.textContent = entry.def || 'განმარტება არ არის';
     popupLink.href = `${lexiconBaseUrl}#${termId}`;
     
+    // Handle LOD link
+    if (entry.corresp) {
+        popupLod.href = entry.corresp;
+        popupLod.style.display = 'flex';
+        // Determine ontology name from URI
+        let onto = 'LOD';
+        if (entry.corresp.includes('olia')) onto = 'OLiA';
+        else if (entry.corresp.includes('wals')) onto = 'WALS';
+        else if (entry.corresp.includes('trismegistos')) onto = 'TM';
+        else if (entry.corresp.includes('glottolog')) onto = 'Glottolog';
+        popupLodLabel.textContent = onto;
+        popupLod.title = `View in ${onto} ontology`;
+    } else {
+        popupLod.style.display = 'none';
+    }
+    
     // Get positions
     const termRect = termLink.getBoundingClientRect();
     const articleRect = article.getBoundingClientRect();
-    const popupWidth = 260;
+    const popupWidth = 280;
     const popupHeight = popup.offsetHeight || 140;
     
     // Check if we have room to the right (large screen margin note style)

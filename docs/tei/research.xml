@@ -648,7 +648,833 @@
                         <p>თანხმოვანთაგან საყურადღებოა <foreign xml:lang="grc">β, γ, χ</foreign>-ს ქართული გადმოცემა. პირველის ნიმუშად შეიძლება დავასახელოთ: <mentioned xml:lang="ka-Geok">ქეროვიმთა</mentioned> <num value="31">ლ̃ა</num> ჰომ. და სახელები: <mentioned xml:lang="ka-Geok">იაკობ</mentioned> (<foreign xml:lang="grc">Ἰακώβ</foreign>), <mentioned xml:lang="ka-Geok">რუბენ</mentioned> ჰ. 75 (<foreign xml:lang="grc">Ῥουβήν</foreign>), <mentioned xml:lang="ka-Geok">ხოვარ</mentioned> (<foreign xml:lang="grc">Χοβάρ</foreign>) ჰ. 30. ამ მაგალითებიდან ჩანს, რომ მთარგმნელი კარგად ცნობილ ბიბლიურ სახელებს ძველი, ტრადიციულად ქცეული ფორმით ხმარობს, სხვაგან კი შესაძლოა განსხვავებული გადმოცემა აჩვენოს</p>
                     </div>
                 </div>
+                
+                <!-- SECTION ზ: Linguistic Analysis -->
+                <div type="section" n="ზ" xml:id="section.z">
+                    <head>ენობრივი მიმოხილვა</head>
+                    
+                    <p xml:id="p.z.1" n="1">
+                        <mentioned xml:lang="ka-Geok">ხოვარ</mentioned> ბიბლიის ოშკურ ტექსტში ყველგან (<ref type="biblical">ეზეკ. 3, 15; 23; 10, 15; 10, 20; 10, 22</ref>) <mentioned xml:lang="ka-Geok">ქობარ</mentioned> სახით არის მოცემული<ptr target="#note153"/>, ხოლო გელათურ ბიბლიაში, რომელიც ელინოფილური მიმდინარეობის წარმომადგენლის ნაშრომად არის მიჩნეული, შესაბამის ადგილებში <mentioned xml:lang="ka-Geok">ხობარ</mentioned> იკითხვის, გვხვდება (ვახტანგისეულ გამოცემაში <mentioned xml:lang="ka-Geok">ქობარ</mentioned>). <term xml:lang="grc">χ</term>-ს გადმოცემისას ზემოთ დასახელებულ მაგალითებში ერთგვარობა არ ჩანს (<mentioned xml:lang="ka-Geok">ქეროვიმთა</mentioned>, <mentioned xml:lang="ka-Geok">ხოვარ</mentioned>); შდრ. <mentioned xml:lang="ka-Geok">ხოროთა</mentioned>, <num value="20">კ̃</num>. ჰომ; <mentioned xml:lang="ka-Geok">ინიოხობასა</mentioned> <num value="20">კ̃</num>. ჰომ. <term xml:lang="grc">γ</term>-ს შეესაბამება <mentioned>ღ</mentioned> იმ პოზიციაში, სადაც თვითონ ბერძნულში სპირანტიზებული გამოთქმა არის საგულვებელი (თანხმოვანისა და ხმოვნის წინ): <mentioned xml:lang="ka-Geok">ღრამმატიკოსთა</mentioned> 7; <mentioned xml:lang="ka-Geok">ორღანოსა</mentioned> ჰ. 56.
+                    </p>
+                    
+                    <!-- Sub-header for Morphology -->
+                    <div type="subsection" xml:id="section.z.morphology">
+                        <head>მორფოლოგიის საკითხები</head>
+                        
+                        <p xml:id="p.z.morph.1" n="2">
+                            <term corresp="#lex.adviloba">წრფელობითი</term> და <term corresp="#lex.nom">სახელობითი</term>. <term corresp="#lex.adviloba">წრფელობითი</term> ბრუნვა ძალიან ხშირად იხმარება რთულ ფორმებში, მაგალითად, შედგენილი შემასმენლის სახელად ნაწილში: <quote xml:lang="ka-Geok">ბნელად საგონებელ არს...</quote> <quote xml:lang="ka-Geok">შეუძლებელ არს თარგმანებაჲ</quote> 1; <quote xml:lang="ka-Geok">სადა წერილ არს</quote> ჰ. 28: <quote xml:lang="ka-Geok">არა უღონო ვარ ჩუენებად</quote> ჰ. 35;
+                        </p>
+                        
+                        <p xml:id="p.z.morph.2" n="3">
+                            აქა-იქ მსგავს შემთხვევებში <term corresp="#lex.nom">სახელობითიც</term> გვხვდება: <quote xml:lang="ka-Geok">უკუეთუ მაცხოვარებაჲ არს ქრისტეს მოსლვაჲ</quote> — ით 6; <quote xml:lang="ka-Geok">ჩუეულებაჲ არს წერილისაჲ</quote> ჰ. 70; <quote xml:lang="ka-Geok">კაცობრივი არს მქცევარობაჲ</quote> ჰ. 44.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.3" n="4">
+                            წოდება ზმნასთან <term corresp="#lex.adviloba">წრფელობითი</term> იშვიათია: <quote xml:lang="ka-Geok">წინაჲსწარმეტყუელ მაღლის იწოდო</quote> ჰ. 9 (ეს არის ციტატა: <ref type="biblical">ლ. 1, 76</ref>). სხვაგან ასეთ შემთხვევებში ჩვეულებრივია <term>ვითარებითი</term> ბრუნვა: <quote xml:lang="ka-Geok">მზედ სიმართლისად უწოდდეს</quote> ჰ. 4; <quote xml:lang="ka-Geok">მეფედ უწოდდა</quote> ჰ. 11; <quote xml:lang="ka-Geok">საყჳრად უწოდს</quote> ჰ. 23. <quote xml:lang="ka-Geok">უწოდს... ღმრთად</quote> ჰ. 53; <quote xml:lang="ka-Geok">ძალად იწოდების მამაჲ</quote> ჰ. 73. ვითარებითი ბრუნვა იხმარება აგრეთვე მეტყველების გამომხატველ სხვა ზმნებთანაც: <quote xml:lang="ka-Geok">უფლად თქუა და არა მამად</quote> ჰ. 29 <quote xml:lang="ka-Geok">ძალად სახელ-დებულ არს</quote> ჰ. 75; <quote xml:lang="ka-Geok">აჩუენებს ძესა უფლად თქუმითა</quote> ჰ. 31.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.4" n="5">
+                            <term>მიმართულებითი</term>. ამ ბრუნვის ხმარების სულ რამდენიმე შემთხვევა არის: <quote xml:lang="ka-Geok">მიიყვანა იგი მღდელთმოძღურისა სჳმეონისსა</quote> ჰ. ორი <mentioned>ს</mentioned> იმავე რიგისაა, როგორისაც დაწერილობაში: <mentioned xml:lang="ka-Geok">მივიდა მისსა</mentioned>. სხვა მაგალითია: <quote xml:lang="ka-Geok">სამებისაცა აღვავლინოთ</quote> ჰ. 75.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.5" n="6">
+                            <term>ხმოვანფუძიან სახელთა ბრუნება</term>. ზემოთ აღნიშნული იყო, რომ <mentioned>აჲ</mentioned> და <mentioned>ოჲ</mentioned> დიფთონგთა დაწერილობანი თითქმის ყოველთვის ძველი ქართული ენის ნორმებს მისდევს. შესაბამისად <mentioned>ა</mentioned> და <mentioned>ო</mentioned> ხმოვანფუძიან სახელთა ბრუნებისას <mentioned>ჲ</mentioned> შენახულია ყველა იმ შემთხვევაში, სადაც ეს დიფთონგები უნდა გვქონდეს: <mentioned xml:lang="ka-Geok">თარგმანებაი</mentioned> 1. <mentioned xml:lang="ka-Geok">ცაჲცა</mentioned> ჰ. 9. <mentioned xml:lang="ka-Geok">ჴელი უფლისაჲ</mentioned> ჰ. 7. <mentioned xml:lang="ka-Geok">წესითა მთარგმნელთაჲთა</mentioned> ჰ. 15 და სხვ. როგორც ზემოთ აღვნიშნეთ, სწორი დაწერილობა ნაკლებ მოსალოდნელი იქნებოდა XVII ს. ხელნაწერში და ეს ერთ-ერთი საბუთია იმისა, რომ <ref target="#ms.A">A</ref> ხელნაწერი მართლაც ადრინდელია.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.6" n="7">
+                            <mentioned>ე</mentioned> ხმოვანფუძიან სახელებს სახელობითი ბრუნვის ნიშანი, როგორც მოსალოდნელი იყო, არა აქვთ: <quote xml:lang="ka-Geok">იშვა... სიბრძნე და სიმართლე და სიწმიდე და გამოჴსნაჲ</quote> ჰ. 7. გამონაკლისია: <mentioned xml:lang="ka-Geok">ტყუჱ</mentioned> ჰ. 20, სადაც <mentioned>ჱ</mentioned> უმარცვლო <mentioned>უ</mentioned>-ს მომდევნოა.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.7" n="8">
+                            <term corresp="#lex.plural">მრავლობითი რიცხვი</term>. მრავლობითი რიცხვის საწარმოებლად იხმარება <term>თ-ანიანი მრავლობითი</term>. <term>ებ-იანი მრავლობითი</term> გრამატიკულ ტრაქტატში სულ არ არის. ოქროპირისეულ თხზულებაში კი მისი ერთეული მაგალითებია: <quote xml:lang="ka-Geok">ყრმათა მათთა ჴმებსა</quote> ჰ. 18.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.8" n="9">
+                            საგანგებოდ უნდა აღინიშნოს ერთი გეოგრაფიული სახელის მრავლობითი რიცხვის ფორმით ხმარება: <mentioned xml:lang="ka-Geok">ათინათა შინა</mentioned> ჰ. 48. ამ ფუძისაგან ნაწარმოებ წარმომავლობის სახელს მრავლობითის ფორმანტი აღარ გადმოჰყვება: <mentioned xml:lang="ka-Geok">ათინელთა</mentioned> ჰ. 52. <mentioned xml:lang="grc">Αι Ἀθῆναι</mentioned> მრავლობითის ფორმით გადმოღებული აქვს <persName ref="#ephrem">ეფრემ მცირესაც</persName> (<mentioned xml:lang="ka-Geok">ათინები</mentioned>, <mentioned xml:lang="ka-Geok">ათენანი</mentioned>), რომელიც კომენტარებში ერთგან შენიშნავს: <quote xml:lang="ka-Geok">„სამრავლოდ იტყჳს სახელსა ქალაქისასა, ვითარმედ „ათინანი“, რამეთუ ჩუეულებაჲ არს ელლენთა ენისაჲ, რაჲთა ოდესმე მასვე და ერთსა სამრავლოდ სახელ-სდებდეს, არა ხოლო ადგილსა გინა კაცსა, არამედ მასვე და ერთსა საქმესა სამრავლოდ თქუმითა“</quote><ptr target="#note154"/>.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.9" n="10">
+                            <term>საკუთარი სახელები</term>. პირის სახელთა ბრუნებისას თითქმის ყველგან ძველი ქართულის ნორმებია დაცული: საკუთარ სახელს ბრუნვის ნიშნები არა აქვს სახელობითსა და მოთხრობითში. მკვეთრად ჩანს საკუთარი და საზოგადო სახელის სხვაობა მოთხრობით ბრუნვაში შემდეგ მაგალითში: <quote xml:lang="ka-Geok">ნეტარმან თომა, ერთმან მოციქულთაგანმან, ურწმუნო-ქმნილმან მაცხოვრისა აღდგომისამან და მნებებელმან... და აღმომთქუმელმან ამის ჴმისამან</quote> ჰ. 37.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.10" n="11">
+                            დანართიანი საკუთარი სახელი ბრუნვის ფორმანტს არ ირთავს: <quote xml:lang="ka-Geok">მამისა ჩუენისა იოანე ოქროპირისა კონსტანტინუპოლელ მთავარეპისკოპოსისაჲ</quote>. ასეთი ფორმა არის ყველგან ათონურ ხელნაწერში თხზულებათა სათაურებში; <quote xml:lang="ka-Geok">ჴმაჲ იერემია წინაჲსწარმეტყუელისაჲ</quote> ჰ. 38. ერთი ასეთი შემთხვევა მაშინაც გვაქვს, როდესაც საკუთარ სახელს (ტომის სახელად გაგებულს) მოსდევს ატრიბუტული განსაზღვრება: <quote xml:lang="ka-Geok">მისცა იგი იაკობს ყრმასა მისსა და იზრაილ შეყუარებულსა მისსა</quote> ჰ. 43.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.11" n="12">
+                            <term>ნაწევრის ხმარება</term>. საგულისხმოა, რომ ნაწევრის ხმარება ჩვენს მიერ განხილულ ძეგლებში მეტად შეზღუდულია. გრამატიკულ ტრაქტატში სულ სამიოდე შემთხვევა გვაქვს: <mentioned xml:lang="ka-Geok">ათსამეტნი იგი ართრონნი</mentioned> 11, <mentioned xml:lang="ka-Geok">ლექსსა ამას</mentioned> 11; <mentioned xml:lang="ka-Geok">ართრონნი ესეცა</mentioned> 23 (შდრ. <mentioned xml:lang="ka-Geok">ამათ პირველთა ართრონთა</mentioned> 22; <mentioned xml:lang="ka-Geok">ამათ ათცამეტთა ართრონთაგან</mentioned> 19). ოქროპირისეულ თხზულებაშიც ნაწევარი იშვიათად გვხვდება. ქვემოთ ჩამოთვლილ მაგალითებში ნაწევრის ხმარების თითქმის ყველა შემთხვევა არის ჩამოთვლილი: <mentioned xml:lang="ka-Geok">დასჯასა მას ადამისსა</mentioned> ჰ. 10; <mentioned xml:lang="ka-Geok">ესე არს თანაქცევაჲ იგი</mentioned> ჰ. 44; <mentioned xml:lang="ka-Geok">არსებისა მის</mentioned> ჰ. 6; <mentioned xml:lang="ka-Geok">კიდეთა მათ სოფლისათა</mentioned> ჰ. 46; <mentioned xml:lang="ka-Geok">ვინ არს მმწყსელი ესე</mentioned> ჰ. 60; <quote xml:lang="ka-Geok">ვითარცა განმწარებასა მას დღისა მისებრ განცდისა</quote> ჰ. 60 (ციტატაა. <ref type="biblical">ფს. 94, 8</ref>).
+                        </p>
+                        
+                        <p xml:id="p.z.morph.12" n="13">
+                            ნაწევარი იხმარება <mentioned>„თქმულ“</mentioned> სიტყვასთან, როდესაც იგი ციტატას მიუძღვის: <quote xml:lang="ka-Geok">თქმულისა მისებრ „დაფარნა ცანი“</quote> [<ref type="biblical">ამბ. 3; 3</ref>]; ჰ. 3; <quote xml:lang="ka-Geok">თქუმულისა მისებრ იეზეკიელისა: „და იქმნა ჩემ ზედა ჴელი უფლისაჲ.“</quote> [<ref type="biblical">ეზ. 33, 22</ref>] ჰ. 17; <quote xml:lang="ka-Geok">თქუმულისა მისებრ: „ენაჲ ჩემი საწერელი“</quote> [<ref type="biblical">ფს. 44, 2</ref>]. ჰ. 17. <quote xml:lang="ka-Geok">თქუმულისა მისებრ მაცხოვარისა მიერ: „ამიერითგან იხილოთ“</quote> [<ref type="biblical">მ. 27, 64</ref>] ჰ. 72.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.13" n="14">
+                            <term>ზოგიერთი თანდებულის შესახებ</term>. <mentioned>ებრ</mentioned> თანდებული ხშირად გვხვდება ტექსტში; მსგავსების გამოხატვა უპირატესად მას ეკისრება; იგი ერთვის ნათესაობით ბრუნვას, რომელიც სრული სახით არის წარმოდგენილი: <mentioned xml:lang="ka-Geok">ძალისაებრ</mentioned> 1; <mentioned xml:lang="ka-Geok">საზღვართაებრ</mentioned> 7; <mentioned xml:lang="ka-Geok">საჴმარებისაებრცა</mentioned>. 11 <mentioned xml:lang="ka-Geok">სიტყჳსაებრ</mentioned> ჰ. 9; <mentioned xml:lang="ka-Geok">მოციქულისაებრ</mentioned> ჰ. 31; ჰ. 34; <mentioned xml:lang="ka-Geok">გონებისაებრ</mentioned> ჰ. 69; <mentioned xml:lang="ka-Geok">წყალობისაებრ</mentioned>, <mentioned xml:lang="ka-Geok">სიმრავლისაებრ</mentioned> ჰ. 65; ბრუნვის ნიშნის გარეშეა, როგორც მოსალოდნელი იყო, მხოლოდ <mentioned xml:lang="ka-Geok">სხუებრ</mentioned> 19.<ptr target="#note155"/> როდესაც სახელი განსაზღვრულია კუთვნილებითი ნაცვალსახელით ან ნაწევრით, <mentioned>ებრ</mentioned> თანდებული უმეტეს შემთხვევაში მათ ახლავს: <mentioned xml:lang="ka-Geok">მათისაებრ ენისა</mentioned> 3; <mentioned xml:lang="ka-Geok">თჳსისაებრ ნებისა</mentioned> ჰ. 69; <mentioned xml:lang="ka-Geok">თქუმულისა მისებრ ანგელოზისა (მაცხოვრისა) მიერ</mentioned> ჰ. 23, 72; შდრ. <mentioned xml:lang="ka-Geok">სიტყჳსაებრ შენისა</mentioned> ჰ. 5; <mentioned xml:lang="ka-Geok">ძალისაებრ ჩუენისა</mentioned> ჰ. 25.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.14" n="15">
+                            <term>სახელთა წარმოქმნა</term>. ორივე თხზულებისათვის დამახასიათებელია წარმოქმნილ და რთულ ფორმათა დიდი რაოდენობა როგორც სახელებში, ისე ზმნებში. სახელებში საწარმოებელ ელემენტებად გვევლინება არა მარტო საკუთრივ დერივაციული აფიქსები, არამედ ბრუნვის ფორმანტები და თანდებულები.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.15" n="16">
+                            მოქმედებითი ბრუნვის ფორმანტი <mentioned>-ით</mentioned> მრავალი სპეციალური ტერმინის საწარმოებლად არის გამოყენებული გრამატიკულ ტრაქტატში. ასეთებია ბრუნვათა სახელები, რომლებიც ზემოთ იყო განხილული: <term corresp="#lex.adviloba">ადვილობითი</term>, <term corresp="#lex.gen">ნათესაობითი</term>, <term corresp="#lex.gen">შობილობითი</term>, <term corresp="#lex.dat">მიცემითი</term>, <term corresp="#lex.acc">მიზეზობითი</term>; გრამატიკული რიცხვის აღმნიშვნელი ტერმინები: <term corresp="#lex.sing">ერთობითი</term>, <term corresp="#lex.plural">განმრავლებითი</term>, <term corresp="#lex.dual">ორობითი</term>; ასევეა ნაწარმოები: <term>დამორჩილებითი</term>.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.16" n="17">
+                            ასეთივე წარმოების მაგალითებია <num value="19">ი̃თ</num> ჰომილიაში: <mentioned xml:lang="ka-Geok">თანა-შთამომავლობითთაჲ</mentioned> ჰ. 53; <mentioned xml:lang="ka-Geok">მპყრობელობითი</mentioned> ჰ. 71, 75; <mentioned xml:lang="ka-Geok">შემწეობითი</mentioned> ჰ. 73. <mentioned xml:lang="ka-Geok">ძალ</mentioned> სიტყვა მოქმედებით ბრუნვაში ხშირად იხმარება <quote>„გამო“</quote>, <quote>„თჳს“</quote> თანდებულთა მნიშვნელობით<ptr target="#note156"/>: <mentioned xml:lang="ka-Geok">ართრონთა ძლით</mentioned>; <mentioned xml:lang="ka-Geok">ღმრთისმეტყუელებისა ძლით</mentioned> ჰ. 1; <mentioned xml:lang="ka-Geok">სულისა ძლით</mentioned> ჰ. 26. ეს ფორმა გამოყენებულია საწარმოებელ ფუძედაც: <mentioned xml:lang="ka-Geok">ართრონთა ძლითიცა ესე სიტყუაჲ</mentioned> 23; <mentioned xml:lang="ka-Geok">კეთილმსახურებისა-ძლითთა ტკივილთა შინა</mentioned> ჰ. 2; <mentioned xml:lang="ka-Geok">შემოიღებს თავისა თჳსისა-ძლითსა არა შეძინებისა ძლით, არამედ თარგმანებისა</mentioned> ჰ. 20; <mentioned xml:lang="ka-Geok">თანა-წარვჰჴდე ამის-ძლითთა</mentioned> ჰ. 37. <mentioned xml:lang="ka-Geok">ამის ძლითი სიტყუაჲ</mentioned> ჰ. 26.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.17" n="18">
+                            ვითარებითი ბრუნვის ნიშნით ნაწარმოებია ახალი ფუძეები: <mentioned xml:lang="ka-Geok">გრძნობადი</mentioned> ჰ. 2; <mentioned xml:lang="ka-Geok">მოლოდებადსა</mentioned> ჰ. 45; <mentioned xml:lang="ka-Geok">ცნობადისა</mentioned> <num value="30">ლ̃</num> ჰომ. სიტყვასაწარმოებლად გამოყენებულია აგრეთვე არქაული ფორმანტი <mentioned>ივ</mentioned>: <mentioned xml:lang="ka-Geok">კაცობრივი</mentioned> ჰ. 2, 14. ზოგჯერ საწარმოებელ ფუძედ არის გამოყენებული ზმნის პირიანი ფორმა, ან ამა თუ იმ ბრუნვაში დასმული სახელი: <quote xml:lang="ka-Geok">„აღვიდა“-სა არცა ჩემდა მოგონებად სათანამდებო არს</quote> ჰ. 13; <quote xml:lang="ka-Geok">„ო თეოს“-სა ესრეთ სთარგმნი</quote> 6.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.18" n="19">
+                            თანდებულიან სახელთაგან წარმოქმნილი ფორმებია: <mentioned>გან</mentioned>: <mentioned xml:lang="ka-Geok">მსმენელთაგანთა</mentioned> ჰ. 1; <mentioned xml:lang="ka-Geok">კაცთაგანია</mentioned> ჰ. 15; <mentioned xml:lang="ka-Geok">მოსწრაფეთაგანთა</mentioned> ჰ. 25; <mentioned xml:lang="ka-Geok">ერთმან მოციქულთაგანმან</mentioned> ჰ. 37. <mentioned>ებრ</mentioned>: <mentioned xml:lang="ka-Geok">წინაისწარმეტყუელებრი</mentioned> ჰ. 49; <mentioned xml:lang="ka-Geok">ღმრთეებრი</mentioned> ჰ. 44; <mentioned xml:lang="ka-Geok">მოციქულებრითა</mentioned> ჰ. 47; <mentioned xml:lang="ka-Geok">ყოვლისა მპყრობლებრისა</mentioned> ჰ. 70. ამგვარად წარმოქმნილ სახელებს ზედსართავის მნიშვნელობა აქვთ.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.19" n="20">
+                            <mentioned>მიერ</mentioned>: <mentioned xml:lang="ka-Geok">შობილთა-მიერი</mentioned> <num value="33">ლ̃გ</num> ჰომ. <mentioned>მიმართ</mentioned>, <mentioned>მომართ</mentioned>: <mentioned xml:lang="ka-Geok">მართლმადიდებელთა-მომართად იტყჳს</mentioned> 1; <mentioned xml:lang="ka-Geok">ეფესელთა-მიმართსა ეპისტოლესა შინა</mentioned> ჰ. 19; <mentioned xml:lang="ka-Geok">კორინთელთა-მიმართსა მოძღურებასა შინა</mentioned> ჰ. 52. <mentioned>ქუეშე</mentioned>: <mentioned xml:lang="ka-Geok">მოძღურებაჲ... სასჯელის-ქუეშედ მოვალს</mentioned> ჰ. 13. <mentioned>შინა</mentioned>: <mentioned xml:lang="ka-Geok">მოიჴსენებს საქმეთა ეგვიპტის-შინათა</mentioned> ჰ. 66; <mentioned xml:lang="ka-Geok">თჳნიერ ძუელისა და ახლის-შინაჲსა ღმერთი არა არს</mentioned> ჰ. 40.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.20" n="21">
+                            ქონების სახელთაგან აღსანიშნავია <mentioned>-იერ</mentioned> სუფიქსით ნაწარმოები: <mentioned xml:lang="ka-Geok">კეთილცნობიერსა</mentioned> ჰ. 18; <mentioned xml:lang="ka-Geok">საქმიერი</mentioned> ჰ. 27. <mentioned>-იერ</mentioned> აფიქსით ნაწარმოები წარმოქმნილი სახელები, თავის მხრივ, გამოყენებულია ფუძედ აბსტრაქტულ სახელთა საწარმოებლად; <mentioned xml:lang="ka-Geok">საქმიერობასა</mentioned> ჰ. 37; <mentioned xml:lang="ka-Geok">კეთილჟამიერობით</mentioned> ჰ. 61; <mentioned xml:lang="ka-Geok">კეთილპოვნიერებისა</mentioned> <num value="32">ლ̃ბ</num> ჰომ.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.21" n="22">
+                            <mentioned>-ოან</mentioned> სუფიქსით ნაწარმოებია: <mentioned xml:lang="ka-Geok">მკჳდროანი</mentioned> <num value="30">ლ̃</num> ჰომ; <mentioned xml:lang="ka-Geok">წიდოანმან</mentioned> ჰ. 58. <mentioned xml:lang="ka-Geok">ფრთოან</mentioned> რთული ზმნის სახელადი ნაწილია: <quote xml:lang="ka-Geok">ფრთოან-ქმნითა</quote> გვ. 25. <mentioned>-ეულ</mentioned> აწარმოებს ქონების სახელს: <mentioned xml:lang="ka-Geok">სირცხჳლეულ</mentioned> ჰ. 2. საყურადღებოა მისი ხმარება ისეთ ფორმებში, როგორიც არის: <term>ხარისხეული</term> და <term corresp="#lex.leqseulad">ლექსეული</term>: <quote xml:lang="ka-Geok">ხარისხეულად აღმყვანებელი</quote> ჰ. 51; <quote xml:lang="ka-Geok">განმარტებით ლექსეულად ითხოონ ჴმაჲ</quote> ჰ. 26. <quote xml:lang="ka-Geok">სადა წერილ არს მამაჲ ყოვლისა მპყრობელად ლექსურად?</quote> ჰ. 35. მარტო <mentioned>უ-</mentioned> პრეფიქსით ნაწარმოები სახელები იშვიათია: <mentioned xml:lang="ka-Geok">უგუარად</mentioned> 20.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.22" n="23">
+                            როგორც გრამატიკულ ტრაქტატს, ისე განსაკუთრებით <num value="19">ი̃თ</num> ჰომილიას ახასიათებს აბსტრაქტულ სახელთა ხმარების სიხშირე. აბსტრაქტულ სახელთა საწარმოებლად იხმარება: <mentioned>-ობა</mentioned>: <mentioned xml:lang="ka-Geok">უართრონობისათჳს</mentioned> 1: <mentioned xml:lang="ka-Geok">მრავალგამომეძიებლობასა</mentioned> 20; <mentioned xml:lang="ka-Geok">უმდაბლესობასა</mentioned> 21; <mentioned xml:lang="ka-Geok">მასწავლელობითა</mentioned> ჰ. 18; <mentioned xml:lang="ka-Geok">შემდგომობისა</mentioned> ჰ. 19; <mentioned xml:lang="ka-Geok">საქმიერობასა</mentioned> ჰ. 37; <mentioned xml:lang="ka-Geok">უცთომელობაჲ</mentioned> ჰ. 43; <mentioned xml:lang="ka-Geok">მქცევარობაჲ</mentioned> და <mentioned xml:lang="ka-Geok">მქცეობაჲ</mentioned> ჰ. 44; <mentioned xml:lang="ka-Geok">მყოფობაჲ</mentioned> ჰ. 46; <mentioned xml:lang="ka-Geok">უფლობისა</mentioned> ჰ. 53; <mentioned xml:lang="ka-Geok">საგონებელობაჲ</mentioned> ჰ. 53; <mentioned xml:lang="ka-Geok">კეთილჟამიერობით</mentioned> ჰ. 61; <mentioned xml:lang="ka-Geok">ერთჴმაობით</mentioned> ჰ. 70; <mentioned xml:lang="ka-Geok">იეფობასა</mentioned> <num value="27">კ̃ზ</num> ჰომ.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.23" n="24">
+                            ზემოჩამოთვლილ მაგალითთაგან ჩანს, რომ <mentioned>-ობა</mentioned> სუფიქსის ხმარების არე ფართოა; იგი ერთვის როგორც მარტივ ფუძეებს, ისე წარმოქმნილ ფუძეებს, კომპოზიტებსა და შერწყმულ სახელებს. <quote xml:lang="ka-Geok">ფილოსოფოსობად</quote> ჰ. 1. ეს შესაძლოა საწყისი იყოს; შდრ.: <quote xml:lang="ka-Geok">რაჲსა ესრეთ ჰფილოსოფოსობ</quote> ჰ. 3. კრებითი მნიშვნელობისაა <mentioned xml:lang="ka-Geok">მჴედრობა</mentioned>: <quote xml:lang="ka-Geok">წინა-რბის ანგელოზთა მჴედრობაჲ</quote> ჰ. 24.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.24" n="25">
+                            <mentioned>-ება</mentioned> სუფიქსის ხმარება ხშირია ვნებითი გვარის მიმღეობებთან: <mentioned xml:lang="ka-Geok">ცვალებულებაჲ</mentioned> 2; <mentioned xml:lang="ka-Geok">განყოფილების მქონებელ</mentioned> ჰ. 15; <mentioned xml:lang="ka-Geok">კუთვნილებაჲ</mentioned> 3; <mentioned xml:lang="ka-Geok">განგებულებისა მომვაჭრებელი</mentioned> <num value="20">კ̃</num> ჰომ. სხვა მაგალითებია: <mentioned xml:lang="ka-Geok">ურწმუნოებისა ძლით</mentioned> ჰ. 37; <mentioned xml:lang="ka-Geok">უძლურებისა მიმართ</mentioned> ჰ. 46. <mentioned xml:lang="ka-Geok">ვითარებისაჲ</mentioned> 23; <mentioned xml:lang="ka-Geok">მრავალღმრთეებაჲ</mentioned> ჰ. 48; <mentioned xml:lang="ka-Geok">კეთილგონიერებისა</mentioned> ჰ. 2; <mentioned xml:lang="ka-Geok">ჴელოვნებანი</mentioned> ჰ. 48.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.25" n="26">
+                            <mentioned>სი-ე</mentioned> კონფიქსით წარმოქმნილ ფორმათაგან საყურადღებოა <term corresp="#lex.siadre">სიადრე</term>: <quote xml:lang="ka-Geok">მე სიადრით ვიჴუმიო</quote> ჰ. 26. ეგევე სიტყვა გვხვდება ციტატაში: <quote xml:lang="ka-Geok">ვითარცა წამებს ღმერთი ისაიას მიერ: მოახლდების სიადრით სიმართლე ჩემი</quote> [<ref type="biblical">ეს. 51, 5</ref>] ძველი ქართული ვერსიები, აგრეთვე <date when="1743">1743 წ.</date> <title>„ბაქარის ბიბლია“</title> იძლევა <mentioned>ადრე</mentioned> იკითხვისს. სხვა მაგალითებია: <mentioned xml:lang="ka-Geok">სიმრავლისაგან</mentioned> 23; <mentioned xml:lang="ka-Geok">სიცოფე</mentioned> ჰ. 21; <mentioned xml:lang="ka-Geok">სიბროტემან</mentioned> ჰ. 34.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.26" n="27">
+                            დანიშნულების სახელებს აწარმოებს <mentioned>სა-ო</mentioned>: <mentioned xml:lang="ka-Geok">საწინაჲსწარმეტყუელოსა</mentioned> ჰ. 38; <mentioned xml:lang="ka-Geok">სანადირო</mentioned> ჰ. 61; <mentioned xml:lang="ka-Geok">საჭირო</mentioned> ჰ. 60 (ამ სიტყვის მნიშვნელობა დღევანდელთან არის ახლო: <quote xml:lang="ka-Geok">საჭირო არს პირველად თქუმად</quote> 1; <quote xml:lang="ka-Geok">გულისჴმისყოფად საჭირო არს და სათანადო</quote> ჰ. 60); <mentioned xml:lang="ka-Geok">სათანამდებო</mentioned> ჰ. 13. ზმნური ფუძისაგან არის ნაწარმოები <term corresp="#lex.saqyino">საწყინო</term>: <quote xml:lang="ka-Geok">საწყინო უჩნდეს მკითხველსა</quote> 23. ხელობის სახელთაგან აღსანიშნავია <mentioned xml:lang="ka-Geok">მესაშოვლე</mentioned>.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.27" n="28">
+                            <term>ხარისხის სახელები</term>. ხარისხის სახელთა შორის უმეტესობა ძველი ქართულისათვის ჩვეულებრივ ფორმებს გვიჩვენებს (<mentioned xml:lang="ka-Geok">უმეტეს</mentioned> ჰ. 34; <mentioned xml:lang="ka-Geok">უდიდეს</mentioned> ჰ. 35; <mentioned xml:lang="ka-Geok">უტკბილეს</mentioned> ჰ. 18 და სხვ.). საგანგებოდ უნდა აღინიშნოს რამდენიმე ნაწარმოები ფორმა, რომელიც თავისი წარმოშობით მწიგნობრული ჩანს: <quote xml:lang="ka-Geok">უმკუეთელესი უფროჲს მახჳლისა ორპირისა</quote> ჰ. 27 (აქ ხარისხის სახელი ნაწარმოებია მოქმედებითი გვარის მიმღეობისაგან); <quote xml:lang="ka-Geok">ბნელთა პირველად უქუესკნელესთა ქუეყანისათა შთასრული</quote> გვ. 20. <quote xml:lang="ka-Geok">უქუენაესად აჩუენებსო</quote> ჰ. 32. <term>უფროობითი ხარისხის</term> სახელი თვითონ წარმოადგენს საწარმოებელ ფუძეს: <quote xml:lang="ka-Geok">უართრონობაჲ უმდაბლესობასა გამოაჩინებსო</quote> გვ. 21.
+                        </p>
+                        
+                        <p xml:id="p.z.morph.28" n="29">
+                            <term corresp="#lex.compounds">თხზული ფორმები</term>. გრამატიკულ ტრაქტატში, რომლის ლექსიკა, თხზულების მოცულობისა და ხასიათის გამო, საზოგადოდ შეზღუდულია, კომპოზიტები და სხვა რთული სიტყვები შედარებით იშვიათია. სამაგიეროდ ოქროპირისეულ ჰომილიაში მათ მრავლად ვხვდებით. ამათგან ზოგიერთი ძველი ქართულისათვის ჩვეულებრივი ხმარებისაა, მაგრამ ერთი ნაწილი კი საკმაოდ იშვიათია და მთარგმნელის ინდივიდუალური სტილის დამახასიათებლად შეიძლება ჩაითვალოს. ტექსტში დადასტურებულ კომპოზიტთა ერთი ნაწილი ბერძნულის <term>კალკებს</term> წარმოადგენს. ხშირად კომპოზიტისაგან ნაწარმოებია სხვა (უმეტესად აბსტრაქტული) სახელი: <mentioned xml:lang="ka-Geok">ნაცვალ-მოისპოს</mentioned> ჰ. 8; <mentioned xml:lang="ka-Geok">ჴელოვანმეტყუელებენ</mentioned> ჰ. 36; <mentioned xml:lang="ka-Geok">წურილმოქმედებაჲ</mentioned> ჰ. 34; <mentioned xml:lang="ka-Geok">ვრცელმეტყუელებანი</mentioned> ჰ. 48; <mentioned xml:lang="ka-Geok">ერთხმაობად</mentioned> ჰ. 70. რამდენიმე შემთხვევაში კომპოზიტის პირველ ნაწილს <mentioned>კეთილ</mentioned> ფუძე წარმოადგენს: <mentioned xml:lang="ka-Geok">კეთილჟამიერობით</mentioned> ჰ. 61; <mentioned xml:lang="ka-Geok">კეთილპოვნიერებისა</mentioned> <num value="32">ლ̃ბ</num> ჰომ. <mentioned xml:lang="ka-Geok">კეთილმსახურებისა</mentioned> <num value="31">ლ̃ა</num> ჰომ. ასეთივეა <mentioned xml:lang="ka-Geok">კეთილცნობიერსა</mentioned> ჰ. 26.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Continuation of Section ჱ: სინტაქსი და სტილი -->
+                <div type="subsection" xml:id="section.syntax_style.cont">
+                    <p xml:id="p.z.morph.30" n="30">
+                        მრჩობლი მიმღეობური ფორმა გვაქვს ამ მაგალითში: <quote xml:lang="ka-Geok">არა თუმცა სიბრძნითა მოციქულებრითა მიფარულ ქმნილ იყო</quote> (ჰ. 47)<ptr target="#note157"/>.
+                    </p>
+                    
+                    <p xml:id="p.z.morph.31" n="31">
+                        <term>მიმღეობები</term>. ორგანული წარმოების ზმნათა მიმღეობები ტექსტში ძალიან ბევრია, მაგრამ მათი უმეტესობა ძველი ქართულის მორფოლოგიურ ნორმებს შეესაბამება. მკელობელ ან მკელობარ მიმღეობის ნაცვლად გვხვდება ვნებითი გვარის მიმღეობა: <quote xml:lang="ka-Geok">არა მიხედვენ ლექსსა კელოვნებულსა</quote> (ჰ. 18).
+                    </p>
+                    
+                    <p xml:id="p.z.morph.32" n="32">
+                        მოქმედებითი გვარის ზმნებს, როგორც ცნობილია, უკუთქმით მიმღეობათა წარმოება არ შეუძლიათ. შესაბამისი შინაარსის გამოსახატავად მიმღეობას უარყოფითი ნაწილაკი დაერთვის: <quote xml:lang="ka-Geok">არა-მპოვნელი ლექსისა, უღონოებს</quote> (ჰ. 29). შდრ.: <quote xml:lang="ka-Geok">ხედავა... უიძულებელსა ჭეშმარიტებასა</quote> (ჰ. 64).
+                    </p>
+                    
+                    <p xml:id="p.z.morph.33" n="33">
+                        <term>კითხვითი ნაწილაკები</term>. ამათგან უპირატესად იხმარება <mentioned>-ა</mentioned>; იგი თითქმის ყოველთვის არის რიტორულ კითხვებში და მეტწილად ერთვის ზმნებს: <quote xml:lang="ka-Geok">გნებავსა ხილვად</quote> (ჰ. 8); <quote xml:lang="ka-Geok">უკუეთუ ვისმინოთ შენი, კეთილთა ქუეყანისათა ვჭამდეთა? არა ჩუენ თანა ქუეყანასა ჰმკჳდრობა?... არა მისგან იზარდებია? არა მისვე მიმართვე მიიქცევია?</quote> (ჰ. 15). <quote xml:lang="ka-Geok">არა გესმაა ისაიასი?</quote> (ჰ. 68). <quote xml:lang="ka-Geok">და არა უსამართლოებსა მცოდველი</quote> (ჰ. 69). შედარებით იშვიათია მისი ხმარება სახელთან: <quote xml:lang="ka-Geok">პავლესაგანა გინა სხჳსა ვისგანმე?</quote> (ჰ. 39).
+                    </p>
+                    
+                    <p xml:id="p.z.morph.34" n="34">
+                        ზოგიერთი უდეტერის ხმარება. ამ უდეტერთა შორის, პირველ რიგში უნდა დავასახელოთ <term corresp="#lex.vidreme">ვიდრემე</term>. ეს სიტყვა გრამატიკულ ტრაქტატში ცამეტჯერ გვხვდება: <quote xml:lang="ka-Geok">ბერძულსა შინა ვიდრემე ნათლად ძეს ლექსი იგი...</quote> ხშირად გვხვდება იგი <num value="19">ი̃თ</num> ჰომილიაშიც: <quote xml:lang="ka-Geok">ღაღადებდეს ვიდრემე წინაჲსწარმეტყუელნი</quote> (ჰ. 10).
+                    </p>
+                    
+                    <p xml:id="p.z.morph.35" n="35">
+                        სპეციალურ ლიტერატურაში მითითებულია, რომ სიტყვის ძირითადი მნიშვნელობა ელინოფილური მიმართულების მწერლების ენაში არის <quote>„მაშასადამე“</quote>, <quote>„ამიტომ“</quote><ptr target="#note158"/>. ათონურ ხელნაწერში შესულ მასალებში სწორედ ნაწილაკის ფუნქცია უნდა ჩანდეს.
+                    </p>
+                    
+                    <p xml:id="p.z.morph.36" n="36">
+                        <num value="26">კ̃ვ</num> ჰომილია ასე იწყება: <quote xml:lang="ka-Geok">მოწამეთა ვიდრემე კრებაჲ შემტკიცნების ჩუენდა, ხოლო ქრისტეს სურვილმან... შეკრიბნა</quote>. ასევე, <num value="28">კ̃ჱ</num> ჰომილიის დასაწყისში იკითხება: <quote xml:lang="ka-Geok">ყოველთა ვიდრემე ვჰყუარობ წმიდათა, ხოლო უფროჲსღა ნეტარსა პავლეს...</quote> ორსავე შემთხვევაში <mentioned xml:lang="ka-Geok">ვიდრემე — ხოლო</mentioned> ბერძნულის <term xml:lang="grc">μέν-δέ</term> ნაწილაკების გადმოსაცემად უნდა იყოს ნახმარი.
+                    </p>
+                    
+                    <p xml:id="p.z.morph.37" n="37">
+                        გრამატიკულ ტრაქტატშიც გვაქვს <mentioned xml:lang="ka-Geok">ვიდრემე — ხოლო</mentioned> წყვილი: <quote xml:lang="ka-Geok">სამებისა ვიდრემე სახელი დედალ არს მათისაებრ ენისა, ხოლო ღმრთისაჲ — მამალი; და ღმერთსა ვიდრემე ეწოდების თეოს, ხოლო და-რაჲ-უწერონ ართრონი პირველი, ესრეთ იტყჳან</quote> (4).
+                    </p>
+                    
+                    <p xml:id="p.z.morph.38" n="38">
+                        ზოგიერთ შემთხვევაში <mentioned xml:lang="ka-Geok">ვიდრემე</mentioned>-ს კორელატად <mentioned>გარნა</mentioned> ჩანს: <quote xml:lang="ka-Geok">ესენი ვიდრემე დამორჩილებითნი არიან... ართრონნი ესეცა გარნა ვინაჲთგან ამათსაცა ძალსა აწ განმარტებაჲ სატჳრთოდ აღუჩნდებოდა მკითხველსა...</quote> (23). იმავე ფუნქციით გამოყენებულია აგრეთვე <term corresp="#lex.vinayme">ვინაჲმე</term>: <quote xml:lang="ka-Geok">ნათელსა სიტყუასა უცნაურ ვინაჲმე ჰყოფს.... ხოლო რაჲთა გამოვაჩინოთ, თუ რაჲ არს ართრონი, არა დავფაროთ</quote> (1).
+                    </p>
+                    
+                    <p xml:id="p.z.morph.39" n="39">
+                        ამრიგად, შეიძლება ვივარაუდოთ, რომ ათონურ ხელნაწერში შესულ თხზულებათა მთარგმნელი <mentioned xml:lang="ka-Geok">ვიდრემე</mentioned> ნაწილაკს ხმარობს, როგორც მტკიცებითს, განსაკუთრებით შეპირისპირებისას. იგი ისეთივე მნიშვნელობისა ჩანს აქ, როგორისაც მტკიცებითი მნიშვნელობის მქონე <mentioned>სამე</mentioned> ძველი ქართულის სხვა ძეგლებში. ასევე მტკიცებითობის მნიშვნელობით უნდა იყოს ნახმარი ტექსტში <mentioned xml:lang="ka-Geok">სადამე</mentioned> და <mentioned xml:lang="ka-Geok">სადმე</mentioned>: <quote xml:lang="ka-Geok">არა სადამე სწორ არსო მამისა ძე</quote> (21). <quote xml:lang="ka-Geok">პირველად სადმე განჩინებაჲ შემოიღო</quote> (10).
+                    </p>
+                </div>
+                
+                <div type="section" n="ჱ" xml:id="section.syntax_style_new">
+                    <head>სინტაქსი და სტილი</head>
+                    
+                    <p xml:id="p.h.1" n="40">
+                        ტექსტის ხასიათი ზოგადად. ათონურ კრებულში შეტანილი ყველა ნათარგმნი ნაწარმოები და მათ შორის მეცხრამეტე ჰომილიაც სინტაქსისა და სტილის სფეროში გამოავლენს მრავალ თავისებურებას; მათგან უპირველესად უნდა დავასახელოთ სინტაქსურ კონსტრუქციათა საკმაოდ დიდი სირთულე.
+                    </p>
+                    
+                    <p xml:id="p.h.2" n="41">
+                        ის შინაარსი, რომელიც კლასიკურ ძველ ქართულ ძეგლებში შეიძლებოდა გადმოცემული ყოფილიყო რამდენიმე დამოუკიდებელი წინადადებით, <num value="19">ი̃თ</num> ჰომილიაში ჩვეულებრივ გამოიხატება დიდი მოცულობის მარტივი გავრცობილი წინადადებით, ზოგჯერ კი რთული ქვეწყობილი წინადადებით.
+                    </p>
+                    
+                    <p xml:id="p.h.3" n="42">
+                        განსაზღვრებერთათვის მთარგმნელი ნაკლებად იყენებს ზმნურ კონსტრუქციებს, ამიტომ ტექსტი მეტად დატვირთულია სხვადასხვა ტიპის განსაზღვრებებით, მიუხედავად ამისა, იგი მძიმე, ხელოვნურ შთაბეჭდილებას მაინც არ ტოვებს. მაგალითად:
+                        <quote xml:lang="ka-Geok">ამისთჳს შეაჩრდილებულად წარმოადგენდეს სიტყუასა ღმრთისასა, რამეთუ მრავალ-ღმრთეებასა შინა დაბერებულსა და მსმენელსა მრავალთა ღმერთთა მამალ-დედალთასა და შვილთა და შვილისშვილთა ღმერთთასა სავნებელ ეყოფვოდა მეყსეულად შიშულად ქადაგებული სიტყუაჲ, არა თუმცა სიბრძნითა მოციქულებრითა მიფარულ-ქმნილ იყო</quote> (ჰ. 47).
+                    </p>
+                    
+                    <p xml:id="p.h.4" n="43">
+                        <term>მიმღეობურ ფორმათა სიმრავლე</term>. ზემოთ მოყვანილი მაგალითებიდანაც ჩანს, რომ <num value="19">ი̃თ</num> ჰომილიაში მიმღეობა ხშირად არის გამოყენებული განსაზღვრების ფუნქციით: <quote xml:lang="ka-Geok">ქრისტე მოვიდა... სოფლად, უცხოჲსა გზისა მჩუენებელი და უცხოჲსა შობისა შემომღებელი</quote> (ჰ. 5). <quote xml:lang="ka-Geok">ისმინე ისაიასი ზედ-წარმწერელისაჲ</quote> (ჰ. 65).
+                    </p>
+                    
+                    <p xml:id="p.h.5" n="44">
+                        ასეთსავე სურათს ვხედავთ გრამატიკულ ტრაქტატში: <quote xml:lang="ka-Geok">ლექსი თარგმანებული</quote> (1); <quote xml:lang="ka-Geok">წინა დაუსხმენ თითოეულისა ჟამისა შემსგავსებულთა ართრონთა</quote> (3).
+                    </p>
+                    
+                    <p xml:id="p.h.6" n="45">
+                        <term>განსაზღვრებით დამოკიდებულ წინადადებათა სიმცირე</term>. ბუნებრივია, რომ მიმღეობურ განსაზღვრებათა მრავალრიცხოვან ფორმათა გვერდით განსაზღვრებითი დამოკიდებული წინადადება შედარებით იშვიათია. ბერძნულ მიმღეობურ კონსტრუქციათა სხვადასხვაგვარი გადმოღება მთარგმნელთა ინდივიდუალური სტილის ერთ-ერთ დამახასიათებელ ნიშნად შეიძლება ჩაითვალოს.
+                    </p>
+                    
+                    <p xml:id="p.h.7" n="46">
+                        <persName ref="#euthymius">ეფთვიმე ათონელის</persName> თარგმანებში მიმღეობური კონსტრუქციების გადმოსაცემად ჩვეულებრივ ზმნის პირიან ფორმათა შემცველი წინადადებები გვხვდება<ptr target="#note159"/>, <persName ref="#ephrem">ეფრემ მცირის</persName> ენაში მათი რაოდენობა მატულობს<ptr target="#note160"/>; მათი ჭარბი ხმარება კი, როგორც ცნობილია, პეტრიწონის სკოლის წარმომადგენელთა თხზულებებისათვის არის დამახასიათებელი<ptr target="#note161"/>.
+                    </p>
+                    
+                    <!-- Continuation of Section ჱ: სინტაქსი და სტილი -->
+                    <p xml:id="p.h.47" n="47">
+                        <term corresp="#lex.mmsazghvreli">მსაზღვრელისა</term> და <term corresp="#lex.sazghvruli">საზღვრულის</term> თანმიმდევრობა. ვრცელ განსაზღვრებებში, რომლებიც დახლართულ კონსტრუქციებს ქმნის, სხვადასხვა ტიპის მსაზღვრელები რთულ სინტაგმატურ კავშირებს ქმნიან: <quote xml:lang="ka-Geok">ღმრთეება ყოვლისა მპყრობელებრისა ჴელმწიფებისა მქონებელი</quote> (ჰ. 71).
+                    </p>
+                    
+                    <p xml:id="p.h.48" n="48">
+                        <term corresp="#lex.mmsazghvreli">მსაზღვრელისა</term> და <term corresp="#lex.sazghvruli">საზღვრულის</term> თანმიმდევრობა მარტივ კონსტრუქციებშიც არ ჩანს შეზღუდული. მსაზღვრელი — <term corresp="#lex.attributuli">ატრიბუტულიცა</term> და <term corresp="#lex.martuli">მართულიც</term> — შეიძლება იყოს როგორც <term corresp="#lex.postpozicia">პოსტპოზიციური</term>, ისე <term corresp="#lex.prepozicia">პრეპოზიციული</term>: <quote xml:lang="ka-Geok">მოძღურებულ იქმნა არა სიტყჳთა იძულებულითა, არამედ სიტყჳთა წამებულითა, გარნა ნუ შეურაცხ-ვჰყოფთ დაშთომილსაცა ნეშტსა</quote> (პრეპ.) ჰ. 19; <quote xml:lang="ka-Geok">უჩუენებს სიმართლისა მზე</quote>. (პრეპ.) <quote xml:lang="ka-Geok">მზედ სიმართლისად უწოდს</quote> (ჰ. 4); <quote xml:lang="ka-Geok">ჰბერვიდეს გამომეტყუელთა ზღაპარნი, რიტორთა სიტყუანი</quote>, (პრეპ.) <quote xml:lang="ka-Geok">ჴელოვნებანი მასწავლელთანი, ფილოსოფოსთა</quote> (პრეპ.) <quote xml:lang="ka-Geok">ვრცელმეტყუელებანი</quote> (ჰ. 48); <quote xml:lang="ka-Geok">იხილე, თუ რაჲ პოა მწვალებელთა სიბოროტემან</quote> (პრეპ). <quote xml:lang="ka-Geok">იხილე წულილმოქმედება სიბოროტისაჲ</quote> (ჰ. 34).
+                    </p>
+                    
+                    <p xml:id="p.h.49" n="49">
+                        ასეთივე ვითარებაა გრამატიკულ ტრაქტატში: <quote xml:lang="ka-Geok">ძნელად საგონებელ არს ენასა ზედა ჩუენსა ლექსი თარგმანებული... ცხადსა და ნათელსა სიტყუასა</quote> (პრეპ.) <quote xml:lang="ka-Geok">უცნაურ ვინაჲმე ჰყოფს</quote> (I); <quote xml:lang="ka-Geok">არა გარდაერწყუმის ერთი მეორისასა სახელთაცვალებულებაჲ</quote> (პრეპ.) <quote xml:lang="ka-Geok">არამედ თითოეულისა ნათესავისასა სცავს თითოეული დრეკასა სახელთასა</quote> (2).
+                    </p>
+                    
+                    <p xml:id="p.h.50" n="50">
+                        სწორედ <term corresp="#lex.mmsazghvreli">მსაზღვრელ-საზღვრულის</term> სხვადასხვაგვარი თანამიმდევრობის გამოყენების შესაძლებლობა აძლევს საშუალებას მთარგმნელს, ააგოს ის ვრცელი კონსტრუქციები, რომელთა მაგალითები ზემოთაც იყო დასახელებული: <quote xml:lang="ka-Geok">ბრგუნილი ენაჲ შვილთა თჳსთაჲ</quote> (ჰ. 18). <quote xml:lang="ka-Geok">კეთილმსახურების ძლითთა ტკივილთა შინა და ღმრთისმეტყუელებისა კანონთა ძლევად ვიდრემე მეცადინნი</quote> (ჰ. 2). <quote xml:lang="ka-Geok">მაცხოვარი, სხუასა შინა მჩუენებელი ჴმასა მისგან წყაროებულისა მაცხოარებისასა</quote> (ჰ. 58).
+                    </p>
+                    
+                    <p xml:id="p.h.51" n="51">
+                        <term corresp="#lex.gatishva">მსაზღვრელ-საზღვრულის გათიშვა</term>. ამ მოვლენას ჩვენს ძეგლში სისტემური ხასიათი აქვს, რაც უთუოდ ბერძნული დედნის გავლენას უნდა მივაწეროთ. <term corresp="#lex.mmsazghvreli">მსაზღვრელ-საზღვრულს</term> (<term corresp="#lex.attributuli">ატრიბუტულსა</term> და <term corresp="#lex.martulsაც">მართულსაც</term>) თიშავს უმეტესად ზმნა (<term corresp="#lex.shemasmeneli">შემასმენელი</term>) ან სახელი: <quote xml:lang="ka-Geok">სამეუფოსა მეცნიერ იყო ღირსებასა</quote> (ჰ. 2). <quote xml:lang="ka-Geok">მეფისა საცნაურ-ჰყოფს მოსვლასა</quote> (ჰ. 24); <quote xml:lang="ka-Geok">სენთა განსაგდებელად უკუე მრავალღმრთეებისა</quote> (ჰ. 52); <quote xml:lang="ka-Geok">დასაბამისაცა მოიჴსენებს საქმეთა</quote> (ჰ. 66).
+                    </p>
+                    
+                    <p xml:id="p.h.52" n="52">
+                        გრამატიკულ თხზულებაშიც გვაქვს მსგავსი მაგალითი: <quote xml:lang="ka-Geok">ორთა პირთა დამსახველნი არა გუქონან სახელნი</quote> (8).
+                    </p>
+                    
+                    <p xml:id="p.h.53" n="53">
+                        როდესაც ამა თუ იმ სიტყვას განკერძოებული გამოთქმა განსაზღვრავს, ეს უკანასკნელი შეიძლება აგრეთვე დაშორებული იყოს განსასაზღვრავი სიტყვისაგან. ერთი ასეთი მაგალითი გვაქვს <num value="22">კ̃ბ</num>. ჰომილიის დასაწყისში და მისი შედარება ბერძნულ დედანთან, სიტყვათა წყობაში სრულ იგივეობას გამოავლენს: <quote xml:lang="ka-Geok">სამკურნალოსა სიმსგავსებულ არს ეკლესიათმოძღუარი, მრავალთა და მრავალგუართა სენთსამკურნალოთა წამალთა მქონებელსა</quote> (<quote xml:lang="grc">Ἰατρῷ ἔοικεν ὁ τῆς Ἐκκλησίας διδάσκαλος, πολλῶν καὶ ποικιλῶν παθῶν αὐτὴν κεκτημένων...</quote>).
+                    </p>
+                    
+                    <p xml:id="p.h.54" n="54">
+                        შერწყმულ წინადადებაში შესაძლოა მოხდეს ერთგვაროვან წევრთა გათიშვაც, მაგალითად: <quote xml:lang="ka-Geok">უძლურ არს თავით თჳსით და უგონებელ</quote> (ჰ. 17).
+                    </p>
+                    
+                    <p xml:id="p.h.55" n="55">
+                        <term>განკერძოებული სიტყვები და გამოთქმები</term>. განკერძოებულ განსაზღვრებიანი კონსტრუქციის გამოყენება ძალზე ხშირია <num value="19">ი̃თ</num> ჰომილიაში. ზოგიერთი მაგალითი დამოწმებული იყო ზემოთაც. დავასახელებთ კიდევ რამდენიმე დამახასიათებელ შემთხვევას: <quote xml:lang="ka-Geok">თომა, ერთმან მოციქულთაგანმან, ურწმუნო-ქმნილმან მაცხოვრისა აღდგომისამან და ენებებელმან განცხადებულად სახილველად მიღებად ურწმუნოებისა ძლით და აღმომთქუმელმან ამის სიტყჳსამან, ვითარმედ...</quote> (ჰ. 37); <quote xml:lang="ka-Geok">იოვანე მახარებელი, მკერდსა ზედა იესუჲსსა მიყრდნობილი და ვითარცა სამარადისოჲსა წყაროჲსაგან აღმომვსებელი</quote> (ჰ. 7); <quote xml:lang="ka-Geok">ყოვლისა შემცველი ძალი, ყოველთაგან ყოველთა შორის მყოფი, ყოველთა თჳსისა სულისა მიერ შემომენივთებელი</quote> (ჰ. 21); <quote xml:lang="ka-Geok">კალამსა ღმრთისასა, უკუდავისა ველისა მიერ პყრობილსა</quote> (ჰ. 17).
+                    </p>
+                    
+                    <p xml:id="p.h.56" n="56">
+                        ასეთი კონსტრუქციები გვხვდება გრამატიკულ თხზულებაშიც: <quote xml:lang="ka-Geok">ვითარცა ორობითთა შინა, ზემო ცხად-ქმნილთა</quote> (9); <quote xml:lang="ka-Geok">დედლისა სახელისა <term corresp="#lex.arthron">ართრონნი</term>, თავით კერძო დასასხმელნი</quote> (12); <quote xml:lang="ka-Geok">სხუანიცა <term corresp="#lex.arthron">ართრონნი</term>, ათ-ათი თითოეულისა ნათესავისადა დამორჩილებული</quote> (22).
+                    </p>
+                    
+                    <p xml:id="p.h.57" n="57">
+                        შეიმჩნევა, რომ <num value="19">ი̃თ</num> ჰომილიაში განკერძოებული გამოთქმები გვხვდება ზოგ ციტატაში მაშინაც, როდესაც ქართულ თარგმანებში სხვაგვარი ტრადიცია გვაქვს: <quote xml:lang="ka-Geok">ერთი და იგივე სული, განმყოფელი თჳსის თჳთოეულისაჲ ვითარცა ჰნებავს</quote> <ref type="biblical" cRef="1Cor.12.11">[I კორ. 12, 11]</ref> (ჰ. 70). შდრ. <quote xml:lang="grc">τὸ ἓν καὶ τὸ αὐτὸ πνεῦμα, διαιροῦν ἰδίᾳ ἑκάστω καθὼς βούλεται</quote>. ყველა ძველ ქართულ ვერსიაში შესაბამის ადგილას ზმნურ კონსტრუქციას ვხვდებით: <quote xml:lang="ka-Geok">ერთი და იგივე სული განუყოფს თითოეული კაცად კაცადსა, ვითარცა ჰნებავს</quote>.
+                    </p>
+                    
+                    <p xml:id="p.h.58" n="58">
+                        სხვა მაგალითია: <quote xml:lang="ka-Geok">ღმერთმან შემოქმედმან ცისა და ქუეყანისამან</quote> <ref type="biblical" cRef="Acts.17.24">[საქმე 17, 24]</ref> (ჰ. 48). <persName ref="#george_mtatsmindeli">გიორგისეულ</persName> ტექსტში: <quote xml:lang="ka-Geok">ღმერთი, რომელმან შექმნა ცაჲ და ქუეყანაჲ</quote>.
+                    </p>
+                    
+                    <p xml:id="p.h.59" n="59">
+                        <term corresp="#lex.obj_direct">პირდაპირი ობიექტის ბრუნვა</term> <term corresp="#lex.verb_noun">სახელზმნებთან</term>. <num value="19">ი̃თ</num> ჰომილიაში პირდაპირი ობიექტი <term corresp="#lex.sač̣isi">საწყისთან</term> ზოგჯერ გვხვდება <term corresp="#lex.micemiti">მიცემითსა</term> და <term corresp="#lex.saxelobiti">სახელობით ბრუნვაში</term>: <quote xml:lang="ka-Geok">ვინ შემძლებელ იყო დატევნად შიშულად ღმრთეებისა სიტყუასა</quote> (ჰ. 51); <quote xml:lang="ka-Geok">ჩუეულებად არს წერილისად ნაყოფსა ცა ძალად წოდებად</quote> (ჰ. 73); <quote xml:lang="ka-Geok">რაჲთა არა... კაცნი ჰგონებდენ სხვსა ღმრთისა მიერ ვიდრემე მოცემად სჯული</quote> (ჰ. 40).
+                    </p>
+                    
+                    <p xml:id="p.h.60" n="60">
+                        გრამატიკულ თხზულებაში <term corresp="#lex.sač̣isi">საწყისთან</term> <term corresp="#lex.micemiti">მიცემითი</term> და <term corresp="#lex.natesaobiti">ნათესაობითი</term> ერთმანეთის გვერდით გვაქვს: <quote xml:lang="ka-Geok">ამათსაცა ძალსა აწ განმარტებაჲ სატურთოდ აღუჩნდებოდა... აწინდელსა სიტყუასა ამათისა ძალისა განმარტებაჲ არარად ეჴმარებოდა</quote> (23).
+                    </p>
+                    
+                    <p xml:id="p.h.61" n="61">
+                        სხვა მაგალითებია: <quote xml:lang="ka-Geok">სურვილსა გონებისასა მოხარულნი</quote> (ჰ. 18); <quote xml:lang="ka-Geok">განყოფილებასა სჯულის-დებათასა მიმხედველნი კაცნი</quote> (ჰ. 40); <quote xml:lang="ka-Geok">მოციქულნიცა, მჩუენებელნი ღირსებასა სულისასა, იტყჳან</quote> (ჰ. 59). <quote xml:lang="ka-Geok">არა შჯულისა... მმონებელი</quote> (<num value="29">კ̃თ</num> ჰომ. 1).
+                    </p>
+                    
+                    <p xml:id="p.h.62" n="62">
+                        <term>უშემასმენლო წინადადებები</term>. ძველ ქართულ ნათარგმნ ძეგლებში უშემასმენლო წინადადებები უპირატესად სინტაქსურ კალკებს წარმოადგენს. ათონურ კრებულში ეს გარემოება განსაკუთრებით კარგად ჩანს იქ, სადაც ქართული ტექსტის შესაბამისი ბერძნული ხელმისაწვდომია; ასეთია <num value="27">კ̃ზ</num> ჰომილიის დასაწყისი: <quote xml:lang="ka-Geok">დღეს ეკლესიისანი დაწყნარებასა შინა და მწვალებელნი ღელვასა; დღეს ნავი ეკლესიისაჲ დაწყნარებასა შინა... დღეს მწყემსნი უზრუნველობასა შინა და სამწყსო უცთომელობასა შინა, მტერნი უღონოებასა, მგელნი უმოქმედობასა. დღეს ვენაჴი მაცხოვრისაჲ იეფობასა შინა და მოქმედნი სიბოროტისანი მოწყინებასა შინა...</quote> (ბერძნული ტექსტი ზემოთ, გვ. 44).
+                    </p>
+                    
+                    <p xml:id="p.h.63" n="63">
+                        <quote xml:lang="ka-Geok">პატივი ქრისტესი ჴსენება მოწამეთაჲ... რამეთუ საჴსენებელი მართლისაჲ შესხმით</quote> (<num value="26">კ̃ვ</num> ჰომ.). ამ თხზულების ბერძნული დედანი გამოუქვეყნებელია, მაგრამ უეჭველია, რომ ეს მონაკვეთიც ბერძნულის ყაიდაზეა გამართული; ასეთივე უშემასმენლო წინადადებები გვხვდება <num value="25">კ̃ე</num> ჰომილიის დასაწყისში: <quote xml:lang="ka-Geok">წერილთა მოძღურებაჲ კეთილმსახურებისა წყარო და ჭეშმარიტებისა დასაბამ და წმიდათა კადნიერება და მორწმუნეთა მოლოდება</quote>.
+                    </p>
+                    
+                    <p xml:id="p.h.64" n="64">
+                        ასეთი შემთხვევა <num value="19">ი̃თ</num> ჰომილიაშიც გვხვდება: <quote xml:lang="ka-Geok">იგივე უკუე და სიმართლეცა</quote> (ჰ. 7); <quote xml:lang="ka-Geok">ყოვლისა მპყრობელ და სული წმიდაჲ, ვითარცა მპყრობელი ყოველთაჲ და ყოველთა განმყოფელი ჳსისაებრ ნებისა</quote> (ჰ. 69); <quote xml:lang="ka-Geok">ერთ ღმერთი მამად, რომლისაგან ყოველი, და ერთ უფალი იესუ, რომლისა მიერ ყოველი</quote> (ჰ. 46).
+                    </p>
+                    
+                    <p xml:id="p.h.65" n="65">
+                        უშემასმენლო წინადადებები გრამატიკულ ტრაქტატშიც გვხვდება: <quote xml:lang="ka-Geok">და ესე ვიდრემე მამალთა ართრონთათჳს</quote> (11). ასეთივე ფორმებია ჩამოთვლისას: <quote xml:lang="ka-Geok">ეგრეთვე ორობითნი უართრონონი... ხოლო განმრავლებითნი უართრონონი</quote> (18). <quote xml:lang="ka-Geok">ეგრეთვე დედალნი ართრონნი სამებისანი, ვითარმედ</quote> (19). უშემასმენლო წინადადებათა ხმარება, როგორც ცნობილია, <persName ref="#petritsi">იოანე პეტრიწის</persName> ენისათვის არის დამახასიათებელი<ptr target="#note162"/>, მაგრამ ბერძნული ენის გავლენით იგი სხვა მთარგმნელთა ენაშიც იჩენს თავს<ptr target="#note163"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.66" n="66">
+                        <term>სინტაქსურ კონსტრუქციათა კონტამინაცია</term>. პირმიმართიანი და თანდებულიანი კონსტრუქციები ხშირია მეტყველების გამომხატველ ზმნებთან; <term corresp="#lex.relatiuri_zmna">რელატიური ზმნის</term> ირიბ ობიექტს ცვლის თანდებულიანი სახელი: <quote xml:lang="ka-Geok">თქუა მისსა მიმართ მეტყუელმან</quote> (ჰ. 5); <quote xml:lang="ka-Geok">იტყჳს მამაჲ მისგან შობილისა მიმართ</quote> (ჰ. 9); <quote xml:lang="ka-Geok">იტყჳს იუდეანთა მიმართ</quote> (ჰ. 67); მაგრამ: <quote xml:lang="ka-Geok">ეტყჳს ღმერთი ადამს</quote> (ჰ. 74). სინტაქსური კონტამინაცია უთუოდ აიხსნება ქართულ რელატიურ ზმნებთან უცხო ენის აბსოლუტური ზმნების კონსტრუქციების შეწყობის შედეგად<ptr target="#note164"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.67" n="67">
+                        <term corresp="#lex.mimart">მიმართ</term> თანდებული გვხვდება ბერძნულ კონსტრუქციათა გადმოსაცემად <quote>რწმენა</quote> ზმნასთანაც; <quote xml:lang="ka-Geok">ერთისა მიმართ გრწამს ღმრთეებისა</quote> (ჰ. 71); <quote xml:lang="ka-Geok">ირწმუნეთ მამისა მიმართ... გრწმენინ ძისა მიმართ</quote> (ჰ. 47): მაგრამ უშუალოდ მომდევნო ფრაზაში გვაქვს: <quote xml:lang="ka-Geok">ერწმუნენით სულსა წმიდასა</quote>.
+                    </p>
+                    
+                    <p xml:id="p.h.68" n="68">
+                        ერთი ასეთი მაგალითი გვხვდება ციტატაში: <quote xml:lang="ka-Geok">არა ჰრწმენა მისა მიმართ იუდეანთა</quote> <ref type="biblical" cRef="John.9.18">[ი. 9, 18]</ref> (ჰ. 7); მთარგმნელს აქ საკუთარი თარგმანი მოუცია; ძველ ქართულ ვერსიებში გვხვდება სხვა იკითხვსები: <quote xml:lang="ka-Geok">არა ჰრწმენა მისთვს</quote> (DE, <persName ref="#euthymius">ეფთჳმისეული</persName> და <persName ref="#george_mtatsmindeli">გიორგის</persName> თარგმანები), <quote xml:lang="ka-Geok">არა ჰრწმენა მისი</quote> C.
+                    </p>
+                    
+                    <p xml:id="p.h.69" n="69">
+                        სხვა მაგალითებია: <quote xml:lang="ka-Geok">ნუ კაცისა მიმართ მიხედავ</quote> (15); <quote xml:lang="ka-Geok">სხჳსა მიმართ ვიდრემე წარავლენს სიტყუასა, ხოლო თავისა თჳსისა მიმართ მიიღებს ღმრთისმეტყუელებასა ... სული წმიდაჲ. თავისა თჳსისა მიმართ მიიხუამს სასწაულთა</quote> (ჰომ. 63).
+                    </p>
+                    
+                    <p xml:id="p.h.70" n="70">
+                        <term corresp="#lex.mimart">მიმართ</term> თანდებული იხმარება ისეთ კონსტრუქციებშიც, სადაც აშკარად შეიგრძნობა მისი ხმარების არაბუნებრივი ხასიათი: <quote xml:lang="ka-Geok">წინამდებარისა მიმართ მოვიდეთ</quote> (ჰომ. 12); <quote xml:lang="ka-Geok">აღმყვანებელი მათი სიმაღლეთა მიმართ ღმრთისმეტყუელებათასა</quote> (ჰომ. 51); <quote xml:lang="ka-Geok">უძლურებისა მიმართ მსმენელთაისა მისწერს</quote> (ჰომ. 55). სინტაქსური კალკის უცხო მოდელი ნათლად ჩანს <num value="31">ლ̃ა</num> სიტყვის დასაწყისში: <quote xml:lang="ka-Geok">განანათლებს კეთილმსახურებისა მიმართ</quote>. შდრ. <quote xml:lang="grc">δαδουχεῖ πρὸς εὐσέβειαν</quote>. მსგავსი კონსტრუქციის კვალი ჩანს გრამატიკულ ტრაქტატში, სადაც <term corresp="#lex.mimart">მიმართ</term> თანდებულს სიტყვამაწარმოებელი აფიქსის როლი აქვს: <quote xml:lang="ka-Geok">მართლმადიდებელთა მიმართად იტყვს</quote> (I).
+                    </p>
+                    
+                    <p xml:id="p.h.71" n="71">
+                        <term corresp="#lex.da">და</term> კავშირი <term corresp="#lex.ca">-ცა</term> ნაწილაკის მნიშვნელობით. ბერძნული ენის ზეგავლენით <term corresp="#lex.da">და</term> კავშირის ხმარება <term corresp="#lex.ca">-ცა</term> ნაწილაკის მნიშვნელობით საზოგადოდ ცნობილია ძველ ქართულში<ptr target="#note165"/>. ასეთი შემთხვევები ჩვენს ძეგლებშიც საკმაოდ ხშირია, ამასთან <term corresp="#lex.da">და</term> უპირატესად <term corresp="#lex.ca">-ცა</term> ნაწილაკთან ერთად გვხვდება: <quote xml:lang="ka-Geok">ამისთჳს და შუათაცა მოქენე არს ჴუმევად ართრონთა</quote> (17); <quote xml:lang="ka-Geok">ვინაჲთგან და თჳთ პირველთა ძლითიცა ესე სიტყუაჲ ნუუკუე და საწყინო უჩნდეს</quote> (23); <quote xml:lang="ka-Geok">რაჲთა და საქმენიცა გჳკვრდენ</quote> (ჰომ. 3); <quote xml:lang="ka-Geok">და წამებასაცა შემოართუამს</quote> (ჰომ. 20); <quote xml:lang="ka-Geok">კითხულ იქმენინ და ჩუენ მიერცა</quote> (ჰომ. 28); <quote xml:lang="ka-Geok">ეგრეთვე და მახარებელიცა</quote> (ჰომ. 33); <quote xml:lang="ka-Geok">ვითარმედ და მხოლოდშობილიცა ღმრთად იწოდების</quote> (ჰომ. 33); <quote xml:lang="ka-Geok">არა ხოლო... ნერგთა ზედა იწოდების, არამედ და კაცთაცა ზედა</quote> (ჰომ. 75).
+                    </p>
+                    <!-- Continuation of Section ჱ: სინტაქსი და სტილი -->
+                    <p xml:id="p.h.72" n="72">
+                        უფრო იშვიათად <term corresp="#lex.da">და</term> ნაწილაკის ფუნქციით იხმარება <term corresp="#lex.ca">-ცა</term> ნაწილაკის გარეშეც: <quote xml:lang="ka-Geok">ესრეთვე და აქა</quote> (ჰომ. 68); <quote xml:lang="ka-Geok">ამისთჳს უკუე და ნეტარი ისაია... იტყოდა</quote> (ჰომ. 15).
+                    </p>
+                    
+                    <p xml:id="p.h.73" n="73">
+                        ცნობილია, რომ მსგავსი ფორმები განსაკუთრებით შესამჩნევია <persName ref="#petritsi">იოანე პეტრიწის</persName> ენაში, მაგრამ არც თუ იშვიათია <persName ref="#george_mtatsmindeli">გიორგი მთაწმიდლისა</persName> და <persName ref="#ephrem">ეფრემ მცირის</persName> ნათარგმნ თხზულებებში<ptr target="#note166"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.74" n="74">
+                        <term>სხვათა სიტყვის გადმოცემა</term>. ოქროპირისეულ თხზულებაში მრავლად არის დამოწმებული სხვისი ნათქვამი, ამ ხასიათისა არის მრავალრიცხოვანი ციტატები ძველი და ახალი აღთქმიდან. გარდა ამისა, ხშირად არის მოყვანილი ავტორის ამა თუ იმ აზრის მომხრეთა თუ მოწინააღმდეგეთა სიტყვებიც.
+                    </p>
+                    
+                    <p xml:id="p.h.75" n="75">
+                        ციტაცია ხშირად ხდება წინამავალ ტექსტთან სინტაქსური კავშირის გარეშე: <quote xml:lang="ka-Geok">დავით იტყჳს: „კურთხეულ არს მომავალი სახელითა უფლისაჲთა“</quote> <ref type="biblical" cRef="Ps.117.26">[ფს. 117, 26]</ref> (ჰომ. 33); <quote xml:lang="ka-Geok">იტყჳს უკუე წიგნთაჲ იოილ: „ვენაჴმან და ლეღუმან მოსცეს ძალი თჳსი“</quote> <ref type="biblical" cRef="Joel.2.22">[იოელ 2, 22]</ref> (ჰომ. 74).
+                    </p>
+                    
+                    <p xml:id="p.h.76" n="76">
+                        სხვათა ნათქვამს წინ ზოგჯერ უძღვის <term corresp="#lex.vitarmed">ვითარმედ</term>: <quote xml:lang="ka-Geok">პავლე იტყჳს, ვითარმედ: „თავადი უფალი... შთამოვიდეს“</quote> <ref type="biblical" cRef="1Thess.4.16">[თესალ. 4, 16]</ref> (ჰომ. 24); <quote xml:lang="ka-Geok">მწვალებელნი იტყჳან, ვითარმედ: „თეოს“ ვიდრემე წერილ არს“</quote> (ჰომ. 34).
+                    </p>
+                    
+                    <p xml:id="p.h.77" n="77">
+                        უფრო იშვიათად ასეთ შემთხვევებში გვხვდება კავშირი <term corresp="#lex.tu">თუ</term>: <quote xml:lang="ka-Geok">არცა იყო უჭირველ თქუმად, თუ: „ირწმუნეო მამისა მიმართ“</quote> (ჰომ. 46); <quote xml:lang="ka-Geok">არა იტყოდა უართრონოდ, თუ: „კჳრიოს მუ“, არამედ ვითარმედ: „ო კურიოს მუ“</quote> (ჰომ. 37). უკანასკნელ მაგალითში კარგად ჩანს, რომ ორივე კავშირი (<mentioned xml:lang="ka-Geok">ვითარმედ</mentioned> და <mentioned xml:lang="ka-Geok">თუ</mentioned>) ერთგვარი მნიშვნელობით არის ნახმარი.
+                    </p>
+                    
+                    <p xml:id="p.h.78" n="78">
+                        გრამატიკულ ტრაქტატშიც სხვათა სიტყვის დამოწმებისას ძირითადი საკავშირებელი სიტყვაა <term corresp="#lex.vitarmed">ვითარმედ</term>: <quote xml:lang="ka-Geok">არა ესრეთ იტყჳან... არამედ ესრეთ, ვითარმედ: „ჳ თეკ“</quote> (9). და მრავალი სხვა. <term corresp="#lex.tu">თუ</term> აქაც უფრო იშვიათია: <quote xml:lang="ka-Geok">არა იტყოდის, თუ: „ღმერთი იყო სიტყუაჲ“</quote> (21).
+                    </p>
+                    
+                    <p xml:id="p.h.79" n="79">
+                        ციტატებში, რომლებიც საკავშირებელ სიტყვას მოსდევს, ხშირად <term corresp="#lex.o">სხვათა სიტყვის ნაწილაკიც</term> იხმარება: <quote xml:lang="ka-Geok">გესმას, ვითარმედ: „ამას იტყჳსო უფალი ყოვლისა მპყრობელი“</quote> (ჰომ. 59). მეტყველების აღმნიშვნელი ზმნები (<mentioned xml:lang="ka-Geok">იტყჳს</mentioned>, <mentioned xml:lang="ka-Geok">თქუა</mentioned> და სხვ.) ხშირად ციტატას წყვეტს და შიგ არის ჩართული: <quote xml:lang="ka-Geok">„მრავალთა სასწაულთა ქმნასა მის მიერო“, – იტყჳს, — „არა ჰრწმენა მისა მიმართ იუდეანთა“</quote> <ref type="biblical" cRef="John.12.38">[ი. 12, 38]</ref> (ჰომ. 7); <quote xml:lang="ka-Geok">„შემახო ვინ მეო“, — თქუა, — „რამეთუ მე ვცან ძალი განსრული ჩემგან“</quote> <ref type="biblical" cRef="Luke.8.46">[ლ. 8, 46]</ref> (ჰომ. 58).
+                    </p>
+                    
+                    <p xml:id="p.h.80" n="80">
+                        ზოგჯერ ციტატაში მთელი წინადადება არის ჩართული: <quote xml:lang="ka-Geok">„დაადგერითო“, — ეტყჳს მაცხოვარი მოციქულთა, — „იერუსალჱმით შინა, ვიდრემდის შეიმოსოთ ძალი მაღლით“</quote> <ref type="biblical" cRef="Luke.24.49">[ლ. 24, 49]</ref> (ჰომ. 79); რამეთუ <quote xml:lang="ka-Geok">„უფალი სულ არს“, — ვითარცა იტყჳს პავლე, — „ხოლო სადა სული უფლისაჲ, მუნ თავისუფლებაჲ“</quote> <ref type="biblical" cRef="2Cor.3.17">[2 კორ. 3, 17]</ref> (ჰომ. 55).
+                    </p>
+                    
+                    <p xml:id="p.h.81" n="81">
+                        პერსონაჟის მეტყველების გათიშვა მეტყველების აღმნიშვნელი ზმნებით დამახასიათებელია ბერძნულისათვის; საგულისხმოა ის გარემოება, რომ მსგავსი კონსტრუქციები ქართველ მთარგმნელებს სხვადასხვაგვარად აქვთ ქართულში გადმოცემული<ptr target="#note167"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.82" n="82">
+                        პირდაპირი მეტყველების დამოწმებისას წინამავალ ტექსტში მთქმელის აღმნიშვნელ სიტყვას (საკუთარ სახელს, ნაცვალსახელს) ხშირად მოსდევს <term corresp="#lex.mimghv_metqveli">მიმღეობა მეტყუელი</term>:
+                        <quote xml:lang="ka-Geok">ხოლო მან თქუა მისსა მიმართ მეტყუელმან: „აწ განუტევე მონაჲ შენი მშჳდობით“</quote> <ref type="biblical" cRef="Luke.2.29">[ლ. 2, 29]</ref> (ჰომ. 5); <quote xml:lang="ka-Geok">მაცხოვარმან... მოუწოდა თომას მეტყუელმან: „მოვედ, დასდევ ჴელი...“</quote> <ref type="biblical" cRef="John.20.27">[ი. 20, 27]</ref> (ჰომ. 37); <quote xml:lang="ka-Geok">ლუკა იჴუმია ჴმა მეტყუელმან: „ძალნი გამოვიდოდეს და განჰკურნებდა ყოველთა“</quote> <ref type="biblical" cRef="Luke.6.19">[ლ. 6, 19]</ref> (ჰომ. 57); 
+                        <quote xml:lang="ka-Geok">ისმინე დავითისა მეტყუელისაჲ: „დღეს თუ კჴმისა მისისა ისმინოთ“</quote> <ref type="biblical" cRef="Ps.94.8">[ფს. 94, 8]</ref> (ჰომ. 60); <quote xml:lang="ka-Geok">ისმინე პავლჱსი მეტყუელისაჲ კორინთელთა მიმართ: „და მეცა, ძმანო, ვერ შემძლებელ ვიქმენ სიტყუად“</quote> <ref type="biblical" cRef="1Cor.3.1">[1 კორ. 3, 1]</ref> (ჰომ. 54).
+                    </p>
+                    
+                    <p xml:id="p.h.83" n="83">
+                        ასეთი კონსტრუქციები წარმოადგენს ბერძნული, ე. წ. „დაკავშირებული მიმღეობის“ სიტყვა-სიტყვით გადმოცემის ცდას. ძველ თარგმანებში ასეთ შემთხვევებში ხშირად ბერძნული <mentioned xml:lang="grc">λέγων</mentioned> ქართულად ზმნის პირიანი ფორმით არის გადმოცემული, მაგალითად: <quote xml:lang="ka-Geok">ასწავებდა მათ და ეტყოდა</quote> <ref type="biblical" cRef="Matt.5.2">[მ. 5, 2]</ref>. ასეა ყველა ქართულ რედაქციაში; შდრ. <quote xml:lang="grc">Ἐδίδασκεν αὐτοὺς λέγων</quote>. გელათურ ბიბლიაში კი, რომლის ენაში ელინოფილური ტენდენციები გარკვევით ჩანს, <mentioned xml:lang="grc">λέγων</mentioned> ჩვეულებრივ გადმოცემულია მიმღეობითვე: <quote xml:lang="ka-Geok">იქმნა სიტყუაი უფლისაჲ ჩემდამი მეტყუელი</quote> (შდრ.: <quote>და თქუა</quote> ოშკურში) — <quote xml:lang="grc">ἐγένετο λόγος Κυρίου πρός με λέγων</quote> <ref type="biblical" cRef="Ezek.11.14">[ეზ. 11, 14; 12, 1; 16, 1 და სხვ]</ref>; <quote xml:lang="ka-Geok">მოვიდა ჩემდა იერუსალჱმით განრინებული მეტყუელი</quote> (და თქუა ოშური) — <quote xml:lang="grc">ἦλθεν ὁ ἀνασωθεὶς πρὸς με ἀπὸ Ιερουσαλημ λέγων</quote> <ref type="biblical" cRef="Ezek.33.21">[ეზ. 33, 21]</ref>.
+                    </p>
+                    
+                    <p xml:id="p.h.84" n="84">
+                        გრამატიკულ ტრაქტატშიც გვაქვს მსგავსი კონსტრუქცია, რადგან თარგმანისათვის დამახასიათებელი კალკები ორიგინალურ თხზულებაშიც არის განმეორებული: <quote xml:lang="ka-Geok">იოანე ოქროპირი... აღუჴსნის მრავალთა გამოსაჩინებელთა მიერ, მეტყუელი, ვითარმედ...</quote> (20).
+                    </p>
+                    
+                    <p xml:id="p.h.85" n="85">
+                        სხვათა სიტყვის <term corresp="#lex.o">-ო</term>. ზემოთ მოყვანილ მაგალითებშიც ჩანს, რომ სხვათა სიტყვის <term corresp="#lex.o">-ო</term> საკმაოდ ხშირად იხმარება. იგი ახლავს ზმნას, არსებით სახელს, ნაცვალსახელს, თანდებულს, ნაწილაკს; <quote xml:lang="ka-Geok">აქუსო</quote> (ჰომ. 34); <quote xml:lang="ka-Geok">იტყოდისო</quote> (ჰომ. 34); <quote xml:lang="ka-Geok">ღმერთიო</quote> (ჰომ. 40); <quote xml:lang="ka-Geok">მეო</quote> (ჰომ. 57); <quote xml:lang="ka-Geok">არაო</quote> (ჰომ. 15). შეიმჩნევა, რომ სხვათა სიტყვის <term corresp="#lex.o">-ო</term> ხშირად ახლავს ციტატაში, რომელიც გათიშულია სხვისი ნათქვამობის აღმნიშვნელი ზმნით, ამ უკანასკნელის წინ მდგომ სიტყვას: <quote xml:lang="ka-Geok">„აჰა ესერა აღმოვუვლინოო“, — იტყჳს, — „სახლსა დავითისსა აღმოსავალი სიმართლისა“</quote> <ref type="biblical" cRef="Jer.23.5">[იერ. 23, 5]</ref> (ჰომ. 8).
+                    </p>
+
+                </div>
+                <div type="section" n="თ" xml:id="section.lexis">
+                    <head>ლექსიკა</head>
+                    
+                    <p xml:id="p.h.86" n="86">
+                        <term>იშვიათად ხმარებული სიტყვები</term>. ამათგან პირველ რიგში აღსანიშნავია <term corresp="#lex.raindoba">რაინდობა</term>. სიტყვა გვხვდება <num value="20">კ̃</num> ჰომილიის ერთ-ერთ სქოლიოში. ტექსტში ნათქვამია: <quote xml:lang="ka-Geok">„რაჲთა თჳსსა ინიოხობასა რომელთა მიმართ ენებოს, დადვას სული თჳსი“</quote>. აშიაზე მოცემულია განმარტება: <quote>„რაინდობასა ინიოხობასა, ესე იგი მართებასა, მსხუჱრპლნი იუდაებრნი არა ენებნეს. გარნა ინიოხობდა, ესე იგი არს ჰმართებდა...“</quote> შენიშვნის მიხედვით აშკარაა, რომ <term corresp="#lex.raindoba">რაინდობა</term> <term corresp="#lex.inioxi">ინიოხობის</term> (<mentioned xml:lang="grc">ἡνιοχέω</mentioned>-ს) სინონიმად არის მიჩნეული.
+                    </p>
+                    
+                    <p xml:id="p.h.87" n="87">
+                        <term corresp="#lex.raindi">რაინდი</term> (და აქედან ნაწარმოები <term corresp="#lex.raindoba">რაინდობაც</term>) რამდენჯერმე გვხვდება ძველი ქართული ენის ნათარგმნ ძეგლებში და გადმოსცემს ორიგინალის ბერძნულ სიტყვას. <persName ref="#arsen_iqaltoeli">არსენ იყალთოელის</persName> ნათარგმნ „დიდ სჯულისკანონში“ <term corresp="#lex.raindi">რაინდი</term> არის ცხენის ორთვალას მმართველი: <quote xml:lang="ka-Geok">მგოსანი... ანუ რაინდი, ანუ მარტოდ მბრძოლი, ანუ სტადიონს მორბედი</quote><ptr target="#note168"/>. <num value="12">XII</num>—<num value="13">XIII</num> ს. გადაწერილი ხელნაწერი A 737 შეიცავს ანტიოქიის კრების კანონებს, რომელთაგან ზოგიერთი ეხება <quote xml:lang="ka-Geok">„სტადიონმორბედთა, მოკიცხართა, რაინდთა, მებარბითეთა, მეფანდურეთა“</quote><ptr target="#note169"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.88" n="88">
+                        <persName ref="#j_damascene">იოანე დამასკელის</persName> ენკომიაში <persName ref="#chrysostom">იოანე ოქროპირის</persName> მიმართ, რომელიც ნათარგმნია <num value="11">XI</num> საუკუნეში, ნათქვამია: <quote xml:lang="ka-Geok">„რაინდობდა პირუტყუსა ზედა“</quote><ptr target="#note170"/>. ბერძნულ დედანში გვაქვს <quote xml:lang="grc">ἡνιοχοῦντες</quote> (PG 96, 769). ორიგინალურ თხზულებათაგან შეიძლება დავასახელოთ „ისტორიანი და აზმანი...“, სადაც ნახსენებია <quote>რაინდობანი და მკჳრცხლ-მოქმედებანი</quote><ptr target="#note171"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.89" n="89">
+                        <term corresp="#lex.inioxi">ინიოხ</term> სიტყვას განმარტავს აგრეთვე <persName ref="#ephrem">ეფრემ მცირე</persName> (<num value="12">XII</num> ს. A—689 ხელნაწერში) მის მიერ თარგმნილი ერთ-ერთი თხზულების შენიშვნაში: <quote>„შეისწავე, რამეთუ რაჲ-იგი არს მწაფელი მჳნველისათჳს, იგივე არს ინიოხი ეტლთა ზედა მჯდომარისათჳს. ხოლო ქართულად არცა ეტლნი არიან, მგონია, რომელ არცა სახელი მეეტლისაი; ამისთვს ბერძულივე დავწერე ინიოხი“</quote><ptr target="#note172"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.90" n="90">
+                        ზემოთ მოყვანილი მაგალითების მიხედვით ჩანს, რომ ძველ ქართულში <term corresp="#lex.raindi">რაინდი</term> არის „მხედარი, მეეტლე“; <term corresp="#lex.raindoba">რაინდობა</term> ისევე, როგორც <mentioned xml:lang="grc">ἡνιοχεία</mentioned>, ნახმარია როგორც ცხენის მართვის, ისე საზოგადოდ მართვის, მმართველობის აღსანიშნავად. <term corresp="#lex.raindi">რაინდ</term> სიტყვის სხვა მნიშვნელობები ქართულში შემდეგ უნდა იყოს განვითარებული.
+                    </p>
+                    
+                    <p xml:id="p.h.91" n="91">
+                        ამ მხრივ საგულისხმოა, რომ <persName ref="#saba">საბას</persName> ლექსიკონში <term corresp="#lex.raindi">რაინდი</term> განმარტებულია მხოლოდ როგორც „ცხენთა განმწვრთნელი“ ZAB; <quote>„რაინდი ეწოდების რომელი ცხენთა კეთილად განსწვრთნიდეს... გინა ეტლთა ავლენდეს...“</quote> ხოლო <term corresp="#lex.inioxi">ინოხი</term> (!) როგორც <quote>„რაინდი“</quote>. <persName ref="#saba">საბასთანავე</persName> არის <mentioned>ენიოტი</mentioned> (ტ-სა და ხ-ს აღრევის გამო ნუსხურში)<ptr target="#note173"/> „რომელმანც ცხენი კეთილად განწვრთნას“.
+                    </p>
+                    
+                    <p xml:id="p.h.92" n="92">
+                        <term corresp="#lex.sheparileba">შეფარილება</term>: <quote xml:lang="ka-Geok">უწყოდა იუდეანთა სიბოროტე, მარადის მოსწრაფე შეფარილებად სიტყუათა საღმრთოთა და შემჩრდილველად მაცხოვრისათვის წინაჲსწარმეტყუელებათა</quote> (ჰომ. 43). კონტექსტის მიხედვით, <term corresp="#lex.sheparileba">შეფარილება</term> და <term>შეჩრდილვა</term> მსგავსი მნიშვნელობის სიტყვები უნდა იყოს. ეგევე სიტყვა დამოწმებულია <persName ref="#i_abuladze">ილ. აბულაძის</persName> წიგნში („მასალები ძველი ქართული ენის ლექსიკონისა თვის“, თბ., 1975) „მამათა სწავლათა“ მიხედვით: <quote xml:lang="ka-Geok">„ნეტარ არს, რომელი იგლოვდეს სულისა თჳსისათჳს მცირედსა ამას ჟამსა, რაჲთა არა შეაფარილოს იგი ცოდვითა და ბრალითა“</quote> (მ. სწ. 59, 24).
+                    </p>
+                    
+                    <p xml:id="p.h.93" n="93">
+                        <persName ref="#saba">საბას</persName> ლექსიკონში <mentioned>შევაფარილე</mentioned> განმარტებულია ასე: „ფარილით შევსვარე“, <mentioned>შეიფარილა</mentioned> — შეიმურა, ხოლო <term>ფარილი</term> არის „ბაზმის მური“. უკანასკნელი განმარტება განმეორებულია <persName ref="#n_chubinashvili">ნ. ჩუბინაშვილის</persName> ლექსიკონშიც. <persName ref="#d_chubinashvili">დავ. ჩუბინაშვილის</persName> ლექსიკონში არის <mentioned>შეფარილვა</mentioned>, <term corresp="#lex.sheparileba">შეფარილება</term> კი განმარტებულია: <quote xml:lang="ru">скрыть, спрятать</quote>.
+                    </p>
+                    
+                    <p xml:id="p.h.94" n="94">
+                        სიტყვა გვხვდება მოგვიანებითაც; <persName ref="#antony_martoqopeli">ანტონი მარტომყოფელის</persName> სვინაქსარულ ცხოვრებაში, რომელიც <num value="17">XVII</num> ს-შია შექმნილი, ვკითხულობთ: <quote xml:lang="ka-Geok">„დადგა კანდელი აღნთებული...“</quote>
+                    </p>
+                    <!-- Continuation of Section თ: ლექსიკა -->
+                    <p xml:id="p.h.95" n="95">
+                        <quote xml:lang="ka-Geok">აღმოყარა კარი იგი კამარისა და შეაფარილა, რომელ ყოვლად არა ეტყობოდა, თუ ერთი რომელ უახლეს არს</quote><ptr target="#note174"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.96" n="96">
+                        <term corresp="#lex.ipqlis_gesli">იფქლის გესლი</term>: სიტყვის მნიშვნელობა ზუსტად გარკვეული არ არის, უნდა აღნიშნავდეს დაავადებას (მცენარისას): <quote xml:lang="ka-Geok">„იტყჳან ამასცა შვილნი მწვალებელთანი, ვითარ-იგი მუხუნძველსაცა (?) და იფქლის გესლსა ძალად დიდად ღმრთისა უწოდენ</quote> (ჰომ. 73). <term corresp="#lex.muxundzveli">მუხუნძველი</term> (<persName ref="#saba">საბას</persName> განმარტებით „მძრომი, ფოთლის მჭამელი ჭია“) ცუდად იკითხება, შესაძლოა, ეწეროს <mentioned xml:lang="ka-Geok">მუხონრეულსაცა</mentioned>.
+                    </p>
+                    
+                    <p xml:id="p.h.97" n="97">
+                        <term>ბერძნული სიტყვები</term>. <num value="19">ი̃თ</num> ჰომილიის ტექსტში ისინი შედარებით მცირეა, რაც არის, უმთავრესად დიდი ხნის შემოსულია და საყოველთაო ხმარებისაა: <mentioned>ანგელოზი</mentioned>, <mentioned>ეპისტოლე</mentioned>, <mentioned>ორღანო</mentioned>, გარდა ამისა, გვხვდება ნაკლებად ცნობილი სიტყვებიც: ათონური ხელნაწერის „შეისწავეთა“ ერთი ნაწილი სწორედ ტექსტში უთარგმნელად დატოვებულ ბერძნულ სიტყვებს განმარტავს.
+                    </p>
+                    
+                    <p xml:id="p.h.98" n="98">
+                        ასეთების მაგალითებია <term corresp="#lex.loma">ლომა</term>, <term corresp="#lex.spherotiri">სფეროტირი</term>, <quote xml:lang="ka-Geok">„უკუეთუ მოვიღო ლომაჲთ ვიდრე სფეროტირადმდე ჴამლთა“</quote> (<num value="26">კ̃ვ</num> ჰომ.). აშიაზე განმარტებულია: <quote>„შეისწავე, რამეთუ ლომაჲ ვიდრემე ეწოდების ოქსინოისა და ბისონისა და ძოწეულისა მიერ შექმნილსა საოლავსა ქუჴქუჴმოხსა და ვითარცა ამის გამო ყოველსა ანტიპასა სამოსლისასა; ხოლო სფეროტირი ღუედსა ეწოდების სანდალთასა, ვითარცა წაღმართრე თჳთ თარგმნის უცხადესად“</quote>. <term corresp="#lex.loma">ლომაჲ</term> არის <mentioned xml:lang="grc">λωμα</mentioned> „აშია“; <mentioned>ანტიპა</mentioned> აგრეთვე ბერძნული სიტყვა უნდა იყოს, ხოლო <term corresp="#lex.spherotiri">სფეროტირი</term> (<mentioned xml:lang="grc">σφαιρωτήρ</mentioned>) კი მართლაც „სანდალში ამოსაყრელი ღვედი“ არის.
+                    </p>
+                    
+                    <p xml:id="p.h.99" n="99">
+                        <term corresp="#lex.dimosi">დიმოსი</term>. <num value="27">კ̃ზ</num> ჰომილიის ტექსტში არის ამ ფუძისაგან წარმოქმნილი ზედსართავი: <quote xml:lang="ka-Geok">ვითარცა შენაწევრებანი დიმოსებრთა სარბიელთანი, უკუეთუ არა სამეფოჲთა დაბეჭდულ იყვნენ ჴელითა, დაუმტკიცებელ არიან, ესრეთვე...</quote> ამ ადგილის განსამარტავად მთარგმნელს აშიაზე მიუწერია: <quote>„სჳნთემატა: შეისწავე, რამეთუ სჳნთემა თან შედგმასა ეწოდების გინა შეწყობასა რასმე ანუ შენაწევრებასა. ხოლო დიმოსებრი შენაწევრებაჲ არს, რაჟამს მეფემან დაამტკიცოს რაჲმე წერით დიმოსისა მიერ მოსაქმებად“</quote>. „შეისწავეში“ დამოწმებული <term corresp="#lex.dimosi">დიმოსი</term> არის ბერძნული <mentioned xml:lang="grc">δήμος</mentioned> „ერი, ხალხი“, რომელიც ძველ ქართულში ცნობილია.
+                    </p>
+                    
+                    <p xml:id="p.h.100" n="100">
+                        <term corresp="#lex.emplastro">ემპლასტროჲ</term>. დამოწმებულია <num value="22">კ̃ბ</num> ჰომილიის დასაწყისში, სადაც „სენითა ამპარტავნებისაჲთა“ სნეულნი მიიღებენ განსაკურნებლად <quote xml:lang="ka-Geok">ემპლასტროსა სიმდაბლისასა</quote>, შესაბამის ბერძნულ ტექსტში დამოწმებულია <mentioned xml:lang="grc">τò ἔμπλαστρον</mentioned> „მალამო, სალბუნი“. ეს სიტყვა გვხვდება აგრეთვე <date>1263</date> წლის საეკლესიო კრების დადგენილებაში: <quote xml:lang="ka-Geok">„ამა საქმესა თქუენვე სწამლეთ და დასდევთ ემბლასტროჲ საკურნებელი“</quote><ptr target="#note175"/>. სიტყვა გვხვდება <persName ref="#saba">საბას</persName> ლექსიკონში (<mentioned>ემპლასტრა</mentioned>, <mentioned>ემპლასტრო</mentioned>, <mentioned>ემპლასტო</mentioned>, „მალამო, სალბუნი“). ამავე მნიშვნელობით შეტანილია <persName ref="#d_chubinashvili">დავით ჩუბინაშვილის</persName> ლექსიკონშიც.
+                    </p>
+                    
+                    <p xml:id="p.h.101" n="101">
+                        <term corresp="#lex.khoro">ხოროჲ</term>. დამოწმებულია <num value="27">კ̃ზ</num> სიტყვის დასაწყისში. <quote xml:lang="ka-Geok">„ანგელოზნი ზეცათა ხოროჲსა შემამტკიცებელნი“</quote>... ბერძნულ ტექსტში შესაბამის ადგილას არის <mentioned xml:lang="grc">χορός</mentioned> „გუნდი, ქორო“.
+                    </p>
+                    
+                    <p xml:id="p.h.102" n="102">
+                        <term>ბერძნულის კალკები</term>. ტექსტში საკმაოდ მრავლად გვხვდება ბერძნულის კალკები, განსაკუთრებით კომპოზიტებში, ან მათგან ნაწარმოებ აბსტრაქტულ სახელებში. რა თქმა უნდა, არ შეიძლება დაბეჯითებით თქმა, რომ ყოველი მათგანი მთარგმნელის მიერ არის შექმნილი, რადგან ზოგიერთი საკმაოდ ხშირად გვხვდება ძველ ქართულში საზოგადოდ და განსაკუთრებით ელინოფილთა ნაწერებში.
+                    </p>
+                    
+                    <p xml:id="p.h.103" n="103">
+                        <term corresp="#lex.berva">ბერვა</term>: <quote xml:lang="ka-Geok">„ათინათა შინა, სადა-იგი მჴნობდა მრავალ-ღმრთეებაჲ, სადა ჰბერვიდეს გამომეტყუელთა ზღაპარნი, რიტორთა სიტყუანი“</quote> (ჰომ. 47). აქ უნდა გვქონდეს პირდაპირი თარგმანი <mentioned xml:lang="grc">πνέω</mentioned> ზმნისა, რომლის ძირითადი მნიშვნელობა მართლაც არის „ბერვა, შებერვა“. მაგრამ იგი ამავე დროს ნიშნავს „სუნთქვას“ და აქედან „ცხოვრებას, არსებობას“. ეს უკანასკნელი მნიშვნელობა არის სავარაუდებელი ქართულ თარგმანში (<mentioned xml:lang="ka-Geok">ჰბერვიდეს</mentioned> — არსებობდნენ, იყვნენ).
+                    </p>
+                    
+                    <p xml:id="p.h.104" n="104">
+                        <term corresp="#lex.mesashovle">მესაშოვლე</term>: ეს სიტყვა ნახმარია კონტექსტში, სადაც წინასწარმეტყველები მიჩნეული არიან შუამავლად ღმერთსა და კაცს შორის ისევე, როგორც მესაშოვლენი მეფესა და მთხოვნელთა შორის: <quote xml:lang="ka-Geok">„ვითარცა-იგი მეფეთა წინაშე მდგომარე არიან მესაშოვლენი, შორის მიმღებელნი კითხვათა და მიგებათანი...“</quote> (ჰომ. 14). ამრიგად, <term corresp="#lex.mesashovle">მესაშოვლე</term> არის შუამავალი. სავარაუდებელია, რომ იგი უნდა იყოს <mentioned xml:lang="grc">μεσίτης</mentioned> („მედიატორი, მომრიგებელი, არბიტრი“) სიტყვის თარგმანი. ეს ბერძნული სიტყვა უშუალოდაც ნასესხები ჩანს ქართულში. ამას ადასტურებს <persName ref="#saba">საბას</persName> ლექსიკონი, სადაც დამოწმებულია: <quote>„მესიტი — შუამდგომელი“</quote>.
+                    </p>
+                    
+                    <p xml:id="p.h.105" n="105">
+                        <term corresp="#lex.akhalmkuetelobai">ახალმკუეთელობაჲ</term>: გვხვდება ორჯერ — ზმნის პირიანი ფორმისა და საწყისის სახით: <quote xml:lang="ka-Geok">„ნუ განმარტებით ახლისა მკუეთელობ წმიდათა მიმართ წერილთა“</quote> (ჰომ. 29); <quote xml:lang="ka-Geok">„ჯერ არს ჩუენდა მოწაფე-ყოფად წერილისა და არა ახალ-მკუეთელობად მისა“</quote> (ჰომ. 13). ქართულ ლექსიკურ ერთეულებში წარმოდგენილია <mentioned xml:lang="grc">καινοτομέω</mentioned> სიტყვის შემადგენელ ნაწილთა სიტყვა-სიტყვითი თარგმანი. ეს სიტყვა ბიზანტიური პერიოდის ბერძნულში ნიშნავს „სიახლის შემოღებას“ და ხშირად იხმარება სწორედ ერეტიკოსთა შეხედულებების დასახასიათებლად<ptr target="#note176"/>. შეიძლება აღინიშნოს ისიც, რომ ქართული კონტექსტის მიხედვით, შესაძლოა დედანში გვქონოდა აგრეთვე <mentioned xml:lang="grc">κενοტოμέω</mentioned>, რომლის მნიშვნელობაა „ამაო, ფუჭი სიახლის შემოღება“. ამ სიტყვათა მნიშვნელობათა აღრევა ქართულ თარგმანებში სხვაგანაც გვხვდება<ptr target="#note177"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.106" n="106">
+                        <term corresp="#lex.vrtselmetqveleba">ვრცელ-მეტყუელება</term>. <quote xml:lang="ka-Geok">გამომეტყველთა ზღაპარნი, რიტორთა სიტყუანი... ფილოსოფოსთა ვრცელ-მეტყუელებანი</quote> (ჰომ. 48). აქ სავარაუდებელია კალკი <mentioned xml:lang="grc">πλατυλογία</mentioned> სიტყვისა, რომლის მნიშვნელობაა „ვრცლად, გრძლად ლაპარაკი“.
+                    </p>
+                    
+                    <p xml:id="p.h.107" n="107">
+                        <term corresp="#lex.tanashtamomavlobiti">თანა-შთამომავლობითი</term>. ეს სიტყვა კონტექსტის მიხედვით „სრულის“ საწინააღმდეგო მნიშვნელობისა არის: <persName ref="#paul">პავლე მოციქულის</persName> შესახებ ნათქვამია: <quote xml:lang="ka-Geok">„კორინთელთა მიმართ მწერალი არა იყო სრულთა მოძღურებათაჲ, არამედ თანა-შთამომავლობითთაჲ“</quote> (ჰომ. 54). აქვე მოყვანილია ციტატა: <quote xml:lang="ka-Geok">„სძე გიწდე თქუენ, არა საჭმელი, რამეთუ არა ძალგედვა, არცაღა ჯერეთ ძალ-გიც“</quote> <ref type="biblical" cRef="1Cor.3.2">[1 კორ 3, 2]</ref>. <term corresp="#lex.tanashtamomavlobiti">თანა-შთამომავლობითი</term> <mentioned xml:lang="grc">συγκαταβαίνω</mentioned> სიტყვის კალკი უნდა იყოს. მისი გადატანითი მნიშვნელობაა „ვინმესთვის თავის გაყადრება, უსწავლელთა სწავლება“ (შდრ. <quote xml:lang="ru">снисхождение</quote>).
+                    </p>
+                    
+                    <p xml:id="p.h.108" n="108">
+                        ერთი ჯგუფი კომპოზიტებისა და მათგან ნაწარმოები აბსტრაქტული სახელებისა <mentioned>კეთილ</mentioned> ფუძეს შეიცავს.
+                    </p>
+                    
+                    <p xml:id="p.h.109" n="109">
+                        <term corresp="#lex.ketilgoniereba">კეთილგონიერებაჲ</term>: <quote xml:lang="ka-Geok">ძლეულებისა კეთილგონიერებისა აღმსარებელნი კეთილგონიერებისა მიიხუმენ გჳრგენთა</quote> (ჰომ 2). ბერძნულ დედანში შესაძლოა ყოფილიყო <mentioned xml:lang="grc">εὐφρόνησις</mentioned>.
+                    </p>
+                    
+                    <p xml:id="p.h.110" n="110">
+                        <term corresp="#lex.ketilmmsakhureba">კეთილმსახურებაჲ</term>: <quote xml:lang="ka-Geok">კეთილმსახურების ძლით — ტკივილთა შინა</quote> (ჰომ. 2); <quote xml:lang="ka-Geok">განანათლებს კეთილმსახურებისა მიმართ</quote> <num value="31">ლ̃ა</num> (ჰომ. 38). შდრ: <mentioned xml:lang="grc">πρὸς εὐσέβειαν</mentioned>. <mentioned xml:lang="grc">εὐσέβεια</mentioned> — ახალ აღთქმაში ჩვეულებრივია <mentioned>ღმრთის-მსახურებაჲ</mentioned> (საქმე 3, 12; 1 ტიმ. 2, 2 და სხვ.) როგორც ძველი, ისე გიორგისეული რედაქციის ტექსტებში; <quote xml:lang="ka-Geok">კეთილი მსახურებაჲ</quote> გვხვდება მხოლოდ ერთხელ <ref type="biblical" cRef="2Pet.3.11">[2 პეტ. 3, 11]</ref>. <persName ref="#basil_the_great">ბასილი კესარიელის</persName> „სწავლათა“ <persName ref="#euthymius">ეფთვიმე ათონელისეულ</persName> თარგმანში ამავე სიტყვას შეესაბამება <mentioned>კეთილად მორწმუნეობა</mentioned><ptr target="#note178"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.111" n="111">
+                        <term corresp="#lex.ketilpovniereba">კეთილპოვნიერებაჲ</term>: <quote xml:lang="ka-Geok">ყოვლისა კეთილპოვნიერებისა უპატიოსნეს არს</quote> (<num value="32">ლ̃ბ</num> ჰომ.). ამავე ბერძნულ სიტყვას სხვაგან ქართულში შეესაბამება <mentioned>სარეწავი</mentioned>: <quote xml:lang="ka-Geok">არს სარეწავი ჩუენი</quote> <ref type="biblical" cRef="Acts.19.25">[საქმე მოც. 19, 25]</ref> — <mentioned xml:lang="grc">ἡ εὐπορία ἡμῖნ ἐστιν</mentioned>.
+                    </p>
+                    
+                    <p xml:id="p.h.112" n="112">
+                        <term corresp="#lex.ketilzhamiereba">კეთილჟამიერებაჲ</term>: <quote xml:lang="ka-Geok">შემძლებელ კეთილჟამიერობით გან[...]თვად</quote> (ჰომ. 61). აქ უნდა გვქონდეს კალკი <mentioned xml:lang="grc">εὐκαιρία</mentioned> სიტყვისა. ეს სიტყვა <persName ref="#george_mtatsmindeli">გიორგისეულ</persName> ოთხთავში თარგმნილია, როგორც <mentioned>ჟამი მარჯუე</mentioned>: <quote xml:lang="ka-Geok">ეძიებდა ჟამსა მარჯუესა</quote> <ref type="biblical" cRef="Matt.26.16">[მ. 26, 16]</ref>. იგივეა ძველ ვერსიებში: <mentioned xml:lang="ka-Geok">ჟამსა მარჯუესა</mentioned> DE, <mentioned xml:lang="ka-Geok">გამარჯუებულსა ჟამსა</mentioned> C. შდრ. <mentioned xml:lang="grc">ἐζήτει εὐκαιρίαν</mentioned>; იგივე ვითარებაა <ref type="biblical" cRef="Luke.22.6">ლ. 22, 6</ref>-შიც.
+                    </p>
+                    
+                    <p xml:id="p.h.113" n="113">
+                        <term corresp="#lex.ketiltsnobieri">კეთილცნობიერი</term>: <quote xml:lang="ka-Geok">რწმუნებად ყოველსა კაცსა კეთილ-ცნობიერსა</quote> (ჰომ. 26). აქ სავარაუდებელია <mentioned xml:lang="grc">εὐγνώμων</mentioned> სიტყვის გადმოსაცემად შექმნილი რთული სიტყვა.
+                    </p>
+                    
+                    <p xml:id="p.h.114" n="114">
+                        საზოგადოდ, ისეთი კალკები, რომლებიც ბერძნული <mentioned xml:lang="grc">εὐ—</mentioned> ფუძის შემცველ რთულ ფუძეთა გადმოსაცემად არის შექმნილი, ქართულში მრავლად არის.
+                    </p>
+                    
+                    <p xml:id="p.h.115" n="115">
+                        <term corresp="#lex.lamparshemosili">ლამპარ-შემოსილი</term>: <quote xml:lang="ka-Geok">ლამპარ-შემოსილი სიბრძნე...</quote> [შდრ: <mentioned xml:lang="grc">λαμπαδοῦχος σοφία</mentioned>]. ყურადღება მისაქცევია ბერძნული კომპოზიტის მეორე ნაწილის თარგმანი (<mentioned xml:lang="grc">λαμπαδοῦχος</mentioned> „ლამპარ-მქონებელი“). ჰომ <num value="31">ლ̃ა</num>.
+                    </p>
+                    
+                    <p xml:id="p.h.116" n="116">
+                        <term corresp="#lex.makhvilmmetqveli">მახჳლმწერალი</term>: <quote xml:lang="ka-Geok">ვითარცა კალამი მწერლისა მახჳლ მწერლისაჲ</quote> (ჰომ. 17). მოყვანილი ადგილი წარმოადგენს ციტატას ფსალმუნიდან <ref type="biblical" cRef="Ps.44.2">[ფს. 44, 2]</ref>. შესაბამის ადგილას ყველა ქართულ ვერსიაში არის სიტყვა <mentioned>ჴელოვანისაჲ</mentioned>. <num value="19">ი̃თ</num> ჰომილიაში სიტყვა-სიტყვით არის ნათარგმნი ბერძნული <mentioned xml:lang="grc">ὀξυγράφος</mentioned>.
+                    </p>
+                    
+                    <p xml:id="p.h.117" n="117">
+                        <term corresp="#lex.mravalgamomedziebloba">მრავალგამომეძიებლობაი</term>: <quote xml:lang="ka-Geok">დაჰჴსნის მრავალ-გამომეძიებლობასა მწვალებელთასა</quote> (ჰომ. 20). ეს სიტყვა სავარაუდებელია <mentioned xml:lang="grc">πολυζησία</mentioned> სიტყვის თარგმანს წარმოადგენდეს.
+                    </p>
+                    
+                    <p xml:id="p.h.118" n="118">
+                        რამდენიმე რთული სიტყვის პირველ შემადგენელ ნაწილად გვაქვს <mentioned>ნაცვალ-</mentioned> ფუძე. ასეთებია:
+                    </p>
+                    
+                    <p xml:id="p.h.119" n="119">
+                        <term corresp="#lex.natsvalmospoba">ნაცვალმოსპობა</term>: ეს კალკი ფსალმუნის ციტატაში გვხვდება: <quote xml:lang="ka-Geok">ვიდრემდის ნაცვალ-მოისპოს მთოვარე</quote> <ref type="biblical" cRef="Ps.71.7">[ფს. 71, 7]</ref> (ჰომ. 8). ტექსტი ყველა ცნობილ ქართულ ვერსიაში გვაძლევს განსხვავებულ იკითხვისს: <quote xml:lang="ka-Geok">ვიდრემდის განკფდეს მთოვარჱ</quote>.
+                    </p>
+                    <p xml:id="p.h.120" n="120">
+                        ბერძნული <mentioned xml:lang="grc">ἀνταναιρεῖται</mentioned> ნათარგმნია დაშლით, ცალკე ნაწილთა მნიშვნელობათა მიხედვით (<mentioned xml:lang="grc">ἀντί</mentioned> - ნაცვალ, <mentioned xml:lang="grc">ἀναιρεῖται</mentioned> - მოსპობა). ასეთი ლექსიკური ერთეული ქართულში არ არის. მთარგმნელის შექმნილი კალკი კიდევ უფრო ცხადად ჩანს, თუ გავითვალისწინებთ, რომ ამ ზმნის შესაბამისი ფორმები ფსალმუნის ტექსტში მისგან სხვაგანაც განსხვავებულად არის ნათარგმნი: <mentioned xml:lang="grc">ἀνταναιρεῖται</mentioned> — <quote xml:lang="ka-Geok">მიღებულ არიან</quote> <ref type="biblical" cRef="Ps.9.26">9, 26</ref>; <mentioned xml:lang="grc">ἀνταναιρών πολέμους</mentioned> — <quote xml:lang="ka-Geok">დააცადა ბრძოლაჲ</quote> (<quote xml:lang="ka-Geok">დააცადნის ბრძოლანი</quote> Ⴂ) <ref type="biblical" cRef="Ps.45.9">45, 9</ref>; <mentioned xml:lang="grc">ἀνταναιρέθην</mentioned> — <quote xml:lang="ka-Geok">მოვაკლდი</quote> <ref type="biblical" cRef="Ps.108.23">108, 23</ref> და სხვ.
+                    </p>
+                    
+                    <p xml:id="p.h.121" n="121">
+                        <term corresp="#lex.natsvalmoshurne">ნაცვალ-მოშურნე</term>: გვხვდება <num value="33">ლ̃გ</num> ჰომილიის ტექსტში: <quote xml:lang="ka-Geok">ესე ანნა მრავალ წელ სნეულებდა უშვილობითა და უძჳრესღა, რამეთუ ნაცვალმოშურნე მისი მრავალთა შვილთა იყო დედა</quote>. შდრ. ბერძნ. <quote xml:lang="grc">ὅτι ἡ ἀντίζηλος αὐτῆς παίδων ἦν μήτηρ πολλῶν</quote> (PG 54, 638).
+                    </p>
+                    
+                    <p xml:id="p.h.122" n="122">
+                        სიტყვის განმარტება მოცემულია აშიაზე: <quote>„შეისწავე, რამეთუ ერთსა ერთბამად ერთისა მამაკაცისა ცოლთა ნაცვალ-მოშურნე ეწოდების ურთიერთას“</quote>. ეს ლექსიკური კალკი, რომელიც „მეტოქეს“ ნიშნავს, იმავე წესითაა შექმნილი, როგორითაც წინამავალი: ცალ-ცალკე არის ნათარგმნი ბერძნული სიტყვის შემადგენელი ნაწილები.
+                    </p>
+                    
+                    <p xml:id="p.h.123" n="123">
+                        <term corresp="#lex.natsvalsakuetebeli">ნაცვალ-საკუეთებელი</term>: <quote xml:lang="ka-Geok">ვჰპოებ ნაცვალ-საკუეთებელსა საცთურისა შენისა მახჳლსა</quote> (ჰომ. 35). კონტექსტის მიხედვით ეს სიტყვა ნიშნავს „საწინააღმდეგოს“. სავარაუდოა, რომ აქაც კალკი არის გაკეთებული ისეთი სიტყვიდან, რომლის პირველ ნაწილს <mentioned xml:lang="grc">ἀντι-</mentioned> შეადგენს (მაგ. <mentioned xml:lang="grc">ἀντιβάλλω</mentioned>, <mentioned xml:lang="grc">ἀნτικόπτω</mentioned>). ასეთი ტიპის კალკები ხშირად <num value="11">XI</num> საუკუნის შემდეგ, განსაკუთრებით პეტრიწონის სკოლის მიმდევართა თარგმანებში გვხვდება.
+                    </p>
+                    
+                    <p xml:id="p.h.124" n="124">
+                        კომპოზიტები ხშირად გვხვდება <num value="11">XI</num> საუკუნის შემდეგ, განსაკუთრებით პეტრიწონული სკოლის მიმდევართა თარგმანებში: <term corresp="#lex.natsvalaghmkhidreba">ნაცვალ-აღმჴედრება</term> (<mentioned xml:lang="grc">ἀντιστρατεύομαι</mentioned>), <term corresp="#lex.natsvalgantsqoba">ნაცვალ-განწყობა</term> (<mentioned xml:lang="grc">ἀντιπίπτω</mentioned>), <term corresp="#lex.natsvalmibrdzoli">ნაცვალ-მბრძოლი</term> (<mentioned xml:lang="grc">ἀντιποιούμενος</mentioned>)<ptr target="#note179"/>, <term corresp="#lex.natsvalmoqtsevai">ნაცვალ-მოქცევაჲ</term> (<mentioned xml:lang="grc">ἀντιστროφή</mentioned>)<ptr target="#note180"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.125" n="125">
+                        ამგვარი ლექსიკური ერთეულების ფორმა განსაკუთრებით კარგად ჩანს, თუ შევუპირისპირებთ მათ სხვა თარგმანებს, მაგალითად, ახალი აღთქმის <persName ref="#george_mtatsmindeli">გიორგი მთაწმიდლისეულ</persName> რედაქციაში გვაქვს: <quote>წინა-აღდგომად</quote> (<ref type="biblical" cRef="Matt.5.39">მ. 5, 39</ref>; <ref type="biblical" cRef="Acts.6.10">საქმ. 6, 10</ref>); <quote>წინა-აღუდგებით</quote> (<ref type="biblical" cRef="Acts.7.51">საქმ. 7, 51</ref> — <mentioned xml:lang="grc">ἀντιπίπτετε</mentioned>).
+                    </p>
+                    
+                    <p xml:id="p.h.126" n="126">
+                        <term corresp="#lex.sammoktsevi">სამ-მოქცევი</term>: <quote xml:lang="ka-Geok">თვსთა სამ-მოქცევთა შინა იღელვების</quote> (<num value="27">კ̃ზ</num> ჰომ.). ეს სიტყვაც ბერძნულის კალკს წარმოადგენს. <mentioned xml:lang="grc">τρικυμία</mentioned> ნიშნავს „სამი ტალღისაგან შემდგარ ჯგუფს“ და „დიდ ტალღას“. მთარგმნელს სიტყვა-სიტყვით გადმოუღია სათარგმნი ტექსტი: <quote xml:lang="grc">ἐν ταῖς τρικυმიαις χειμάζεται</quote>.
+                    </p>
+                    
+                    <p xml:id="p.h.127" n="127">
+                        <term corresp="#lex.tkiviltmoqvare">ტკივილთ-მოყუარე</term>: <quote xml:lang="ka-Geok">ევსენების ესე ტკივილთ-მოყუარეთა და მოსწრაფეთა მსმენელთაგანთა</quote> (ჰომ. 41). სიტყვა წარმოადგენს <mentioned xml:lang="grc">φιλόπονος</mentioned> სიტყვის თარგმანს; ამასთან, ქართველ მთარგმნელს გადმოუტანია არა <mentioned xml:lang="grc">πόνος</mentioned> სიტყვის ძირითადი მნიშვნელობა „შრომა, საქმე“, არამედ „ტკივილი“.
+                    </p>
+                    
+                    <p xml:id="p.h.128" n="128">
+                        გრამატიკულ ტრაქტატში <mentioned>ტკივილი</mentioned> იხმარება „შრომის, გულმოდგინეობის“ მნიშვნელობით: <quote xml:lang="ka-Geok">„მრავალგზის და უწყინოდ წარკითხვითა ჰპოოს ძალი ართრონთა ვითარებისაჲ, რამეთუ, თჳნიერ ტკივილისა შეუძლებელ არს ყოვლისა საქმისა მოღუაწებად“</quote> (24). აქაც, როგორც ჩანს, <mentioned xml:lang="grc">πόνος</mentioned> სიტყვის კალკი უნდა გვქონდეს.
+                    </p>
+                    
+                    <p xml:id="p.h.129" n="129">
+                        <term corresp="#lex.qovladshetsqobili">ყოვლადშეწყობილი</term>: <quote xml:lang="ka-Geok">ოდეს ყოვლად-შეწყობილსა ამას სოფლისა დასაბამსა აღამზადებდა ღმერთი</quote> (<num value="29">კ̃თ</num> ჰომ. 51). ეს ლექსიკური ერთეული წარმოების თვალსაზრისით საკმაოდ ხშირად ხმარებული ყალიბისაა: შდრ. <quote>ყოვლად დასაწუველი</quote>, <quote>ყოვლისა მპყრობელი</quote> და სხვა, რომლებიც ბერძნულის კალკებად ითვლება. <term corresp="#lex.qovladshetsqobili">ყოვლად-შეწყობილი</term> <mentioned xml:lang="grc">παναρμόνιος</mentioned> სიტყვის ფარდია.
+                    </p>
+                    
+                    <p xml:id="p.h.130" n="130">
+                        <term corresp="#lex.qrmatmqvanebeli">ყრმათ-მყვანებელი</term>: <quote xml:lang="ka-Geok">მიუთხრობს მათ მოძღურებასა მას სიმშვდით ყრმათმყვანებელი მათი</quote> (ჰომ. 51). ლექსიკური ერთეული წარმოადგენს <mentioned xml:lang="grc">παιდაγωγός</mentioned> სიტყვის მიხედვით შექმნილ კალკს. იგი გვხვდება სხვაგანაც, ფლავიოსის თხზულების ზემოხსენებულ თარგმანშიც: <quote>„კაი თქუა არა-ყოფაჲ ყრმათმ-ყვანებელად, არამედ მცველად მისა“</quote><ptr target="#note181"/>. <mentioned xml:lang="grc">παιდაγωγέω</mentioned> ზმნის განსხვავებული თარგმანი არის ერთ-ერთ მეტაფრასულ თხზულებაშიც, რომელიც <persName ref="#kkekelidze">კ. კეკელიძეს</persName> <persName ref="#petritsi">იოანე პეტრიწის</persName> თარგმანად მიაჩნია: <quote>„ყრმის მწურთელ გყო გუამსა ერთგზის ჭამად დღესა შინა“</quote><ptr target="#note182"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.131" n="131">
+                        <term corresp="#lex.sidzismqvanebeli">სიძის-მყვანებელი</term>: <quote xml:lang="ka-Geok">ვჰყუარობ ნეტარსა პავლეს, სიძის მყვანებელსა ქრისტესსა</quote> (<num value="28">კ̃ჱ</num> ჰომ.). შესაბამისი ბერძნული სიტყვა არის <mentioned xml:lang="grc">νυμφαγωγός</mentioned> — „მაყარი, სიძის მხლებელი“, რომელიც ქრისტეს მოციქულთა ეპითეტად იხმარება.
+                    </p>
+                    
+                    <p xml:id="p.h.132" n="132">
+                        <term corresp="#lex.tsulilmoqmedeba">წულილ-მოქმედება</term>: <quote xml:lang="ka-Geok">იხილე წულილ-მოქმედებაჲ სიბოროტისაჲ</quote> (ჰომ. 34). სიტყვა ნახმარია იქ, სადაც მწვალებლებს ბრალად ედება მსჯელობის გაყალბება და არაარსებით წვრილმანებზე დავა (ჰომ. 34-35). ამ კონტექსტში <term corresp="#lex.tsulilmoqmedeba">წულილ-მოქმედება</term> სიტყვას კარგად უდგება ის მნიშვნელობები, რომლებსაც გვიჩვენებს ბერძნული <mentioned xml:lang="grc">λεπτουργία</mentioned>.
+                    </p>
+                    
+                    <p xml:id="p.h.133" n="133">
+                        <mentioned xml:lang="grc">λεπτουργέω</mentioned> (ისევე როგორც <mentioned xml:lang="grc">λεπτολογέω</mentioned>) ზმნის ერთ-ერთი მნიშვნელობა არის „სოფიზმების გამოყენებით მსჯელობა, სიტყვებით თამაში, უსაფუძვლო დავა“<ptr target="#note183"/>. ბერძნულ დედანში სავარაუდებელი სიტყვა ამ ზმნისაგან ნაწარმოები აბსტრაქტული სახელი უნდა იყოს.
+                    </p>
+                </div>
+              
                
+                
+                <div type="section" n="ი" xml:id="section.biblical_citations">
+                    <head>ბიბლიური ციტატების გადმოცემა</head>
+                    
+                    <p xml:id="p.h.134" n="134">
+                        მრავალრიცხოვანი ციტატები ჰომილიაში გვიჩვენებს, რომ მთარგმნელის მიერ დამოწმებული ქართული ბიბლიური ტექსტები უმთავრესად ჩვენთვის ცნობილი ტიპისა იყო, მაგრამ ბერძნული დედნის ზუსტად გადმოცემის მცდელობას აქაც უჩენია თავი. მთარგმნელს ციტატებშიც შეუტანია ლექსიკური და გრამატიკული ხასიათის შესწორებები, რის გამოც მათი ტექსტი ზოგჯერ საგრძნობლად სხვაობს არსებული თარგმანებისაგან.
+                    </p>
+                    
+                    <p xml:id="p.h.135" n="135">
+                        ზემოთ ნაჩვენები იყო ასეთი სხვაობის ორი მაგალითი: ფსალმუნის ციტატებში ყველა ქართული რედაქციისათვის საერთო სიტყვები შეცვლილია ბერძნულის ყაიდაზე ხელოვნურად შექმნილი კალკებით: <term corresp="#lex.makhvilmmetqveli">მახჳლმწერალი</term> (ჰომ. 17) <mentioned xml:lang="grc">ὀξυγράφος</mentioned> — <mentioned>ჴელოვან</mentioned> სიტყვის მაგიერ <ref type="biblical" cRef="Ps.44.2">[ფს: 44, 2]</ref> და <term corresp="#lex.natsvalmospoba">ნაცვალ-მოისპობა</term> (ჰომ. 8) — <mentioned xml:lang="grc">ἀνταναιρέω</mentioned>, <mentioned>განკფდომა</mentioned> ზმნის სანაცვლოდ <ref type="biblical" cRef="Ps.71.7">[ფს. 71, 7]</ref>.
+                    </p>
+                    
+                    <p xml:id="p.h.136" n="136">
+                        სხვა შემთხვევებში ბიბლიურ ციტატებში ამა თუ იმ სიტყვას ენაცვლება სხვა, ზოგჯერ სინონიმური, ზოგჯერ კი განსხვავებული მნიშვნელობის მქონე. ხელნაწერში დასმული საგანგებო ნიშნები ციტატების აღსანიშნავად ეჭვს არ ტოვებს, რომ მთარგმნელს ეს ადგილები სწორედ ციტატად მიაჩნია:
+                    </p>
+                    
+                    <p xml:id="p.h.137" n="137">
+                        <quote xml:lang="ka-Geok">სადა სული უფლისაჲ, მუნ თავისუფლებაჲ</quote> <ref type="biblical" cRef="2Cor.3.17">[II კორ. 3, 17]</ref> (ჰომ. 55). <mentioned xml:lang="grc">ἐλευθερία</mentioned>. უკანასკნელი სიტყვის შესაბამისი იკითხვისი ქართულ ვერსიებში არის <mentioned>აზნაურებაჲ</mentioned>, გარდა ამისა, წინადადებაში ამ სიტყვას <mentioned>არს</mentioned> პირიანი ზმნაც მოსდევს როგორც ძველ, ისე გიორგისეულ ვერსიებში.
+                    </p>
+                    
+                    <p xml:id="p.h.138" n="138">
+                        <quote xml:lang="ka-Geok">არა მოხუცებულმან, არცა ანგელოზმან</quote> <ref type="biblical" cRef="Isa.63.9">[ეს. 63, 9]</ref> (ჰომ. 65). ქართულ თარგმანებში (მათ შორის გელათურ ვერსიაშიც), შესაბამისი იკითხვისია: <mentioned>მოციქულმან</mentioned>, შდრ. <mentioned xml:lang="grc">πρέσβυς</mentioned>.
+                    </p>
+                    
+                    <p xml:id="p.h.139" n="139">
+                        იოანეს თავის დასაწყისი სიტყვები ჰომილიაში განსხვავებულია ოთხთავის ყველა ცნობილი ტექსტისაგან: <quote xml:lang="ka-Geok">დასაბამსა იყო სიტყუაჲ</quote> <ref type="biblical" cRef="John.1.1">[ი. 1, 1]</ref> (ჰომ. 33) — <quote xml:lang="grc">Ἐν ἀρχῇ ἦν ὁ λόγος</quote>. შდრ.: <mentioned>პირველითგან იყო სიტყუაჲ</mentioned> (ძველ შატბერდულ, ეფთვიმისეულ და გიორგისეულ რედაქციებში). ანალოგიისათვის შეიძლება მოვიგონოთ, რომ <persName ref="#petritsi">იოანე პეტრიწი</persName> სახარების გიორგისეულ ტექსტს ასე ასწორებს: <quote>დასაბამსა შორის იყო...</quote><ptr target="#note184"/>. პირველ სიტყვას <mentioned>დასაბამს</mentioned> უნაცვლებს <persName ref="#ephrem">ეფრემ მცირეც</persName><ptr target="#note185"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.140" n="140">
+                        იტყვს... <quote xml:lang="ka-Geok">სძე გიწდე თქუენ</quote> <ref type="biblical" cRef="1Cor.3.2">[I კორ. 3, 2]</ref> (ჰომ. 54). ამ ციტატაში <mentioned>გიწდე</mentioned> ცვლის <mentioned>გასუ</mentioned> იკითხვისს, რომელიც შეესაბამება <mentioned xml:lang="grc">ἐπότισα</mentioned> სიტყვას.
+                    </p>
+                    
+                    <p xml:id="p.h.141" n="141">
+                        იტყვს პავლე: <quote xml:lang="ka-Geok">რამეთუ ცხოველი სიტყუაჲ ღმრთისაჲ და საქმიერი და უმკუეთელესი უფროჲს მახჳლისა ორპირისა</quote> <ref type="biblical" cRef="Heb.4.12">[ებრ. 4, 12]</ref> (ჰომ. 27). <term corresp="#lex.saqmieri">საქმიერი</term> არის თარგმანი <mentioned xml:lang="grc">ἐνεργής</mentioned> სიტყვისა, რომლის შესაბამისად ქართულ ვერსიებში გვაქვს: <mentioned>მწე</mentioned>, <mentioned>შემწე</mentioned> (AB), <mentioned>ძლიერ</mentioned> (CD). ამასთან ჰომილიაში წინადადება უშემასმენლოა, ძველ ვერსიებში კი ზმნა არის: <quote>ცხოველ არს სიტყუაჲ ღმრთისაჲ</quote>, შდრ.: <quote xml:lang="grc">Ζῶν γὰρ ὁ λόγος τοῦ θεοῦ καὶ ἐνεργής</quote>.
+                    </p>
+                    
+                    <p xml:id="p.h.142" n="142">
+                        ჰომილიაში <mentioned xml:lang="grc">ἐνεργέω</mentioned> ზმნა სხვა შემთხვევაშიც ქართული თარგმანების ტექსტისაგან განსხვავებულად არის გადმოცემული: <quote xml:lang="ka-Geok">ყოველსა ამას მოქმედებს ერთი და იგივე სული, განმყოფელი თჳსისა თითოეულისაჲ, ვითარცა ჰნებავს</quote> <ref type="biblical" cRef="1Cor.12.11">[I კორ. 12, 11]</ref> (ჰომ. 70). <mentioned xml:lang="grc">ἐνεργεῖ</mentioned>... სიტყვის შესაბამისი თარგმანი არსებულ ქართულ ვერსიებში არის <mentioned>შეეწევის</mentioned>; გარდა ამისა, სამოციქულოს ქართულ ვერსიებში ბერძნულის <mentioned xml:lang="grc">διαιροῦν</mentioned> ფორმას პირიანი ზმნა შეესაბამება: <mentioned>განუყოფს</mentioned>, ხოლო ჰომილიის მთარგმნელი ხმარობს მიმღეობას: <term corresp="#lex.ganmopopeli">განმყოფელი</term>.
+                    </p>
+                    
+                    <p xml:id="p.h.143" n="143">
+                        <quote xml:lang="ka-Geok">მაცხოვარებაჲ ჩემი ვითარცა ლამპარი ეგზებოდის</quote> <ref type="biblical" cRef="Isa.62.1">[ეს. 62, 1]</ref> (ჰომ. 4) – <quote xml:lang="grc">τὸ δὲ σωτήრიόν μου ὡς λαμπάς καυθήσεται</quote>. ბიბლიურ თარგმანებში იკითხება: <quote>ვითარცა ელვაჲ აღატყდებოდის</quote> (ოშკი, იერ.). გელათური ტექსტი: <quote>ვითარცა ლამპარი აღენთოს</quote>. <quote xml:lang="ka-Geok">იშვა ჩუენდა ღმრთისაგან სიბრძნე</quote> <ref type="biblical" cRef="1Cor.1.30">[I კორ. 1, 30]</ref> (ჰომ. 8) — <mentioned xml:lang="grc">ἐγενήθη</mentioned>. შესაბამისი ზმნა ყველა ქართულ რედაქციაში არის <mentioned>იქმნა</mentioned>.
+                    </p>
+                    <p xml:id="p.h.144" n="144">
+                        <quote xml:lang="ka-Geok">ჭეშმარიტებად ქუეყანით აღმოჰჴდა</quote> <ref type="biblical" cRef="Ps.84.12">[ფს. 84, 12]</ref> (ჰომ. 9) — <mentioned xml:lang="grc">ἀνέτειλεν</mentioned>. შდრ. ქართული რედაქციების <mentioned>აღმოსცენდა</mentioned>.
+                    </p>
+                    
+                    <p xml:id="p.h.145" n="145">
+                        ზემოთ აღნიშნული იყო აღწერილობით ფორმათა და მიმღეობათა სიხშირე ჰომილიის ტექსტში. ეს აგრეთვე კარგად ჩანს ციტატებში, როცა მათ ქართულ ბიბლიურ თარგმანებს ვუპირისპირებთ:
+                        <quote xml:lang="ka-Geok">იტყჳს, ვითარმედ: ვერ შემძლებელ ვიქმენ სიტყუად თქუენდა ვითარცა სულიერთა, არამედ ვითარცა ჩჩჳლთა ქრისტეს მიერ</quote> <ref type="biblical" cRef="1Cor.3.1">[I კორ. 3, 1]</ref> (ჰომ. 54) — <quote xml:lang="grc">οὐκ ἠδუნήθην λαλῆσαι</quote>. შდრ. <quote>ვერ გეტყოდე</quote> (AB), <quote>ვერ უძლე სიტყუად</quote> (CD).
+                    </p>
+                    
+                    <p xml:id="p.h.146" n="146">
+                        <quote xml:lang="ka-Geok">უარყოფად თავისა თჳსისა ვერ შემძლებელ არს</quote> <ref type="biblical" cRef="2Tim.2.13">[II ტიმ. 2, 13]</ref> (ჰომ. 28) — <quote xml:lang="grc">ἀρνήსασθαι ἑαυτὸν οὐ δύναται</quote>. შდრ. <quote>ვერ ჴელეწიფების</quote> (AB), <quote>ვერ ძალ-უც</quote> (CD, გიორგ.).
+                    </p>
+                    
+                    <p xml:id="p.h.147" n="147">
+                        <quote xml:lang="ka-Geok">უცხოჲსა ეშმაკისასა გონებულ არს განმთქუმელად</quote> <ref type="biblical" cRef="Acts.17.18">[საქმე 17, 18]</ref> (ჰომ. 51) — <quote xml:lang="grc">ξένων δαιμονίων δοκεῖ καταγγελεὺς εἶναι</quote>. შდრ. <quote>უცხოთა ეშმაკთა ჩანს მთხრობელ</quote>.
+                    </p>
+                    
+                    <p xml:id="p.h.148" n="148">
+                        <quote xml:lang="ka-Geok">კაცნო გალილეველნო, რაჲსა მდგომარენი ხართ მხედველნი ცად მიმართ?</quote> <ref type="biblical" cRef="Acts.1.11">[საქმე 1, 11]</ref> (ჰომ. 23) — <quote xml:lang="grc">τί ἑστήკατε βλέποντες</quote>. შესაბამისი ქართული იკითხვისია: <quote>რაჲსა სდგათ და ხედავთ ზეცად</quote> (<mentioned>ცად მიმართ</mentioned> T).
+                    </p>
+                    
+                    <p xml:id="p.h.149" n="149">
+                        <persName ref="#paul">პავლე</persName> იტყჳს, ვითარმედ: <quote xml:lang="ka-Geok">თავადი ღმერთი არს მოქმედ ყოვლისა</quote> <ref type="biblical" cRef="1Cor.12.6">[I კორ. 12, 6]</ref> (ჰომ. 70) — <quote xml:lang="grc">ὁ δὲ αὐτὸς θεὸς ὁ ἐνεργῶν τὰ πάντα</quote>. ქართულ ვერსიებშია: <quote>ღმერთი არს, რომელი შეიქმს</quote>.
+                    </p>
+                    
+                    <p xml:id="p.h.150" n="150">
+                        სხვა შემთხვევებში ჰომილიაში მიმღეობა განსაზღვრებად გვხვდება, მაშინ, როდესაც შესაბამის ადგილას ქართულ ბიბლიურ ტექსტებში განსაზღვრებით დამოკიდებული წინადადება გვხვდება:
+                        <quote xml:lang="ka-Geok">მამაჲ ჩემ შორის დადგრომილი იქმს</quote> <ref type="biblical" cRef="John.14.10">[ი. 14, 10]</ref> (ჰომ. 57) — <quote xml:lang="grc">ὁ δὲ πατὴρ ἐν ἐμοὶ μένων ποιεῖ</quote>. შდრ.: <quote>მამაჲ ჩემი, რომელი ჩემ თანა არს</quote> (DE), <quote>რომელი არს ჩემ თანა</quote> (FG), <quote>რომელი ჩემ თანა დამკჳდრებულ არს</quote> (C).
+                    </p>
+                    
+                    <p xml:id="p.h.151" n="151">
+                        <quote xml:lang="ka-Geok">ღმერთმან შემოქმედმან ცისა და ქუეყანისამან</quote> <ref type="biblical" cRef="Acts.17.24">[საქმე 17, 24]</ref> (ჰომ. 48) – <quote xml:lang="grc">ὁ θεὸς ὁ ποιήσας τὸν κόσμον καὶ πάντα τὰ ἐν αὐτῷ</quote>. შდრ. <quote>ღმერთსა, რომელმან შექმნა სოფელი და ყოველი, რაჲ არს მას შინა</quote>.
+                    </p>
+                    
+                    <p xml:id="p.h.152" n="152">
+                        ციტატაში ჰომილიაში ზოგჯერ ზმნა სულ არ არის: <quote xml:lang="ka-Geok">ღმერთი მაღალ, საშინელ, მეფე დიდ ყოველსა ქუეყანასა ზედა</quote> <ref type="biblical" cRef="Ps.46.3">[ფს. 46, 3]</ref> (ჰომ. 11) — <quote xml:lang="grc">κύριος (var Θεός) ὕψιστος φοβερός, βασιλεὺς μέγας ἐπὶ πᾶσαν τὴν γῆν</quote>. შდრ. <quote>უფალი მაღალ არს და საშინელ და მეუფე დიდ ყოველს ქუეყანასა ზედა</quote> (L).
+                    </p>
+                    
+                    <p xml:id="p.h.153" n="153">
+                        თარგმანში, სადაც მთარგმნელი ცდილობს ბერძნული დედანი სიტყვა-სიტყვით გადმოსცეს, სხვა სინტაქსური კალკებიც გვხვდება: <quote xml:lang="ka-Geok">არა ჰრწმენა მისა მიმართ იუდეანთა</quote> <ref type="biblical" cRef="John.9.18">[ი. 9, 18]</ref> (ჰომ. 7) — <quote xml:lang="grc">οὐκ ἐπίστευσαν... περὶ αὐτοῦ</quote>. შდრ. <quote>არა ჰრწმენა... მისთჳს</quote> (<mentioned>მისი</mentioned> C).
+                    </p>
+                    
+                    <p xml:id="p.h.154" n="154">
+                        სიტყვა-სიტყვით თარგმანებში ზოგჯერ აზრიც ძნელი გასაგებია: <quote xml:lang="ka-Geok">ესე ღმერთი ჩუენი, არა შეირაცხოს სხუაჲ მისა მიმართ</quote> <ref type="biblical" cRef="Bar.3.36">[ბარუქ. 3, 36]</ref> (ჰომ. 38) – <quote xml:lang="grc">οὗτος ὁ θεὸς ἡμῶν, οὐ λογισθήσεται ἕτερος πρὸς αὐτὸν</quote>. შდრ. ოშკური ტექსტი: <quote>ესე არს ღმერთი ჩუენი, ვერ ესწოროს მას სხუაჲ</quote> (ჰომილიის ტექსტს ნაწილობრივ ემსგავსება გელათური ვერსია: <quote>...არა შეირაცხოს სხუაჲ მის თანა</quote>). ასევე მთლად ნათელი არ არის: <quote xml:lang="ka-Geok">ქრისტე ჴორცთაებრ</quote> <ref type="biblical" cRef="Rom.9.5">[რომ, 9, 5]</ref> (ჰომ. 33) — <quote xml:lang="grc">ὁ Χριστὸς τὸ κατὰ σάρκα</quote>. შდრ. <quote>ქრისტე ჴორციელად</quote>.
+                    </p>
+                    
+                    <p xml:id="p.h.155" n="155">
+                        ერთგან მთარგმნელს შეაქვს მოულოდნელი ცვლილება: ციტატაში, რომელშიც მოცემულია წარმართთა უარყოფითი აზრი <persName ref="#paul">პავლე მოციქულის</persName> შესახებ <ref type="biblical" cRef="Acts.17.18">[საქმე 17, 18]</ref> (ჰომ. 45), იგი ნაკლებ მოსალოდნელ სიტყვას ხმარობს: ბერძნულ ტექსტში მოციქულის დასახასიათებლად ნახმარია <mentioned xml:lang="grc">σπερμολόγος</mentioned>, რომლის მნიშვნელობაა „თესლის ამკრეფი“, ხოლო ზემოდასახელებულ კონტექსტში იგი გადატანით ნიშნავს „ყბედს“. ათონამდელ ვერსიებსა და გიორგისეულში გვხვდება კალკი: <mentioned>თესლის მეტყუელსა</mentioned>, ხოლო ჰომილიაში მთარგმნელს ასე გადმოუცია: <quote xml:lang="ka-Geok">რაჲ-მე ჰნებავს მთესვარსა ამას თქუმად?</quote> (ჰომ. 45).
+                    </p>
+                    
+                    <p xml:id="p.h.156" n="156">
+                        ზემოთ აღნიშნული იყო <term corresp="#lex.vidreme">ვიდრემე</term>-ს ხშირი ხმარება. მთარგმნელს იგი ზოგჯერ ციტატებშიც შეუტანია: <quote xml:lang="ka-Geok">იოვანე ვიდრემე ნათელ-სცემდა წყლითა, ხოლო თქუენ ნათელ-იღეთ სულითა წმიდითა</quote> <ref type="biblical" cRef="Acts.1.5">[საქმე 1, 5]</ref> (ჰომ. 75). ეს სიტყვა არ არის არცერთ ქართულ ვერსიაში; ჰომილიაში კი <mentioned xml:lang="ka-Geok">ვიდრემე... ხოლო</mentioned> ნახმარია ბერძნული <mentioned xml:lang="grc">μέν... δέ</mentioned>-ს სანაცვლოდ: <quote xml:lang="grc">Ἰωάννης μὲν ἐβάπτισεν ὕδατι, ὑμεῖς δὲ ἐν πνεύματι βαπτισθήσεσθε ἁγίῳ</quote>.
+                    </p>
+                    
+                    <p xml:id="p.h.157" n="157">
+                        დასახელებული მაგალითები ცხადყოფს, რომ ჰომილიაში მოყვანილი ციტატები განსხვავებულია იმ დროს არსებული ქართული ბიბლიური წიგნების შესაბამის იკითხვისთაგან. არ არის სავარაუდო, რომ მთარგმნელს ხელთ ჰქონდა რაიმე, ჩვენთვის უცნობი მთლიანი თარგმანი ძველი და ახალი აღთქმისა. ციტატების ხასიათი და მათი შეპირისპირება არსებულ ქართულ რედაქციებთან გვიჩვენებს, რომ მთარგმნელი იყენებს ძველ თარგმანებს, ოღონდ ციტატების ტექსტს ცვლის მაშინ, როდესაც ქართულ იკითხვისებს, მისი ვარაუდით, სიზუსტე აკლია.
+                    </p>
+                </div>
+                
+                <div type="section" n="ზ" xml:id="section.authorship">
+                    <head>ზ. ვისი დაწერილია „სიტყუაჲ ართრონთათჳს?“</head>
+                    
+                    <p xml:id="p.h.158" n="158">
+                        <title>„სიტყუაჲ ართრონთათჳს“</title>, როგორც უკვე აღინიშნა, დაწერილია იმ პირის მიერ, რომელსაც უთარგმნია მეცხრამეტე ჰომილია და საზოგადოდ ათონურ № 6 ხელნაწერში შეტანილი ყველა თხზულება. ვინ უნდა ყოფილიყო იგი?
+                    </p>
+                    
+                    <p xml:id="p.h.159" n="159">
+                        დაზიანებულსა და განახევრებულ ხელნაწერს დღეს აღარ აქვს არც საერთო სათაური და არც გადამწერის ანდერძი, სადაც მოსალოდნელი იყო გვქონოდა ცნობები კრებულში შესულ თხზულებათა მთარგმნელის შესახებ. <persName ref="#ilarion_mtatsmindeli">ილარიონის</persName> კატალოგის მიხედვით შეიძლება ვივარაუდოთ, რომ ხელნაწერი მასაც ასევე ნაკლული დახვედრია. ილარიონს გრამატიკული თხზულების დამწერად (და კრებულის მთარგმნელადაც) <persName ref="#euthymius">ეფთვიმე მთაწმიდელი</persName> მიუჩნევია, მაგრამ დეტალური ანალიზის გარეშეც კი ნათელია, რომ ეფთვიმეს თხზულებები ენისა და სტილის მხრივ ძალზე განსხვავდება ათონურ კრებულში შესულ თარგმანთაგან. სხვაობა იმდენად დიდია, რომ უკანასკნელთა მიჩნევა ეფთვიმეს ნამუშაკევად შეუძლებელია. საფიქრებელია, რომ ილარიონმა „წმიდა ევთიმე მთარგმნელი“ აქ იმიტომ დაასახელა, რომ მთაწმიდელი მოღვაწის ავტორიტეტი ძალიან დიდი იყო. ამისი მაგალითი ილარიონის კატალოგშივე მოიპოვება: მის მიერ ეფთვიმის თარგმანად მიჩნეული ერთი ხელნაწერის აღწერილობა უეჭველად შეეხება ოშკის ანუ ათონის ბიბლიას, დღეს კი კარგად არის ცნობილი, რომ ოშკის ბიბლია ეფთვიმის ნათარგმნ ტექსტს არ შეიცავს<ptr target="#note186"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.160" n="160">
+                        გრამატიკული თხზულების ავტორის ვინაობის შესახებ შეიძლება ითქვას შემდეგი: იმის მიხედვით, რომ ხელნაწერი გადაწერილი უნდა იყოს <num value="12">XII</num>-<num value="13">XIII</num> სს-ში, შესაძლოა განვსაზღვროთ ზედა ქრონოლოგიური ზღვარი — <term xml:lang="la">terminus ad quem</term> — თხზულების დაწერისათვის. ამავე დროს, ზემოთ ნაჩვენები იყო, რომ ხელნაწერი თავისი გარეგნული ნიშნებითაც და მასში შეტანილ თხზულებათა ენის მიხედვითაც <persName ref="#ephrem">ეფრემ მცირის</persName> ლიტერატურული სკოლიდან ჩანს გამოსული. ამიტომ გრამატიკული თხზულების დაწერის დროდ უნდა მივიჩნიოთ <num value="11">XI</num> ს.-ის დამლევი ან <num value="12">XII</num> ს.-ის დასაწყისი — თვითონ <persName ref="#ephrem">ეფრემ მცირისა</persName> და <persName ref="#arsen_iqaltoeli">არსენი იყალთოელის</persName> მოღვაწეობის ხანა.
+                    </p>
+                    
+                    <p xml:id="p.h.161" n="161">
+                        ამ პირთა შესაძლო ავტორობაზე მსჯელობა კანონზომიერია, რადგანაც <title>„სიტყუაჲ ართრონთათჳს“</title> უთუოდ დაწერილია არა უბრალო მთარგმნელის, არამედ მეცნიერისა და მწიგნობრის მიერ. შეიძლება ისიც დავსძინოთ, რომ <persName ref="#anton_catholicos">ანტონ კათალიკოსი</persName> თავისი გრამატიკის პირველ რედაქციაში, ძველ ქართველ მწიგნობართა შორის ასახელებს: <quote>„იოანეს ფილასოფოსსა ქართუჱლსა, მეფესა აფხაზთა და ქართუელთა დავითს, ეფრემს და არსენის ღრამმატიკოსთა ღირსთა“</quote>. აქვე დასახელებული <persName ref="#petritsi">იოანე პეტრიწის</persName> მოღვაწეობაც დაახლოებით იმავე ხანას განეკუთვნება, მაგრამ ენობრივი მონაცემების მიხედვით გაჭირდებოდა ათონური კრებულის დაკავშირება მის სახელთან. გარდა ამისა, ზემოთ ნაჩვენები იყო, რომ ზოგიერთი გრამატიკული ტერმინი პეტრიწის თხზულებებში განსხვავდება გრამატიკულ ტრაქტატში ხმარებულისაგან.
+                    </p>
+                    
+                    <p xml:id="p.h.162" n="162">
+                        ამრიგად, ამ ნაწარმოების ავტორის ძიებისას პირველ რიგში <persName ref="#ephrem">ეფრემსა</persName> და <persName ref="#arsen_iqaltoeli">არსენის</persName> უნდა მიექცეს ყურადღება. სამწუხაროდ, მათი ენა, სტილი და თარგმანის მეთოდები ისე დაწვრილებით არ არის შესწავლილი<ptr target="#note187"/>, რომ შესაძლებელი იყოს ათონურ კრებულში შეტანილ ჰომილიათა მთარგმნელად და გრამატიკული ტრაქტატის ავტორად გულდაჯერებით დავასახელოთ ერთი ან მეორე. ენობრივი თავისებურებანი მეტ-ნაკლებად ორივეს თხზულებებს ახასიათებს.
+                    </p>
+                    
+                    <p xml:id="p.h.163" n="163">
+                        მხედველობაში მისაღებია ისიც, რომ ერთი და იმავე პირის წერის მანერა შეიძლება საკმაოდ განსხვავებული იყოს იმის მიხედვით, თუ როგორი ხასიათისაა სათარგმნი ნაწარმოები.
+                    </p>
+         
+                    <p xml:id="p.h.164" n="164">
+                        <persName ref="#kkekelidze">კ. კეკელიძეს</persName> აღნიშნული აქვს, რომ <persName ref="#arsen_iqaltoeli">არსენი იყალთოელის</persName> ენა <quote>„საერთოდ ხელოვნურია, განსაკუთრებით განყენებულ დოგმატიკურ-ფილოსოფიურ თხზულებებში, აგიოგრაფიულ-ისტორიულში კი შედარებით მარტივი და ლიტონია“</quote><ptr target="#note188"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.165" n="165">
+                        <persName ref="#ephrem">ეფრემისა</persName> და <persName ref="#arsen_iqaltoeli">არსენის</persName> თარგმანთა ენობრივ-სტილისტურ თავისებურებათა გამოსავლინებლად მნიშვნელოვანია ის გარემოება, რომ არსებობს მათ მიერ ცალ-ცალკე შესრულებული ორი თარგმანი ერთი და იმავე თხზულებისა: ორი ნაწილი <persName ref="#j_damascene">იოანე დამასკელის</persName> ფილოსოფიური ტრილოგიისა: <title>„დიალექტიკა“</title> და <title>„გარდამოცემაჲ უცილობელი ჭეშმარიტისა სარწმუნოებისაჲ“</title>, რომელთაგან პირველი გამოქვეყნებულია<ptr target="#note189"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.166" n="166">
+                        ამ თხზულებათა შესწავლა საშუალებას გვაძლევს გამოვავლინოთ სხვაობები თარგმანებში, რომლებიც შეპირობებულია <persName ref="#ephrem">ეფრემისა</persName> და <persName ref="#arsen_iqaltoeli">არსენის</persName> დამოკიდებულებით სათარგმნი ტექსტისადმი: <quote>„არსენის თარგმანი ძირითადად ზუსტად მისდევს ბერძნულს, ეფრემი კი შედარებით „აქართულებს“ მას... ეფრემ მცირის თარგმანს ხშირად აკლია სიზუსტე“</quote><ptr target="#note190"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.167" n="167">
+                        <persName ref="#arsen_iqaltoeli">არსენის</persName> პოზიციას ნათლად გადმოსცემს მისივე განცხადება: <quote xml:lang="ka-Geok">„და არცა რაჲ ბერძულისაგან დამიგდია და არცა რაჲ ზეპირითა დამირთავს. და თუ სიბნელე სადმე ანუ სიდუხჭირე შესდგამს, იგი ბერძულისა შედარებულობისაგან არს და არა ქართულთა სიტყუათა დაშუენებასა ვერ-მეცნიერებისაგან“</quote><ptr target="#note191"/>. ამიტომ არის, რომ <persName ref="#kkekelidze">კ. კეკელიძე</persName> <persName ref="#arsen_iqaltoeli">არსენის</persName> უწოდებს პეტრიწონული ლიტერატურული მიმართულების ერთ-ერთ პიონერს<ptr target="#note192"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.168" n="168">
+                        გამოკვლევაში, რომელიც <title>„გარდამოცემას“</title> შეეხება, გამოთქმულია <title>„დიალექტიკის“</title> შესახებ ნათქვამის მსგავსი აზრი: <persName ref="#ephrem">ეფრემის</persName> თარგმანი მეტად არის დაშორებული დედნისაგან, ხოლო <persName ref="#arsen_iqaltoeli">არსენისეული</persName> დედანს უფრო ზუსტად გადმოსცემს<ptr target="#note193"/>. <persName ref="#kkekelidze">კ. კეკელიძეს</persName> ასეთი აზრი აქვს გამოთქმული: <title>„დიალექტიკა“</title> სწორედ იმიტომ უთარგმნია <persName ref="#arsen_iqaltoeli">არსენის</persName>, რომ <persName ref="#ephrem">ეფრემის</persName> თარგმანი მას საკმაოდ ზუსტად არ მიუჩნევიაო<ptr target="#note194"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.169" n="169">
+                        <persName ref="#ephrem">ეფრემისა</persName> და <persName ref="#arsen_iqaltoeli">არსენის</persName> თარგმანთა განსხვავებული ხასიათის გამოსაჩინებლად განვიხილავთ იმ ფრაგმენტს წინასიტყვაობიდან, რომლის შესახებ გამომცემელი წერს, რომ შინაარსის სრული იგივეობა ამ ადგილას მთარგმნელთა მიერ გამოყენებულ ბერძნულ დედანთა შესაძლო რედაქციულ სხვაობას გამორიცხავს<ptr target="#note195"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.170" n="170">
+                        <table rend="parallel">
+                            <row>
+                                <cell>
+                                    <persName ref="#ephrem">ეფრემი</persName>
+                                </cell>
+                                <cell>
+                                    <persName ref="#arsen_iqaltoeli">არსენი</persName>
+                                </cell>
+                            </row>
+                            <row>
+                                <cell xml:lang="ka-Geok">
+                                    აწ უკუე გარეშენი ფილოსოფოსნი მსგავსად პირველ-თქუმულისა სიტყჳსა განყოფილებასა იტყჳნ არსებისა და ბუნებისასა. რამეთუ არსებად უწოდენ მარტივად მდებარესა ნივთსა, ხოლო ბუნებად არსებასა დასახულსა განყოფილებად არსებითად, რომელსა-იგი მარტივად ყოფასათანა ვითარებაჲცა რაჲმე აქუნდეს ყოფისაჲ: სიტყჳერებაჲ, ანუ პირუტყუებაჲ, მოკუდავებაჲ და უკუდავებაჲ.
+                                </cell>
+                                <cell xml:lang="ka-Geok">
+                                    გარეშეთა უკუე ფილოსოფოსთა პირველ-თქუმულისა სიტყჳსაებრ განყოფილებაჲ თქუეს არსებისა და ბუნებისაჲ, არსებად ვიდრემე მეტყუელთა მარტივად ყოფისათა ოდენ, ხოლო ბუნებად – არსებისა, სახედადებულისათა არსებითთა განყოფილებათა მიერ და მარტივად ყოფისა მქონებელისათა (!) გინა თუ სიტყჳერად ანუ უსიტყუელად, გინა მოკუდავად, ანუ უკუდავად. 13 ια
+                                </cell>
+                            </row>
+                        </table>
+                    </p>
+                    
+                    <p xml:id="p.h.171" n="171">
+                        <persName ref="#ephrem">ეფრემისეულ</persName> თარგმანში ზემოთმოყვანილი ფრაგმენტი დანაწევრებულია სამ მონაკვეთად, რომელთაგან თითოეულში <term corresp="#lex.piriani_zmna">ზმნის პირიანი ფორმა</term> მოიპოვება: <quote xml:lang="ka-Geok">იტყჳან... უწოდენ... აქუნდეს</quote>. <persName ref="#arsen_iqaltoeli">არსენისეულ</persName> თარგმანში ამავე შინაარსის ტექსტი მხოლოდ ერთ ზმნას შეიცავს: <quote xml:lang="ka-Geok">თქუეს</quote>. ის, რაც <persName ref="#ephrem">ეფრემის</persName> ტექსტში გამოხატულია ცალ-ცალკე ზმნური წინადადებებით, <persName ref="#arsen_iqaltoeli">არსენისაში</persName> <term corresp="#lex.mimghveoburi_constr">მიმღეობური კონსტრუქციით</term> არის გადმოცემული: <quote xml:lang="ka-Geok">ფილოსოფოსთა... მეტყუელთა, არსებისა, სახელდებულისათა (!)... მქონებელისათა (!)...</quote>
+                    </p>
+                    
+                    <p xml:id="p.h.172" n="172">
+                        ამ ვრცელი ერთიანი სინტაქსური მონაკვეთის აზრი ბევრად უფრო ძნელი გასაგებია, ვიდრე <persName ref="#ephrem">ეფრემისეულ</persName> თარგმანში, თუმცა უკანასკნელი შედარებით თავისუფალი თარგმანია, <persName ref="#arsen_iqaltoeli">არსენისეული</persName> კი თითქმის სიტყვა-სიტყვით მიჰყვება ბერძნული დედნის წყობას:
+                        <quote xml:lang="grc">Οἱ μὲν ἔξω φιλόσοφοι κατὰ τὸν προλελεγμένον λόγον διαφορὰν εἶπον οὐσίας καὶ φύσεως, οὐσίαν μὲν εἰπόντες τὸ ἁπλῶς εἶναι, φύσιν δὲ οὐσίαν ἐιδοποιηθεῖσαν ὑπὸ τῶν οὐσιωδῶν διαφορῶν καὶ μετὰ τοῦ ἁπλῶς εἶναι καὶ τὸ τοიῶსδε εἶნαι ἔχουσαν, εἴτε λογικὴν εἴτε ἄλογον, εἴτε θνητὴν εἴτε ἀθάνατον.</quote><ptr target="#note196"/>
+                    </p>
+                    
+                    <p xml:id="p.h.173" n="173">
+                        სხვა მაგალითი:
+                        <table rend="parallel">
+                            <row>
+                                <cell>
+                                    <persName ref="#ephrem">ეფრემი</persName>
+                                </cell>
+                                <cell>
+                                    <persName ref="#arsen_iqaltoeli">არსენი</persName>
+                                </cell>
+                            </row>
+                            <row>
+                                <cell xml:lang="ka-Geok">
+                                    ვითარ-იგი გაბრიელ, ჰზრახვიდა რაჲ წმიდასა ღმრთისმშობელსა, რომელი-იგი ერთი ანგელოზთაგანი იყო და მხოლოდ მუნ წარმოდგომილ იყო და ჰზრახვიდა, ამისთჳსცა განყოფილ იყო მის თანა ერთ-სახეთა მათ და ერთარსთა ანგელოზთაგან ადგილსა მას გარდამოსლვითა და მზრახვალობითა. და პავლე საყდართა წინაშე რაჲ სიტყუა-უგებდა, ერთი კაცთაგანი იყო და თჳთებითა და მოქმედებითა სხუათა კაცთაგან განშორებულ იყო.
+                                </cell>
+                                <cell xml:lang="ka-Geok">
+                                    ვითარ-იგი გაბრიელ, წმიდისა ღმრთისმშობელისა მიმართ მზრახვალი, ერთი იყო ანგელოსთაგანი და მხოლოჲ მუნ წარმოდგომილი ეზრახებოდა მას, განყოფილი თანარსთა თჳსთა ანგელოსთაგან ადგილსა მას მოსლვითა და მზრახვალობითა. და პავლე, ხარისხთა ზედა ერის მზრახვალი, ერთად კაცთაგანად მყოფი, თჳსებათა მიერ და მოქმედებათა მისთა სხუათა კაცთაგან განიყოფვოდა. თ 29 κζ 1
+                                </cell>
+                            </row>
+                        </table>
+                    </p>
+                    
+                    <p xml:id="p.h.174" n="174">
+                        ამ მონაკვეთშიც, <persName ref="#ephrem">ეფრემის</persName> თარგმანში დადასტურებულ <term corresp="#lex.piriani_zmna">ზმნურ პირიან ფორმებს</term> <persName ref="#arsen_iqaltoeli">არსენისეულში</persName> <term corresp="#lex.mimghveoba">მიმღეობური</term> ენაცვლება: <quote xml:lang="ka-Geok">ზრახვიდა რაჲ</quote> — <quote xml:lang="ka-Geok">მზრახვალი</quote>, <quote xml:lang="ka-Geok">წარმოდგომილ იყო</quote> — <quote xml:lang="ka-Geok">წარმოდგომილი</quote>, <quote xml:lang="ka-Geok">განყოფილ იყო</quote> — <quote xml:lang="ka-Geok">განყოფილი</quote>, <quote xml:lang="ka-Geok">სიტყუა-უგებდა</quote> — <quote xml:lang="ka-Geok">მზრახვალი</quote>, <quote xml:lang="ka-Geok">კაცთაგანი იყო</quote> — <quote xml:lang="ka-Geok">კაცთაგან მყოფი</quote>. შდრ:
+                        <quote xml:lang="grc">Οἷον ὁ Γαβριὴλ τῇ ἁγίᾳ θεοτόκῳ διαλεგόμενος, εἰς τῶν ἀγγέλων ὑπάρχων, μόνος ἐκεῖσε παρὼν διελέγετο, κεχωρισμένος τῶν ὁμοουσίων ἀγγέλων δὶα τῆς ἐν τῷ τόπῳ παρουσίας καὶ διαλέξεως, καὶ ὁ Παῦλος ἐπὶ τῶν ἀναβαθμῶν δημηγορῶν, ἐἰς τῶν ἀνθρώπων ὧν, διὰ τῶν ἰδιωμάτων καὶ ἐνεργημάτων αὐτοῦ τῶν λοιπῶν ἀνθρώπων διεστέλλετο.</quote><ptr target="#note197"/>
+                    </p>
+                    
+                    <p xml:id="p.h.175" n="175">
+                        ამასთან უნდა შევნიშნოთ, რომ <title>„დიალექტიკაში“</title> <persName ref="#arsen_iqaltoeli">არსენის</persName> სტილისათვის დამახასიათებელი თავისებურებანი ნაკლებია, ვიდრე მის მიერ თარგმნილ ზოგიერთ ძეგლში, მაგალითად, <title>„დოგმატიკონის“</title> შემადგენლობაში შეტანილ დოგმატურსა და ფილოსოფიურ სტატიებში.
+                    </p>
+                    
+                    <p xml:id="p.h.176" n="176">
+                        მიუხედავად ამისა, ზემოთ მოყვანილი მაგალითები მაინც დამახასიათებელია <persName ref="#arsen_iqaltoeli">არსენის</persName> ენისათვის:
+                        <quote xml:lang="ka-Geok">„და ესე [ესე] მარტივი უკუე (არსენი) არსებაჲ ყოველთა გუამთა შინა (შორის ა.) სწორებით (იგივედ და ერთად. ა.) - იხილვების: უსულოთა და სულიერთა (სულიერთა და უსულოთა. ა.) სიტყვიერთა და პირუტყუთა (უსიტყუელთა. ა) მოკუდავთა და უკუდავთა“.</quote> 28 κς 3 შდრ:
+                        <quote xml:lang="grc">Καὶ ἡ μὲν ἁπλῆ οὐσία ἐν πάსαις ταῖς ὑποστάσεσιν ὡσαύτως θεωρείται ἔν τε ταῖς ἀψύχοις καὶ ἐμψύχοις, λογικαῖς τε καὶ ἀλόγοις, θνηταῖς τε καὶ ἀθανάτοις.</quote><ptr target="#note198"/>
+                    </p>
+                   
+                    <p xml:id="p.h.177" n="177">
+                        ზემოთ ნაჩვენები იყო <num value="19">ი̃თ</num> ჰომილიისათვის და ნაწილობრივ აგრეთვე ათონურ კრებულში შეტანილ სხვა თხზულებათათვის დამახასიათებელი ენობრივი მოვლენები, რომელთაგან ერთი ნაწილი ბერძნული დედნის ზეგავლენას უნდა მიეწეროს: ასეთებია: <term corresp="#lex.mimghveoba">მიმღეობურ ფორმათა</term> და განკერძოებულ სიტყვათა თუ გამოთქმათა სიმრავლე, <term corresp="#lex.contaminacia">სინტაქსურ ფორმათა კონტამინაცია</term>, <term corresp="#lex.da">და</term> კავშირის ხმარება <term corresp="#lex.ca">-ცა</term> ნაწილაკის მნიშვნელობით, ზოგიერთი ლექსიკური კალკის შექმნა და სხვა.
+                    </p>
+                    
+                    <p xml:id="p.h.178" n="178">
+                        <persName ref="#arsen_iqaltoeli">არსენის</persName> შესახებ მსჯელობისას <persName ref="#kkekelidze">კ. კეკელიძეს</persName> მისი ენის ერთ-ერთ დამახასიათებელ ნიშნად მიაჩნია <quote>„რთული სიტყვები და ასეთი ფორმები: <term corresp="#lex.vidreme">ვიდრემე</term>, ეგერა, ძლითი“</quote><ptr target="#note199"/>. ზემოთ აღნიშნული იყო <term corresp="#lex.vidreme">ვიდრემე</term>-ს ხშირი ხმარება <num value="19">ი̃თ</num> ჰომილიასა და გრამატიკულ თხზულებაში. ამას შეიძლება ისიც დავუმატოთ, რომ <title>„დიალექტიკის“</title> <persName ref="#arsen_iqaltoeli">არსენისეულ</persName> თარგმანში <term corresp="#lex.vidreme">ვიდრემე</term> ხშირად გვხვდება.
+                    </p>
+                    
+                    <p xml:id="p.h.179" n="179">
+                        <table rend="parallel">
+                            <row>
+                                <cell><persName ref="#ephrem">ეფრემი</persName></cell>
+                                <cell><persName ref="#arsen_iqaltoeli">არსენი</persName></cell>
+                            </row>
+                            <row>
+                                <cell xml:lang="ka-Geok">აწ უკუე ეწოდების კაცსა მას არსება, ხოლო ფერსა შემთხუევითი</cell>
+                                <cell xml:lang="ka-Geok">არს უკუე სხეული <term corresp="#lex.vidreme">ვიდრემე</term> არსებად, ხოლო ფერი შემთხუევითი, თ. 1, 5.</cell>
+                            </row>
+                            <row>
+                                <cell cols="2" xml:lang="grc">Ἔστιν οὖν τὸ μὲν σῶμα οὐσία, τὸ δὲ χρῶμα συμβεβηκός<ptr target="#note200"/>.</cell>
+                            </row>
+                            <row>
+                                <cell xml:lang="ka-Geok">ყოველი კაცი სიტყვიერ არს, ხოლო არა ყოველი სიტყვიერი კაც არს.</cell>
+                                <cell xml:lang="ka-Geok">ყოველი <term corresp="#lex.vidreme">ვიდრემე</term> კაცი სიტყჳერ არს, ხოლო არა ყოველი სიტყჳერი კაც არს. თ. 8, 5.</cell>
+                            </row>
+                            <row>
+                                <cell cols="2" xml:lang="grc">Πᾶς μὲν ἄνθρωπος λογικός, οὐ πᾶς δὲ λογικὸς ἄνθρωπος<ptr target="#note201"/>.</cell>
+                            </row>
+                        </table>
+                    </p>
+                    
+                    <p xml:id="p.h.180" n="180">
+                        ზემოთ აღნიშნული იყო <num value="19">ი̃თ</num> ჰომილიაში <term corresp="#lex.nasakhelari_zmna">ნასახელარი ზმნების</term> დიდი რაოდენობით ხმარება. <title>„დიალექტიკის“</title> <persName ref="#arsen_iqaltoeli">არსენისეულ</persName> თარგმანში ზოგჯერ არის ისეთი <term corresp="#lex.nasakhelari_zmna">ნასახელარი ზმნები</term>, რომლებიც შექმნილია ბერძნული ზმნის ერთი სიტყვით გადმოსაცემად: <quote xml:lang="ka-Geok">სახელ-ნართაულნი ვიდრემე გარე-შეიცვენ, რომელთაგან ისახელნართაულნეს</quote> თ. 21, 3 (შდრ. <quote xml:lang="grc">τὰ μὲν παρώνυμα περιέχουσι τὰ ἀφ᾽ ὧν παρωνομάსθησαν</quote><ptr target="#note202"/>). <quote xml:lang="ka-Geok">მყუდროებს</quote> არსენ 26, 1 (<quote xml:lang="ka-Geok">მყუდრო არს</quote>, ეფრ.). შდრ: <quote xml:lang="grc">ἠρεμεῖ</quote><ptr target="#note203"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.181" n="181">
+                        <persName ref="#ephrem">ეფრემ მცირის</persName> ნათარგმნ თხზულებებში ხშირად გვხვდება მარგინალური შენიშვნები — <mentioned>„შეისწავე“</mentioned>, რომლებიც მას ბერძენ მწიგნობართა მიბაძვით შემოუღია<ptr target="#note204"/>. ეფრემის შემოღებულ სისტემას მისდევდნენ მისი მოწაფეები, მათ შორის <persName ref="#arsen_iqaltoeli">არსენიც</persName>. <quote>„შეისწავე, ვითარმედ ჩუეულებაჲ ბერძენთა ენისაჲ იუდეან უწოდს ჰურიათა“</quote><ptr target="#note205"/>. <title>„დიდ სჯულისკანონში“</title> იგი უცხო სიტყვათა მნიშვნელობებს განმარტავს: <quote>„შეისწავე, ვითარმედ ყოველნი ესე წოდებანი... ნეარონნი, კოდიკონი, დიგესტონნი... სახელ არიან ჰრომაულთა აწ ბერძენთა შორის მყოფთა სამოქალაქოთა წიგნთანი...“</quote><ptr target="#note206"/>.
+                    </p>
+                    
+                    <p xml:id="p.h.182" n="182">
+                        ზემოთ ნაჩვენები იყო ათონური ხელნაწერის მარგინალურ შენიშვნებში მოცემული განმარტებები, მაგალითად, <num value="31">ლ̃ა</num> სიტყვის დასაწყისში ახსნილია, თუ რატომ ეწოდა ქრისტეს სახელი, რომელიც <quote>„დედალი არს ბერძულ“</quote> (იგ. <mentioned xml:lang="grc">σοφία</mentioned>). <num value="23">კ̃გ</num> ჰომილიაში ფრაზას <quote xml:lang="ka-Geok">„ესეოდენნი შეჭამნეს“</quote> ახლავს განმარტება: <quote>„შეჭმად წარგებასა იტყჳს, ვინაჲთგან ესრეთ ჩუჱულ არს სიტყუაჲ ბერძენთაჲ“</quote>.
+                    </p>
+                    
+                    <p xml:id="p.h.183" n="183">
+                        ამრიგად, საანალიზო თხზულებებში შეიმჩნევა ზოგიერთი ნიშანი, რომელსაც უდავოდ <persName ref="#arsen_iqaltoeli">არსენის</persName> მიერ ნათარგმნ თხზულებებში ეძებნება პარალელი. შეიძლება თუ არა ამის საფუძველზე ათონურ კრებულში შესული თარგმანები უყოყმანოდ გამოვაცხადოთ არსენის შესრულებულად, ხოლო <title>„სიტყუაჲ ართრონთათჳს“</title> მის მიერ დაწერილად? <persName ref="#ephrem">ეფრემის</persName> ან <persName ref="#arsen_iqaltoeli">არსენი იყალთოელის</persName> მიჩნევა გრამატიკული თხზულების ავტორად ჯერჯერობით მხოლოდ სავარაუდო შეიძლება იყოს.
+                    </p>
+                </div>
+                
+    
             </body>
                 <back>
                 <div type="notes">
@@ -1326,6 +2152,171 @@
                     <note xml:id="note152" n="152">
                         <p>უნდა შევნიშნოთ, რომ ძველად ქართველ მწიგნობრებს ზოგჯერ მაინც უცდიათ ამ სხვაობის ჩვენება.</p>
                         <bibl><title>შატბერდის კრებული</title>, გვ. 196.</bibl>
+                    </note>
+                    
+                    <!-- Append these to your existing <div type="notes"> -->
+                    <note xml:id="note153" n="153">
+                        <bibl><title xml:lang="ka">ეზეკიელის წიგნის ძველი ქართული ვერსიები</title>, გამოსცა თ. ცქიტიშვილმა, თბ., 1980, გვ. 275.</bibl>
+                    </note>
+                    <note xml:id="note154" n="154">
+                        <bibl>ზ. სარჯველაძე, <title xml:lang="ka">საზოგადო სახელად გაგებული ერთი ტოპონიმისათვის საბას ლექსიკონში</title>, მაცნე, ენისა და ლიტ. სერია, 1979, # 2, გვ. 102.</bibl>
+                    </note>
+                    <note xml:id="note155" n="155">
+                        <bibl>ა. შანიძე, <title xml:lang="ka">ქართული ენის გრამატიკის საფუძვლები</title>, თბ., 1973, გვ. 603.</bibl>
+                    </note>
+                    <note xml:id="note156" n="156">
+                        <bibl>ა. შანიძე, <title xml:lang="ka">ქართველთა მონასტერი ბულგარეთში</title>, გვ. 222.</bibl>
+                    </note>
+                    <note xml:id="note157" n="157">
+                        <bibl>შდრ: <author>კ. დანელია</author>, <title xml:lang="ka">ქართული სამწერლო ენის ისტორიის საკითხები</title>, თბ. 1983, გვ. 367.</bibl>
+                    </note>
+                    <note xml:id="note158" n="158">
+                        <bibl><author>დ. მელიქიშვილი</author>, <title xml:lang="ka">იოანე პეტრიწის ფილოსოფიურ შრომათა ენა და სტილი</title> გვ. 166; მისივე <title xml:lang="ka">ზოგი საკავშირებელი სიტყვის მნიშვნელობისათვის იოანე პეტრიწის ენაში</title>; საიუბილეო ძვ. ქ. ენის კათედრის შრომები: XI, 1986, გვ. 136.</bibl>
+                    </note>
+                    <note xml:id="note159" n="159">
+                        <bibl><title xml:lang="ka">ბასილი კესარიელის „სწავლათა“ ეფთვიმე ათონელისეული თარგმანები</title> (ც. ქურციკიძე, 1983).</bibl>
+                    </note>
+                    <note xml:id="note160" n="160">
+                        <bibl><author>კ. დანელია</author>, <title xml:lang="ka">ქართული სამწერლო ენის ისტორიის საკითხები</title>, გვ. 333.</bibl>
+                    </note>
+                    <note xml:id="note161" n="161">
+                        <bibl><author>დ. მელიქიშვილი</author>, <title xml:lang="ka">იოანე პეტრიწის ფილოსოფიურ შრომათა ენა და სტილი</title>, გვ. 192.</bibl>
+                    </note>
+                    <note xml:id="note162" n="162">
+                        <bibl><author><persName ref="#dmelikishvili">დ. მელიქიშვილი</persName></author>, <title xml:lang="ka">იოანე პეტრიწის ფილოსოფიურ შრომათა ენა და სტილი</title>, გვ: 186.</bibl>
+                    </note>
+                    <note xml:id="note163" n="163">
+                        <bibl><title xml:lang="ka">ბასილი კესარიელის „სწავლათა“ ეფთვიმე ათონელისეული თარგმანები</title>, გვ. 61.</bibl>
+                    </note>
+                    <note xml:id="note164" n="164">
+                        <bibl><author><persName ref="#kdanelia">კ. დანელია</persName></author>, <title xml:lang="ka">უცხო ენათა გავლენის კვალი ძველი ქართული წერილობითი ძეგლების ენაში</title>; <title level="j">მაცნე (ენისა და ლიტერ. სერია)</title>, <date>1975</date>, №4, გვ. 79.</bibl>
+                    </note>
+                    <note xml:id="note165" n="165">
+                        <bibl><author><persName ref="#ashanidze">ა. შანიძე</persName></author>, <title xml:lang="ka">ძველი ქართული ენის გრამატიკა</title>, <pubPlace>თბ.</pubPlace>, <date>1976</date>, გვ. 169.</bibl>
+                    </note>
+                    <note xml:id="note166" n="166">
+                        <bibl><author><persName ref="#dmelikishvili">დ. მელიქიშვილი</persName></author>, <title xml:lang="ka">იოანე პეტრიწის ფილოსოფიურ შრომათა ენა და სტილი</title>, გვ. 200.</bibl>
+                    </note>
+                    <note xml:id="note167" n="167">
+                        <bibl><author><persName ref="#lakhobadze">ლ. ახობაძე</persName></author>, <title xml:lang="ka">არსენ იყალთოელის თარგმანების ერთი სტილისტური თავისებურების შესახებ</title>. <title level="m">მრავალთავი</title>, X, <pubPlace>თბ.</pubPlace>, <date>1983</date>, გვ. 154.</bibl>
+                    </note>
+                    <note xml:id="note168" n="168">
+                        <bibl><title level="m" xml:lang="ka">დიდი სჯულისკანონი</title>, გამოსაცემად მოამზადეს <persName>ე. გაბიძაშვილმა</persName>, <persName>ე. გიუნაშვილმა</persName>, <persName>მ. დოლაქიძემ</persName> და <persName>გ. ნინუამ</persName>, <pubPlace>თბ.</pubPlace>, <date>1975</date>, გვ. 515.</bibl>
+                    </note>
+                    <note xml:id="note169" n="169">
+                        <bibl><title level="m" xml:lang="ru">Описание рукописей Тифлисского церк. Музея</title>, составленное <persName>Ф. Д. Жордания</persName>, кნ. ІІ, <pubPlace>Тифл.</pubPlace>, <date>1902</date>, с. 200.</bibl>
+                    </note>
+                    <note xml:id="note170" n="170">
+                        <bibl><author><persName ref="#tčqonia">თ. ჭყონია</persName></author>, <title xml:lang="ka">იოანე დამასკელის ენკომია იოანე ოქროპირის მიმართ</title>; <title level="m">მრავალთავი</title>, II, <pubPlace>თბ.</pubPlace>, <date>1973</date>, გვ. 138.</bibl>
+                    </note>
+                    <note xml:id="note171" n="171">
+                        <bibl><title level="m" xml:lang="ka">ისტორიანი და აზმანი შარავანდედთანი</title>, <persName ref="#kkekelidze">კ. კეკელიძის</persName> რედაქციითა და გამოკვლევით, <pubPlace>თბ.</pubPlace>, <date>1941</date>, გვ. 80.</bibl>
+                    </note>
+                    <note xml:id="note172" n="172">
+                        <bibl><author><persName>Ф. Жордания</persName></author>, <title xml:lang="ru">Описание</title>, II, с. 167.</bibl>
+                    </note>
+                    <note xml:id="note173" n="173">
+                        <bibl>ეს მითითებული აქვს <author><persName ref="#i_abuladze">ილ. აბულაძეს</persName></author> (<persName ref="#saba">ს. ს. ორბელიანი</persName>, <title xml:lang="ka">თხზულებანი</title>, ტ. IV, <pubPlace>თბ.</pubPlace> <date>1966</date>, გვ. 236 შენ.) <persName ref="#saba">საბას</persName> მიერ <persName ref="#petritsi">იოანე პეტრიწის</persName> თხზულებად აღებული კონტექსტის ადგილის ჩვენება.</bibl>
+                    </note>
+                    <note xml:id="note174" n="174">
+                        <bibl><title xml:lang="ka">ძველი ქართული აგიოგრაფიული ლიტერატურის ძეგლები</title>, IV, <pubPlace>თბ.</pubPlace>, <date>1968</date>, გვ. 394.</bibl>
+                    </note>
+                    <note xml:id="note175" n="175">
+                        <bibl><author><persName ref="#tžordania">თ. ჟორდანია</persName></author>, <title xml:lang="ka">ქრონიკები</title>, II, გვ. 166; <title xml:lang="ka">ქართული სამართლის ძეგლები</title>, გამოსცა <persName ref="#idolidze">ი. დოლიძემ</persName>, III, <pubPlace>თბ.</pubPlace>, <date>1970</date>, გვ. 167.</bibl>
+                    </note>
+                    <note xml:id="note176" n="176">
+                        <bibl><title xml:lang="en">A Patristic Greek Lexicon</title>, Edited by <persName>G. W. H. Lampe</persName>, <pubPlace>Oxford</pubPlace>, <date>1961-68</date>: <mentioned xml:lang="grc">καινοτομέω</mentioned> - innovate (of heretic opinions).</bibl>
+                    </note>
+                    <note xml:id="note177" n="177">
+                        <bibl><author><persName ref="#kdanelia">კ. დანელია</persName></author>, <title xml:lang="ka">ქართული სამწერლო ენის ისტორიის საკითხები</title>, გვ. 99.</bibl>
+                    </note>
+                    <note xml:id="note178" n="178">
+                        <bibl><title xml:lang="ka">ბასილი კესარიელის „სწავლათა“ ეფთვიმე ათონელისეული თარგმანები</title>, გვ. 240.</bibl>
+                    </note>
+                    <note xml:id="note179" n="179">
+                        <bibl><title xml:lang="ka">იოსებ ფლავიოსი, მოთხრობანი იუდაებრივისა ძუელსიტყუაობისანი</title>, დასაბეჭდად დაამზადა <persName ref="#nmeliqishvili">ნ. მელიქიშვილმა</persName>, II, <pubPlace>თბ.</pubPlace>, <date>1988</date>, გვ. 413.</bibl>
+                    </note>
+                    <note xml:id="note180" n="180">
+                        <bibl><title xml:lang="ka">ამონიოს ერმიასის თხზულებანი ქართულ მწერლობაში</title>, ტექსტები გამოსაცემად მოამზადეს <persName ref="#nkečaghmazde">ნ. კეჭაღმაძემ</persName> და <persName ref="#mraphava">მ. რაფავამ</persName>, <pubPlace>თბ.</pubPlace>, <date>1983</date>, გვ. 159.</bibl>
+                    </note>
+                    <note xml:id="note181" n="181">
+                        <bibl><title xml:lang="ka">იოსებ ფლავიოსი...</title> I, <pubPlace>თბ.</pubPlace>, <date>1987</date>, გვ. 96.</bibl>
+                    </note>
+                    <note xml:id="note182" n="182">
+                        <bibl><author><persName ref="#kkekelidze">კ. კეკელიძე</persName></author>, <title xml:lang="ka">ძველი ქართული ლიტ. ისტორია</title>, I, გვ. 238. ტექსტი წარმოადგენს თეოდორა ალექსანდრიელის ცხოვრებას, რომელიც გამოსაცემად მოამზადა <persName ref="#ngoguadze">ნ. გოგუაძემ</persName>.</bibl>
+                    </note>
+                    <note xml:id="note183" n="183">
+                        <bibl><title xml:lang="en">Lampe, A Patr. Gr. Lexicon</title>: <mentioned xml:lang="grc">λεπτουργία</mentioned> — hairsplitting; <title xml:lang="en">A Greek-English Lexicon</title>, Compiled by <persName>H. G. Liddel</persName> and <persName>R. Scott</persName>, <date>1965</date>.</bibl>
+                    </note>
+                    <note xml:id="note184" n="184">
+                        <bibl><author><persName ref="#petritsi">იოვანე პეტრიწი</persName></author>, <title xml:lang="ka">სათნოებათა კიბე</title>. გამოსაცემად მოამზადა <persName ref="#ilolashvili">ივ. ლოლაშვილმა</persName>, <pubPlace>თბ.</pubPlace>, <date>1968</date>, გვ. 110.</bibl>
+                    </note>
+                    <note xml:id="note185" n="185">
+                        <bibl><author><persName ref="#kdanelia">კ. დანელია</persName></author>, <title xml:lang="ka">ქართული სამწერლო ენის ისტ. საკითხები</title>, გვ. 308.</bibl>
+                    </note>
+                    <note xml:id="note186" n="186">
+                        <bibl><author><persName>А. Цагарели</persName></author>, <title xml:lang="ru">Сведения</title>, 1, с. 16. XIX საუკუნეშიც ეფთვიმეს ნაღვაწად ითვლებოდა. ე. წ. „საეკლესიო გამოცემის“ (1884 წ. ექვთიმე ხელაძის სტამბაში დაბეჭდილი ორტომეულის) მესვეურებმა, როგორც ცნობილია, თავიანთი გამოცემის საფუძვლად აიღეს მოსკოვის 1743 წლის გამოცემა და გაასწორეს იგი ხელნაწერი პირის მიხედვით, რომელიც გადაწერილი იყო „ათონის ივერიის მონასტრიდგან ჩამოტანილის წმიდა მამა ევთიმისგან მეცხრე საუკუნეში თარგმნილი დაბადებიდამ“... 1856 წელს.</bibl>
+                    </note>
+                    <note xml:id="note187" n="187">
+                        <bibl>ეფრემ მცირის ენის შესახებ იხ. <author><persName ref="#mshanidze">მ. შანიძე</persName></author>, <title xml:lang="ka">შესავალი ეფრემ მცირის ფსალმუნთა თარგმანებისა</title>; <title level="j">საიუბილეო</title>, XI, 1968, გვ. 99; <author><persName ref="#kdanelia">კ. დანელია</persName></author>, <title xml:lang="ka">ქართული სამწერლო ენის ისტორიის საკითხები</title>, გვ. 358; <persName ref="#arsen_iqaltoeli">არსენი იყალთოელის</persName> ენა ნაკლებ არის შესწავლილი. გამოქვეყნებულია მისი ნათარგმნი ორი დიდი თხზულება: <title xml:lang="ka">ხრონოგრაფი გიორგი მონაზონისად</title> (<persName ref="#sqaukhchishvili">ს. ყაუხჩიშვილის</persName> გამოცემა, თბ., 1920) და <title xml:lang="ka">დიდი სჯულისკანონი</title> (გამოცემული <persName>ე. გაბიძაშვილის</persName>, <persName>ე. გიუნაშვილის</persName>, <persName>მ. დოლაქიძისა</persName> და <persName>გ. ნინუას</persName> მიერ), თბ., 1975.</bibl>
+                    </note>
+                    <note xml:id="note188" n="188">
+                        <bibl><author><persName ref="#kkekelidze">კ. კეკელიძე</persName></author>, <title xml:lang="ka">ძველი ქართული ლიტ. ისტორია</title>, I, გვ. 275-276.</bibl>
+                    </note>
+                    <note xml:id="note189" n="189">
+                        <bibl><author><persName ref="#j_damascene">იოანე დამასკელი</persName></author>, <title xml:lang="ka">დიალექტიკა</title>, გამოსცა <persName ref="#mraphava">მაია რაფავამ</persName>, <pubPlace>თბ.</pubPlace>, <date>1976</date>.</bibl>
+                    </note>
+                    <note xml:id="note190" n="190">
+                        <bibl><title xml:lang="ka">იოანე დამასკელი, დიალექტიკა</title>, გვ. 45-46.</bibl>
+                    </note>
+                    <note xml:id="note191" n="191">
+                        <bibl>ხელნაწერი S-1463, 39r; <title xml:lang="ka">ქართულ ხელნაწერთა აღწერილობა</title>, S კოლექციისა, ტ. 1, <pubPlace>თბ.</pubPlace>, გვ. 214.</bibl>
+                    </note>
+                    <note xml:id="note192" n="192">
+                        <bibl><author><persName ref="#kkekelidze">კ. კეკელიძე</persName></author>, <title xml:lang="ka">ძველი ქართული ლიტ. ისტორია</title>, I, გვ. 275.</bibl>
+                    </note>
+                    <note xml:id="note193" n="193">
+                        <bibl><author><persName ref="#rmiminoshvili">რ. მიმინოშვილი</persName></author>, <title xml:lang="ka">იოანე დამასკელის „გარდამოცემის“ ქართული თარგმანები</title>, <pubPlace>თბ.</pubPlace>, <date>1966</date>, გვ. 157.</bibl>
+                    </note>
+                    <note xml:id="note194" n="194">
+                        <bibl><author><persName ref="#kkekelidze">კ. კეკელიძე</persName></author>, <title xml:lang="ka">ძველი ქართული ლიტ. ისტორია</title>, I, გვ. 297.</bibl>
+                    </note>
+                    <note xml:id="note195" n="195">
+                        <bibl><title xml:lang="ka">დიალექტიკა</title>, გვ. 45.</bibl>
+                    </note>
+                    <note xml:id="note196" n="196">
+                        <bibl><title xml:lang="de">Die Schriften des Johannes von Damaskos</title>... Besorgt von <persName ref="#p_kotter">P. B. Kotter</persName>. <title xml:lang="la">Patristische Texte und Studien</title>, B. 7, <pubPlace>Berlin</pubPlace>, <date>1969</date>, S. 93.</bibl>
+                    </note>
+                    <note xml:id="note197" n="197">
+                        <bibl><title xml:lang="de">Die Schriften des Johannes von Damaskos</title>, S. 109.</bibl>
+                    </note>
+                    <note xml:id="note198" n="198">
+                        <bibl><title xml:lang="de">Die Schriften des Johannes von Damaskos</title>, S. 109.</bibl>
+                    </note>
+                    
+                    <note xml:id="note199" n="199">
+                        <bibl><author><persName ref="#kkekelidze">კ. კეკელიძე</persName></author>, <title xml:lang="ka">ძველი ქართული ლიტ. ისტორია</title>, I, გვ. 275.</bibl>
+                    </note>
+                    <note xml:id="note200" n="200">
+                        <bibl><title xml:lang="de">Die Schriften von Johannes von Damaskos</title>, S. 58.</bibl>
+                    </note>
+                    <note xml:id="note201" n="201">
+                        <bibl><title xml:lang="de">Die Schriften von Johannes von Damaskos</title>, S. 85.</bibl>
+                    </note>
+                    <note xml:id="note202" n="202">
+                        <bibl><title xml:lang="de">Die Schriften von Johannes von Damaskos</title>, S. 103.</bibl>
+                    </note>
+                    <note xml:id="note203" n="203">
+                        <bibl><title xml:lang="de">Die Schriften von Johannes von Damaskos</title>, S. 107.</bibl>
+                    </note>
+                    <note xml:id="note204" n="204">
+                        <bibl><author><persName ref="#tžordania">თ. ჟორდანია</persName></author>, <title xml:lang="ka">ქრონიკები</title>, I, გვ. 217; <author><persName ref="#kdanelia">კ. დანელია</persName></author>, <title xml:lang="ka">ქართული სამწერლო ენის ისტორიის საკითხები</title>, გვ. 328-333.</bibl>
+                    </note>
+                    <note xml:id="note205" n="205">
+                        <bibl><title xml:lang="ka">ხრონოღრაფი გიორგი მონაზონისა</title>, გამოცემა <persName ref="#sqaukhchishvili">ს. ყაუხჩიშვილისა</persName>, <pubPlace>თბ.</pubPlace>, <date>1920</date>, გვ. 46.</bibl>
+                    </note>
+                    <note xml:id="note206" n="206">
+                        <bibl><title xml:lang="ka">დიდი სჯულისკანონი</title>, გვ. 136-137.</bibl>
                     </note>
                 </div>    
                 </back>

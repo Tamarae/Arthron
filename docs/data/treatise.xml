@@ -634,8 +634,8 @@
             <!-- SECTION 12: FEMININE ARTICLES -->
             <div type="section" n="12" xml:id="sec.12">
                 <note type="marginal" place="margin" resp="#scribe">
-                    <p>დედალნი</p>
-                    <note>Written in majuscule in both MSS; in cinnabar in S</note>
+                    <p>ႣႤႣႠႪႬႨ</p>
+                    <note>ორივე ხელნაწერში მთავრულით; S-ში სინგურით</note>
                 </note>
                 <p n="1">ხოლო <term target="#lex.fem" ana="#gramm.fem" corresp="http://purl.org/olia/olia.owl#Feminine">დედლისა</term> სახელისა <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term> თავით კერძო დასასხმელნი, ვითარცა საფუძველნი რაჲმე და <app xml:id="app.12.1"><lem>საშუენებელნი</lem><rdg wit="#S" type="orthographic">ს̃შუჱბლნი</rdg></app>, ვითარცა <app xml:id="app.12.2"><lem>ზემო</lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app> გჳთქუამს, არიან ესე:</p>
                 
@@ -688,8 +688,8 @@
             <!-- SECTION 16: NEUTER ARTICLES INTRODUCTION -->
             <div type="section" n="16" xml:id="sec.16">
                 <note type="marginal" place="margin" resp="#scribe">
-                    <p>შუანი</p>
-                    <note>Written in majuscule in both MSS</note>
+                    <p>ႸႳႠႬႨ</p>
+                    <note>ორივე ხელნაწერში მთავრულით</note>
                 </note>
                 <p n="1">ამითვე სახითა <term target="#lex.neut" ana="#gramm.neut" corresp="http://purl.org/olia/olia.owl#Neuter">შუანი</term> <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term> არიან, რამეთუ ჰგვანან ვიდრემე <app xml:id="app.16.1"><lem>რიცხჳთაცა</lem><rdg wit="#S" type="orthographic">რიცხვ̃ცა</rdg></app> და <app xml:id="app.16.2"><lem>გუარითა</lem><rdg wit="#S" type="orthographic">გუარითცა</rdg></app> <app xml:id="app.16.3"><lem><term target="#lex.dreka" ana="#gramm.case" corresp="http://purl.org/olia/olia.owl#Case">დრეკისაჲთა</term></lem><rdg wit="#S" type="orthographic">დრეკისათა</rdg></app>, გარნა განიყოფებიან <term target="#lex.masc" ana="#gramm.masc" corresp="http://purl.org/olia/olia.owl#Masculine">მამალთა</term> და <term target="#lex.fem" ana="#gramm.fem" corresp="http://purl.org/olia/olia.owl#Feminine">დედალთაგან</term>. და ზემო თქუმულნი არიან <term target="#lex.masc" ana="#gramm.masc" corresp="http://purl.org/olia/olia.owl#Masculine">მამალნი</term> და <term target="#lex.fem" ana="#gramm.fem" corresp="http://purl.org/olia/olia.owl#Feminine">დედალნი</term>; ხოლო რომელთა აწ <app xml:id="app.16.4"><lem>ვიტყჳთ</lem><rdg wit="#S" type="orthographic">ვიტყვ̃</rdg></app>, არიან <term target="#lex.neut" ana="#gramm.neut" corresp="http://purl.org/olia/olia.owl#Neuter">შუანი</term>:</p>
                 

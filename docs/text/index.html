@@ -36,6 +36,13 @@
     background: #eef2ff;
     border-radius: 2px;
 }
+
+.linebreak {
+    color: #9ca3af;
+    font-size: 0.8em;
+    margin: 0 1px;
+}
+
 .folio-marker { 
     font-size: 0.7em; 
     color: #888;
@@ -95,6 +102,61 @@ section:hover .section-anchor {
 }
 .witness-bar {
     transition: all 0.2s ease;
+}
+
+/* Marginal notes - scholarly margin annotation */
+.marginal-note {
+    display: block;
+    float: right;
+    clear: right;
+    width: 140px;
+    margin-right: -160px;
+    margin-top: 0;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    color: #6b7280;
+    border-left: 2px solid #c2410c;
+    background: #fffbeb;
+}
+.marginal-note-title {
+    display: block;
+    font-weight: 600;
+    color: #c2410c;
+    font-variant: small-caps;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+}
+.marginal-note-desc {
+    display: block;
+    font-style: italic;
+    font-size: 0.7rem;
+    color: #9ca3af;
+}
+/* Hide marginal notes on smaller screens */
+@media (max-width: 1200px) {
+    .marginal-note {
+        float: none;
+        width: auto;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Instruction marker (შეისწავე) - rubric style */
+.instruction-marker {
+    color: #c2410c;
+    font-weight: 500;
+}
+.instruction-marker.rubric {
+    color: #b91c1c;
+    font-style: italic;
+}
+.instruction-marker::before {
+    content: '⁘ ';
+    font-size: 0.8em;
+    color: #dc2626;
 }
 
 /* Lexicon Popup - Margin note style */
@@ -387,7 +449,8 @@ section:hover .section-anchor {
                                 <span class="folio-marker inline-folio text-xs mx-1">[S 106r]</span>
                                 
                 
-                                შეისწავე, რამეთუ ვინაჲთგან 
+                                <span class="instruction-marker rubric" title="სასწავლო ნიშანი">შეისწავე</span>
+                                , რამეთუ ვინაჲთგან 
                                 <a href="../lexicon/index.html#lex.arthron" class="term-link" data-term="lex.arthron" data-ana="#gramm.arthron" data-corresp="http://purl.org/olia/olia.owl#Article" title="იხ. ლექსიკონში">ართრონთა</a>
                                  ძლით 
                                 <span class="apparatus-inline" data-app-id="app.1.1">
@@ -406,6 +469,7 @@ section:hover .section-anchor {
                                  მიერ თქუმულსა ძისათჳს; და ბერძულსა შინა ვიდრემე ნათლად ძეს ლექსი იგი; ხოლო გარდამოითარგმნოს რაჲ, დაბნელდების 
                                 <a href="../lexicon/index.html#lex.uarthrono" class="term-link" data-term="lex.uarthrono" data-ana="#gramm.uarthrono" title="იხ. ლექსიკონში">უართრონობისათჳს</a>
                                  ენისა ჩუენისა და ცხადსა და ნათე
+                                <span class="linebreak" title="სტრიქონის გადატანა">‖</span>
                                 ლსა 
                                 <span class="apparatus-inline" data-app-id="app.1.3">
                                     <span class="reading-a">სიტყუასა</span>
@@ -425,9 +489,9 @@ section:hover .section-anchor {
                                 </span><sup class="apparatus-marker" data-app="app.1.5" title="იხ. აპარატი">5</sup>
                                  მისი და ვითარ იჴუმევენ ამას 
                                 <a href="../lexicon/index.html#lex.arthron" class="term-link" data-term="lex.arthron" data-ana="#gramm.arthron" data-corresp="http://purl.org/olia/olia.owl#Article" title="იხ. ლექსიკონში">ართრონსა</a>
-                                 ბერძენნი, არა დავფაროთ ძალისაებრ და გულისჴმის-
+                                 ბერძენნი, არა დავფაროთ ძალისაებრ და 
                                 <span class="apparatus-inline" data-app-id="app.1.6">
-                                    <span class="reading-a">ყოფისა</span>
+                                    <span class="reading-a">გულისჴმის-ყოფისა</span>
                                     <span class="reading-s hidden">ყოფისაჲ</span>
                                 </span><sup class="apparatus-marker" data-app="app.1.6" title="იხ. აპარატი">6</sup>
                                  
@@ -467,7 +531,7 @@ section:hover .section-anchor {
 <span>თარგმნა</span>                                 <span class="text-gray-400">S</span>                        </p>
                         <p id="app-app.1.6" class="apparatus-entry pl-4 border-l-2 border-gray-100">
                             <sup class="text-amber-600 mr-1">6</sup>
-                            <span class="font-medium">ყოფისა</span><span class="text-gray-400">]</span>
+                            <span class="font-medium">გულისჴმის-ყოფისა</span><span class="text-gray-400">]</span>
 <span>ყოფისაჲ</span>                                 <span class="text-gray-400">S</span>                        </p>
                         <p id="app-app.1.7" class="apparatus-entry pl-4 border-l-2 border-gray-100">
                             <sup class="text-amber-600 mr-1">7</sup>

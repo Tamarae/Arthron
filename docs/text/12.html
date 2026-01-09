@@ -36,6 +36,13 @@
     background: #eef2ff;
     border-radius: 2px;
 }
+
+.linebreak {
+    color: #9ca3af;
+    font-size: 0.8em;
+    margin: 0 1px;
+}
+
 .folio-marker { 
     font-size: 0.7em; 
     color: #888;
@@ -95,6 +102,61 @@ section:hover .section-anchor {
 }
 .witness-bar {
     transition: all 0.2s ease;
+}
+
+/* Marginal notes - scholarly margin annotation */
+.marginal-note {
+    display: block;
+    float: right;
+    clear: right;
+    width: 140px;
+    margin-right: -160px;
+    margin-top: 0;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    color: #6b7280;
+    border-left: 2px solid #c2410c;
+    background: #fffbeb;
+}
+.marginal-note-title {
+    display: block;
+    font-weight: 600;
+    color: #c2410c;
+    font-variant: small-caps;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+}
+.marginal-note-desc {
+    display: block;
+    font-style: italic;
+    font-size: 0.7rem;
+    color: #9ca3af;
+}
+/* Hide marginal notes on smaller screens */
+@media (max-width: 1200px) {
+    .marginal-note {
+        float: none;
+        width: auto;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Instruction marker (შეისწავე) - rubric style */
+.instruction-marker {
+    color: #c2410c;
+    font-weight: 500;
+}
+.instruction-marker.rubric {
+    color: #b91c1c;
+    font-style: italic;
+}
+.instruction-marker::before {
+    content: '⁘ ';
+    font-size: 0.8em;
+    color: #dc2626;
 }
 
 /* Lexicon Popup - Margin note style */
@@ -373,10 +435,9 @@ section:hover .section-anchor {
                     <p class="text-justify">
                                 
                 
-                                
-                    დედალნი
-                    Written in majuscule in both MSS; in cinnabar in S
-                
+                                <aside class="marginal-note" title="აშიის შენიშვნა">
+                                    <span class="marginal-note-title">დედალნი</span>
+<span class="marginal-note-desc">Written in majuscule in both MSS; in cinnabar in S</span>                                </aside>
                                 
                 
                                 ხოლო 

@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ka">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="ka">სიტყუაჲ ართრონთათჳს</title>
+                <title xml:lang="en" type="sub">Discourse on Articles</title>
+                <author>
+                    <persName xml:lang="ka">უცნობი</persName>
+                    <persName xml:lang="en">Anonymous</persName>
+                </author>
+                <editor role="scholarly">
+                    <persName ref="#shanidze">მზექალა შანიძე</persName>
+                </editor>
+                <editor role="digital">
+                    <!-- Digital edition editor -->
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Digital Scholarly Edition</publisher>
+                <date when="2025">2025</date>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</licence>
+                </availability>
+                <idno type="cts-urn">urn:cts:georgian:shanidze.arthron.ed2025</idno>
+            </publicationStmt>
+            
+                   <sourceDesc>
+                <listWit>
+                    
+                    <witness xml:id="A">
+                        <msDesc xml:id="A-6">
+                            <msIdentifier>
+                                <country>საბერძნეთი</country>
+                                <settlement>ათონის მთა</settlement>
+                                <repository>ივერთა მონასტერი</repository>
+                                <collection>ქართულ ხელნაწერთა კოლექცია</collection>
+                                <idno>A-6</idno>
+                            </msIdentifier>
+                            
+                            <msContents>
+                                <summary>იოანე ოქროპირის თხზულებათა კრებული (შემონახულია ი̃ზ - ლ̃გ თავები)</summary>
+                                <textLang mainLang="ka-Geok">ძველი ქართული</textLang>
+                                
+                                <msItem n="1" xml:id="A-main">
+                                    <locus from="1r" to="170v">170 ფ.</locus>
+                                    <title xml:lang="ka">იოანე ოქროპირის სწავლანი და გრამატიკული ტრაქტატი</title>
+                                    <rubric xml:lang="ka">იოანე ოქროპირის სწავლანი და გრამატიკული ტრაქტატი</rubric>
+                                    <incipit>თქმული იოანე ოქროპირისა «სიტყვისა მისთვს», ვითარმედ: «ქრისტე აღმოსავალი აღმოსავალთაჲ»...</incipit>
+                                    <note>ხელნაწერი წარმოადგენს კრებულს, რომელიც თავდაპირველად 33 თხზულებას შეიცავდა (შემორჩენილია 17). მათ შორის უმნიშვნელოვანესია გრამატიკული ტრაქტატის ადრეული ტექსტი, რომელიც ჩართულია ოქროპირისეული თხზულების თარგმანში.</note>
+                                </msItem>
+                                
+                                <msItem n="2" xml:id="A-arthron">
+                                    <locus from="32r" to="37r">32r—37r</locus>
+                                    <title xml:lang="ka">სიტყუაი ართრონთათჳს</title>
+                                    <rubric xml:lang="ka">სიტყუაჲ ართრონთათჳს</rubric>
+                                    <note>გრამატიკული ტრაქტატის ადრეული რედაქცია, ჩართული ოქროპირის თხზულებაში.</note>
+                                </msItem>
+                                
+                                <msItem>
+                                    <colophon>
+                                    <note>ორიგინალი ანდერძი დაკარგულია (თავ-ბოლო ნაკლული ხელნაწერი). ბოლო ფურცელზე (170v) დაცულია გვიანდელი მინაწერები:</note>
+                                    <persName role="binder" key="Michael_Chuchuashvili">მიქაელ ჭუჭაშვილი</persName> (შემკაზმელი)
+                                    <persName role="owner" key="Venedikton">ვენედიქტონ</persName> (1823 წ.)
+                                   <persName role="scholar" key="Ilarion_Ber">ილარიონ ბერი</persName> (XIX ს.)
+                                </colophon>
+                                </msItem>
+                            </msContents>
+                            
+                            <physDesc>
+                                <objectDesc form="codex">
+                                    <supportDesc material="paper">
+                                        <support>აღმოსავლური ქაღალდი, ოდნავ გალესილი, ვერტიკალური ზოლებით („ვერჟერები").</support>
+                                        <extent>
+                                            <measure unit="leaf" quantity="170">170 ფ. (აკლია დაახლოებით 135)</measure>
+                                            <dimensions unit="mm" type="leaf">
+                                                <height>370</height>
+                                                <width>255</width>
+                                            </dimensions>
+                                            <dimensions unit="mm" type="written">
+                                                <height>275</height>
+                                                <width>165</width>
+                                            </dimensions>
+                                        </extent>
+                                        <collation>
+                                            <signatures>რვეულებრივი სათვალავი (ი̃ჱ — ლ̃ზ) გატარებულია ნუსხურით ზედა და ქვედა აშიებზე.</signatures>
+                                        </collation>
+                                        <condition>ძალზე დაზიანებული. მელანს ქაღალდი დაუწვავს (გოგირდმჟავა რკინის შემცველობის გამო), რის გამოც მრავალი ფურცელი დაშლილია.</condition>
+                                    </supportDesc>
+                                    
+                                    <layoutDesc>
+                                        <layout columns="2" writtenLines="33">
+                                            <!-- <p>ორსვეტიანი ნაწერი, თითოეულ სვეტში 33 სტრიქონია.</p> -->
+                                        </layout>
+                                    </layoutDesc>
+                                </objectDesc>
+                                
+                                <handDesc hands="1">
+                                    <handNote xml:id="A-scribe01" script="Nuskhuri" medium="black-ink">
+                                        <persName role="scribe">უცნობი გადამწერი (ეფრემ მცირის სკოლის მიმდევარი)</persName>
+                                        <note resp="#M_Shanidze">პალეოგრაფიული ნიშნები (პუნქტუაცია, მახვილები, პროსოდიული ნიშნები) მიუთითებს ეფრემ მცირის ლიტერატურულ სკოლასთან კავშირზე.</note>
+                                        <p>ერთგვაროვანი, სწორი, მომრგვალებული და კუთხოვანი ნუსხური. საზედაო ასოებად გამოყენებულია ასომთავრული.</p>
+                                    </handNote>
+                                </handDesc>
+                                
+                                <decoDesc>
+                                    <decoNote type="headpiece">
+                                        <p>სწორკუთხა თავსამკაულები წრეებითა და მცენარეული ორნამენტებით. შესრულებულია მუქი წითელი მელნით.</p>
+                                    </decoNote>
+                                </decoDesc>
+                                
+                                <bindingDesc>
+                                    <binding contemporary="false">
+                                        <p>ფიცარზე გადაკრული სადა შავი ტყავი.</p>
+                                    </binding>
+                                </bindingDesc>
+                            </physDesc>
+                            
+                            <history>
+                                <origin>
+                                    <origDate notBefore="1180" notAfter="1220">XII ს. დასასრული - XIII ს. დასაწყისი</origDate>
+                                    <origPlace>ათონის ივერთა მონასტერი (სავარაუდოდ)</origPlace>
+                                    <note resp="#M_Shanidze">რ. ბლეიკი ხელნაწერს XVII ს-ით ათარიღებდა, ა. ცაგარელი - XIV-XVI სს-ით, თუმცა პალეოგრაფიული ანალიზი XII-XIII სს-ზე მიუთითებს.</note>
+                                </origin>
+                                <provenance>
+                                    <p>მფლობელი: <persName role="owner">ათონის ივერთა მონასტრის წიგნსაცავი (N6)</persName></p>
+                                </provenance>
+                            </history>
+                            
+                            <additional>
+                                <adminInfo>
+                                    <custodialHist>
+                                        <custEvent type="microfilm" when="1981">მიკროფილმი გადაღებულია გურამ პატარაიას თაოსნობით.</custEvent>
+                                    </custodialHist>
+                                </adminInfo>
+                                <listBibl>
+                                    <bibl n="1">Shanidze, M. (1990). გრამატიკული ტრაქტატის გამოცემა.</bibl>
+                                    <bibl n="2">Blake, R. P. Catalogue of the Georgian Manuscripts in the Convent of Iviron on Mount Athos.</bibl>
+                                    <bibl n="3">ცაგარელი, ა. (N 85 ხელნაწერის აღწერილობა).</bibl>
+                                </listBibl>
+                            </additional>
+                        </msDesc>
+                    </witness>
+                    
+                    <witness xml:id="S">
+                        <msDesc xml:id="S-312">
+                            <msIdentifier>
+                                <country>საქართველო</country>
+                                <settlement>თბილისი</settlement>
+                                <repository>ხელნაწერთა ეროვნული ცენტრი</repository>
+                                <collection>S-კოლექცია</collection>
+                                <idno>S-312</idno>
+                            </msIdentifier>
+                            
+                            <msContents>
+                                <summary>პოლემიკურ-დოგმატიკური და სამეცნიერო კრებული (resp. ქ. შარაშიძე)</summary>
+                                <textLang mainLang="ka-Geok">ძველი ქართული</textLang>
+                                
+                                <msItem n="1" xml:id="S-main">
+                                    <locus from="1r" to="105v">1r—105v</locus>
+                                    <title xml:lang="ka">პოლემიკურ-დოგმატიკური და სამეცნიერო კრებული</title>
+                                    <incipit>ამა წიგნსა შინა იპოების მრავალი მრავლად საძიებელი მართლმადიდებელთა სიტყჳსგებაჲ ჰურიათა. ჰრქ[უ]ა ქრისტეანემან: ვის ეტყოდა ღმერთი — ვქმნეთ კაცი ხატებად ჩ̃ნდა და მსგავსებად, ანუ არა მხოლოდშობილსა და თანაარსსა ძესა მისსა?</incipit>
+                                </msItem>
+                                
+                                <msItem n="2" xml:id="S-arthron">
+                                    <locus from="106r" to="108v">106r—108v</locus>
+                                    <title xml:lang="ka">სიტყუაი ართრონთათჳს</title>
+                                    <rubric xml:lang="ka">„სიტყუაი ართრონთათჳს"</rubric>
+                                    <note>ხელნაწერი არ არის დასახელებული თხზულების ავტორი: მასში არ მოიპოვება არც რაიმე სხვა ცნობა, რომელიც საშუალებას მოგვცემდა გაგვერკვია, თუ საიდან ამოუღია სვიმონ კარგარეთელს ძველი ქართული გრამატიკული ლიტერატურის ეს საინტერესო ნიმუში.</note>
+                                </msItem>
+                                
+                                <msItem>
+                                    <colophon>
+                                        <locus from="108v" to="108v">108v</locus>
+                                        <note>ანდერძი მოთავსებულია ხელნაწერის უკანასკნელ გვერდზე, 108v-ზე, სამ აბზაცად, რომელთა დასაწყისი ასოები მთავრულით არის გამოყვანილი.</note>
+                                        ადიდოს ღმერთმან ორთავე სუფევათა შინა <persName key="იოაკიმე მაწყვერელი">მღ̃დლთ მთავარი ეპისკოპოსი მაწყუჱრელი იოაკიმ</persName>, 
+                                        რომლისა ბრძანებითა დაიწერა წ̃ჲ ესე უზაკველი და ყოვლითურთ უნაკლულო საფილოსოფოსი (ასეა!) წიგნი. დღეგრძელებით ყოველნივე ცოდვანი მისნი შ̃ნს ღმერთმან. ამინ.
+                                        და მე, მონამან მისმან, კარგარეთელმან <persName key="სვიმონ კარგარეთელი">დ̃კნ ს̃ნ</persName> დავწერე. აწ გევედრები ყოველთავე, რომელნიცა მიემთხჳნეთ წიგნსა ამას, რ̃ა მეცა მომიჴსენოთ შენდობით, რ̃ა თქუენცა მოგიჴსენოს ქრისტემან ღმერთმან სასუფეველსა მისსა.
+                                        დიდებაჲ ღმერთსა. გათავდა საფარას საბა ლავრისსა (ასეა!).
+                                    </colophon>
+                                </msItem>                            </msContents>
+                            
+                            <physDesc>
+                                <objectDesc form="codex">
+                                    <supportDesc material="parchment">
+                                        <support>ეტრატი</support>
+                                        <extent>
+                                            <measure unit="leaf" quantity="108">108 ფ.</measure>
+                                            <dimensions unit="mm" type="leaf">
+                                                <height>225</height>
+                                                <width>170</width>
+                                            </dimensions>
+                                        </extent>
+                                        <collation>
+                                            <signatures>ყდის შიგნით: <persName type="attested">ძილიხან შარაშიძის ქალი</persName>.
+                                                „<persName type="attested">თუთა შანგელიას ქალი</persName>" იქვე, XVIII ს. მხედრულით.
+                                                „ღმერთო! შეიწყალე <persName type="attested">მაქსიმე მღდელ-მონაზონი</persName>" 108v. XVII ს.
+                                                ლამაზი ნუსხურით.
+                                                „კბ იანვრისას იყო <persName type="attested">დავით დადიანი</persName> გაენათს." II ყდის შიგნით XIX ს. მხედრულით
+                                            </signatures>
+                                        </collation>
+                                        <condition>ძალზე დაზიანებული 103-104 ფ.</condition>
+                                    </supportDesc>
+                                    <layoutDesc>
+                                        <layout>
+                                            <p>არც თუ ისე მცირე მოცულობის თხზულება გადამწერმა პატარა ზომის ხელნაწერის ექვსიოდე გვერდზე დაატია.</p>
+                                        </layout>
+                                    </layoutDesc>
+                                </objectDesc>
+                                
+                                <handDesc hands="1">
+                                    <handNote xml:id="S-scribe01" script="Nuskhuri" medium="iron-gall-ink">
+                                        <persName role="scribe" key="სვიმონ კარგარეთელი">დეკანოზი სვიმონ კარგარეთელი</persName>
+                                        <note resp="#მ_შანიძე">სვიმონ კარგარეთელი საკმაოდ ცნობილი გადამწერია. კარგარეთლების გვარში, რომელიც მესხეთიდან ყოფილა გადმოსახლებული, გადამწერის ხელობა ტრადიციული ჩანს. სვიმონის გარდა, ცნობილია ამ გვარის მქონე რამდენიმე გადამწერი (XVI-XVII საუკუნეებში). სვიმონს, გარდა S—312 ხელნაწერისა, გადაუწერია კიდევ გულანი (ამჟამად ქუთაისის სახელმწ. მუზეუმის ხელნაწ. № 16), რომლის ანდერძების მიხედვით შესაძლებელია სვიმონის ჩამომავლობის გარკვევა. სვიმონისავე გადაწერილია ხელნაწ. ინსტიტუტის A—197 ხელნაწერი — გულანის სადღესასწაულო ნაწილი</note>
+                                        <p>ჩინებული, სწორი, ლამაზი მეტად წვრილი ნუსხური;</p>
+                                        <p>ხელნაწერის წვრილი ნაწერი ბოლოში კიდევ უფრო მცირდება და გამადიდებელი შუშის გარეშე თითქმის არც კი იკითხება.</p>
+                                    </handNote>
+                                </handDesc>
+                                
+                                <decoDesc>
+                                    <decoNote type="headpiece">სათაურები და დასაწყისები სინგურით.
+                                        თავკაზმულობა 92r. <placeName>გელათიდან</placeName>
+                                    </decoNote>
+                                </decoDesc>
+                                
+                                <bindingDesc>
+                                    <binding contemporary="true">
+                                        <p>მაგარი, ტვიფრული ტყავით შემოსილი ფიცრული ყდა; XVIII საუკუნის უნდა იყოს (resp. ქ. შარაშიძე)</p>
+                                    </binding>
+                                </bindingDesc>
+                            </physDesc>
+                            
+                            <history>
+                                <origin>
+                                    <origDate notBefore="1540" notAfter="1542">1541</origDate>
+                                    <origPlace>საფარა, საბას ლავრა</origPlace>
+                                    <note resp="#მ_შანიძე">გადაწერის თარიღს არკვევს გადამწერის შენიშვნა, რომელიც ტექსტშია ჩართული (ასტრონომიულ ტრაქტატში) 92r. „ესე ზემო დაწერილი სათუალავი შავთელის ი̃ნეს (იოანეს)  ანდერძი არს, და ქრ̃ნისა მოქცევამ̃ნ (ასეა!) მეაცამეტე ყოფილა. და ოდეს მე, სჳიმონ (ასეა!) დიაკონმან, დავწერე, ქ̃კნი იყო ს̃კთ და მოქცევი (ასეა!). 
+                                        ხოლო ბერძულად დასაბამითგანნი წელნი ვიდრე აქამომდე შვიდი ათასი წელი გარდაჴდა.</note>
+                                </origin>
+                                <provenance>
+                                    <p>შემკვეთი: <persName role="donor" key="იოაკიმე_მაწყვერელი">იოაკიმე მაწყვერელი</persName></p>
+                                </provenance>
+                            </history>
+                            
+                            <additional>
+                                <adminInfo>
+                                    <custodialHist>
+                                        <custEvent type="restoration" when="1959">მრავალი ფურცელი რესტავრირებულია (ფურცლები: 2—10, 16, 18—23, 33—40, 56—57, 64, 67—69, 72—78, 80—108); ყდა გაკეთებული უნდა იყოს ხელნაწერის I რესტავრაციის დროს.</custEvent>
+                                    </custodialHist>
+                                </adminInfo>
+                                <listBibl>
+                                    <bibl n="1">Shanidze, M. (1990). Grammatical Treatises...</bibl>
+                                    <bibl n="2">ხელნაწერთა აღწერილობა ტ. 1</bibl>
+                                </listBibl>
+                            </additional>
+                        </msDesc>
+                    </witness>
+                    
+                </listWit>
+            </sourceDesc>
+ 
+        </fileDesc>
+        
+        <encodingDesc>
+            
+            
+            <classDecl>
+                
+                <!-- ========================================
+       GRAMMATICAL CATEGORIES (with OLiA URIs)
+       ======================================== -->
+                <taxonomy xml:id="gramm">
+                    <desc>Grammatical categories used in the treatise, aligned with OLiA ontology</desc>
+                    
+                    <!-- GENDER (ნათესავი) -->
+                    <category xml:id="gramm.gender">
+                        <catDesc xml:lang="en">Gender</catDesc>
+                        <catDesc xml:lang="ka">ნათესავი</catDesc>
+                        
+                        <category xml:id="gramm.masc" 
+                            corresp="http://purl.org/olia/olia.owl#Masculine">
+                            <catDesc xml:lang="ka">მამალი</catDesc>
+                            <catDesc xml:lang="en">Masculine</catDesc>
+                            <catDesc xml:lang="grc">ἀρσενικόν</catDesc>
+                        </category>
+                        
+                        <category xml:id="gramm.fem" 
+                            corresp="http://purl.org/olia/olia.owl#Feminine">
+                            <catDesc xml:lang="ka">დედალი</catDesc>
+                            <catDesc xml:lang="en">Feminine</catDesc>
+                            <catDesc xml:lang="grc">θηλυκόν</catDesc>
+                        </category>
+                        
+                        <category xml:id="gramm.neut" 
+                            corresp="http://purl.org/olia/olia.owl#Neuter">
+                            <catDesc xml:lang="ka">შუაჲ</catDesc>
+                            <catDesc xml:lang="en">Neuter</catDesc>
+                            <catDesc xml:lang="grc">οὐδέτερον</catDesc>
+                        </category>
+                    </category>
+                    
+                    <!-- NUMBER (რიცხვი) -->
+                    <category xml:id="gramm.number">
+                        <catDesc xml:lang="en">Number</catDesc>
+                        <catDesc xml:lang="ka">რიცხვი</catDesc>
+                        
+                        <category xml:id="gramm.sing" 
+                            corresp="http://purl.org/olia/olia.owl#Singular">
+                            <catDesc xml:lang="ka">ერთობითი</catDesc>
+                            <catDesc xml:lang="en">Singular</catDesc>
+                            <catDesc xml:lang="grc">ἑνικός</catDesc>
+                        </category>
+                        
+                        <category xml:id="gramm.dual" 
+                            corresp="http://purl.org/olia/olia.owl#Dual">
+                            <catDesc xml:lang="ka">ორობითი</catDesc>
+                            <catDesc xml:lang="en">Dual</catDesc>
+                            <catDesc xml:lang="grc">δυϊκός</catDesc>
+                        </category>
+                        
+                        <category xml:id="gramm.plur" 
+                            corresp="http://purl.org/olia/olia.owl#Plural">
+                            <catDesc xml:lang="ka">განმრავლებითი</catDesc>
+                            <catDesc xml:lang="en">Plural</catDesc>
+                            <catDesc xml:lang="grc">πληθυντικός</catDesc>
+                        </category>
+                    </category>
+                    
+                    <!-- CASE (დრეკა) -->
+                    <category xml:id="gramm.case">
+                        <catDesc xml:lang="en">Case</catDesc>
+                        <catDesc xml:lang="ka">დრეკა</catDesc>
+                        
+                        <category xml:id="gramm.nom" 
+                            corresp="http://purl.org/olia/olia.owl#Nominative">
+                            <catDesc xml:lang="ka">ადვილობითი</catDesc>
+                            <catDesc xml:lang="en">Nominative</catDesc>
+                            <catDesc xml:lang="grc">ὀνομαστική</catDesc>
+                        </category>
+                        
+                        <category xml:id="gramm.gen" 
+                            corresp="http://purl.org/olia/olia.owl#Genitive">
+                            <catDesc xml:lang="ka">ნათესაობითი</catDesc>
+                            <catDesc xml:lang="ka">შობილობითი</catDesc>
+                            <catDesc xml:lang="en">Genitive</catDesc>
+                            <catDesc xml:lang="grc">γενική</catDesc>
+                        </category>
+                        
+                        <category xml:id="gramm.dat" 
+                            corresp="http://purl.org/olia/olia.owl#DativeCase">
+                            <catDesc xml:lang="ka">მიცემითი</catDesc>
+                            <catDesc xml:lang="en">Dative</catDesc>
+                            <catDesc xml:lang="grc">δοτική</catDesc>
+                        </category>
+                        
+                        <category xml:id="gramm.acc" 
+                            corresp="http://purl.org/olia/olia.owl#Accusative">
+                            <catDesc xml:lang="ka">მიზეზობითი</catDesc>
+                            <catDesc xml:lang="en">Accusative</catDesc>
+                            <catDesc xml:lang="grc">αἰτιατική</catDesc>
+                        </category>
+                        
+                        <category xml:id="gramm.voc" 
+                            corresp="http://purl.org/olia/olia.owl#VocativeCase">
+                            <catDesc xml:lang="ka">წოდებითი</catDesc>
+                            <catDesc xml:lang="en">Vocative</catDesc>
+                            <catDesc xml:lang="grc">κλητική</catDesc>
+                        </category>
+                    </category>
+                    
+                    <!-- ARTICLE (ართრონი) -->
+                    <category xml:id="gramm.article">
+                        <catDesc xml:lang="en">Article</catDesc>
+                        <catDesc xml:lang="ka">ართრონი</catDesc>
+                        
+                        <category xml:id="gramm.arthron" 
+                            corresp="http://purl.org/olia/olia.owl#Article">
+                            <catDesc xml:lang="ka">ართრონი</catDesc>
+                            <catDesc xml:lang="en">Article (Greek definite)</catDesc>
+                            <catDesc xml:lang="grc">ἄρθρον</catDesc>
+                        </category>
+                        
+                        <category xml:id="gramm.arthroniani">
+                            <catDesc xml:lang="ka">ართრონიანი</catDesc>
+                            <catDesc xml:lang="en">With article (articular)</catDesc>
+                        </category>
+                        
+                        <category xml:id="gramm.uarthrono">
+                            <catDesc xml:lang="ka">უართრონო</catDesc>
+                            <catDesc xml:lang="en">Without article (anarthrous)</catDesc>
+                        </category>
+                        
+                        <category xml:id="gramm.damorch">
+                            <catDesc xml:lang="ka">დამორჩილებითი</catDesc>
+                            <catDesc xml:lang="en">Relative (subordinate article)</catDesc>
+                            <catDesc xml:lang="grc">ὑποτακτικόν</catDesc>
+                        </category>
+                    </category>
+                    
+                </taxonomy>
+                
+                <!-- ========================================
+       VARIANT TYPES (for apparatus @type)
+       ======================================== -->
+                <taxonomy xml:id="vartype">
+                    <desc>Classification of textual variants in the critical apparatus</desc>
+                    
+                    <category xml:id="var.orth">
+                        <catDesc xml:lang="en">Orthographic variant</catDesc>
+                        <catDesc>Differences in spelling, abbreviation, or letter form that do not affect meaning</catDesc>
+                    </category>
+                    
+                    <category xml:id="var.morph">
+                        <catDesc xml:lang="en">Morphological variant</catDesc>
+                        <catDesc>Differences in grammatical form (case, number, tense, person)</catDesc>
+                    </category>
+                    
+                    <category xml:id="var.lex">
+                        <catDesc xml:lang="en">Lexical variant</catDesc>
+                        <catDesc>Different word choice or word order affecting meaning or style</catDesc>
+                    </category>
+                    
+                    <category xml:id="var.om">
+                        <catDesc xml:lang="en">Omission</catDesc>
+                        <catDesc>Text present in lemma but absent in witness</catDesc>
+                    </category>
+                    
+                    <category xml:id="var.add">
+                        <catDesc xml:lang="en">Addition</catDesc>
+                        <catDesc>Text present in witness but absent in lemma/other witnesses</catDesc>
+                    </category>
+                </taxonomy>
+                
+                <!-- ========================================
+       WALS TYPOLOGICAL FEATURES
+       ======================================== -->
+                <taxonomy xml:id="wals">
+                    <desc>World Atlas of Language Structures features relevant to the treatise</desc>
+                    
+                    <category xml:id="wals.37A" 
+                        corresp="https://wals.info/feature/37A">
+                        <catDesc xml:lang="en">Feature 37A: Definite Articles</catDesc>
+                        <catDesc>Georgian value: No definite or indefinite article</catDesc>
+                    </category>
+                    
+                    <category xml:id="wals.38A" 
+                        corresp="https://wals.info/feature/38A">
+                        <catDesc xml:lang="en">Feature 38A: Indefinite Articles</catDesc>
+                        <catDesc>Georgian value: No indefinite article</catDesc>
+                    </category>
+                </taxonomy>
+                
+                <!-- ========================================
+       PERSONS (for @ref on persName)
+       ======================================== -->
+                <taxonomy xml:id="persons">
+                    <desc>Historical persons mentioned in the treatise</desc>
+                    
+                    <category xml:id="chrysostom"
+                        corresp="https://www.trismegistos.org/author/841 https://www.wikidata.org/entity/Q8778">
+                        <catDesc xml:lang="ka">იოანე ოქროპირი</catDesc>
+                        <catDesc xml:lang="en">John Chrysostom (c. 347–407)</catDesc>
+                        <catDesc xml:lang="grc">Ἰωάννης ὁ Χρυσόστομος</catDesc>
+                    </category>
+                    
+                    <category xml:id="john-evangelist"
+                        corresp="https://www.trismegistos.org/author/2791 https://www.wikidata.org/entity/Q328804">
+                        <catDesc xml:lang="ka">იოანე მახარებელი</catDesc>
+                        <catDesc xml:lang="en">John the Evangelist</catDesc>
+                        <catDesc xml:lang="grc">Ἰωάννης ὁ Εὐαγγελιστής</catDesc>
+                    </category>
+                </taxonomy>
+                
+                <!-- ========================================
+       LANGUAGE IDENTIFIERS (Glottolog)
+       ======================================== -->
+                <taxonomy xml:id="languages">
+                    <desc>Languages referenced in the edition</desc>
+                    
+                    <category xml:id="lang.kat"
+                        corresp="https://glottolog.org/resource/languoid/id/geor1252">
+                        <catDesc xml:lang="en">Georgian (modern)</catDesc>
+                    </category>
+                    
+                    <category xml:id="lang.oge"
+                        corresp="https://glottolog.org/resource/languoid/id/oldk1249">
+                        <catDesc xml:lang="en">Old Georgian</catDesc>
+                    </category>
+                    
+                    <category xml:id="lang.grc"
+                        corresp="https://glottolog.org/resource/languoid/id/anci1242">
+                        <catDesc xml:lang="en">Ancient Greek</catDesc>
+                    </category>
+                </taxonomy>
+                
+            </classDecl>
+        </encodingDesc>
+        
+    </teiHeader>
+    <text>
+        <front>
+            <div type="title">
+                <pb n="32r" ed="#A" facs="A-32r"/>
+                <milestone unit="folio" n="106r" ed="#S"/>
+                <head>
+                    <app xml:id="app.title.1">
+                        <lem wit="#A #S">სიტყუაჲ ართრონთათჳს</lem>
+                        <rdg wit="#A"><note>om. in A (title absent)</note></rdg>
+                    </app>
+                </head>
+            </div>
+        </front>
+        
+        <body>
+         
+            <!-- SECTION 1 -->
+            <div type="section" n="1" xml:id="sec.1">
+                <milestone unit="folio" n="32r" ed="#A"/>
+                <milestone unit="folio" n="106r" ed="#S"/>
+                <p n="1">შეისწავე, რამეთუ ვინაჲთგან <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონთა</term> ძლით <app xml:id="app.1.1"><lem>უმეცრად</lem><rdg wit="#S" type="orthographic">უმეცრ̃დ</rdg></app> და ბნელად საგონებელ არს <app xml:id="app.1.2"><lem>ენასა ზედა ჩუენსა</lem><rdg wit="#S" type="lexical">ენასა ჩუენსა ზედა</rdg></app> ლექსი თარგმანებული, რომელსა წმიდათა შორის <persName ref="#chrysostom">იოანე ოქროპირი</persName> მწვალებელთაგან მოღებულად წინა-აღსადგომელად ჩუენ მართლმადიდებელთა მომართად იტყჳს ლექსსა მას <persName ref="#john-evangelist">იოანე მახარებელისა</persName> მიერ თქუმულსა ძისათჳს; და ბერძულსა შინა ვიდრემე ნათლად ძეს ლექსი იგი; ხოლო გარდამოითარგმნოს რაჲ, დაბნელდების <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონობისათჳს</term> ენისა ჩუენისა და ცხადსა და ნათე<lb break="no"/>ლსა <app xml:id="app.1.3"><lem>სიტყუასა</lem><rdg wit="#S" type="orthographic">სიტყჳს̃ჲ</rdg></app> უცნაურ ვინაჲმე ჰყოფს, რამეთუ შეუძლებელ არს თარგმანებაჲ მისი ენასა ზედა ქართულსა; ხოლო რაჲთა გამოვაჩინოთ, თუ რაჲ არს <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონი</term> და ვითარ ვერ ეგების <app xml:id="app.1.4"><lem>ენასა</lem><rdg wit="#S" type="orthographic">ენაჲსა</rdg></app> ზედა ქართულსა <app xml:id="app.1.5"><lem>თარგმნაჲ</lem><rdg wit="#S" type="orthographic">თარგმნა</rdg></app> მისი და ვითარ იჴუმევენ ამას <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონსა</term> ბერძენნი, არა დავფაროთ ძალისაებრ და გულისჴმის-<app xml:id="app.1.6"><lem>ყოფისა</lem><rdg wit="#S" type="orthographic">ყოფისაჲ</rdg></app> <app xml:id="app.1.7"><lem>ჩუენისა</lem><rdg wit="#S" type="morphological">ჩუენისაებრ</rdg></app>.</p>
+            </div>
+            
+            <!-- SECTION 2 -->
+            <div type="section" n="2" xml:id="sec.2">
+                <p n="1">ხოლო საჭირო არს პირველად თქუმად, თუ რანი არიან <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term>. საცნაურ უკუე <app xml:id="app.2.1"><lem>იყავნ</lem><rdg wit="#S" type="orthographic">იყვ̃ნა</rdg></app>, რამეთუ სახელნი <app xml:id="app.2.2"><lem>ყოველნი</lem><rdg wit="#S" type="morphological">ყოველთა</rdg></app> — სულიერთა და უსულოთანი, ხილულთა და უხილავთანი — სამთა სახელის-დებათაგან საცნაურ იქმნებიან და იწოდებიან <app xml:id="app.2.3"><lem>ბერძენთა</lem><rdg wit="#S" type="orthographic">ბრძენთა</rdg></app> შორის, ესე იგი არს: <term target="#lex.masc" ana="#gramm.masc" corresp="http://purl.org/olia/olia.owl#Masculine">მამალთა</term> და <app xml:id="app.2.4"><lem><term target="#lex.fem" ana="#gramm.fem" corresp="http://purl.org/olia/olia.owl#Feminine">დედალთა</term></lem><rdg wit="#S" type="addition">დედალთა შორის</rdg></app> და <term target="#lex.neut" ana="#gramm.neut" corresp="http://purl.org/olia/olia.owl#Neuter">შუათაგან</term>. ამათ <term target="#lex.masc" ana="#gramm.masc" corresp="http://purl.org/olia/olia.owl#Masculine">მამალთა</term> და <term target="#lex.fem" ana="#gramm.fem" corresp="http://purl.org/olia/olia.owl#Feminine">დედალთა</term> და <term target="#lex.neut" ana="#gramm.neut" corresp="http://purl.org/olia/olia.owl#Neuter">შუათა</term> სახელთაგან არა <app xml:id="app.2.5"><lem>თითოეულსა</lem><rdg wit="#S" type="orthographic">თჳთეულსა</rdg></app> სახელსა სამნივე და სამთაგანვე სახელის-დებათა ეწოდებიან, არამედ ყოველთა სახელთა შორის გინა თუ <term target="#lex.masc" ana="#gramm.masc" corresp="http://purl.org/olia/olia.owl#Masculine">მამალი</term> ეწოდების სახელი, გინა თუ <term target="#lex.fem" ana="#gramm.fem" corresp="http://purl.org/olia/olia.owl#Feminine">დედალი</term>, გინა თუ <app xml:id="app.2.6"><lem><term target="#lex.neut" ana="#gramm.neut" corresp="http://purl.org/olia/olia.owl#Neuter">შუაჲ</term></lem><rdg wit="#S" type="orthographic">შუა</rdg></app> და თჳსისა სახელისა აქუს განკუთნვილებაჲ; და არა გარდაერწყუმის ერთი მეორისასა სახელთა ცვალებულებაჲ, არამედ თითოეულისა <app xml:id="app.2.7"><lem><term target="#lex.gender" ana="#gramm.gender">ნათესავისასა</term></lem><rdg wit="#S" type="orthographic">ნათესავისა</rdg></app> სცავს <app xml:id="app.2.8"><lem>თითოეული <term target="#lex.dreka" ana="#gramm.case" corresp="http://purl.org/olia/olia.owl#Case">დრეკასა</term> სახელთასა</lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app>.</p>
+            </div>
+            
+            <!-- SECTION 3 -->
+            <div type="section" n="3" xml:id="sec.3">
+                <p n="1"><app xml:id="app.3.1"><lem>და <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term></lem><rdg wit="#A" type="omission">ართრონნი</rdg></app> <app xml:id="app.3.2"><lem>თითოეულისა</lem><rdg wit="#S" type="orthographic">თჳთეულისა</rdg></app> <app xml:id="app.3.3"><lem><term target="#lex.gender" ana="#gramm.gender">ნათესავისანი</term></lem><rdg wit="#S" type="morphological">ნათესავნი</rdg></app> არიან ათცამეტ; ათცამეტნი ვინაჲ <term target="#lex.masc" ana="#gramm.masc" corresp="http://purl.org/olia/olia.owl#Masculine">მამლისა</term> ვიდრემე <app xml:id="app.3.4"><lem><term target="#lex.gender" ana="#gramm.gender">ნათესავისანი</term></lem><rdg wit="#S" type="morphological">ნათესავნი</rdg></app> რომელთა ყოველთა <term target="#lex.dreka" ana="#gramm.case" corresp="http://purl.org/olia/olia.owl#Case">დრეკათა</term> შინა სახელთასა წინა დაუსხმენ სახელთა, არიან ესე:</p>
+                
+                <!-- Masculine singular articles -->
+                <p n="2" xml:id="sec.3.masc.sing">
+                    <app xml:id="app.3.5"><lem><mentioned xml:lang="ka">ო</mentioned></lem><rdg wit="#S" type="orthographic">ო ო</rdg></app> <gloss><foreign xml:lang="grc">ὁ</foreign></gloss>, 
+                    <app xml:id="app.3.6"><lem><mentioned xml:lang="ka">ტუ</mentioned></lem><rdg wit="#S" type="orthographic">ტოო</rdg></app> <gloss><foreign xml:lang="grc">τοῦ</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ტო</mentioned> <gloss><foreign xml:lang="grc">τῷ</foreign></gloss>, 
+                    <app xml:id="app.3.7"><lem><mentioned xml:lang="ka">ტონ</mentioned></lem><rdg wit="#S" type="orthographic">ტონი</rdg></app> <gloss><foreign xml:lang="grc">τόν</foreign></gloss>, 
+                    <app xml:id="app.3.8"><lem><mentioned xml:lang="ka">ო</mentioned></lem><rdg wit="#S" type="orthographic">ო ო</rdg></app> <gloss><foreign xml:lang="grc">ὦ</foreign></gloss>;
+                </p>
+                
+                <!-- Masculine dual articles -->
+                <p n="3" xml:id="sec.3.masc.dual">
+                    <mentioned xml:lang="ka">ტო</mentioned> <gloss><foreign xml:lang="grc">τώ</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ტჳნ</mentioned> <gloss><foreign xml:lang="grc">τοῖν</foreign></gloss>, 
+                    <app xml:id="app.3.9"><lem><mentioned xml:lang="ka">ო</mentioned></lem><rdg wit="#S" type="orthographic">ო ო</rdg></app> <gloss><foreign xml:lang="grc">ὦ</foreign></gloss>;
+                </p>
+                
+                <!-- Masculine plural articles -->
+                <p n="4" xml:id="sec.3.masc.plur">
+                    <mentioned xml:lang="ka">ჳ</mentioned> <gloss><foreign xml:lang="grc">οἱ</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ტონ</mentioned> <gloss><foreign xml:lang="grc">τῶν</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ტჳს</mentioned> <gloss><foreign xml:lang="grc">τοῖς</foreign></gloss>, 
+                    <app xml:id="app.3.10"><lem><mentioned xml:lang="ka">ტუს</mentioned></lem><rdg wit="#S" type="orthographic">ტო უს</rdg></app> <gloss><foreign xml:lang="grc">τούς</foreign></gloss>, 
+                    <app xml:id="app.3.11"><lem><mentioned xml:lang="ka">ო</mentioned></lem><rdg wit="#S" type="orthographic">ო ო</rdg></app> <gloss><foreign xml:lang="grc">ὦ</foreign></gloss>.
+                </p>
+                
+                <p n="5">ესე ვიდრემე <term target="#lex.masc" ana="#gramm.masc" corresp="http://purl.org/olia/olia.owl#Masculine">მამალთა</term> სახელთა <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term> არიან, ესე იგი არს დასაწყისნი სახელთანი. და რამეთუ <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term> სხუანი არანი არიან, თჳნიერ საძირკუელნი <app xml:id="app.3.12"><lem>სახელთანი</lem><rdg wit="#S" type="addition">სახელთანი და</rdg></app>, ვინაჲთგან, იტყოდიან რაჲ <app xml:id="app.3.13"><lem>სახელთა</lem><rdg wit="#S" type="orthographic">ს̃ხლთაჲ</rdg></app> წინა დაუსხმენ <app xml:id="app.3.14"><lem>თითოეულისა</lem><rdg wit="#S" type="orthographic">თჳთეულისა</rdg></app> ჟამისა შემსგავსებულთა <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონთა</term>.</p>
+            </div>
+            
+            
+            <!-- SECTION 4 -->
+            <div type="section" n="4" xml:id="sec.4">
+                <p n="1">რამეთუ <term target="#lex.trias">სამებისა</term> ვიდრემე სახელი <term target="#lex.fem" ana="#gramm.fem" corresp="http://purl.org/olia/olia.owl#Feminine">დედალი</term> არს მათისაებრ ენისა, ხოლო <term target="#lex.theos">ღმრთისაჲ</term> <term target="#lex.masc" ana="#gramm.masc" corresp="http://purl.org/olia/olia.owl#Masculine">მამალი</term>; და <term target="#lex.theos">ღმერთსა</term> ვიდრემე ეწოდების <mentioned xml:lang="ka">თეოს</mentioned> <gloss><foreign xml:lang="grc">θεός</foreign></gloss>, ხოლო და-რაჲ-უწერონ <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონი</term> პირველი, ესრეთ <app xml:id="app.4.1"><lem>იტყჳან</lem><rdg wit="#S" type="orthographic">იტყჳნ</rdg></app>, ვითარმედ: <mentioned xml:lang="ka">ო თეოს</mentioned> <gloss><foreign xml:lang="grc">ὁ θεός</foreign></gloss>. და <mentioned xml:lang="ka">ონ</mentioned>-ი არს პირველი <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონი</term>, რაჟამს <term target="#lex.nom" ana="#gramm.nom" corresp="http://purl.org/olia/olia.owl#Nominative">ადვილობითად</term> იჴმევდენ ჴსენებასა სახელისასა; და რამეთუ სამგუარად დაუსხმენ <app xml:id="app.4.2"><lem><term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონთა</term></lem><rdg wit="#S" type="addition">ართრონთა გარდააწყუმენ</rdg></app>: ხუთთა ერთსა პირსა ზედა და სამთა — <term target="#lex.dual" ana="#gramm.dual" corresp="http://purl.org/olia/olia.owl#Dual">ორობითთასა</term>.</p>
+            </div>
+            
+            <!-- SECTION 5 -->
+            <div type="section" n="5" xml:id="sec.5">
+                <p n="1"><app xml:id="app.5.1"><lem><term target="#lex.dual" ana="#gramm.dual" corresp="http://purl.org/olia/olia.owl#Dual">ორობითთანიცა</term></lem><rdg wit="#S" type="orthographic">ორობითნიცა</rdg></app> ხუთნი არიან და <term target="#lex.plural" ana="#gramm.plur" corresp="http://purl.org/olia/olia.owl#Plural">განმრავლებით[თა]ნიცა</term>; გარნა <term target="#lex.dual" ana="#gramm.dual" corresp="http://purl.org/olia/olia.owl#Dual">ორობითთასა</term> <app xml:id="app.5.2"><lem>ორთა</lem><rdg wit="#S" type="morphological">ორსა</rdg></app> <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონთა</term> გარდაარწყუმენ სხუათა ორთა ზედა. ამისთჳს, ხუთთაგან ორნი რაჲ ორთა ზედა გარდაარწყუნე, სამად შეიქმნებიან, რომელ არიან პირველისა და ერთისა სახელისანი ესე:</p>
+                
+                <!-- Singular forms that overlap with dual -->
+                <p n="2" xml:id="sec.5.sing">
+                    <app xml:id="app.5.3"><lem><mentioned xml:lang="ka">ო</mentioned></lem><rdg wit="#S" type="orthographic">ო ო</rdg></app> <mentioned xml:lang="ka">ტო</mentioned> <gloss><foreign xml:lang="grc">τώ</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ტოინ</mentioned> <gloss><foreign xml:lang="grc">τοῖν</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὦ</foreign></gloss>;
+                </p>
+                
+                <p n="3">ხოლო <app xml:id="app.5.4"><lem><term target="#lex.dual" ana="#gramm.dual" corresp="http://purl.org/olia/olia.owl#Dual">ორობითისანი</term></lem><rdg wit="#S" type="orthographic">ორობით̃თსნი</rdg></app>, რომელნი ორთა პირთა საცნაურ-ჰყოფენ მხოლოდ, ესენი არიან:</p>
+                
+                <!-- Dual forms -->
+                <p n="4" xml:id="sec.5.dual">
+                    <mentioned xml:lang="ka">ტო</mentioned> <gloss><foreign xml:lang="grc">τώ</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ტოინ</mentioned> <gloss><foreign xml:lang="grc">τοῖν</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὦ</foreign></gloss>;
+                </p>
+                
+                <p n="5">და <term target="#lex.plural" ana="#gramm.plur" corresp="http://purl.org/olia/olia.owl#Plural">განმრავლებითთა</term> ესენი საცნაურ-ჰყოფენ:</p>
+                
+                <!-- Plural forms -->
+                <p n="6" xml:id="sec.5.plur">
+                    <mentioned xml:lang="ka">ჳ</mentioned> <gloss><foreign xml:lang="grc">οἱ</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ტონ</mentioned> <gloss><foreign xml:lang="grc">τῶν</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ტჳს</mentioned> <gloss><foreign xml:lang="grc">τοῖς</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ტუს</mentioned> <gloss><foreign xml:lang="grc">τούς</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὦ</foreign></gloss>.
+                </p>
+            </div>
+            
+            <!-- SECTION 6 -->
+            <div type="section" n="6" xml:id="sec.6">
+                <p n="1">ვინაჲ პირველსავე სიტყუასა <app xml:id="app.6.1"><lem>ზედა</lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app> აღვიდეთ. რამეთუ რაჟამს, <app xml:id="app.6.2"><lem>პირველად</lem><rdg wit="#A" type="addition">პირველად და</rdg></app> <term target="#lex.nom" ana="#gramm.nom" corresp="http://purl.org/olia/olia.owl#Nominative">ადვილობითად</term> და ერთსა პირსა აჴსენებდენ და <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონი</term> <app xml:id="app.6.3"><lem>დაუსუან</lem><rdg wit="#S" type="orthographic">დასუან</rdg></app> ესრეთ <app xml:id="app.6.4"><lem>იტყჳან</lem><rdg wit="#S" type="orthographic">იტყჳ̃ნ</rdg></app>, ვითარმედ: <mentioned xml:lang="ka">ო თეოს</mentioned> <gloss><foreign xml:lang="grc">ὁ θεός</foreign></gloss>, ხოლო უკუეთუ <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოდ</term> <app xml:id="app.6.5"><lem>იტყოდინ</lem><rdg wit="#S" type="orthographic">იტყ̃დიან</rdg></app>, გამოუღებენ <mentioned xml:lang="ka">ონ</mentioned>-სა და ესრეთ იტყჳან, ვითარმედ: <mentioned xml:lang="ka">თეოს</mentioned> <gloss><foreign xml:lang="grc">θεός</foreign></gloss> ესე იგი არს, ვითარმედ: <mentioned xml:lang="ka">ღმერთი</mentioned>. რამეთუ ჩუენსა ენასა არა ჰქონან სახელთა წინა დასასხმელნი <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term>, <app xml:id="app.6.6"><lem>ვინაჲცა</lem><rdg wit="#S" type="orthographic">ვინაცა</rdg></app>, რაჟამს გეგულებოდის ბერძულსა <app xml:id="app.6.7"><lem><term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანსა</term></lem><rdg wit="#S" type="morphological">ართრონიანისა</rdg></app> სახელსა თარგმანებაჲ, <mentioned xml:lang="ka">ო თეოს</mentioned>-სა <gloss><foreign xml:lang="grc">ὁ θεός</foreign></gloss> ესრეთ სთარგმნი, ვითარმედ: <mentioned xml:lang="ka">ღმერთი</mentioned>. <app xml:id="app.6.8"><lem>ხოლო უკუეთუ <mentioned xml:lang="ka">თეოს</mentioned>-სა <gloss><foreign xml:lang="grc">θεός</foreign></gloss> თჳნიერ <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონისა</term>, ესრეთვე, ვითარმედ: <mentioned xml:lang="ka">ღმერთი</mentioned>.</lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app> რამეთუ არა არს <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონი</term> <app xml:id="app.6.9"><lem>ენასა ზედა ჩუენსა</lem><rdg wit="#S" type="lexical">ენასა ჩუენსა ზედა</rdg></app> და ვერ <app xml:id="app.6.10"><lem>შესაძლებელ</lem><rdg wit="#S" type="orthographic">შემძ̃ლბლ</rdg></app> არს <app xml:id="app.6.11"><lem>თარგმნაჲ</lem><rdg wit="#S" type="orthographic">თარგმნა</rdg></app> მისი, ვინაჲთგან არა არს. რამეთუ <app xml:id="app.6.12"><lem><term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონი</term></lem><rdg wit="#S" type="morphological">ართრონნი</rdg></app> <app xml:id="app.6.13"><lem>წინა-დასადებელი</lem><rdg wit="#S" type="morphological">წინა დასადებელნი</rdg></app> არს <app xml:id="app.6.14"><lem>სახელისაჲ</lem><rdg wit="#S" type="orthographic">სახელისა</rdg></app> და შუენიერ-ჰყოფს სახელსა და რეცა პატივსა რასმე <app xml:id="app.6.15"><lem>მიჰმადლებს</lem><rdg wit="#S" type="orthographic">მიმადლებს</rdg></app>.</p>
+            </div>
+            
+                        
+            <!-- SECTION 7 -->
+            <div type="section" n="7" xml:id="sec.7">
+                <p n="1">ხოლო <term target="#lex.gen" ana="#gramm.gen" corresp="http://purl.org/olia/olia.owl#Genitive">შობილობითად</term> რაჲ <app xml:id="app.7.1"><lem>იტყოდინ</lem><rdg wit="#S" type="orthographic">იტყ̃დიან</rdg></app> საზღვართაებრ მათთა <app xml:id="app.7.2"><lem>ღრამმატიკოსთა</lem><rdg wit="#S" type="orthographic">ღრმამატიკოსთა</rdg></app> <app xml:id="app.7.3"><lem>განწესებისა</lem><rdg wit="#S" type="morphological">განწესებისაებრ</rdg></app>, ესრეთ იტყჳან, <app xml:id="app.7.4"><lem>ვითარმედ: <mentioned xml:lang="ka">ტუ თეუ</mentioned> <gloss><foreign xml:lang="grc">τοῦ θεοῦ</foreign></gloss>, ესე იგი არს, ვითარმედ</lem><rdg wit="#S" type="lexical">ვ̃დ ესე იგი არს</rdg></app>: <mentioned xml:lang="ka">ღმრთისაჲ</mentioned>; ხოლო <term target="#lex.dat" ana="#gramm.dat" corresp="http://purl.org/olia/olia.owl#DativeCase">მიცემითად</term> რაჲ <app xml:id="app.7.5"><lem>იტყოდინ</lem><rdg wit="#S" type="orthographic">იტყ̃დიან</rdg></app> — <mentioned xml:lang="ka">ტო <app xml:id="app.7.6"><lem>თეო</lem><rdg wit="#S" type="orthographic">თეუ</rdg></app></mentioned> <gloss><foreign xml:lang="grc">τῷ θεῷ</foreign></gloss>, ესე იგი არს, ვითარმედ: <mentioned xml:lang="ka">ღმერთსა</mentioned>; <app xml:id="app.7.7"><lem>და</lem><rdg wit="#S" type="lexical">ხოლო</rdg></app> <app xml:id="app.7.8"><lem><term target="#lex.acc" ana="#gramm.acc" corresp="http://purl.org/olia/olia.owl#Accusative">მიზეზობითად</term></lem><rdg wit="#S" type="orthographic">მზეზობითად</rdg></app> რაჲ, ესრეთ, ვითარმედ: <mentioned xml:lang="ka">ტონ თეონ</mentioned> <gloss><foreign xml:lang="grc">τὸν θεόν</foreign></gloss>; ხოლო <term target="#lex.voc" ana="#gramm.voc" corresp="http://purl.org/olia/olia.owl#VocativeCase">წოდებითად</term> რაჲ, კუალად: <mentioned xml:lang="ka"><app xml:id="app.7.9"><lem>ო</lem><rdg wit="#S" type="orthographic">ტონ<note>ნ deleted</note></rdg></app> თეე</mentioned> <gloss><foreign xml:lang="grc">ὦ θεέ</foreign></gloss>, ესე იგი არს, ვითარმედ: <mentioned xml:lang="ka">ჵ ღმერთო</mentioned>.</p>
+            </div>
+            
+            <!-- SECTION 8 -->
+            <div type="section" n="8" xml:id="sec.8">
+                <p n="1">ხოლო <term target="#lex.dual" ana="#gramm.dual" corresp="http://purl.org/olia/olia.owl#Dual">ორობითთათჳს</term> ვითარღა ცხად-ვყოთ, <app xml:id="app.8.1"><lem>რამეთუ</lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app> არცა იგინი არიან ენასა ზედა ქართულსა? გარნა ითქუმოდენვე, რამეთუ <term target="#lex.dual" ana="#gramm.dual" corresp="http://purl.org/olia/olia.owl#Dual">ორობითნი</term> მათ ეწოდებიან, რომელნი მხოლოდ ორთა პირთა საცნაურ-ჰყოფენ: რამეთუ თქუმითა, ვითარმედ: <mentioned xml:lang="ka">ტო თეო</mentioned> <gloss><foreign xml:lang="grc">τώ θεώ</foreign></gloss> ორნი პირნი საცნაურ <app xml:id="app.8.2"><lem>ექმნნეს</lem><rdg wit="#S" type="orthographic">იქმენ</rdg></app> მსმენელსა. ხოლო <mentioned xml:lang="ka">ტჳნ თეჳნ</mentioned> <gloss><foreign xml:lang="grc">τοῖν θεοῖν</foreign></gloss>, ესე იგი არს, <app xml:id="app.8.3"><lem>ვითარმედ</lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app>: <mentioned xml:lang="ka"><app xml:id="app.8.4"><lem>ღმერთთანი</lem><rdg wit="#S" type="lexical">ერთისათანი</rdg></app></mentioned>, გარნა ორთასა საცნაურ-ჰყოფს და არა მრავალთასა: რამეთუ <mentioned xml:lang="ka">ღმერთი</mentioned> <app xml:id="app.8.5"><lem>ერთსა</lem><rdg wit="#S" type="addition">ერთსა საცნაურ ჰყოფს რამეთუ ღმერთი ერთსა</rdg></app> პირსა, ხოლო <mentioned xml:lang="ka">ღმერთნი</mentioned> მრავალთა პირთა <app xml:id="app.8.6"><lem>დაჰსახვენ</lem><rdg wit="#S" type="orthographic">დასახვე</rdg></app> და არა ორთა ამისთჳს, ვინაითგან ორთა პირთა დამსახველნი არა გუქონან სახელნი. და <app xml:id="app.8.7"><lem><term target="#lex.voc" ana="#gramm.voc" corresp="http://purl.org/olia/olia.owl#VocativeCase">წოდებითი</term></lem><rdg wit="#S" type="morphological">წოდებითნი</rdg></app> <app xml:id="app.8.8"><lem><term target="#lex.dual" ana="#gramm.dual" corresp="http://purl.org/olia/olia.owl#Dual">ორობითთაჲ</term></lem><rdg wit="#S" type="orthographic">ორობითთა</rdg></app>: <mentioned xml:lang="ka">ო თეო</mentioned> <gloss><foreign xml:lang="grc">ὦ θεώ</foreign></gloss>.</p>
+            </div>
+            
+            <!-- SECTION 9 -->
+            <div type="section" n="9" xml:id="sec.9">
+                <p n="1">ხოლო <app xml:id="app.9.1"><lem><term target="#lex.plural" ana="#gramm.plur" corresp="http://purl.org/olia/olia.owl#Plural">განმრავლებითთა</term></lem><rdg wit="#S" type="orthographic">განმრავლებითა</rdg></app> რაჲ <app xml:id="app.9.2"><lem>იტყოდინ</lem><rdg wit="#S" type="orthographic">იტყ̃დიან</rdg></app> <app xml:id="app.9.3"><lem>სახელთა</lem><rdg wit="#S" type="morphological">სახელსა</rdg></app> <term target="#lex.theos">ღმერთთასა</term>, არა ეგრეთ იტყჳან, ვითარცა <term target="#lex.dual" ana="#gramm.dual" corresp="http://purl.org/olia/olia.owl#Dual">ორობითთა</term> შინა, ზემო ცხად-ქმნილთა, არამედ ესრეთ, ვითარმედ: <mentioned xml:lang="ka">ჳ თეჳ</mentioned> <gloss><foreign xml:lang="grc">οἱ θεοί</foreign></gloss>, ესე იგი არს, ვითარმედ: <mentioned xml:lang="ka">ღმერთნი</mentioned> და <app xml:id="app.9.4"><lem><term target="#lex.gen" ana="#gramm.gen" corresp="http://purl.org/olia/olia.owl#Genitive">ნათესაობითად</term></lem><rdg wit="#S" type="orthographic">ნათესავობითად</rdg></app> <mentioned xml:lang="ka">ტონ <app xml:id="app.9.5"><lem>თეონ</lem><rdg wit="#S" type="orthographic">თეო</rdg></app></mentioned> <gloss><foreign xml:lang="grc">τῶν θεῶν</foreign></gloss>, ვითარმედ: <mentioned xml:lang="ka">ღმერთთანი</mentioned>, რამეთუ ამას ეწოდების <term target="#lex.gen" ana="#gramm.gen" corresp="http://purl.org/olia/olia.owl#Genitive">შობილობითი</term> <app xml:id="app.9.6"><lem>და <term target="#lex.gen" ana="#gramm.gen" corresp="http://purl.org/olia/olia.owl#Genitive">ნათესაობითი</term></lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app> <app xml:id="app.9.7"><lem><term target="#lex.dreka" ana="#gramm.case" corresp="http://purl.org/olia/olia.owl#Case">დრეკაჲ</term></lem><rdg wit="#S" type="orthographic">დრეკა</rdg></app> <app xml:id="app.9.8"><lem>სახელისაჲ</lem><rdg wit="#S" type="orthographic">სახელისა</rdg></app>. ხოლო <app xml:id="app.9.9"><lem><term target="#lex.dat" ana="#gramm.dat" corresp="http://purl.org/olia/olia.owl#DativeCase">მიცემითი</term></lem><rdg wit="#S" type="orthographic">მიცემით</rdg></app>: <mentioned xml:lang="ka">ტჳს თჳს</mentioned> <gloss><foreign xml:lang="grc">τοῖς θεοῖς</foreign></gloss>, ვითარმედ: <mentioned xml:lang="ka">ღმერთთა</mentioned>; <app xml:id="app.9.10"><lem>და <term target="#lex.acc" ana="#gramm.acc" corresp="http://purl.org/olia/olia.owl#Accusative">მიზეზობითი</term>: <mentioned xml:lang="ka">ტუს თეუს</mentioned> <gloss><foreign xml:lang="grc">τούς θεούς</foreign></gloss>, ვითარმედ: <mentioned xml:lang="ka">ღმერთთა</mentioned>.</lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app></p>
+            </div>
+            
+                     
+            <!-- SECTION 10 -->
+            <div type="section" n="10" xml:id="sec.10">
+                <p n="1">რამეთუ ბერძულად განყოფილებაჲ აქუს <term target="#lex.dat" ana="#gramm.dat" corresp="http://purl.org/olia/olia.owl#DativeCase">მიცემითსა</term> და <term target="#lex.acc" ana="#gramm.acc" corresp="http://purl.org/olia/olia.owl#Accusative">მიზეზობითსა</term>, ვითარცა <app xml:id="app.10.1"><lem>ზემო</lem><rdg wit="#S" type="orthographic">ზემოთ</rdg></app> თჳთ იგი ლექსნი გჳჩენიან, გარნა ქართულად ერთ ლექსად ითქუმის, დაღაცათუ <app xml:id="app.10.2"><lem>ძალი</lem><rdg wit="#S" type="orthographic">ძალი რ̃ი</rdg></app> ორი აქუს. და ესე ესრეთ <app xml:id="app.10.3"><lem>გულისხმა-ყავ</lem><rdg wit="#S" type="orthographic">გლისჴ̃ჲ</rdg></app>, რამეთუ <app xml:id="app.10.4"><lem><term target="#lex.dat" ana="#gramm.dat" corresp="http://purl.org/olia/olia.owl#DativeCase">მიცემითი</term></lem><rdg wit="#S" type="orthographic">მიცემით</rdg></app> ამისთჳს ეწოდების ლექსსა მას: რაჟამს <app xml:id="app.10.5"><lem>ეტყოდი</lem><rdg wit="#S" type="morphological">ეტყოდეს</rdg></app> ვისმე, ვითარმედ: <q>ვის მისცემ ამას <app xml:id="app.10.6"><lem>რასმე</lem><rdg wit="#S" type="orthographic">რ̃ჲსამე</rdg></app>?</q> და მან გრქუას, ვითარმედ: <mentioned xml:lang="ka">ღმერთსა</mentioned>, გინა თუ <mentioned xml:lang="ka">ღმერთთა</mentioned>, ანუ თუ <mentioned xml:lang="ka">კაცთა</mentioned> გინა <mentioned xml:lang="ka">ანგელოზთა</mentioned>; ხოლო <term target="#lex.acc" ana="#gramm.acc" corresp="http://purl.org/olia/olia.owl#Accusative">მიზეზობითი</term> — ამისთჳს, ვინაჲთგან, იკითხვიდე, რაჲ ვისგანმე, ვითარმედ: <q>ვის <app xml:id="app.10.7"><lem>ეძიებ</lem><rdg wit="#S" type="morphological">ეძიებდა</rdg></app>?</q> და მან გრქუას, ვითარმედ: <app xml:id="app.10.8"><lem><mentioned xml:lang="ka">ღმერთსა</mentioned> გინა თუ</lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app> <mentioned xml:lang="ka">ღმერთთა</mentioned>, გინა თუ <mentioned xml:lang="ka">კაცთა</mentioned>, ანუ <app xml:id="app.10.9"><lem>სხუათა</lem><rdg wit="#S" type="orthographic">სხთაჲ</rdg></app> <app xml:id="app.10.10"><lem>რათამე</lem><rdg wit="#S" type="orthographic">რაჲთმე</rdg></app>.</p>
+            </div>
+            
+            <!-- SECTION 11 -->
+            <div type="section" n="11" xml:id="sec.11">
+                <milestone unit="folio" n="34v" ed="#A"/>
+                <p n="1"><app xml:id="app.11.1"><lem>ესრეთ</lem><rdg wit="#S" type="lexical">ესე</rdg></app> ორი ძალი აქუს <app xml:id="app.11.2"><lem>ლექსსა</lem><rdg wit="#A" type="orthographic">ლექსა</rdg><rdg wit="#S" type="orthographic">ღ̃ისსა</rdg></app> ამას და ერთითა გუარითა ითქუმის ორივე <app xml:id="app.11.3"><lem>ქართულსა ენასა</lem><rdg wit="#S" type="lexical">ენასა ქართულსა</rdg></app> ზედა, გარნა არა <app xml:id="app.11.4"><lem>ბერძულსცა</lem><rdg wit="#S" type="orthographic">ბერძულსაცა</rdg></app>, არამედ <app xml:id="app.11.5"><lem><term target="#lex.dat" ana="#gramm.dat" corresp="http://purl.org/olia/olia.owl#DativeCase">მიცემითი</term></lem><rdg wit="#S" type="orthographic">მიცემით</rdg></app> <app xml:id="app.11.6"><lem><term target="#lex.sing" ana="#gramm.sing" corresp="http://purl.org/olia/olia.owl#Singular">ერთობითთაჲ</term></lem><rdg wit="#S" type="orthographic">ერთობითთა</rdg></app> <mentioned xml:lang="ka">ტო თეო</mentioned> <gloss><foreign xml:lang="grc">τῷ θεῷ</foreign></gloss> და <app xml:id="app.11.7"><lem><term target="#lex.dat" ana="#gramm.dat" corresp="http://purl.org/olia/olia.owl#DativeCase">მიცემითი</term></lem><rdg wit="#S" type="morphological">მიცემითთა</rdg></app> <app xml:id="app.11.8"><lem><term target="#lex.plural" ana="#gramm.plur" corresp="http://purl.org/olia/olia.owl#Plural">განმრავლებითთაჲ</term></lem><rdg wit="#S" type="orthographic">განმრავლებითთა</rdg></app> <mentioned xml:lang="ka">ტჳს თეის</mentioned> <gloss><foreign xml:lang="grc">τοῖς θεοῖς</foreign></gloss>, ეგრეთვე <app xml:id="app.11.9"><lem><term target="#lex.acc" ana="#gramm.acc" corresp="http://purl.org/olia/olia.owl#Accusative">მიზეზობითი</term></lem><rdg wit="#S" type="morphological">მიზეზობითთა</rdg></app> <app xml:id="app.11.10"><lem><term target="#lex.sing" ana="#gramm.sing" corresp="http://purl.org/olia/olia.owl#Singular">ერთობითთაჲ</term></lem><rdg wit="#S" type="orthographic">ერთობითთა</rdg></app> <mentioned xml:lang="ka">ტონ <app xml:id="app.11.11"><lem>თეონ</lem><rdg wit="#S" type="orthographic">თეოს</rdg></app></mentioned> <gloss><foreign xml:lang="grc">τὸν θεόν</foreign></gloss>. ხოლო <supplied reason="omitted-in-both"><term target="#lex.acc" ana="#gramm.acc" corresp="http://purl.org/olia/olia.owl#Accusative">მიზეზობითი</term></supplied> <app xml:id="app.11.12"><lem><term target="#lex.plural" ana="#gramm.plur" corresp="http://purl.org/olia/olia.owl#Plural">განმრავლებითთაჲ</term></lem><rdg wit="#S" type="orthographic">განმრავლებითთა</rdg></app> <mentioned xml:lang="ka"><app xml:id="app.11.13"><lem>ტუს</lem><rdg wit="#S" type="orthographic">ტჳს</rdg></app> <app xml:id="app.11.14"><lem>თეუს</lem><rdg wit="#S" type="orthographic">თეჳს</rdg></app></mentioned> <gloss><foreign xml:lang="grc">τοὺς θεούς</foreign></gloss>, <app xml:id="app.11.15"><lem>ესრეთ</lem><rdg wit="#S" type="lexical">ერთ</rdg></app> განყოფილებაჲ აქუს ურთიერთას. ხოლო <app xml:id="app.11.16"><lem><term target="#lex.voc" ana="#gramm.voc" corresp="http://purl.org/olia/olia.owl#VocativeCase">წოდებითი</term></lem><rdg wit="#S" type="orthographic">წოდებითა</rdg></app> <app xml:id="app.11.17"><lem><term target="#lex.plural" ana="#gramm.plur" corresp="http://purl.org/olia/olia.owl#Plural">განმრავლებითთაჲ</term></lem><rdg wit="#S" type="orthographic">განმრაბლებითთა</rdg></app>: <mentioned xml:lang="ka">ო <app xml:id="app.11.18"><lem>თეჳ</lem><rdg wit="#S" type="orthographic">თეო</rdg></app></mentioned> <gloss><foreign xml:lang="grc">ὦ θεοί</foreign></gloss>, ესე იგი არს, ვითარმედ: <mentioned xml:lang="ka">ღმერთნო</mentioned>.</p>
+                
+                <p n="2">ესრეთ ათცამეტ არიან <app xml:id="app.11.19"><lem><term target="#lex.dreka" ana="#gramm.case" corresp="http://purl.org/olia/olia.owl#Case">დრეკანი</term></lem><rdg wit="#S" type="orthographic">დრჰ̃კანი</rdg></app> სახელთა <term target="#lex.masc" ana="#gramm.masc" corresp="http://purl.org/olia/olia.owl#Masculine">მამალთანი</term>, ვითარცა ზემო აღგვწერიან, <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term> ათცამეტნი; და კუალად <app xml:id="app.11.20"><lem>თითოეულისა</lem><rdg wit="#S" type="orthographic">თჳთეულისა</rdg></app> <app xml:id="app.11.21"><lem>საჴმარებისაებრცა</lem><rdg wit="#S" type="orthographic">საჴმარისაებრცა</rdg></app> <app xml:id="app.11.22"><lem>წარმოგჳჩენიან</lem><rdg wit="#S" type="orthographic">წარმოგჳჩენია</rdg></app> <app xml:id="app.11.23"><lem>ათცამეტნი</lem><rdg wit="#S" type="orthographic">აცამეტნი</rdg></app> იგი <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term>. და ესე ვიდრემე <term target="#lex.masc" ana="#gramm.masc" corresp="http://purl.org/olia/olia.owl#Masculine">მამალთა</term> <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონთათჳს</term>.</p>
+            </div>
+            
+            <!-- SECTION 12: FEMININE ARTICLES -->
+            <div type="section" n="12" xml:id="sec.12">
+                <note type="marginal" place="margin" resp="#scribe">
+                    <p>დედალნი</p>
+                    <note>Written in majuscule in both MSS; in cinnabar in S</note>
+                </note>
+                <p n="1">ხოლო <term target="#lex.fem" ana="#gramm.fem" corresp="http://purl.org/olia/olia.owl#Feminine">დედლისა</term> სახელისა <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term> თავით კერძო დასასხმელნი, ვითარცა საფუძველნი რაჲმე და <app xml:id="app.12.1"><lem>საშუენებელნი</lem><rdg wit="#S" type="orthographic">ს̃შუჱბლნი</rdg></app>, ვითარცა <app xml:id="app.12.2"><lem>ზემო</lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app> გჳთქუამს, არიან ესე:</p>
+                
+                <!-- Feminine singular articles -->
+                <p n="2" xml:id="sec.12.fem.sing">
+                    <mentioned xml:lang="ka">ი</mentioned> <gloss><foreign xml:lang="grc">ἡ</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ტეს</mentioned> <gloss><foreign xml:lang="grc">τῆς</foreign></gloss>, 
+                    <app xml:id="app.12.3"><lem><mentioned xml:lang="ka">ტი</mentioned> <gloss><foreign xml:lang="grc">τῇ</foreign></gloss></lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app>, 
+                    <mentioned xml:lang="ka">ტენ</mentioned> <gloss><foreign xml:lang="grc">τήν</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὦ</foreign></gloss>;
+                </p>
+                
+                <!-- Feminine dual articles -->
+                <p n="3" xml:id="sec.12.fem.dual">
+                    <mentioned xml:lang="ka">ტა</mentioned> <gloss><foreign xml:lang="grc">τά</foreign></gloss>, 
+                    <app xml:id="app.12.4"><lem><mentioned xml:lang="ka">ტენ</mentioned> <gloss><foreign xml:lang="grc">ταῖν</foreign></gloss></lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app>, 
+                    <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὦ</foreign></gloss>;
+                </p>
+                
+                <!-- Feminine plural articles -->
+                <p n="4" xml:id="sec.12.fem.plur">
+                    <mentioned xml:lang="ka">ე</mentioned> <gloss><foreign xml:lang="grc">αἱ</foreign></gloss>, 
+                    <app xml:id="app.12.5"><lem><mentioned xml:lang="ka">ტონ</mentioned></lem><rdg wit="#S" type="orthographic">ტჳნ</rdg></app> <gloss><foreign xml:lang="grc">τῶν</foreign></gloss>, 
+                    <app xml:id="app.12.6"><lem><mentioned xml:lang="ka">ტეს</mentioned> <gloss><foreign xml:lang="grc">ταῖς</foreign></gloss></lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app>, 
+                    <mentioned xml:lang="ka">ტას</mentioned> <gloss><foreign xml:lang="grc">τάς</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὦ</foreign></gloss>.
+                </p>
+            </div>
+            
+       
+            
+            <!-- SECTION 13: FEMININE DECLENSION WITH τριάς -->
+            <div type="section" n="13" xml:id="sec.13">
+                <p n="1">რამეთუ <term target="#lex.trias">სამებისა</term> სახელი <term target="#lex.fem" ana="#gramm.fem" corresp="http://purl.org/olia/olia.owl#Feminine">დედალი</term> არს და ითქუმის ესრეთ: <mentioned xml:lang="ka">ტრიას</mentioned> <gloss><foreign xml:lang="grc">τριάς</foreign></gloss>. <app xml:id="app.13.1"><lem>ხოლო</lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app> <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანად</term> რაჲ <app xml:id="app.13.2"><lem>იტყოდინ</lem><rdg wit="#S" type="orthographic">იტყ̃დიან</rdg></app> <app xml:id="app.13.3"><lem>ამათ ზემო წერილთა ათცამეტთა ართრონთაგან თავისა</lem><rdg wit="#S" type="omission">ამათ ზემო ათცამეტთა</rdg></app> <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონსა</term>, რომელ არს <mentioned xml:lang="ka">ინ</mentioned>-ი, <app xml:id="app.13.4"><lem>თავით</lem><rdg wit="#S" type="orthographic">თავის</rdg></app> კერძო <app xml:id="app.13.5"><lem>დაუსუმენ</lem><rdg wit="#A" type="orthographic">დაუსხუმენ</rdg></app> და <app xml:id="app.13.6"><lem>იტყჳან</lem><rdg wit="#S" type="addition">იტყვიან და</rdg></app> ესრეთ, ვითარმედ: <mentioned xml:lang="ka">ი <app xml:id="app.13.7"><lem>ტრიას</lem><rdg wit="#S" type="orthographic">ტურიას</rdg></app></mentioned> <gloss><foreign xml:lang="grc">ἡ τριάς</foreign></gloss>; და <app xml:id="app.13.8"><lem><term target="#lex.gen" ana="#gramm.gen" corresp="http://purl.org/olia/olia.owl#Genitive">ნათესაობითად</term></lem><rdg wit="#S" type="orthographic">ნათესავობითად</rdg></app> რაჲ <app xml:id="app.13.9"><lem>იტყოდინ</lem><rdg wit="#A" type="orthographic">იტყ̃დინ</rdg><rdg wit="#S" type="orthographic">იტყ̃დიან</rdg></app> <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოდ</term>: <mentioned xml:lang="ka">ტრიადოს</mentioned> <gloss><foreign xml:lang="grc">τριάδος</foreign></gloss> <app xml:id="app.13.10"><lem>და</lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app> <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანად</term>: <mentioned xml:lang="ka">ტეს ტრიადოს</mentioned> <gloss><foreign xml:lang="grc">τῆς τριάδος</foreign></gloss>. ეგრეთვე <term target="#lex.dat" ana="#gramm.dat" corresp="http://purl.org/olia/olia.owl#DativeCase">მიცემითად</term> <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოდ</term>: <mentioned xml:lang="ka"><app xml:id="app.13.11"><lem>ტრიადი</lem><rdg wit="#S" type="orthographic">ტრიადე</rdg></app></mentioned> <gloss><foreign xml:lang="grc">τριάδι</foreign></gloss> და <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანად</term>: <mentioned xml:lang="ka">ტი ტრიადი</mentioned> <gloss><foreign xml:lang="grc">τῇ τριάδι</foreign></gloss>; და <term target="#lex.acc" ana="#gramm.acc" corresp="http://purl.org/olia/olia.owl#Accusative">მიზეზობითად</term> <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოდ</term>: <mentioned xml:lang="ka">ტრიადა</mentioned> <gloss><foreign xml:lang="grc">τριάδα</foreign></gloss> და <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანად</term>: <mentioned xml:lang="ka">ტინ ტრიადა</mentioned> <gloss><foreign xml:lang="grc">τὴν τριάδα</foreign></gloss>; <milestone unit="folio" n="35r" ed="#A"/> და <term target="#lex.voc" ana="#gramm.voc" corresp="http://purl.org/olia/olia.owl#VocativeCase">წოდებითად</term> <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოდ</term>: <mentioned xml:lang="ka">ტრიას</mentioned> <gloss><foreign xml:lang="grc">τριάς</foreign></gloss> და <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანად</term>: <mentioned xml:lang="ka">ო ტრიას</mentioned> <gloss><foreign xml:lang="grc">ὦ τριάς</foreign></gloss>. ესე ვიდრემე ერთისა პირისა <app xml:id="app.13.12"><lem>სახელის-<term target="#lex.dreka" ana="#gramm.case" corresp="http://purl.org/olia/olia.owl#Case">დრეკანი</term></lem><rdg wit="#S" type="orthographic">სახელ-დრეკანი</rdg></app> არიან ხუთნი, რომელსა <term target="#lex.sing" ana="#gramm.sing" corresp="http://purl.org/olia/olia.owl#Singular">ერთობითად</term> უწოდენ.</p>
+            </div>
+            
+            <!-- SECTION 14: DUAL OF τριάς -->
+            <div type="section" n="14" xml:id="sec.14">
+                <p n="1">ხოლო <term target="#lex.dual" ana="#gramm.dual" corresp="http://purl.org/olia/olia.owl#Dual">ორობითნი</term> არიან ესე: რაჟამს ორთა პირთა <app xml:id="app.14.1"><lem>ცხად-ჰყოფდენ</lem><rdg wit="#S" type="morphological">ჰყოფენ</rdg></app> <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოდ</term>: <mentioned xml:lang="ka">ტრიადე</mentioned> <gloss><foreign xml:lang="grc">τριάδε</foreign></gloss>, ხოლო <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანად</term>: <mentioned xml:lang="ka"><app xml:id="app.14.2"><lem>ტა</lem><rdg wit="#S" type="orthographic">ტ<note>next letter deleted</note></rdg></app> ტრიადე</mentioned> <gloss><foreign xml:lang="grc">τὰ τριάδε</foreign></gloss>; და <app xml:id="app.14.3"><lem><term target="#lex.gen" ana="#gramm.gen" corresp="http://purl.org/olia/olia.owl#Genitive">ნათესაობითად</term></lem><rdg wit="#S" type="orthographic">ნ̃ესაობითად</rdg></app> და <milestone unit="folio" n="107v" ed="#S"/> <term target="#lex.dat" ana="#gramm.dat" corresp="http://purl.org/olia/olia.owl#DativeCase">მიცემითად</term> <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოდ</term>: <mentioned xml:lang="ka">ტრიადოინ</mentioned> <gloss><foreign xml:lang="grc">τριάδοιν</foreign></gloss> და <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანად</term>: <mentioned xml:lang="ka">ტაინ <app xml:id="app.14.4"><lem>ტრიადოინ</lem><rdg wit="#S" type="orthographic">ტრიადინ</rdg></app></mentioned> <gloss><foreign xml:lang="grc">ταῖν τριάδοιν</foreign></gloss>; ხოლო <term target="#lex.voc" ana="#gramm.voc" corresp="http://purl.org/olia/olia.owl#VocativeCase">წოდებითად</term> <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოდ</term>: <mentioned xml:lang="ka">ტრიადე</mentioned> <gloss><foreign xml:lang="grc">τριάδε</foreign></gloss> და <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანად</term>: <mentioned xml:lang="ka">ო ტრიადე</mentioned> <gloss><foreign xml:lang="grc">ὦ τριάδε</foreign></gloss>.</p>
+            </div>
+            
+            <!-- SECTION 15: PLURAL OF τριάς -->
+            <div type="section" n="15" xml:id="sec.15">
+                <p n="1">ხოლო მრავალთა რაჲ პირთა ცხად-ჰყოფდენ <app xml:id="app.15.1"><lem><term target="#lex.nom" ana="#gramm.nom" corresp="http://purl.org/olia/olia.owl#Nominative">ადვილობითად</term></lem><rdg wit="#S" type="addition">ადვილობითად და</rdg></app>, <app xml:id="app.15.2"><lem><term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოდ</term></lem><rdg wit="#S" type="orthographic">უართრონოდე</rdg></app>: <mentioned xml:lang="ka">ტრიადეს</mentioned> <gloss><foreign xml:lang="grc">τριάδες</foreign></gloss>, ვითარმედ: <mentioned xml:lang="ka">სამებანი</mentioned>, ხოლო <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანად</term>: <mentioned xml:lang="ka">ე ტრიადეს</mentioned> <gloss><foreign xml:lang="grc">αἱ τριάδες</foreign></gloss>, ვითარმედ: <mentioned xml:lang="ka">სამებანი</mentioned>; ეგრეთვე <app xml:id="app.15.3"><lem><term target="#lex.gen" ana="#gramm.gen" corresp="http://purl.org/olia/olia.owl#Genitive">ნათესაობითად</term></lem><rdg wit="#S" type="orthographic">ნათესავობითად</rdg></app> <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოდ</term>: <mentioned xml:lang="ka">ტრიადონ</mentioned> <gloss><foreign xml:lang="grc">τριάδων</foreign></gloss> და <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანად</term>: <mentioned xml:lang="ka">ტონ ტრიადონ</mentioned> <gloss><foreign xml:lang="grc">τῶν τριάδων</foreign></gloss>, ვითარმედ: <mentioned xml:lang="ka">სამებათანი</mentioned>; ხოლო <term target="#lex.dat" ana="#gramm.dat" corresp="http://purl.org/olia/olia.owl#DativeCase">მიცემითად</term> <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოდ</term>: <mentioned xml:lang="ka"><app xml:id="app.15.4"><lem>ტრიასი</lem><rdg wit="#S" type="orthographic">ტრიას</rdg></app></mentioned> <gloss><foreign xml:lang="grc">τριάσι</foreign></gloss> და <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანად</term>: <mentioned xml:lang="ka"><app xml:id="app.15.5"><lem>ტეს</lem><rdg wit="#A" type="orthographic">ტჳს</rdg><rdg wit="#S" type="orthographic">ტჳს</rdg></app> ტრიასი</mentioned> <gloss><foreign xml:lang="grc">ταῖς τριάσι</foreign></gloss>, ვითარმედ: <mentioned xml:lang="ka">სამებათა</mentioned>; ხოლო <term target="#lex.acc" ana="#gramm.acc" corresp="http://purl.org/olia/olia.owl#Accusative">მიზეზობითად</term> <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოდ</term>: <mentioned xml:lang="ka">ტრიადას</mentioned> <gloss><foreign xml:lang="grc">τριάδας</foreign></gloss> და <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანად</term>: <mentioned xml:lang="ka"><app xml:id="app.15.6"><lem>ტას ტრიადას</lem><rdg wit="#S" type="omission">ტრიადას</rdg></app></mentioned> <gloss><foreign xml:lang="grc">τὰς τριάδας</foreign></gloss>, ვითარმედ: <mentioned xml:lang="ka">სამებათა</mentioned>. ხოლო <term target="#lex.voc" ana="#gramm.voc" corresp="http://purl.org/olia/olia.owl#VocativeCase">წოდებითად</term> <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოდ</term>: <mentioned xml:lang="ka">ტრიადეს</mentioned> <gloss><foreign xml:lang="grc">τριάδες</foreign></gloss>, და <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანად</term>: <mentioned xml:lang="ka">ო ტრიადეს</mentioned> <gloss><foreign xml:lang="grc">ὦ τριάδες</foreign></gloss>, ვითარმედ: <mentioned xml:lang="ka">ჵ სამებანო</mentioned>.</p>
+                
+                <p n="2">ესრეთ <app xml:id="app.15.7"><lem>სხუა-სახე და</lem><rdg wit="#S" type="lexical">სხ̃ი სახედ</rdg></app> განყოფილების მქონებელ, არიან <term target="#lex.masc" ana="#gramm.masc" corresp="http://purl.org/olia/olia.owl#Masculine">მამალთაგან</term> <term target="#lex.fem" ana="#gramm.fem" corresp="http://purl.org/olia/olia.owl#Feminine">დედალნი</term> <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term> და სახელნი.</p>
+            </div>
+            
+     
+            <!-- SECTION 16: NEUTER ARTICLES INTRODUCTION -->
+            <div type="section" n="16" xml:id="sec.16">
+                <note type="marginal" place="margin" resp="#scribe">
+                    <p>შუანი</p>
+                    <note>Written in majuscule in both MSS</note>
+                </note>
+                <p n="1">ამითვე სახითა <term target="#lex.neut" ana="#gramm.neut" corresp="http://purl.org/olia/olia.owl#Neuter">შუანი</term> <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term> არიან, რამეთუ ჰგვანან ვიდრემე <app xml:id="app.16.1"><lem>რიცხჳთაცა</lem><rdg wit="#S" type="orthographic">რიცხვ̃ცა</rdg></app> და <app xml:id="app.16.2"><lem>გუარითა</lem><rdg wit="#S" type="orthographic">გუარითცა</rdg></app> <app xml:id="app.16.3"><lem><term target="#lex.dreka" ana="#gramm.case" corresp="http://purl.org/olia/olia.owl#Case">დრეკისაჲთა</term></lem><rdg wit="#S" type="orthographic">დრეკისათა</rdg></app>, გარნა განიყოფებიან <term target="#lex.masc" ana="#gramm.masc" corresp="http://purl.org/olia/olia.owl#Masculine">მამალთა</term> და <term target="#lex.fem" ana="#gramm.fem" corresp="http://purl.org/olia/olia.owl#Feminine">დედალთაგან</term>. და ზემო თქუმულნი არიან <term target="#lex.masc" ana="#gramm.masc" corresp="http://purl.org/olia/olia.owl#Masculine">მამალნი</term> და <term target="#lex.fem" ana="#gramm.fem" corresp="http://purl.org/olia/olia.owl#Feminine">დედალნი</term>; ხოლო რომელთა აწ <app xml:id="app.16.4"><lem>ვიტყჳთ</lem><rdg wit="#S" type="orthographic">ვიტყვ̃</rdg></app>, არიან <term target="#lex.neut" ana="#gramm.neut" corresp="http://purl.org/olia/olia.owl#Neuter">შუანი</term>:</p>
+                
+                <!-- Neuter singular articles -->
+                <p n="2" xml:id="sec.16.neut.sing">
+                    <mentioned xml:lang="ka">ტო</mentioned> <gloss><foreign xml:lang="grc">τό</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ტუ</mentioned> <gloss><foreign xml:lang="grc">τοῦ</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ტო</mentioned> <gloss><foreign xml:lang="grc">τῷ</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ტო</mentioned> <gloss><foreign xml:lang="grc">τό</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὦ</foreign></gloss>;
+                </p>
+                
+                <!-- Neuter dual articles -->
+                <p n="3" xml:id="sec.16.neut.dual">
+                    <mentioned xml:lang="ka">ტო</mentioned> <gloss><foreign xml:lang="grc">τώ</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ტოინ</mentioned> <gloss><foreign xml:lang="grc">τοῖν</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὦ</foreign></gloss>;
+                </p>
+                
+                <!-- Neuter plural articles -->
+                <p n="4" xml:id="sec.16.neut.plur">
+                    <mentioned xml:lang="ka">ტა</mentioned> <gloss><foreign xml:lang="grc">τά</foreign></gloss>, 
+                    <app xml:id="app.16.5"><lem><mentioned xml:lang="ka">ტონ</mentioned></lem><rdg wit="#S" type="orthographic">ტუნ</rdg></app> <gloss><foreign xml:lang="grc">τῶν</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ტოის</mentioned> <gloss><foreign xml:lang="grc">τοῖς</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ტა</mentioned> <gloss><foreign xml:lang="grc">τά</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὦ</foreign></gloss>.
+                </p>
+            </div>
+            
+            <!-- SECTION 17: NEUTER DECLENSION WITH πνεῦμα (SINGULAR) -->
+            <div type="section" n="17" xml:id="sec.17">
+                <milestone unit="folio" n="35v" ed="#A"/>
+                <p n="1">და სულსა წმიდასა არა <term target="#lex.masc" ana="#gramm.masc" corresp="http://purl.org/olia/olia.owl#Masculine">მამალი</term> ეწოდების სახელი, არცა <term target="#lex.fem" ana="#gramm.fem" corresp="http://purl.org/olia/olia.owl#Feminine">დედალი</term>, არამედ <app xml:id="app.17.1"><lem><term target="#lex.neut" ana="#gramm.neut" corresp="http://purl.org/olia/olia.owl#Neuter">შუაჲ</term></lem><rdg wit="#S" type="orthographic">შუა</rdg></app>. ამისთჳსცა და <term target="#lex.neut" ana="#gramm.neut" corresp="http://purl.org/olia/olia.owl#Neuter">შუათაცა</term> მოქენე არს ჴუმევად <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონთა</term>, რამეთუ რაჟამს <term target="#lex.sing" ana="#gramm.sing" corresp="http://purl.org/olia/olia.owl#Singular">ერთობითთა</term> პირთა <app xml:id="app.17.2"><lem>ცხად-ჰყოფდენ</lem><rdg wit="#S" type="morphological">ჰყოფენ</rdg></app>, პირველად ესრეთ იტყჳან <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოდ</term>: <mentioned xml:lang="ka">პნევმა</mentioned> <gloss><foreign xml:lang="grc">πνεῦμα</foreign></gloss>; და <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანად</term>: <mentioned xml:lang="ka">ტო პნევმა</mentioned> <gloss><foreign xml:lang="grc">τὸ πνεῦμα</foreign></gloss>, ვითარმედ: <mentioned xml:lang="ka">სული</mentioned>; და <app xml:id="app.17.3"><lem><term target="#lex.gen" ana="#gramm.gen" corresp="http://purl.org/olia/olia.owl#Genitive">ნათესაობითად</term></lem><rdg wit="#S" type="orthographic">ნათესავობითად</rdg></app> <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოდ</term>: <mentioned xml:lang="ka">პნევმატოს</mentioned> <gloss><foreign xml:lang="grc">πνεύματος</foreign></gloss> და <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანად</term>: <mentioned xml:lang="ka">ტუ პნევმა</mentioned> <gloss><foreign xml:lang="grc">τοῦ πνεύματος</foreign></gloss>, ვითარმედ: <mentioned xml:lang="ka"><app xml:id="app.17.4"><lem>სულისაჲ</lem><rdg wit="#S" type="orthographic">სულისა</rdg></app></mentioned>; ხოლო <term target="#lex.dat" ana="#gramm.dat" corresp="http://purl.org/olia/olia.owl#DativeCase">მიცემითად</term> <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოდ</term>: <mentioned xml:lang="ka">პნევმატი</mentioned> <gloss><foreign xml:lang="grc">πνεύματι</foreign></gloss> <app xml:id="app.17.5"><lem>და</lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app> <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანად</term>: <mentioned xml:lang="ka">ტო პნევმატი</mentioned> <gloss><foreign xml:lang="grc">τῷ πνεύματι</foreign></gloss> ვითარმედ: <mentioned xml:lang="ka">სულსა</mentioned>; და <term target="#lex.acc" ana="#gramm.acc" corresp="http://purl.org/olia/olia.owl#Accusative">მიზეზობითად</term> <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოდ</term>: <mentioned xml:lang="ka">პნევმა</mentioned> <gloss><foreign xml:lang="grc">πνεῦμα</foreign></gloss>, და <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანად</term>: <mentioned xml:lang="ka">ტო პნევმა</mentioned> <gloss><foreign xml:lang="grc">τὸ πνεῦμα</foreign></gloss>, ვითარმედ: <mentioned xml:lang="ka">სულსა</mentioned>; ხოლო <term target="#lex.voc" ana="#gramm.voc" corresp="http://purl.org/olia/olia.owl#VocativeCase">წოდებითად</term> <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოდ</term>: <mentioned xml:lang="ka">პნევმა</mentioned> <gloss><foreign xml:lang="grc">πνεῦμα</foreign></gloss> და <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანად</term>: <mentioned xml:lang="ka">ო პნევმა</mentioned> <gloss><foreign xml:lang="grc">ὦ πνεῦμα</foreign></gloss>, ვითარმედ: <mentioned xml:lang="ka">ჱ სულო</mentioned>.</p>
+            </div>
+            
+            <!-- SECTION 18: NEUTER DUAL AND PLURAL OF πνεῦμα -->
+            <div type="section" n="18" xml:id="sec.18">
+                <p n="1">ეგრეთვე <term target="#lex.dual" ana="#gramm.dual" corresp="http://purl.org/olia/olia.owl#Dual">ორობითნი</term> <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონონი</term>: <app xml:id="app.18.1"><lem><mentioned xml:lang="ka">პნევმატე</mentioned> <gloss><foreign xml:lang="grc">πνεύματε</foreign></gloss>, <mentioned xml:lang="ka">პნევმატჳნ</mentioned> <gloss><foreign xml:lang="grc">πνευμάτοιν</foreign></gloss>, <mentioned xml:lang="ka">პნევმატე</mentioned> <gloss><foreign xml:lang="grc">πνεύματε</foreign></gloss>; ხოლო <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანად</term>: <mentioned xml:lang="ka">ტო პნევმატე</mentioned> <gloss><foreign xml:lang="grc">τὼ πνεύματε</foreign></gloss>, <mentioned xml:lang="ka">ტჳნ პნევმატჳნ</mentioned></lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app> <gloss><foreign xml:lang="grc">τοῖν πνευμάτοιν</foreign></gloss>, <mentioned xml:lang="ka">ო პნევმატე</mentioned> <gloss><foreign xml:lang="grc">ὦ πνεύματε</foreign></gloss>, ვითარმედ: <mentioned xml:lang="ka">ორნი სულნი, სულთანი, სულნო</mentioned>.</p>
+                
+                <p n="2">ხოლო <term target="#lex.plural" ana="#gramm.plur" corresp="http://purl.org/olia/olia.owl#Plural">განმრავლებითნი</term> <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონონი</term>: <mentioned xml:lang="ka">პნევმატა</mentioned> <gloss><foreign xml:lang="grc">πνεύματα</foreign></gloss>, <mentioned xml:lang="ka">პნევმატონ</mentioned> <gloss><foreign xml:lang="grc">πνευμάτων</foreign></gloss>, <mentioned xml:lang="ka">პნევმასი</mentioned> <gloss><foreign xml:lang="grc">πνεύμασι</foreign></gloss>, <mentioned xml:lang="ka">პნევმატა</mentioned> <gloss><foreign xml:lang="grc">πνεύματα</foreign></gloss>, <mentioned xml:lang="ka"><app xml:id="app.18.2"><lem>პნევმატა</lem><rdg wit="#S" type="orthographic">პნევმატე</rdg></app></mentioned> <gloss><foreign xml:lang="grc">πνεύματα</foreign></gloss>; ხოლო <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანად</term>: <mentioned xml:lang="ka">ტა პნევმატა</mentioned> <gloss><foreign xml:lang="grc">τὰ πνεύματα</foreign></gloss>, <mentioned xml:lang="ka">ტონ პნევმატონ</mentioned> <gloss><foreign xml:lang="grc">τῶν πνευμάτων</foreign></gloss>, <mentioned xml:lang="ka">ტჳს პნევმასი</mentioned> <gloss><foreign xml:lang="grc">τοῖς πνεύμασι</foreign></gloss>, <mentioned xml:lang="ka"><app xml:id="app.18.3"><lem>ტა</lem><rdg wit="#S" type="orthographic">ტან</rdg></app> პნევმატა</mentioned> <gloss><foreign xml:lang="grc">τὰ πνεύματα</foreign></gloss>, <mentioned xml:lang="ka">ო <app xml:id="app.18.4"><lem>პნევმატა</lem><rdg wit="#S" type="orthographic">პნევმატე</rdg></app></mentioned> <gloss><foreign xml:lang="grc">ὦ πνεύματα</foreign></gloss>, ვითარმედ: <mentioned xml:lang="ka">სულნი, სულთანი, სულთა, სულთა, ჰოი სულნო</mentioned>.</p>
+            </div>
+            
+               
+            <!-- SECTION 19: APPLICATION TO GEORGIAN -->
+            <div type="section" n="19" xml:id="sec.19">
+                <p n="1">და ამათ ათცამეტთა <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონთაგან</term> ერთი ოდენ მხოლოდ შესაძლებელ არს ენისა ჩუენისაგან თქუმად, რომელ არს <term target="#lex.voc" ana="#gramm.voc" corresp="http://purl.org/olia/olia.owl#VocativeCase">წოდებითისა</term> თავით კერძო <mentioned xml:lang="ka">ო</mentioned>-ჲ; და სხუანი <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term> ქუე <app xml:id="app.19.1"><lem>დაგჳტევიან</lem><rdg wit="#A" type="orthographic">დაგუცკვიან</rdg><rdg wit="#S" type="orthographic">დაგეცვიან</rdg></app>, და არა თუ ესრეთ ვინმე, ვითარცა ბერძულად არიან, დაუსხნეს, <app xml:id="app.19.2"><lem>სხუებრ</lem><rdg wit="#S" type="omission">ღმერთთა<note>om.</note></rdg></app> შეუძლებელ არს <app xml:id="app.19.3"><lem>თარგმნაჲ</lem><rdg wit="#S" type="orthographic">თარგმნა</rdg></app>.</p>
+                
+                <milestone unit="folio" n="36r" ed="#A"/>
+                <p n="2">ხოლო ბერძულთავე <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონთა</term>: ქართულსა <app xml:id="app.19.4"><lem>დაუსხმიდე თუ</lem><rdg wit="#S" type="morphological">დაუსხმიდეს</rdg></app>, ესრეთ იქმნებიან, <app xml:id="app.19.5"><lem>ვითარმედ</lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app>: <mentioned xml:lang="ka">ო ღმერთი, ტუ <app xml:id="app.19.6"><lem>ღმრთისაჲ</lem><rdg wit="#S" type="orthographic">ღ̃ო</rdg></app>, ტო ღმერთსა, ტონ ღმერთსა, ჵ ღმერთო; <app xml:id="app.19.7"><lem>ტო</lem><rdg wit="#S" type="orthographic">ტუ<note>scribe first wrote ტუნ, then deleted final letter</note></rdg></app> <milestone unit="folio" n="108r" ed="#S"/> ღმერთნი ორნი, ტჳნ ღმერთთანი, ჵ ღმერთნო; ჳ ღმერთნი მრავალნი, ტონ ღმერთთანი, ტჳს <app xml:id="app.19.8"><lem>ღმერთთა</lem><rdg wit="#S" type="lexical">სამებათანი</rdg></app>, ტუს ღმერთთა, ჵ ღმერთნი</mentioned>.</p>
+            </div>
+            
+            <!-- SECTION 20: FEMININE AND NEUTER EXAMPLES -->
+            <div type="section" n="20" xml:id="sec.20">
+                <p n="1">ესრეთვე <app xml:id="app.20.1"><lem>და</lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app> <term target="#lex.fem" ana="#gramm.fem" corresp="http://purl.org/olia/olia.owl#Feminine">დედალნი</term> <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term> <term target="#lex.trias">სამებისანი</term>, ვითარმედ: <mentioned xml:lang="ka">ი სამებაჲ, ტის <app xml:id="app.20.2"><lem>სამებისაჲ</lem><rdg wit="#S" type="orthographic">სამებისა</rdg></app>, ტი სამებასა, ტენ <app xml:id="app.20.3"><lem>სამებასა</lem><rdg wit="#S" type="orthographic">სამ̃ბისა</rdg></app>, ჵ სამებაო</mentioned>; ხოლო <term target="#lex.dual" ana="#gramm.dual" corresp="http://purl.org/olia/olia.owl#Dual">ორობითად</term>: <mentioned xml:lang="ka"><app xml:id="app.20.4"><lem>ტა</lem><rdg wit="#S" type="orthographic">ტან</rdg></app> სამებანი, ტინ <app xml:id="app.20.5"><lem>სამებათანი</lem><rdg wit="#S" type="orthographic">სამებათა</rdg></app>, ჵ სამებანო</mentioned>; და <term target="#lex.plural" ana="#gramm.plur" corresp="http://purl.org/olia/olia.owl#Plural">განმრავლებითად</term>: <mentioned xml:lang="ka">ე სამებანი, ტონ სამებათანი, ტეს <app xml:id="app.20.6"><lem>სამებათა</lem><rdg wit="#S" type="orthographic">ს̃მ̃ბ̃თ̃ნი</rdg></app>, <app xml:id="app.20.7"><lem>ტას</lem><rdg wit="#S" type="orthographic">ტის</rdg></app> სამებათა, ჵ სამებანო</mentioned>.</p>
+                
+                <p n="2">ამათდავე მსგავსად <term target="#lex.neut" ana="#gramm.neut" corresp="http://purl.org/olia/olia.owl#Neuter">შუანი</term> <app xml:id="app.20.8"><lem><term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term></lem><rdg wit="#S" type="addition">ართრონნი არიან</rdg></app>, ვითარმედ: <mentioned xml:lang="ka">ტო სული, ტუ <app xml:id="app.20.9"><lem>სულისაჲ</lem><rdg wit="#S" type="orthographic">სულისა</rdg></app>, ტო სულსა, ტო სულსა, ჰოი სულო</mentioned>; <term target="#lex.dual" ana="#gramm.dual" corresp="http://purl.org/olia/olia.owl#Dual">ორობითნი</term>: <mentioned xml:lang="ka">ტო სულნი, ტჳნ სულთანი, ჵ სულნო</mentioned>; <term target="#lex.plural" ana="#gramm.plur" corresp="http://purl.org/olia/olia.owl#Plural">განმრავლებითნი</term>: <mentioned xml:lang="ka">ტა სულნი, <app xml:id="app.20.10"><lem>ტონ</lem><rdg wit="#S" type="orthographic">ტინ</rdg></app> სულთანი, ტჳს სულთა, ტა სულთა, ჵ სულნო</mentioned>; გარნა არცა ეგების ესრეთ <app xml:id="app.20.11"><lem>თქუმაჲ</lem><rdg wit="#S" type="orthographic">თქუმა</rdg></app> ქართულად და არცა ჰშუენის ენასა ჩუენსა <app xml:id="app.20.12"><lem><term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონი</term> ბერძული</lem><rdg wit="#S" type="lexical">და ართრონნი ბერძულნი არიან</rdg></app> და <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term> ბერძულნი ქართულნი <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term> არა არიან.</p>
+            </div>
+            
+            <!-- SECTION 21: CHRYSOSTOM'S DEFENSE -->
+            <div type="section" n="21" xml:id="sec.21">
+                <p n="1">და ოდეს <app xml:id="app.21.1"><lem><term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონისათჳს</term></lem><rdg wit="#S" type="orthographic">ართრონთათვს</rdg></app> ითარგმანებოდის, <app xml:id="app.21.2"><lem>რაჲცა</lem><rdg wit="#S" type="orthographic">რაცა</rdg></app> სიტყუაჲ ბერძულისაგან, ბნელად <app xml:id="app.21.3"><lem>ვიდრემე</lem><rdg wit="#A" type="orthographic">ვითამე</rdg><rdg wit="#S" type="orthographic">ვითმე</rdg></app> და <app xml:id="app.21.4"><lem>შეუგუარად</lem><rdg wit="#A" type="orthographic">შეუგარად</rdg><rdg wit="#S" type="orthographic">უგურად</rdg></app> იქმნების <app xml:id="app.21.5"><lem>თარგმნაჲ</lem><rdg wit="#S" type="orthographic">თარგმნა</rdg></app> <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანისა</term> <app xml:id="app.21.6"><lem>სიტყჳსაჲ</lem><rdg wit="#S" type="orthographic">სიტყვსა</rdg></app>, ვითარცა ესერა ქმნილ არს ღმრთისმეტყუელისა და მახარებელისა <persName ref="#john-evangelist">იოანეს</persName> <app xml:id="app.21.7"><lem>მიერ</lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app> თქმულსა სიტყუასა შინა თავსა სახარებისასა, და <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონსა</term> ძისათჳს არა <app xml:id="app.21.8"><lem>დაჰრთავს</lem><rdg wit="#S" type="orthographic">დართავს</rdg></app>; ხოლო <persName ref="#chrysostom">იოანე ოქროპირი</persName> თარგმნის და განუმარტებს მწვალებელთა <app xml:id="app.21.9"><lem>სიტყუასა</lem><rdg wit="#S" type="orthographic">სიტყვსა</rdg></app> მას <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოსა</term> და აღუჴსნის მრავალთა გამოსაჩინებელთა მიერ, მეტყუელი, ვითარმედ: <q>დაღათუ აქა <app xml:id="app.21.10"><lem><term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონი</term></lem><rdg wit="#S" type="orthographic">ართონი</rdg></app> არა <app xml:id="app.21.11"><lem>იჴუმია</lem><rdg wit="#S" type="orthographic">იკუმუა</rdg></app> მახარებელმან, <milestone unit="folio" n="36v" ed="#A"/> რამეთუ არა შეჰგვანდა რეცა, და მრავალგზის <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოდცა</term> <app xml:id="app.21.12"><lem>იტყჳან მრავალნი წმიდათაგანნი და <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანადცა</term>; გარნა მრავალთაგან <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანადცა</term></lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app> <app xml:id="app.21.13"><lem>იტყჳს</lem><rdg wit="#S" type="orthographic">იტყ̃ვნ</rdg></app> ესევე მახარებელი და <app xml:id="app.21.14"><lem>ამით ვიდრემე</lem><rdg wit="#S" type="lexical">ამითვემე</rdg></app> <app xml:id="app.21.15"><lem>სახითა</lem><rdg wit="#S" type="orthographic">სახით</rdg></app> დაჰჴსნის მრავალგამომეძიებლობასა მწვალებელთასა.</q></p>
+            </div>
+            
+
+            <!-- SECTION 22: THE HERETICS' ARGUMENT AND CHRYSOSTOM'S REFUTATION -->
+            <div type="section" n="22" xml:id="sec.22">
+                <p n="1">ხოლო სიტყუაჲ იგი <app xml:id="app.22.1"><lem><term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოჲ</term></lem><rdg wit="#S" type="orthographic">უართრონო</rdg></app> ესე არს, რომლისა მიერ <app xml:id="app.22.2"><lem>წინა-აღუდგებიან</lem><rdg wit="#A" type="orthographic">წინა-აღდგებიან</rdg></app> მწვალებელნი, ვითარმედ: <q><quote xml:lang="ka">ღმერთი იყო სიტყუაჲ</quote></q>. რამეთუ არა ესრეთ თქუაო მახარებელმან, ვითარმედ: <q><mentioned xml:lang="ka">ო თეოს</mentioned> <gloss><foreign xml:lang="grc">ὁ θεός</foreign></gloss> იყო სიტყუად</q>, არამედ ვითარმედ: <q><mentioned xml:lang="ka">თეოს</mentioned> <gloss><foreign xml:lang="grc">θεός</foreign></gloss> იყო სიტყუაჲ</q>. და რამეთუ ესრეთ <app xml:id="app.22.3"><lem>თქუმაჲ</lem><rdg wit="#S" type="orthographic">თქუმად</rdg></app>, თუ: <q><mentioned xml:lang="ka">ო თეოს</mentioned> <gloss><foreign xml:lang="grc">ὁ θεός</foreign></gloss></q> <term target="#lex.arthroniani" ana="#gramm.arthroniani">ართრონიანი</term> არს, რაჟამს <mentioned xml:lang="ka">ონ</mentioned>-ი თავით კერძო დაუსუა; და რაჟამს <mentioned xml:lang="ka">ონ</mentioned>-ი, რომელ არს <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონი</term>, არა დაუსუა თავით კერძო, ესრეთ ითქუმის, ვითარმედ: <q><mentioned xml:lang="ka">თეოს</mentioned> <gloss><foreign xml:lang="grc">θεός</foreign></gloss></q>. <app xml:id="app.22.4"><lem>და</lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app> აქა სიტყუასა ამას შინა არა არს <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონი</term>, რომელსა ღმრთისმეტყუელი იტყჳს, ვითარმედ: <q><quote xml:lang="ka">ღმერთი იყო სიტყუაჲ</quote></q>. რამეთუ არა <app xml:id="app.22.5"><lem>იტყოდის</lem><rdg wit="#S" type="orthographic">იტყ̃დეს</rdg></app>, თუ: <q>ო ღმერთი იყო სიტყუაჲ</q>, არამედ ვითარმედ: <q><quote xml:lang="ka">ღმერთი იყო სიტყუაჲ</quote></q>. და ამისთჳს იტყოდეს მწვალებელნი, ვითარმედ: <q>უკუეთუ <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონოდ</term> აჴსენებს ღმრთად ძესა, არა <app xml:id="app.22.6"><lem>სადამე</lem><rdg wit="#A" type="orthographic">სადმე</rdg></app> სწორ არსო მამისა ძე, რამეთუ <term target="#lex.uarthrono" ana="#gramm.uarthrono">უართრონობაჲ</term> უმდაბლესობასა გამოაჩინებსო ძისა მამისაგან</q>. გარნა დაჴსნის და უკუნარღუევს <app xml:id="app.22.7"><lem>ყოველსა</lem><rdg wit="#S" type="morphological">ყოველთა</rdg></app> წმასნასა <app xml:id="app.22.8"><lem>მწვალებელთა</lem><rdg wit="#S" type="addition">მწვალებელთა და</rdg></app> <app xml:id="app.22.9"><lem>ძის-მბრძოლთასა</lem><note type="scribal" resp="#A">In A, this word is connected to the following by a compositional arc</note></app> დიდი ესე წმიდათა შორის <persName ref="#chrysostom">იოანე ოქროპირი</persName>.</p>
+            </div>
+            
+            <!-- SECTION 23: RELATIVE ARTICLES (SUBORDINATE ARTICLES) -->
+            <div type="section" n="23" xml:id="sec.23">
+                <p n="1">ხოლო არიან დამორჩილებითნი ამათ პირველთა <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონთანი</term> <app xml:id="app.23.1"><lem>სხუანიცა <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term></lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app>, ათ-ათი <app xml:id="app.23.2"><lem>თითოეულისა</lem><rdg wit="#S" type="orthographic">თჳთეულისა</rdg></app> <term target="#lex.gender" ana="#gramm.gender">ნათესავისა</term> და დამორჩილებული, რომელ არიან ესე:</p>
+                
+                <!-- Masculine relative articles -->
+                <p n="2"><term target="#lex.masc" ana="#gramm.masc" corresp="http://purl.org/olia/olia.owl#Masculine">მამალთანი</term> ვიდრემე:</p>
+                <p n="3" xml:id="sec.23.masc.sing">
+                    <mentioned xml:lang="ka">ოს</mentioned> <gloss><foreign xml:lang="grc">ὅς</foreign></gloss>, 
+                    <app xml:id="app.23.3"><lem><mentioned xml:lang="ka">უ</mentioned></lem><rdg wit="#S" type="orthographic">ოსუ</rdg></app> <gloss><foreign xml:lang="grc">οὗ</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ᾧ</foreign></gloss>, 
+                    <app xml:id="app.23.4"><lem><mentioned xml:lang="ka">ონ</mentioned></lem><rdg wit="#S" type="orthographic">ონო</rdg></app> <gloss><foreign xml:lang="grc">ὅν</foreign></gloss>;
+                </p>
+                <p n="4" xml:id="sec.23.masc.dual">
+                    <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὥ</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ოინ</mentioned> <gloss><foreign xml:lang="grc">οἷν</foreign></gloss>;
+                </p>
+                <milestone unit="folio" n="37r" ed="#A"/>
+                <p n="5" xml:id="sec.23.masc.plur">
+                    <mentioned xml:lang="ka">ჳ</mentioned> <gloss><foreign xml:lang="grc">οἵ</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ონ</mentioned> <gloss><foreign xml:lang="grc">ὧν</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ოის</mentioned> <gloss><foreign xml:lang="grc">οἷς</foreign></gloss>, 
+                    <mentioned xml:lang="ka">უს</mentioned> <gloss><foreign xml:lang="grc">οὕς</foreign></gloss>.
+                </p>
+                
+                <!-- Feminine relative articles -->
+                <p n="6">ხოლო <term target="#lex.fem" ana="#gramm.fem" corresp="http://purl.org/olia/olia.owl#Feminine">დედალთანი</term> დამორჩილებითნი:</p>
+                <p n="7" xml:id="sec.23.fem.sing">
+                    <mentioned xml:lang="ka">ი</mentioned> <gloss><foreign xml:lang="grc">ἥ</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ეს</mentioned> <gloss><foreign xml:lang="grc">ἧς</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ი</mentioned> <gloss><foreign xml:lang="grc">ᾗ</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ენ</mentioned> <gloss><foreign xml:lang="grc">ἥν</foreign></gloss>;
+                </p>
+                <p n="8" xml:id="sec.23.fem.dual">
+                    <app xml:id="app.23.5"><lem><mentioned xml:lang="ka">ო</mentioned></lem><rdg wit="#A" type="orthographic">ა</rdg></app> <gloss><foreign xml:lang="grc">ὥ</foreign></gloss>, 
+                    <app xml:id="app.23.6"><lem><mentioned xml:lang="ka">ჳნ</mentioned></lem><rdg wit="#A" type="orthographic">ენ</rdg><rdg wit="#S" type="orthographic">ენ</rdg></app> <gloss><foreign xml:lang="grc">οἷν</foreign></gloss>;
+                </p>
+                <p n="9" xml:id="sec.23.fem.plur">
+                    <mentioned xml:lang="ka">ე</mentioned> <gloss><foreign xml:lang="grc">αἵ</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ონ</mentioned> <gloss><foreign xml:lang="grc">ὧν</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ეს</mentioned> <gloss><foreign xml:lang="grc">αἷς</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ას</mentioned> <gloss><foreign xml:lang="grc">ἅς</foreign></gloss>.
+                </p>
+                
+                <!-- Neuter relative articles -->
+                <p n="10">ხოლო <term target="#lex.neut" ana="#gramm.neut" corresp="http://purl.org/olia/olia.owl#Neuter">შუათანი</term> დამორჩილებითნი:</p>
+                <p n="11" xml:id="sec.23.neut.sing">
+                    <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὅ</foreign></gloss>, 
+                    <mentioned xml:lang="ka">უ</mentioned> <gloss><foreign xml:lang="grc">οὗ</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ᾧ</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὅ</foreign></gloss>;
+                </p>
+                <p n="12" xml:id="sec.23.neut.dual">
+                    <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὥ</foreign></gloss>, 
+                    <mentioned xml:lang="ka">ჳნ</mentioned> <gloss><foreign xml:lang="grc">οἷν</foreign></gloss>;
+                </p>
+                <p n="13" xml:id="sec.23.neut.plur">
+                    <app xml:id="app.23.7"><lem><mentioned xml:lang="ka">ა</mentioned> <gloss><foreign xml:lang="grc">ἅ</foreign></gloss>, 
+                            <mentioned xml:lang="ka">ონ</mentioned> <gloss><foreign xml:lang="grc">ὧν</foreign></gloss>, 
+                            <mentioned xml:lang="ka">ჳს</mentioned> <gloss><foreign xml:lang="grc">οἷς</foreign></gloss>, 
+                            <mentioned xml:lang="ka">ა</mentioned> <gloss><foreign xml:lang="grc">ἅ</foreign></gloss></lem><rdg wit="#S" type="omission"><note>om. (eye-skip: scribe's eye jumped from ეს (fem. pl. dat.) to ონ (neut. pl. gen.), omitting 10 forms)</note></rdg></app>.
+                </p>
+            </div>
+            
+            <!-- SECTION 24: CONCLUSION -->
+            <div type="section" n="24" xml:id="sec.24">
+                <milestone unit="folio" n="108v" ed="#S"/>
+                <p n="1">ესენი ვიდრემე დამორჩილებითნი არიან პირველთა <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონთანი</term> <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term> ესეცა; გარნა ვინაჲთგან ამათსაცა ძალსა აწ <app xml:id="app.24.1"><lem>განმარტებაჲ</lem><rdg wit="#S" type="orthographic">განმართებაჲ</rdg></app> სატჳრთოდ აღუჩნდებოდა მკითხველსა და აწინდელსა სიტყუასა ამათისა ძალისა განმარტებაჲ <app xml:id="app.24.2"><lem>არარად</lem><rdg wit="#S" type="orthographic">არად</rdg></app> ეჴმარებოდა, ამისთჳს <app xml:id="app.24.3"><lem>ნამეტავად</lem><rdg wit="#S" type="orthographic">ნამეტნავად</rdg></app> <app xml:id="app.24.4"><lem>ვჰგონეთ</lem><rdg wit="#S" type="orthographic">ჰგონეთ</rdg></app> <app xml:id="app.24.5"><lem>ამათთჳს</lem><rdg wit="#S" type="orthographic">ამისთვს</rdg></app> სიტყჳსა <app xml:id="app.24.6"><lem>განვრცობაჲ</lem><rdg wit="#S" type="orthographic">განვრცომა</rdg></app>, ვინაჲთგან და თჳთ პირველთა <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონთა</term> ძლითიცა ესე სიტყუაჲ ნუუკუე და საწყინო უჩნდეს მკითხველსა <app xml:id="app.24.7"><lem>სიმრავლისათჳს</lem><rdg wit="#S" type="morphological">სიმრავლისაგან</rdg></app> ქცევათა სახელისათა. გარნა აჩუენოს თუ მოსწრაფებაჲ, გულსმოდგინებით მრავალ გზის, და უწყინოდ წარკითხვითა ყოველივე განმარტებულად <app xml:id="app.24.8"><lem>ეპოვოს</lem><rdg wit="#S" type="orthographic">ეპოოს</rdg></app> <app xml:id="app.24.9"><lem>ძალი</lem><rdg wit="#S" type="orthographic">ძალი რ̃ი</rdg></app> <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონთა</term> <app xml:id="app.24.10"><lem>ვითარებისაჲ</lem><rdg wit="#S" type="lexical">ვედრებისაჲ</rdg></app>, თუ <app xml:id="app.24.11"><lem>რანი</lem><rdg wit="#S" type="orthographic">რ̃ჲნი</rdg></app> არიან <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term>, ვინაჲთგან თჳნიერ ტკივილისა შეუძლებელ არს <app xml:id="app.24.12"><lem>ყოველი</lem><rdg wit="#S" type="morphological">ყოვლისა</rdg></app> <app xml:id="app.24.13"><lem>საქმე</lem><rdg wit="#S" type="morphological">საქმისა</rdg></app> მოღუაწებად.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -531,7 +531,7 @@
                 <p n="1"><app xml:id="app.3.1"><lem>და <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term></lem><rdg wit="#A" type="omission">ართრონნი</rdg></app> <app xml:id="app.3.2"><lem>თითოეულისა</lem><rdg wit="#S" type="orthographic">თჳთეულისა</rdg></app> <app xml:id="app.3.3"><lem><term target="#lex.gender" ana="#gramm.gender">ნათესავისანი</term></lem><rdg wit="#S" type="morphological">ნათესავნი</rdg></app> არიან ათცამეტ; ათცამეტნი ვინაჲ <term target="#lex.masc" ana="#gramm.masc" corresp="http://purl.org/olia/olia.owl#Masculine">მამლისა</term> ვიდრემე <app xml:id="app.3.4"><lem><term target="#lex.gender" ana="#gramm.gender">ნათესავისანი</term></lem><rdg wit="#S" type="morphological">ნათესავნი</rdg></app> რომელთა ყოველთა <term target="#lex.dreka" ana="#gramm.case" corresp="http://purl.org/olia/olia.owl#Case">დრეკათა</term> შინა სახელთასა წინა დაუსხმენ სახელთა, არიან ესე:</p>
                 
                 <!-- Masculine singular articles -->
-                <p n="2" xml:id="sec.3.masc.sing">
+                <p n="2" xml:id="sec.3.masc.sing" rend="examples">
                     <app xml:id="app.3.5"><lem><mentioned xml:lang="ka">ო</mentioned></lem><rdg wit="#S" type="orthographic">ო ო</rdg></app> <gloss><foreign xml:lang="grc">ὁ</foreign></gloss>, 
                     <app xml:id="app.3.6"><lem><mentioned xml:lang="ka">ტუ</mentioned></lem><rdg wit="#S" type="orthographic">ტოო</rdg></app> <gloss><foreign xml:lang="grc">τοῦ</foreign></gloss>, 
                     <mentioned xml:lang="ka">ტო</mentioned> <gloss><foreign xml:lang="grc">τῷ</foreign></gloss>, 
@@ -540,14 +540,14 @@
                 </p>
                 
                 <!-- Masculine dual articles -->
-                <p n="3" xml:id="sec.3.masc.dual">
+                <p n="3" xml:id="sec.3.masc.dual" rend="examples">
                     <mentioned xml:lang="ka">ტო</mentioned> <gloss><foreign xml:lang="grc">τώ</foreign></gloss>, 
                     <mentioned xml:lang="ka">ტჳნ</mentioned> <gloss><foreign xml:lang="grc">τοῖν</foreign></gloss>, 
                     <app xml:id="app.3.9"><lem><mentioned xml:lang="ka">ო</mentioned></lem><rdg wit="#S" type="orthographic">ო ო</rdg></app> <gloss><foreign xml:lang="grc">ὦ</foreign></gloss>;
                 </p>
                 
                 <!-- Masculine plural articles -->
-                <p n="4" xml:id="sec.3.masc.plur">
+                <p n="4" xml:id="sec.3.masc.plur" rend="examples">
                     <mentioned xml:lang="ka">ჳ</mentioned> <gloss><foreign xml:lang="grc">οἱ</foreign></gloss>, 
                     <mentioned xml:lang="ka">ტონ</mentioned> <gloss><foreign xml:lang="grc">τῶν</foreign></gloss>, 
                     <mentioned xml:lang="ka">ტჳს</mentioned> <gloss><foreign xml:lang="grc">τοῖς</foreign></gloss>, 
@@ -569,7 +569,7 @@
                 <p n="1"><app xml:id="app.5.1"><lem><term target="#lex.dual" ana="#gramm.dual" corresp="http://purl.org/olia/olia.owl#Dual">ორობითთანიცა</term></lem><rdg wit="#S" type="orthographic">ორობითნიცა</rdg></app> ხუთნი არიან და <term target="#lex.plural" ana="#gramm.plur" corresp="http://purl.org/olia/olia.owl#Plural">განმრავლებით[თა]ნიცა</term>; გარნა <term target="#lex.dual" ana="#gramm.dual" corresp="http://purl.org/olia/olia.owl#Dual">ორობითთასა</term> <app xml:id="app.5.2"><lem>ორთა</lem><rdg wit="#S" type="morphological">ორსა</rdg></app> <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონთა</term> გარდაარწყუმენ სხუათა ორთა ზედა. ამისთჳს, ხუთთაგან ორნი რაჲ ორთა ზედა გარდაარწყუნე, სამად შეიქმნებიან, რომელ არიან პირველისა და ერთისა სახელისანი ესე:</p>
                 
                 <!-- Singular forms that overlap with dual -->
-                <p n="2" xml:id="sec.5.sing">
+                <p n="2" xml:id="sec.5.sing" rend="examples">
                     <app xml:id="app.5.3"><lem><mentioned xml:lang="ka">ო</mentioned></lem><rdg wit="#S" type="orthographic">ო ო</rdg></app> <mentioned xml:lang="ka">ტო</mentioned> <gloss><foreign xml:lang="grc">τώ</foreign></gloss>, 
                     <mentioned xml:lang="ka">ტოინ</mentioned> <gloss><foreign xml:lang="grc">τοῖν</foreign></gloss>, 
                     <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὦ</foreign></gloss>;
@@ -578,7 +578,7 @@
                 <p n="3">ხოლო <app xml:id="app.5.4"><lem><term target="#lex.dual" ana="#gramm.dual" corresp="http://purl.org/olia/olia.owl#Dual">ორობითისანი</term></lem><rdg wit="#S" type="orthographic">ორობით̃თსნი</rdg></app>, რომელნი ორთა პირთა საცნაურ-ჰყოფენ მხოლოდ, ესენი არიან:</p>
                 
                 <!-- Dual forms -->
-                <p n="4" xml:id="sec.5.dual">
+                <p n="4" xml:id="sec.5.dual" rend="examples">
                     <mentioned xml:lang="ka">ტო</mentioned> <gloss><foreign xml:lang="grc">τώ</foreign></gloss>, 
                     <mentioned xml:lang="ka">ტოინ</mentioned> <gloss><foreign xml:lang="grc">τοῖν</foreign></gloss>, 
                     <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὦ</foreign></gloss>;
@@ -587,7 +587,7 @@
                 <p n="5">და <term target="#lex.plural" ana="#gramm.plur" corresp="http://purl.org/olia/olia.owl#Plural">განმრავლებითთა</term> ესენი საცნაურ-ჰყოფენ:</p>
                 
                 <!-- Plural forms -->
-                <p n="6" xml:id="sec.5.plur">
+                <p n="6" xml:id="sec.5.plur" rend="examples">
                     <mentioned xml:lang="ka">ჳ</mentioned> <gloss><foreign xml:lang="grc">οἱ</foreign></gloss>, 
                     <mentioned xml:lang="ka">ტონ</mentioned> <gloss><foreign xml:lang="grc">τῶν</foreign></gloss>, 
                     <mentioned xml:lang="ka">ტჳს</mentioned> <gloss><foreign xml:lang="grc">τοῖς</foreign></gloss>, 
@@ -640,7 +640,7 @@
                 <p n="1">ხოლო <term target="#lex.fem" ana="#gramm.fem" corresp="http://purl.org/olia/olia.owl#Feminine">დედლისა</term> სახელისა <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term> თავით კერძო დასასხმელნი, ვითარცა საფუძველნი რაჲმე და <app xml:id="app.12.1"><lem>საშუენებელნი</lem><rdg wit="#S" type="orthographic">ს̃შუჱბლნი</rdg></app>, ვითარცა <app xml:id="app.12.2"><lem>ზემო</lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app> გჳთქუამს, არიან ესე:</p>
                 
                 <!-- Feminine singular articles -->
-                <p n="2" xml:id="sec.12.fem.sing">
+                <p n="2" xml:id="sec.12.fem.sing" rend="examples">
                     <mentioned xml:lang="ka">ი</mentioned> <gloss><foreign xml:lang="grc">ἡ</foreign></gloss>, 
                     <mentioned xml:lang="ka">ტეს</mentioned> <gloss><foreign xml:lang="grc">τῆς</foreign></gloss>, 
                     <app xml:id="app.12.3"><lem><mentioned xml:lang="ka">ტი</mentioned> <gloss><foreign xml:lang="grc">τῇ</foreign></gloss></lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app>, 
@@ -649,14 +649,14 @@
                 </p>
                 
                 <!-- Feminine dual articles -->
-                <p n="3" xml:id="sec.12.fem.dual">
+                <p n="3" xml:id="sec.12.fem.dual" rend="examples">
                     <mentioned xml:lang="ka">ტა</mentioned> <gloss><foreign xml:lang="grc">τά</foreign></gloss>, 
                     <app xml:id="app.12.4"><lem><mentioned xml:lang="ka">ტენ</mentioned> <gloss><foreign xml:lang="grc">ταῖν</foreign></gloss></lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app>, 
                     <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὦ</foreign></gloss>;
                 </p>
                 
                 <!-- Feminine plural articles -->
-                <p n="4" xml:id="sec.12.fem.plur">
+                <p n="4" xml:id="sec.12.fem.plur" rend="examples">
                     <mentioned xml:lang="ka">ე</mentioned> <gloss><foreign xml:lang="grc">αἱ</foreign></gloss>, 
                     <app xml:id="app.12.5"><lem><mentioned xml:lang="ka">ტონ</mentioned></lem><rdg wit="#S" type="orthographic">ტჳნ</rdg></app> <gloss><foreign xml:lang="grc">τῶν</foreign></gloss>, 
                     <app xml:id="app.12.6"><lem><mentioned xml:lang="ka">ტეს</mentioned> <gloss><foreign xml:lang="grc">ταῖς</foreign></gloss></lem><rdg wit="#S" type="omission"><note>om.</note></rdg></app>, 
@@ -694,7 +694,7 @@
                 <p n="1">ამითვე სახითა <term target="#lex.neut" ana="#gramm.neut" corresp="http://purl.org/olia/olia.owl#Neuter">შუანი</term> <term target="#lex.arthron" ana="#gramm.arthron" corresp="http://purl.org/olia/olia.owl#Article">ართრონნი</term> არიან, რამეთუ ჰგვანან ვიდრემე <app xml:id="app.16.1"><lem>რიცხჳთაცა</lem><rdg wit="#S" type="orthographic">რიცხვ̃ცა</rdg></app> და <app xml:id="app.16.2"><lem>გუარითა</lem><rdg wit="#S" type="orthographic">გუარითცა</rdg></app> <app xml:id="app.16.3"><lem><term target="#lex.dreka" ana="#gramm.case" corresp="http://purl.org/olia/olia.owl#Case">დრეკისაჲთა</term></lem><rdg wit="#S" type="orthographic">დრეკისათა</rdg></app>, გარნა განიყოფებიან <term target="#lex.masc" ana="#gramm.masc" corresp="http://purl.org/olia/olia.owl#Masculine">მამალთა</term> და <term target="#lex.fem" ana="#gramm.fem" corresp="http://purl.org/olia/olia.owl#Feminine">დედალთაგან</term>. და ზემო თქუმულნი არიან <term target="#lex.masc" ana="#gramm.masc" corresp="http://purl.org/olia/olia.owl#Masculine">მამალნი</term> და <term target="#lex.fem" ana="#gramm.fem" corresp="http://purl.org/olia/olia.owl#Feminine">დედალნი</term>; ხოლო რომელთა აწ <app xml:id="app.16.4"><lem>ვიტყჳთ</lem><rdg wit="#S" type="orthographic">ვიტყვ̃</rdg></app>, არიან <term target="#lex.neut" ana="#gramm.neut" corresp="http://purl.org/olia/olia.owl#Neuter">შუანი</term>:</p>
                 
                 <!-- Neuter singular articles -->
-                <p n="2" xml:id="sec.16.neut.sing">
+                <p n="2" xml:id="sec.16.neut.sing" rend="examples">
                     <mentioned xml:lang="ka">ტო</mentioned> <gloss><foreign xml:lang="grc">τό</foreign></gloss>, 
                     <mentioned xml:lang="ka">ტუ</mentioned> <gloss><foreign xml:lang="grc">τοῦ</foreign></gloss>, 
                     <mentioned xml:lang="ka">ტო</mentioned> <gloss><foreign xml:lang="grc">τῷ</foreign></gloss>, 
@@ -703,14 +703,14 @@
                 </p>
                 
                 <!-- Neuter dual articles -->
-                <p n="3" xml:id="sec.16.neut.dual">
+                <p n="3" xml:id="sec.16.neut.dual" rend="examples">
                     <mentioned xml:lang="ka">ტო</mentioned> <gloss><foreign xml:lang="grc">τώ</foreign></gloss>, 
                     <mentioned xml:lang="ka">ტოინ</mentioned> <gloss><foreign xml:lang="grc">τοῖν</foreign></gloss>, 
                     <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὦ</foreign></gloss>;
                 </p>
                 
                 <!-- Neuter plural articles -->
-                <p n="4" xml:id="sec.16.neut.plur">
+                <p n="4" xml:id="sec.16.neut.plur" rend="examples">
                     <mentioned xml:lang="ka">ტა</mentioned> <gloss><foreign xml:lang="grc">τά</foreign></gloss>, 
                     <app xml:id="app.16.5"><lem><mentioned xml:lang="ka">ტონ</mentioned></lem><rdg wit="#S" type="orthographic">ტუნ</rdg></app> <gloss><foreign xml:lang="grc">τῶν</foreign></gloss>, 
                     <mentioned xml:lang="ka">ტოის</mentioned> <gloss><foreign xml:lang="grc">τοῖς</foreign></gloss>, 
@@ -765,18 +765,18 @@
                 
                 <!-- Masculine relative articles -->
                 <p n="2"><term target="#lex.masc" ana="#gramm.masc" corresp="http://purl.org/olia/olia.owl#Masculine">მამალთანი</term> ვიდრემე:</p>
-                <p n="3" xml:id="sec.23.masc.sing">
+                <p n="3" xml:id="sec.23.masc.sing" rend="examples">
                     <mentioned xml:lang="ka">ოს</mentioned> <gloss><foreign xml:lang="grc">ὅς</foreign></gloss>, 
                     <app xml:id="app.23.3"><lem><mentioned xml:lang="ka">უ</mentioned></lem><rdg wit="#S" type="orthographic">ოსუ</rdg></app> <gloss><foreign xml:lang="grc">οὗ</foreign></gloss>, 
                     <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ᾧ</foreign></gloss>, 
                     <app xml:id="app.23.4"><lem><mentioned xml:lang="ka">ონ</mentioned></lem><rdg wit="#S" type="orthographic">ონო</rdg></app> <gloss><foreign xml:lang="grc">ὅν</foreign></gloss>;
                 </p>
-                <p n="4" xml:id="sec.23.masc.dual">
+                <p n="4" xml:id="sec.23.masc.dual" rend="examples">
                     <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὥ</foreign></gloss>, 
                     <mentioned xml:lang="ka">ოინ</mentioned> <gloss><foreign xml:lang="grc">οἷν</foreign></gloss>;
                 </p>
                 <milestone unit="folio" n="37r" ed="#A"/>
-                <p n="5" xml:id="sec.23.masc.plur">
+                <p n="5" xml:id="sec.23.masc.plur" rend="examples">
                     <mentioned xml:lang="ka">ჳ</mentioned> <gloss><foreign xml:lang="grc">οἵ</foreign></gloss>, 
                     <mentioned xml:lang="ka">ონ</mentioned> <gloss><foreign xml:lang="grc">ὧν</foreign></gloss>, 
                     <mentioned xml:lang="ka">ოის</mentioned> <gloss><foreign xml:lang="grc">οἷς</foreign></gloss>, 
@@ -785,17 +785,17 @@
                 
                 <!-- Feminine relative articles -->
                 <p n="6">ხოლო <term target="#lex.fem" ana="#gramm.fem" corresp="http://purl.org/olia/olia.owl#Feminine">დედალთანი</term> დამორჩილებითნი:</p>
-                <p n="7" xml:id="sec.23.fem.sing">
+                <p n="7" xml:id="sec.23.fem.sing" rend="examples">
                     <mentioned xml:lang="ka">ი</mentioned> <gloss><foreign xml:lang="grc">ἥ</foreign></gloss>, 
                     <mentioned xml:lang="ka">ეს</mentioned> <gloss><foreign xml:lang="grc">ἧς</foreign></gloss>, 
                     <mentioned xml:lang="ka">ი</mentioned> <gloss><foreign xml:lang="grc">ᾗ</foreign></gloss>, 
                     <mentioned xml:lang="ka">ენ</mentioned> <gloss><foreign xml:lang="grc">ἥν</foreign></gloss>;
                 </p>
-                <p n="8" xml:id="sec.23.fem.dual">
+                <p n="8" xml:id="sec.23.fem.dual" rend="examples">
                     <app xml:id="app.23.5"><lem><mentioned xml:lang="ka">ო</mentioned></lem><rdg wit="#A" type="orthographic">ა</rdg></app> <gloss><foreign xml:lang="grc">ὥ</foreign></gloss>, 
                     <app xml:id="app.23.6"><lem><mentioned xml:lang="ka">ჳნ</mentioned></lem><rdg wit="#A" type="orthographic">ენ</rdg><rdg wit="#S" type="orthographic">ენ</rdg></app> <gloss><foreign xml:lang="grc">οἷν</foreign></gloss>;
                 </p>
-                <p n="9" xml:id="sec.23.fem.plur">
+                <p n="9" xml:id="sec.23.fem.plur" rend="examples">
                     <mentioned xml:lang="ka">ე</mentioned> <gloss><foreign xml:lang="grc">αἵ</foreign></gloss>, 
                     <mentioned xml:lang="ka">ონ</mentioned> <gloss><foreign xml:lang="grc">ὧν</foreign></gloss>, 
                     <mentioned xml:lang="ka">ეს</mentioned> <gloss><foreign xml:lang="grc">αἷς</foreign></gloss>, 
@@ -804,17 +804,17 @@
                 
                 <!-- Neuter relative articles -->
                 <p n="10">ხოლო <term target="#lex.neut" ana="#gramm.neut" corresp="http://purl.org/olia/olia.owl#Neuter">შუათანი</term> დამორჩილებითნი:</p>
-                <p n="11" xml:id="sec.23.neut.sing">
+                <p n="11" xml:id="sec.23.neut.sing" rend="examples">
                     <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὅ</foreign></gloss>, 
                     <mentioned xml:lang="ka">უ</mentioned> <gloss><foreign xml:lang="grc">οὗ</foreign></gloss>, 
                     <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ᾧ</foreign></gloss>, 
                     <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὅ</foreign></gloss>;
                 </p>
-                <p n="12" xml:id="sec.23.neut.dual">
+                <p n="12" xml:id="sec.23.neut.dual" rend="examples">
                     <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc">ὥ</foreign></gloss>, 
                     <mentioned xml:lang="ka">ჳნ</mentioned> <gloss><foreign xml:lang="grc">οἷν</foreign></gloss>;
                 </p>
-                <p n="13" xml:id="sec.23.neut.plur">
+                <p n="13" xml:id="sec.23.neut.plur" rend="examples">
                     <app xml:id="app.23.7"><lem><mentioned xml:lang="ka">ა</mentioned> <gloss><foreign xml:lang="grc">ἅ</foreign></gloss>, 
                             <mentioned xml:lang="ka">ონ</mentioned> <gloss><foreign xml:lang="grc">ὧν</foreign></gloss>, 
                             <mentioned xml:lang="ka">ჳს</mentioned> <gloss><foreign xml:lang="grc">οἷς</foreign></gloss>, 

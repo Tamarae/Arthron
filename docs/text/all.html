@@ -104,6 +104,14 @@ section:hover .section-anchor {
     transition: all 0.2s ease;
 }
 
+.examples-line {
+    display: block;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-indent: 0;
+}
+
 /* Marginal notes - scholarly margin annotation */
 .marginal-note {
     display: block;
@@ -154,8 +162,8 @@ section:hover .section-anchor {
     font-style: italic;
 }
 .instruction-marker::before {
-    content: '⁘ ';
-    font-size: 0.8em;
+    content: '⹁ ';
+    font-size: 2rem;
     color: #dc2626;
 }
 
@@ -222,6 +230,84 @@ section:hover .section-anchor {
     background: #e5e7eb;
     color: #374151;
 }
+
+/* Editorial Guidelines Collapsible */
+.editorial-guidelines {
+    margin-bottom: 1.5rem;
+}
+.editorial-guidelines summary {
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.15s;
+}
+.editorial-guidelines summary:hover {
+    background: #f3f4f6;
+}
+.editorial-guidelines[open] summary {
+    border-radius: 0.5rem 0.5rem 0 0;
+    border-bottom: none;
+}
+.editorial-guidelines summary::marker,
+.editorial-guidelines summary::-webkit-details-marker {
+    display: none;
+}
+.editorial-guidelines .chevron {
+    transition: transform 0.2s;
+}
+.editorial-guidelines[open] .chevron {
+    transform: rotate(90deg);
+}
+.editorial-guidelines-content {
+    border: 1px solid #e5e7eb;
+    border-top: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 1.25rem;
+    background: white;
+    font-size: 0.875rem;
+    line-height: 1.7;
+}
+.editorial-guidelines-content h3 {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #374151;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.editorial-guidelines-content h3:first-child {
+    margin-top: 0;
+}
+.editorial-guidelines-content dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.25rem 1rem;
+}
+.editorial-guidelines-content dt {
+    font-family: 'Noto Serif Georgian', serif;
+    color: #1f2937;
+}
+.editorial-guidelines-content dd {
+    color: #6b7280;
+}
+.editorial-guidelines-content .sign {
+    font-weight: 600;
+    color: #b45309;
+}
+.editorial-guidelines-content .example {
+    font-family: 'Noto Serif Georgian', serif;
+    background: #fffbeb;
+    padding: 0 0.25rem;
+    border-radius: 2px;
+}
     </style>
 </head>
 <body class="bg-parchment text-ink antialiased">
@@ -257,6 +343,60 @@ section:hover .section-anchor {
             <button id="wit-s" class="witness-toggle px-3 py-1 bg-white border border-gray-300 text-gray-600 rounded text-xs hover:bg-gray-50" data-witness="S" title="ხელნაწერი S (სინა)">S</button>
         </div>
     </div>
+
+     <!-- Editorial Guidelines (Collapsible) -->
+    <details class="editorial-guidelines">
+        <summary>
+            <svg class="chevron w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+            სარედაქციო პრინციპები და აღნიშვნები
+        </summary>
+        <div class="editorial-guidelines-content text-gray-700">
+            <h3>ტექსტის წყარო</h3>
+            <p class="mb-3">
+                წინამდებარე გამოცემა ემყარება მზექალა შანიძის კვლევას (1990), რომელშიც კრიტიკული ტექსტი შეჯერებულია 
+                ორი ხელნაწერის მიხედვით: <strong>A</strong> (ათონის ივერთა მონასტრი, A-6) 
+                და <strong>S</strong> (საფარული კრებული, თბილისი S-132).
+            </p>
+
+            <h3>კრიტიკული აპარატი</h3>
+            <p class="mb-3">
+                ტექსტში ვარიანტული კითხვები აღნიშნულია ნუმერაციით (<span class="sign">¹ ² ³</span>). 
+                აპარატში მოცემულია ლემა (საბაზისო წაკითხვა) და მისი ვარიანტი ხელნაწერის სიგლით.
+            </p>
+            <dl class="mb-3">
+                <dt><span class="sign">]</span></dt>
+                <dd>გამყოფი ლემასა და ვარიანტს შორის</dd>
+                <dt><span class="example">om.</span></dt>
+                <dd>გამოტოვებული (omisit)</dd>
+            </dl>
+
+            <h3>სარედაქციო ნიშნები</h3>
+            <dl class="mb-3">
+                <dt><span class="sign">⹁</span></dt>
+                <dd>სასწავლო მინიშნება („შეისწავე" ტექსტში მითითებულია მძიმის მსგავსი მარჯვნივ წაწვეტებული ნიშნით - მ. შ.)</dd>
+                <dt><span class="sign">‖</span></dt>
+                <dd>სტრიქონზე გადატანა ხელნაწერში</dd>
+                <dt><span class="sign">[ ]</span></dt>
+                <dd>რედაქტორის მიერ შევსებული ლაკუნა</dd>
+                <dt class="example">დედალნი</dt>
+                <dd>აშიაზე მინაწერი (მარგინალია)</dd>
+            </dl>
+
+            <h3>ხელნაწერთა შერჩევა</h3>
+            <p class="mb-3">
+                ღილაკებით <strong>A</strong> და <strong>S</strong> შეგიძლიათ აირჩიოთ ხელნაწერი. 
+                ძირითადი ტექსტი (ლემა) წარმოადგენს რედაქტორის მიერ დადგენილ წაკითხვას.
+            </p>
+
+            <h3>ლექსიკონთან კავშირი</h3>
+            <p>
+                <span class="text-indigo-600 underline decoration-indigo-300">ხაზგასმული ტერმინები</span> 
+                დაკავშირებულია ლექსიკონთან. დააწკაპეთ განმარტების სანახავად.
+            </p>
+        </div>
+    </details>
     
     <!-- Witness Info Bar -->
     <div class="witness-bar bg-gray-50 border border-gray-200 rounded-lg px-4 py-2.5 mb-6 flex items-center justify-between text-sm">
@@ -273,6 +413,8 @@ section:hover .section-anchor {
             </svg>
         </a>
     </div>
+
+   
 
     <!-- Text Container -->
     <article id="text-article" class="bg-white rounded-lg border border-gray-200 relative">
@@ -327,9 +469,11 @@ section:hover .section-anchor {
                                 
                 
                                 <span class="folio-marker inline-folio text-xs mx-1">[A 32r]</span>
+                            
                                 
                 
                                 <span class="folio-marker inline-folio text-xs mx-1">[S 106r]</span>
+                            
                                 
                 
                                 <span class="instruction-marker rubric" title="სასწავლო ნიშანი">შეისწავე</span>
@@ -517,6 +661,7 @@ section:hover .section-anchor {
                 
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="apparatus-inline" data-app-id="app.3.5">
@@ -555,11 +700,15 @@ section:hover .section-anchor {
                                 ὦ
                                 ;
                 
+                                </p><p class="text-justify">    
+
+
                                 
                 
                 
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="font-medium">ტო</span>                                 
@@ -578,11 +727,15 @@ section:hover .section-anchor {
                                 ὦ
                                 ;
                 
+                                </p><p class="text-justify">    
+
+
                                 
                 
                 
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="font-medium">ჳ</span>                                 
@@ -613,6 +766,9 @@ section:hover .section-anchor {
                                 ὦ
                                 .
                 
+                                </p><p class="text-justify">    
+
+
                                 
                 
                 
@@ -745,6 +901,7 @@ section:hover .section-anchor {
                 
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="apparatus-inline" data-app-id="app.5.3">
@@ -764,6 +921,9 @@ section:hover .section-anchor {
                                 ὦ
                                 ;
                 
+                                </p><p class="text-justify">    
+
+
                                 
                 
                 
@@ -778,6 +938,7 @@ section:hover .section-anchor {
                 
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="font-medium">ტო</span>                                 
@@ -792,6 +953,9 @@ section:hover .section-anchor {
                                 ὦ
                                 ;
                 
+                                </p><p class="text-justify">    
+
+
                                 
                 
                 
@@ -803,6 +967,7 @@ section:hover .section-anchor {
                 
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="font-medium">ჳ</span>                                 
@@ -825,6 +990,9 @@ section:hover .section-anchor {
                                 ὦ
                                 .
                 
+                                </p><p class="text-justify">    
+
+
                                 
             
                     </p>
@@ -1299,6 +1467,7 @@ section:hover .section-anchor {
                                 
                 
                                 <span class="folio-marker inline-folio text-xs mx-1">[A 34v]</span>
+                            
                                 
                 
                                 <span class="apparatus-inline" data-app-id="app.11.1">
@@ -1477,6 +1646,7 @@ section:hover .section-anchor {
                 
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="font-medium">ი</span>                                 
@@ -1501,11 +1671,15 @@ section:hover .section-anchor {
                                 ὦ
                                 ;
                 
+                                </p><p class="text-justify">    
+
+
                                 
                 
                 
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="font-medium">ტა</span>                                 
@@ -1522,11 +1696,15 @@ section:hover .section-anchor {
                                 ὦ
                                 ;
                 
+                                </p><p class="text-justify">    
+
+
                                 
                 
                 
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="font-medium">ე</span>                                 
@@ -1555,6 +1733,9 @@ section:hover .section-anchor {
                                 ὦ
                                 .
                 
+                                </p><p class="text-justify">    
+
+
                                 
             
                     </p>
@@ -1680,6 +1861,7 @@ section:hover .section-anchor {
                                 τὴν τριάδα
                                 ; 
                                 <span class="folio-marker inline-folio text-xs mx-1">[A 35r]</span>
+                            
                                  და 
                                 <a href="../lexicon/index.html#lex.voc" class="term-link" data-term="lex.voc" data-ana="#gramm.voc" data-corresp="http://purl.org/olia/olia.owl#VocativeCase" title="იხ. ლექსიკონში">წოდებითად</a>
                                  
@@ -1753,6 +1935,7 @@ section:hover .section-anchor {
                                 </span><sup class="apparatus-marker" data-app="app.14.3" title="იხ. აპარატი">118</sup>
                                  და 
                                 <span class="folio-marker inline-folio text-xs mx-1">[S 107v]</span>
+                            
                                  
                                 <a href="../lexicon/index.html#lex.dat" class="term-link" data-term="lex.dat" data-ana="#gramm.dat" data-corresp="http://purl.org/olia/olia.owl#DativeCase" title="იხ. ლექსიკონში">მიცემითად</a>
                                  
@@ -1962,6 +2145,7 @@ section:hover .section-anchor {
                 
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="font-medium">ტო</span>                                 
@@ -1984,11 +2168,15 @@ section:hover .section-anchor {
                                 ὦ
                                 ;
                 
+                                </p><p class="text-justify">    
+
+
                                 
                 
                 
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="font-medium">ტო</span>                                 
@@ -2003,11 +2191,15 @@ section:hover .section-anchor {
                                 ὦ
                                 ;
                 
+                                </p><p class="text-justify">    
+
+
                                 
                 
                 
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="font-medium">ტა</span>                                 
@@ -2034,6 +2226,9 @@ section:hover .section-anchor {
                                 ὦ
                                 .
                 
+                                </p><p class="text-justify">    
+
+
                                 
             
                     </p>
@@ -2064,6 +2259,7 @@ section:hover .section-anchor {
                                 
                 
                                 <span class="folio-marker inline-folio text-xs mx-1">[A 35v]</span>
+                            
                                 
                 
                                 და სულსა წმიდასა არა 
@@ -2298,6 +2494,7 @@ section:hover .section-anchor {
                 
                 
                                 <span class="folio-marker inline-folio text-xs mx-1">[A 36r]</span>
+                            
                                 
                 
                                 ხოლო ბერძულთავე 
@@ -2621,6 +2818,7 @@ section:hover .section-anchor {
                                  ვიდრემე:
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="font-medium">ოს</span>                                 
@@ -2647,8 +2845,12 @@ section:hover .section-anchor {
                                 ὅν
                                 ;
                 
+                                </p><p class="text-justify">    
+
+
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="font-medium">ო</span>                                 
@@ -2659,11 +2861,16 @@ section:hover .section-anchor {
                                 οἷν
                                 ;
                 
+                                </p><p class="text-justify">    
+
+
                                 
                 
                                 <span class="folio-marker inline-folio text-xs mx-1">[A 37r]</span>
+                            
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="font-medium">ჳ</span>                                 
@@ -2682,6 +2889,9 @@ section:hover .section-anchor {
                                 οὕς
                                 .
                 
+                                </p><p class="text-justify">    
+
+
                                 
                 
                 
@@ -2692,6 +2902,7 @@ section:hover .section-anchor {
                                  დამორჩილებითნი:
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="font-medium">ი</span>                                 
@@ -2710,8 +2921,12 @@ section:hover .section-anchor {
                                 ἥν
                                 ;
                 
+                                </p><p class="text-justify">    
+
+
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="apparatus-inline" data-app-id="app.23.5">
@@ -2730,8 +2945,12 @@ section:hover .section-anchor {
                                 οἷν
                                 ;
                 
+                                </p><p class="text-justify">    
+
+
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="font-medium">ე</span>                                 
@@ -2750,6 +2969,9 @@ section:hover .section-anchor {
                                 ἅς
                                 .
                 
+                                </p><p class="text-justify">    
+
+
                                 
                 
                 
@@ -2760,6 +2982,7 @@ section:hover .section-anchor {
                                  დამორჩილებითნი:
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="font-medium">ო</span>                                 
@@ -2778,8 +3001,12 @@ section:hover .section-anchor {
                                 ὅ
                                 ;
                 
+                                </p><p class="text-justify">    
+
+
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="font-medium">ო</span>                                 
@@ -2790,8 +3017,12 @@ section:hover .section-anchor {
                                 οἷν
                                 ;
                 
+                                </p><p class="text-justify">    
+
+
                                 
                 
+                                </p><p class="examples-line">
                                 
                     
                                 <span class="apparatus-inline" data-app-id="app.23.7">
@@ -2803,6 +3034,9 @@ section:hover .section-anchor {
                                 </span><sup class="apparatus-marker" data-app="app.23.7" title="იხ. აპარატი">165</sup>
                                 .
                 
+                                </p><p class="text-justify">    
+
+
                                 
             
                     </p>
@@ -2833,6 +3067,7 @@ section:hover .section-anchor {
                                 
                 
                                 <span class="folio-marker inline-folio text-xs mx-1">[S 108v]</span>
+                            
                                 
                 
                                 ესენი ვიდრემე დამორჩილებითნი არიან პირველთა 

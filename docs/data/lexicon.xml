@@ -606,13 +606,13 @@
                     <sense><def xml:lang="ka">შესაცდენელი.</def></sense>
                 </entry>
 
-                <entry xml:id="lex.sakmareba">
+                <entry xml:id="lex.saxmareba">
                     <form type="lemma">
-                        <orth xml:lang="ka">საკმარება</orth>
+                      <orth xml:lang="ka">საჴმარება</orth>
                         <orth xml:lang="ka" type="variant">საჴმარება</orth>
                     </form>
                     <sense><def xml:lang="ka">საჭიროება.</def></sense>
-                    <cit type="example"><quote xml:lang="ka">თითოეულისა საკმარებისაებრცა წარმოგჳჩენიან.</quote><bibl>§ 11</bibl></cit>
+                  <cit type="example"><quote xml:lang="ka">თითოეულისა საჴმარებისაებრცა წარმოგჳჩენიან.</quote><bibl>§ 11</bibl></cit>
                 </entry>
 
                 <entry xml:id="lex.siadre">

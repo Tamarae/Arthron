@@ -60,10 +60,40 @@
 .apparatus-inline {
     border-bottom: 1px dotted #d97706;
 }
+/* Type-specific variant colors for inline readings */
 .reading-s {
-    background: #fef3c7;
     padding: 0 2px;
     border-radius: 2px;
+}
+/* Default (no type or unknown) */
+.reading-s {
+    background: #f3f4f6;
+    color: #374151;
+}
+/* Orthographic - amber */
+.reading-s.var-ortho {
+    background: #fef3c7;
+    color: #92400e;
+}
+/* Lexical - blue */
+.reading-s.var-lex {
+    background: #dbeafe;
+    color: #1e40af;
+}
+/* Morphological - purple */
+.reading-s.var-morph {
+    background: #f3e8ff;
+    color: #6b21a8;
+}
+/* Omission - red */
+.reading-s.var-omit {
+    background: #fee2e2;
+    color: #991b1b;
+}
+/* Addition - green */
+.reading-s.var-add {
+    background: #dcfce7;
+    color: #166534;
 }
 .witness-toggle.active { 
     background: #1a1a1a; 
@@ -229,6 +259,42 @@ section:hover .copy-urn {
 .del s {
     text-decoration: line-through;
     text-decoration-color: #d1d5db;
+}
+
+/* Plain text mode - removes all scholarly markup styling */
+.plain-text-mode .supplied {
+    color: inherit;
+}
+.plain-text-mode .bracket {
+    display: none;
+}
+.plain-text-mode .term-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: text;
+    pointer-events: none;
+}
+.plain-text-mode .apparatus-inline {
+    border-bottom: none;
+}
+.plain-text-mode .apparatus-marker {
+    display: none;
+}
+.plain-text-mode .section-apparatus,
+.plain-text-mode .combined-apparatus {
+    display: none;
+}
+.plain-text-mode .greek {
+    font-style: normal;
+}
+.plain-text-mode .instruction-marker::before {
+    content: none;
+}
+.plain-text-mode .marginal-note {
+    display: none;
+}
+.plain-text-mode .linebreak {
+    display: none;
 }
 
 /* Lexicon Popup - Margin note style */
@@ -422,7 +488,7 @@ section:hover .copy-urn {
 }
 .collation-table th {
     text-align: left;
-    padding: 0.75rem 1rem;
+    padding: 0.875rem 1rem;
     background: #f9fafb;
     border-bottom: 2px solid #e5e7eb;
     font-size: 0.75rem;
@@ -431,23 +497,29 @@ section:hover .copy-urn {
     letter-spacing: 0.05em;
     color: #6b7280;
 }
+.collation-table th.col-num {
+    text-align: right;
+}
 .collation-table td {
-    padding: 0.75rem 1rem;
+    padding: 1rem 1rem;
     border-bottom: 1px solid #f3f4f6;
-    vertical-align: top;
+    vertical-align: middle;
 }
 .collation-table tr:hover {
-    background: #f9fafb;
+    background: #fafafa;
 }
 .collation-table .row-num {
     color: #9ca3af;
     font-size: 0.75rem;
     font-weight: 500;
-    width: 40px;
+    width: 48px;
+    text-align: right;
+    padding-right: 1.25rem;
 }
 .collation-table .section-ref {
     color: #6b7280;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
+    width: 48px;
 }
 .collation-table .col-lemma {
     font-family: 'Noto Serif Georgian', serif;
@@ -460,19 +532,17 @@ section:hover .copy-urn {
 .collation-table .col-s {
     font-family: 'Noto Serif Georgian', serif;
 }
+/* Collation diff - no background color, just text styling */
 .collation-diff {
-    background: #fef3c7;
-    padding: 2px 4px;
-    border-radius: 3px;
-    color: #92400e;
+    color: #1f2937;
+    font-weight: 500;
 }
 .collation-same {
     color: #9ca3af;
 }
 .collation-omit {
-    color: #9ca3af;
+    color: #6b7280;
     font-style: italic;
-    font-size: 0.8em;
 }
 
 /* Variant Type Badges */
@@ -627,11 +697,6 @@ section:hover .copy-urn {
             <h1 class="text-xl font-medium">ტრაქტატის ტექსტი</h1>
             <span class="text-sm text-gray-400">24 პარაგრაფი</span>
         </div>
-        <div class="flex items-center gap-3 text-sm">
-            <span class="text-gray-400">ხელნაწერი:</span>
-            <button id="wit-a" class="witness-toggle active px-3 py-1 rounded text-xs border border-gray-300" data-witness="A" title="ხელნაწერი A (თბილისი)">A</button>
-            <button id="wit-s" class="witness-toggle px-3 py-1 bg-white border border-gray-300 text-gray-600 rounded text-xs hover:bg-gray-50" data-witness="S" title="ხელნაწერი S (სინა)">S</button>
-        </div>
     </div>
 
      <!-- Editorial Guidelines (Collapsible) -->
@@ -693,10 +758,16 @@ section:hover .copy-urn {
         </div>
     </details>
     
-    <!-- Witness Info Bar -->
+    <!-- Witness Info Bar (with integrated toggle) -->
     <div class="witness-bar bg-gray-50 border border-gray-200 rounded-lg px-4 py-2.5 mb-6 flex items-center justify-between text-sm">
-        <div class="flex items-center gap-2">
-            <span class="inline-flex items-center justify-center w-6 h-6 rounded bg-gray-800 text-white text-xs font-medium" id="witness-sigil">A</span>
+        <div class="flex items-center gap-3">
+            <!-- Witness Toggle -->
+            <div class="flex items-center gap-1">
+                <button id="wit-a" class="witness-toggle active px-2.5 py-1 rounded text-xs font-medium border border-gray-300" data-witness="A" title="ხელნაწერი A (ათონი)">A</button>
+                <button id="wit-s" class="witness-toggle px-2.5 py-1 bg-white border border-gray-300 text-gray-600 rounded text-xs font-medium hover:bg-gray-50" data-witness="S" title="ხელნაწერი S (სინა)">S</button>
+            </div>
+            <span class="text-gray-300">|</span>
+            <!-- Witness Info (updates on toggle) -->
             <div class="text-gray-600">
                 <span id="witness-settlement">ათონის მთა</span><span class="text-gray-300 mx-1.5">·</span><span id="witness-repository" class="text-gray-500">ივერთა მონასტერი</span><span class="text-gray-300 mx-1.5">·</span><span id="witness-locus" class="text-gray-400">32r—37r</span>
             </div>
@@ -848,8 +919,8 @@ section:hover .copy-urn {
             
             <!-- Right: Display options -->
             <div class="flex items-center gap-4">
-                <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer critical-view-option" title="კრიტიკული აპარატის ჩვენება/დამალვა">
-                    <input type="checkbox" id="show-apparatus" checked class="rounded border-gray-300 text-gray-800 focus:ring-gray-400">
+                <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer critical-view-option" title="სამეცნიერო მარკირების ჩვენება (აპარატი, ტერმინები, რედაქტორის ჩანართები)">
+                    <input type="checkbox" id="show-markup" checked class="rounded border-gray-300 text-gray-800 focus:ring-gray-400">
                     აპარატი
                 </label>
                 <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer critical-view-option" title="ფოლიოს მარკერების ჩვენება">
@@ -889,7 +960,7 @@ section:hover .copy-urn {
                     <!-- Section content -->
                     <div class="font-serif-geo text-lg leading-loose text-gray-800">
                         <p class="text-justify">
-                ხოლო <a href="../lexicon/index.html#lex.dual" class="term-link" data-term="lex.dual" data-ana="#gramm.dual" data-corresp="http://purl.org/olia/olia.owl#Dual" title="იხ. ლექსიკონში">ორობითნი</a> არიან ესე: რაჟამს ორთა პირთა <span class="apparatus-inline" data-app-id="app.14.1"><span class="reading-a">ცხად-ჰყოფდენ</span><span class="reading-s hidden">ჰყოფენ</span></span><sup class="apparatus-marker" data-app="app.14.1" title="იხ. აპარატი">127</sup> <a href="../lexicon/index.html#lex.uarthrono" class="term-link" data-term="lex.uarthrono" data-ana="#gramm.uarthrono" title="იხ. ლექსიკონში">უართრონოდ</a>: <span class="font-medium">ტრიადე</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[τριάδε]</span>, ხოლო <a href="../lexicon/index.html#lex.arthroniani" class="term-link" data-term="lex.arthroniani" data-ana="#gramm.arthroniani" title="იხ. ლექსიკონში">ართრონიანად</a>: <span class="apparatus-inline" data-app-id="app.14.2"><span class="reading-a">ტა</span><span class="reading-s hidden">ტ</span></span><sup class="apparatus-marker" data-app="app.14.2" title="იხ. აპარატი">128</sup> ტრიადე <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[τὰ τριάδε]</span>; და <span class="apparatus-inline" data-app-id="app.14.3"><span class="reading-a">ნათესაობითად</span><span class="reading-s hidden">ნ̃ესაობითად</span></span><sup class="apparatus-marker" data-app="app.14.3" title="იხ. აპარატი">129</sup> და <span class="folio-marker inline-folio text-xs mx-1">[S 107v]</span> <a href="../lexicon/index.html#lex.dat" class="term-link" data-term="lex.dat" data-ana="#gramm.dat" data-corresp="http://purl.org/olia/olia.owl#DativeCase" title="იხ. ლექსიკონში">მიცემითად</a> <a href="../lexicon/index.html#lex.uarthrono" class="term-link" data-term="lex.uarthrono" data-ana="#gramm.uarthrono" title="იხ. ლექსიკონში">უართრონოდ</a>: <span class="font-medium">ტრიადოინ</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[τριάδοιν]</span> და <a href="../lexicon/index.html#lex.arthroniani" class="term-link" data-term="lex.arthroniani" data-ana="#gramm.arthroniani" title="იხ. ლექსიკონში">ართრონიანად</a>: ტაინ <span class="apparatus-inline" data-app-id="app.14.4"><span class="reading-a">ტრიადოინ</span><span class="reading-s hidden">ტრიადინ</span></span><sup class="apparatus-marker" data-app="app.14.4" title="იხ. აპარატი">130</sup> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[ταῖν τριάδοιν]</span>; ხოლო <a href="../lexicon/index.html#lex.voc" class="term-link" data-term="lex.voc" data-ana="#gramm.voc" data-corresp="http://purl.org/olia/olia.owl#VocativeCase" title="იხ. ლექსიკონში">წოდებითად</a> <a href="../lexicon/index.html#lex.uarthrono" class="term-link" data-term="lex.uarthrono" data-ana="#gramm.uarthrono" title="იხ. ლექსიკონში">უართრონოდ</a>: <span class="font-medium">ტრიადე</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[τριάδε]</span> და <a href="../lexicon/index.html#lex.arthroniani" class="term-link" data-term="lex.arthroniani" data-ana="#gramm.arthroniani" title="იხ. ლექსიკონში">ართრონიანად</a>: <span class="font-medium">ო ტრიადე</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[ὦ τριάδε]</span>.
+                ხოლო <a href="../lexicon/index.html#lex.dual" class="term-link" data-term="lex.dual" data-ana="#gramm.dual" data-corresp="http://purl.org/olia/olia.owl#Dual" title="იხ. ლექსიკონში">ორობითნი</a> არიან ესე: რაჟამს ორთა პირთა <span class="apparatus-inline" data-app-id="app.14.1" data-var-type="morph"><span class="reading-a">ცხად-ჰყოფდენ</span><span class="reading-s hidden var-morph">ჰყოფენ</span></span><sup class="apparatus-marker" data-app="app.14.1" title="იხ. აპარატი">127</sup> <a href="../lexicon/index.html#lex.uarthrono" class="term-link" data-term="lex.uarthrono" data-ana="#gramm.uarthrono" title="იხ. ლექსიკონში">უართრონოდ</a>: <span class="font-medium">ტრიადე</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>τριάδε<span class="bracket">]</span></span>, ხოლო <a href="../lexicon/index.html#lex.arthroniani" class="term-link" data-term="lex.arthroniani" data-ana="#gramm.arthroniani" title="იხ. ლექსიკონში">ართრონიანად</a>: <span class="apparatus-inline" data-app-id="app.14.2" data-var-type="ortho"><span class="reading-a">ტა</span><span class="reading-s hidden var-ortho">ტ</span></span><sup class="apparatus-marker" data-app="app.14.2" title="იხ. აპარატი">128</sup> ტრიადე <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>τὰ τριάδε<span class="bracket">]</span></span>; და <span class="apparatus-inline" data-app-id="app.14.3" data-var-type="ortho"><span class="reading-a">ნათესაობითად</span><span class="reading-s hidden var-ortho">ნ̃ესაობითად</span></span><sup class="apparatus-marker" data-app="app.14.3" title="იხ. აპარატი">129</sup> და <span class="folio-marker inline-folio text-xs mx-1">[S 107v]</span> <a href="../lexicon/index.html#lex.dat" class="term-link" data-term="lex.dat" data-ana="#gramm.dat" data-corresp="http://purl.org/olia/olia.owl#DativeCase" title="იხ. ლექსიკონში">მიცემითად</a> <a href="../lexicon/index.html#lex.uarthrono" class="term-link" data-term="lex.uarthrono" data-ana="#gramm.uarthrono" title="იხ. ლექსიკონში">უართრონოდ</a>: <span class="font-medium">ტრიადოინ</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>τριάδοιν<span class="bracket">]</span></span> და <a href="../lexicon/index.html#lex.arthroniani" class="term-link" data-term="lex.arthroniani" data-ana="#gramm.arthroniani" title="იხ. ლექსიკონში">ართრონიანად</a>: ტაინ <span class="apparatus-inline" data-app-id="app.14.4" data-var-type="ortho"><span class="reading-a">ტრიადოინ</span><span class="reading-s hidden var-ortho">ტრიადინ</span></span><sup class="apparatus-marker" data-app="app.14.4" title="იხ. აპარატი">130</sup> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>ταῖν τριάδοιν<span class="bracket">]</span></span>; ხოლო <a href="../lexicon/index.html#lex.voc" class="term-link" data-term="lex.voc" data-ana="#gramm.voc" data-corresp="http://purl.org/olia/olia.owl#VocativeCase" title="იხ. ლექსიკონში">წოდებითად</a> <a href="../lexicon/index.html#lex.uarthrono" class="term-link" data-term="lex.uarthrono" data-ana="#gramm.uarthrono" title="იხ. ლექსიკონში">უართრონოდ</a>: <span class="font-medium">ტრიადე</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>τριάδε<span class="bracket">]</span></span> და <a href="../lexicon/index.html#lex.arthroniani" class="term-link" data-term="lex.arthroniani" data-ana="#gramm.arthroniani" title="იხ. ლექსიკონში">ართრონიანად</a>: <span class="font-medium">ო ტრიადე</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>ὦ τριάδε<span class="bracket">]</span></span>.
             </p>
                     </div>
                     
@@ -934,8 +1005,7 @@ section:hover .copy-urn {
                     <table class="collation-table">
                         <thead>
                             <tr>
-                                <th class="w-12">#</th>
-                                <th>§</th>
+                                <th class="col-num">#</th>
                                 <th>ლემა</th>
                                 <th>A</th>
                                 <th>S</th>
@@ -945,46 +1015,50 @@ section:hover .copy-urn {
                         <tbody>
                             <tr data-app-id="app.14.1">
                                 <td class="row-num">127</td>
-                                <td class="section-ref">14</td>
                                 <td class="col-lemma">ცხად-ჰყოფდენ</td>
                                 <td class="col-a">ცხად-ჰყოფდენ</td>
                                 <td class="col-s">
                                         <span class="collation-diff">ჰყოფენ</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge morph">
+მორფ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.14.2">
                                 <td class="row-num">128</td>
-                                <td class="section-ref">14</td>
                                 <td class="col-lemma">ტა</td>
                                 <td class="col-a">ტა</td>
                                 <td class="col-s">
                                         <span class="collation-diff">ტ</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.14.3">
                                 <td class="row-num">129</td>
-                                <td class="section-ref">14</td>
                                 <td class="col-lemma">ნათესაობითად</td>
                                 <td class="col-a">ნათესაობითად</td>
                                 <td class="col-s">
                                         <span class="collation-diff">ნ̃ესაობითად</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.14.4">
                                 <td class="row-num">130</td>
-                                <td class="section-ref">14</td>
                                 <td class="col-lemma">ტრიადოინ</td>
                                 <td class="col-a">ტრიადოინ</td>
                                 <td class="col-s">
                                         <span class="collation-diff">ტრიადინ</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                         </tbody>
@@ -1390,7 +1464,6 @@ window.addEventListener('scroll', function() {
 // Update witness info bar
 function updateWitnessBar(witness) {
     const data = witnessData[witness];
-    document.getElementById('witness-sigil').textContent = data.sigil;
     document.getElementById('witness-settlement').textContent = data.settlement;
     document.getElementById('witness-repository').textContent = data.repository;
     document.getElementById('witness-locus').textContent = data.locus;
@@ -1435,14 +1508,16 @@ if (savedWitness) {
     if (btn) btn.click();
 }
 
-// Toggle apparatus visibility
-const apparatusCheckbox = document.getElementById('show-apparatus');
-if (apparatusCheckbox) {
-    apparatusCheckbox.addEventListener('change', function() {
-        const panels = document.querySelectorAll('.section-apparatus, .combined-apparatus');
-        const markers = document.querySelectorAll('.apparatus-marker');
-        panels.forEach(p => p.style.display = this.checked ? '' : 'none');
-        markers.forEach(m => m.style.display = this.checked ? '' : 'none');
+// Toggle markup visibility (plain text mode)
+const markupCheckbox = document.getElementById('show-markup');
+const textArticle = document.getElementById('text-article');
+if (markupCheckbox && textArticle) {
+    markupCheckbox.addEventListener('change', function() {
+        if (this.checked) {
+            textArticle.classList.remove('plain-text-mode');
+        } else {
+            textArticle.classList.add('plain-text-mode');
+        }
     });
 }
 

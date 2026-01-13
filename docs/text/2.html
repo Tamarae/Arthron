@@ -60,10 +60,40 @@
 .apparatus-inline {
     border-bottom: 1px dotted #d97706;
 }
+/* Type-specific variant colors for inline readings */
 .reading-s {
-    background: #fef3c7;
     padding: 0 2px;
     border-radius: 2px;
+}
+/* Default (no type or unknown) */
+.reading-s {
+    background: #f3f4f6;
+    color: #374151;
+}
+/* Orthographic - amber */
+.reading-s.var-ortho {
+    background: #fef3c7;
+    color: #92400e;
+}
+/* Lexical - blue */
+.reading-s.var-lex {
+    background: #dbeafe;
+    color: #1e40af;
+}
+/* Morphological - purple */
+.reading-s.var-morph {
+    background: #f3e8ff;
+    color: #6b21a8;
+}
+/* Omission - red */
+.reading-s.var-omit {
+    background: #fee2e2;
+    color: #991b1b;
+}
+/* Addition - green */
+.reading-s.var-add {
+    background: #dcfce7;
+    color: #166534;
 }
 .witness-toggle.active { 
     background: #1a1a1a; 
@@ -229,6 +259,42 @@ section:hover .copy-urn {
 .del s {
     text-decoration: line-through;
     text-decoration-color: #d1d5db;
+}
+
+/* Plain text mode - removes all scholarly markup styling */
+.plain-text-mode .supplied {
+    color: inherit;
+}
+.plain-text-mode .bracket {
+    display: none;
+}
+.plain-text-mode .term-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: text;
+    pointer-events: none;
+}
+.plain-text-mode .apparatus-inline {
+    border-bottom: none;
+}
+.plain-text-mode .apparatus-marker {
+    display: none;
+}
+.plain-text-mode .section-apparatus,
+.plain-text-mode .combined-apparatus {
+    display: none;
+}
+.plain-text-mode .greek {
+    font-style: normal;
+}
+.plain-text-mode .instruction-marker::before {
+    content: none;
+}
+.plain-text-mode .marginal-note {
+    display: none;
+}
+.plain-text-mode .linebreak {
+    display: none;
 }
 
 /* Lexicon Popup - Margin note style */
@@ -422,7 +488,7 @@ section:hover .copy-urn {
 }
 .collation-table th {
     text-align: left;
-    padding: 0.75rem 1rem;
+    padding: 0.875rem 1rem;
     background: #f9fafb;
     border-bottom: 2px solid #e5e7eb;
     font-size: 0.75rem;
@@ -431,23 +497,29 @@ section:hover .copy-urn {
     letter-spacing: 0.05em;
     color: #6b7280;
 }
+.collation-table th.col-num {
+    text-align: right;
+}
 .collation-table td {
-    padding: 0.75rem 1rem;
+    padding: 1rem 1rem;
     border-bottom: 1px solid #f3f4f6;
-    vertical-align: top;
+    vertical-align: middle;
 }
 .collation-table tr:hover {
-    background: #f9fafb;
+    background: #fafafa;
 }
 .collation-table .row-num {
     color: #9ca3af;
     font-size: 0.75rem;
     font-weight: 500;
-    width: 40px;
+    width: 48px;
+    text-align: right;
+    padding-right: 1.25rem;
 }
 .collation-table .section-ref {
     color: #6b7280;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
+    width: 48px;
 }
 .collation-table .col-lemma {
     font-family: 'Noto Serif Georgian', serif;
@@ -460,19 +532,17 @@ section:hover .copy-urn {
 .collation-table .col-s {
     font-family: 'Noto Serif Georgian', serif;
 }
+/* Collation diff - no background color, just text styling */
 .collation-diff {
-    background: #fef3c7;
-    padding: 2px 4px;
-    border-radius: 3px;
-    color: #92400e;
+    color: #1f2937;
+    font-weight: 500;
 }
 .collation-same {
     color: #9ca3af;
 }
 .collation-omit {
-    color: #9ca3af;
+    color: #6b7280;
     font-style: italic;
-    font-size: 0.8em;
 }
 
 /* Variant Type Badges */
@@ -627,11 +697,6 @@ section:hover .copy-urn {
             <h1 class="text-xl font-medium">ტრაქტატის ტექსტი</h1>
             <span class="text-sm text-gray-400">24 პარაგრაფი</span>
         </div>
-        <div class="flex items-center gap-3 text-sm">
-            <span class="text-gray-400">ხელნაწერი:</span>
-            <button id="wit-a" class="witness-toggle active px-3 py-1 rounded text-xs border border-gray-300" data-witness="A" title="ხელნაწერი A (თბილისი)">A</button>
-            <button id="wit-s" class="witness-toggle px-3 py-1 bg-white border border-gray-300 text-gray-600 rounded text-xs hover:bg-gray-50" data-witness="S" title="ხელნაწერი S (სინა)">S</button>
-        </div>
     </div>
 
      <!-- Editorial Guidelines (Collapsible) -->
@@ -693,10 +758,16 @@ section:hover .copy-urn {
         </div>
     </details>
     
-    <!-- Witness Info Bar -->
+    <!-- Witness Info Bar (with integrated toggle) -->
     <div class="witness-bar bg-gray-50 border border-gray-200 rounded-lg px-4 py-2.5 mb-6 flex items-center justify-between text-sm">
-        <div class="flex items-center gap-2">
-            <span class="inline-flex items-center justify-center w-6 h-6 rounded bg-gray-800 text-white text-xs font-medium" id="witness-sigil">A</span>
+        <div class="flex items-center gap-3">
+            <!-- Witness Toggle -->
+            <div class="flex items-center gap-1">
+                <button id="wit-a" class="witness-toggle active px-2.5 py-1 rounded text-xs font-medium border border-gray-300" data-witness="A" title="ხელნაწერი A (ათონი)">A</button>
+                <button id="wit-s" class="witness-toggle px-2.5 py-1 bg-white border border-gray-300 text-gray-600 rounded text-xs font-medium hover:bg-gray-50" data-witness="S" title="ხელნაწერი S (სინა)">S</button>
+            </div>
+            <span class="text-gray-300">|</span>
+            <!-- Witness Info (updates on toggle) -->
             <div class="text-gray-600">
                 <span id="witness-settlement">ათონის მთა</span><span class="text-gray-300 mx-1.5">·</span><span id="witness-repository" class="text-gray-500">ივერთა მონასტერი</span><span class="text-gray-300 mx-1.5">·</span><span id="witness-locus" class="text-gray-400">32r—37r</span>
             </div>
@@ -848,8 +919,8 @@ section:hover .copy-urn {
             
             <!-- Right: Display options -->
             <div class="flex items-center gap-4">
-                <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer critical-view-option" title="კრიტიკული აპარატის ჩვენება/დამალვა">
-                    <input type="checkbox" id="show-apparatus" checked class="rounded border-gray-300 text-gray-800 focus:ring-gray-400">
+                <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer critical-view-option" title="სამეცნიერო მარკირების ჩვენება (აპარატი, ტერმინები, რედაქტორის ჩანართები)">
+                    <input type="checkbox" id="show-markup" checked class="rounded border-gray-300 text-gray-800 focus:ring-gray-400">
                     აპარატი
                 </label>
                 <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer critical-view-option" title="ფოლიოს მარკერების ჩვენება">
@@ -884,7 +955,7 @@ section:hover .copy-urn {
                     <!-- Section content -->
                     <div class="font-serif-geo text-lg leading-loose text-gray-800">
                         <p class="text-justify">
-                ხოლო საჭირო არს პირველად თქუმად, თუ რანი არიან <a href="../lexicon/index.html#lex.arthron" class="term-link" data-term="lex.arthron" data-ana="#gramm.arthron" data-corresp="http://purl.org/olia/olia.owl#Article" title="იხ. ლექსიკონში">ართრონნი</a>. საცნაურ უკუე <span class="apparatus-inline" data-app-id="app.2.1"><span class="reading-a">იყავნ</span><span class="reading-s hidden">იყვ̃ნა</span></span><sup class="apparatus-marker" data-app="app.2.1" title="იხ. აპარატი">8</sup>, რამეთუ სახელნი <span class="apparatus-inline" data-app-id="app.2.2"><span class="reading-a">ყოველნი</span><span class="reading-s hidden">ყოველთა</span></span><sup class="apparatus-marker" data-app="app.2.2" title="იხ. აპარატი">9</sup> — სულიერთა და უსულოთანი, ხილულთა და უხილავთანი — სამთა სახელის-დებათაგან საცნაურ იქმნებიან და იწოდებიან <span class="apparatus-inline" data-app-id="app.2.3"><span class="reading-a">ბერძენთა</span><span class="reading-s hidden">ბრძენთა</span></span><sup class="apparatus-marker" data-app="app.2.3" title="იხ. აპარატი">10</sup> შორის, ესე იგი არს: <a href="../lexicon/index.html#lex.masc" class="term-link" data-term="lex.masc" data-ana="#gramm.masc" data-corresp="http://purl.org/olia/olia.owl#Masculine" title="იხ. ლექსიკონში">მამალთა</a> და <span class="apparatus-inline" data-app-id="app.2.4"><span class="reading-a">დედალთა</span><span class="reading-s hidden">დედალთა შორის</span></span><sup class="apparatus-marker" data-app="app.2.4" title="იხ. აპარატი">11</sup> და <a href="../lexicon/index.html#lex.neut" class="term-link" data-term="lex.neut" data-ana="#gramm.neut" data-corresp="http://purl.org/olia/olia.owl#Neuter" title="იხ. ლექსიკონში">შუათაგან</a>. ამათ <a href="../lexicon/index.html#lex.masc" class="term-link" data-term="lex.masc" data-ana="#gramm.masc" data-corresp="http://purl.org/olia/olia.owl#Masculine" title="იხ. ლექსიკონში">მამალთა</a> და <a href="../lexicon/index.html#lex.fem" class="term-link" data-term="lex.fem" data-ana="#gramm.fem" data-corresp="http://purl.org/olia/olia.owl#Feminine" title="იხ. ლექსიკონში">დედალთა</a> და <a href="../lexicon/index.html#lex.neut" class="term-link" data-term="lex.neut" data-ana="#gramm.neut" data-corresp="http://purl.org/olia/olia.owl#Neuter" title="იხ. ლექსიკონში">შუათა</a> სახელთაგან არა <span class="apparatus-inline" data-app-id="app.2.5"><span class="reading-a">თითოეულსა</span><span class="reading-s hidden">თჳთეულსა</span></span><sup class="apparatus-marker" data-app="app.2.5" title="იხ. აპარატი">12</sup> სახელსა სამნივე და სამთაგანვე სახელის-დებათა ეწოდებიან, არამედ ყოველთა სახელთა შორის გინა თუ <a href="../lexicon/index.html#lex.masc" class="term-link" data-term="lex.masc" data-ana="#gramm.masc" data-corresp="http://purl.org/olia/olia.owl#Masculine" title="იხ. ლექსიკონში">მამალი</a> ეწოდების სახელი, გინა თუ <a href="../lexicon/index.html#lex.fem" class="term-link" data-term="lex.fem" data-ana="#gramm.fem" data-corresp="http://purl.org/olia/olia.owl#Feminine" title="იხ. ლექსიკონში">დედალი</a>, გინა თუ <span class="apparatus-inline" data-app-id="app.2.6"><span class="reading-a">შუაჲ</span><span class="reading-s hidden">შუა</span></span><sup class="apparatus-marker" data-app="app.2.6" title="იხ. აპარატი">13</sup> და თჳსისა სახელისა აქუს განკუთნვილებაჲ; და არა გარდაერწყუმის ერთი მეორისასა სახელთა ცვალებულებაჲ, არამედ თითოეულისა <span class="apparatus-inline" data-app-id="app.2.7"><span class="reading-a">ნათესავისასა</span><span class="reading-s hidden">ნათესავისა</span></span><sup class="apparatus-marker" data-app="app.2.7" title="იხ. აპარატი">14</sup> სცავს <span class="apparatus-inline" data-app-id="app.2.8"><span class="reading-a">თითოეული დრეკასა სახელთასა</span><span class="reading-s hidden">თითოეული დრეკასა სახელთასა</span></span><sup class="apparatus-marker" data-app="app.2.8" title="იხ. აპარატი">15</sup>.
+                ხოლო საჭირო არს პირველად თქუმად, თუ რანი არიან <a href="../lexicon/index.html#lex.arthron" class="term-link" data-term="lex.arthron" data-ana="#gramm.arthron" data-corresp="http://purl.org/olia/olia.owl#Article" title="იხ. ლექსიკონში">ართრონნი</a>. საცნაურ უკუე <span class="apparatus-inline" data-app-id="app.2.1" data-var-type="ortho"><span class="reading-a">იყავნ</span><span class="reading-s hidden var-ortho">იყვ̃ნა</span></span><sup class="apparatus-marker" data-app="app.2.1" title="იხ. აპარატი">8</sup>, რამეთუ სახელნი <span class="apparatus-inline" data-app-id="app.2.2" data-var-type="morph"><span class="reading-a">ყოველნი</span><span class="reading-s hidden var-morph">ყოველთა</span></span><sup class="apparatus-marker" data-app="app.2.2" title="იხ. აპარატი">9</sup> — სულიერთა და უსულოთანი, ხილულთა და უხილავთანი — სამთა სახელის-დებათაგან საცნაურ იქმნებიან და იწოდებიან <span class="apparatus-inline" data-app-id="app.2.3" data-var-type="ortho"><span class="reading-a">ბერძენთა</span><span class="reading-s hidden var-ortho">ბრძენთა</span></span><sup class="apparatus-marker" data-app="app.2.3" title="იხ. აპარატი">10</sup> შორის, ესე იგი არს: <a href="../lexicon/index.html#lex.masc" class="term-link" data-term="lex.masc" data-ana="#gramm.masc" data-corresp="http://purl.org/olia/olia.owl#Masculine" title="იხ. ლექსიკონში">მამალთა</a> და <span class="apparatus-inline" data-app-id="app.2.4" data-var-type="add"><span class="reading-a">დედალთა</span><span class="reading-s hidden var-add">დედალთა შორის</span></span><sup class="apparatus-marker" data-app="app.2.4" title="იხ. აპარატი">11</sup> და <a href="../lexicon/index.html#lex.neut" class="term-link" data-term="lex.neut" data-ana="#gramm.neut" data-corresp="http://purl.org/olia/olia.owl#Neuter" title="იხ. ლექსიკონში">შუათაგან</a>. ამათ <a href="../lexicon/index.html#lex.masc" class="term-link" data-term="lex.masc" data-ana="#gramm.masc" data-corresp="http://purl.org/olia/olia.owl#Masculine" title="იხ. ლექსიკონში">მამალთა</a> და <a href="../lexicon/index.html#lex.fem" class="term-link" data-term="lex.fem" data-ana="#gramm.fem" data-corresp="http://purl.org/olia/olia.owl#Feminine" title="იხ. ლექსიკონში">დედალთა</a> და <a href="../lexicon/index.html#lex.neut" class="term-link" data-term="lex.neut" data-ana="#gramm.neut" data-corresp="http://purl.org/olia/olia.owl#Neuter" title="იხ. ლექსიკონში">შუათა</a> სახელთაგან არა <span class="apparatus-inline" data-app-id="app.2.5" data-var-type="ortho"><span class="reading-a">თითოეულსა</span><span class="reading-s hidden var-ortho">თჳთეულსა</span></span><sup class="apparatus-marker" data-app="app.2.5" title="იხ. აპარატი">12</sup> სახელსა სამნივე და სამთაგანვე სახელის-დებათა ეწოდებიან, არამედ ყოველთა სახელთა შორის გინა თუ <a href="../lexicon/index.html#lex.masc" class="term-link" data-term="lex.masc" data-ana="#gramm.masc" data-corresp="http://purl.org/olia/olia.owl#Masculine" title="იხ. ლექსიკონში">მამალი</a> ეწოდების სახელი, გინა თუ <a href="../lexicon/index.html#lex.fem" class="term-link" data-term="lex.fem" data-ana="#gramm.fem" data-corresp="http://purl.org/olia/olia.owl#Feminine" title="იხ. ლექსიკონში">დედალი</a>, გინა თუ <span class="apparatus-inline" data-app-id="app.2.6" data-var-type="ortho"><span class="reading-a">შუაჲ</span><span class="reading-s hidden var-ortho">შუა</span></span><sup class="apparatus-marker" data-app="app.2.6" title="იხ. აპარატი">13</sup> და თჳსისა სახელისა აქუს განკუთნვილებაჲ; და არა გარდაერწყუმის ერთი მეორისასა სახელთა ცვალებულებაჲ, არამედ თითოეულისა <span class="apparatus-inline" data-app-id="app.2.7" data-var-type="ortho"><span class="reading-a">ნათესავისასა</span><span class="reading-s hidden var-ortho">ნათესავისა</span></span><sup class="apparatus-marker" data-app="app.2.7" title="იხ. აპარატი">14</sup> სცავს <span class="apparatus-inline" data-app-id="app.2.8" data-var-type="omit"><span class="reading-a">თითოეული დრეკასა სახელთასა</span><span class="reading-s hidden var-omit">თითოეული დრეკასა სახელთასა</span></span><sup class="apparatus-marker" data-app="app.2.8" title="იხ. აპარატი">15</sup>.
             </p>
                     </div>
                     
@@ -945,8 +1016,7 @@ section:hover .copy-urn {
                     <table class="collation-table">
                         <thead>
                             <tr>
-                                <th class="w-12">#</th>
-                                <th>§</th>
+                                <th class="col-num">#</th>
                                 <th>ლემა</th>
                                 <th>A</th>
                                 <th>S</th>
@@ -956,90 +1026,98 @@ section:hover .copy-urn {
                         <tbody>
                             <tr data-app-id="app.2.1">
                                 <td class="row-num">8</td>
-                                <td class="section-ref">2</td>
                                 <td class="col-lemma">იყავნ</td>
                                 <td class="col-a">იყავნ</td>
                                 <td class="col-s">
                                         <span class="collation-diff">იყვ̃ნა</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.2.2">
                                 <td class="row-num">9</td>
-                                <td class="section-ref">2</td>
                                 <td class="col-lemma">ყოველნი</td>
                                 <td class="col-a">ყოველნი</td>
                                 <td class="col-s">
                                         <span class="collation-diff">ყოველთა</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge morph">
+მორფ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.2.3">
                                 <td class="row-num">10</td>
-                                <td class="section-ref">2</td>
                                 <td class="col-lemma">ბერძენთა</td>
                                 <td class="col-a">ბერძენთა</td>
                                 <td class="col-s">
                                         <span class="collation-diff">ბრძენთა</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.2.4">
                                 <td class="row-num">11</td>
-                                <td class="section-ref">2</td>
                                 <td class="col-lemma">დედალთა</td>
                                 <td class="col-a">დედალთა</td>
                                 <td class="col-s">
                                         <span class="collation-diff">დედალთა შორის</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge add">
+დამ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.2.5">
                                 <td class="row-num">12</td>
-                                <td class="section-ref">2</td>
                                 <td class="col-lemma">თითოეულსა</td>
                                 <td class="col-a">თითოეულსა</td>
                                 <td class="col-s">
                                         <span class="collation-diff">თჳთეულსა</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.2.6">
                                 <td class="row-num">13</td>
-                                <td class="section-ref">2</td>
                                 <td class="col-lemma">შუაჲ</td>
                                 <td class="col-a">შუაჲ</td>
                                 <td class="col-s">
                                         <span class="collation-diff">შუა</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.2.7">
                                 <td class="row-num">14</td>
-                                <td class="section-ref">2</td>
                                 <td class="col-lemma">ნათესავისასა</td>
                                 <td class="col-a">ნათესავისასა</td>
                                 <td class="col-s">
                                         <span class="collation-diff">ნათესავისა</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.2.8">
                                 <td class="row-num">15</td>
-                                <td class="section-ref">2</td>
                                 <td class="col-lemma">თითოეული დრეკასა სახელთასა</td>
                                 <td class="col-a">თითოეული დრეკასა სახელთასა</td>
                                 <td class="col-s">
                                         <span class="collation-same">თითოეული დრეკასა სახელთასა</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge omit">
+გამ                                    </span>
                                 </td>
                             </tr>
                         </tbody>
@@ -1445,7 +1523,6 @@ window.addEventListener('scroll', function() {
 // Update witness info bar
 function updateWitnessBar(witness) {
     const data = witnessData[witness];
-    document.getElementById('witness-sigil').textContent = data.sigil;
     document.getElementById('witness-settlement').textContent = data.settlement;
     document.getElementById('witness-repository').textContent = data.repository;
     document.getElementById('witness-locus').textContent = data.locus;
@@ -1490,14 +1567,16 @@ if (savedWitness) {
     if (btn) btn.click();
 }
 
-// Toggle apparatus visibility
-const apparatusCheckbox = document.getElementById('show-apparatus');
-if (apparatusCheckbox) {
-    apparatusCheckbox.addEventListener('change', function() {
-        const panels = document.querySelectorAll('.section-apparatus, .combined-apparatus');
-        const markers = document.querySelectorAll('.apparatus-marker');
-        panels.forEach(p => p.style.display = this.checked ? '' : 'none');
-        markers.forEach(m => m.style.display = this.checked ? '' : 'none');
+// Toggle markup visibility (plain text mode)
+const markupCheckbox = document.getElementById('show-markup');
+const textArticle = document.getElementById('text-article');
+if (markupCheckbox && textArticle) {
+    markupCheckbox.addEventListener('change', function() {
+        if (this.checked) {
+            textArticle.classList.remove('plain-text-mode');
+        } else {
+            textArticle.classList.add('plain-text-mode');
+        }
     });
 }
 

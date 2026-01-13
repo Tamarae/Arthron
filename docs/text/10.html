@@ -60,10 +60,40 @@
 .apparatus-inline {
     border-bottom: 1px dotted #d97706;
 }
+/* Type-specific variant colors for inline readings */
 .reading-s {
-    background: #fef3c7;
     padding: 0 2px;
     border-radius: 2px;
+}
+/* Default (no type or unknown) */
+.reading-s {
+    background: #f3f4f6;
+    color: #374151;
+}
+/* Orthographic - amber */
+.reading-s.var-ortho {
+    background: #fef3c7;
+    color: #92400e;
+}
+/* Lexical - blue */
+.reading-s.var-lex {
+    background: #dbeafe;
+    color: #1e40af;
+}
+/* Morphological - purple */
+.reading-s.var-morph {
+    background: #f3e8ff;
+    color: #6b21a8;
+}
+/* Omission - red */
+.reading-s.var-omit {
+    background: #fee2e2;
+    color: #991b1b;
+}
+/* Addition - green */
+.reading-s.var-add {
+    background: #dcfce7;
+    color: #166534;
 }
 .witness-toggle.active { 
     background: #1a1a1a; 
@@ -229,6 +259,42 @@ section:hover .copy-urn {
 .del s {
     text-decoration: line-through;
     text-decoration-color: #d1d5db;
+}
+
+/* Plain text mode - removes all scholarly markup styling */
+.plain-text-mode .supplied {
+    color: inherit;
+}
+.plain-text-mode .bracket {
+    display: none;
+}
+.plain-text-mode .term-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: text;
+    pointer-events: none;
+}
+.plain-text-mode .apparatus-inline {
+    border-bottom: none;
+}
+.plain-text-mode .apparatus-marker {
+    display: none;
+}
+.plain-text-mode .section-apparatus,
+.plain-text-mode .combined-apparatus {
+    display: none;
+}
+.plain-text-mode .greek {
+    font-style: normal;
+}
+.plain-text-mode .instruction-marker::before {
+    content: none;
+}
+.plain-text-mode .marginal-note {
+    display: none;
+}
+.plain-text-mode .linebreak {
+    display: none;
 }
 
 /* Lexicon Popup - Margin note style */
@@ -422,7 +488,7 @@ section:hover .copy-urn {
 }
 .collation-table th {
     text-align: left;
-    padding: 0.75rem 1rem;
+    padding: 0.875rem 1rem;
     background: #f9fafb;
     border-bottom: 2px solid #e5e7eb;
     font-size: 0.75rem;
@@ -431,23 +497,29 @@ section:hover .copy-urn {
     letter-spacing: 0.05em;
     color: #6b7280;
 }
+.collation-table th.col-num {
+    text-align: right;
+}
 .collation-table td {
-    padding: 0.75rem 1rem;
+    padding: 1rem 1rem;
     border-bottom: 1px solid #f3f4f6;
-    vertical-align: top;
+    vertical-align: middle;
 }
 .collation-table tr:hover {
-    background: #f9fafb;
+    background: #fafafa;
 }
 .collation-table .row-num {
     color: #9ca3af;
     font-size: 0.75rem;
     font-weight: 500;
-    width: 40px;
+    width: 48px;
+    text-align: right;
+    padding-right: 1.25rem;
 }
 .collation-table .section-ref {
     color: #6b7280;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
+    width: 48px;
 }
 .collation-table .col-lemma {
     font-family: 'Noto Serif Georgian', serif;
@@ -460,19 +532,17 @@ section:hover .copy-urn {
 .collation-table .col-s {
     font-family: 'Noto Serif Georgian', serif;
 }
+/* Collation diff - no background color, just text styling */
 .collation-diff {
-    background: #fef3c7;
-    padding: 2px 4px;
-    border-radius: 3px;
-    color: #92400e;
+    color: #1f2937;
+    font-weight: 500;
 }
 .collation-same {
     color: #9ca3af;
 }
 .collation-omit {
-    color: #9ca3af;
+    color: #6b7280;
     font-style: italic;
-    font-size: 0.8em;
 }
 
 /* Variant Type Badges */
@@ -627,11 +697,6 @@ section:hover .copy-urn {
             <h1 class="text-xl font-medium">ტრაქტატის ტექსტი</h1>
             <span class="text-sm text-gray-400">24 პარაგრაფი</span>
         </div>
-        <div class="flex items-center gap-3 text-sm">
-            <span class="text-gray-400">ხელნაწერი:</span>
-            <button id="wit-a" class="witness-toggle active px-3 py-1 rounded text-xs border border-gray-300" data-witness="A" title="ხელნაწერი A (თბილისი)">A</button>
-            <button id="wit-s" class="witness-toggle px-3 py-1 bg-white border border-gray-300 text-gray-600 rounded text-xs hover:bg-gray-50" data-witness="S" title="ხელნაწერი S (სინა)">S</button>
-        </div>
     </div>
 
      <!-- Editorial Guidelines (Collapsible) -->
@@ -693,10 +758,16 @@ section:hover .copy-urn {
         </div>
     </details>
     
-    <!-- Witness Info Bar -->
+    <!-- Witness Info Bar (with integrated toggle) -->
     <div class="witness-bar bg-gray-50 border border-gray-200 rounded-lg px-4 py-2.5 mb-6 flex items-center justify-between text-sm">
-        <div class="flex items-center gap-2">
-            <span class="inline-flex items-center justify-center w-6 h-6 rounded bg-gray-800 text-white text-xs font-medium" id="witness-sigil">A</span>
+        <div class="flex items-center gap-3">
+            <!-- Witness Toggle -->
+            <div class="flex items-center gap-1">
+                <button id="wit-a" class="witness-toggle active px-2.5 py-1 rounded text-xs font-medium border border-gray-300" data-witness="A" title="ხელნაწერი A (ათონი)">A</button>
+                <button id="wit-s" class="witness-toggle px-2.5 py-1 bg-white border border-gray-300 text-gray-600 rounded text-xs font-medium hover:bg-gray-50" data-witness="S" title="ხელნაწერი S (სინა)">S</button>
+            </div>
+            <span class="text-gray-300">|</span>
+            <!-- Witness Info (updates on toggle) -->
             <div class="text-gray-600">
                 <span id="witness-settlement">ათონის მთა</span><span class="text-gray-300 mx-1.5">·</span><span id="witness-repository" class="text-gray-500">ივერთა მონასტერი</span><span class="text-gray-300 mx-1.5">·</span><span id="witness-locus" class="text-gray-400">32r—37r</span>
             </div>
@@ -848,8 +919,8 @@ section:hover .copy-urn {
             
             <!-- Right: Display options -->
             <div class="flex items-center gap-4">
-                <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer critical-view-option" title="კრიტიკული აპარატის ჩვენება/დამალვა">
-                    <input type="checkbox" id="show-apparatus" checked class="rounded border-gray-300 text-gray-800 focus:ring-gray-400">
+                <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer critical-view-option" title="სამეცნიერო მარკირების ჩვენება (აპარატი, ტერმინები, რედაქტორის ჩანართები)">
+                    <input type="checkbox" id="show-markup" checked class="rounded border-gray-300 text-gray-800 focus:ring-gray-400">
                     აპარატი
                 </label>
                 <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer critical-view-option" title="ფოლიოს მარკერების ჩვენება">
@@ -884,7 +955,7 @@ section:hover .copy-urn {
                     <!-- Section content -->
                     <div class="font-serif-geo text-lg leading-loose text-gray-800">
                         <p class="text-justify">
-                რამეთუ ბერძულად <a href="../lexicon/index.html#lex.ganqofileba" class="term-link" data-term="lex.ganqofileba" title="იხ. ლექსიკონში">განყოფილებაჲ</a> აქუს <a href="../lexicon/index.html#lex.dat" class="term-link" data-term="lex.dat" data-ana="#gramm.dat" data-corresp="http://purl.org/olia/olia.owl#DativeCase" title="იხ. ლექსიკონში">მიცემითსა</a> და <a href="../lexicon/index.html#lex.acc" class="term-link" data-term="lex.acc" data-ana="#gramm.acc" data-corresp="http://purl.org/olia/olia.owl#Accusative" title="იხ. ლექსიკონში">მიზეზობითსა</a>, ვითარცა <span class="apparatus-inline" data-app-id="app.10.1"><span class="reading-a">ზემო</span><span class="reading-s hidden">ზემოთ</span></span><sup class="apparatus-marker" data-app="app.10.1" title="იხ. აპარატი">78</sup> თჳთ იგი <a href="../lexicon/index.html#lex.leqsi" class="term-link" data-term="lex.leqsi" title="იხ. ლექსიკონში">ლექსნი</a> გჳჩენიან, გარნა ქართულად ერთ <a href="../lexicon/index.html#lex.leqsi" class="term-link" data-term="lex.leqsi" title="იხ. ლექსიკონში">ლექსად</a> ითქუმის, დაღაცათუ <span class="apparatus-inline" data-app-id="app.10.2"><span class="reading-a">ძალი</span><span class="reading-s hidden">ძალი რ̃ი</span></span><sup class="apparatus-marker" data-app="app.10.2" title="იხ. აპარატი">79</sup> ორი აქუს. და ესე ესრეთ <span class="apparatus-inline" data-app-id="app.10.3"><span class="reading-a">გულისხმა-ყავ</span><span class="reading-s hidden">გლისჴ̃ჲ</span></span><sup class="apparatus-marker" data-app="app.10.3" title="იხ. აპარატი">80</sup>, რამეთუ <span class="apparatus-inline" data-app-id="app.10.4"><span class="reading-a">მიცემითი</span><span class="reading-s hidden">მიცემით</span></span><sup class="apparatus-marker" data-app="app.10.4" title="იხ. აპარატი">81</sup> ამისთჳს ეწოდების ლექსსა მას: რაჟამს <span class="apparatus-inline" data-app-id="app.10.5"><span class="reading-a">ეტყოდი</span><span class="reading-s hidden">ეტყოდეს</span></span><sup class="apparatus-marker" data-app="app.10.5" title="იხ. აპარატი">82</sup> ვისმე, ვითარმედ: ვის მისცემ ამას რასმერ̃ჲსამე? და მან გრქუას, ვითარმედ: <span class="font-medium">ღმერთსა</span>, გინა თუ <span class="font-medium">ღმერთთა</span>, ანუ თუ <span class="font-medium">კაცთა</span> გინა <span class="font-medium">ანგელოზთა</span>; ხოლო <a href="../lexicon/index.html#lex.acc" class="term-link" data-term="lex.acc" data-ana="#gramm.acc" data-corresp="http://purl.org/olia/olia.owl#Accusative" title="იხ. ლექსიკონში">მიზეზობითი</a> — ამისთჳს, ვინაჲთგან, იკითხვიდე, რაჲ ვისგანმე, ვითარმედ: ვის ეძიებეძიებდა? და მან გრქუას, ვითარმედ: <span class="apparatus-inline" data-app-id="app.10.8"><span class="reading-a">ღმერთსა გინა თუ</span><span class="reading-s hidden">ღმერთსა გინა თუ</span></span><sup class="apparatus-marker" data-app="app.10.8" title="იხ. აპარატი">83</sup> <span class="font-medium">ღმერთთა</span>, გინა თუ <span class="font-medium">კაცთა</span>, ანუ <span class="apparatus-inline" data-app-id="app.10.9"><span class="reading-a">სხუათა</span><span class="reading-s hidden">სხთაჲ</span></span><sup class="apparatus-marker" data-app="app.10.9" title="იხ. აპარატი">84</sup> <span class="apparatus-inline" data-app-id="app.10.10"><span class="reading-a">რათამე</span><span class="reading-s hidden">რაჲთმე</span></span><sup class="apparatus-marker" data-app="app.10.10" title="იხ. აპარატი">85</sup>.
+                რამეთუ ბერძულად <a href="../lexicon/index.html#lex.ganqofileba" class="term-link" data-term="lex.ganqofileba" title="იხ. ლექსიკონში">განყოფილებაჲ</a> აქუს <a href="../lexicon/index.html#lex.dat" class="term-link" data-term="lex.dat" data-ana="#gramm.dat" data-corresp="http://purl.org/olia/olia.owl#DativeCase" title="იხ. ლექსიკონში">მიცემითსა</a> და <a href="../lexicon/index.html#lex.acc" class="term-link" data-term="lex.acc" data-ana="#gramm.acc" data-corresp="http://purl.org/olia/olia.owl#Accusative" title="იხ. ლექსიკონში">მიზეზობითსა</a>, ვითარცა <span class="apparatus-inline" data-app-id="app.10.1" data-var-type="ortho"><span class="reading-a">ზემო</span><span class="reading-s hidden var-ortho">ზემოთ</span></span><sup class="apparatus-marker" data-app="app.10.1" title="იხ. აპარატი">78</sup> თჳთ იგი <a href="../lexicon/index.html#lex.leqsi" class="term-link" data-term="lex.leqsi" title="იხ. ლექსიკონში">ლექსნი</a> გჳჩენიან, გარნა ქართულად ერთ <a href="../lexicon/index.html#lex.leqsi" class="term-link" data-term="lex.leqsi" title="იხ. ლექსიკონში">ლექსად</a> ითქუმის, დაღაცათუ <span class="apparatus-inline" data-app-id="app.10.2" data-var-type="ortho"><span class="reading-a">ძალი</span><span class="reading-s hidden var-ortho">ძალი რ̃ი</span></span><sup class="apparatus-marker" data-app="app.10.2" title="იხ. აპარატი">79</sup> ორი აქუს. და ესე ესრეთ <span class="apparatus-inline" data-app-id="app.10.3" data-var-type="ortho"><span class="reading-a">გულისხმა-ყავ</span><span class="reading-s hidden var-ortho">გლისჴ̃ჲ</span></span><sup class="apparatus-marker" data-app="app.10.3" title="იხ. აპარატი">80</sup>, რამეთუ <span class="apparatus-inline" data-app-id="app.10.4" data-var-type="ortho"><span class="reading-a">მიცემითი</span><span class="reading-s hidden var-ortho">მიცემით</span></span><sup class="apparatus-marker" data-app="app.10.4" title="იხ. აპარატი">81</sup> ამისთჳს ეწოდების ლექსსა მას: რაჟამს <span class="apparatus-inline" data-app-id="app.10.5" data-var-type="morph"><span class="reading-a">ეტყოდი</span><span class="reading-s hidden var-morph">ეტყოდეს</span></span><sup class="apparatus-marker" data-app="app.10.5" title="იხ. აპარატი">82</sup> ვისმე, ვითარმედ: ვის მისცემ ამას რასმერ̃ჲსამე? და მან გრქუას, ვითარმედ: <span class="font-medium">ღმერთსა</span>, გინა თუ <span class="font-medium">ღმერთთა</span>, ანუ თუ <span class="font-medium">კაცთა</span> გინა <span class="font-medium">ანგელოზთა</span>; ხოლო <a href="../lexicon/index.html#lex.acc" class="term-link" data-term="lex.acc" data-ana="#gramm.acc" data-corresp="http://purl.org/olia/olia.owl#Accusative" title="იხ. ლექსიკონში">მიზეზობითი</a> — ამისთჳს, ვინაჲთგან, იკითხვიდე, რაჲ ვისგანმე, ვითარმედ: ვის ეძიებეძიებდა? და მან გრქუას, ვითარმედ: <span class="apparatus-inline" data-app-id="app.10.8" data-var-type="omit"><span class="reading-a">ღმერთსა გინა თუ</span><span class="reading-s hidden var-omit">ღმერთსა გინა თუ</span></span><sup class="apparatus-marker" data-app="app.10.8" title="იხ. აპარატი">83</sup> <span class="font-medium">ღმერთთა</span>, გინა თუ <span class="font-medium">კაცთა</span>, ანუ <span class="apparatus-inline" data-app-id="app.10.9" data-var-type="ortho"><span class="reading-a">სხუათა</span><span class="reading-s hidden var-ortho">სხთაჲ</span></span><sup class="apparatus-marker" data-app="app.10.9" title="იხ. აპარატი">84</sup> <span class="apparatus-inline" data-app-id="app.10.10" data-var-type="ortho"><span class="reading-a">რათამე</span><span class="reading-s hidden var-ortho">რაჲთმე</span></span><sup class="apparatus-marker" data-app="app.10.10" title="იხ. აპარატი">85</sup>.
             </p>
                     </div>
                     
@@ -945,8 +1016,7 @@ section:hover .copy-urn {
                     <table class="collation-table">
                         <thead>
                             <tr>
-                                <th class="w-12">#</th>
-                                <th>§</th>
+                                <th class="col-num">#</th>
                                 <th>ლემა</th>
                                 <th>A</th>
                                 <th>S</th>
@@ -956,90 +1026,98 @@ section:hover .copy-urn {
                         <tbody>
                             <tr data-app-id="app.10.1">
                                 <td class="row-num">78</td>
-                                <td class="section-ref">10</td>
                                 <td class="col-lemma">ზემო</td>
                                 <td class="col-a">ზემო</td>
                                 <td class="col-s">
                                         <span class="collation-diff">ზემოთ</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.10.2">
                                 <td class="row-num">79</td>
-                                <td class="section-ref">10</td>
                                 <td class="col-lemma">ძალი</td>
                                 <td class="col-a">ძალი</td>
                                 <td class="col-s">
                                         <span class="collation-diff">ძალი რ̃ი</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.10.3">
                                 <td class="row-num">80</td>
-                                <td class="section-ref">10</td>
                                 <td class="col-lemma">გულისხმა-ყავ</td>
                                 <td class="col-a">გულისხმა-ყავ</td>
                                 <td class="col-s">
                                         <span class="collation-diff">გლისჴ̃ჲ</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.10.4">
                                 <td class="row-num">81</td>
-                                <td class="section-ref">10</td>
                                 <td class="col-lemma">მიცემითი</td>
                                 <td class="col-a">მიცემითი</td>
                                 <td class="col-s">
                                         <span class="collation-diff">მიცემით</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.10.5">
                                 <td class="row-num">82</td>
-                                <td class="section-ref">10</td>
                                 <td class="col-lemma">ეტყოდი</td>
                                 <td class="col-a">ეტყოდი</td>
                                 <td class="col-s">
                                         <span class="collation-diff">ეტყოდეს</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge morph">
+მორფ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.10.8">
                                 <td class="row-num">83</td>
-                                <td class="section-ref">10</td>
                                 <td class="col-lemma">ღმერთსა გინა თუ</td>
                                 <td class="col-a">ღმერთსა გინა თუ</td>
                                 <td class="col-s">
                                         <span class="collation-same">ღმერთსა გინა თუ</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge omit">
+გამ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.10.9">
                                 <td class="row-num">84</td>
-                                <td class="section-ref">10</td>
                                 <td class="col-lemma">სხუათა</td>
                                 <td class="col-a">სხუათა</td>
                                 <td class="col-s">
                                         <span class="collation-diff">სხთაჲ</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.10.10">
                                 <td class="row-num">85</td>
-                                <td class="section-ref">10</td>
                                 <td class="col-lemma">რათამე</td>
                                 <td class="col-a">რათამე</td>
                                 <td class="col-s">
                                         <span class="collation-diff">რაჲთმე</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                         </tbody>
@@ -1445,7 +1523,6 @@ window.addEventListener('scroll', function() {
 // Update witness info bar
 function updateWitnessBar(witness) {
     const data = witnessData[witness];
-    document.getElementById('witness-sigil').textContent = data.sigil;
     document.getElementById('witness-settlement').textContent = data.settlement;
     document.getElementById('witness-repository').textContent = data.repository;
     document.getElementById('witness-locus').textContent = data.locus;
@@ -1490,14 +1567,16 @@ if (savedWitness) {
     if (btn) btn.click();
 }
 
-// Toggle apparatus visibility
-const apparatusCheckbox = document.getElementById('show-apparatus');
-if (apparatusCheckbox) {
-    apparatusCheckbox.addEventListener('change', function() {
-        const panels = document.querySelectorAll('.section-apparatus, .combined-apparatus');
-        const markers = document.querySelectorAll('.apparatus-marker');
-        panels.forEach(p => p.style.display = this.checked ? '' : 'none');
-        markers.forEach(m => m.style.display = this.checked ? '' : 'none');
+// Toggle markup visibility (plain text mode)
+const markupCheckbox = document.getElementById('show-markup');
+const textArticle = document.getElementById('text-article');
+if (markupCheckbox && textArticle) {
+    markupCheckbox.addEventListener('change', function() {
+        if (this.checked) {
+            textArticle.classList.remove('plain-text-mode');
+        } else {
+            textArticle.classList.add('plain-text-mode');
+        }
     });
 }
 

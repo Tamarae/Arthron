@@ -60,10 +60,40 @@
 .apparatus-inline {
     border-bottom: 1px dotted #d97706;
 }
+/* Type-specific variant colors for inline readings */
 .reading-s {
-    background: #fef3c7;
     padding: 0 2px;
     border-radius: 2px;
+}
+/* Default (no type or unknown) */
+.reading-s {
+    background: #f3f4f6;
+    color: #374151;
+}
+/* Orthographic - amber */
+.reading-s.var-ortho {
+    background: #fef3c7;
+    color: #92400e;
+}
+/* Lexical - blue */
+.reading-s.var-lex {
+    background: #dbeafe;
+    color: #1e40af;
+}
+/* Morphological - purple */
+.reading-s.var-morph {
+    background: #f3e8ff;
+    color: #6b21a8;
+}
+/* Omission - red */
+.reading-s.var-omit {
+    background: #fee2e2;
+    color: #991b1b;
+}
+/* Addition - green */
+.reading-s.var-add {
+    background: #dcfce7;
+    color: #166534;
 }
 .witness-toggle.active { 
     background: #1a1a1a; 
@@ -229,6 +259,42 @@ section:hover .copy-urn {
 .del s {
     text-decoration: line-through;
     text-decoration-color: #d1d5db;
+}
+
+/* Plain text mode - removes all scholarly markup styling */
+.plain-text-mode .supplied {
+    color: inherit;
+}
+.plain-text-mode .bracket {
+    display: none;
+}
+.plain-text-mode .term-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: text;
+    pointer-events: none;
+}
+.plain-text-mode .apparatus-inline {
+    border-bottom: none;
+}
+.plain-text-mode .apparatus-marker {
+    display: none;
+}
+.plain-text-mode .section-apparatus,
+.plain-text-mode .combined-apparatus {
+    display: none;
+}
+.plain-text-mode .greek {
+    font-style: normal;
+}
+.plain-text-mode .instruction-marker::before {
+    content: none;
+}
+.plain-text-mode .marginal-note {
+    display: none;
+}
+.plain-text-mode .linebreak {
+    display: none;
 }
 
 /* Lexicon Popup - Margin note style */
@@ -422,7 +488,7 @@ section:hover .copy-urn {
 }
 .collation-table th {
     text-align: left;
-    padding: 0.75rem 1rem;
+    padding: 0.875rem 1rem;
     background: #f9fafb;
     border-bottom: 2px solid #e5e7eb;
     font-size: 0.75rem;
@@ -431,23 +497,29 @@ section:hover .copy-urn {
     letter-spacing: 0.05em;
     color: #6b7280;
 }
+.collation-table th.col-num {
+    text-align: right;
+}
 .collation-table td {
-    padding: 0.75rem 1rem;
+    padding: 1rem 1rem;
     border-bottom: 1px solid #f3f4f6;
-    vertical-align: top;
+    vertical-align: middle;
 }
 .collation-table tr:hover {
-    background: #f9fafb;
+    background: #fafafa;
 }
 .collation-table .row-num {
     color: #9ca3af;
     font-size: 0.75rem;
     font-weight: 500;
-    width: 40px;
+    width: 48px;
+    text-align: right;
+    padding-right: 1.25rem;
 }
 .collation-table .section-ref {
     color: #6b7280;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
+    width: 48px;
 }
 .collation-table .col-lemma {
     font-family: 'Noto Serif Georgian', serif;
@@ -460,19 +532,17 @@ section:hover .copy-urn {
 .collation-table .col-s {
     font-family: 'Noto Serif Georgian', serif;
 }
+/* Collation diff - no background color, just text styling */
 .collation-diff {
-    background: #fef3c7;
-    padding: 2px 4px;
-    border-radius: 3px;
-    color: #92400e;
+    color: #1f2937;
+    font-weight: 500;
 }
 .collation-same {
     color: #9ca3af;
 }
 .collation-omit {
-    color: #9ca3af;
+    color: #6b7280;
     font-style: italic;
-    font-size: 0.8em;
 }
 
 /* Variant Type Badges */
@@ -627,11 +697,6 @@ section:hover .copy-urn {
             <h1 class="text-xl font-medium">ტრაქტატის ტექსტი</h1>
             <span class="text-sm text-gray-400">24 პარაგრაფი</span>
         </div>
-        <div class="flex items-center gap-3 text-sm">
-            <span class="text-gray-400">ხელნაწერი:</span>
-            <button id="wit-a" class="witness-toggle active px-3 py-1 rounded text-xs border border-gray-300" data-witness="A" title="ხელნაწერი A (თბილისი)">A</button>
-            <button id="wit-s" class="witness-toggle px-3 py-1 bg-white border border-gray-300 text-gray-600 rounded text-xs hover:bg-gray-50" data-witness="S" title="ხელნაწერი S (სინა)">S</button>
-        </div>
     </div>
 
      <!-- Editorial Guidelines (Collapsible) -->
@@ -693,10 +758,16 @@ section:hover .copy-urn {
         </div>
     </details>
     
-    <!-- Witness Info Bar -->
+    <!-- Witness Info Bar (with integrated toggle) -->
     <div class="witness-bar bg-gray-50 border border-gray-200 rounded-lg px-4 py-2.5 mb-6 flex items-center justify-between text-sm">
-        <div class="flex items-center gap-2">
-            <span class="inline-flex items-center justify-center w-6 h-6 rounded bg-gray-800 text-white text-xs font-medium" id="witness-sigil">A</span>
+        <div class="flex items-center gap-3">
+            <!-- Witness Toggle -->
+            <div class="flex items-center gap-1">
+                <button id="wit-a" class="witness-toggle active px-2.5 py-1 rounded text-xs font-medium border border-gray-300" data-witness="A" title="ხელნაწერი A (ათონი)">A</button>
+                <button id="wit-s" class="witness-toggle px-2.5 py-1 bg-white border border-gray-300 text-gray-600 rounded text-xs font-medium hover:bg-gray-50" data-witness="S" title="ხელნაწერი S (სინა)">S</button>
+            </div>
+            <span class="text-gray-300">|</span>
+            <!-- Witness Info (updates on toggle) -->
             <div class="text-gray-600">
                 <span id="witness-settlement">ათონის მთა</span><span class="text-gray-300 mx-1.5">·</span><span id="witness-repository" class="text-gray-500">ივერთა მონასტერი</span><span class="text-gray-300 mx-1.5">·</span><span id="witness-locus" class="text-gray-400">32r—37r</span>
             </div>
@@ -848,8 +919,8 @@ section:hover .copy-urn {
             
             <!-- Right: Display options -->
             <div class="flex items-center gap-4">
-                <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer critical-view-option" title="კრიტიკული აპარატის ჩვენება/დამალვა">
-                    <input type="checkbox" id="show-apparatus" checked class="rounded border-gray-300 text-gray-800 focus:ring-gray-400">
+                <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer critical-view-option" title="სამეცნიერო მარკირების ჩვენება (აპარატი, ტერმინები, რედაქტორის ჩანართები)">
+                    <input type="checkbox" id="show-markup" checked class="rounded border-gray-300 text-gray-800 focus:ring-gray-400">
                     აპარატი
                 </label>
                 <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer critical-view-option" title="ფოლიოს მარკერების ჩვენება">
@@ -889,64 +960,64 @@ section:hover .copy-urn {
                     <!-- Section content -->
                     <div class="font-serif-geo text-lg leading-loose text-gray-800">
                         <p class="text-justify">
-                ხოლო არიან დამორჩილებითნი ამათ პირველთა <a href="../lexicon/index.html#lex.arthron" class="term-link" data-term="lex.arthron" data-ana="#gramm.arthron" data-corresp="http://purl.org/olia/olia.owl#Article" title="იხ. ლექსიკონში">ართრონთანი</a> <span class="apparatus-inline" data-app-id="app.23.1"><span class="reading-a">სხუანიცა ართრონნი</span><span class="reading-s hidden">სხუანიცა ართრონნი</span></span><sup class="apparatus-marker" data-app="app.23.1" title="იხ. აპარატი">189</sup>, ათ-ათი <span class="apparatus-inline" data-app-id="app.23.2"><span class="reading-a">თითოეულისა</span><span class="reading-s hidden">თჳთეულისა</span></span><sup class="apparatus-marker" data-app="app.23.2" title="იხ. აპარატი">190</sup> <a href="../lexicon/index.html#lex.gender" class="term-link" data-term="lex.gender" data-ana="#gramm.gender" title="იხ. ლექსიკონში">ნათესავისა</a> და დამორჩილებული, რომელ არიან ესე:
+                ხოლო არიან დამორჩილებითნი ამათ პირველთა <a href="../lexicon/index.html#lex.arthron" class="term-link" data-term="lex.arthron" data-ana="#gramm.arthron" data-corresp="http://purl.org/olia/olia.owl#Article" title="იხ. ლექსიკონში">ართრონთანი</a> <span class="apparatus-inline" data-app-id="app.23.1" data-var-type="omit"><span class="reading-a">სხუანიცა ართრონნი</span><span class="reading-s hidden var-omit">სხუანიცა ართრონნი</span></span><sup class="apparatus-marker" data-app="app.23.1" title="იხ. აპარატი">189</sup>, ათ-ათი <span class="apparatus-inline" data-app-id="app.23.2" data-var-type="ortho"><span class="reading-a">თითოეულისა</span><span class="reading-s hidden var-ortho">თჳთეულისა</span></span><sup class="apparatus-marker" data-app="app.23.2" title="იხ. აპარატი">190</sup> <a href="../lexicon/index.html#lex.gender" class="term-link" data-term="lex.gender" data-ana="#gramm.gender" title="იხ. ლექსიკონში">ნათესავისა</a> და დამორჩილებული, რომელ არიან ესე:
                 
                 
                 <a href="../lexicon/index.html#lex.masc" class="term-link" data-term="lex.masc" data-ana="#gramm.masc" data-corresp="http://purl.org/olia/olia.owl#Masculine" title="იხ. ლექსიკონში">მამალთანი</a> ვიდრემე:
                 </p><p class="examples-line">
-                    <span class="font-medium">ოს</span> <span class="greek text-gray-600">(ὅς)</span>, 
-                    <span class="apparatus-inline" data-app-id="app.23.3"><span class="reading-a">უ</span><span class="reading-s hidden">ოსუ</span></span><sup class="apparatus-marker" data-app="app.23.3" title="იხ. აპარატი">191</sup> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[οὗ]</span>, 
-                    <span class="font-medium">ო</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[ᾧ]</span>, 
-                    <span class="apparatus-inline" data-app-id="app.23.4"><span class="reading-a">ონ</span><span class="reading-s hidden">ონო</span></span><sup class="apparatus-marker" data-app="app.23.4" title="იხ. აპარატი">192</sup> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[ὅν]</span>;
+                    <span class="font-medium">ოს</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>ὅς<span class="bracket">]</span></span>, 
+                    <span class="apparatus-inline" data-app-id="app.23.3" data-var-type="ortho"><span class="reading-a">უ</span><span class="reading-s hidden var-ortho">ოსუ</span></span><sup class="apparatus-marker" data-app="app.23.3" title="იხ. აპარატი">191</sup> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>οὗ<span class="bracket">]</span></span>, 
+                    <span class="font-medium">ო</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>ᾧ<span class="bracket">]</span></span>, 
+                    <span class="apparatus-inline" data-app-id="app.23.4" data-var-type="ortho"><span class="reading-a">ონ</span><span class="reading-s hidden var-ortho">ონო</span></span><sup class="apparatus-marker" data-app="app.23.4" title="იხ. აპარატი">192</sup> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>ὅν<span class="bracket">]</span></span>;
                 </p><p class="text-justify">
                 </p><p class="examples-line">
-                    <span class="font-medium">ო</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[ὥ]</span>, 
-                    <span class="font-medium">ოინ</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[οἷν]</span>;
+                    <span class="font-medium">ო</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>ὥ<span class="bracket">]</span></span>, 
+                    <span class="font-medium">ოინ</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>οἷν<span class="bracket">]</span></span>;
                 </p><p class="text-justify">
                 <span class="folio-marker inline-folio text-xs mx-1">[A 37r]</span>
                 </p><p class="examples-line">
-                    <span class="font-medium">ჳ</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[οἵ]</span>, 
-                    <span class="font-medium">ონ</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[ὧν]</span>, 
-                    <span class="font-medium">ოის</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[οἷς]</span>, 
-                    <span class="font-medium">უს</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[οὕς]</span>.
+                    <span class="font-medium">ჳ</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>οἵ<span class="bracket">]</span></span>, 
+                    <span class="font-medium">ონ</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>ὧν<span class="bracket">]</span></span>, 
+                    <span class="font-medium">ოის</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>οἷς<span class="bracket">]</span></span>, 
+                    <span class="font-medium">უს</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>οὕς<span class="bracket">]</span></span>.
                 </p><p class="text-justify">
                 
                 
                 ხოლო <a href="../lexicon/index.html#lex.fem" class="term-link" data-term="lex.fem" data-ana="#gramm.fem" data-corresp="http://purl.org/olia/olia.owl#Feminine" title="იხ. ლექსიკონში">დედალთანი</a> დამორჩილებითნი:
                 </p><p class="examples-line">
-                    <span class="font-medium">ი</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[ἥ]</span>, 
-                    <span class="font-medium">ეს</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[ἧς]</span>, 
-                    <span class="font-medium">ი</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[ᾗ]</span>, 
-                    <span class="font-medium">ენ</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[ἥν]</span>;
+                    <span class="font-medium">ი</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>ἥ<span class="bracket">]</span></span>, 
+                    <span class="font-medium">ეს</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>ἧς<span class="bracket">]</span></span>, 
+                    <span class="font-medium">ი</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>ᾗ<span class="bracket">]</span></span>, 
+                    <span class="font-medium">ენ</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>ἥν<span class="bracket">]</span></span>;
                 </p><p class="text-justify">
                 </p><p class="examples-line">
-                    <span class="apparatus-inline" data-app-id="app.23.5"><span class="reading-a">ო</span><span class="reading-s hidden">ო</span></span><sup class="apparatus-marker" data-app="app.23.5" title="იხ. აპარატი">193</sup> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[ὥ]</span>, 
-                    <span class="apparatus-inline" data-app-id="app.23.6"><span class="reading-a">ჳნ</span><span class="reading-s hidden">ენ</span></span><sup class="apparatus-marker" data-app="app.23.6" title="იხ. აპარატი">194</sup> <span class="greek text-gray-600">(οἷν)</span>;
+                    <span class="apparatus-inline" data-app-id="app.23.5" data-var-type="ortho"><span class="reading-a">ო</span><span class="reading-s hidden var-ortho">ო</span></span><sup class="apparatus-marker" data-app="app.23.5" title="იხ. აპარატი">193</sup> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>ὥ<span class="bracket">]</span></span>, 
+                    <span class="apparatus-inline" data-app-id="app.23.6" data-var-type="ortho"><span class="reading-a">ჳნ</span><span class="reading-s hidden var-ortho">ენ</span></span><sup class="apparatus-marker" data-app="app.23.6" title="იხ. აპარატი">194</sup> <span class="greek text-gray-600">(οἷν)</span>;
                 </p><p class="text-justify">
                 </p><p class="examples-line">
-                    <span class="font-medium">ე</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[αἵ]</span>, 
-                    <span class="font-medium">ონ</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[ὧν]</span>, 
-                    <span class="font-medium">ეს</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[αἷς]</span>, 
-                    <span class="font-medium">ას</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[ἅς]</span>.
+                    <span class="font-medium">ე</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>αἵ<span class="bracket">]</span></span>, 
+                    <span class="font-medium">ონ</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>ὧν<span class="bracket">]</span></span>, 
+                    <span class="font-medium">ეს</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>αἷς<span class="bracket">]</span></span>, 
+                    <span class="font-medium">ას</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>ἅς<span class="bracket">]</span></span>.
                 </p><p class="text-justify">
                 
                 
                 ხოლო <a href="../lexicon/index.html#lex.neut" class="term-link" data-term="lex.neut" data-ana="#gramm.neut" data-corresp="http://purl.org/olia/olia.owl#Neuter" title="იხ. ლექსიკონში">შუათანი</a> დამორჩილებითნი:
                 </p><p class="examples-line">
-                    <span class="font-medium">ო</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[ὅ]</span>, 
-                    <span class="font-medium">უ</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[οὗ]</span>, 
-                    <span class="font-medium">ო</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[ᾧ]</span>, 
-                    <span class="font-medium">ო</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[ὅ]</span>;
+                    <span class="font-medium">ო</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>ὅ<span class="bracket">]</span></span>, 
+                    <span class="font-medium">უ</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>οὗ<span class="bracket">]</span></span>, 
+                    <span class="font-medium">ო</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>ᾧ<span class="bracket">]</span></span>, 
+                    <span class="font-medium">ო</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>ὅ<span class="bracket">]</span></span>;
                 </p><p class="text-justify">
                 </p><p class="examples-line">
-                    <span class="font-medium">ო</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[ὥ]</span>, 
-                    <span class="font-medium">ჳნ</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება">[οἷν]</span>;
+                    <span class="font-medium">ო</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>ὥ<span class="bracket">]</span></span>, 
+                    <span class="font-medium">ჳნ</span> <span class="greek supplied text-gray-600" title="რედაქტორის შევსება"><span class="bracket">[</span>οἷν<span class="bracket">]</span></span>;
                 </p><p class="text-justify">
                 </p><p class="examples-line">
-                    <span class="apparatus-inline" data-app-id="app.23.7"><span class="reading-a">ა ἅ, 
+                    <span class="apparatus-inline" data-app-id="app.23.7" data-var-type="omit"><span class="reading-a">ა ἅ, 
                             ონ <span class="supplied" title="რედაქტორის შევსება">[ὧν]</span>, 
                             ჳს <span class="supplied" title="რედაქტორის შევსება">[οἷς]</span>, 
-                            ა <span class="supplied" title="რედაქტორის შევსება">[ἅ]</span></span><span class="reading-s hidden">eye-skip: scribe&#39;s eye jumped from ეს (fem. pl. dat.) to ონ (neut. pl. gen.), omitting 10 forms</span></span><sup class="apparatus-marker" data-app="app.23.7" title="იხ. აპარატი">195</sup>.
+                            ა <span class="supplied" title="რედაქტორის შევსება">[ἅ]</span></span><span class="reading-s hidden var-omit">eye-skip: scribe&#39;s eye jumped from ეს (fem. pl. dat.) to ონ (neut. pl. gen.), omitting 10 forms</span></span><sup class="apparatus-marker" data-app="app.23.7" title="იხ. აპარატი">195</sup>.
                 </p><p class="text-justify">
             </p>
                     </div>
@@ -1007,8 +1078,7 @@ section:hover .copy-urn {
                     <table class="collation-table">
                         <thead>
                             <tr>
-                                <th class="w-12">#</th>
-                                <th>§</th>
+                                <th class="col-num">#</th>
                                 <th>ლემა</th>
                                 <th>A</th>
                                 <th>S</th>
@@ -1018,73 +1088,78 @@ section:hover .copy-urn {
                         <tbody>
                             <tr data-app-id="app.23.1">
                                 <td class="row-num">189</td>
-                                <td class="section-ref">23</td>
                                 <td class="col-lemma">სხუანიცა ართრონნი</td>
                                 <td class="col-a">სხუანიცა ართრონნი</td>
                                 <td class="col-s">
                                         <span class="collation-same">სხუანიცა ართრონნი</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge omit">
+გამ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.23.2">
                                 <td class="row-num">190</td>
-                                <td class="section-ref">23</td>
                                 <td class="col-lemma">თითოეულისა</td>
                                 <td class="col-a">თითოეულისა</td>
                                 <td class="col-s">
                                         <span class="collation-diff">თჳთეულისა</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.23.3">
                                 <td class="row-num">191</td>
-                                <td class="section-ref">23</td>
                                 <td class="col-lemma">უ</td>
                                 <td class="col-a">უ</td>
                                 <td class="col-s">
                                         <span class="collation-diff">ოსუ</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.23.4">
                                 <td class="row-num">192</td>
-                                <td class="section-ref">23</td>
                                 <td class="col-lemma">ონ</td>
                                 <td class="col-a">ონ</td>
                                 <td class="col-s">
                                         <span class="collation-diff">ონო</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.23.5">
                                 <td class="row-num">193</td>
-                                <td class="section-ref">23</td>
                                 <td class="col-lemma">ო</td>
                                 <td class="col-a">ო</td>
                                 <td class="col-s">
                                         <span class="collation-same">ო</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.23.6">
                                 <td class="row-num">194</td>
-                                <td class="section-ref">23</td>
                                 <td class="col-lemma">ჳნ</td>
                                 <td class="col-a">ჳნ</td>
                                 <td class="col-s">
                                         <span class="collation-diff">ენ</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.23.7">
                                 <td class="row-num">195</td>
-                                <td class="section-ref">23</td>
                                 <td class="col-lemma">ა ἅ, 
                             ონ <span class="supplied" title="რედაქტორის შევსება">[ὧν]</span>, 
                             ჳს <span class="supplied" title="რედაქტორის შევსება">[οἷς]</span>, 
@@ -1097,6 +1172,8 @@ section:hover .copy-urn {
                                         <span class="collation-diff">eye-skip: scribe&#39;s eye jumped from ეს (fem. pl. dat.) to ონ (neut. pl. gen.), omitting 10 forms</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge omit">
+გამ                                    </span>
                                 </td>
                             </tr>
                         </tbody>
@@ -1502,7 +1579,6 @@ window.addEventListener('scroll', function() {
 // Update witness info bar
 function updateWitnessBar(witness) {
     const data = witnessData[witness];
-    document.getElementById('witness-sigil').textContent = data.sigil;
     document.getElementById('witness-settlement').textContent = data.settlement;
     document.getElementById('witness-repository').textContent = data.repository;
     document.getElementById('witness-locus').textContent = data.locus;
@@ -1547,14 +1623,16 @@ if (savedWitness) {
     if (btn) btn.click();
 }
 
-// Toggle apparatus visibility
-const apparatusCheckbox = document.getElementById('show-apparatus');
-if (apparatusCheckbox) {
-    apparatusCheckbox.addEventListener('change', function() {
-        const panels = document.querySelectorAll('.section-apparatus, .combined-apparatus');
-        const markers = document.querySelectorAll('.apparatus-marker');
-        panels.forEach(p => p.style.display = this.checked ? '' : 'none');
-        markers.forEach(m => m.style.display = this.checked ? '' : 'none');
+// Toggle markup visibility (plain text mode)
+const markupCheckbox = document.getElementById('show-markup');
+const textArticle = document.getElementById('text-article');
+if (markupCheckbox && textArticle) {
+    markupCheckbox.addEventListener('change', function() {
+        if (this.checked) {
+            textArticle.classList.remove('plain-text-mode');
+        } else {
+            textArticle.classList.add('plain-text-mode');
+        }
     });
 }
 

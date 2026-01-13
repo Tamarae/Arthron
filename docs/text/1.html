@@ -60,10 +60,40 @@
 .apparatus-inline {
     border-bottom: 1px dotted #d97706;
 }
+/* Type-specific variant colors for inline readings */
 .reading-s {
-    background: #fef3c7;
     padding: 0 2px;
     border-radius: 2px;
+}
+/* Default (no type or unknown) */
+.reading-s {
+    background: #f3f4f6;
+    color: #374151;
+}
+/* Orthographic - amber */
+.reading-s.var-ortho {
+    background: #fef3c7;
+    color: #92400e;
+}
+/* Lexical - blue */
+.reading-s.var-lex {
+    background: #dbeafe;
+    color: #1e40af;
+}
+/* Morphological - purple */
+.reading-s.var-morph {
+    background: #f3e8ff;
+    color: #6b21a8;
+}
+/* Omission - red */
+.reading-s.var-omit {
+    background: #fee2e2;
+    color: #991b1b;
+}
+/* Addition - green */
+.reading-s.var-add {
+    background: #dcfce7;
+    color: #166534;
 }
 .witness-toggle.active { 
     background: #1a1a1a; 
@@ -229,6 +259,42 @@ section:hover .copy-urn {
 .del s {
     text-decoration: line-through;
     text-decoration-color: #d1d5db;
+}
+
+/* Plain text mode - removes all scholarly markup styling */
+.plain-text-mode .supplied {
+    color: inherit;
+}
+.plain-text-mode .bracket {
+    display: none;
+}
+.plain-text-mode .term-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: text;
+    pointer-events: none;
+}
+.plain-text-mode .apparatus-inline {
+    border-bottom: none;
+}
+.plain-text-mode .apparatus-marker {
+    display: none;
+}
+.plain-text-mode .section-apparatus,
+.plain-text-mode .combined-apparatus {
+    display: none;
+}
+.plain-text-mode .greek {
+    font-style: normal;
+}
+.plain-text-mode .instruction-marker::before {
+    content: none;
+}
+.plain-text-mode .marginal-note {
+    display: none;
+}
+.plain-text-mode .linebreak {
+    display: none;
 }
 
 /* Lexicon Popup - Margin note style */
@@ -422,7 +488,7 @@ section:hover .copy-urn {
 }
 .collation-table th {
     text-align: left;
-    padding: 0.75rem 1rem;
+    padding: 0.875rem 1rem;
     background: #f9fafb;
     border-bottom: 2px solid #e5e7eb;
     font-size: 0.75rem;
@@ -431,23 +497,29 @@ section:hover .copy-urn {
     letter-spacing: 0.05em;
     color: #6b7280;
 }
+.collation-table th.col-num {
+    text-align: right;
+}
 .collation-table td {
-    padding: 0.75rem 1rem;
+    padding: 1rem 1rem;
     border-bottom: 1px solid #f3f4f6;
-    vertical-align: top;
+    vertical-align: middle;
 }
 .collation-table tr:hover {
-    background: #f9fafb;
+    background: #fafafa;
 }
 .collation-table .row-num {
     color: #9ca3af;
     font-size: 0.75rem;
     font-weight: 500;
-    width: 40px;
+    width: 48px;
+    text-align: right;
+    padding-right: 1.25rem;
 }
 .collation-table .section-ref {
     color: #6b7280;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
+    width: 48px;
 }
 .collation-table .col-lemma {
     font-family: 'Noto Serif Georgian', serif;
@@ -460,19 +532,17 @@ section:hover .copy-urn {
 .collation-table .col-s {
     font-family: 'Noto Serif Georgian', serif;
 }
+/* Collation diff - no background color, just text styling */
 .collation-diff {
-    background: #fef3c7;
-    padding: 2px 4px;
-    border-radius: 3px;
-    color: #92400e;
+    color: #1f2937;
+    font-weight: 500;
 }
 .collation-same {
     color: #9ca3af;
 }
 .collation-omit {
-    color: #9ca3af;
+    color: #6b7280;
     font-style: italic;
-    font-size: 0.8em;
 }
 
 /* Variant Type Badges */
@@ -627,11 +697,6 @@ section:hover .copy-urn {
             <h1 class="text-xl font-medium">ტრაქტატის ტექსტი</h1>
             <span class="text-sm text-gray-400">24 პარაგრაფი</span>
         </div>
-        <div class="flex items-center gap-3 text-sm">
-            <span class="text-gray-400">ხელნაწერი:</span>
-            <button id="wit-a" class="witness-toggle active px-3 py-1 rounded text-xs border border-gray-300" data-witness="A" title="ხელნაწერი A (თბილისი)">A</button>
-            <button id="wit-s" class="witness-toggle px-3 py-1 bg-white border border-gray-300 text-gray-600 rounded text-xs hover:bg-gray-50" data-witness="S" title="ხელნაწერი S (სინა)">S</button>
-        </div>
     </div>
 
      <!-- Editorial Guidelines (Collapsible) -->
@@ -693,10 +758,16 @@ section:hover .copy-urn {
         </div>
     </details>
     
-    <!-- Witness Info Bar -->
+    <!-- Witness Info Bar (with integrated toggle) -->
     <div class="witness-bar bg-gray-50 border border-gray-200 rounded-lg px-4 py-2.5 mb-6 flex items-center justify-between text-sm">
-        <div class="flex items-center gap-2">
-            <span class="inline-flex items-center justify-center w-6 h-6 rounded bg-gray-800 text-white text-xs font-medium" id="witness-sigil">A</span>
+        <div class="flex items-center gap-3">
+            <!-- Witness Toggle -->
+            <div class="flex items-center gap-1">
+                <button id="wit-a" class="witness-toggle active px-2.5 py-1 rounded text-xs font-medium border border-gray-300" data-witness="A" title="ხელნაწერი A (ათონი)">A</button>
+                <button id="wit-s" class="witness-toggle px-2.5 py-1 bg-white border border-gray-300 text-gray-600 rounded text-xs font-medium hover:bg-gray-50" data-witness="S" title="ხელნაწერი S (სინა)">S</button>
+            </div>
+            <span class="text-gray-300">|</span>
+            <!-- Witness Info (updates on toggle) -->
             <div class="text-gray-600">
                 <span id="witness-settlement">ათონის მთა</span><span class="text-gray-300 mx-1.5">·</span><span id="witness-repository" class="text-gray-500">ივერთა მონასტერი</span><span class="text-gray-300 mx-1.5">·</span><span id="witness-locus" class="text-gray-400">32r—37r</span>
             </div>
@@ -848,8 +919,8 @@ section:hover .copy-urn {
             
             <!-- Right: Display options -->
             <div class="flex items-center gap-4">
-                <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer critical-view-option" title="კრიტიკული აპარატის ჩვენება/დამალვა">
-                    <input type="checkbox" id="show-apparatus" checked class="rounded border-gray-300 text-gray-800 focus:ring-gray-400">
+                <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer critical-view-option" title="სამეცნიერო მარკირების ჩვენება (აპარატი, ტერმინები, რედაქტორის ჩანართები)">
+                    <input type="checkbox" id="show-markup" checked class="rounded border-gray-300 text-gray-800 focus:ring-gray-400">
                     აპარატი
                 </label>
                 <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer critical-view-option" title="ფოლიოს მარკერების ჩვენება">
@@ -897,7 +968,7 @@ section:hover .copy-urn {
                         <p class="text-justify">
                 <span class="folio-marker inline-folio text-xs mx-1">[A 32r]</span>
                 <span class="folio-marker inline-folio text-xs mx-1">[S 106r]</span>
-                <span class="instruction-marker rubric" title="სასწავლო ნიშანი">შეისწავე</span>, რამეთუ ვინაჲთგან <a href="../lexicon/index.html#lex.arthron" class="term-link" data-term="lex.arthron" data-ana="#gramm.arthron" data-corresp="http://purl.org/olia/olia.owl#Article" title="იხ. ლექსიკონში">ართრონთა</a> <a href="../lexicon/index.html#lex.dzlit" class="term-link" data-term="lex.dzlit" title="იხ. ლექსიკონში">ძლით</a> <span class="apparatus-inline" data-app-id="app.1.1"><span class="reading-a">უმეცრად</span><span class="reading-s hidden">უმეცრ̃დ</span></span><sup class="apparatus-marker" data-app="app.1.1" title="იხ. აპარატი">1</sup> და ბნელად საგონებელ არს <span class="apparatus-inline" data-app-id="app.1.2"><span class="reading-a">ენასა ზედა ჩუენსა</span><span class="reading-s hidden">ენასა ჩუენსა ზედა</span></span><sup class="apparatus-marker" data-app="app.1.2" title="იხ. აპარატი">2</sup> <a href="../lexicon/index.html#lex.leqsi" class="term-link" data-term="lex.leqsi" title="იხ. ლექსიკონში">ლექსი</a> თარგმანებული, რომელსა წმიდათა შორის იოანე ოქროპირი მწვალებელთაგან მოღებულად წინა-აღსადგომელად ჩუენ მართლმადიდებელთა მომართად იტყჳს <a href="../lexicon/index.html#lex.leqsi" class="term-link" data-term="lex.leqsi" title="იხ. ლექსიკონში">ლექსსა</a> მას იოანე მახარებელისა მიერ თქუმულსა ძისათჳს; და ბერძულსა შინა ვიდრემე ნათლად ძეს <a href="../lexicon/index.html#lex.leqsi" class="term-link" data-term="lex.leqsi" title="იხ. ლექსიკონში">ლექსი</a> იგი; ხოლო გარდამოითარგმნოს რაჲ, დაბნელდების <span class="folio-marker inline-folio text-xs mx-1">[A 32va]</span><a href="../lexicon/index.html#lex.uarthrono" class="term-link" data-term="lex.uarthrono" data-ana="#gramm.uarthrono" title="იხ. ლექსიკონში">უართრონობისათჳს</a> ენისა ჩუენისა და ცხადსა და ნათე<span class="linebreak" title="სტრიქონის გადატანა">‖</span>ლსა <span class="apparatus-inline" data-app-id="app.1.3"><span class="reading-a">სიტყუასა</span><span class="reading-s hidden">სიტყჳს̃ჲ</span></span><sup class="apparatus-marker" data-app="app.1.3" title="იხ. აპარატი">3</sup> უცნაურ ვინაჲმე ჰყოფს, რამეთუ შეუძლებელ არს თარგმანებაჲ მისი ენასა ზედა ქართულსა; ხოლო რაჲთა გამოვაჩინოთ, თუ რაჲ არს <a href="../lexicon/index.html#lex.arthron" class="term-link" data-term="lex.arthron" data-ana="#gramm.arthron" data-corresp="http://purl.org/olia/olia.owl#Article" title="იხ. ლექსიკონში">ართრონი</a> და ვითარ ვერ ეგების <span class="apparatus-inline" data-app-id="app.1.4"><span class="reading-a">ენასა</span><span class="reading-s hidden">ენაჲსა</span></span><sup class="apparatus-marker" data-app="app.1.4" title="იხ. აპარატი">4</sup> ზედა ქართულსა <span class="apparatus-inline" data-app-id="app.1.5"><span class="reading-a">თარგმნაჲ</span><span class="reading-s hidden">თარგმნა</span></span><sup class="apparatus-marker" data-app="app.1.5" title="იხ. აპარატი">5</sup> მისი და ვითარ იჴუმევენ ამას <a href="../lexicon/index.html#lex.arthron" class="term-link" data-term="lex.arthron" data-ana="#gramm.arthron" data-corresp="http://purl.org/olia/olia.owl#Article" title="იხ. ლექსიკონში">ართრონსა</a> ბერძენნი, არა დავფაროთ ძალისაებრ და <span class="apparatus-inline" data-app-id="app.1.6"><span class="reading-a">გულისჴმის-ყოფისა</span><span class="reading-s hidden">ყოფისაჲ</span></span><sup class="apparatus-marker" data-app="app.1.6" title="იხ. აპარატი">6</sup> <span class="apparatus-inline" data-app-id="app.1.7"><span class="reading-a">ჩუენისა</span><span class="reading-s hidden">ჩუენისაებრ</span></span><sup class="apparatus-marker" data-app="app.1.7" title="იხ. აპარატი">7</sup>.
+                <span class="instruction-marker rubric" title="სასწავლო ნიშანი">შეისწავე</span>, რამეთუ ვინაჲთგან <a href="../lexicon/index.html#lex.arthron" class="term-link" data-term="lex.arthron" data-ana="#gramm.arthron" data-corresp="http://purl.org/olia/olia.owl#Article" title="იხ. ლექსიკონში">ართრონთა</a> <a href="../lexicon/index.html#lex.dzlit" class="term-link" data-term="lex.dzlit" title="იხ. ლექსიკონში">ძლით</a> <span class="apparatus-inline" data-app-id="app.1.1" data-var-type="ortho"><span class="reading-a">უმეცრად</span><span class="reading-s hidden var-ortho">უმეცრ̃დ</span></span><sup class="apparatus-marker" data-app="app.1.1" title="იხ. აპარატი">1</sup> და ბნელად საგონებელ არს <span class="apparatus-inline" data-app-id="app.1.2" data-var-type="lex"><span class="reading-a">ენასა ზედა ჩუენსა</span><span class="reading-s hidden var-lex">ენასა ჩუენსა ზედა</span></span><sup class="apparatus-marker" data-app="app.1.2" title="იხ. აპარატი">2</sup> <a href="../lexicon/index.html#lex.leqsi" class="term-link" data-term="lex.leqsi" title="იხ. ლექსიკონში">ლექსი</a> თარგმანებული, რომელსა წმიდათა შორის იოანე ოქროპირი მწვალებელთაგან მოღებულად წინა-აღსადგომელად ჩუენ მართლმადიდებელთა მომართად იტყჳს <a href="../lexicon/index.html#lex.leqsi" class="term-link" data-term="lex.leqsi" title="იხ. ლექსიკონში">ლექსსა</a> მას იოანე მახარებელისა მიერ თქუმულსა ძისათჳს; და ბერძულსა შინა ვიდრემე ნათლად ძეს <a href="../lexicon/index.html#lex.leqsi" class="term-link" data-term="lex.leqsi" title="იხ. ლექსიკონში">ლექსი</a> იგი; ხოლო გარდამოითარგმნოს რაჲ, დაბნელდების <span class="folio-marker inline-folio text-xs mx-1">[A 32va]</span><a href="../lexicon/index.html#lex.uarthrono" class="term-link" data-term="lex.uarthrono" data-ana="#gramm.uarthrono" title="იხ. ლექსიკონში">უართრონობისათჳს</a> ენისა ჩუენისა და ცხადსა და ნათე<span class="linebreak" title="სტრიქონის გადატანა">‖</span>ლსა <span class="apparatus-inline" data-app-id="app.1.3" data-var-type="ortho"><span class="reading-a">სიტყუასა</span><span class="reading-s hidden var-ortho">სიტყჳს̃ჲ</span></span><sup class="apparatus-marker" data-app="app.1.3" title="იხ. აპარატი">3</sup> უცნაურ ვინაჲმე ჰყოფს, რამეთუ შეუძლებელ არს თარგმანებაჲ მისი ენასა ზედა ქართულსა; ხოლო რაჲთა გამოვაჩინოთ, თუ რაჲ არს <a href="../lexicon/index.html#lex.arthron" class="term-link" data-term="lex.arthron" data-ana="#gramm.arthron" data-corresp="http://purl.org/olia/olia.owl#Article" title="იხ. ლექსიკონში">ართრონი</a> და ვითარ ვერ ეგების <span class="apparatus-inline" data-app-id="app.1.4" data-var-type="ortho"><span class="reading-a">ენასა</span><span class="reading-s hidden var-ortho">ენაჲსა</span></span><sup class="apparatus-marker" data-app="app.1.4" title="იხ. აპარატი">4</sup> ზედა ქართულსა <span class="apparatus-inline" data-app-id="app.1.5" data-var-type="ortho"><span class="reading-a">თარგმნაჲ</span><span class="reading-s hidden var-ortho">თარგმნა</span></span><sup class="apparatus-marker" data-app="app.1.5" title="იხ. აპარატი">5</sup> მისი და ვითარ იჴუმევენ ამას <a href="../lexicon/index.html#lex.arthron" class="term-link" data-term="lex.arthron" data-ana="#gramm.arthron" data-corresp="http://purl.org/olia/olia.owl#Article" title="იხ. ლექსიკონში">ართრონსა</a> ბერძენნი, არა დავფაროთ ძალისაებრ და <span class="apparatus-inline" data-app-id="app.1.6" data-var-type="ortho"><span class="reading-a">გულისჴმის-ყოფისა</span><span class="reading-s hidden var-ortho">ყოფისაჲ</span></span><sup class="apparatus-marker" data-app="app.1.6" title="იხ. აპარატი">6</sup> <span class="apparatus-inline" data-app-id="app.1.7" data-var-type="morph"><span class="reading-a">ჩუენისა</span><span class="reading-s hidden var-morph">ჩუენისაებრ</span></span><sup class="apparatus-marker" data-app="app.1.7" title="იხ. აპარატი">7</sup>.
             </p>
                     </div>
                     
@@ -954,8 +1025,7 @@ section:hover .copy-urn {
                     <table class="collation-table">
                         <thead>
                             <tr>
-                                <th class="w-12">#</th>
-                                <th>§</th>
+                                <th class="col-num">#</th>
                                 <th>ლემა</th>
                                 <th>A</th>
                                 <th>S</th>
@@ -965,79 +1035,86 @@ section:hover .copy-urn {
                         <tbody>
                             <tr data-app-id="app.1.1">
                                 <td class="row-num">1</td>
-                                <td class="section-ref">1</td>
                                 <td class="col-lemma">უმეცრად</td>
                                 <td class="col-a">უმეცრად</td>
                                 <td class="col-s">
                                         <span class="collation-diff">უმეცრ̃დ</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.1.2">
                                 <td class="row-num">2</td>
-                                <td class="section-ref">1</td>
                                 <td class="col-lemma">ენასა ზედა ჩუენსა</td>
                                 <td class="col-a">ენასა ზედა ჩუენსა</td>
                                 <td class="col-s">
                                         <span class="collation-diff">ენასა ჩუენსა ზედა</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge lex">
+ლექს                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.1.3">
                                 <td class="row-num">3</td>
-                                <td class="section-ref">1</td>
                                 <td class="col-lemma">სიტყუასა</td>
                                 <td class="col-a">სიტყუასა</td>
                                 <td class="col-s">
                                         <span class="collation-diff">სიტყჳს̃ჲ</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.1.4">
                                 <td class="row-num">4</td>
-                                <td class="section-ref">1</td>
                                 <td class="col-lemma">ენასა</td>
                                 <td class="col-a">ენასა</td>
                                 <td class="col-s">
                                         <span class="collation-diff">ენაჲსა</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.1.5">
                                 <td class="row-num">5</td>
-                                <td class="section-ref">1</td>
                                 <td class="col-lemma">თარგმნაჲ</td>
                                 <td class="col-a">თარგმნაჲ</td>
                                 <td class="col-s">
                                         <span class="collation-diff">თარგმნა</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.1.6">
                                 <td class="row-num">6</td>
-                                <td class="section-ref">1</td>
                                 <td class="col-lemma">გულისჴმის-ყოფისა</td>
                                 <td class="col-a">გულისჴმის-ყოფისა</td>
                                 <td class="col-s">
                                         <span class="collation-diff">ყოფისაჲ</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge ortho">
+ორთ                                    </span>
                                 </td>
                             </tr>
                             <tr data-app-id="app.1.7">
                                 <td class="row-num">7</td>
-                                <td class="section-ref">1</td>
                                 <td class="col-lemma">ჩუენისა</td>
                                 <td class="col-a">ჩუენისა</td>
                                 <td class="col-s">
                                         <span class="collation-diff">ჩუენისაებრ</span>
                                 </td>
                                 <td>
+                                    <span class="type-badge morph">
+მორფ                                    </span>
                                 </td>
                             </tr>
                         </tbody>
@@ -1443,7 +1520,6 @@ window.addEventListener('scroll', function() {
 // Update witness info bar
 function updateWitnessBar(witness) {
     const data = witnessData[witness];
-    document.getElementById('witness-sigil').textContent = data.sigil;
     document.getElementById('witness-settlement').textContent = data.settlement;
     document.getElementById('witness-repository').textContent = data.repository;
     document.getElementById('witness-locus').textContent = data.locus;
@@ -1488,14 +1564,16 @@ if (savedWitness) {
     if (btn) btn.click();
 }
 
-// Toggle apparatus visibility
-const apparatusCheckbox = document.getElementById('show-apparatus');
-if (apparatusCheckbox) {
-    apparatusCheckbox.addEventListener('change', function() {
-        const panels = document.querySelectorAll('.section-apparatus, .combined-apparatus');
-        const markers = document.querySelectorAll('.apparatus-marker');
-        panels.forEach(p => p.style.display = this.checked ? '' : 'none');
-        markers.forEach(m => m.style.display = this.checked ? '' : 'none');
+// Toggle markup visibility (plain text mode)
+const markupCheckbox = document.getElementById('show-markup');
+const textArticle = document.getElementById('text-article');
+if (markupCheckbox && textArticle) {
+    markupCheckbox.addEventListener('change', function() {
+        if (this.checked) {
+            textArticle.classList.remove('plain-text-mode');
+        } else {
+            textArticle.classList.add('plain-text-mode');
+        }
     });
 }
 

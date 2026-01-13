@@ -37,7 +37,8 @@
                         <orth type="variant" xml:lang="ka">ადვილობითი</orth>
                     </form>
                     <xr type="map"><ref target="#lex.nom"/></xr>
-                    <sense><def xml:lang="ka">მარტივი, სახელობითი ბრუნვა (ბერძნ. ὀνομαστική).</def></sense>
+                  <etym><lang>grc</lang><mentioned xml:lang="grc">ὀνομαστική</mentioned></etym>
+                    <sense><def xml:lang="ka">მარტივი, სახელობითი ბრუნვა</def></sense>
                     <cit type="example"><quote xml:lang="ka">რაჟამს ადვილობითად იჴმევდენ ჴსენებასა სახელისასა.</quote><bibl>§ 4</bibl></cit>
                 </entry>
                 <entry xml:id="lex.nom" corresp="http://purl.org/olia/olia.owl#Nominative"><form type="lemma"><orth xml:lang="ka">სახელობითი</orth></form><xr type="see"><ref target="#lex.adviloba"/></xr></entry>
@@ -80,7 +81,7 @@
 
                 <entry xml:id="lex.aghmgebeli">
                     <form type="lemma"><orth xml:lang="ka">აღმგებელი</orth></form>
-                    <etym><lang>grc</lang><mentioned xml:lang="grc">τεκταιნόμενος</mentioned></etym>
+                  <etym><lang>grc</lang><mentioned xml:lang="grc">τεκταινόμενος</mentioned></etym>
                     <sense><def xml:lang="ka">შემქმნელი.</def></sense>
                     <cit type="example"><quote xml:lang="ka">მე ვარ აღმგებელი ქუეყანისად.</quote><bibl>ჰ. 60</bibl></cit>
                 </entry>
@@ -359,7 +360,7 @@
                 <!-- ი -->
                 <entry xml:id="lex.iataki">
                     <form type="lemma"><orth xml:lang="ka">იატაკი</orth></form>
-                    <etym><lang>grc</lang><mentioned xml:lang="grc">ἔდაφος</mentioned></etym>
+                  <etym><lang>grc</lang><mentioned xml:lang="grc">ἔδαφος</mentioned></etym>
                     <sense><def xml:lang="ka">საფუძველი, ძირი.</def></sense>
                     <cit type="example"><quote xml:lang="ka">პირველად სართული და მერმე იატაკი.</quote><bibl>ჰ. 46</bibl></cit>
                 </entry>
@@ -387,26 +388,30 @@
 
                 <entry xml:id="lex.leqseulad">
                     <form type="lemma"><orth xml:lang="ka">ლექსეულად</orth></form>
-                    <etym><lang>grc</lang><mentioned xml:lang="grc">καტὰ λέξιν</mentioned></etym>
+                  <etym><lang>grc</lang><mentioned xml:lang="grc">κατὰ λέξιν</mentioned></etym>
                     <sense><def xml:lang="ka">სიტყვა-სიტყვით.</def></sense>
                 </entry>
 
                 <!-- მ -->
                 <entry xml:id="lex.masc" corresp="http://purl.org/olia/olia.owl#Masculine">
                     <form type="lemma"><orth xml:lang="ka">მამალი</orth></form>
-                    <sense><def xml:lang="ka">მამრობითი სქესი (ბერძნ. ἀρσενικόν).</def></sense>
+                  <etym><lang>grc</lang><mentioned xml:lang="grc">ἀρσενικόν</mentioned></etym>
+                    <sense><def xml:lang="ka">მამრობითი სქესი</def></sense>
                     <cit type="example"><quote xml:lang="ka">მამალთა და დედალთა და შუათაგან.</quote><bibl>§ 2</bibl></cit>
                 </entry>
 
                 <entry xml:id="lex.fem" corresp="http://purl.org/olia/olia.owl#Feminine">
                     <form type="lemma"><orth xml:lang="ka">დედალი</orth></form>
-                    <sense><def xml:lang="ka">მდედრობითი სქესი (ბერძნ. θηλυκόν).</def></sense>
+                  <etym><lang>grc</lang><mentioned xml:lang="grc">θηλυκόν</mentioned></etym>
+                    <sense><def xml:lang="ka">მდედრობითი სქესი</def></sense>
                     <cit type="example"><quote xml:lang="ka">სამებისა ვიდრემე სახელი დედალი არს.</quote><bibl>§ 4</bibl></cit>
                 </entry>
 
                 <entry xml:id="lex.neut" corresp="http://purl.org/olia/olia.owl#Neuter">
                     <form type="lemma"><orth xml:lang="ka">შუაჲ</orth><orth type="variant" xml:lang="ka">შუა</orth></form>
-                    <sense><def xml:lang="ka">საშუალო სქესი (ბერძნ. οὐδέτερον).</def></sense>
+                  <etym><lang>grc</lang><mentioned xml:lang="grc">οὐδέτερον</mentioned></etym>
+                    <sense><def xml:lang="ka">საშუალო სქესი</def></sense>
+                  
                     <cit type="example"><quote xml:lang="ka">გინა თუ მამალი ეწოდების სახელი, გინა თუ დედალი, გინა თუ შუაჲ.</quote><bibl>§ 2</bibl></cit>
                 </entry>
 
@@ -632,13 +637,13 @@
 
                 <entry xml:id="lex.sulisambrdzoli">
                     <form type="lemma"><orth xml:lang="ka">სულისა მბრძოლი</orth></form>
-                    <etym><lang>grc</lang><mentioned xml:lang="grc">πνევματομάχος</mentioned></etym>
+                  <etym><lang>grc</lang><mentioned xml:lang="grc">πνευματομάχος</mentioned></etym>
                     <sense><def xml:lang="ka">პნევმატომახი; მწვალებელი.</def></sense>
                     <cit type="example"><quote xml:lang="ka">სულისა მბრძოლთა წინა აღუდგებით.</quote><bibl>ჰ. 27</bibl></cit>
                 </entry>
 
                 <entry xml:id="lex.skntema">
-                    <form type="lemma"><orth xml:lang="ka">სკნთემა</orth></form>
+                  <form type="lemma"><orth xml:lang="ka">სჳნთემა</orth></form>
                     <etym><lang>grc</lang><mentioned xml:lang="grc">σύνθεμα</mentioned></etym>
                     <sense><def xml:lang="ka">თან-შედგმა, შეწყობა.</def></sense>
                 </entry>
@@ -661,7 +666,8 @@
                         <orth xml:lang="ka">უართრონო</orth>
                         <orth type="variant" xml:lang="ka">უართრონოჲ</orth>
                     </form>
-                    <sense><def xml:lang="ka">უარტიკლო (ბერძნ. ἀνάρθρον).</def></sense>
+                  <etym><lang>grc</lang><mentioned xml:lang="grc">ἀνάρθρον</mentioned></etym>
+                    <sense><def xml:lang="ka">უარტიკლო</def></sense>
                     <cit type="example"><quote xml:lang="ka">დაბნელდების უართრონობისათჳს ენისა ჩუენისა.</quote><bibl>§ 1</bibl></cit>
                 </entry>
 
@@ -697,7 +703,7 @@
 
                 <entry xml:id="lex.ughelvo">
                     <form type="lemma"><orth xml:lang="ka">უღელვო</orth></form>
-                    <etym><lang>grc</lang><mentioned xml:lang="grc">ἀκύმαντον</mentioned></etym>
+                  <etym><lang>grc</lang><mentioned xml:lang="grc">ἀκύμαντον</mentioned></etym>
                     <sense><def xml:lang="ka">დაწყნარებული, დამშვიდებული.</def></sense>
                 </entry>
 
@@ -911,7 +917,7 @@
 
                 <entry xml:id="lex.pneuma">
                     <form type="lemma"><orth xml:lang="ka">სული</orth></form>
-                    <etym><lang>grc</lang><mentioned xml:lang="grc">πνεῦმა</mentioned></etym>
+                  <etym><lang>grc</lang><mentioned xml:lang="grc">πνεῦμα</mentioned></etym>
                     <sense><def xml:lang="ka">სული (წმიდა); გრამატიკულად საშუალო სქესის სახელი.</def></sense>
                 </entry>
 

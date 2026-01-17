@@ -7,7 +7,7 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "@type": "ontolex:LexicalEntry",
-  "@id": "https://your-domain.org/lexicon/lex.sactomeli",
+  "@id": "https://tamarae.github.io/Arthron/lexicon/lex.sactomeli",
   "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.sactomeli",
   "rdfs:label": {
     "@value": "საცთომელი",

@@ -7,7 +7,7 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "@type": "ontolex:LexicalEntry",
-  "@id": "https://your-domain.org/lexicon/lex.mifarulqmnili",
+  "@id": "https://tamarae.github.io/Arthron/lexicon/lex.mifarulqmnili",
   "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.mifarulqmnili",
   "rdfs:label": {
     "@value": "მიფარულ-ქმნილი",

@@ -1,0 +1,2266 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>სწავლანი — იოანე ოქროპირის სწავლანი</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'parchment': '#faf8f5',
+                        'ink': '#1a1a1a',
+                        'manuscript': '#f5f2ed',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600&family=Noto+Serif+Georgian:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans Georgian', sans-serif; }
+        .font-serif-geo { font-family: 'Noto Serif Georgian', Georgia, serif; }
+        .greek { font-family: 'Times New Roman', serif; font-style: italic; }
+    </style>
+</head>
+<body class="bg-parchment text-ink antialiased">
+    
+    <!-- Navigation -->
+    <nav class="border-b border-gray-200 sticky top-0 bg-parchment/95 backdrop-blur-sm z-10">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-14">
+                <a href="../index.html" class="text-lg font-medium text-gray-800">
+                    სიტყუაჲ ართრონთათჳს
+                </a>
+                <div class="flex items-center gap-6">
+                    <a href="../text/index.html" class="text-sm text-gray-600 hover:text-ink">ტექსტი</a>
+                    <a href="../homily/index.html" class="text-sm text-ink border-b border-gray-400 pb-0.5">სწავლანი</a>
+                    <a href="../lexicon/index.html" class="text-sm text-gray-600 hover:text-ink">ლექსიკონი</a>
+                    <a href="../research/index.html" class="text-sm text-gray-600 hover:text-ink">კვლევა</a>
+                    <a href="../about.html" class="text-sm text-gray-600 hover:text-ink">შესახებ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    
+    <!-- Header -->
+    <header class="mb-8 pb-6 border-b border-gray-200">
+        <h1 class="text-xl font-serif font-medium text-gray-900 mb-2">იოანე ოქროპირის სწავლანი</h1>
+        <p class="text-sm text-gray-500 italic" lang="en">John Chrysostomum</p>
+        <p class="text-xs text-gray-400 mt-3 font-mono">
+            74 პარაგრაფი · 129 შენიშვნა
+        </p>
+    </header>
+    
+    <!-- Controls -->
+    <div class="sticky top-0 z-10 bg-white/95 backdrop-blur border-b border-gray-100 -mx-4 px-4 py-3 mb-6 flex items-center justify-between">
+        <div class="flex items-center gap-4">
+            <!-- Folio display -->
+            <span id="current-folio" class="text-xs font-mono text-gray-400">
+                f. 26v
+            </span>
+        </div>
+        
+        <div class="flex items-center gap-3">
+            <!-- Toggle line numbers -->
+            <button id="toggle-lines" 
+                    class="text-xs px-2 py-1 border border-gray-200 rounded hover:bg-gray-50 transition-colors"
+                    title="სტრიქონების ნომრები">
+                <span class="line-on">¶</span>
+            </button>
+            
+            <!-- Toggle notes -->
+            <button id="toggle-notes" 
+                    class="text-xs px-2 py-1 border border-gray-200 rounded hover:bg-gray-50 transition-colors"
+                    title="შენიშვნები">
+                <span>შენ.</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Homily Head (Title from manuscript) -->
+    <div class="mb-8 p-4 bg-amber-50/50 border border-amber-100 rounded">
+        <p class="text-sm text-gray-700 leading-relaxed font-serif">
+                    <span class="lb" data-n="26vb"></span>ი̃თ. მისივე წმიდისა მამისა ჩუენისა <span class="persname" data-ref="#chrysostom">იოანე ოქროპირისა</span> 
+                    <span class="lb" data-n=""></span>კონსტანტინუპოლელ მთავარეპისკოპოსიაჲ. სიტყჳსა მისთჳს, ვითარმედ: 
+                    <span class="lb" data-n=""></span>„ქრისტე აღმოსავალი არს აღმოსავალთაჲ“ და ვითარმედ „აღვიდა“ 
+                    <span class="lb" data-n=""></span>და „შთავიდა“ და სულისათჳს წმიდისა, ვითარმედ: „ყოვლისა მპყრობელ არს“.
+                </p>
+    </div>
+    
+    <!-- Incipit -->
+    <div class="mb-8 text-center">
+        <p class="text-sm text-red-700 font-medium">
+                        მ<span class="supplied" title="omitted-in-ms">ამაო</span>, გ<span class="supplied" title="omitted-in-ms">უაკურთხენ</span>
+                        <sup class="note-ref" data-note="1">1</sup>
+                    </p>
+    </div>
+    
+    <!-- Main Text -->
+    <article class="homily-text">
+        <section class="mb-8" id="sec.1" data-section="1">
+            
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p1" 
+               data-n="1"
+data-folio="27r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">1</span>
+                
+                        გუშინ, ჩუენ, ჵ ქრისტეს მოყუარენო, წინაჲსწარმეტყუელთა და მახარებელთა 
+                        <span class="lb" data-n=""></span>შემოსრულთა ჴმათა მხოლოდ-შობილისა ღმრთისმეტყუელებაჲ 
+                        <span class="lb" data-n=""></span>განგჳბრწყინვეს ქრისტეს მოყუარესა ერსა. და ეჴსენების ესე 
+                        <span class="lb" data-n=""></span>ტკივილთ-მოყუარეთა და მოსწრაფეთა მსმენელთაგანთა, თუ ვითარ 
+                        <span class="lb" data-n=""></span>ჩუენ ღმრთისმეტყუელებისა ძლით განგუემარტა სიტყუაჲ მრავლად 
+                        <span class="lb" data-n=""></span>ვიდრემე ღირსებისაგან დაკლებული, გარნა ეგრეთცა, რაოდენ 
+                        <span class="lb" data-n=""></span>დასატევნელ იყო ენისა უკუდავთა ფილოსოფოსობად იძულებულისა. 
+                        <span class="lb" data-n=""></span>ხოლო არარაჲს დამაკლებე<span class="supplied" title="lost">ლ</span><span class="gap" title="12 character"></span> 
+                        <span class="lb" data-n=""></span>სასა მოქენ(?) <span class="gap" title="10 character"></span>არ ვიდრემე არს ჭეშმარიტებისა სიტყუაჲ 
+                        <span class="lb" data-n=""></span>და დიდსა <span class="pb" title="folio 27r">27r</span><span class="lb" data-n="27ra"></span> უკუე(?) ზესთ(?) სოფლისა სიბრძნესა(?). 
+                        <span class="lb" data-n=""></span>და კაცობრივი სიტყუაჲ გლახაკი და უძლური და მოკუდავი 
+                        <span class="lb" data-n=""></span>დაშურების უკუდავთა წარმოდგინებად იძულებული.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p2" 
+               data-n="2"
+data-folio="27r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">2</span>
+                
+                        ყოვლითურთ ვიდრემე ჭეშმარიტებისმოყუარებით თქუმითა არავის 
+                        <span class="lb" data-n=""></span>კაცთაგანსა ძალ-უც სიტყჳსა ღმრთისა ღირსებით ქებად; რამეთუ იგი 
+                        <span class="lb" data-n=""></span>მხოლოჲ სადმე ღირს იყოს, რომელი დაკნინებასა თჳსსა აღიარებდეს 
+                        <span class="lb" data-n=""></span>და სამეუფოსა მეცნიერ იყოს ღირსებასა. ნუ ვინაჲ უკუე კაცობრივი 
+                        <span class="lb" data-n=""></span>სიტყუაჲ, დაკნინებული სამეფოჲსა ღირსებისაგან, სირცხჳლეულ არს; 
+                        <span class="lb" data-n=""></span>არამედ უფროჲსღა იგი სირცხჳლეულ იქმენინ, რომელი საღმრთოთა 
+                        <span class="lb" data-n=""></span>ძლევად მეცადინობდეს; და რამეთუ გრძნობადთა შორის ღუაწლთა 
+                        <span class="lb" data-n=""></span>მძლეველნი ვიდრემე გჳრგჳნთა მოიხუმენ, ხოლო ძლეულნი სირცხჳლსა 
+                        <span class="lb" data-n=""></span>მიითუალვენ. ხოლო კეთილმსახურების-ძლითთა ტკივილთა შინა და 
+                        <span class="lb" data-n=""></span>ღმრთისმეტყუელებასა კანონთა ძლევად ვიდრემე მეცადინნი 
+                        <span class="lb" data-n=""></span>სირცხჳლეულ იქმნებიან, ხოლო ძლეულებისა აღმსარებელნი 
+                        <span class="lb" data-n=""></span>კეთილგონიერებისა მიიხუმენ გჳრგჳნთა.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p3" 
+               data-n="3"
+data-folio="27r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">3</span>
+                
+                        აწ უკუე გაჴსოვს, ვითარ მოაქუნდა სიტყუასა ჩუენსა გრძნობადისა და 
+                        <span class="lb" data-n=""></span>გონიერისა ნათლისა განყოფილებაჲ, ვითარმედ გრძნობადი ვიდრემე 
+                        <span class="lb" data-n=""></span>ნათელი განატფობს სხეულთა ბუნებასა და უძღჳს თუალსა აგებულთა 
+                        <span class="lb" data-n=""></span>გულისჴმის-ყოფად, რაჲთა და საქმენიცა გჳკჳრდენ. ხოლო 
+                        <span class="lb" data-n=""></span>„სიმართლისა მზე“ — გონიერი და ჭეშმარიტი და წმიდაჲ ნათელი, 
+                        <span class="lb" data-n=""></span>მხოლოდ-შობილი მამისაჲ, სამარადისოჲსაგან ნათლისა ნათელი 
+                        <span class="lb" data-n=""></span>სამარადისოჲ გამობრწყინვებული, ზესთსოფლისათაცა ძალთა 
+                        <span class="lb" data-n=""></span>განაბრწყინვებს და კიდეთა სოფლისათა განანათლებს თქმულისა 
+                        <span class="lb" data-n=""></span>მისებრ: <span class="quote">„დაფარნა ცანი სათნოებამან მისმან და ქებითა მისითა 
+                            <span class="lb" data-n=""></span>სავსე არს ქუეყანაჲ“</span><sup class="note-ref" data-note="2">2</sup>.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p4" 
+               data-n="4"
+data-folio="27v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">4</span>
+                
+                        გაჴსოვს უკუე — და რამეთუ არა უწესო არს კუალად მოჴსენებად — თუ 
+                        <span class="lb" data-n=""></span>ვითარ წინა-შესავალთა ვიდრემე კეთილმსახურებისათა მქონებელად 
+                        <span class="lb" data-n=""></span>ვითარცა ცისკარი ჩანს, ხოლო წარმართებასა შინა ქმნილთა ყოვლად 
+                        <span class="lb" data-n=""></span>თავსა თჳსსა უჩუენებს სიმართლისა მზე და აღმოსავალსა 
+                        <span class="lb" data-n=""></span>საკჳრველისა მომღებელსა ლამპრისა კეთილმსახურებისასა; რამეთუ 
+                        <span class="lb" data-n=""></span>წმიდანი წინაჲსწარმეტყუელნი არა მხოლოდ „მზედ სიმართლისად“<sup class="note-ref" data-note="3">3</sup> 
+                        <span class="lb" data-n=""></span>უწოდდეს მაცხოვარსა და „ცისკრად“<sup class="note-ref" data-note="4">4</sup> და „ნათლად ჭეშმარიტად“<sup class="note-ref" data-note="5">5</sup>, 
+                        <span class="lb" data-n=""></span>არამედ „ლამპრადცა“, ვითარცა წამებს ღმერთი <span class="pb" title="folio 27v">27v</span><span class="lb" data-n="27va"></span> 
+                        <span class="persname" data-ref="#isaiah">ისაიაჲს</span> მიერ: <span class="quote">„ამას იტყჳს უფალი: მოახლდების სიადრით სიმართლე 
+                            <span class="lb" data-n=""></span>ჩემი მოსლვად“</span><sup class="note-ref" data-note="6">6</sup> და <span class="quote">„მაცხოვარებაჲ ჩემი ვითარცა 
+                                <span class="lb" data-n=""></span>ლამპარი ეგზებოდის“</span><sup class="note-ref" data-note="7">7</sup> და „მკლავისა მომართ ჩემისა 
+                        <span class="lb" data-n=""></span>წარმართნი ესვიდენ“. „მაცხოვარებაჲ ჩემი ვითარცა ლამპარი 
+                        <span class="lb" data-n=""></span>ეგზებოდის“ — და რაჲ არს ლამპარი? ნუ ვინ კაცობრივი გონებაჲ 
+                        <span class="lb" data-n=""></span>თარგმნის ღმრთისათა; რამეთუ არა არს ჭეშმარიტად სწავლაჲ, 
+                        <span class="lb" data-n=""></span>არა თუ მისგან მიეცეს სწავლაჲ მისი.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p5" 
+               data-n="5"
+data-folio="27v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">5</span>
+                
+                        ოდეს უკუე მხოლოდ-შობილი უფალი ჩუენი იესუ ქრისტე მოვიდა 
+                        <span class="lb" data-n=""></span>უქორწინებელისაგან ქალწულისა სოფლად უცხოჲსა გზისა 
+                        <span class="lb" data-n=""></span>მჩუენებელი და უცხოჲსა შობისა შემომღებელი საწუთოსა ამას შინა, 
+                        <span class="lb" data-n=""></span>ჯერეთცა ჩჩჳლად მოქმედი საიდუმლოისაჲ, იტჳრთა იგი დედამან 
+                        <span class="lb" data-n=""></span>და მიიყვანა მღდელთმოძღურისა <span class="persname" data-ref="#simeon">სჳმეონისსა</span>. ხოლო მან მიიქუა 
+                        <span class="lb" data-n=""></span>რაჲ მკლავთა მაცხოვარებაჲ თქუა მისა<sup class="note-ref" data-note="8">8</sup> მიმართ მეტყუელმან: 
+                        <span class="lb" data-n=""></span><span class="quote">„აწ განუტევე მონაჲ შენი, მეუფეო, სიტყჳსაებრ შენისა მშჳდობით. 
+                            <span class="lb" data-n=""></span>რამეთუ იხილეს თუალთა ჩემთა მაცხოვარებაჲ შენი“</span><sup class="note-ref" data-note="9">9</sup>.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p6" 
+               data-n="6"
+data-folio="27v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">6</span>
+                
+                        აწ უკუე უკუეთუ მაცხოვარებაჲ არს ქრისტეს მოსლვაჲ, კეთილად 
+                        <span class="lb" data-n=""></span>სადმე იტყოდის წინაჲსწარმეტყუელი: „პირისაგან ღმრთისა და 
+                        <span class="lb" data-n=""></span>მაცხოვარებ<span class="supplied" title="omitted-in-ms">ისა ჩემისა</span> ლამპარი ეგზებოდის“ და 
+                        <span class="lb" data-n=""></span>„მკლავსა ჩემსა წარმართნი ესვიდენ“. ხოლო კუალად „მკლავად“ 
+                        <span class="lb" data-n=""></span>უწოდს მხოლოდ-შობილსა, არა ვითარცა ნათელსა ღმრთეებისასა, 
+                        <span class="lb" data-n=""></span>არამედ ვითარცა არსებითა შეერთებულსა. რამეთუ ვითარცა 
+                        <span class="lb" data-n=""></span>მკლავი მის არსებისა მისისა არს, რომლისა იყოს მკლავ, ესრეთ 
+                        <span class="lb" data-n=""></span>მამისად მხოლოდ-შობილი სახელ-იდების, ვითარცა თჳთ მისისა 
+                        <span class="lb" data-n=""></span>არსებისაჲ და ვითარცა თანამოქმედი მამისა შემოქმედებისაჲ.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p7" 
+               data-n="7"
+data-folio="27v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">7</span>
+                
+                        და ამის გამოსაჩინებელისა მოწამე არს ნეტარი 
+                        <span class="lb" data-n=""></span><span class="persname" data-ref="#john-evangelist">იოვანე მახარებელი</span>, მკერდსა ზედა იესუჲსსა მიყრდნობილი და 
+                        <span class="lb" data-n=""></span>ვითარცა სამარადისოჲსა წყაროჲსაგან აღმომვსებელი; რამეთუ 
+                        <span class="lb" data-n=""></span>რასა იტყჳს <span class="persname" data-ref="#john-evangelist">იოვანე</span> მკლავისა მიმღებელი მაცხოვრისა 
+                        <span class="lb" data-n=""></span>განგებულებისად და მისისა აღვსებისად? <span class="quote">„მრავალთა სასწაულთა 
+                            <span class="lb" data-n=""></span>ქმნასა მის მიერო“, — იტყჳს, — „არა ჰრწმენა მისა მიმართ 
+                            <span class="lb" data-n=""></span>იუდეანთა“</span><sup class="note-ref" data-note="10">10</sup>, რაჲთა აღესრულოს თქუმული <span class="persname" data-ref="#isaiah">ისაიაჲს</span> მიერ: 
+                        <span class="lb" data-n=""></span><span class="quote">„უფალო, ვის ჰრწმენა სმენაჲ ჩუენი და მკლავი უფლისაჲ ვის 
+                            <span class="lb" data-n=""></span>გამოეცხადა“?</span><sup class="note-ref" data-note="11">11</sup> იგივე უკუე და სიმართლეცა, რამეთუ 
+                        <span class="lb" data-n=""></span>„მოახლდების სიმართლე ჩემი მოსლვად“. ესრეთვე და 
+                        <span class="lb" data-n=""></span>მაცხ<span class="supplied" title="omitted-in-ms">ოვარებაჲ მისი</span> მაჩუენე<span class="supplied" title="omitted-in-ms">ბელი</span> 
+                        <span class="lb" data-n=""></span>მისთჳს და <span class="gap" title="? character"></span> შემომკითხველი <span class="gap" title="? character"></span> აღიყვანებს ღირსებასა 
+                        <span class="lb" data-n=""></span>მეტყუელი მაცხოვრისათჳს: <span class="quote">„რომელი იშვა ჩუენდა ღმრთისაგან 
+                            <span class="lb" data-n=""></span>სიბრძნე და სიმართლე და სიწმიდე და გამოჴსნად“</span><sup class="note-ref" data-note="12">12</sup>.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p8" 
+               data-n="8"
+data-folio="27v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">8</span>
+                
+                        ესრეთ ჩუენდა აღმოჴდა აღმოსავალი სიმართლისაჲ. რამეთუ 
+                        <span class="lb" data-n=""></span><span class="quote">„აჰა ესერა აღმოუვლინოო“, — იტყჳს, — „სახლსა <span class="persname" data-ref="#david">დავითისსა</span> 
+                            <span class="lb" data-n=""></span>აღმოსავალი სიმართლისაჲ და განმეფნეს მეფე მართთალი“</span>. 
+                        <sup class="note-ref" data-note="13">13</sup>
+                        <sup class="note-ref" data-note="14">14</sup>
+                        <span class="lb" data-n=""></span>ერთი ვიდრემე არს აღმოსავალი, გარნა მრავალ არიან შარავანდედნი 
+                        <span class="lb" data-n=""></span>მისნი. ესე იგი არს შარავანდედნი კაცთ მოყუარებისანი, 
+                        <span class="lb" data-n=""></span>შარავანდედნი კურნებისანი, შარავანდედნი განკურნებისანი, 
+                        <span class="lb" data-n=""></span>შარავანდედნი მშჳდობისანი, შარავანდედნი სიმართლისანი, 
+                        <span class="lb" data-n=""></span>და გნებავსა ხილვად მისა<sup class="note-ref" data-note="15">15</sup> აღმომავალისა და თანა-აღმომავალთა 
+                        <span class="lb" data-n=""></span>მისთა სათნოებათა? ისმინე წინაჲსწარმეტყუელისა <span class="persname" data-ref="#david">დავითის</span> 
+                        <span class="lb" data-n=""></span>მეტყუელისად: <span class="quote">„აღმოაბრწყინვოს დღეთა მისთა სიმართლე და 
+                            <span class="lb" data-n=""></span>სიმრავლე მშჳდობისაჲ, ვიდრემდის ნაცვალ-მოისპოს მთოვარე“</span><sup class="note-ref" data-note="15">15</sup>.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p9" 
+               data-n="9"
+data-folio="27v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">9</span>
+                
+                        ესე უკუე აღმოსავალი და სიმაღლითცა აღმოჰჴდა და ქუეყანითცა; 
+                        <span class="lb" data-n=""></span>სიმაღლით ვიდრემე ღმრთეებისათჳს, ხოლო ქუეყანით — 
+                        <span class="lb" data-n=""></span>განგებულებისათჳს; — და რამეთუ მაღლითცა აღმოჰჴდების და 
+                        <span class="lb" data-n=""></span>სიღრმითცა, და ცაჲცა მასვე აჩუენებს აღმომავალად და 
+                        <span class="lb" data-n=""></span>ქუეყანაჲცა; მაღლით ვიდრემე სიტყჳსაებრ <span class="persname" data-ref="#zachariah">ზაქარიაჲსსა</span> — 
+                        <span class="lb" data-n=""></span>არა წინაისწარმეტყუელთა შინა აღრაცხულისა, არამედ მამისა 
+                        <span class="lb" data-n=""></span><span class="persname" data-ref="#john-baptist">იოვანე წინამორბედისა</span> — რამეთუ რასა იტყჳს მამაჲ მისგან 
+                        <span class="lb" data-n=""></span>შობილისა მიმართ? <span class="quote">„და შენ, ყრმაო, წინაჲსწარმეტყუელ მაღლის 
+                            <span class="lb" data-n=""></span>იწოდო; რამეთუ წარსძღუე შენ წინაშე პირსა უფლისასა 
+                            <span class="lb" data-n=""></span>განმზადებად გზათა მისთა, მიცემად მეცნიერებაჲ ერსა თჳსსა 
+                            <span class="lb" data-n=""></span>მიტევებითა ცოდვათა მათთაჲთა, მოწყალებითა და წყალობითა 
+                            <span class="lb" data-n=""></span>ღმრთისა ჩუენისაჲთა, რომელთა მიერ მოგუხედნა ჩუენ 
+                            <span class="lb" data-n=""></span>აღმოსავალმან მაღლით გამოჩინებად მათ ზედა, რავდენნი 
+                            <span class="lb" data-n=""></span>სხენან ბნელსა და აჩრდილთა სიკუდილისათა“</span><sup class="note-ref" data-note="16">16</sup>. 
+                        <span class="lb" data-n=""></span>იხილე, რამეთუ აღმოსავალმან ზეცით მოიხილა<sup class="note-ref" data-note="17">17</sup> და 
+                        <span class="lb" data-n=""></span><span class="quote">„ჭეშმარიტებაჲ ქუეყანით აღმოჰჴდა“</span><sup class="note-ref" data-note="18">18</sup>.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p10" 
+               data-n="10"
+data-folio="28v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">10</span>
+                
+                        და ისმინე უკუე, გევედრები განმკაცრებით, აღმოსლვაჲ ესე; 
+                        <span class="lb" data-n=""></span>რამეთუ ვინაჲთგან ღმერთმან დასჯასა მას ადამისსა პირველად <span class="pb" title="folio 28v">28v</span><span class="lb" data-n="28va"></span> 
+                        <span class="lb" data-n=""></span>სადმე განჩინებაჲ შემოიღო მეტყუელმან, ვითარმედ: <span class="quote">„ეკალთა და 
+                            <span class="lb" data-n=""></span>კუროჲსთავთა აღმოავლენდეს შენდა ქუეყანაჲ“</span><sup class="note-ref" data-note="19">19</sup><sup class="note-ref" data-note="21">21</sup>, 
+                        <span class="lb" data-n=""></span>ნაცვალად უკუე წყევისა მის, გულისჴმა-ყავ, რაოდენ ზესთა 
+                        <span class="lb" data-n=""></span>აღმატებაჲ სიმართლისად აღმოეცენა? ადამის გარდასლვისა ძლით 
+                        <span class="lb" data-n=""></span>ეკალნი ქუეყანამან აღმოავლინნა; და მაცხოვრისა მოსლვითა 
+                        <span class="lb" data-n=""></span>ჭეშმარიტებაჲ ქუეყანით აღმოჰჴდა. აღმოჰჴდა უკუე ჭეშმარიტებაჲ, 
+                        <span class="lb" data-n=""></span>რაჲთა ტყუვილი წარიოტოს; გამოჩნდა ცხორებაჲ, რაჲთა სიკუდილი 
+                        <span class="lb" data-n=""></span>ექსორია-ყოს; გამოჩნდა გზაჲ, რაჲთა საცთური დაჰჴსნას. 
+                        <span class="lb" data-n=""></span>რამეთუ იტყჳს: <span class="quote">„მე ვარ გზაჲ და ჭეშმარიტებაჲ და ცხორებაჲ“</span><sup class="note-ref" data-note="20">20</sup><sup class="note-ref" data-note="22">22</sup>.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p11" 
+               data-n="11"
+data-folio="28v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">11</span>
+                
+                        ესე ცხად იქმნა ჩუენდა მეფე ისრაელისაჲ, მეფე დიდი, რომელსა 
+                        <span class="lb" data-n=""></span>ღაღადებდეს ვიდრემე წინაჲსწარმეტყუელნი; რომელთა თანა 
+                        <span class="lb" data-n=""></span><span class="persname" data-ref="#david">დავითცა</span> მეფედ უწოდდა მას დიდად თჳსობითად მისა მიმართ 
+                        <span class="lb" data-n=""></span>აღმავლენელი წინაჲსწარმეტყუელებისაჲ და მეტყუელი, ვითარმედ: 
+                        <span class="lb" data-n=""></span><span class="quote">„ღმერთი მაღალ, საშინელ, მეფე დიდ ყოველსა ქუეყანასა ზედა“</span><sup class="note-ref" data-note="23">23</sup><sup class="note-ref" data-note="24">24</sup>. 
+                        <span class="lb" data-n=""></span>და ვინაჲთ ესე იტყჳს, რამეთუ არა მამისა მიმართ აღიყვანებს 
+                        <span class="lb" data-n=""></span>სიტყუასა, რამეთუ არა არს აღმოჩენილი ჴმაჲ, არამედ 
+                        <span class="lb" data-n=""></span>სა<span class="gap" title="? character"></span> გარნა იხილვ<span class="supplied" title="lost">ებ</span><span class="gap" title="? character"></span> 
+                        <span class="lb" data-n=""></span>სხნნა <span class="gap" title="? character"></span> ებანი გ<span class="gap" title="? character"></span> რიბ].
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p12" 
+               data-n="12"
+data-folio="28v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">12</span>
+                
+                        და ჰპოო გაგონებითა ძალი, ვითარმედ: <span class="quote">„ღმერთი მაღალ და 
+                            <span class="lb" data-n=""></span>საშინელ და მეფე დიდ ყოველსა ქუეყანასა ზედა; 
+                            <span class="lb" data-n=""></span>დაგუამორჩილნა ჩუენ ერნი და წარმართნი ქუეშე ფერჴთა 
+                            <span class="lb" data-n=""></span>ჩუენთა“</span><sup class="note-ref" data-note="25">25</sup>. ვინაჲ არა უკუე საჴმარ არს დღეს ყოვლისა 
+                        <span class="lb" data-n=""></span>ფსალმუნისა თარგმანებაჲ, არამედ უფროჲსღა წინამდებარისა 
+                        <span class="lb" data-n=""></span>მიმართ შევანაწევროთ გონებაჲ და დამტევებელნი შორის 
+                        <span class="lb" data-n=""></span>წინამდებარისა მიმართ მოვიდეთ: <span class="quote">„გამომირჩინა ჩუენ 
+                            <span class="lb" data-n=""></span>სამკჳდრებელად თავისა თჳსისა სიკეთედ იაკობისად, რომელ 
+                            <span class="lb" data-n=""></span>შეიყუარა“</span><sup class="note-ref" data-note="26">26</sup>. მერმეცა მეყსეულად შესძინებს: 
+                        <span class="lb" data-n=""></span><span class="quote">„აღვიდა ღმერთი ღაღადებითა და უფალი ჴმითა საყჳრისაჲთა“</span><sup class="note-ref" data-note="27">27</sup>.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p13" 
+               data-n="13"
+data-folio="29r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">13</span>
+                
+                        ხოლო „აღვიდა“-სა არცა ჩემდა მოგონებად სათანამდებო არს 
+                        <span class="lb" data-n=""></span>ვითარცა მნებავს, არცა მწვალებელისა ვითარცა ჰნებავს; 
+                        <span class="lb" data-n=""></span>რამეთუ ჯერ-არს ჩუენდა მოწაფე-ყოფად წერილისა და არა 
+                        <span class="lb" data-n=""></span>ახალ-მკუეთელობად მისა. რამეთუ მოძღურებაჲ კაცობრივი 
+                        <span class="lb" data-n=""></span>განმხრწნელი ღმრთისათაჲ სასჯელის-ქუეშედ მოვალს <span class="pb" title="folio 29r">29r</span><span class="lb" data-n="29ra"></span> 
+                        <span class="lb" data-n=""></span>და სატანჯველსა შეუ<span class="gap" title="? character"></span>კუე უფლისად <span class="gap" title="? character"></span>ვანთა 
+                        <span class="lb" data-n=""></span><span class="gap" title="? character"></span>საჲ და ურჩ ექმნენით მცნებასა ღმრთისასა მოძღურებითა თქუენითა.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p14" 
+               data-n="14"
+data-folio="29r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">14</span>
+                
+                        ხედავა, ვითარ კაცობრივი მოძღურებაჲ ურჩებად იქმნების 
+                        <span class="lb" data-n=""></span>ღმრთისა? მოძღურებასა კაცობრივსა ვიტყჳ, არა ვინაჲთგან 
+                        <span class="lb" data-n=""></span>რამეთუ კაცი ასწავებს, არამედ რაჟამს გარეშე თჳსთა 
+                        <span class="lb" data-n=""></span>გულისსიტყუათასა თარგმნიდეს. რამეთუ არა არს კაცობრივი 
+                        <span class="lb" data-n=""></span>პირი გარეშე შეწევნისა საღმრთოთა სიტყუათაჲსა მასწავლელი 
+                        <span class="lb" data-n=""></span>გინა თარგმანებაჲ სამეფოჲ. და ვითარცა-იგი მეფეთა წინაშე 
+                        <span class="lb" data-n=""></span>მდგომარე არიან მესაშოვლენი, შორის მიმღებელნი კითხვათა 
+                        <span class="lb" data-n=""></span>და მიგებათანი, რაჲთა სამეფოჲსაგან ღირსებისა დაცვულ 
+                        <span class="lb" data-n=""></span>იქმნეს უვნებელად პატივი და წინაშე მდგომელნი 
+                        <span class="lb" data-n=""></span>ნეტარ-ჰყოფდენ მეფისა ღირსებასა, ესრეთვე 
+                        <span class="lb" data-n=""></span>წინაჲსწარმეტყუელნიცა შორის შემოსრულსა ღმრთისა 
+                        <span class="lb" data-n=""></span>ღირსებასა და კაცთა უძლურებასა იქმნეს ვითარცა 
+                        <span class="lb" data-n=""></span>მთარგმანებელნი პირისაგან ღმრთისა. ვითარცა უკუე 
+                        <span class="lb" data-n=""></span>თარგმანებულსა<sup class="note-ref" data-note="28">28</sup> ზედა უკუეთუ თქუას მთარგმანებელმან, 
+                        <span class="lb" data-n=""></span>ვითარცა პირისაგან მეფისა, ვითარმედ: „მიბრძანებიეს“, 
+                        <span class="lb" data-n=""></span>„განმისაზღვრებიეს“ — არა მთარგმანებელისა ზედა აღიყვანების 
+                        <span class="lb" data-n=""></span>სიტყუაჲ, არამედ თჳთ მის თარგმანებულისა ზედა.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p15" 
+               data-n="15"
+data-folio="29r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">15</span>
+                
+                        ესრეთვე უკუე ვინაჲთგან წინაჲსწარმეტყუელნი ჴმობენ, ნუ 
+                        <span class="lb" data-n=""></span>კაცისა მიმართ მიხედავ, არამედ ღმრთისა მიმართ მათ შორის 
+                        <span class="lb" data-n=""></span>მჴმობელისა. ამისთჳს უკუე და ნეტარი <span class="persname" data-ref="#isaiah">ისაია</span>, თავისა მიერ 
+                        <span class="lb" data-n=""></span>თჳსისა წესითა მთარგმანებელთაჲთა მოქადული, ვითარცა 
+                        <span class="lb" data-n=""></span>პირისაგან თჳსისა იტყოდა: <span class="quote">„უკუეთუ გენებოს და ისმინოთ 
+                            <span class="lb" data-n=""></span>ჩემი, კეთილთა ქუეყანისათა სჭამდეთ“</span><sup class="note-ref" data-note="30">30</sup>. უკუეთუ 
+                        <span class="lb" data-n=""></span>ვისმინოთ შენი, კეთილთა ქუეყანისათა ვჭამდეთა? ვინ 
+                        <span class="lb" data-n=""></span>უკუე ხარ შენ? არა ერთი კაცთაგანია? არა ჩუენ თანა 
+                        <span class="lb" data-n=""></span>ქუეყანასა ჰმკჳდრობა<sup class="note-ref" data-note="29">29</sup>? არა მისგან იზარდებია? არა 
+                        <span class="lb" data-n=""></span>მისდა მიმართვე მიიქცევია? რაჲსათჳს არა იტყჳ: „უკუეთუ 
+                        <span class="lb" data-n=""></span>ინებოთ და ისმინოთ ღმრთისაჲ“, არამედ <span class="quote">„უკუეთუ ინებოთო 
+                            <span class="lb" data-n=""></span>და ისმინოთ ჩემი, კეთილთა ქუეყანისათა სჭამდეთ. ხოლო 
+                            <span class="lb" data-n=""></span>უკუეთუ არა ინებოთ და არა ისმინოთ ჩემი, მახჳლმან 
+                            <span class="lb" data-n=""></span>შეგჭამნეს თქუენ“</span><sup class="note-ref" data-note="30">30</sup>. და ესოდენად აღიყვანება 
+                        <span class="lb" data-n=""></span>თავისა შენისა ღირსებასა?“ „არაო“, იტყჳს, — „რამეთუ 
+                        <span class="lb" data-n=""></span>პირმან ღმრთისამან თქუა ესენი“.
+                    
+            </p>
+        </section>
+        <section class="mb-8" id="sec.2" data-section="2">
+            
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p16" 
+               data-n="16"
+data-folio="29v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">16</span>
+                
+                        ესრეთ ჯერ-არს წინაჲსწარმეტყუელთა მიერ სმენად; ესრეთ ჯერ-არს მოციქულთაგან 
+                        <span class="lb" data-n=""></span>შეწყნარებად ვითარცა წერილთა <span class="pb" title="folio 29v">29v</span><span class="lb" data-n="29va"></span> სამეფოთა და წერილთა კალმოსანთა(?) 
+                        <span class="lb" data-n=""></span>რამეთუ ძალ-უც შენდაცა ბუნებასა კალმისასა ჴელპყრობილ-ყოფად გაგონებისა 
+                        <span class="lb" data-n=""></span>მიმართ სჯულისა ღმრთისა<span class="gap" title="4 character"></span> კალამი ხილულისა ვიდრემე 
+                        <span class="lb" data-n=""></span>ჩანს იგი მწერალად, ხოლო ძალისა — არა, არამედ ჴელი მპყრობელი მისი, 
+                        <span class="lb" data-n=""></span>რამეთუ არა რაოდენი ჰნებავს, არცა რაოდენი ძალ-უც, წერს — რამეთუ 
+                        <span class="lb" data-n=""></span>უძლურ არს ვით თჳსით და უგონებელ — ხოლო რაოდენსა გონიერებისაგან 
+                        <span class="lb" data-n=""></span>ჴელისა და გრძნობადისა ჴუმეული წერს, — ესე ყოველთა მიერ აღმოიკითხვის.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p17" 
+               data-n="17"
+data-folio="29v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">17</span>
+                
+                        ესრეთვე გულისჴმა-ჰყოფდ წინაჲსწარმეტყუელისა სიტყუასა და თქუმათა 
+                        <span class="lb" data-n=""></span>და ენათა მათთა ვითარცა კალამსა ღმრთისასა, უკუდავისა ჴელისა მიერ 
+                        <span class="lb" data-n=""></span>პყრობილსა, თქუმულისა მისებრ <span class="persname" data-ref="#ezekiel">იეზეკიელისა</span>: <span class="quote">„და იქმნა ჩემ ზედა 
+                            <span class="lb" data-n=""></span>ჴელი უფლისაჲ“</span><sup class="note-ref" data-note="31">31</sup>, რამეთუ შეეხების ენათა წინაჲსწარმეტყუელთასა 
+                        <span class="lb" data-n=""></span>ჴელი წმიდაჲ უკუდავი და გონიერი, ვინაჲცა ენასა წესი კალმისაჲ უპყრიეს 
+                        <span class="lb" data-n=""></span>თქუმულისაებრ: <span class="quote">„ენაჲ ჩემი კალამ მწერლისა მახჳლ-მწერლისა“</span><sup class="note-ref" data-note="32">32</sup>.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p18" 
+               data-n="18"
+data-folio="29v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">18</span>
+                
+                        აწ უკუე ითქუა წინაჲსწარმეტყუელთა მიერ წინაჲსწარმეტყუელებული; ხოლო 
+                        <span class="lb" data-n=""></span>ითქუა არა რაოდენ ჯერ-იყო, არამედ რაოდენ ძალ-ედვა; რამეთუ იტყჳან 
+                        <span class="lb" data-n=""></span>კაცნი ღმრთისათჳს არა რაოდენი თანა-აც, — რამეთუ ესე შეუძლებელ არს, 
+                        <span class="lb" data-n=""></span><span class="supplied" title="omitted-in-ms">—არამედ რაოდენი შესაძლებელ არს</span>; რამეთუ ესე 
+                        <span class="lb" data-n=""></span>კ<span class="gap" title="15 character"></span> არს. და ვითარცა-იგი მამანი, რაჟამს იხილონ ბრგუნილი 
+                        <span class="lb" data-n=""></span>ენაჲ შვილთა თჳსთაჲ, არა მიხედვენ ლექსსა ჴელოვნებულსა, არამედ 
+                        <span class="lb" data-n=""></span>სურვილსა გონებისასა სიყუარულითა მოხარულნი და არა ლექსითა 
+                        <span class="lb" data-n=""></span>განმზომელნი სიტყუათანი უტკბილეს შეჰრაცხენ რიტორთაცა მასწავლელობისა 
+                        <span class="lb" data-n=""></span>ბრგუნვილთა ყრმათა მათთა ჴმებსა, ესრეთვე და ღმერთი იშუებს 
+                        <span class="lb" data-n=""></span>ჩუენ მიერ თქუმულთა ზედა — არა სრულებისათჳს მოძღურებისა, 
+                        <span class="lb" data-n=""></span>არამედ სრულებისათჳს სურვილისა.
+                        <span class="lb" data-n=""></span>ვინაჲ ღმრთისა ვიდრემე მაქებელნი, დაღაცათუ ებრგუნვილობთ, არამედ 
+                        <span class="lb" data-n=""></span>ბრგუნვასა შინა მშჳდობასა ვქადაგებთ, რაჲთა სრულ იქმნეს 
+                        <span class="lb" data-n=""></span><span class="persname" data-ref="#isaiah">ისაიაჲს</span> მიერ თქუმული<sup class="note-ref" data-note="33">33</sup>, ვითარმედ: <span class="quote">ენათა ბრგუნვილთა ისწაონ 
+                            <span class="lb" data-n=""></span>სიტყუად მშჳდობისა</span><sup class="note-ref" data-note="34">34</sup>.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p19" 
+               data-n="19"
+data-folio="30r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">19</span>
+                
+                        გუშინ ვიდრემე გჳჩუენეს წინაჲსწარმეტყუელთა ყოვლისა მპყრობელი ძე 
+                        <span class="lb" data-n=""></span>ყოვლისა მპყრობელისაჲ. ხოლო მოძღურებულ იქმნა არა სიტყჳთა 
+                        <span class="lb" data-n=""></span>იძულებულითა, არამედ სიტყჳთა წამებულითა, გარნა ნუ შეურაცხ-ვჰყოფთ 
+                        <span class="lb" data-n=""></span>დაშთომილსაცა <span class="pb" title="folio 30r">30r</span><span class="lb" data-n="30ra"></span> ნეშტსა, ვითარმედ <span class="supplied" title="lost">ვი</span>დენ წინა ქ<span class="gap" title="3 character"></span> 
+                        <span class="lb" data-n=""></span><span class="quote">„აღვიდა ღმერთი <span class="supplied" title="omitted-in-ms">ღაღა</span>დებითა“</span><sup class="note-ref" data-note="35">35</sup>. აწ უკუე მოციქული არა 
+                        <span class="lb" data-n=""></span>მნებებელობს თქუმად რომელი ეგულების, არცა ჩემდა გაგონებად 
+                        <span class="lb" data-n=""></span>ვითარცა მნებავს, არცა შენდა მოსაჯულობად ვითარცა გნებავს. და 
+                        <span class="lb" data-n=""></span>რამეთუ ამიერ განსრულ იქმნა სხჳსა მიმართ შემდგომობისა სიტყუაჲ, 
+                        <span class="lb" data-n=""></span>რომელსა უკუე იტყჳს <span class="persname" data-ref="#paul">პავლე</span> და რომელსა პირსა ზედა შეუნდობს. 
+                        <span class="lb" data-n=""></span>შეწყნარებად აღსლვასა, საშურო არს განხილვად. ისმინე უკუე 
+                        <span class="lb" data-n=""></span><span class="persname" data-ref="#paul">პავლესი</span> მეტყუელისაჲ ეფესელთა-მიმართსა ეპისტოლესა შინა: 
+                        <span class="lb" data-n=""></span><span class="quote">„ხოლო თითოეულსა თქუენსა მოეცემის მადლი საზომისაებრ ნიჭისა 
+                            <span class="lb" data-n=""></span>ქრისტესისა“</span><sup class="note-ref" data-note="36">36</sup>.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p20" 
+               data-n="20"
+data-folio="30r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">20</span>
+                
+                        ამით <span class="persname" data-ref="#paul">პავლე</span> და წამებასაცა შემოართუამს დამბეჭდველი თავისა(?) 
+                        <span class="lb" data-n=""></span>თჳსისაჲ(?) წინაჲსწარმეტყუელისა <span class="persname" data-ref="#david">დავითის</span> მოძღურებითა, რამეთუ 
+                        <span class="lb" data-n=""></span>იტყჳს: <span class="quote">„აღვიდა სიმაღლესა, წარმოტყუენა ტყუე, მისცა ნიჭად კაცთა“</span><sup class="note-ref" data-note="37">37</sup>. 
+                        <span class="lb" data-n=""></span>მერმეცა გამოვალს ადგილისაგან საწინაჲსწარმეტყუელოჲსა და თანა 
+                        <span class="lb" data-n=""></span>შემოიღებს თავისა-თჳსისა-ძლითსა არა შეძინებისა ძლით, არამედ 
+                        <span class="lb" data-n=""></span>განცხადებულისა თარგმანებისა. ხოლო რაჲ არსა „აღვიდა?“ 
+                        <span class="lb" data-n=""></span>ამას <span class="persname" data-ref="#paul">პავლე</span>, ვითარმედ: <span class="quote">„არა თუმცა ბ<span class="supplied" title="omitted-in-ms">ნელსა შინა უკუ</span>ე 
+                            <span class="lb" data-n=""></span>ქუესკნელთა ქუეყანისათა შთასრული. იგი არს და აღსრულიცა ზესთა 
+                            <span class="lb" data-n=""></span>ცათა, რაჲთა აღავსნეს ყოველნი?“</span><sup class="note-ref" data-note="38">38</sup>
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p21" 
+               data-n="21"
+data-folio="30r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">21</span>
+                
+                        ხედავა, ვითარ აღსლვასა ამას არა შეუნდობს <span class="persname" data-ref="#paul">პავლე</span> სხჳსა 
+                        <span class="lb" data-n=""></span>პირისათჳს მოღებად, გარნა მხოლოდ-შობილისა? და სამართლად, რამეთუ 
+                        <span class="lb" data-n=""></span>შიშულისა ღმრთეებისადა ვითარმედ: „აღვიდა“ სიცოფე არს, და 
+                        <span class="lb" data-n=""></span>ვითარმედ: „შთავიდა“ — ნამეტავ. რამეთუ ყოვლისა შემცველი ძალი, 
+                        <span class="lb" data-n=""></span>ყოვლითგან ყოველთა შორის მყოფი, ყოველთა თჳსისა სულისა მიერ 
+                        <span class="lb" data-n=""></span>შემომენივთებელნი, არა ვინაჲ გარდადგების ადგილითი ადგილად. რამეთუ 
+                        <span class="lb" data-n=""></span>მისი არს ჴმაჲ ესე: <span class="quote">„ცასა და ქუეყანასა მე აღვავსებ“</span><sup class="note-ref" data-note="39">39</sup>. 
+                        <span class="lb" data-n=""></span>აწ უკუე უკუეთუ აღავსებს, სადა გარდადგების?
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p22" 
+               data-n="22"
+data-folio="30v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">22</span>
+                
+                        ესრეთ უკუე „აღსლვაჲ“ და „შთასლვაჲ“ ნამეტავად პოოს ვინმე, ხოლო 
+                        <span class="lb" data-n=""></span>საკუთრად მაცხოვრისა ზედა იყო. შ<span class="gap" title="? character"></span> კ<span class="gap" title="? character"></span>. არამედ „იყავნო“, — 
+                        <span class="lb" data-n=""></span>იტყჳს, — „აღსლვაჲ“, ვინაჲთგან ჴორცისა მქონებელი აღვიდა; ხოლო 
+                        <span class="lb" data-n=""></span>„შთასლვაჲ“ ვითარ გულისჴმა იქმნას? რამეთუ შიშუელი ღმრთეებაჲ 
+                        <span class="lb" data-n=""></span>არა შთამოვიდა; გარნა „შთამოსლვად“ მისსა თანა-შთამოსლვასა <span class="pb" title="folio 30v">30v</span><span class="lb" data-n="30va"></span> 
+                        <span class="lb" data-n=""></span>უწოდს <span class="gap" title="13 character"></span> აღსლვასა და შთას<span class="supplied" title="lost">ლვ</span>ასა ქრისტესსა 
+                        <span class="lb" data-n=""></span>განასაზღვრებს <span class="persname" data-ref="#paul">პავლე</span> განცხადებულად.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p23" 
+               data-n="23"
+data-folio="30v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">23</span>
+                
+                        იტყუამან აჩუენა, რამეთუ რაჟამს თქუას, ვითარმედ: „აღვიდა ღმერთი“, 
+                        <span class="lb" data-n=""></span>ესე არს, ვითარმედ: აღვიდა განგებულებად, ხოლო ვითარმედ: 
+                        <span class="lb" data-n=""></span>„ღაღადებითა“ — შესხმითა ანგელოსთაჲთა; <span class="quote">„უფალი ჴმითა 
+                            <span class="lb" data-n=""></span>საყჳრისაჲთა“</span><sup class="note-ref" data-note="40">40</sup>, ხოლო საყჳრად უწოდს ანგელოზთა 
+                        <span class="lb" data-n=""></span>აღჭურვილებასა, რამეთუ მაშინ ანგელოზნი წინა-უძღოდეს მას. და 
+                        <span class="lb" data-n=""></span>მეორედ მოსლვასა შინა ანგელოზნივე უძღოდინ მას თქუმულისა მისებრ 
+                        <span class="lb" data-n=""></span>ანგელოზისა მიერ, უფროისღა ანგელოზთა მიერ: <span class="quote">„კაცნო გალილეველნო, 
+                            <span class="lb" data-n=""></span>რაჲსა მდგომარენი ხართ მხედველნი ცად მიმართ? ესე იესუ, რომელი 
+                            <span class="lb" data-n=""></span>ამაღლდა თქუენგან, ესრეთვე მოვიდეს, რომლითა გუარითა იხილეთ 
+                            <span class="lb" data-n=""></span>იგი აღმავალი ზეცად“</span><sup class="note-ref" data-note="41">41</sup>. ესრეთ ვითარ, რამეთუ 
+                        <span class="lb" data-n=""></span>უკუეთუმცა არა აღვიდა ჴმითა საყჳრისაჲთა, უკუეთუმცა არა აღვიდა 
+                        <span class="lb" data-n=""></span>ანგელოზთა მიერ წინა-ძღუანვილი, არამცა მოვიდა ანგელოზთა მიერ 
+                        <span class="lb" data-n=""></span>წინა-ძღუანვილი.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p24" 
+               data-n="24"
+data-folio="30v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">24</span>
+                
+                        აწ უკუე მოვიდეს მაშინ იგი ვიდრემე, ვითარცა საყჳრი თჳსითა ჴმითა 
+                        <span class="lb" data-n=""></span>მჴმობარე. ხოლო წინა-უძღუების მოსლვასა მისსა მთავარანგელოზი, 
+                        <span class="lb" data-n=""></span>და ვითარ-იგი ქადაგებულ-იქმნების წინა-<span class="supplied" title="omitted-in-ms">ძღოლითა ანგელოზთაჲ</span>თა 
+                        <span class="lb" data-n=""></span><span class="gap" title="? character"></span> ვიდრემე და ახ<span class="supplied" title="lost">არებ</span>ს მუნ მყოფისა მთავრისა უფლებასა, 
+                        <span class="lb" data-n=""></span>ხოლო შიშსა შეუქმს მთავრებულთა და ღირსებასა სცავს 
+                        <span class="lb" data-n=""></span>წინა-ძღუანვილისასა; ესრეთვე და მუნ არა შეუ<span class="gap" title="? character"></span>ბს 
+                        <span class="lb" data-n=""></span>მაცხოვრისა გამოცხადებაჲ პირველად გამოჩინებად სამეფოჲსა 
+                        <span class="lb" data-n=""></span>ხატისა. არამედ წინა-რბის ანგელოზთა მჴედრობაჲ და წინა-ძღჳს 
+                        <span class="lb" data-n=""></span>ანგელოზი მქადაგებელი, ვითარცა <span class="persname" data-ref="#paul">პავლე</span> იტყჳს, ვითარმედ: 
+                        <span class="lb" data-n=""></span><span class="quote">„თავადი უფალი ბრძანებითა ჴმითა მთავარანგელოზისაჲთა 
+                            <span class="lb" data-n=""></span>შთამოვიდეს ზეცით“</span><sup class="note-ref" data-note="42">42</sup><sup class="note-ref" data-note="43">43</sup>, რომლისა ჴმაჲ 
+                        <span class="lb" data-n=""></span>მქადაგებელი მეფისა საცნაურ-ჰყოფს მოსლვასა. და გულისჴმა-ყავ 
+                        <span class="lb" data-n=""></span>სიდიდე ჴმისაჲ, რომელი შემძლებელ არს აღვსებად ყოვლისა სოფლისა. 
+                        <span class="lb" data-n=""></span>ხოლო ესენი ვიდრემე ესოდენ.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p25" 
+               data-n="25"
+data-folio="30v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">25</span>
+                
+                        ხოლო ვინაჲთგან ძმათა ვიეთმე მოსწრაფეთაგანთა სულისა წმიდისათჳს 
+                        <span class="lb" data-n=""></span>ითხოეს სიტყუაჲ სურვილითა ვიდრემე სათნოჲთა აღძრულთა, ხოლო 
+                        <span class="lb" data-n=""></span>სულითა წმიდითა განმტკიცებად მნებებელთა, აწ უკუე საჭირო არს 
+                        <span class="lb" data-n=""></span>დაწყნარებით, ძალისაებრ ჩუენისა, ლოცვითა წმიდათა მამათაჲთა, 
+                        <span class="lb" data-n=""></span>ფრთოან ქმნითა გონებისა და ენისა ჩუენისაჲთა თქუმად 
+                        <span class="lb" data-n=""></span>არა <span class="gap" title="? character"></span>რსა <span class="gap" title="? character"></span> და (?) წმიდისა სამებისა. და რამეთუ 
+                        <span class="lb" data-n=""></span>დამაკლდების ჩუენ მამისა მიმართ და ძისა და წმიდისა სულისა 
+                        <span class="lb" data-n=""></span>ყოველი კაცობრივი გონებაჲ, ხოლო ითხოენ ჩუენგან წერით ჴმასა, 
+                        <span class="lb" data-n=""></span>უკუეთუ იპოებისა „ყოვლისა მპყრობელად“ სახელ-დებულად სული წმიდაჲ?
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p26" 
+               data-n="26"
+data-folio="30v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">26</span>
+                
+                        ხოლო მე სიადრით ვიჴუმიო ამის-ძლითი სიტყუაჲ არა იძულებულითა 
+                        <span class="lb" data-n=""></span>მოძღურებითა, არამედ თჳთ მის წმიდისა სულისა მიერ წამებულითა 
+                        <span class="lb" data-n=""></span>და შემძლებელითა რწმუნებად ყოველსა კაცსა კეთილცნობიერსა, 
+                        <span class="lb" data-n=""></span>უკუეთუ განმარტებით ლექსეულად ითხოონ ჴმაჲ. ხოლო მნებავს 
+                        <span class="lb" data-n=""></span>პირველად მხოლოდ-შობილისა ღირსებისა უარ-ქმნილისა ძლით 
+                        <span class="lb" data-n=""></span>განმარტებად მოძღურებისა, რამეთუ სულისა ძლით ვიდრემე 
+                        <span class="lb" data-n=""></span>აღსაარებულ არს ძეცა ყოვლისა მპყრობელად, ხოლო თჳთ ძე 
+                        <span class="lb" data-n=""></span>უარქმნილად არცაღა ესე შესაწყნარებელ არს.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p27" 
+               data-n="27"
+data-folio="30v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">27</span>
+                
+                        <span class="persname" data-ref="#arians">არიანოზთა</span> უკუე ჰნებავს არცა ძისა, არცა სულისა ყოფად 
+                        <span class="lb" data-n=""></span>ყოვლისა მპყრობელად. აწ უკუე ერთისა მიერ სიტყჳსა 
+                        <span class="lb" data-n=""></span><span class="persname" data-ref="#arians">არიანოზთაცა</span> და სულისა მბრძოლთა წინა-აღუდგებით; ხოლო სიტყუაჲ 
+                        <span class="lb" data-n=""></span>ვთქუათ განმარტებული ვიდრემე გონებით, ხოლო ორ<span class="gap" title="? character"></span>-ითა(?) 
+                        <span class="lb" data-n=""></span>რამეთუ ძალ-უც სიტყუასა ღმრთისასა ერთისაგან ენისა ორთა მიხუმად 
+                        <span class="lb" data-n=""></span>პირთა და ორთა მწვალებელთასა დაყოფად პირთა. რამეთუ, ვინაჲთგან 
+                        <span class="lb" data-n=""></span>საჴმარებაჲ არს ორთა პირთაჲ, – ხოლო პირად ვიტყჳ პირთა შინა 
+                        <span class="lb" data-n=""></span>ქადაგებულ <span class="supplied" title="lost">სა..</span>ლსა, ხოლო ვინაჲთგან საჴმარებად არს 
+                        <span class="lb" data-n=""></span>ორთა პირთა <span class="supplied" title="lost">მბრ</span>ძოლთად: ერთისაჲ ვიდრემე მწვალებრებრი 
+                        <span class="lb" data-n=""></span>საცთური <span class="persname" data-ref="#arians">არიანოზთაჲ</span>, ხოლო მეორისაჲ — სულისა მბრძოლთაჲ, 
+                        <span class="lb" data-n=""></span>ვივასხოთ სულისაგან წმიდისა მახჳლი ღმრთისაჲ, რომლისათჳს 
+                        <span class="lb" data-n=""></span>იტყჳს <span class="persname" data-ref="#paul">პავლე</span>: <span class="quote">„რამეთუ ცხოველი სიტყუაჲ ღმრთისაჲ და საქმიერი 
+                            <span class="lb" data-n=""></span>და უმკუეთელესი უფროჲს მახჳლისა ორპირისა“</span><sup class="note-ref" data-note="44">44</sup>.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p28" 
+               data-n="28"
+data-folio="30v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">28</span>
+                
+                        იტყჳან უკუე მწვალებელნი ძისა უარის-მყოფელნი, უფროჲსღა თავთა 
+                        <span class="lb" data-n=""></span>თჳსთა მაცხოარებისა უარის-მყოფელნი, — რამეთუ უარის-მყოფელმან 
+                        <span class="lb" data-n=""></span>თავი თვსი უარ-ყო, არა მეფისა დიდებაჲ დაავსო, ვითარცა იტყჳს 
+                        <span class="lb" data-n=""></span>მოციქული: <span class="quote">„უკუეთუ უარ-ჰყოთ იგი, სარწმუნოდ ჰგიეს, რამეთუ 
+                            <span class="lb" data-n=""></span>უარ-ყოფად თავისა თჳსისა ვერ შემძლებელ არს“</span><sup class="note-ref" data-note="45">45</sup>, — 
+                        <span class="lb" data-n=""></span>ვინაჲთგან უკუე იგინი მიგუჴდიან ჩუენ და იტყჳან, ვითარმედ: 
+                        <span class="lb" data-n=""></span>„სადა წერილ არს ძე ყოვლისა მპყრობელად ლექსეულად?“ კითხულ 
+                        <span class="lb" data-n=""></span>იქმენინ და ჩუენ მიერცა: სადა წერილ არს მამად ყოვლისა 
+                        <span class="lb" data-n=""></span>მპყრობელად ლექსეულად?. რამეთუ არა შენდა ვიდრემე ჯერ-არს 
+                        <span class="lb" data-n=""></span>უჭირველად თქუმად მოსრულთა, ხოლო ჩემდა დაყენებულ არს 
+                        <span class="lb" data-n=""></span>თჳნიერ ლექსისა არა-წარმოდგინებად საძიებელისა.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p29" 
+               data-n="29"
+data-folio="30v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">29</span>
+                
+                        აწ უკუე უკუეთუ ჰპოებ სახელდებით მამასა ყოვლისა მპყრობელად 
+                        <span class="lb" data-n=""></span>დაწერილსა, მიგუჴდიდ სახელ-დებულად ძესაცა ყოვლისა 
+                        <span class="lb" data-n=""></span>მპყრობელად. და ნუ განმარტებით ახლისა-მკუეთელობ წმიდათა 
+                        <span class="lb" data-n=""></span>მიმართ წერილთა, და მოძღუართა დაემორჩილე; რამეთუ მოწაფე 
+                        <span class="lb" data-n=""></span>ხარ. — არა მოძღუარი, — სხუათა შთათესული და სხუათა 
+                        <span class="lb" data-n=""></span>შთამთესველი სული თესულ-ყოფად უკუე გისწავიეს არა თესვადცა 
+                        <span class="lb" data-n=""></span>მოძღურებულ-ყოფად და არა მოძღურებად. სადა უკუე წერილ არს 
+                        <span class="lb" data-n=""></span>მამაჲ ყოვლისა მპყრობელად? გარნა არა-მპოვნელი ლექსისაჲ 
+                        <span class="lb" data-n=""></span>უღონოებს და უღონო-ქმნილი მიივლტის სიტყუათა ზედა 
+                        <span class="lb" data-n=""></span>წინაჲსწარმეტყუელთასა: <span class="quote">„ამას იტყჳსო უფალი ყოვლისა 
+                            <span class="lb" data-n=""></span>მპყრობელი“</span><sup class="note-ref" data-note="46">46</sup>. იტყჳს: „უფლად“ თქუა და 
+                        <span class="lb" data-n=""></span>არა „მამად“, აჩუენა <span class="gap" title="? character"></span> და არა<span class="gap" title="? character"></span> ხა.
+                        <sup class="note-ref" data-note="47">47</sup>
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p30" 
+               data-n="30"
+data-folio="30v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">30</span>
+                
+                        ხოლო რომელი მრავალ გზის მითქუამს, მომღებელი აწ კუალადცა 
+                        <span class="lb" data-n=""></span>ვიტყჳ, რაჲთა არა ვისი სცთეს გონებაჲ და შთარბიოდის სიტყჳსა 
+                        <span class="lb" data-n=""></span>მიმართ. ჩემდა ვიდრემე მდგომარე არს ღმრთისმეტყუელებისა 
+                        <span class="lb" data-n=""></span>საზღვარი შეუძრველი: დაღათუ უფლად ყოვლისა მპყრობელად 
+                        <span class="lb" data-n=""></span>იქადაგოს, მამად გულისჴმა-იყოფების და ძედ სარწმუნო იქმნების 
+                        <span class="lb" data-n=""></span>და სულად წმიდად განცხადნების. არამედ რამეთუ სიტყუაჲ 
+                        <span class="lb" data-n=""></span>აღიჭურვის განცხადებულად, რაჲთა ოდეს ამხილოს წვალებისა 
+                        <span class="lb" data-n=""></span>ცილისწამებასა, მაშინ აჩუენოს სულისა ჭეშმარიტებაჲ.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p31" 
+               data-n="31"
+data-folio="30v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">31</span>
+                
+                        „ამას იტყჳს უფალი ყოვლისა მპყრობელი“. უფლად გესმა, ხოლო 
+                        <span class="lb" data-n=""></span>მამად გამოჩინებად არა გაქუს. და უკუეთუ გნებავს, სიტყვთ 
+                        <span class="lb" data-n=""></span>იპოების ძე ყოვლისა მპყრობელად, რამეთუ მოციქულისაებრ: 
+                        <span class="lb" data-n=""></span><span class="quote">„ერთ არს ღმერთი მამაჲ“</span><sup class="note-ref" data-note="48">48</sup>, ერთ არს უფალი 
+                        <span class="lb" data-n=""></span>იესუ ყოვლისა მპყრობელი მხოლოდ-შობილი; რამეთუ 
+                        <span class="lb" data-n=""></span>განმცდელობენ მწვალებელთა შვილნი განყოფილებისაგან 
+                        <span class="lb" data-n=""></span>სახელთაჲსა შექმნად არსებისაცა განყოფილებისა. ვითარ-იგი 
+                        <span class="lb" data-n=""></span>იტყჳან, ვითარმედ: „არა საგონებელ არს ღმერთი უფლად, არამედ 
+                        <span class="lb" data-n=""></span>სხუასა ვიდრემე ღირსებასა აჩუენებს „ღმერთი“, ხოლო სხუასა 
+                        <span class="lb" data-n=""></span>ღირსებასა საცნაურ ჰყოფს „უფალი“. „ესრეთ მრავლად 
+                        <span class="lb" data-n=""></span>უქუენაესად აჩუენებსო ძესა“ — იტყჳან — „ამიერ ვიდრემე 
+                        <span class="lb" data-n=""></span>ძესა „უფლად“ თქუმითა, ხოლო მამასა — „ღმრთად“.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p32" 
+               data-n="32"
+data-folio="30v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">32</span>
+                
+                        რაჲსა ესრეთ ჰფილოსოფოსობ შენ, უფროჲსღა ამაოდ ჰბრძნობ? 
+                        <span class="lb" data-n=""></span>ჭეშმარიტებაჲ ვიდრემე არა ესრეთ მისცემს. არამედ უწყის 
+                        <span class="lb" data-n=""></span>მრავალ-გზის შენ მიერ მეორედ საგონებელსა სახელსა პირველსა 
+                        <span class="lb" data-n=""></span>წესსა ჰქონებად და მხოლოდ უფლად აღსაარებად. შენ 
+                        <span class="lb" data-n=""></span>ვიდრემე დიდად ჰგონებ თქუმად მამისათჳს, უკუეთუ უწოდო 
+                        <span class="lb" data-n=""></span>მამასა „ღმრთად“; ხოლო მე <span class="persname" data-ref="#david">დავითს</span> დავემორჩილო 
+                        <span class="lb" data-n=""></span>უფროჲსღა ვიდრე შენ, რამეთუ იტყჳს ნეტარი <span class="persname" data-ref="#david">დავით</span> 
+                        <span class="lb" data-n=""></span>ესრეთ: <span class="quote">„ცნედ, რამეთუ სახელი შენი უფალ არს. შენ მხოლოჲ 
+                            <span class="lb" data-n=""></span>მაღალ ხარ ყოველსა ქუეყანასა ზედა“</span><sup class="note-ref" data-note="49">49</sup>.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p33" 
+               data-n="33"
+data-folio="30v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">33</span>
+                
+                        და ამას ვიტყჳთ არა უღონონი ჩუენებად. ვითარმედ და მხოლოდ-შობილიცა 
+                        <span class="lb" data-n=""></span>ღმრთად იწოდების, რამეთუ <span class="persname" data-ref="#paul">პავლესი</span> არს ჴმაჲ და მოძღურებაჲ: 
+                        <span class="lb" data-n=""></span><span class="quote">„ქრისტე ჴორცთაებრ, რომელი არს ყოველთა ზედა ღმერთი 
+                            <span class="lb" data-n=""></span>კურთხეული“</span><sup class="note-ref" data-note="50">50</sup><sup class="note-ref" data-note="51">51</sup><sup class="note-ref" data-note="52">52</sup>. 
+                        <span class="lb" data-n=""></span><span class="persname" data-ref="#paul">პავლე</span> ვიდრემე ღმრთად ქადაგებს მას, ხოლო <span class="persname" data-ref="#david">დავით</span> 
+                        <span class="lb" data-n=""></span>იტყჳს: <span class="quote">„კურთხეულ არს მომავალი სახელითა უფლისაჲთა; 
+                            <span class="lb" data-n=""></span>ღმერთი უფალი და გამოგჳჩნდა ჩუენ“</span>; ეგრეთვე და მახარებელიცა: 
+                        <span class="lb" data-n=""></span><span class="quote">„დასაბამსა იყო სიტყუაჲ და სიტყუაჲ იყო ღმრთისა თანა, 
+                            <span class="lb" data-n=""></span>და ღმერთი იყო სიტყუაჲ“</span><sup class="note-ref" data-note="53">53</sup>.
+                    
+            </p>
+        </section>
+        <section class="mb-8" id="sec.3" data-section="3">
+            
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p34" 
+               data-n="34"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">34</span>
+                
+                        გარნა იხილე, თუ რაჲ პოა მწვალებელთა სიბოროტემან, რამეთუ იტყჳან ვითარმედ: 
+                        <span class="lb" data-n=""></span>„თეოს“<sup class="note-ref" data-note="54">54</sup> ვიდრემე წერილ არს, რომელ არს 
+                        <span class="lb" data-n=""></span>„ღმერთი“, უართრონოდ<sup class="note-ref" data-note="55">55</sup>, ხოლო „ო თეოს“ არა წერილ არსო, 
+                        <span class="lb" data-n=""></span>რომელ არს „ღმერთი“ ართრონიანი. იხილე წულილმოქმედებაჲ სიბოროტისაჲ, 
+                        <span class="lb" data-n=""></span>ვითარმედ: „რაჟამს მამისათჳს წერილი იტყოდისო“, — იტყჳან, — „ართრონსა 
+                        <span class="lb" data-n=""></span>დაუდებს მეტყუელი, ვითარმედ: „ო თეოს“ და არა ესრეთ იტყჳს, ვითარმედ 
+                        <span class="lb" data-n=""></span>„თეოს“ და ვითარმედ „ო თეოს დიდი“, „ო საუკუნე“, „ო შემოქმედი ცისა და 
+                        <span class="lb" data-n=""></span>ქუეყანისაჲ“ წინაისწარმეტყუელისა მოძღურებისაებრ. ხოლო ძესა თჳნიერ 
+                        <span class="lb" data-n=""></span>ართრონიანისა სიტყჳსა წერილი, რაჲთა გასწაოს განყოფილებაჲ, რამეთუ 
+                        <span class="lb" data-n=""></span>ართრონისა ვიდრემე მქონებელსა უფლებაჲცა უმეტესი აქუსო, ხოლო 
+                        <span class="lb" data-n=""></span>არ-მქონებელსა ართრონისასა უდარესი აქუს ღირსებაჲ“.
+                        <span class="pb" title="folio 34r">34r</span>
+                        <sup class="note-ref" data-note="56">56</sup>
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p35" 
+               data-n="35"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">35</span>
+                
+                        კანონნი ესე სადაჲთ მიგიხუმან, ჵ ამაოო მწვალებელო და არა-ღმრთისმეტყუელო? 
+                        <span class="lb" data-n=""></span><span class="persname" data-ref="#paul">პავლესგანა</span> გინა სხჳსა ვისგანმე?. და ჰპოვეა განცხადებული 
+                        <span class="lb" data-n=""></span>მოძღურებაჲ, ვითარმედ ართრონისა ქონებაჲ უდიდესად აჩუენებს ღმერთსა?. 
+                        <span class="lb" data-n=""></span>რამეთუ მე ვიდრემე ამას არა ვჰპოვებ; ხოლო ვჰპოებ ნაცვალსაკუეთებელსა 
+                        <span class="lb" data-n=""></span>საცთურისა შენისასა მახჳლსა. რამეთუ არა უღონო ვარ ჩუენებად — 
+                        <span class="lb" data-n=""></span>ვინაჲთგან ართრონისაგან ჰფილოსოფოსობ და არა ჭეშმარიტებისა — 
+                        <span class="lb" data-n=""></span>არა უღონო ვარ ჩუენებად ძისაცა ართრონიანად ქადაგებულისა.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p36" 
+               data-n="36"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">36</span>
+                
+                        ისმინე უკუე წ<span class="supplied" title="omitted-in-ms">ინაჲსწარმეტ</span>ყუელისა მეტყუელისაჲ: 
+                        <span class="lb" data-n=""></span><span class="quote">„აჰა <span class="supplied" title="lost">ქალწული</span> მიუდგეს და შვეს ძჱ და უწოდონ სახელი მისი 
+                            <span class="lb" data-n=""></span>ემმანოელ“</span><sup class="note-ref" data-note="57">57</sup>, რომელი ითარგმანების არა ვითარმედ: 
+                        <span class="lb" data-n=""></span>„ჩუენ თანა თეოს“ — ღმერთი უართრონოდ, არამედ ვითარმედ: 
+                        <span class="lb" data-n=""></span>„ჩუენ თანა ო თეოს“ — ღმერთი ართრონიანად. ართრონთაგან 
+                        <span class="lb" data-n=""></span>კეთილმსახურებისათა გარეგან-ქმნილნი ართრონთათჳს ჩუენ თანა 
+                        <span class="lb" data-n=""></span>ჴელოვან-მეტყუელებენ.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p37" 
+               data-n="37"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">37</span>
+                
+                        კუალად უკუე ნეტარმან <span class="persname" data-ref="#thomas">თომა</span>, ერთმან მოციქულთაგანმან, 
+                        <span class="lb" data-n=""></span>ურწმუნო-ქმნილმან მაცხოვრისა აღდგომისამან და მნებებელმან 
+                        <span class="lb" data-n=""></span>განცხადებულად სახილველად მიღებად ურწმუნოებისა ძლით და 
+                        <span class="lb" data-n=""></span>აღმომთქუმელმან ამის ჴმისამან, ვითარმედ: <span class="quote">„არა თუ დავსდვა 
+                            <span class="lb" data-n=""></span>ჴელი ჩემი ადგილსა სამსჭუალთასა და გუერდსა, რომელსა ეცა ლახუარი, 
+                            <span class="lb" data-n=""></span>არა მრწმენეს“</span><sup class="note-ref" data-note="58">58</sup> ხოლო მაცხოვარმან გამოჩინებულმან — 
+                        <span class="lb" data-n=""></span>რაჲთა შემოკლებულად თანაწარვჰჴდე ამის-ძლითთა — მოუწოდა <span class="persname" data-ref="#thomas">თომას</span> 
+                        <span class="lb" data-n=""></span>მეტყუელმან: <span class="quote">„მოვედ, დასდევ ჴელი შენი ადგილსა 
+                            <span class="lb" data-n=""></span>სამსჭ<span class="supplied" title="omitted-in-ms">უალთასა</span></span><sup class="note-ref" data-note="59">59</sup><span class="gap" title="8 character"></span>ბელმან 
+                        <span class="lb" data-n=""></span>მ<span class="gap" title="? character"></span>სა საქმიერობასა ეს <span class="gap" title="? character"></span> მაქებელმან საიდუმლოჲსამან. 
+                        <span class="lb" data-n=""></span>და რასა იტყოდაა? რამეთუ არა იტყოდა უართრონოდ თუ: 
+                        <span class="lb" data-n=""></span>„კჳრიოს მუ“ და „თეოს მუ“, რომელ არს „უფალი ჩემი“ 
+                        <span class="lb" data-n=""></span>და „ღმერთი ჩემი“<sup class="note-ref" data-note="60">60</sup> <span class="supplied" title="lost">უარ</span>თრონოდ, 
+                        <span class="lb" data-n=""></span>არამედ, ვითარმედ: „ო კჳრიოს მუ“ და „ო თეოს მუ“ ართრონიანად.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p38" 
+               data-n="38"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">38</span>
+                
+                        არამედ გამოსაჩინებელნი ესე არიან ვიდრემე სახარებისანი, და რამეთუ 
+                        <span class="lb" data-n=""></span><span class="persname" data-ref="#thomas">თომა</span> სახარებისაჲ არს, და ჴმაჲცა <span class="persname" data-ref="#gabriel">გაბრიელისი</span>, 
+                        <span class="lb" data-n=""></span>დაღაცათუ საწინაჲსწარმეტყუელოსა ჴმასა თარგმნის, გარნა ეგრეთცა 
+                        <span class="lb" data-n=""></span>სახარებისა მოძ<span class="supplied" title="omitted-in-ms">ღურებ</span>ასა შინა დაწესებულთა; ხოლო 
+                        <span class="lb" data-n=""></span>წარმოვადგინო შიშუელი ჴმაჲ <span class="persname" data-ref="#jeremiah">იერემია</span> წინაჲსწარმეტყუელისაჲ 
+                        <span class="lb" data-n=""></span><span class="gap" title="8 character"></span>ისა ღირ<span class="gap" title="12 character"></span>სავკუნე 
+                        <span class="lb" data-n=""></span><span class="gap" title="10 character"></span>მქადაგებე<span class="supplied" title="lost">ლისაჲ..</span> იჴუმევ<span class="supplied" title="lost">და...</span> 
+                        <span class="lb" data-n=""></span>ამას სიტყ<span class="supplied" title="omitted-in-ms">უასა ვ̃დ: „ესე ო</span>თეოს ჩუენი, 
+                        <span class="lb" data-n=""></span><span class="supplied" title="lost">არა შეირაცხოს სხუაჲ“</span> არა თქუა, <span class="supplied" title="lost">თუ, ვ̃დ: „ესე თ</span>ეოს 
+                        <span class="lb" data-n=""></span>ჩუენი და არა შეირაცხოს სხუაჲ <span class="supplied" title="lost">მის თანა“. დას</span>დგეა ჴმასა 
+                        <span class="lb" data-n=""></span><span class="gap" title="3 character"></span>არა ცხო<span class="gap" title="4 character"></span>ოს ჩუენი; <span class="quote">„უფალ არს (ღმერთი ჩუენი) 
+                            <span class="lb" data-n=""></span><span class="supplied" title="lost">არა შეირა</span>ცხოს სხუაჲ მის თანა“</span><sup class="note-ref" data-note="61">61</sup>. ლექსსა 
+                        <span class="lb" data-n=""></span>ვჰმონოა და დაუტეო მამისაჲ? ნუ იყოფინ!.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p39" 
+               data-n="39"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">39</span>
+                
+                        რამეთუ მე დაღაცათუ პირისაგან მამისა მესმას თქუმულად სიტყუაჲ, 
+                        <span class="lb" data-n=""></span>ვითარმედ: „არა არს სხუაჲ“, არა უკუნსაქცეველად ძისა 
+                        <span class="lb" data-n=""></span>გულისჴმა-ვჰყოფ სიტყუასა, არამედ განგდებისათჳს მაშინ 
+                        <span class="lb" data-n=""></span>მპყრობელ-ქმნილისა კერპთმსახურებისა, ვითარცა იტყჳს ღმერთი 
+                        <span class="lb" data-n=""></span>სხჳსა მიერ წინაჲსწარმეტყუელისა, ვითარმედ: <span class="quote">„მე ვარ 
+                            <span class="lb" data-n=""></span><span class="supplied" title="lost">ღმერთი პირველი და</span> მე შემდგომად ამისა“</span><sup class="note-ref" data-note="62">62</sup> 
+                        <span class="lb" data-n=""></span><span class="quote">„<span class="supplied" title="lost">და თჳნი</span>ერ ჩემსა სხუაი არა არს“</span><sup class="note-ref" data-note="63">63</sup>. 
+                        <span class="lb" data-n=""></span>ვინაჲთგან მრავალღმრთეებასა დაეპყრა, განსაგდებელად მისა<sup class="note-ref" data-note="64">64</sup> 
+                        <span class="lb" data-n=""></span>ამას იტყოდა და არა უკუნსაქცეველად დიდებასა მხოლოდ-შობილისასა. 
+                        <span class="lb" data-n=""></span>და იხილე საკვრველი!. რამეთუ საცთურსაცა უკუნაქცევს სამებისა 
+                        <span class="lb" data-n=""></span>საიდუმლოსა <span class="gap" title="12 character"></span> <span class="quote">„მე <span class="supplied" title="lost">ვარ ღმერთი პირვე</span>ლი და მე 
+                            <span class="lb" data-n=""></span>შემდგომად ამისა და თჳნიერ ჩემსა ღმერთი არა არს“</span><sup class="note-ref" data-note="65">65</sup>.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p40" 
+               data-n="40"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">40</span>
+                
+                        ამისთჳს უკუე იტყვს „პირველსა“ და „შემდგომად ამისსასა“, ვინაჲთგან 
+                        <span class="lb" data-n=""></span>მან მოსცა სჯული და კუალად შემდგომად მანვე მოსცა სახარებაჲ, 
+                        <span class="lb" data-n=""></span>რაჲთა არა განყოფილებასა სჯულის-დებათასა მიმხედველნი კაცნი 
+                        <span class="lb" data-n=""></span>ჰგონებდენ სხჳსა ღმრთისა მიერ ვიდრემე მოცემად სჯული 
+                        <span class="lb" data-n=""></span><span class="gap" title="3 character"></span> სხჳსა მიერ <span class="supplied" title="lost">ღმრთეებისა</span>. „მე ვარ ღმერთიო“ — იტყჳს — 
+                        <span class="lb" data-n=""></span>„პირველი <span class="persname" data-ref="#moses">მოსეს</span> მიერ მეტყუელი, და „მევე“ შემდგომად ამისა 
+                        <span class="lb" data-n=""></span>სახარებისა მიერ — „მაცხოვარებისა დამდებელი. და თჳნიერ ჩემსა 
+                        <span class="lb" data-n=""></span>ძუელისა და ახლის შინავსა ღმერთი არა არს“. და სხუაგან იტყჳს: 
+                        <span class="lb" data-n=""></span><span class="quote">„მე ვარ ღმერთი უფალი და მომავალთა შინა მე <span class="supplied" title="lost">ვე</span> ვარ“</span>. 
+                        <span class="lb" data-n=""></span><span class="gap" title="3 character"></span> უცხო გყო<span class="supplied" title="lost">ფს</span>ო შენ <span class="gap" title="3 character"></span>ს განყოფილებაჲ 
+                        <span class="lb" data-n=""></span><span class="gap" title="12 character"></span> რთსა(?) <span class="supplied" title="lost">ვითარ(?)</span>ცა მოციქული მეცნიერი, 
+                        <span class="lb" data-n=""></span>ვითარმედ არა სხუასა ღმერთსა ჰმსახურებდა სჯულსა შინა 
+                        <span class="lb" data-n=""></span>და სხჳსა ღმრთისა მომართ მოვიდა სახარებასა შინა. არამედ 
+                        <span class="lb" data-n=""></span>ვითარმედ ერთსა და მასვე მუნ და აქა თაყუანის-სცემდა, იტყოდა: 
+                        <span class="lb" data-n=""></span><span class="quote">„ვჰმადლობ ღმერთსა ჩემსა, რომელსა ვჰმსახურებ პირველთა 
+                           მშობელთაითგან“</span><sup class="note-ref" data-note="69">69</sup>, ვინაიცა იტყვს<sup class="note-ref" data-note="66">66</sup>: 
+                            <span class="lb" data-n=""></span><span class="quote">„მე ვარ ღმერთი პირველი და მე შემდგომად ამისა“</span><sup class="note-ref" data-note="67">67</sup> 
+                            <span class="lb" data-n=""></span>და <span class="quote">„დიდებაჲ ჩემი სხუასა არა მივსცე“</span><sup class="note-ref" data-note="70">70</sup>.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p41" 
+               data-n="41"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">41</span>
+                
+                        ამასცა უკუე იჴუმევენ(?) <span class="supplied" title="lost">..ბოროტ</span>ნი მწვალებელნი და 
+                        <span class="lb" data-n=""></span><span class="gap" title="3 character"></span> მეტყუელნი: „ვითარღა ეზიარების ძე დიდებასა მამისასა, 
+                        <span class="lb" data-n=""></span>რამეთუ წერილ არს: „დიდებაჲ ჩემი სხუასა არა მივსცე?“. 
+                        <span class="lb" data-n=""></span>„სხუასა“ არა ძე თქუა ამიერ, გარნა უცხოჲ; ყოვლად უცხოჲ 
+                        <span class="lb" data-n=""></span>უცხოსა არა მისცემს. ხოლო რაჲ არს უცხოჲ, თარგმანენინ 
+                        <span class="lb" data-n=""></span>წინაჲსწარმეტყუელმან და დაყოფილ იქმნენინ პირნი მწვალებელთანი. 
+                        <span class="lb" data-n=""></span>რამეთუ უკუე აჩუენა წინაჲსწარმეტყუელმან, ვითარმედ არა 
+                        <span class="lb" data-n=""></span>ძესა განაგდებს დიდებისაგან, არამედ კერპთა განაქიქებს. 
+                        <span class="lb" data-n=""></span>შესძინა: <span class="quote">„დიდებაჲ ჩემი სხუასა არა მივსცე, არცა სათნოებანი 
+                            <span class="lb" data-n=""></span>ჩემნი ქანდაკებულთა“</span><sup class="note-ref" data-note="68">68</sup>. სხუასა იტყჳს ტომსა ცნობითა; 
+                        <span class="lb" data-n=""></span>ხოლო რამეთუ სხუასა არა მისცემს, ესე იგი არს — უცხოსა ღმრთეებისაგან.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p42" 
+               data-n="42"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">42</span>
+                
+                        და ვითარმედ ძესა მამისაჲ აქუს დიდებაჲ, ისმინე უფლისა მეტყუელისაჲ: 
+                        <span class="lb" data-n=""></span><span class="quote">„ოდეს მოვიდეს ძე კაცისაჲ დიდებითა მამისა თჳსისაჲთა“</span><sup class="note-ref" data-note="71">71</sup>. 
+                        <span class="lb" data-n=""></span>გაქუს დიდებაჲ!. რამეთუ ვითარცა-იგი მეტყუელი მამაჲ დიდებასა 
+                        <span class="lb" data-n=""></span>სხჳსა არა-მიცემად, არა ძე<span class="supplied" title="lost">სა იტყჳს, არამედ ..</span>ე<span class="supplied" title="lost">.....</span> 
+                        <span class="lb" data-n=""></span>ცობათა(?) და საცთურსა ამხილებს, ესრეთვე და <span class="persname" data-ref="#jeremiah">იერემია</span>, 
+                        <span class="lb" data-n=""></span>ოდეს იტყოდის: „ესე ღმერთი ჩუენი, არა შეირაცხოს სხუაჲ მის თანა“, 
+                        <span class="lb" data-n=""></span>არა მამასა აგინებს, არამედ მრავალ-ღმერთთა საცთურსა სტანჯავს.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p43" 
+               data-n="43"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">43</span>
+                
+                        ხოლო ვიხილოთ, უკუეთუ ძისა მიმართ მიიღებისა სიტყუად: 
+                        <span class="lb" data-n=""></span>„ესე ღმერთი ჩუენი, არა შეირაცხოს სხუად მისა მიმართ. მოიპოვა 
+                        <span class="lb" data-n=""></span>ყოველი გზაი მეცნიერებისა და მისცა იგი იაკობს ყრმასა თუსსა 
+                        <span class="lb" data-n=""></span>და იზრაილ შეყუარებულსა მისსა. შემდგომად ამისა ქუეყანასა 
+                        <span class="lb" data-n=""></span>ზედა გამოჩნდა და კაცთა შორის იქცეოდა“. ვინ „ესე ღმერთი ჩუენი?“ 
+                        <span class="lb" data-n=""></span>იხილე, რასა ჰყოფს. წინაჲსწარმეტყუელებრი უცთომელობაჲ; 
+                        <span class="lb" data-n=""></span>რამეთუ ვინაჲთგან უწყოდა იუდეანთა სიბოროტე, მოსწრაფე მარადის 
+                        <span class="lb" data-n=""></span>შეფარილებად სიტყუათა საღმრთოთა და შემჩრდილველად 
+                        <span class="lb" data-n=""></span>მაცხოვრისათჳს წინაჲსწარმეტყუელებათა, პირსა დაუყოფს ზენაჲთგან 
+                        <span class="lb" data-n=""></span><span class="gap" title="6 character"></span>სა წამებასა მათსა, <span class="supplied" title="lost">რაჲთამცა არა</span> 
+                        <span class="lb" data-n=""></span>შემძლებელ იყო თქუმად იუდეანი, ვითარმედ: „ესე ღმერთი ჩუენი 
+                      მხმულ არს <span class="supplied" title="lost"></span> ჩუენ მეცნიერებაჲ 
+                        <span class="lb" data-n=""></span>და სჯული <span class="persname" data-ref="#moses">მოსეს</span> მიერ და საწინაჲსწარმეტყუელოთა სიტყუათაგან, 
+                        <span class="lb" data-n=""></span>ვითარმედ: <span class="quote">„ქუეყანასა ზედა გამოჩნდა“</span>. რამეთუ გამოჩნდა 
+                        <span class="lb" data-n=""></span>მთასა ზედა სინასა, ოდეს სჯულსა მოსცემდა: იხილა იგი 
+                        <span class="lb" data-n=""></span><span class="persname" data-ref="#daniel">დანიელცა</span> მდინარესა ზედა ხოვარსა<sup class="note-ref" data-note="72">72</sup>. 
+                        <span class="lb" data-n=""></span>ოდეს უკუე იხილეს წინაჲსწარმეტყუელთა, მაშინ 
+                        <span class="lb" data-n=""></span>„ქუეყანასა ზედა გამოჩნდა“.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p44" 
+               data-n="44"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">44</span>
+                
+                        აწ უკუე ნუ წარმოადგინებ ვითარცა უცხოსა ბუნებისასა ღმრთისა მიმართ 
+                        <span class="lb" data-n=""></span>თქუმულთა; რაჲთა უკუე არა მ<span class="supplied" title="lost">ტყუვ</span>რ<span class="supplied" title="lost">ად</span> 
+                        <span class="lb" data-n=""></span>წარმოადგინოს ჭეშმარიტებაჲ, არამედ რაჲთა ძირითგან აღმოსჭრას 
+                        <span class="lb" data-n=""></span>ცილისწამებაჲ, არა თქუა განმარტებით: „ქუეყანასა ზედა გამოჩნდა“, 
+                        <span class="lb" data-n=""></span>გარნა შესძინა, ვითარმედ: <span class="quote">„და კაცთა შორის იქცეოდა“</span>, 
+                        <span class="lb" data-n=""></span>რამეთუ სხუაჲ არს გამოჩინებაჲ ღმრთეებრი და სხუაჲ თანა-ქცევაჲ 
+                        <span class="lb" data-n=""></span>კაცობრივთა ჴორცთაჲ; ხოლო რაჲ არს თანა-ქცევაჲ, რომელსა 
+                        <span class="lb" data-n=""></span>თარგმნის მახარებე<span class="supplied" title="lost">ლი? რ̃ლთ</span>ა შორის წარმოადგინ<span class="supplied" title="lost">ა თა</span>ვი 
+                        <span class="lb" data-n=""></span>თჳსი ცხოველი შემდგომად ვნებისა დღეთა შინა ორმეოცთა და 
+                        <span class="lb" data-n=""></span>თანა-<span class="supplied" title="lost">იქცეოდა</span> მათ თანა<sup class="note-ref" data-note="73">73</sup>. ესე არს თანა-ქცევაჲ იგი; 
+                        <span class="lb" data-n=""></span>რამეთუ კაცობრივი არს მქცევარობაჲ და ჭამაჲ და სუმაჲ, 
+                        <span class="lb" data-n=""></span>სწავებაჲ, სმენაჲ და სლვაჲ უბანთა შორის. ესე არს კაცობრივი მქცეობაჲ.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p45" 
+               data-n="45"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">45</span>
+                
+                        იტყჳს უკუე წინაჲსწარმეტყუელი; შემდგომად ამათსა, შემდგომად 
+                        <span class="lb" data-n=""></span>მოცემისა სჯულისა, შემდგომად მოცემისა წინაჲსწარმეტყუელთაჲსა, 
+                        <span class="lb" data-n=""></span>დასასრულსაღა შემოიღებს განგებულებასა, ვითარმედ: 
+                        <span class="lb" data-n=""></span><span class="quote">„შემდგომად ამისა ქუეყანასა ზედა გამოჩნდა და კაცთა შორის 
+                            <span class="lb" data-n=""></span>იქცეოდა“</span><sup class="note-ref" data-note="74">74</sup>. ვინაჲ მოლოდებადსა წარმოაჩინებდა, 
+                        <span class="lb" data-n=""></span>რამეთუ ართრონითა უწოდა წინაჲსწარმეტყუელმან ღმრთად ძესა 
+                        <span class="lb" data-n=""></span>მეტყუელმან: „ესე ო თეოს ჩუენი“, ესე იგი არს, ვითარმედ: 
+                        <span class="lb" data-n=""></span>„ესე ღმერთი ჩუენი“.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p46" 
+               data-n="46"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">46</span>
+                
+                        რაისათჳს უკუე იტყჳს, ძმაო, უკუეთუ სულსა უწოდს „ღმრთად“, და 
+                        <span class="lb" data-n=""></span>ძესა არა უწოდსა „ღმრთად“?. რაჲსათჳს უკე განყვნა ენისა მიერ 
+                        <span class="lb" data-n=""></span>სიტყუანი და რომელიმე „ღმრთად“ და რომელიმე „უფლად“ თქუა: 
+                        <span class="lb" data-n=""></span><span class="quote">„ერთ ღმერთი მამაჲ, რომლისაგან ყოველი და ერთ უფალი იესუ, 
+                            <span class="lb" data-n=""></span>რომლისა მიერ ყოველი?“</span><sup class="note-ref" data-note="75">75</sup>. რაჲთა უკუე 
+                        <span class="lb" data-n=""></span>არა შეიმრღჳო სიტყუათა ძლით, საჭირო არს თქუმად მიზეზისა: 
+                        <span class="lb" data-n=""></span>მოციქულნი რომელსა განვიდეს ჟამსა კიდე<span class="supplied" title="lost">თა... მა</span>თ 
+                        <span class="lb" data-n=""></span>სოფლისათა, არა შეანაწევრეს სიტყუაჲ სრულებისა მიმართ 
+                        <span class="lb" data-n=""></span>ქადაგებათაჲსა, არამედ უძლურებისა მიმართ მსმენელთაჲსა 
+                        <span class="lb" data-n=""></span>და დამპყრობელისა საცთურისა ძირითგან აღმოფხურად მნებებელთა.
+                        <sup class="note-ref" data-note="76">76</sup>
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p47" 
+               data-n="47"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">47</span>
+                
+                        ხოლო საცთური იყო მრავალ-ღმერთი; ამისთჳს შეაჩრდილებულად 
+                        <span class="lb" data-n=""></span>წარმოადგენდეს სიტყუასა ღმრთისასა; რამეთუ მრავალ-ღმრთეებასა 
+                        <span class="lb" data-n=""></span>შინა დაბერებულსა და მსმენელსა მრავალთა ღმერთთა მამალ-დედალთასა 
+                        <span class="lb" data-n=""></span>და შვილთა და შვილისშვილთა ღმერთთასა სავნებელ ეყოფვოდა 
+                        <span class="lb" data-n=""></span>მეყსეულად შიშულად ქადაგებული სიტყუაჲ, არა თუმცა სიბრძნითა 
+                        <span class="lb" data-n=""></span>მოციქულებრითა მიფარულ-ქმნილ იყო. არცა იყო უჭირველ თქუმად, 
+                        <span class="lb" data-n=""></span>თუ „ირწმუნეთ მამისა მიმართ“, „ირწმუნეთ მამისა მიმართ“, 
+                        <span class="lb" data-n=""></span>„გრწმუნენით ძისა მიმართ,ერწმუნენით სულსა წმიდასა“, 
+                        <span class="lb" data-n=""></span>„ღმერთ არს მამაჲ, ღმერთ არს ძე, ღმერთ არს სული წმიდაჲ“. 
+                        <span class="lb" data-n=""></span>ამას იგინი ვიდრემე ჰგონებდეს, ხოლო თქუმად ვერ იკადრებდეს — 
+                        <span class="lb" data-n=""></span>არა დევნულებათაგან გამომთხოვნელნი თავთანი, არცა ვნებისაგან 
+                        <span class="lb" data-n=""></span>ჭეშმარიტებისა ძლით, არამედ მოშიშნი წყლვად სასმენელთა 
+                        <span class="lb" data-n=""></span>მარტივთასა. ნუსადა ჰგონონ ურწმუნოთა, ვითარმედ მრავალ-ღმრთეებისაგან 
+                        <span class="lb" data-n=""></span>მრავალ-ღმრთეებად მიიწოდნეს.
+                    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p48" 
+               data-n="48"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">48</span>
+                
+                        და იხილე, ვითარ საცთომელ იყო სიტყუაჲ შიშულად ქადაგებული 
+                        <span class="lb" data-n=""></span>ქალაქსა შინა... ელლინთასა. შევიდა უკუე ოდესმე <span class="persname" data-ref="#paul">პავლე</span> 
+                        <span class="lb" data-n=""></span>ათინათა შინა, სადა-იგი მჴნობდა მრავალღმრთეებად, 
+                        <span class="lb" data-n=""></span>სადა ჰბერვიდეს გამომეტყუელთა ზღაპარნი, რიტორთა სიტყუანი, 
+                        <span class="lb" data-n=""></span>ჴელოვნებანი მასწავლელთანი, ფილოსოფოსთა ვრცელ-მეტყუელებანი 
+                        <span class="lb" data-n=""></span>და აქუნდა მისა მიმართ ძუელითგან დამპყრობელი საცთური. 
+                        <span class="lb" data-n=""></span>ნაცვალად განამჴედრა სიტყუაჲ ქადაგებად ვიდრემე ღმრთისა, 
+                        <span class="lb" data-n=""></span>ხოლო მხოლოდ-შობილისა ვითარცა მამაკაცისა სრულისა; რაჲთა 
+                        <span class="lb" data-n=""></span>არა თქვან მეყსეულად მათ, ვითარმედ: „ღმერთი და ღმერთი 
+                        <span class="lb" data-n=""></span>ქადაგებს, მრავალთა ღმერთთა ქადაგებს“, რამეთუ ურწმუნოსა 
+                        <span class="lb" data-n=""></span>არა უსწავიეს რწმუნებად, არამედ უფროჲსღა რიცხუვად, 
+                        <span class="lb" data-n=""></span>მქადაგებელმან უკუე ათინათა შინა იწყო მოძღურებასა ესრეთ: 
+                        <span class="lb" data-n=""></span><span class="quote">„ღმერთმან შემოქმედმან ცისა და ქუეყანისამან“</span><sup class="note-ref" data-note="78">78</sup>, 
+                        <span class="lb" data-n=""></span>რომელსა შინა იჴუმევს სიტყუასა ღმრთისა მქადაგებელი.
+                    
+            </p>
+        </section>
+        <section class="mb-8" id="sec.4" data-section="4">
+            
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p49" 
+               data-n="49"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">49</span>
+                
+        და მრავლად ამის-შემდგომად მეტყუელმან, ვინაჲთგან საცთურსა მათსა პირველ დამპყრობელსა 
+        <span class="lb" data-n=""></span>ამხილა ერთითა სიტყჳთა შესულებულად მეტყუელმან ესრეთ: <span class="quote">„ჟამთა ვიდრემე 
+        <span class="lb" data-n=""></span>უმეცრებისათა შეურაცხისმყოფელმან ღმერთმან“</span><sup class="note-ref" data-note="79">79</sup>, არა თქუა 
+        <span class="lb" data-n=""></span>„მამამან“, რაჲთა <span class="supplied" title="lost">ჴუ</span>მევითა „მამი<span class="supplied" title="lost">სა</span>ჲთა“ 
+        <span class="lb" data-n=""></span>გ<span class="gap" title="12 character"></span> გონებაჲ არაოდეს სწავლულთაჲ გულისსიტყჳთა 
+        <span class="lb" data-n=""></span>საღმრთოჲთა ხედვად საღმრთოთა, რამეთუ ურწმუნოჲ, მსმენელი „მამასა და ძესა“, 
+        <span class="lb" data-n=""></span>კაცობრივითა გულის სიტყჳთა შეამწინკულებს წმიდათა და მისა<sup class="note-ref" data-note="80">80</sup> 
+        <span class="lb" data-n=""></span>მიმართ მხედველი შეაბავთებს სიტყუასა.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p50" 
+               data-n="50"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">50</span>
+                
+        ამისთჳს არა იტყჳს „მამასა“, ვინაჲთგან არა ოდეს სმენილ იყო, არამედ რასა იტყჳს?. 
+        <span class="lb" data-n=""></span><span class="quote">„ჟამნი ვიდრემე უმეცრებისანი შეურაცხ-ყვნა ღმერთმან, ამიერ ამცნებს ყოველთა 
+        <span class="lb" data-n=""></span>კაცთა ყოვლით კერძო სინანულსა; ვინაჲთგან დაადგინა დღე, რომელსა შინა 
+        <span class="lb" data-n=""></span>ეგულებისო განსჯად სოფლისა სიმართლით მამაკაცისა მიერ, რომელი 
+        <span class="lb" data-n=""></span>განასაზღვრა“</span><sup class="note-ref" data-note="81">81</sup> სარწმუნოებისა მიმცემელმან და აღმადგინებელმან 
+        <span class="lb" data-n=""></span>მისმან მკუდრეთით. მო-ვიდრემე-იღებს მათდა მიმართ ქადაგებასა, არა 
+        <span class="lb" data-n=""></span>ღმრთისა მიმართ შემაერთებელი, არამედ მამაკაცისა მართლისა ღმრთისა მიერ 
+        <span class="lb" data-n=""></span>განსაზღვრებულისა მსაჯულად ცხოველთა და მკუდართა და ესოდენ 
+        <span class="lb" data-n=""></span>აღდგომილისა მკუდრეთით და ესოდენ კაცად ქადაგებულისა ვიდრე 
+        <span class="lb" data-n=""></span>აღდგინებისა ღმრთისა მიერ გონებად.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p51" 
+               data-n="51"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">51</span>
+                
+        ვინაჲთგან ელლინთა შორის მამალნი და დედალნი მოქალაქობდეს ღმერთნი 
+        <span class="lb" data-n=""></span>და ზღაპარნი ამათნი აღავსებდეს, ჰგონებდეს, ვითარმედ ორთა უცხოთა ღმერთთა 
+        <span class="lb" data-n=""></span>ჰქადაგებს — ერთსა მამალსა და ერთსა დედალსა და ვითარ, ისმინე, რამეთუ 
+        <span class="lb" data-n=""></span>ვიეთნიმე იტყოდეს, ვითარმედ: <span class="quote">„რაჲ-მე ჰნებავს მთესვარასა ამას 
+        <span class="lb" data-n=""></span>თქუმად“</span><sup class="note-ref" data-note="82">82</sup>, 
+        <span class="lb" data-n=""></span>ხოლო სხუანი იტყოდეს, ვითარმედ: <span class="quote">„უცხოჲსა ეშმაკისასა გონებულ არს 
+        <span class="lb" data-n=""></span>განმთქუმელად“</span><sup class="note-ref" data-note="83">83</sup>. არა თქუა „უცხოთა“, არამედ „უცხოჲსა“, 
+        <span class="lb" data-n=""></span>და აღდგომაჲ იხარებოდა. აწ უკუე ვინ შემძლებელ იყო დატევნად შიშულად 
+        <span class="lb" data-n=""></span>ღმრთეებისა სიტყუასა?. ვინაჲცა მიუთხრობს მათ მოძღურებასა ამას 
+        <span class="lb" data-n=""></span>სიმშჳდით ყრმათ-მყვანებელი მათი და ვითარცა ხარისხეულად აღმყვანებელი 
+        <span class="lb" data-n=""></span>მათი სიმაღლედ მიმართ ღმრთისმეტყუელებისა.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p52" 
+               data-n="52"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">52</span>
+                
+        ესრეთვე უკუე კორინთელთაცა მიმართ ჰყოფდა, რამეთუ ჰმეზობლობდეს 
+        <span class="lb" data-n=""></span>კორინთელნი ათინელთა; ამისთჳს უკუე და კორინთელთაცა იტყჳს, 
+        <span class="lb" data-n=""></span>რომლისა ეპისტოლისაგან მიიღებენ მიზეზსა მწვალებელნი; რამეთუ 
+        <span class="lb" data-n=""></span>კორინთელთა-მიმართსა მოძღურებასა შინა იპოების ესე, ვითარმედ: 
+        <span class="lb" data-n=""></span><span class="quote">„ერთ არს ღმერთი მამაჲ, რომლისაგან ყოველი და ერთ უფალი იესუ ქრისტე, 
+        <span class="lb" data-n=""></span>რომლისა მიერ ყოველი“</span><sup class="note-ref" data-note="84">84</sup>, რამეთუ კორინთელნი 
+        <span class="lb" data-n=""></span>მითვე <span class="supplied" title="lost">სენ</span>ითა სნეულებდეს. სენთა განსაგდებელად უკუე 
+        <span class="lb" data-n=""></span>მრავალღმრთეებისა შემოიღებს ერთსა ღმერთსა არა ძისა ღმრთეებისა 
+        <span class="lb" data-n=""></span>უარისმყოფელი, არამედ მრავალღმრთეებასა ძირითურთ აღმომფხურელი.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p53" 
+               data-n="53"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">53</span>
+                
+        და ვითარმედ არა განსაგდებელად ძისა იტყოდა, ისმინე მისი მეტყუელისაჲ, 
+        <span class="lb" data-n=""></span>ვითარმედ: <span class="quote">„რამეთუ დაღაცათუ არიან მრავლად თქუმულნი ღმერთნი და 
+        <span class="lb" data-n=""></span>მრავლად უფალნი, გარნა ჩუენდა ერთ არს ღმერთი მამაჲ“ და 
+        <span class="lb" data-n=""></span>„ერთ უფალი იესუ ქრისტე“</span><sup class="note-ref" data-note="85">85</sup>, არა უარსაყოფად ძისა, 
+        <span class="lb" data-n=""></span>არამედ განსაგდებელად მრავალღმრთეებისა. და უწოდს მამასა 
+        <span class="lb" data-n=""></span>ვიდრემე „ღმრთად“. ხოლო ძესა „უფლად“, არა სხჳსა რაჲსმე 
+        <span class="lb" data-n=""></span>გულისჴმისმყოფელი უფლობისა ძლით და სხჳსაჲ ღმრთისათჳს, 
+        <span class="lb" data-n=""></span>არამედ რაჲთა განყოფილებითა სახელთაჲთა გამოიპაროს 
+        <span class="lb" data-n=""></span>მრავალღმრთეებისა საგონებელობაჲ.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p54" 
+               data-n="54"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">54</span>
+                
+        და ვითარმედ, ძმანო, კორინთელთა მიმართ მწერალი არა იყო სრულთა 
+        <span class="lb" data-n=""></span>მოძღურებათაჲ, არამედ თანა-შთამომავალობითთაჲ, ისმინე <span class="persname" data-ref="#paul">პავლესი</span> 
+        <span class="lb" data-n=""></span>მეტყუელისაჲ კორინთელთა მიმართ: <span class="quote">„და მეცა, ძმანო, ვერ შემძლებელ 
+        <span class="lb" data-n=""></span>ვიქმენ სიტყუად თქუენდა ვითარცა სულიერთა, არამედ ვითარცა ჴორციელთა 
+        <span class="lb" data-n=""></span>და ჩჩჳლთა ქრისტეს მიერ“</span><sup class="note-ref" data-note="86">86</sup>. და მნებებელი ჩუე<span class="lb" data-n=""></span>ნებად 
+        <span class="lb" data-n=""></span><span class="gap" title="10 character"></span>ლი მათდა მიმართ(?) <span class="gap" title="6 character"></span>თასა(?) 
+        <span class="lb" data-n=""></span>თანა-შთაჰყვებოდა და არა სრულებად სამებისა წმიდისა უქადაგა, 
+        <span class="lb" data-n=""></span>იტყჳს, ვითარმედ: <span class="quote">„ვერ შემძლებელ ვიქმენ სიტყუად თქუენდა ვითარცა 
+        <span class="lb" data-n=""></span>სულიერთა, არამედ ვითარცა ჩჩჳლთა ქრისტეს მიერ. სძე გიწდე 
+        <span class="lb" data-n=""></span>თქუენ, არა საჭმელი, რამეთუ არა ძალ-გედვა, არცაღა ჯერეთ ძალ-გიც“</span><sup class="note-ref" data-note="87">87</sup>.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p55" 
+               data-n="55"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">55</span>
+                
+        აწ უკუე <span class="persname" data-ref="#paul">პავლე</span> უძლურებისა მიმართ მსმენელთაჲსა მისწერს 
+        <span class="lb" data-n=""></span>მოძღურებასა; ხოლო შენ გამოწულილვისა მიმართ სრულისა 
+        <span class="lb" data-n=""></span>რწმენილთა სჯულთაჲსა მიიღება განყოფილებასა სახელთასა? აწ 
+        <span class="lb" data-n=""></span>უკუე მამად უფალი წერილთა მიერ იქადაგების: უფალ არს ძე, 
+        <span class="lb" data-n=""></span>უფალ არს სული წმიდაჲ, რამეთუ <span class="quote">„უფალი სულ არს“</span> — ვითარცა 
+        <span class="lb" data-n=""></span>იტყჳს <span class="persname" data-ref="#paul">პავლე</span> — <span class="quote">„ხოლო სადა სული უფლისაჲ, მუნ თავისუფლებაჲ“</span><sup class="note-ref" data-note="88">88</sup>.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p56" 
+               data-n="56"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">56</span>
+                
+        აწ უკუე განმკაცრდი ჩემდად გამოწულილვით, ვითარ მოციქულნი 
+        <span class="lb" data-n=""></span>პირველად ჴორციელად განგებულებასა უფლისასა მიუთხრობდეს 
+        <span class="lb" data-n=""></span>და მის ძლით ყოველსავე სიტყუასა ჰყოფდეს, ვითარმედ: 
+        <span class="lb" data-n=""></span>გამოჩნდა ქრისტე ვითარცა კაცი მჩუენებელი ღმრთისაჲ თავსა 
+        <span class="lb" data-n=""></span>შორის თჳსსა<sup class="note-ref" data-note="89">89</sup> და აჩუენებდეს მაცხოვარსა არა თჳთ მას 
+        <span class="lb" data-n=""></span>მოქმედად, არამედ ღმერთსა მის მიერ, ვითარცა იტყჳს; 
+        <span class="lb" data-n=""></span><span class="quote">„<span class="supplied" title="lost">იესუ ნაზარეველ</span>ი, რომელი სცხ<span class="supplied" title="lost">ო ღმერთმან სულითა წმიდითა და</span> 
+        <span class="lb" data-n=""></span>ძალითა, ესე ვიდოდა ქველისმოქმედი ყოველთა მძლავრებულთა 
+        <span class="lb" data-n=""></span>ეშმაკისა მიერ, მით რამეთუ ღმერთი იყო მის თანა“</span><sup class="note-ref" data-note="90">90</sup> 
+        <span class="lb" data-n=""></span>ხოლო მაცხოარი იტყვს: <span class="quote">„მამაჲ ჩემ შორის დადგრომილი იქმს 
+        <span class="lb" data-n=""></span>საქმეთა თჳსთა“</span><sup class="note-ref" data-note="91">91</sup> ამას მიჰფარვიდა იუდეანთა გონებისაგან, 
+        <span class="lb" data-n=""></span>რამეთუ არა აქუნდა სესხებული მის შორის მოქმედად, ვითარცა 
+        <span class="lb" data-n=""></span>ორღანოსა შინა, არამედ თჳსსა მამისასა იტყოდა ძალსა.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p57" 
+               data-n="57"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">57</span>
+                
+        და ვითარმედ არა სხჳთ ვინაჲმე ივასხებდა, არამედ მისგან 
+        <span class="lb" data-n=""></span>მიანიჭებდა მაცხოარებასა მოქენეთა, ისმინე <span class="persname" data-ref="#luke">ლუკაჲსი</span>, 
+        <span class="lb" data-n=""></span>მეტყუელისაჲ, ვითარმედ: <span class="quote">„ყოველნი განკჳრდებოდესო მოძღურებასა 
+        <span class="lb" data-n=""></span>ზედა მისსა, რამეთუ ჴელმწიფებით იტყოდა“</span><sup class="note-ref" data-note="92">92</sup> და 
+        <span class="lb" data-n=""></span><span class="quote">„ძალნი გამოვიდოდეს მისგან და განჰკურნებდა ყოველთა“</span><sup class="note-ref" data-note="93">93</sup>. 
+        <span class="lb" data-n=""></span>მის მიერ და არა სხჳსა მიერ! გარნა <span class="persname" data-ref="#luke">ლუკა</span> ვიდრემე დამთხუევითრე 
+        <span class="lb" data-n=""></span>იჴუმია ჴმაჲ მეტყუელმან: „ძალნი გამოვიდოდეს და განჰკურნებდა ყოველთა“.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p58" 
+               data-n="58"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">58</span>
+                
+        ხოლო თჳთ მაცხოარი სხუასა შინა მჩუენებელი ჴმასა მისგან 
+        <span class="lb" data-n=""></span>წყაროებულისა მაცხოარებისასა, ოდეს წიდოანმან შეახო ფესუსა 
+        <span class="lb" data-n=""></span>მისსა, <span class="quote">„შემახო ვინმეო“, — თქუა — „რამეთუ მე ვცან ძალი 
+        <span class="lb" data-n=""></span>განსრული ჩემგან“</span><sup class="note-ref" data-note="94">94</sup> აწ უკუე უფალ არს და ღმერთ; 
+        <span class="lb" data-n=""></span>ოდეს მამაჲ იქადაგებოდის და ძეცა და სული წმიდაჲ, უფალ 
+        <span class="lb" data-n=""></span>არს და პირველ ღმერთ მამაჲ და არავინ ესჯის; უფალ არს 
+        <span class="lb" data-n=""></span>და <span class="supplied" title="lost">ღმერთ</span> ძე და არავინ ეცილობვის. რამეთუ <span class="quote">„ღმერთი უფალი 
+        <span class="lb" data-n=""></span>და გამოგჳჩნდა ჩუენ“</span><sup class="note-ref" data-note="95">95</sup>, და <span class="persname" data-ref="#thomas">თომა</span> იტყჳს. 
+        <span class="lb" data-n=""></span><span class="quote">„უფალი ჩემი და ღმერთი ჩემი“</span><sup class="note-ref" data-note="96">96</sup> უფალ არს 
+        <span class="lb" data-n=""></span>და სულიცა წმიდაჲ, რამეთუ <span class="quote">„უფალი სულ არს“</span><sup class="note-ref" data-note="97">97</sup>. 
+        <span class="lb" data-n=""></span>და სხუაგან <span class="persname" data-ref="#paul">პავლე</span> იტყჳს, ვითარმედ: <span class="quote">„ხოლო ჩუენ ყოველნი 
+        <span class="lb" data-n=""></span>შიშულითა პირითა მითვე ხატითა ცვალებულნი დიდებითი დიდებად, 
+        <span class="lb" data-n=""></span>ვითარცა უფლისაგან სულისა“</span><sup class="note-ref" data-note="98">98</sup>.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p59" 
+               data-n="59"
+data-folio="34r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">59</span>
+                
+        რაჟამს უკუე გესმას, ვითარმედ <span class="quote">„ამას იტყჳსო უფალი 
+        <span class="lb" data-n=""></span>ყოვლისა მპყრობელი“</span><sup class="note-ref" data-note="99">99</sup>. გულისჴმა-ჰყოფდ სულსა 
+        <span class="lb" data-n=""></span>წმიდასა, რამეთუ უფალი სული არს. გარნა არა კმა არსა ესე 
+        <span class="lb" data-n=""></span>გამოსაჩინებელად? რამეთუ ვითარცა აქა წინაჲსწარმეტყუელი 
+        <span class="lb" data-n=""></span>იტყჳს უფლად ყოვლისა მპყრობელად, ესრეთვე მოციქულნიცა, 
+        <span class="lb" data-n=""></span>მჩუენებელნი ღირსებასა სულისასა, იტყჳან: <span class="quote">„ამას იტყჳს 
+        <span class="lb" data-n=""></span>სული წმიდა“</span><sup class="note-ref" data-note="100">100</sup> და ფრიადცა სამართლად; 
+        <span class="lb" data-n=""></span>რამეთუ რომელთა ერთ-პატივ არს ღირსებაჲ, ერთ-პატივ და სიტყუაცა.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p60" 
+               data-n="60"
+data-folio="39v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">60</span>
+                
+        ხოლო განცხადებულად ისმინე სულისა წმიდისათჳს თქუმული: 
+        <span class="lb" data-n=""></span>ამას იტყჳს უფალი ყოვლისა მპყრობელი: „მე ვარ დამამყარებელი 
+        <span class="lb" data-n=""></span>ცისაჲ და აღმგებელი ქუეყანისაჲ: ჴელთა ჩემთა შექმნეს მჴედრობაჲ 
+        <span class="lb" data-n=""></span>ცათაჲ; მე - გამოგიყვანენ <span class="pb" title="folio 39v">39v</span><span class="lb" data-n="39va"></span> თქუენ ქუეყანით ეგჳპტით 
+        <span class="lb" data-n=""></span>სახლისაგან მონებისა; მე გამოგიყვანენ უდაბნოსა ზედა და გიძღოდე 
+        <span class="lb" data-n=""></span>უვალთა შინა“, ნაცვალად ვითარმედ: „მე ვარ ყოვლისა მპყრობელი“. 
+        <span class="lb" data-n=""></span>რამეთუ ამისი გულისჴმის-ყოფად საჭირო არს და სათანადო 
+        <span class="lb" data-n=""></span>უდაბნოსა ზედა მძღურისა და მმწყსელისათჳს ვიხილოთ უკუე, 
+        <span class="lb" data-n=""></span>ვინ არს მმწყსელი ესე, უდაბნოსა ზედა წინამძღუარ-ქმნილი 
+        <span class="lb" data-n=""></span>ერისა ვლტოლვილისაჲ და მათ მიერ განცდილი? ისმინე ნეტარისა 
+        <span class="lb" data-n=""></span><span class="persname" data-ref="#david">დავითისა</span> მეტყუელისაჲ: <span class="quote">„დღეს თუ ჴმისა მისისა ისმინოთ, 
+        <span class="lb" data-n=""></span>ნუ განიფიცხებთ გულთა თქუენთა, ვითარ-იგი განმწარებასა მას“</span><sup class="note-ref" data-note="101">101</sup>.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p61" 
+               data-n="61"
+data-folio="39v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">61</span>
+                
+        გევედრები, უკუე, დაადგინენ პირნი, რამეთუ ძნელ სანადირო არს 
+        <span class="lb" data-n=""></span>ჭეშმარიტებისა სიტყუაჲ და შემძლებელ კეთილ ჟამიერობით 
+        <span class="lb" data-n=""></span>გნ<span class="gap" title="? character"></span>ვად. გულისჴმა-ყავ უკუე მეტყუელი, რამეთუ მრავალნი ჰგონებენ 
+        <span class="lb" data-n=""></span>წინაჲსწარმეტყუელისა პირისაგან თქმულად სიტყუასა ამას: 
+        <span class="lb" data-n=""></span>„დღეს თუ ჴმისა მისისაჲ ისმინოთ“. ისმინე მეტყუელისა 
+        <span class="lb" data-n=""></span>წინაჲსწარმეტყუელისაჲ, დღეს ერისა მიმართ სიტყჳს მყოფელისაჲ: 
+        <span class="lb" data-n=""></span>„დღეს, ჵ ერო, მე ვიტყჳ წინაჲსწარმეტყუელი: „დღეს უკუეთუ მისა 
+        <span class="lb" data-n=""></span>მისისად ისმინოთ, არა თქუა: ჴმისა ჩემისაჲ“, არამედ „ჴმისა მისისა“. 
+        <span class="lb" data-n=""></span>„<span class="supplied" title="lost">თ</span>უ <span class="supplied" title="lost">ჴმისა მისისაჲ ისმინოთ, ნუ განიფიც</span>ხებ<span class="supplied" title="lost">თ გულთა თქუენთა ვითარცა გან</span>მწარებასა 
+        <span class="lb" data-n=""></span>მას, რომლითა განმცადეს მე მამათა თქუენთა“<sup class="note-ref" data-note="102">102</sup>.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p62" 
+               data-n="62"
+data-folio="39v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">62</span>
+                
+        სხჳსა მიმართ ვიდრემე წარმავლინენ ჩუენ და თავსა თჳსსა ზედა სიტყუაჲ 
+        <span class="lb" data-n=""></span>მოიღეა? აღიღე სიტყუაჲ და დაადგინე გონებასა შინა გაგონებაჲ, 
+        <span class="lb" data-n=""></span>უკუეთუ წინაჲსწარმეტყუელი არსა მეტყუელი: <span class="quote">„დღეს თუ ჴმისა 
+        <span class="lb" data-n=""></span>მისისად ისმინოთ, ნუ განიფიცხებთ გულთა თქუენთა, ვითარცა 
+        <span class="lb" data-n=""></span>განმწარებასა მას დღისა მისებრ განცდისა უდაბნოსა ზედა“</span><sup class="note-ref" data-note="103">103</sup>, 
+        <span class="lb" data-n=""></span>რაჲსათჳს შესძინა <span class="quote">„რომლითა განმცადეს მე მამათა თქუენთა?“</span> 
+        <span class="lb" data-n=""></span>რამეთუ რომელთ<span class="supplied" title="lost">ა</span> <span class="quote">„განმცადეს მე და იხილნეს საქმენი ჩემნი, 
+        <span class="lb" data-n=""></span>ორმეოც წელ მოვიწყინე ნათესავი იგი“</span><sup class="note-ref" data-note="104">104</sup>.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p63" 
+               data-n="63"
+data-folio="39v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">63</span>
+                
+        ვინ არს უკუე ამისი მეტყუელი, არა-მე ღმერთი? რაჲსათჳს არა თქუა: 
+        <span class="lb" data-n=""></span>„დღეს თუ ჴმისა ჩემისა ისმინოთ“. არამედ: „უკუეთუ ჴმისა მისისად 
+        <span class="lb" data-n=""></span> ისმინოთ“? ვითარ ვითარცა სხჳსა მიმართ ვიდრემე წარავლენს 
+        <span class="lb" data-n=""></span>სიტყუასა, ხოლო ვისა მომართ მოიღებს ღმრთის მეტყუელებასა: გინა 
+        <span class="lb" data-n=""></span>თუ ცხად არს, ვითარმედ წინაჲსწარმეტყუელისა შორის მეტყუელი 
+        <span class="lb" data-n=""></span>სული წმიდაჲ თჳთ თჳსისა პირისა მიმართ მიიხუამს სასწაულთა, 
+        <span class="lb" data-n=""></span>მეტყუელი: „რომლითა განმცადეს მე მამათა თქუენთა“.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p64" 
+               data-n="64"
+data-folio="39v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">64</span>
+                
+        დაუტეო მოგონებაჲ და <span class="persname" data-ref="#paul">პავლე</span> <span class="gap" title="? character"></span> რაჲთა ამან <span class="gap" title="? character"></span> ჴმაჲ ისმინე 
+        <span class="lb" data-n=""></span><span class="persname" data-ref="#paul">პავლესი</span> მეტყუელისაჲ, რომლისათჳს <span class="quote">„ვითარცა იტყჳს სული 
+        <span class="lb" data-n=""></span>წმიდაჲ: დღეს უკუე თუ ჴმისა მისისად ისმინოთ, ნუ განიფიცხებთ 
+        <span class="lb" data-n=""></span>გულთა თქუენთა“</span><sup class="note-ref" data-note="105">105</sup>. ხედავა უიძულებელსა და წამებულსა 
+        <span class="lb" data-n=""></span>მოციქულთა მიერ ჭეშმარიტებასა, რომლისათჳს, ვითარცა იტყჳსო სული 
+        <span class="lb" data-n=""></span>წმიდაჲ. არა თქუა: ვითარცა იტყჳს ღმერთი, არცა ვითარცა იტყჳს 
+        <span class="lb" data-n=""></span>წინაჲსწარმეტყუელი, არამედ სულისა ზედა წარსწერს სიტყუათა, 
+        <span class="lb" data-n=""></span>„რომლისათჳს, ვითარცა იტყჳსო. სული წმიდაჲ: დღეს უკუეთუ ჴმისა 
+        <span class="lb" data-n=""></span>მისისა, ისმინოთ. ნუ განიფიცხებთ გულთა თქუენთა“ და შესძინა: 
+        <span class="lb" data-n=""></span><span class="quote">„ვითარცა განმცადეს მე მამათა თქუენთა. განმცადეს მე და იხილნეს 
+        <span class="lb" data-n=""></span>საქმენი ჩემნი“</span><sup class="note-ref" data-note="106">106</sup>. არამედ მოღებულ იქმნა ესე ვიდრემე 
+        <span class="lb" data-n=""></span>მწვალებელთათჳს მხოლოდ, ვინაჲთგან პავლეს <span class="gap" title="? character"></span> იუდეანთა 
+        <span class="lb" data-n=""></span>„ურწმუნო“, რამეთუ „განდგომილად“ უწოდდეს მას.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p65" 
+               data-n="65"
+data-folio="39v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">65</span>
+                
+        აწ უკუე რაჲთა არცა <span class="persname" data-ref="#paul">პავლე</span> იუდეანთა მიერ ცილისწამებულ იქმნეს, 
+        <span class="lb" data-n=""></span>არცა ჩუენ მწვალებელთა მიერ, ჩუენისა ვიდრემე წამებისა ძლით 
+        <span class="lb" data-n=""></span><span class="persname" data-ref="#paul">პავლეს</span> მოუწოდოთ, ხოლო პავლესისა ძლით წინაჲსწარმეტყუელსა 
+        <span class="lb" data-n=""></span><span class="persname" data-ref="#isaiah">ისაიას</span>. ისმინე უკუე <span class="persname" data-ref="#isaiah">ისაიაჲსი</span> ზედ-წარმწერელისაჲ: 
+        <span class="lb" data-n=""></span>უდაბნოსა შინა რაომასა სულისა მიერ წმიდისა <span class="quote">„წყალობათა 
+        <span class="lb" data-n=""></span>უფლისათა, მოვიჴსენე“</span><sup class="note-ref" data-note="107">107</sup>. წინაჲსწარმეტყუელისაჲ 
+        <span class="lb" data-n=""></span>არს სიტყუაჲ ესე: <span class="quote">„სათნოებანი მისნი ყოველთა ზედა, რომელთა 
+        <span class="lb" data-n=""></span>მიაგოს. უფალი მსაჯულ სახიერ სახლისა ისრაელისა“</span><sup class="note-ref" data-note="108">108</sup>. 
+        <span class="lb" data-n=""></span>ამათი მეტყუელი <span class="persname" data-ref="#isaiah">ისაია</span> შესძინებს <span class="quote">„წყალობისაებრ მისისა და 
+        <span class="lb" data-n=""></span>სიმრავლისაებრ სიმართლისა, მისისა არა მოხუცებულმან, არცა 
+        <span class="lb" data-n=""></span>ანგელოზმან, არამედ თავადმან უფალმან აცხოვნნა იგინი მაშინ 
+        <span class="lb" data-n=""></span>სიყუარულისათჳს. მათისა და რიდობისა მათისა. ხოლო იგინი 
+        <span class="lb" data-n=""></span>ურჩ ექმნნეს და განამწარეს სული წმიდაჲ“</span>.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p66" 
+               data-n="66"
+data-folio="39v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">66</span>
+                
+        განეკრძალე განმკაცრებით! „წყალობისა უფლისაჲ მოვიჴსენე“<sup class="note-ref" data-note="109">109</sup>, 
+        <span class="lb" data-n=""></span>რამეთუ ვინაჲთგან დასაბამისაცა მოიჴსენებს საქმეთა ეგჳპტის-შინათა, 
+        <span class="lb" data-n=""></span>ხოლო გარდმოქმნითრე იყო ეგჳპტურთაგან, ამისთჳს იტყჳს: 
+        <span class="lb" data-n=""></span>„წყალობისა უფლისად მოვიჳსენე“ ნაცვალად პირველთა სასწაულთა 
+        <span class="lb" data-n=""></span>წყალობანი უფლისანი მოგუაგნეს ჩუენ. „უფალი მსაჯულ მართალი 
+        <span class="lb" data-n=""></span>სახლისა ისრაელისა“, და შესძინებს: „წყალობისაებრ მისისა და 
+        <span class="lb" data-n=""></span>სიმრავლისაებრ. სიმართლისა მისისა, არა მოხუცებულმან, არცა 
+        <span class="lb" data-n=""></span>ანგელოსმან“ ნაცვალად ვითარმედ: „არა მოხუცებულსა, არცა 
+        <span class="lb" data-n=""></span>ანგელოსსა“ არცა მოხუცებულსა გინა მამათმთავარსა, არცა 
+        <span class="lb" data-n=""></span>სხუასა მართალსა ყოფად, თავადმან უფალმან აცხოვნნა იგინი 
+        <span class="lb" data-n=""></span>სიყუარულისათჳს მათისა და რიდობისა მათისა.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p67" 
+               data-n="67"
+data-folio="39v">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">67</span>
+                
+        და ვინ არს უფალი? იხილე, ვითარ შეჰკრებს <span class="persname" data-ref="#paul">პავლე</span>, 
+        <span class="lb" data-n=""></span>მეტყუელი, ვითარმედ: <span class="quote">„უფალი სულ არს“</span><sup class="note-ref" data-note="110">110</sup>, არამედ 
+        <span class="lb" data-n=""></span>ამისთჳს — <span class="quote">„თავადმან უფალმან აცხოვნნაო იგინი სიყუარულისათჳს 
+        <span class="lb" data-n=""></span>მათისა და რიდობისა მათისა. ხოლო იგინი ურჩ ექმნნეს და 
+        <span class="lb" data-n=""></span>განამწარეს სული წმიდაჲ და იქცა მათდა მტერად“</span><sup class="note-ref" data-note="111">111</sup> 
+        <span class="lb" data-n=""></span>ხედავა, ვითარ მაშინ განმამწარებელთა ვითარცა ღმერთი სული 
+        <span class="lb" data-n=""></span>წმიდაჲ განამწარეს, ამისთჳს უკუე განამწარეს და <span class="persname" data-ref="#stephen">სტეფანე</span><sup class="note-ref" data-note="112">112</sup>, 
+        <span class="lb" data-n=""></span>მგულებელი ჩუენებად, ვითარმედ რაითგან იქადაგების სული 
+        <span class="lb" data-n=""></span>ბრწყინვალეჲ და ღმრთისმეტყუელებითცა იტყჳს იუდეანთა მიმართ: 
+        <span class="lb" data-n=""></span><span class="quote">„ქედ-ფიცხელნო და წინადაუცუეთელნო გულითა და ყურითა, თქუენ 
+        <span class="lb" data-n=""></span>მარადის სულსა წმიდასა წინა-აღუდგებით, მარადის ოდეს ვითარცა 
+        <span class="lb" data-n=""></span>მამანი თქუენნი“</span><sup class="note-ref" data-note="113">113</sup> წინა-აღდგომილნი განამწარებდეს სულსა წმიდასა.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p68" 
+               data-n="68"
+data-folio="41r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">68</span>
+                
+        არა გესმაა <span class="persname" data-ref="#isaiah">ისაიასი</span> მეტყუელისაჲ: <span class="quote">„ხოლო იგინი ურჩ ექმნნეს 
+        <span class="lb" data-n=""></span>და განამწარეს სული წმიდა“</span>?<sup class="note-ref" data-note="114">114</sup> და იხილე საკჳრველი; 
+        <span class="lb" data-n=""></span>რამეთუ ვითარცა-იგი წერილი შესძინებს მეტყუელი ესრეთ, <span class="supplied" title="lost">ვითარმედ: 
+        <span class="lb" data-n=""></span>„განმამ</span>წარეს უც<span class="supplied" title="lost">ხოთა მათ ზედა და საძა</span>გელითა მათითა 
+        <span class="lb" data-n=""></span>გან<span class="supplied" title="lost">მამ</span>წარეს მე“<sup class="note-ref" data-note="115">115</sup>, ესრეთვე და აქა: 
+        <span class="lb" data-n=""></span>„ხოლო იგინი ურჩ ექმნესო და განამწარეს სული წმიდაჲ“. და ვითარცა 
+        <span class="lb" data-n=""></span>განმარისხებელი ღმრთისაჲ დაისაჯების, ესრეთვე განმარისხებელი 
+        <span class="lb" data-n=""></span>სულისა წმიდისაჲ მისვე დასჯისა ღირს იქმნების, ეგრეთვე უკუე 
+        <span class="lb" data-n=""></span>შემაწუხებელი ღმრთისაჲცა და შემაწუხებელი სულისა წმიდისაჲ.
+        <span class="pb" title="folio 41r">41r</span><span class="lb" data-n="41ra"></span>
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p69" 
+               data-n="69"
+data-folio="41r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">69</span>
+                
+        რაჲ არს სჯასა ქუეშე მყოფობაჲ, ვითარცა იტყჳს ღმერთი 
+        <span class="lb" data-n=""></span><span class="persname" data-ref="#ezekiel">იეზეკიელის</span> მიერ: <span class="quote">„ისმინე, სახლო ისრაელისაო“</span><sup class="note-ref" data-note="116">116</sup>, 
+        <span class="lb" data-n=""></span><span class="quote">„მაღალთა ზედა სჭამდით“</span><sup class="note-ref" data-note="117">117</sup> და 
+        <span class="lb" data-n=""></span><span class="quote">„ბორცუთა ზედა ამსხუერპლებდით“</span><sup class="note-ref" data-note="118">118</sup>, დედათა 
+        <span class="lb" data-n=""></span>თქუენთა <span class="quote">„შეკრიბეს ცმელი“</span><sup class="note-ref" data-note="119">119</sup> და <span class="quote">„აღაშენეს 
+        <span class="lb" data-n=""></span>თავისა თჳსისა სახლი სამეძვოჲ“</span><sup class="note-ref" data-note="120">120</sup>; და 
+        <span class="lb" data-n=""></span><span class="quote">„შემაწუხეს მე ამას ყოველსა შინა“</span><sup class="note-ref" data-note="121">121</sup> იტყჳს უფალი. 
+        <span class="lb" data-n=""></span>შემაწუხეს მე ამას ყოველსა შინა, რამეთუ შეაწუხებს ღმერთსა. 
+        <span class="lb" data-n=""></span>და არა უსამართლოებისა მცოდველი? „და შემაწუხეს მე ამას 
+        <span class="lb" data-n=""></span>ყოველსა შინა“, ვითარცა უკუე თქუმულ არს ღმრთისათჳს ძუელსა 
+        <span class="lb" data-n=""></span>შინა, ამას <span class="persname" data-ref="#paul">პავლე</span> ახალსა შინა იტყჳს: <span class="quote">„და ნუ შეაწუხებ სულსა 
+        <span class="lb" data-n=""></span>წმიდასა“</span><sup class="note-ref" data-note="122">122</sup>. ესრეთ ამის გონებისაებრ ყოვლისა 
+        <span class="lb" data-n=""></span>მპყრობელ მამაჲ ვითარცა ყოვლისა მქონებელი, ყოვლისა მპყრობელ 
+        <span class="lb" data-n=""></span>ძე, <span class="gap" title="? character"></span> ყოვლისა მ<span class="supplied" title="lost">პყრო</span>ბელ და სული წმიდაჲ ვითარცა 
+        <span class="lb" data-n=""></span>მპყრობელი ყოველთაჲ და ყოველთა განმყოფელი თჳსისაებრ ნებისა.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p70" 
+               data-n="70"
+data-folio="41r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">70</span>
+                
+        და იხილე სიტყუათა ერთჴმაობაჲ მამისათჳს თქუმულთა და სულისათჳს, 
+        <span class="lb" data-n=""></span>რამეთუ <span class="persname" data-ref="#paul">პავლე</span> იტყჳს, ვითარმედ: <span class="quote">„თავადი ღმერთი არს 
+        <span class="lb" data-n=""></span>მოქმედ ყოვლისა ყოველსა შინა“</span><sup class="note-ref" data-note="123">123</sup>. აწ უკუე ლექსი 
+        <span class="lb" data-n=""></span>რომელი მისცა ყოვლისა მპყრობელსა მამასა, მისვე მიმცემელი 
+        <span class="lb" data-n=""></span>წმიდისა სულისაჲ იტყჳს, ვითარმედ: <span class="quote">„ყოველსა ამას მოქმედებს 
+        <span class="lb" data-n=""></span>ერთი და იგივე სული, განმყოფელი თჳსისა თითოეულისაჲ, 
+        <span class="lb" data-n=""></span>ვითარცა ჰნებავს“</span><sup class="note-ref" data-note="124">124</sup> განმყოფელი და არა განყოფილი! 
+        <span class="lb" data-n=""></span>იხილე, ვითარ სიტყუამან წამებათა მიერ განცხადებულად 
+        <span class="lb" data-n=""></span>გჳჩუენა ყოვლისა მპყრობელად სული წმიდაჲ.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p71" 
+               data-n="71"
+data-folio="41r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">71</span>
+                
+        ოდეს უკუე გესმას „ყოვლისა მპყრობელი და ყოვლისა მპყრობელი და 
+        <span class="lb" data-n=""></span>კუალად ყოვლისა მპყრობელი“. ნუ აღჰრიცხუავ სამთა ყოვლისა 
+        <span class="lb" data-n=""></span>მპყრობელთა, არამედ ერთი ღმრთეებაჲ ყოვლისა მპყრობელებრისა 
+        <span class="lb" data-n=""></span>ჴელმწიფებისა მქონებელი. რამეთუ ვითარცა მეტყუელი „ღმრთისა 
+        <span class="lb" data-n=""></span>და ღმრთისა ღმრთისაჲ“, არა სამთა აღჰრიცხუავ, არამედ ერთისა 
+        <span class="lb" data-n=""></span>მიმართ გრწამს ღმრთეებისა და ვითარ-იგი ერთ არს უფალი, 
+        <span class="lb" data-n=""></span>ერთისა ძლით უფლებისა, ეგრეთვე, რაჟამს გესმას „ყოვლისა 
+        <span class="lb" data-n=""></span>მპყრობელი და ყოვლისა მპყრობელი და ყოვლისა მპყრობელი“, 
+        <span class="lb" data-n=""></span>ნუ სამთა ჰგონებ ყოვლისა მპყრობელთა, არამედ ერთი ძალი 
+        <span class="lb" data-n=""></span>გულისჴმა-ყავ ყოვლისა მპყრობელობითი.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p72" 
+               data-n="72"
+data-folio="41r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">72</span>
+                
+        რამეთუ ვითარ-იგი ვთქუ მრავალგზის მეტყუელმან, — რამეთუ არა ჯერ 
+        <span class="lb" data-n=""></span>არს გარდასრულთა დავიწყებისა მიცემაჲ — ვითარცა „ძალად“ 
+        <span class="lb" data-n=""></span>იწოდების მამაჲ, „ძალად“ ძეცა და სული წმიდაჲ. არა სამთა 
+        <span class="lb" data-n=""></span>ვიტყჳთ ძალთა, რამეთუ „ძალად“ ვიდრემე სახელ-იდების 
+        <span class="lb" data-n=""></span>მამაჲ თქუმულისა მისებრ მაცხოვრისა მიერ: <span class="quote">„ამიერითგან იხილოთ 
+        <span class="lb" data-n=""></span>ძე კაცისაჲ, მჯდომარე მარჯუენით ძლიერებისა“</span><sup class="note-ref" data-note="125">125</sup> 
+        <span class="lb" data-n=""></span>ესე იგი არს — მამისა.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p73" 
+               data-n="73"
+data-folio="41r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">73</span>
+                
+        ხოლო კუალად და თჳთცა თავადი ძე ძალ არს, რამეთუ ქრისტე 
+        <span class="lb" data-n=""></span>ღმრთისა ძალ არს; ხოლო ღმრთისა ძალ არა ვითარცა შემწე, 
+        <span class="lb" data-n=""></span>— რამეთუ იტყჳან ამასცა შვილნი მწვალებელთანი, ვითარ-იგი 
+        <span class="lb" data-n=""></span>მუხუნძეულსაცა(?) და იფქლისა გესლსა „ძალად დიდად ღმრთისა“ 
+        <span class="lb" data-n=""></span>უწოდენ, — რამეთუ სხუაჲ არს ძალი შემწეობითი და სხუაჲ 
+        <span class="lb" data-n=""></span>ძალი ძალისაგან შობილი.
+    
+            </p>
+            <p class="paragraph mb-4 text-gray-800 leading-relaxed relative" 
+               id="p74" 
+               data-n="74"
+data-folio="41r">
+                <span class="para-num absolute -left-8 text-xs text-gray-300 font-mono select-none">74</span>
+                
+        რამეთუ ჩუეულებაჲ არს წერილისაჲ ნაყოფსაცა ქუეყანისაგან 
+        <span class="lb" data-n=""></span>გამომა<span class="supplied" title="lost">ვალსა „ძალად“</span>წოდებად ღმრთისა მშობელისა, ვითარცა 
+        <span class="lb" data-n=""></span>ეტყჳს ღმერთი <span class="persname" data-ref="#adam">ადამს</span><sup class="note-ref" data-note="126">126</sup>: 
+        <span class="lb" data-n=""></span><span class="quote">„არა შესძინოს მოცემად შენდა ქუეყანამან ძალისა თჳსისა“</span><sup class="note-ref" data-note="127">127</sup>. 
+        <span class="lb" data-n=""></span>ხოლო რომლისაგან დააკლო <span class="persname" data-ref="#adam">ადამ</span>, ესე მისცა ერსა 
+        <span class="lb" data-n=""></span>გამოსრულსა ეგჳპტით და <span class="quote">„გამოიყვანნა იგინი ძალსა ზედა 
+        <span class="lb" data-n=""></span>ქუეყანისასა“</span><sup class="note-ref" data-note="128">128</sup>.
+    
+            </p>
+        </section>
+    </article>
+    
+    <!-- Notes Panel (slide-in) -->
+    <aside id="notes-panel" class="fixed right-0 top-0 h-full w-80 bg-white border-l border-gray-200 shadow-lg transform translate-x-full transition-transform z-50">
+        <div class="p-4 border-b border-gray-100 flex items-center justify-between">
+            <h3 class="text-sm font-medium text-gray-700">შენიშვნები</h3>
+            <button id="close-notes" class="text-gray-400 hover:text-gray-600">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <div id="notes-content" class="p-4 overflow-y-auto h-full pb-20">
+            <ul class="space-y-4 text-sm">
+                <li id="note-1" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">1.</span>
+                    <span class="text-gray-600">ტექსტი პარაგრაფებად დაყოფილია ჩვენს მიერ.</span>
+                </li>
+                <li id="note-2" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">2.</span>
+                    <span class="text-gray-600">ამბ 3,3</span>
+                </li>
+                <li id="note-3" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">3.</span>
+                    <span class="text-gray-600">მალ 4,2</span>
+                </li>
+                <li id="note-4" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">4.</span>
+                    <span class="text-gray-600">ოსე 6,3</span>
+                </li>
+                <li id="note-5" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">5.</span>
+                    <span class="text-gray-600">ი 1,9</span>
+                </li>
+                <li id="note-6" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">6.</span>
+                    <span class="text-gray-600">ეს 51,5</span>
+                </li>
+                <li id="note-7" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">7.</span>
+                    <span class="text-gray-600">ეს 62,1</span>
+                </li>
+                <li id="note-8" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">8.</span>
+                    <span class="text-gray-600">მისსა</span>
+                </li>
+                <li id="note-9" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">9.</span>
+                    <span class="text-gray-600">ლუკ. 2,29-30</span>
+                </li>
+                <li id="note-10" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">10.</span>
+                    <span class="text-gray-600">იო. 12,37</span>
+                </li>
+                <li id="note-11" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">11.</span>
+                    <span class="text-gray-600">ის. 53,1</span>
+                </li>
+                <li id="note-12" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">12.</span>
+                    <span class="text-gray-600">კორ. 1,30</span>
+                </li>
+                <li id="note-13" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">13.</span>
+                    <span class="text-gray-600">ასეა, სავარაუდებელია რომ ტექსტში ეცდომა არის. მისსა ასეა მოსალოდნელი იყო მეცნიერებაჲ ცხორებისაჲ.</span>
+                </li>
+                <li id="note-14" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">14.</span>
+                    <span class="text-gray-600">იერ.23,5</span>
+                </li>
+                <li id="note-15" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">15.</span>
+                    <span class="text-gray-600">მის</span>
+                </li>
+                <li id="note-15" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">15.</span>
+                    <span class="text-gray-600">ფს. 71,7</span>
+                </li>
+                <li id="note-16" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">16.</span>
+                    <span class="text-gray-600">ლ- 1.76-79</span>
+                </li>
+                <li id="note-17" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">17.</span>
+                    <span class="text-gray-600">შდრ: ფს 101,20</span>
+                </li>
+                <li id="note-18" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">18.</span>
+                    <span class="text-gray-600">ფს. 84,12</span>
+                </li>
+                <li id="note-19" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">19.</span>
+                    <span class="text-gray-600">მის</span>
+                </li>
+                <li id="note-21" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">21.</span>
+                    <span class="text-gray-600">დაბ. 3,18</span>
+                </li>
+                <li id="note-20" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">20.</span>
+                    <span class="text-gray-600">შ̃ს</span>
+                </li>
+                <li id="note-22" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">22.</span>
+                    <span class="text-gray-600">ი.14,6</span>
+                </li>
+                <li id="note-23" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">23.</span>
+                    <span class="text-gray-600">მის</span>
+                </li>
+                <li id="note-24" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">24.</span>
+                    <span class="text-gray-600">ფს. 46,3</span>
+                </li>
+                <li id="note-25" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">25.</span>
+                    <span class="text-gray-600">ფს.46,3-4</span>
+                </li>
+                <li id="note-26" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">26.</span>
+                    <span class="text-gray-600">ფს. 46,5</span>
+                </li>
+                <li id="note-27" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">27.</span>
+                    <span class="text-gray-600">ფს.46,6</span>
+                </li>
+                <li id="note-28" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">28.</span>
+                    <span class="text-gray-600">მთარგმანებელსა.</span>
+                </li>
+                <li id="note-30" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">30.</span>
+                    <span class="text-gray-600">ის. 1,19</span>
+                </li>
+                <li id="note-29" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">29.</span>
+                    <span class="text-gray-600">მჰკჳდრობა.</span>
+                </li>
+                <li id="note-30" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">30.</span>
+                    <span class="text-gray-600">ის. 1,19-20</span>
+                </li>
+                <li id="note-31" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">31.</span>
+                    <span class="text-gray-600">ეზეკ. 1,3</span>
+                </li>
+                <li id="note-32" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">32.</span>
+                    <span class="text-gray-600">ფს. 44,2</span>
+                </li>
+                <li id="note-33" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">33.</span>
+                    <span class="text-gray-600">აქ ხელნაწერში სიტყვა უნდა იყოს გამორჩენილი (იტყჳს?)</span>
+                </li>
+                <li id="note-34" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">34.</span>
+                    <span class="text-gray-600">ის. 32,4</span>
+                </li>
+                <li id="note-35" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">35.</span>
+                    <span class="text-gray-600">ფს. 46,6</span>
+                </li>
+                <li id="note-36" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">36.</span>
+                    <span class="text-gray-600">ეფ. 4,7</span>
+                </li>
+                <li id="note-37" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">37.</span>
+                    <span class="text-gray-600">ფს. 67,19; ეფ. 4,8</span>
+                </li>
+                <li id="note-38" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">38.</span>
+                    <span class="text-gray-600">ეფ. 4,9-10</span>
+                </li>
+                <li id="note-39" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">39.</span>
+                    <span class="text-gray-600">იერ. 23,24</span>
+                </li>
+                <li id="note-40" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">40.</span>
+                    <span class="text-gray-600">ფს. 46,6</span>
+                </li>
+                <li id="note-41" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">41.</span>
+                    <span class="text-gray-600">საქმე 1,11</span>
+                </li>
+                <li id="note-42" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">42.</span>
+                    <span class="text-gray-600">პირველი ასო (ხ) ამ სიტყვისა, რომელიც სტრიქონის შუაში არის მოქცეული, მთავრულით სწერია.</span>
+                </li>
+                <li id="note-43" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">43.</span>
+                    <span class="text-gray-600">1 თეს. 4,16</span>
+                </li>
+                <li id="note-44" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">44.</span>
+                    <span class="text-gray-600">ებრ. 4,12</span>
+                </li>
+                <li id="note-45" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">45.</span>
+                    <span class="text-gray-600">2 ტიმ. 2,13</span>
+                </li>
+                <li id="note-46" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">46.</span>
+                    <span class="text-gray-600">ნაუმ 2,13; ანგ. 1,2</span>
+                </li>
+                <li id="note-47" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">47.</span>
+                    <span class="text-gray-600">ამ გვერდის პირველ ნახევარზე ტექსტი ნაწერია უსვეტებოდ, გაბმით.</span>
+                </li>
+                <li id="note-48" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">48.</span>
+                    <span class="text-gray-600">1 კორ. 8,5</span>
+                </li>
+                <li id="note-49" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">49.</span>
+                    <span class="text-gray-600">ფს. 82,19</span>
+                </li>
+                <li id="note-50" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">50.</span>
+                    <span class="text-gray-600">ამ სიტყვის შემდეგ ტექსტი ისევ ორ სვეტად მიდის. ცალ მხარეს (a სვეტად) გრძელდება ზემოთ მოყვანილი თხზულება, მეორე მხარეს კი ცალ სვეტად აქაც და მომდევნო გვერდებზეც მოთავსებულია „სიტყუად ართრონთათვს“. „თეოს“ სიტყვას აქვს შენიშვნის ნიშანი პატარა წრე; ეგევე ნიშანი ზის გრამატიკული ტრაქტატის დასაწყისში „შეისწავე“ სიტყვის წინ.</span>
+                </li>
+                <li id="note-51" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">51.</span>
+                    <span class="text-gray-600">დაყოფა ყველგან ჩვენია</span>
+                </li>
+                <li id="note-52" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">52.</span>
+                    <span class="text-gray-600">რომ. 9,5</span>
+                </li>
+                <li id="note-53" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">53.</span>
+                    <span class="text-gray-600">იო. 1,1</span>
+                </li>
+                <li id="note-54" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">54.</span>
+                    <span class="text-gray-600">ფს. 117, 26-27</span>
+                </li>
+                <li id="note-55" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">55.</span>
+                    <span class="text-gray-600">იო. 1,1</span>
+                </li>
+                <li id="note-56" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">56.</span>
+                    <span class="text-gray-600">მიკროფილმზე ჩანს, რომ ხელნაწერზე ამ სიტყვის შემდეგ დაუდვიათ ქაღალდი, რომელსაც მთლიანად დაუფარავს ამ სვეტზე 12 სტრიქონი, ხოლო მეზობელ სვეტში (34ra) — სანახევროდ (სტრიქონების მარცხენა ნაწილი).</span>
+                </li>
+                <li id="note-57" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">57.</span>
+                    <span class="text-gray-600">მათ. 1,23</span>
+                </li>
+                <li id="note-58" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">58.</span>
+                    <span class="text-gray-600">იოან. 20,25</span>
+                </li>
+                <li id="note-59" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">59.</span>
+                    <span class="text-gray-600">იოან. 20,27</span>
+                </li>
+                <li id="note-60" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">60.</span>
+                    <span class="text-gray-600">იოან. 20,28</span>
+                </li>
+                <li id="note-61" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">61.</span>
+                    <span class="text-gray-600">ბარ. 3,36</span>
+                </li>
+                <li id="note-62" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">62.</span>
+                    <span class="text-gray-600">შდრ: ეს 43, 10</span>
+                </li>
+                <li id="note-63" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">63.</span>
+                    <span class="text-gray-600">ეს 44,6</span>
+                </li>
+                <li id="note-64" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">64.</span>
+                    <span class="text-gray-600">ამისსა</span>
+                </li>
+                <li id="note-65" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">65.</span>
+                    <span class="text-gray-600">შდრ: ეს 43, 10; 44,6</span>
+                </li>
+                <li id="note-69" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">69.</span>
+                    <span class="text-gray-600">2 ტიმ. 1,3</span>
+                </li>
+                <li id="note-66" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">66.</span>
+                    <span class="text-gray-600">მისსა</span>
+                </li>
+                <li id="note-67" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">67.</span>
+                    <span class="text-gray-600">ასეა</span>
+                </li>
+                <li id="note-70" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">70.</span>
+                    <span class="text-gray-600">ეს. 42,8</span>
+                </li>
+                <li id="note-68" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">68.</span>
+                    <span class="text-gray-600">მისსა</span>
+                </li>
+                <li id="note-71" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">71.</span>
+                    <span class="text-gray-600">შდრ. მარკ. 8,38</span>
+                </li>
+                <li id="note-72" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">72.</span>
+                    <span class="text-gray-600">ეზეკ. 1,3; 10,15; 20,22; 43,3; დან. 10,4.</span>
+                </li>
+                <li id="note-73" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">73.</span>
+                    <span class="text-gray-600">საქმე 1,3.</span>
+                </li>
+                <li id="note-74" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">74.</span>
+                    <span class="text-gray-600">ბარ. 3,38.</span>
+                </li>
+                <li id="note-75" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">75.</span>
+                    <span class="text-gray-600">შდრ. 1 კორ. 8,6.</span>
+                </li>
+                <li id="note-76" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">76.</span>
+                    <span class="text-gray-600">აქედან ჰომილიის ტექსტი ისევ ორ სვეტად არის ნაწერი, რადგან გრამატიკული ტრაქტატი წინა გვერდზე (კობ რვ. 4ra) მთავრდება.</span>
+                </li>
+                <li id="note-78" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">78.</span>
+                    <span class="text-gray-600">შდრ. საქმე 17,15-33.</span>
+                </li>
+                <li id="note-79" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">79.</span>
+                    <span class="text-gray-600">საქმე 17,30</span>
+                </li>
+                <li id="note-80" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">80.</span>
+                    <span class="text-gray-600">მისსა</span>
+                </li>
+                <li id="note-81" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">81.</span>
+                    <span class="text-gray-600">საქმე 17,30</span>
+                </li>
+                <li id="note-82" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">82.</span>
+                    <span class="text-gray-600">ამ სიტყვასთან შენიშვნა არის აშიაზე: „ვითარმედ ძესა არღარა ღმრთად უწოდაო“</span>
+                </li>
+                <li id="note-83" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">83.</span>
+                    <span class="text-gray-600">საქმე 17,18</span>
+                </li>
+                <li id="note-84" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">84.</span>
+                    <span class="text-gray-600">შდრ. 1 კორ. 8,6-3</span>
+                </li>
+                <li id="note-85" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">85.</span>
+                    <span class="text-gray-600">შდრ: 1 კორ: 8,5-6</span>
+                </li>
+                <li id="note-86" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">86.</span>
+                    <span class="text-gray-600">1 კორ. 3,1</span>
+                </li>
+                <li id="note-87" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">87.</span>
+                    <span class="text-gray-600">1 კორ. 3,1-2</span>
+                </li>
+                <li id="note-88" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">88.</span>
+                    <span class="text-gray-600">2 კორ. 3,17</span>
+                </li>
+                <li id="note-89" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">89.</span>
+                    <span class="text-gray-600">შდრ: ფილ 2,6</span>
+                </li>
+                <li id="note-90" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">90.</span>
+                    <span class="text-gray-600">საქმე 10,38</span>
+                </li>
+                <li id="note-91" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">91.</span>
+                    <span class="text-gray-600">ი.-14,10</span>
+                </li>
+                <li id="note-92" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">92.</span>
+                    <span class="text-gray-600">ლუკ. 4,32</span>
+                </li>
+                <li id="note-93" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">93.</span>
+                    <span class="text-gray-600">ლუკ. 6,19</span>
+                </li>
+                <li id="note-94" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">94.</span>
+                    <span class="text-gray-600">ლუკ. 8,46</span>
+                </li>
+                <li id="note-95" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">95.</span>
+                    <span class="text-gray-600">ფს. 117,27</span>
+                </li>
+                <li id="note-96" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">96.</span>
+                    <span class="text-gray-600">იოან. 20,28</span>
+                </li>
+                <li id="note-97" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">97.</span>
+                    <span class="text-gray-600">2 კორ. 3,17</span>
+                </li>
+                <li id="note-98" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">98.</span>
+                    <span class="text-gray-600">2 კორ. 3,18</span>
+                </li>
+                <li id="note-99" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">99.</span>
+                    <span class="text-gray-600">ნაუმ 2,14 ანგ 1,2,7,9</span>
+                </li>
+                <li id="note-100" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">100.</span>
+                    <span class="text-gray-600">საქმე 21,11</span>
+                </li>
+                <li id="note-101" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">101.</span>
+                    <span class="text-gray-600">ფს. 94,8</span>
+                </li>
+                <li id="note-102" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">102.</span>
+                    <span class="text-gray-600">ფს. 94,8-9</span>
+                </li>
+                <li id="note-103" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">103.</span>
+                    <span class="text-gray-600">ფს. 94,8</span>
+                </li>
+                <li id="note-104" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">104.</span>
+                    <span class="text-gray-600">ფს. 94,10</span>
+                </li>
+                <li id="note-105" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">105.</span>
+                    <span class="text-gray-600">ებრ. 3,7-8</span>
+                </li>
+                <li id="note-106" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">106.</span>
+                    <span class="text-gray-600">ებრ. 3,9</span>
+                </li>
+                <li id="note-107" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">107.</span>
+                    <span class="text-gray-600">ეს. 63,7</span>
+                </li>
+                <li id="note-108" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">108.</span>
+                    <span class="text-gray-600">ეს. 63,7-10</span>
+                </li>
+                <li id="note-109" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">109.</span>
+                    <span class="text-gray-600">ეს 63,7</span>
+                </li>
+                <li id="note-110" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">110.</span>
+                    <span class="text-gray-600">2 კორ. 3,17</span>
+                </li>
+                <li id="note-111" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">111.</span>
+                    <span class="text-gray-600">ეს 63,10</span>
+                </li>
+                <li id="note-112" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">112.</span>
+                    <span class="text-gray-600">საქმე 7,59</span>
+                </li>
+                <li id="note-113" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">113.</span>
+                    <span class="text-gray-600">საქმე 7,51</span>
+                </li>
+                <li id="note-114" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">114.</span>
+                    <span class="text-gray-600">ეს. 63,10</span>
+                </li>
+                <li id="note-115" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">115.</span>
+                    <span class="text-gray-600">შდრ: მეორე სჯ. 32,16</span>
+                </li>
+                <li id="note-116" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">116.</span>
+                    <span class="text-gray-600">იეზ. 18,25</span>
+                </li>
+                <li id="note-117" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">117.</span>
+                    <span class="text-gray-600">იეზ. 18,6; 18,11: 18.15</span>
+                </li>
+                <li id="note-118" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">118.</span>
+                    <span class="text-gray-600">შდრ: ეზ: 20,28</span>
+                </li>
+                <li id="note-119" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">119.</span>
+                    <span class="text-gray-600">შდრ: იერ 1,18</span>
+                </li>
+                <li id="note-120" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">120.</span>
+                    <span class="text-gray-600">ეზ: 16,25; 16,31</span>
+                </li>
+                <li id="note-121" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">121.</span>
+                    <span class="text-gray-600">ეზ: 16,43</span>
+                </li>
+                <li id="note-122" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">122.</span>
+                    <span class="text-gray-600">ეფე: 4,30</span>
+                </li>
+                <li id="note-123" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">123.</span>
+                    <span class="text-gray-600">1 კორ 12,6</span>
+                </li>
+                <li id="note-124" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">124.</span>
+                    <span class="text-gray-600">1 კორ. 12,11</span>
+                </li>
+                <li id="note-125" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">125.</span>
+                    <span class="text-gray-600">ლუკ. 22,69</span>
+                </li>
+                <li id="note-126" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">126.</span>
+                    <span class="text-gray-600">ასეა (მომდევნო ციტატა ეხება <span class="persname" data-ref="#cain">კაენს</span>).</span>
+                </li>
+                <li id="note-127" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">127.</span>
+                    <span class="text-gray-600">დაბ. 4,12</span>
+                </li>
+                <li id="note-128" class="note-item">
+                    <span class="font-mono text-xs text-gray-400">128.</span>
+                    <span class="text-gray-600">მეორე. 32,13</span>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    
+</main>
+
+<style>
+/* Paragraph numbers */
+.paragraph {
+    padding-left: 2rem;
+}
+
+.para-num {
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.paragraph:hover .para-num {
+    opacity: 1;
+}
+
+/* Page breaks */
+.pb {
+    display: inline-block;
+    color: #9ca3af;
+    font-size: 0.7rem;
+    font-family: monospace;
+    vertical-align: super;
+    margin: 0 0.25rem;
+    cursor: help;
+}
+
+.pb::before {
+    content: '[';
+}
+
+.pb::after {
+    content: ']';
+}
+
+/* Line breaks (optional display) */
+.lb {
+    display: none;
+}
+
+.show-lines .lb {
+    display: inline;
+    color: #d1d5db;
+    font-size: 0.65rem;
+    font-family: monospace;
+    margin-right: 0.25rem;
+}
+
+.show-lines .lb::before {
+    content: '|';
+}
+
+/* Supplied text */
+.supplied {
+    color: #6b7280;
+}
+
+.supplied::before {
+    content: '[';
+    color: #9ca3af;
+}
+
+.supplied::after {
+    content: ']';
+    color: #9ca3af;
+}
+
+/* Gaps */
+.gap {
+    color: #9ca3af;
+    font-style: italic;
+}
+
+.gap::before {
+    content: '[...';
+}
+
+.gap::after {
+    content: ']';
+}
+
+/* Quotes */
+.quote {
+    font-style: italic;
+}
+
+/* Biblical references / notes */
+.note-ref {
+    color: #1d4ed8;
+    font-size: 0.7rem;
+    vertical-align: super;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+.note-ref:hover {
+    text-decoration: underline;
+}
+
+/* Person names */
+.persname {
+    color: #7c3aed;
+}
+
+/* Rubric text */
+.rubric {
+    color: #b91c1c;
+    font-weight: 500;
+}
+
+/* Notes panel open */
+body.notes-open #notes-panel {
+    transform: translateX(0);
+}
+
+body.notes-open {
+    padding-right: 320px;
+}
+
+@media (max-width: 768px) {
+    body.notes-open {
+        padding-right: 0;
+    }
+    
+    #notes-panel {
+        width: 100%;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Toggle line numbers
+    const toggleLines = document.getElementById('toggle-lines');
+    const article = document.querySelector('.homily-text');
+    
+    if (toggleLines && article) {
+        toggleLines.addEventListener('click', function() {
+            article.classList.toggle('show-lines');
+            this.classList.toggle('bg-gray-100');
+        });
+    }
+    
+    // Toggle notes panel
+    const toggleNotes = document.getElementById('toggle-notes');
+    const closeNotes = document.getElementById('close-notes');
+    
+    if (toggleNotes) {
+        toggleNotes.addEventListener('click', function() {
+            document.body.classList.toggle('notes-open');
+            this.classList.toggle('bg-gray-100');
+        });
+    }
+    
+    if (closeNotes) {
+        closeNotes.addEventListener('click', function() {
+            document.body.classList.remove('notes-open');
+            toggleNotes?.classList.remove('bg-gray-100');
+        });
+    }
+    
+    // Note references - click to highlight in panel
+    document.querySelectorAll('.note-ref').forEach(function(ref) {
+        ref.addEventListener('click', function(e) {
+            e.preventDefault();
+            const noteN = this.dataset.note;
+            const noteItem = document.getElementById('note-' + noteN);
+            
+            // Open notes panel
+            document.body.classList.add('notes-open');
+            toggleNotes?.classList.add('bg-gray-100');
+            
+            // Scroll to and highlight note
+            if (noteItem) {
+                noteItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                noteItem.classList.add('bg-yellow-100');
+                setTimeout(() => noteItem.classList.remove('bg-yellow-100'), 2000);
+            }
+        });
+    });
+    
+    // Update folio indicator on scroll
+    const folioDisplay = document.getElementById('current-folio');
+    const paragraphs = document.querySelectorAll('.paragraph[data-folio]');
+    
+    if (folioDisplay && paragraphs.length > 0) {
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    const folio = entry.target.dataset.folio;
+                    if (folio) {
+                        folioDisplay.textContent = 'f. ' + folio;
+                    }
+                }
+            });
+        }, { threshold: 0.5, rootMargin: '-100px 0px -50% 0px' });
+        
+        paragraphs.forEach(function(p) {
+            observer.observe(p);
+        });
+    }
+});
+</script>
+
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 py-6 px-4 mt-12">
+        <div class="max-w-5xl mx-auto flex items-center justify-between text-xs text-gray-400">
+            <span>2025, ლინგვისტურ კვლევათა ინსტიტუტი</span>
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-2">
+                    <span>TEI-XML:</span>
+                    <a href="../data/treatise.xml" class="hover:text-gray-600 underline" title="ტექსტი (TEI-XML)">ტექსტი</a>
+                    <a href="../data/lexicon.xml" class="hover:text-gray-600 underline" title="ლექსიკონი (TEI-XML)">ლექსიკონი</a>
+                </span>
+                <span class="text-gray-300">|</span>
+                <a href="https://dspace.nplg.gov.ge/handle/1234/413510" class="hover:text-gray-600" target="_blank" rel="noopener">საიუბილეო გამოცემა</a>
+                <span class="text-gray-300">|</span>
+                <span>CC BY-NC-SA 4.0</span>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

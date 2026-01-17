@@ -7,7 +7,7 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "@type": "ontolex:LexicalEntry",
-  "@id": "https://your-domain.org/lexicon/lex.carmodgineba",
+  "@id": "https://tamarae.github.io/Arthron/lexicon/lex.carmodgineba",
   "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.carmodgineba",
   "rdfs:label": {
     "@value": "წარმოდგინება",

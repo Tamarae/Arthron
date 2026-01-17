@@ -7,7 +7,7 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "@type": "ontolex:LexicalEntry",
-  "@id": "https://your-domain.org/lexicon/lex.adviloba",
+  "@id": "https://tamarae.github.io/Arthron/lexicon/lex.adviloba",
   "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.adviloba",
   "rdfs:label": {
     "@value": "ადვილობითი",

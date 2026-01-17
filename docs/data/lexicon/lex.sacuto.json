@@ -7,7 +7,7 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "@type": "ontolex:LexicalEntry",
-  "@id": "https://your-domain.org/lexicon/lex.sacuto",
+  "@id": "https://tamarae.github.io/Arthron/lexicon/lex.sacuto",
   "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.sacuto",
   "rdfs:label": {
     "@value": "საწუთო",

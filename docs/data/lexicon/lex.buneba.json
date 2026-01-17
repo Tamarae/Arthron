@@ -7,7 +7,7 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "@type": "ontolex:LexicalEntry",
-  "@id": "https://your-domain.org/lexicon/lex.buneba",
+  "@id": "https://tamarae.github.io/Arthron/lexicon/lex.buneba",
   "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.buneba",
   "rdfs:label": {
     "@value": "ბუნება",

@@ -7,7 +7,7 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "@type": "ontolex:LexicalEntry",
-  "@id": "https://your-domain.org/lexicon/lex.sasmeneli",
+  "@id": "https://tamarae.github.io/Arthron/lexicon/lex.sasmeneli",
   "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.sasmeneli",
   "rdfs:label": {
     "@value": "სასმენელი",

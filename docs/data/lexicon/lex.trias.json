@@ -1,0 +1,47 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://your-domain.org/lexicon/lex.trias",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.trias",
+  "rdfs:label": {
+    "@value": "სამება",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "სამება",
+      "@language": "ka"
+    }
+  },
+  "lexinfo:etymology": {
+    "@type": "lexinfo:Etymology",
+    "lexinfo:etymon": {
+      "@value": "τριάς",
+      "@language": "grc"
+    }
+  },
+  "attestations": [
+    {
+      "ref": "§ 4",
+      "source": "treatise",
+      "context": "რამეთუ სამებისა ვიდრემე სახელი დედალი არს მათისაებრ ენისა, ხოლო ღმრთისაჲ…"
+    },
+    {
+      "ref": "§ 13",
+      "source": "treatise",
+      "context": "რამეთუ სამებისა სახელი დედალი არს და ითქუმის ესრეთ: ტრიას τριάς. ხოლო…"
+    },
+    {
+      "ref": "§ 20",
+      "source": "treatise",
+      "context": "ესრეთვე და დედალნი ართრონნი სამებისანი, ვითარმედ: ი სამებაჲ, ტის…"
+    }
+  ]
+}

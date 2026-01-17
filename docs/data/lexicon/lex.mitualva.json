@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://your-domain.org/lexicon/lex.mitualva",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.mitualva",
+  "rdfs:label": {
+    "@value": "მითუალვა",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "მითუალვა",
+      "@language": "ka"
+    }
+  },
+  "ontolex:sense": [
+    {
+      "@type": "ontolex:LexicalSense",
+      "skos:definition": [
+        {
+          "@value": "მიღება.",
+          "@language": "ka"
+        }
+      ]
+    }
+  ]
+}

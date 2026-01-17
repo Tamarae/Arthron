@@ -1,0 +1,74 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://your-domain.org/lexicon/lex.plural",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.plural",
+  "rdfs:label": {
+    "@value": "განმრავლებითი",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "განმრავლებითი",
+      "@language": "ka"
+    }
+  },
+  "skos:closeMatch": {
+    "@id": "http://purl.org/olia/olia.owl#Plural"
+  },
+  "ontolex:sense": [
+    {
+      "@type": "ontolex:LexicalSense",
+      "skos:definition": [
+        {
+          "@value": "მრავლობითი რიცხვი.",
+          "@language": "ka"
+        }
+      ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "§ 5",
+      "source": "treatise",
+      "context": "ორობითთანიცაორობითნიცა ხუთნი არიან და განმრავლებითთანიცა; გარნა ორობითთასა…"
+    },
+    {
+      "ref": "§ 9",
+      "source": "treatise",
+      "context": "ხოლო განმრავლებითთაგანმრავლებითა რაჲ იტყოდინიტყ̃დიან სახელთასახელსა ღმერთთასა,…"
+    },
+    {
+      "ref": "§ 11",
+      "source": "treatise",
+      "context": "ესრეთესე ორი ძალი აქუს ლექსსალექსაღ̃ისსა ამას და ერთითა გუარითა ითქუმის ორივე…"
+    },
+    {
+      "ref": "§ 18",
+      "source": "treatise",
+      "context": "ხოლო განმრავლებითნი უართრონონი: პნევმატა πνεύματα, პნევმატონ πνευμάτων,…"
+    },
+    {
+      "ref": "§ 20",
+      "source": "treatise",
+      "context": "ესრეთვე და დედალნი ართრონნი სამებისანი, ვითარმედ: ი სამებაჲ, ტის…"
+    },
+    {
+      "ref": "¶ 16",
+      "source": "research",
+      "context": "მოქმედებითი ბრუნვის ფორმანტი -ით მრავალი სპეციალური ტერმინის საწარმოებლად არის…"
+    },
+    {
+      "ref": "კვლევა ე",
+      "source": "research",
+      "context": "ბერძნული ტრადიციის მიხედვით, გრამატიკულ ტრაქტატში სახელთა და ართრონთათვის…"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://your-domain.org/lexicon/lex.dual",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.dual",
+  "rdfs:label": {
+    "@value": "ორობითი",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "ორობითი",
+      "@language": "ka"
+    }
+  },
+  "skos:closeMatch": {
+    "@id": "http://purl.org/olia/olia.owl#Dual"
+  },
+  "ontolex:sense": [
+    {
+      "@type": "ontolex:LexicalSense",
+      "skos:definition": [
+        {
+          "@value": "ორობითი რიცხვი.",
+          "@language": "ka"
+        }
+      ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "§ 4",
+      "source": "treatise",
+      "context": "რამეთუ სამებისა ვიდრემე სახელი დედალი არს მათისაებრ ენისა, ხოლო ღმრთისაჲ…"
+    },
+    {
+      "ref": "§ 5",
+      "source": "treatise",
+      "context": "ორობითთანიცაორობითნიცა ხუთნი არიან და განმრავლებითთანიცა; გარნა ორობითთასა…"
+    },
+    {
+      "ref": "§ 8",
+      "source": "treatise",
+      "context": "ხოლო ორობითთათჳს ვითარღა ცხად-ვყოთ, რამეთუ არცა იგინი არიან ენასა ზედა…"
+    },
+    {
+      "ref": "§ 9",
+      "source": "treatise",
+      "context": "ხოლო განმრავლებითთაგანმრავლებითა რაჲ იტყოდინიტყ̃დიან სახელთასახელსა ღმერთთასა,…"
+    },
+    {
+      "ref": "§ 14",
+      "source": "treatise",
+      "context": "ხოლო ორობითნი არიან ესე: რაჟამს ორთა პირთა ცხად-ჰყოფდენჰყოფენ უართრონოდ: ტრიადე…"
+    },
+    {
+      "ref": "§ 18",
+      "source": "treatise",
+      "context": "ეგრეთვე ორობითნი უართრონონი: პნევმატე πνεύματε, პნევმატჳნ πνευμάτοιν, პნევმატე…"
+    },
+    {
+      "ref": "§ 20",
+      "source": "treatise",
+      "context": "ესრეთვე და დედალნი ართრონნი სამებისანი, ვითარმედ: ი სამებაჲ, ტის…"
+    },
+    {
+      "ref": "¶ 16",
+      "source": "research",
+      "context": "მოქმედებითი ბრუნვის ფორმანტი -ით მრავალი სპეციალური ტერმინის საწარმოებლად არის…"
+    },
+    {
+      "ref": "კვლევა ე",
+      "source": "research",
+      "context": "ბერძნული ტრადიციის მიხედვით, გრამატიკულ ტრაქტატში სახელთა და ართრონთათვის…"
+    }
+  ]
+}

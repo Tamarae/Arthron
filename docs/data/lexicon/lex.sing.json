@@ -1,0 +1,64 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://your-domain.org/lexicon/lex.sing",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.sing",
+  "rdfs:label": {
+    "@value": "ერთობითი",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "ერთობითი",
+      "@language": "ka"
+    }
+  },
+  "skos:closeMatch": {
+    "@id": "http://purl.org/olia/olia.owl#Singular"
+  },
+  "ontolex:sense": [
+    {
+      "@type": "ontolex:LexicalSense",
+      "skos:definition": [
+        {
+          "@value": "მხოლობითი რიცხვი.",
+          "@language": "ka"
+        }
+      ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "§ 11",
+      "source": "treatise",
+      "context": "ესრეთესე ორი ძალი აქუს ლექსსალექსაღ̃ისსა ამას და ერთითა გუარითა ითქუმის ორივე…"
+    },
+    {
+      "ref": "§ 13",
+      "source": "treatise",
+      "context": "რამეთუ სამებისა სახელი დედალი არს და ითქუმის ესრეთ: ტრიას τριάς. ხოლო…"
+    },
+    {
+      "ref": "§ 17",
+      "source": "treatise",
+      "context": "და სულსა წმიდასა არა მამალი ეწოდების სახელი, არცა დედალი, არამედ შუაჲშუა.…"
+    },
+    {
+      "ref": "¶ 16",
+      "source": "research",
+      "context": "მოქმედებითი ბრუნვის ფორმანტი -ით მრავალი სპეციალური ტერმინის საწარმოებლად არის…"
+    },
+    {
+      "ref": "კვლევა ე",
+      "source": "research",
+      "context": "ბერძნული ტრადიციის მიხედვით, გრამატიკულ ტრაქტატში სახელთა და ართრონთათვის…"
+    }
+  ]
+}

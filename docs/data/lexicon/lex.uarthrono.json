@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://your-domain.org/lexicon/lex.uarthrono",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.uarthrono",
+  "rdfs:label": {
+    "@value": "უართრონო",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "უართრონო",
+      "@language": "ka"
+    }
+  },
+  "lexinfo:etymology": {
+    "@type": "lexinfo:Etymology",
+    "lexinfo:etymon": {
+      "@value": "ἀνάρθρον",
+      "@language": "grc"
+    }
+  },
+  "ontolex:sense": [
+    {
+      "@type": "ontolex:LexicalSense",
+      "skos:definition": [
+        {
+          "@value": "უარტიკლო",
+          "@language": "ka"
+        }
+      ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "§ 1",
+      "source": "treatise",
+      "context": "შეისწავე, რამეთუ ვინაჲთგან ართრონთა ძლით უმეცრადუმეცრ̃დ და ბნელად საგონებელ არს…"
+    },
+    {
+      "ref": "§ 6",
+      "source": "treatise",
+      "context": "ვინაჲ პირველსავე სიტყუასა ზედა აღვიდეთ. რამეთუ რაჟამს, პირველადპირველად და…"
+    },
+    {
+      "ref": "§ 13",
+      "source": "treatise",
+      "context": "რამეთუ სამებისა სახელი დედალი არს და ითქუმის ესრეთ: ტრიას τριάς. ხოლო…"
+    },
+    {
+      "ref": "§ 14",
+      "source": "treatise",
+      "context": "ხოლო ორობითნი არიან ესე: რაჟამს ორთა პირთა ცხად-ჰყოფდენჰყოფენ უართრონოდ: ტრიადე…"
+    },
+    {
+      "ref": "§ 15",
+      "source": "treatise",
+      "context": "ხოლო მრავალთა რაჲ პირთა ცხად-ჰყოფდენ ადვილობითადადვილობითად და,…"
+    },
+    {
+      "ref": "§ 17",
+      "source": "treatise",
+      "context": "და სულსა წმიდასა არა მამალი ეწოდების სახელი, არცა დედალი, არამედ შუაჲშუა.…"
+    },
+    {
+      "ref": "§ 18",
+      "source": "treatise",
+      "context": "ეგრეთვე ორობითნი უართრონონი: პნევმატე πνεύματε, პნევმატჳნ πνευμάτοιν, პნევმატე…"
+    },
+    {
+      "ref": "§ 21",
+      "source": "treatise",
+      "context": "და ოდეს ართრონისათჳსართრონთათვს ითარგმანებოდის, რაჲცარაცა სიტყუაჲ ბერძულისაგან,…"
+    },
+    {
+      "ref": "§ 22",
+      "source": "treatise",
+      "context": "ხოლო სიტყუაჲ იგი უართრონოჲუართრონო ესე არს, რომლისა მიერ…"
+    }
+  ]
+}

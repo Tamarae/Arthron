@@ -1,0 +1,146 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://your-domain.org/lexicon/lex.arthron",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.arthron",
+  "rdfs:label": {
+    "@value": "ართრონი",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "ართრონი",
+      "@language": "ka"
+    }
+  },
+  "lexinfo:etymology": {
+    "@type": "lexinfo:Etymology",
+    "lexinfo:etymon": {
+      "@value": "ἄρθρον",
+      "@language": "grc"
+    }
+  },
+  "skos:closeMatch": {
+    "@id": "http://purl.org/olia/olia.owl#Article"
+  },
+  "ontolex:sense": [
+    {
+      "@type": "ontolex:LexicalSense",
+      "skos:definition": [
+        {
+          "@value": "განსაზღვრებითი ნაწევარი, არტიკლი",
+          "@language": "ka"
+        }
+      ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "§ 1",
+      "source": "treatise",
+      "context": "შეისწავე, რამეთუ ვინაჲთგან ართრონთა ძლით უმეცრადუმეცრ̃დ და ბნელად საგონებელ არს…"
+    },
+    {
+      "ref": "§ 2",
+      "source": "treatise",
+      "context": "ხოლო საჭირო არს პირველად თქუმად, თუ რანი არიან ართრონნი. საცნაურ უკუე…"
+    },
+    {
+      "ref": "§ 3",
+      "source": "treatise",
+      "context": "და ართრონნიართრონნი თითოეულისათჳთეულისა ნათესავისანინათესავნი არიან ათცამეტ;…"
+    },
+    {
+      "ref": "§ 4",
+      "source": "treatise",
+      "context": "რამეთუ სამებისა ვიდრემე სახელი დედალი არს მათისაებრ ენისა, ხოლო ღმრთისაჲ…"
+    },
+    {
+      "ref": "§ 5",
+      "source": "treatise",
+      "context": "ორობითთანიცაორობითნიცა ხუთნი არიან და განმრავლებითთანიცა; გარნა ორობითთასა…"
+    },
+    {
+      "ref": "§ 6",
+      "source": "treatise",
+      "context": "ვინაჲ პირველსავე სიტყუასა ზედა აღვიდეთ. რამეთუ რაჟამს, პირველადპირველად და…"
+    },
+    {
+      "ref": "§ 11",
+      "source": "treatise",
+      "context": "ესრეთ ათცამეტ არიან დრეკანიდრჰ̃კანი სახელთა მამალთანი, ვითარცა ზემო აღგვწერიან,…"
+    },
+    {
+      "ref": "§ 12",
+      "source": "treatise",
+      "context": "ხოლო დედლისა სახელისა ართრონნი თავით კერძო დასასხმელნი, ვითარცა საფუძველნი…"
+    },
+    {
+      "ref": "§ 13",
+      "source": "treatise",
+      "context": "რამეთუ სამებისა სახელი დედალი არს და ითქუმის ესრეთ: ტრიას τριάς. ხოლო…"
+    },
+    {
+      "ref": "§ 15",
+      "source": "treatise",
+      "context": "ესრეთ სხუა-სახე დასხ̃ი სახედ განყოფილების მქონებელ, არიან მამალთაგან დედალნი…"
+    },
+    {
+      "ref": "§ 16",
+      "source": "treatise",
+      "context": "ამითვე სახითა შუანი ართრონნი არიან, რამეთუ ჰგვანან ვიდრემე რიცხჳთაცარიცხვ̃ცა და…"
+    },
+    {
+      "ref": "§ 17",
+      "source": "treatise",
+      "context": "და სულსა წმიდასა არა მამალი ეწოდების სახელი, არცა დედალი, არამედ შუაჲშუა.…"
+    },
+    {
+      "ref": "§ 19",
+      "source": "treatise",
+      "context": "და ამათ ათცამეტთა ართრონთაგან ერთი ოდენ მხოლოდ შესაძლებელ არს ენისა ჩუენისაგან…"
+    },
+    {
+      "ref": "§ 20",
+      "source": "treatise",
+      "context": "ესრეთვე და დედალნი ართრონნი სამებისანი, ვითარმედ: ი სამებაჲ, ტის…"
+    },
+    {
+      "ref": "§ 21",
+      "source": "treatise",
+      "context": "და ოდეს ართრონისათჳსართრონთათვს ითარგმანებოდის, რაჲცარაცა სიტყუაჲ ბერძულისაგან,…"
+    },
+    {
+      "ref": "§ 22",
+      "source": "treatise",
+      "context": "ხოლო სიტყუაჲ იგი უართრონოჲუართრონო ესე არს, რომლისა მიერ…"
+    },
+    {
+      "ref": "§ 23",
+      "source": "treatise",
+      "context": "ხოლო არიან დამორჩილებითნი ამათ პირველთა ართრონთანი სხუანიცა ართრონნი, ათ-ათი…"
+    },
+    {
+      "ref": "§ 24",
+      "source": "treatise",
+      "context": "ესენი ვიდრემე დამორჩილებითნი არიან პირველთა ართრონთანი ართრონნი ესეცა; გარნა…"
+    },
+    {
+      "ref": "¶ 56",
+      "source": "research",
+      "context": "ასეთი კონსტრუქციები გვხვდება გრამატიკულ თხზულებაშიც: ვითარცა ორობითთა შინა,…"
+    },
+    {
+      "ref": "კვლევა ე",
+      "source": "research",
+      "context": "ართრონი ქართულ გრამატიკულ ლიტერატურაში მოგვიანებითაც გვხვდება, ოღონდ…"
+    }
+  ]
+}

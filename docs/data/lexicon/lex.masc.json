@@ -1,0 +1,91 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://your-domain.org/lexicon/lex.masc",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.masc",
+  "rdfs:label": {
+    "@value": "მამალი",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "მამალი",
+      "@language": "ka"
+    }
+  },
+  "lexinfo:etymology": {
+    "@type": "lexinfo:Etymology",
+    "lexinfo:etymon": {
+      "@value": "ἀρσενικόν",
+      "@language": "grc"
+    }
+  },
+  "skos:closeMatch": {
+    "@id": "http://purl.org/olia/olia.owl#Masculine"
+  },
+  "ontolex:sense": [
+    {
+      "@type": "ontolex:LexicalSense",
+      "skos:definition": [
+        {
+          "@value": "მამრობითი სქესი",
+          "@language": "ka"
+        }
+      ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "§ 2",
+      "source": "treatise",
+      "context": "ხოლო საჭირო არს პირველად თქუმად, თუ რანი არიან ართრონნი. საცნაურ უკუე…"
+    },
+    {
+      "ref": "§ 3",
+      "source": "treatise",
+      "context": "და ართრონნიართრონნი თითოეულისათჳთეულისა ნათესავისანინათესავნი არიან ათცამეტ;…"
+    },
+    {
+      "ref": "§ 4",
+      "source": "treatise",
+      "context": "რამეთუ სამებისა ვიდრემე სახელი დედალი არს მათისაებრ ენისა, ხოლო ღმრთისაჲ…"
+    },
+    {
+      "ref": "§ 11",
+      "source": "treatise",
+      "context": "ესრეთ ათცამეტ არიან დრეკანიდრჰ̃კანი სახელთა მამალთანი, ვითარცა ზემო აღგვწერიან,…"
+    },
+    {
+      "ref": "§ 15",
+      "source": "treatise",
+      "context": "ესრეთ სხუა-სახე დასხ̃ი სახედ განყოფილების მქონებელ, არიან მამალთაგან დედალნი…"
+    },
+    {
+      "ref": "§ 16",
+      "source": "treatise",
+      "context": "ამითვე სახითა შუანი ართრონნი არიან, რამეთუ ჰგვანან ვიდრემე რიცხჳთაცარიცხვ̃ცა და…"
+    },
+    {
+      "ref": "§ 17",
+      "source": "treatise",
+      "context": "და სულსა წმიდასა არა მამალი ეწოდების სახელი, არცა დედალი, არამედ შუაჲშუა.…"
+    },
+    {
+      "ref": "§ 23",
+      "source": "treatise",
+      "context": "მამალთანი ვიდრემე:"
+    },
+    {
+      "ref": "კვლევა ე",
+      "source": "research",
+      "context": "როგორც ზემოთმოყვანილი ტექსტიდან ჩანს, ავტორს ბერძნულში გამოუყვია სამი სქესი:…"
+    }
+  ]
+}

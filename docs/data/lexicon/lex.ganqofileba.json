@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://your-domain.org/lexicon/lex.ganqofileba",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.ganqofileba",
+  "rdfs:label": {
+    "@value": "განყოფილება",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "განყოფილება",
+      "@language": "ka"
+    }
+  },
+  "ontolex:sense": [
+    {
+      "@type": "ontolex:LexicalSense",
+      "skos:definition": [
+        {
+          "@value": "განსხვავებულობა, სხვადასხვაობა.",
+          "@language": "ka"
+        }
+      ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "§ 10",
+      "source": "treatise",
+      "context": "რამეთუ ბერძულად განყოფილებაჲ აქუს მიცემითსა და მიზეზობითსა, ვითარცა ზემოზემოთ…"
+    }
+  ]
+}

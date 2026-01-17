@@ -1,0 +1,59 @@
+@prefix : <https://tamarae.github.io/Arthron/lexicon/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+@prefix olia: <http://purl.org/olia/olia.owl#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+# VoID Dataset Description for LLOD Cloud Registration
+
+:dataset a void:Dataset ;
+    dct:title "სიტყუა ართრონთათჳს: ლექსიკონი"@ka ;
+    dct:title "Discourse on Articles: Old Georgian Grammatical Lexicon"@en ;
+    dct:description "A digital lexicon of Old Georgian grammatical terminology extracted from an anonymous medieval treatise on Greek articles. Part of a Level-4 Digital Scholarly Edition."@en ;
+    dct:creator [
+        a foaf:Organization ;
+        foaf:name "ილიას სახელმწიფო უნივერსიტეტი, ლინგვისტურ კვლევათა ინსტიტუტი"@ka ;
+        foaf:name "Ilia State University, Institute for Linguistic Research"@en
+    ] ;
+    dct:contributor [
+        a foaf:Person ;
+        foaf:name "თამარ კალხიტაშვილი"@ka ;
+        foaf:name "Tamar Kalkhitashvili"@en
+    ] ;
+    dct:publisher [
+        a foaf:Organization ;
+        foaf:name "Digital Scholarly Edition"
+    ] ;
+    dct:created "2026-01-17"^^xsd:date ;
+    dct:language "ka" ;
+    dct:subject <http://dbpedia.org/resource/Georgian_language> ;
+    dct:subject <http://dbpedia.org/resource/Old_Georgian> ;
+    dct:subject <http://dbpedia.org/resource/Historical_linguistics> ;
+    dct:subject <http://dbpedia.org/resource/Grammar> ;
+    cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+    
+    void:vocabulary <http://www.w3.org/ns/lemon/ontolex#> ;
+    void:vocabulary <http://www.lexinfo.net/ontology/3.0/lexinfo#> ;
+    void:vocabulary <http://purl.org/olia/olia.owl#> ;
+    
+    void:linkPredicate skos:closeMatch ;
+    
+    void:triples 1500 ;
+    void:entities 158 ;
+    
+    void:dataDump <https://your-domain.org/data/lexicon.ttl> ;
+    foaf:homepage <https://your-domain.org/lexicon/> .
+
+:linkset_olia a void:Linkset ;
+    void:subjectsTarget :dataset ;
+    void:objectsTarget <http://purl.org/olia/olia.owl> ;
+    void:linkPredicate skos:closeMatch ;
+    void:triples 35 .

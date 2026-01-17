@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://your-domain.org/lexicon/lex.dzlit",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.dzlit",
+  "rdfs:label": {
+    "@value": "ძლით",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "ძლით",
+      "@language": "ka"
+    }
+  },
+  "ontolex:sense": [
+    {
+      "@type": "ontolex:LexicalSense",
+      "skos:definition": [
+        {
+          "@value": "მიზეზით, საშუალებით.",
+          "@language": "ka"
+        }
+      ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "§ 1",
+      "source": "treatise",
+      "context": "შეისწავე, რამეთუ ვინაჲთგან ართრონთა ძლით უმეცრადუმეცრ̃დ და ბნელად საგონებელ არს…"
+    },
+    {
+      "ref": "§ 24",
+      "source": "treatise",
+      "context": "ესენი ვიდრემე დამორჩილებითნი არიან პირველთა ართრონთანი ართრონნი ესეცა; გარნა…"
+    }
+  ]
+}

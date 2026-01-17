@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://your-domain.org/lexicon/lex.vidreme",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.vidreme",
+  "rdfs:label": {
+    "@value": "ვიდრემე",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "ვიდრემე",
+      "@language": "ka"
+    }
+  },
+  "attestations": [
+    {
+      "ref": "¶ 34",
+      "source": "research",
+      "context": "ზოგიერთი უდეტერის ხმარება. ამ უდეტერთა შორის, პირველ რიგში უნდა დავასახელოთ…"
+    },
+    {
+      "ref": "¶ 156",
+      "source": "research",
+      "context": "ზემოთ აღნიშნული იყო ვიდრემე-ს ხშირი ხმარება. მთარგმნელს იგი ზოგჯერ ციტატებშიც…"
+    },
+    {
+      "ref": "¶ 178",
+      "source": "research",
+      "context": "არსენის შესახებ მსჯელობისას კ. კეკელიძეს მისი ენის ერთ-ერთ დამახასიათებელ…"
+    },
+    {
+      "ref": "¶ 179",
+      "source": "research",
+      "context": "ეფრემი არსენი აწ უკუე ეწოდების კაცსა მას არსება, ხოლო ფერსა შემთხუევითი არს…"
+    }
+  ]
+}

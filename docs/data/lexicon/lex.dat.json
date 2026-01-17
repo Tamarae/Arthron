@@ -1,0 +1,99 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://your-domain.org/lexicon/lex.dat",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.dat",
+  "rdfs:label": {
+    "@value": "მიცემითი",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "მიცემითი",
+      "@language": "ka"
+    }
+  },
+  "skos:closeMatch": {
+    "@id": "http://purl.org/olia/olia.owl#DativeCase"
+  },
+  "ontolex:sense": [
+    {
+      "@type": "ontolex:LexicalSense",
+      "skos:definition": [
+        {
+          "@value": "მიცემითი ბრუნვა.",
+          "@language": "ka"
+        }
+      ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "§ 7",
+      "source": "treatise",
+      "context": "ხოლო შობილობითად რაჲ იტყოდინიტყ̃დიან საზღვართაებრ მათთა…"
+    },
+    {
+      "ref": "§ 9",
+      "source": "treatise",
+      "context": "ხოლო განმრავლებითთაგანმრავლებითა რაჲ იტყოდინიტყ̃დიან სახელთასახელსა ღმერთთასა,…"
+    },
+    {
+      "ref": "§ 10",
+      "source": "treatise",
+      "context": "რამეთუ ბერძულად განყოფილებაჲ აქუს მიცემითსა და მიზეზობითსა, ვითარცა ზემოზემოთ…"
+    },
+    {
+      "ref": "§ 11",
+      "source": "treatise",
+      "context": "ესრეთესე ორი ძალი აქუს ლექსსალექსაღ̃ისსა ამას და ერთითა გუარითა ითქუმის ორივე…"
+    },
+    {
+      "ref": "§ 13",
+      "source": "treatise",
+      "context": "რამეთუ სამებისა სახელი დედალი არს და ითქუმის ესრეთ: ტრიას τριάς. ხოლო…"
+    },
+    {
+      "ref": "§ 14",
+      "source": "treatise",
+      "context": "ხოლო ორობითნი არიან ესე: რაჟამს ორთა პირთა ცხად-ჰყოფდენჰყოფენ უართრონოდ: ტრიადე…"
+    },
+    {
+      "ref": "§ 15",
+      "source": "treatise",
+      "context": "ხოლო მრავალთა რაჲ პირთა ცხად-ჰყოფდენ ადვილობითადადვილობითად და,…"
+    },
+    {
+      "ref": "§ 17",
+      "source": "treatise",
+      "context": "და სულსა წმიდასა არა მამალი ეწოდების სახელი, არცა დედალი, არამედ შუაჲშუა.…"
+    },
+    {
+      "ref": "¶ 16",
+      "source": "research",
+      "context": "მოქმედებითი ბრუნვის ფორმანტი -ით მრავალი სპეციალური ტერმინის საწარმოებლად არის…"
+    },
+    {
+      "ref": "¶ 59",
+      "source": "research",
+      "context": "პირდაპირი ობიექტის ბრუნვა სახელზმნებთან. ი̃თ ჰომილიაში პირდაპირი ობიექტი…"
+    },
+    {
+      "ref": "¶ 60",
+      "source": "research",
+      "context": "გრამატიკულ თხზულებაში საწყისთან მიცემითი და ნათესაობითი ერთმანეთის გვერდით…"
+    },
+    {
+      "ref": "კვლევა ე",
+      "source": "research",
+      "context": "ბერძნულ ართრონთა და სიტყვათათვის დასახელებული ხუთი ბრუნვა შემდეგია: ადვილობითი…"
+    }
+  ]
+}

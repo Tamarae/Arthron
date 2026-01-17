@@ -1,0 +1,71 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://your-domain.org/lexicon/lex.neut",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.neut",
+  "rdfs:label": {
+    "@value": "შუაჲ",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "შუაჲ",
+      "@language": "ka"
+    }
+  },
+  "lexinfo:etymology": {
+    "@type": "lexinfo:Etymology",
+    "lexinfo:etymon": {
+      "@value": "οὐδέτερον",
+      "@language": "grc"
+    }
+  },
+  "skos:closeMatch": {
+    "@id": "http://purl.org/olia/olia.owl#Neuter"
+  },
+  "ontolex:sense": [
+    {
+      "@type": "ontolex:LexicalSense",
+      "skos:definition": [
+        {
+          "@value": "საშუალო სქესი",
+          "@language": "ka"
+        }
+      ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "§ 2",
+      "source": "treatise",
+      "context": "ხოლო საჭირო არს პირველად თქუმად, თუ რანი არიან ართრონნი. საცნაურ უკუე…"
+    },
+    {
+      "ref": "§ 16",
+      "source": "treatise",
+      "context": "ამითვე სახითა შუანი ართრონნი არიან, რამეთუ ჰგვანან ვიდრემე რიცხჳთაცარიცხვ̃ცა და…"
+    },
+    {
+      "ref": "§ 17",
+      "source": "treatise",
+      "context": "და სულსა წმიდასა არა მამალი ეწოდების სახელი, არცა დედალი, არამედ შუაჲშუა.…"
+    },
+    {
+      "ref": "§ 20",
+      "source": "treatise",
+      "context": "ამათდავე მსგავსად შუანი ართრონნიართრონნი არიან, ვითარმედ: ტო სული, ტუ…"
+    },
+    {
+      "ref": "§ 23",
+      "source": "treatise",
+      "context": "ხოლო შუათანი დამორჩილებითნი:"
+    }
+  ]
+}

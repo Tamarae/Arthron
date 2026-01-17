@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://your-domain.org/lexicon/lex.nom",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.nom",
+  "rdfs:label": {
+    "@value": "სახელობითი",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "სახელობითი",
+      "@language": "ka"
+    }
+  },
+  "skos:closeMatch": {
+    "@id": "http://purl.org/olia/olia.owl#Nominative"
+  },
+  "attestations": [
+    {
+      "ref": "§ 4",
+      "source": "treatise",
+      "context": "რამეთუ სამებისა ვიდრემე სახელი დედალი არს მათისაებრ ენისა, ხოლო ღმრთისაჲ…"
+    },
+    {
+      "ref": "§ 6",
+      "source": "treatise",
+      "context": "ვინაჲ პირველსავე სიტყუასა ზედა აღვიდეთ. რამეთუ რაჟამს, პირველადპირველად და…"
+    },
+    {
+      "ref": "§ 15",
+      "source": "treatise",
+      "context": "ხოლო მრავალთა რაჲ პირთა ცხად-ჰყოფდენ ადვილობითადადვილობითად და,…"
+    },
+    {
+      "ref": "¶ 2",
+      "source": "research",
+      "context": "წრფელობითი და სახელობითი. წრფელობითი ბრუნვა ძალიან ხშირად იხმარება რთულ…"
+    },
+    {
+      "ref": "კვლევა ე",
+      "source": "research",
+      "context": "უნდა აღინიშნოს, რომ ძველ ქართულ წყაროებში სახელობითი ბრუნვის ბერძნული…"
+    }
+  ]
+}

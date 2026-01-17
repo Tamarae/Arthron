@@ -33,26 +33,24 @@
 
                 <entry xml:id="lex.adviloba" corresp="http://purl.org/olia/olia.owl#Nominative">
                     <form type="lemma">
-                        <orth xml:lang="ka">ადვილობა</orth>
-                        <orth type="variant" xml:lang="ka">ადვილობითი</orth>
+                        <orth xml:lang="ka">ადვილობითი</orth>
+                       
                     </form>
                     <xr type="map"><ref target="#lex.nom"/></xr>
                   <etym><lang>grc</lang><mentioned xml:lang="grc">ὀνομαστική</mentioned></etym>
                     <sense><def xml:lang="ka">მარტივი, სახელობითი ბრუნვა</def></sense>
                     <cit type="example"><quote xml:lang="ka">რაჟამს ადვილობითად იჴმევდენ ჴსენებასა სახელისასა.</quote><bibl>§ 4</bibl></cit>
+                    <cit type="example"><quote xml:lang="ka">ადვილობითად და ერთსა პირსა აჴსენებდენ და ართრონი დაუსუან</quote><bibl>§ 6</bibl></cit>
+                    <cit type="example"><quote xml:lang="ka">ხოლო მრავალთა არჲ  პირთა ცხად-ჰყოფდენ ადვილობითად</quote><bibl>§ 15</bibl></cit>
                 </entry>
                 <entry xml:id="lex.nom" corresp="http://purl.org/olia/olia.owl#Nominative"><form type="lemma"><orth xml:lang="ka">სახელობითი</orth></form><xr type="see"><ref target="#lex.adviloba"/></xr></entry>
 
-                <entry xml:id="lex.antipa">
-                    <form type="lemma"><orth xml:lang="ka">ანტიპა</orth></form>
-                    <note>ნ. გვ. 110.</note>
-                </entry>
 
                 <entry xml:id="lex.arthron" corresp="http://purl.org/olia/olia.owl#Article">
                     <form type="lemma"><orth xml:lang="ka">ართრონი</orth></form>
                     <etym><lang>grc</lang><mentioned xml:lang="grc">ἄρθρον</mentioned></etym>
-                    <sense><def xml:lang="ka">განსაზღვრებითი ნაწევარი, არტიკლი.</def></sense>
-                    <cit type="example"><quote xml:lang="ka">ართრონსა დაუდებს.</quote><bibl>ჰ. 34</bibl></cit>
+                    <sense><def xml:lang="ka">განსაზღვრებითი ნაწევარი, არტიკლი</def></sense>
+                    <cit type="example"><quote xml:lang="ka">ართრონსა დაუდებს</quote><bibl>ჰ. 34</bibl></cit>
                     <cit type="example"><quote xml:lang="ka">ართრონთა ძლით უმეცრად და ბნელად საგონებელ არს.</quote><bibl>§ 1</bibl></cit>
                 </entry>
 

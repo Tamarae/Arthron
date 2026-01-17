@@ -1,0 +1,24 @@
+@prefix : <https://tamarae.github.io/Arthron/lexicon/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+@prefix olia: <http://purl.org/olia/olia.owl#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+:lex.mnebebeloba a ontolex:LexicalEntry ;
+    rdfs:label "მნებებელობა"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.mnebebeloba" ;
+    ontolex:canonicalForm :lex.mnebebeloba_form ;
+    ontolex:sense :lex.mnebebeloba_sense1 .
+
+:lex.mnebebeloba_form a ontolex:Form ;
+    ontolex:writtenRep "მნებებელობა"@ka .
+
+:lex.mnebebeloba_sense1 a ontolex:LexicalSense ;
+    skos:definition "მოსურვება."@ka .

@@ -32,17 +32,15 @@
 }
 
 .lemma-main {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
-    font-family: 'Noto Serif Georgian', serif;
     color: #1f2937;
 }
 
 .greek-equiv {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #6b7280;
     font-style: italic;
-    font-family: 'Noto Serif', serif;
 }
 
 .urn-display {
@@ -59,12 +57,11 @@
 }
 
 .section-title {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     color: #9ca3af;
     margin-bottom: 0.75rem;
-    font-family: 'JetBrains Mono', monospace;
 }
 
 .definition-block {
@@ -122,43 +119,43 @@
 .lod-badge.olia { border-color: #7c3aed; color: #7c3aed; }
 .lod-badge.olia:hover { background: #ede9fe; }
 
-/* Occurrences table */
-.occurrences-table {
-    width: 100%;
-    border-collapse: collapse;
+/* Occurrences list */
+.occurrences-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-.occurrences-table th {
-    text-align: left;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #9ca3af;
+.occ-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
     padding: 0.75rem 1rem;
-    border-bottom: 1px solid #e5e7eb;
-    font-family: 'JetBrains Mono', monospace;
+    background: white;
+    border: 1px solid #f3f4f6;
+    border-radius: 6px;
 }
 
-.occurrences-table td {
-    padding: 0.75rem 1rem;
-    border-bottom: 1px solid #f3f4f6;
-    font-size: 0.9rem;
-}
-
-.occurrences-table tr:hover {
+.occ-item:hover {
     background: #fafaf9;
+    border-color: #e5e7eb;
 }
 
 .occ-ref {
     font-weight: 500;
     white-space: nowrap;
+    flex-shrink: 0;
+    min-width: 3rem;
 }
 
 .occ-ref.treatise { color: #b45309; }
+.occ-ref.homily { color: #059669; }
 .occ-ref.research { color: #6366f1; }
 
 .occ-context {
     color: #6b7280;
+    flex: 1;
+    font-size: 0.9rem;
 }
 
 .occ-context mark {
@@ -167,6 +164,24 @@
     border-radius: 2px;
     font-weight: 500;
     color: #1f2937;
+}
+
+/* Source legend */
+.source-legend {
+    display: flex;
+    gap: 1.25rem;
+    font-size: 0.7rem;
+    color: #9ca3af;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.source-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.source-legend-item .ref {
+    font-weight: 600;
 }
 
 /* Related entries */
@@ -266,8 +281,8 @@
                     სიტყუაჲ ართრონთათჳს
                 </a>
                 <div class="flex items-center gap-6">
-                    <a href="../text/index.html" class="text-sm text-gray-600 hover:text-ink">ტექსტი</a>
-                    <a href="../homily/index.html" class="text-sm text-gray-600 hover:text-ink">სწავლანი</a>
+                    <a href="../text/index.html" class="text-sm text-gray-600 hover:text-ink">ტრაქტატი</a>
+                    <a href="../homily/index.html" class="text-sm text-gray-600 hover:text-ink">ჰომილია</a>
                     <a href="../lexicon/index.html" class="text-sm text-ink border-b border-gray-400 pb-0.5">ლექსიკონი</a>
                     <a href="../research/index.html" class="text-sm text-gray-600 hover:text-ink">კვლევა</a>
                     <a href="../about.html" class="text-sm text-gray-600 hover:text-ink">შესახებ</a>
@@ -296,10 +311,7 @@
                     <a href="https://logeion.uchicago.edu/λέξις" 
                        target="_blank" 
                        rel="noopener"
-                       class="hover:text-gray-900 transition-colors"
-                       title="Logeion Dictionary">
-                        λέξις ↗
-                    </a>
+                       class="hover:text-gray-900 border-b border-dotted border-gray-400 hover:border-gray-600">λέξις</a>
                 </p>
             </div>
             <div class="urn-display">
@@ -318,7 +330,7 @@
     
     <!-- Definition -->
     <section class="mb-8">
-        <h2 class="section-title">განმარტება / Definition</h2>
+        <h2 class="section-title">განმარტება</h2>
         <div class="definition-block">
             <p >
                 სიტყვა, ტერმინი.
@@ -329,65 +341,36 @@
     
     
     <!-- Examples from lexicon.xml -->
-    <section class="mb-8">
-        <h2 class="section-title">მაგალითები / Examples</h2>
-        <div class="space-y-3">
-            <div class="flex items-start gap-4 p-4 bg-white border border-gray-100 rounded-lg">
-                <div class="flex-1 italic text-gray-700">„ბერძულსა შინა ვიდრემე ნათლად ძეს ლექსი იგი."</div>
-                <a href="../text/1.html" 
-                   class="text-sm text-amber-700 hover:text-amber-900 font-medium whitespace-nowrap">
-                    § 1
-                </a>
-            </div>
-            <div class="flex items-start gap-4 p-4 bg-white border border-gray-100 rounded-lg">
-                <div class="flex-1 italic text-gray-700">„ქართულად ერთ ლექსად ითქუმის."</div>
-                <a href="../text/10.html" 
-                   class="text-sm text-amber-700 hover:text-amber-900 font-medium whitespace-nowrap">
-                    § 10
-                </a>
-            </div>
-        </div>
-    </section>
     
     <!-- All Occurrences (from term index) -->
     <section class="mb-8">
-        <h2 class="section-title">მოხსენიება ტექსტში / Occurrences (2)</h2>
-        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
-            <table class="occurrences-table">
-                <thead>
-                    <tr>
-                        <th style="width: 80px;">პარაგრაფი</th>
-                        <th>კონტექსტი</th>
-                        <th style="width: 100px;">წყარო</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <a href="../text/1.html#sec.1" class="occ-ref treatise">
-                                § 1
-                            </a>
-                        </td>
-                        <td class="occ-context">
-                            შეისწავე, რამეთუ ვინაჲთგან ართრონთა ძლით უმეცრადუმეცრ̃დ და ბნელად საგონებელ არს…
-                        </td>
-                        <td class="text-xs text-gray-400">
-ტრაქტატი                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="../text/10.html#sec.10" class="occ-ref treatise">
-                                § 10
-                            </a>
-                        </td>
-                        <td class="occ-context">
-                            რამეთუ ბერძულად განყოფილებაჲ აქუს მიცემითსა და მიზეზობითსა, ვითარცა ზემოზემოთ…
-                        </td>
-                        <td class="text-xs text-gray-400">
-ტრაქტატი                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <h2 class="section-title">გვხვდება (2)</h2>
+        
+        <!-- Source legend -->
+        <div class="source-legend">
+            <span class="text-gray-400">აღნიშვნები:</span>
+            <span class="source-legend-item"><span class="ref" style="color: #b45309;">§</span> ტრაქტატი</span>
+            <span class="source-legend-item"><span class="ref" style="color: #059669;">ჰ.</span> ჰომილია</span>
+            <span class="source-legend-item"><span class="ref" style="color: #6366f1;">¶</span> კვლევა</span>
+        </div>
+        
+        <div class="occurrences-list">
+            <div class="occ-item">
+                <a href="../text/1.html#sec.1" class="occ-ref treatise">
+                    § 1
+                </a>
+                <span class="occ-context">
+                    შეისწავე, რამეთუ ვინაჲთგან ართრონთა ძლით უმეცრადუმეცრ̃დ და ბნელად საგონებელ არს…
+                </span>
+            </div>
+            <div class="occ-item">
+                <a href="../text/10.html#sec.10" class="occ-ref treatise">
+                    § 10
+                </a>
+                <span class="occ-context">
+                    რამეთუ ბერძულად განყოფილებაჲ აქუს მიცემითსა და მიზეზობითსა, ვითარცა ზემოზემოთ…
+                </span>
+            </div>
         </div>
     </section>
     
@@ -395,7 +378,7 @@
     
     <!-- Export & Citation -->
     <section class="mb-8">
-        <h2 class="section-title">ექსპორტი & ციტირება / Export & Citation</h2>
+        <h2 class="section-title">ექსპორტი & ციტირება</h2>
         
         <!-- Export buttons -->
         <div class="flex flex-wrap gap-3 mb-6">

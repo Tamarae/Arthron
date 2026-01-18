@@ -32,17 +32,15 @@
 }
 
 .lemma-main {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
-    font-family: 'Noto Serif Georgian', serif;
     color: #1f2937;
 }
 
 .greek-equiv {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #6b7280;
     font-style: italic;
-    font-family: 'Noto Serif', serif;
 }
 
 .urn-display {
@@ -59,12 +57,11 @@
 }
 
 .section-title {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     color: #9ca3af;
     margin-bottom: 0.75rem;
-    font-family: 'JetBrains Mono', monospace;
 }
 
 .definition-block {
@@ -122,43 +119,43 @@
 .lod-badge.olia { border-color: #7c3aed; color: #7c3aed; }
 .lod-badge.olia:hover { background: #ede9fe; }
 
-/* Occurrences table */
-.occurrences-table {
-    width: 100%;
-    border-collapse: collapse;
+/* Occurrences list */
+.occurrences-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-.occurrences-table th {
-    text-align: left;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #9ca3af;
+.occ-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
     padding: 0.75rem 1rem;
-    border-bottom: 1px solid #e5e7eb;
-    font-family: 'JetBrains Mono', monospace;
+    background: white;
+    border: 1px solid #f3f4f6;
+    border-radius: 6px;
 }
 
-.occurrences-table td {
-    padding: 0.75rem 1rem;
-    border-bottom: 1px solid #f3f4f6;
-    font-size: 0.9rem;
-}
-
-.occurrences-table tr:hover {
+.occ-item:hover {
     background: #fafaf9;
+    border-color: #e5e7eb;
 }
 
 .occ-ref {
     font-weight: 500;
     white-space: nowrap;
+    flex-shrink: 0;
+    min-width: 3rem;
 }
 
 .occ-ref.treatise { color: #b45309; }
+.occ-ref.homily { color: #059669; }
 .occ-ref.research { color: #6366f1; }
 
 .occ-context {
     color: #6b7280;
+    flex: 1;
+    font-size: 0.9rem;
 }
 
 .occ-context mark {
@@ -167,6 +164,24 @@
     border-radius: 2px;
     font-weight: 500;
     color: #1f2937;
+}
+
+/* Source legend */
+.source-legend {
+    display: flex;
+    gap: 1.25rem;
+    font-size: 0.7rem;
+    color: #9ca3af;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.source-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.source-legend-item .ref {
+    font-weight: 600;
 }
 
 /* Related entries */
@@ -266,8 +281,8 @@
                     სიტყუაჲ ართრონთათჳს
                 </a>
                 <div class="flex items-center gap-6">
-                    <a href="../text/index.html" class="text-sm text-gray-600 hover:text-ink">ტექსტი</a>
-                    <a href="../homily/index.html" class="text-sm text-gray-600 hover:text-ink">სწავლანი</a>
+                    <a href="../text/index.html" class="text-sm text-gray-600 hover:text-ink">ტრაქტატი</a>
+                    <a href="../homily/index.html" class="text-sm text-gray-600 hover:text-ink">ჰომილია</a>
                     <a href="../lexicon/index.html" class="text-sm text-ink border-b border-gray-400 pb-0.5">ლექსიკონი</a>
                     <a href="../research/index.html" class="text-sm text-gray-600 hover:text-ink">კვლევა</a>
                     <a href="../about.html" class="text-sm text-gray-600 hover:text-ink">შესახებ</a>
@@ -309,7 +324,7 @@
     
     <!-- Definition -->
     <section class="mb-8">
-        <h2 class="section-title">განმარტება / Definition</h2>
+        <h2 class="section-title">განმარტება</h2>
         <div class="definition-block">
             <p >
                 გაგდება, გაძევება.
@@ -327,7 +342,7 @@
     
     <!-- Export & Citation -->
     <section class="mb-8">
-        <h2 class="section-title">ექსპორტი & ციტირება / Export & Citation</h2>
+        <h2 class="section-title">ექსპორტი & ციტირება</h2>
         
         <!-- Export buttons -->
         <div class="flex flex-wrap gap-3 mb-6">

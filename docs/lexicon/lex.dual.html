@@ -32,17 +32,15 @@
 }
 
 .lemma-main {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
-    font-family: 'Noto Serif Georgian', serif;
     color: #1f2937;
 }
 
 .greek-equiv {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #6b7280;
     font-style: italic;
-    font-family: 'Noto Serif', serif;
 }
 
 .urn-display {
@@ -59,12 +57,11 @@
 }
 
 .section-title {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     color: #9ca3af;
     margin-bottom: 0.75rem;
-    font-family: 'JetBrains Mono', monospace;
 }
 
 .definition-block {
@@ -122,43 +119,43 @@
 .lod-badge.olia { border-color: #7c3aed; color: #7c3aed; }
 .lod-badge.olia:hover { background: #ede9fe; }
 
-/* Occurrences table */
-.occurrences-table {
-    width: 100%;
-    border-collapse: collapse;
+/* Occurrences list */
+.occurrences-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-.occurrences-table th {
-    text-align: left;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #9ca3af;
+.occ-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
     padding: 0.75rem 1rem;
-    border-bottom: 1px solid #e5e7eb;
-    font-family: 'JetBrains Mono', monospace;
+    background: white;
+    border: 1px solid #f3f4f6;
+    border-radius: 6px;
 }
 
-.occurrences-table td {
-    padding: 0.75rem 1rem;
-    border-bottom: 1px solid #f3f4f6;
-    font-size: 0.9rem;
-}
-
-.occurrences-table tr:hover {
+.occ-item:hover {
     background: #fafaf9;
+    border-color: #e5e7eb;
 }
 
 .occ-ref {
     font-weight: 500;
     white-space: nowrap;
+    flex-shrink: 0;
+    min-width: 3rem;
 }
 
 .occ-ref.treatise { color: #b45309; }
+.occ-ref.homily { color: #059669; }
 .occ-ref.research { color: #6366f1; }
 
 .occ-context {
     color: #6b7280;
+    flex: 1;
+    font-size: 0.9rem;
 }
 
 .occ-context mark {
@@ -167,6 +164,24 @@
     border-radius: 2px;
     font-weight: 500;
     color: #1f2937;
+}
+
+/* Source legend */
+.source-legend {
+    display: flex;
+    gap: 1.25rem;
+    font-size: 0.7rem;
+    color: #9ca3af;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.source-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.source-legend-item .ref {
+    font-weight: 600;
 }
 
 /* Related entries */
@@ -266,8 +281,8 @@
                     სიტყუაჲ ართრონთათჳს
                 </a>
                 <div class="flex items-center gap-6">
-                    <a href="../text/index.html" class="text-sm text-gray-600 hover:text-ink">ტექსტი</a>
-                    <a href="../homily/index.html" class="text-sm text-gray-600 hover:text-ink">სწავლანი</a>
+                    <a href="../text/index.html" class="text-sm text-gray-600 hover:text-ink">ტრაქტატი</a>
+                    <a href="../homily/index.html" class="text-sm text-gray-600 hover:text-ink">ჰომილია</a>
                     <a href="../lexicon/index.html" class="text-sm text-ink border-b border-gray-400 pb-0.5">ლექსიკონი</a>
                     <a href="../research/index.html" class="text-sm text-gray-600 hover:text-ink">კვლევა</a>
                     <a href="../about.html" class="text-sm text-gray-600 hover:text-ink">შესახებ</a>
@@ -317,7 +332,7 @@ OLiA                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewB
     
     <!-- Definition -->
     <section class="mb-8">
-        <h2 class="section-title">განმარტება / Definition</h2>
+        <h2 class="section-title">განმარტება</h2>
         <div class="definition-block">
             <p >
                 ორობითი რიცხვი.
@@ -331,127 +346,89 @@ OLiA                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewB
     
     <!-- All Occurrences (from term index) -->
     <section class="mb-8">
-        <h2 class="section-title">მოხსენიება ტექსტში / Occurrences (9)</h2>
-        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
-            <table class="occurrences-table">
-                <thead>
-                    <tr>
-                        <th style="width: 80px;">პარაგრაფი</th>
-                        <th>კონტექსტი</th>
-                        <th style="width: 100px;">წყარო</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <a href="../text/4.html#sec.4" class="occ-ref treatise">
-                                § 4
-                            </a>
-                        </td>
-                        <td class="occ-context">
-                            რამეთუ სამებისა ვიდრემე სახელი დედალი არს მათისაებრ ენისა, ხოლო ღმრთისაჲ…
-                        </td>
-                        <td class="text-xs text-gray-400">
-ტრაქტატი                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="../text/5.html#sec.5" class="occ-ref treatise">
-                                § 5
-                            </a>
-                        </td>
-                        <td class="occ-context">
-                            ორობითთანიცაორობითნიცა ხუთნი არიან და განმრავლებითთანიცა; გარნა ორობითთასა…
-                        </td>
-                        <td class="text-xs text-gray-400">
-ტრაქტატი                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="../text/8.html#sec.8" class="occ-ref treatise">
-                                § 8
-                            </a>
-                        </td>
-                        <td class="occ-context">
-                            ხოლო ორობითთათჳს ვითარღა ცხად-ვყოთ, რამეთუ არცა იგინი არიან ენასა ზედა…
-                        </td>
-                        <td class="text-xs text-gray-400">
-ტრაქტატი                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="../text/9.html#sec.9" class="occ-ref treatise">
-                                § 9
-                            </a>
-                        </td>
-                        <td class="occ-context">
-                            ხოლო განმრავლებითთაგანმრავლებითა რაჲ იტყოდინიტყ̃დიან სახელთასახელსა ღმერთთასა,…
-                        </td>
-                        <td class="text-xs text-gray-400">
-ტრაქტატი                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="../text/14.html#sec.14" class="occ-ref treatise">
-                                § 14
-                            </a>
-                        </td>
-                        <td class="occ-context">
-                            ხოლო ორობითნი არიან ესე: რაჟამს ორთა პირთა ცხად-ჰყოფდენჰყოფენ უართრონოდ: ტრიადე…
-                        </td>
-                        <td class="text-xs text-gray-400">
-ტრაქტატი                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="../text/18.html#sec.18" class="occ-ref treatise">
-                                § 18
-                            </a>
-                        </td>
-                        <td class="occ-context">
-                            ეგრეთვე ორობითნი უართრონონი: პნევმატე πνεύματε, პნევმატჳნ πνευμάτοιν, პნევმატე…
-                        </td>
-                        <td class="text-xs text-gray-400">
-ტრაქტატი                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="../text/20.html#sec.20" class="occ-ref treatise">
-                                § 20
-                            </a>
-                        </td>
-                        <td class="occ-context">
-                            ესრეთვე და დედალნი ართრონნი სამებისანი, ვითარმედ: ი სამებაჲ, ტის…
-                        </td>
-                        <td class="text-xs text-gray-400">
-ტრაქტატი                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="../research/index.html#p16" class="occ-ref research">
-                                ¶ 16
-                            </a>
-                        </td>
-                        <td class="occ-context">
-                            მოქმედებითი ბრუნვის ფორმანტი -ით მრავალი სპეციალური ტერმინის საწარმოებლად არის…
-                        </td>
-                        <td class="text-xs text-gray-400">
-კვლევა                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="../research/index.html" class="occ-ref research">
-                                კვლევა ე
-                            </a>
-                        </td>
-                        <td class="occ-context">
-                            ბერძნული ტრადიციის მიხედვით, გრამატიკულ ტრაქტატში სახელთა და ართრონთათვის…
-                        </td>
-                        <td class="text-xs text-gray-400">
-კვლევა                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <h2 class="section-title">გვხვდება (9)</h2>
+        
+        <!-- Source legend -->
+        <div class="source-legend">
+            <span class="text-gray-400">აღნიშვნები:</span>
+            <span class="source-legend-item"><span class="ref" style="color: #b45309;">§</span> ტრაქტატი</span>
+            <span class="source-legend-item"><span class="ref" style="color: #059669;">ჰ.</span> ჰომილია</span>
+            <span class="source-legend-item"><span class="ref" style="color: #6366f1;">¶</span> კვლევა</span>
+        </div>
+        
+        <div class="occurrences-list">
+            <div class="occ-item">
+                <a href="../text/4.html#sec.4" class="occ-ref treatise">
+                    § 4
+                </a>
+                <span class="occ-context">
+                    რამეთუ სამებისა ვიდრემე სახელი დედალი არს მათისაებრ ენისა, ხოლო ღმრთისაჲ…
+                </span>
+            </div>
+            <div class="occ-item">
+                <a href="../text/5.html#sec.5" class="occ-ref treatise">
+                    § 5
+                </a>
+                <span class="occ-context">
+                    ორობითთანიცაორობითნიცა ხუთნი არიან და განმრავლებითთანიცა; გარნა ორობითთასა…
+                </span>
+            </div>
+            <div class="occ-item">
+                <a href="../text/8.html#sec.8" class="occ-ref treatise">
+                    § 8
+                </a>
+                <span class="occ-context">
+                    ხოლო ორობითთათჳს ვითარღა ცხად-ვყოთ, რამეთუ არცა იგინი არიან ენასა ზედა…
+                </span>
+            </div>
+            <div class="occ-item">
+                <a href="../text/9.html#sec.9" class="occ-ref treatise">
+                    § 9
+                </a>
+                <span class="occ-context">
+                    ხოლო განმრავლებითთაგანმრავლებითა რაჲ იტყოდინიტყ̃დიან სახელთასახელსა ღმერთთასა,…
+                </span>
+            </div>
+            <div class="occ-item">
+                <a href="../text/14.html#sec.14" class="occ-ref treatise">
+                    § 14
+                </a>
+                <span class="occ-context">
+                    ხოლო ორობითნი არიან ესე: რაჟამს ორთა პირთა ცხად-ჰყოფდენჰყოფენ უართრონოდ: ტრიადე…
+                </span>
+            </div>
+            <div class="occ-item">
+                <a href="../text/18.html#sec.18" class="occ-ref treatise">
+                    § 18
+                </a>
+                <span class="occ-context">
+                    ეგრეთვე ორობითნი უართრონონი: პნევმატე πνεύματε, პნევმატჳნ πνευμάτοιν, პნევმატე…
+                </span>
+            </div>
+            <div class="occ-item">
+                <a href="../text/20.html#sec.20" class="occ-ref treatise">
+                    § 20
+                </a>
+                <span class="occ-context">
+                    ესრეთვე და დედალნი ართრონნი სამებისანი, ვითარმედ: ი სამებაჲ, ტის…
+                </span>
+            </div>
+            <div class="occ-item">
+                <a href="../research/index.html#p16" class="occ-ref research">
+                    ¶ 16
+                </a>
+                <span class="occ-context">
+                    მოქმედებითი ბრუნვის ფორმანტი -ით მრავალი სპეციალური ტერმინის საწარმოებლად არის…
+                </span>
+            </div>
+            <div class="occ-item">
+                <a href="../research/index.html" class="occ-ref research">
+                    კვლევა ე
+                </a>
+                <span class="occ-context">
+                    ბერძნული ტრადიციის მიხედვით, გრამატიკულ ტრაქტატში სახელთა და ართრონთათვის…
+                </span>
+            </div>
         </div>
     </section>
     
@@ -459,7 +436,7 @@ OLiA                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewB
     
     <!-- Export & Citation -->
     <section class="mb-8">
-        <h2 class="section-title">ექსპორტი & ციტირება / Export & Citation</h2>
+        <h2 class="section-title">ექსპორტი & ციტირება</h2>
         
         <!-- Export buttons -->
         <div class="flex flex-wrap gap-3 mb-6">

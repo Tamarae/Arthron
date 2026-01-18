@@ -24,6 +24,51 @@
         body { font-family: 'Noto Sans Georgian', sans-serif; }
         .font-serif-geo { font-family: 'Noto Serif Georgian', Georgia, serif; }
         .greek { font-family: 'Times New Roman', serif; font-style: italic; }
+/* Collapsible sections */
+details.about-section {
+    margin-bottom: 3rem;
+}
+
+details.about-section summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+details.about-section summary::-webkit-details-marker {
+    display: none;
+}
+
+details.about-section summary::after {
+    content: '';
+    width: 1.25rem;
+    height: 1.25rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%239ca3af'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+details.about-section[open] summary::after {
+    transform: rotate(180deg);
+}
+
+details.about-section summary:hover h2 {
+    color: #6b7280;
+}
+
+details.about-section .section-content {
+    animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
     </style>
 </head>
 <body class="bg-parchment text-ink antialiased">
@@ -36,8 +81,8 @@
                     სიტყუაჲ ართრონთათჳს
                 </a>
                 <div class="flex items-center gap-6">
-                    <a href="text/index.html" class="text-sm text-gray-600 hover:text-ink">ტექსტი</a>
-                    <a href="homily/index.html" class="text-sm text-gray-600 hover:text-ink">სწავლანი</a>
+                    <a href="text/index.html" class="text-sm text-gray-600 hover:text-ink">ტრაქტატი</a>
+                    <a href="homily/index.html" class="text-sm text-gray-600 hover:text-ink">ჰომილია</a>
                     <a href="lexicon/index.html" class="text-sm text-gray-600 hover:text-ink">ლექსიკონი</a>
                     <a href="research/index.html" class="text-sm text-gray-600 hover:text-ink">კვლევა</a>
                     <a href="about.html" class="text-sm text-ink border-b border-gray-400 pb-0.5">შესახებ</a>
@@ -49,399 +94,429 @@
 <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     
     <header class="mb-12 pb-8 border-b border-gray-200">
-        <h1 class="text-2xl font-serif font-medium mb-2"><ციფრული> გამოცემის მეთოდოლოგია</h1>
+        <h1 class="text-2xl font-serif font-medium mb-2">ციფრული გამოცემის მეთოდოლოგია</h1>
         <p class="text-sm text-gray-500">ციტირება და ტექნიკური მახასიათებლები</p>
     </header>
     
-    <!-- Print Edition (Combined with Authorship) -->
-    <section class="mb-12">
-        <h2 class="text-xs font-medium text-gray-400 uppercase tracking-widest mb-4">პირველი გამოცემა</h2>
-        <div class="bg-white rounded border border-gray-200 p-6">
-            <div class="text-sm text-gray-700">
-                <p class="font-medium text-gray-900">„სიტყუაჲ ართრონთათჳს" — ძველი ქართული გრამატიკული ტრაქტატი</p>
-                <p class="text-gray-500 text-xs mt-1 italic" lang="en">Sit'q'uai Art'ront'at'vis — An Old Georgian Grammatical Treatise</p>
+    <!-- Print Edition (Combined with Authorship) — OPEN BY DEFAULT -->
+    <details class="about-section" open>
+        <summary>
+            <h2 class="text-xs font-medium text-gray-400 uppercase tracking-widest">პირველი გამოცემა</h2>
+        </summary>
+        <div class="section-content">
+            <div class="bg-white rounded border border-gray-200 p-6">
+                <div class="text-sm text-gray-700">
+                    <p class="font-medium text-gray-900">„სიტყუაჲ ართრონთათჳს" — ძველი ქართული გრამატიკული ტრაქტატი</p>
+                    <p class="text-gray-500 text-xs mt-1 italic" lang="en">Sit'q'uai Art'ront'at'vis — An Old Georgian Grammatical Treatise</p>
+                </div>
+                
+                <div class="mt-5 pt-5 border-t border-gray-100">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-gray-50">
+                            <tr>
+                                <td class="py-2 text-gray-500 w-40">ავტორი</td>
+                                <td class="py-2 text-gray-900">
+                                    <span class="font-medium">მზექალა შანიძე</span>
+                                    <span class="text-gray-400 text-xs ml-1">(Mzekala Shanidze)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 text-gray-500">გამომცემელი</td>
+                                <td class="py-2 text-gray-700">თბილისის უნივერსიტეტის გამომცემლობა</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 text-gray-500">გამოცემის ადგილი</td>
+                                <td class="py-2 text-gray-700">თბილისი</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 text-gray-500">გამოცემის წელი</td>
+                                <td class="py-2 text-gray-700">1990</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 text-gray-500">გვერდები</td>
+                                <td class="py-2 text-gray-700 font-mono text-xs">129–144</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 text-gray-500">ISBN</td>
+                                <td class="py-2 text-gray-700 font-mono text-xs">5-511-00100-7</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="mt-5 pt-5 border-t border-gray-100">
+                    <a href="https://dspace.nplg.gov.ge/handle/1234/413510" 
+                       target="_blank" 
+                       rel="noopener"
+                       class="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                        <span class="underline">PDF ჩამოტვირთვა</span>
+                        <span class="text-gray-400 text-xs">საქართველოს პარლამენტის ეროვნული ბიბლიოთეკა</span>
+                    </a>
+                </div>
             </div>
-            
-            <div class="mt-5 pt-5 border-t border-gray-100">
+        </div>
+    </details>
+
+    <!-- Manuscripts -->
+    <details class="about-section">
+        <summary>
+            <h2 class="text-xs font-medium text-gray-400 uppercase tracking-widest">ხელნაწერი წყაროები</h2>
+        </summary>
+        <div class="section-content">
+            <div class="bg-white rounded border border-gray-200 divide-y divide-gray-100">
+                <div class="p-5 flex items-start gap-4">
+                    <span class="w-9 h-9 flex items-center justify-center bg-gray-800 text-white rounded text-sm font-mono flex-shrink-0">A</span>
+                    <div class="flex-1 text-sm">
+                        <p class="font-medium text-gray-900">
+ათონის ხელნაწერი                        </p>
+                        <p class="text-gray-600 mt-1">ივერთა მონასტერი</p>
+                        <p class="text-gray-400 mt-1 font-mono text-xs">32r—37r</p>
+                        <p class="text-gray-500 mt-2 text-xs">XII–XIII ს. · არქეტიპთან უახლოესი ასლი</p>
+                    </div>
+                </div>
+                <div class="p-5 flex items-start gap-4">
+                    <span class="w-9 h-9 flex items-center justify-center bg-white border border-gray-300 text-gray-600 rounded text-sm font-mono flex-shrink-0">S</span>
+                    <div class="flex-1 text-sm">
+                        <p class="font-medium text-gray-900">
+სინური ხელნაწერი                        </p>
+                        <p class="text-gray-600 mt-1">ხელნაწერთა ეროვნული ცენტრი</p>
+                        <p class="text-gray-400 mt-1 font-mono text-xs">106r—108v</p>
+                        <p class="text-gray-500 mt-2 text-xs">1541 წ. · გადაწერილი დაზიანებული შუალედური წყაროდან (α)</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-xs text-gray-400 mt-3">
+                დეტალური კოდიკოლოგიური აღწერილობა: <a href="manuscripts/index.html" class="underline hover:text-gray-600">ხელნაწერები →</a>
+            </p>
+        </div>
+    </details>
+    
+    <!-- Georgian description -->
+    <details class="about-section">
+        <summary>
+            <h2 class="text-xs font-medium text-gray-400 uppercase tracking-widest">აღწერა</h2>
+        </summary>
+        <div class="section-content">
+            <div class="bg-white rounded border border-gray-200 p-6">
+                <div class="text-sm text-gray-700 leading-relaxed space-y-4">
+                    <p>
+                        „სიტყუა ართრონთათჳს" წარმოადგენს ძველ ქართულ გრამატიკულ ტრაქტატს, 
+                        რომელიც მიეძღვნა ბერძნული განსაზღვრული არტიკლის (ἄρθρον) ქართულ ენაზე 
+                        თარგმნის პრობლემატიკას. ტექსტი სისტემატურად განიხილავს ბერძნული არტიკლის 
+                        პარადიგმებს სამივე სქესში, რიცხვსა და ბრუნვაში.
+                    </p>
+                    <p>
+                        ტრაქტატი განსაკუთრებულ ყურადღებას უთმობს არტიკლის თეოლოგიურ იმპლიკაციებს, 
+                        კერძოდ, ქრისტოლოგიურ კონტექსტებში, სადაც არტიკლის არსებობა ან არარსებობა 
+                        განასხვავებს „ღმერთს" (ὁ θεός — ერთი ღმერთი) „ღვთისაგან" (θεός — ღვთაება).
+                    </p>
+                    <p>
+                        წინამდებარე ციფრული სამეცნიერო გამოცემა (Level 4) წარმოადგენს 
+                        ტრაქტატის პირველ სრულ ინტერაქტიულ ელექტრონულ ვერსიას. ტექსტი კოდირებულია 
+                        TEI P5 XML სტანდარტით და მოიცავს კრიტიკულ აპარატს ტიპიზებული ვარიანტებით, 
+                        ლექსიკონს ბერძნულ ეკვივალენტებთან, და სემანტიკურ მარკირებას OLiA ონტოლოგიასთან 
+                        გასწორებული ლინგვისტური ტერმინებით.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </details>
+    
+    <!-- English Summary (DSH style) -->
+    <details class="about-section">
+        <summary>
+            <h2 class="text-xs font-medium text-gray-400 uppercase tracking-widest">Abstract</h2>
+        </summary>
+        <div class="section-content">
+            <div class="bg-white rounded border border-gray-200 p-6" lang="en">
+                <p class="font-medium text-gray-900 mb-4" style="font-family: Georgia, serif;">
+                    Discourse on Articles (<em>Sit'q'ua Art'ront'at'vis</em>): A Critical Digital Edition of an Old Georgian Grammatical Treatise
+                </p>
+                <div class="text-sm text-gray-700 leading-relaxed space-y-3" style="font-family: Georgia, serif;">
+                    <p>
+                        The Old Georgian treatise <em>Discourse on Articles</em> (<em>Sit'q'ua Art'ront'at'vis</em>) survives in two witnesses: 
+                        <strong>A</strong> (Athos, Iviron A-6, ff. 32r–37r, 12th–13th c.) and <strong>S</strong> (Tbilisi, S-1141, ff. 106r–108v, 1541 CE). 
+                        It addresses rendering the Greek definite article (ἄρθρον) in article-less Georgian, detailing paradigms across three genders, 
+                        numbers (singular, dual, plural), and cases (nominative, genitive, dative, accusative, vocative), with emphasis on 
+                        Christological distinctions (e.g., ὁ θεός, <em>the one God</em>, distinguished from θεός, <em>a god</em>).
+                    </p>
+                    <p>
+                        This Level 4 digital scholarly edition employs TEI P5 XML and Canonical Text Services (CTS) for a critical text, 
+                        typed apparatus (223 variants: orthographic, lexical, morphological, omission, addition), lexicon of 158 terms 
+                        (linked to Logeion), and OLiA semantic markup enabling Linked Open Data interoperability.
+                    </p>
+                    <p>
+                        Stemmatic analysis identifies <strong>A</strong> as the archetype or near-copy, with <strong>S</strong> descending 
+                        from a 14th–15th-century damaged intermediary (α), evidenced by omissions and mechanical errors.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </details>
+   
+    <!-- Methodology -->
+    <details class="about-section">
+        <summary>
+            <h2 class="text-xs font-medium text-gray-400 uppercase tracking-widest">მეთოდოლოგია</h2>
+        </summary>
+        <div class="section-content">
+            <div class="bg-white rounded border border-gray-200 p-6">
+                <div class="text-sm text-gray-700 leading-relaxed space-y-4">
+                    <p>
+                        <strong class="text-gray-800">კოდირების პრინციპები.</strong> 
+                        ტექსტი კოდირებულია TEI P5 სტანდარტით. კრიტიკული აპარატი იყენებს 
+                        <code class="text-xs bg-gray-100 px-1 rounded font-mono">&lt;app&gt;</code>, 
+                        <code class="text-xs bg-gray-100 px-1 rounded font-mono">&lt;lem&gt;</code>, 
+                        <code class="text-xs bg-gray-100 px-1 rounded font-mono">&lt;rdg&gt;</code> 
+                        ელემენტებს ვარიანტთა აღსანიშნავად. თითოეულ ვარიანტს მინიჭებული აქვს 
+                        <code class="text-xs bg-gray-100 px-1 rounded font-mono">@type</code> ატრიბუტი 
+                        კლასიფიკაციისთვის.
+                        რედაქტორის მიერ აღდგენილი ტექსტი <code class="text-xs bg-gray-100 px-1 rounded font-mono">&lt;supplied&gt;</code> თაგით არის მარკირებული.
+                    </p>
+                    <p>
+                        <strong class="text-gray-800">ციტირების სისტემა.</strong> 
+                        გამოცემა იყენებს CTS URN არქიტექტურას სტაბილური იდენტიფიკატორებისთვის: 
+                        <code class="text-xs bg-gray-100 px-1 rounded font-mono">urn:cts:georgian:shanidze.arthron.ed2025</code>.
+                    </p>
+                    <p>
+                        <strong class="text-gray-800">ონტოლოგიური დაჯგუფება.</strong> 
+                        ლინგვისტური ტერმინები (ბრუნვა, რიცხვი, სქესი და სხვა) გასწორებულია OLiA ონტოლოგიასთან 
+                        <code class="text-xs bg-gray-100 px-1 rounded font-mono">@corresp</code> ატრიბუტით, 
+                        რაც Linguistic Linked Open Data ეკოსისტემასთან თავსებადობის საფუძველია.
+                    </p>
+                    <p>
+                        <strong class="text-gray-800">ლექსიკოგრაფიული რესურსები.</strong> 
+                        ლექსიკონში ბერძნული ტერმინები დაკავშირებულია Logeion ლექსიკონთან, 
+                        რაც მკითხველს საშუალებას აძლევს პირდაპირ გადავიდეს LSJ და სხვა ლექსიკოგრაფიულ რესურსებზე.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </details>
+    
+    <!-- Linked Open Data -->
+    <details class="about-section">
+        <summary>
+            <h2 class="text-xs font-medium text-gray-400 uppercase tracking-widest">ღია ურთიერთდაკავშირებული მონაცემები (LOD)</h2>
+        </summary>
+        <div class="section-content">
+            <div class="bg-white rounded border border-gray-200 p-6">
                 <table class="w-full text-sm">
-                    <tbody class="divide-y divide-gray-50">
+                    <tbody class="divide-y divide-gray-100">
                         <tr>
-                            <td class="py-2 text-gray-500 w-40">ავტორი</td>
-                            <td class="py-2 text-gray-900">
-                                <span class="font-medium">მზექალა შანიძე</span>
-                                <span class="text-gray-400 text-xs ml-1">(Mzekala Shanidze)</span>
-                            </td>
+                            <td class="py-2 text-gray-500">RDF ტრიპლეტები</td>
+                            <td class="py-2 text-right font-mono">1,482</td>
                         </tr>
                         <tr>
-                            <td class="py-2 text-gray-500">გამომცემელი</td>
-                            <td class="py-2 text-gray-700">თბილისის უნივერსიტეტის გამომცემლობა</td>
+                            <td class="py-2 text-gray-500">მონაცემთა მოდელი</td>
+                            <td class="py-2 text-right">OntoLex-Lemon</td>
                         </tr>
                         <tr>
-                            <td class="py-2 text-gray-500">გამოცემის ადგილი</td>
-                            <td class="py-2 text-gray-700">თბილისი</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 text-gray-500">გამოცემის წელი</td>
-                            <td class="py-2 text-gray-700">1990</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 text-gray-500">გვერდები</td>
-                            <td class="py-2 text-gray-700 font-mono text-xs">129–144</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 text-gray-500">ISBN</td>
-                            <td class="py-2 text-gray-700 font-mono text-xs">5-511-00100-7</td>
+                            <td class="py-2 text-gray-500">ფორმატები</td>
+                            <td class="py-2 text-right font-mono text-xs">Turtle, JSON-LD</td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
-            
-            <div class="mt-5 pt-5 border-t border-gray-100">
-                <a href="https://dspace.nplg.gov.ge/handle/1234/413510" 
-                   target="_blank" 
-                   rel="noopener"
-                   class="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                    </svg>
-                    <span class="underline">PDF ჩამოტვირთვა</span>
-                    <span class="text-gray-400 text-xs">საქართველოს პარლამენტის ეროვნული ბიბლიოთეკა</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Manuscripts -->
-    <section class="mb-12">
-        <h2 class="text-xs font-medium text-gray-400 uppercase tracking-widest mb-4">ხელნაწერი წყაროები</h2>
-        <div class="bg-white rounded border border-gray-200 divide-y divide-gray-100">
-            <div class="p-5 flex items-start gap-4">
-                <span class="w-9 h-9 flex items-center justify-center bg-gray-800 text-white rounded text-sm font-mono flex-shrink-0">A</span>
-                <div class="flex-1 text-sm">
-                    <p class="font-medium text-gray-900">
-ათონის ხელნაწერი                    </p>
-                    <p class="text-gray-600 mt-1">ივერთა მონასტერი</p>
-                    <p class="text-gray-400 mt-1 font-mono text-xs">32r—37r</p>
-                    <p class="text-gray-500 mt-2 text-xs">XII–XIII ს. · არქეტიპთან უახლოესი ასლი</p>
+                
+                <div class="mt-5 pt-5 border-t border-gray-100">
+                    <dl class="space-y-3 text-sm">
+                        <div class="flex items-center justify-between">
+                            <dt class="text-gray-500">DOI</dt>
+                            <dd>
+                                <a href="https://doi.org/10.5281/zenodo.18283438" 
+                                   target="_blank" 
+                                   rel="noopener"
+                                   class="font-mono text-xs text-gray-600 hover:text-gray-900 underline">
+                                    10.5281/zenodo.18283438
+                                </a>
+                            </dd>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <dt class="text-gray-500">LOD Cloud</dt>
+                            <dd>
+                                <a href="https://lod-cloud.net/dataset/arthron" 
+                                   target="_blank" 
+                                   rel="noopener"
+                                   class="font-mono text-xs text-gray-600 hover:text-gray-900 underline">
+                                    lod-cloud.net/dataset/arthron
+                                </a>
+                            </dd>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <dt class="text-gray-500">ონტოლოგია</dt>
+                            <dd>
+                                <a href="http://purl.org/olia/olia.owl" 
+                                   target="_blank" 
+                                   rel="noopener"
+                                   class="text-xs text-gray-600 hover:text-gray-900 underline">
+                                    OLiA (Ontologies of Linguistic Annotation)
+                                </a>
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+                
+                <div class="mt-5 pt-5 border-t border-gray-100">
+                    <p class="text-xs text-gray-400 mb-3">RDF მონაცემების ჩამოტვირთვა:</p>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="data/lexicon.ttl" 
+                           download
+                           class="text-xs px-3 py-1.5 border border-gray-200 rounded hover:bg-gray-50 transition-colors font-mono">
+                            lexicon.ttl
+                        </a>
+                        <a href="data/void.ttl" 
+                           download
+                           class="text-xs px-3 py-1.5 border border-gray-200 rounded hover:bg-gray-50 transition-colors font-mono">
+                            void.ttl
+                        </a>
+                        <a href="data/context.jsonld" 
+                           download
+                           class="text-xs px-3 py-1.5 border border-gray-200 rounded hover:bg-gray-50 transition-colors font-mono">
+                            context.jsonld
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="p-5 flex items-start gap-4">
-                <span class="w-9 h-9 flex items-center justify-center bg-white border border-gray-300 text-gray-600 rounded text-sm font-mono flex-shrink-0">S</span>
-                <div class="flex-1 text-sm">
-                    <p class="font-medium text-gray-900">
-სინური ხელნაწერი                    </p>
-                    <p class="text-gray-600 mt-1">ხელნაწერთა ეროვნული ცენტრი</p>
-                    <p class="text-gray-400 mt-1 font-mono text-xs">106r—108v</p>
-                    <p class="text-gray-500 mt-2 text-xs">1541 წ. · გადაწერილი დაზიანებული შუალედური წყაროდან (α)</p>
+        </div>
+    </details>
+    
+    <!-- Technical -->
+    <details class="about-section">
+        <summary>
+            <h2 class="text-xs font-medium text-gray-400 uppercase tracking-widest">ტექნიკური მახასიათებლები</h2>
+        </summary>
+        <div class="section-content">
+            <div class="bg-white rounded border border-gray-200 p-6">
+                <table class="w-full text-sm">
+                    <tbody class="divide-y divide-gray-100">
+                        <tr>
+                            <td class="py-2 text-gray-500">კოდირების სტანდარტი</td>
+                            <td class="py-2 text-right">TEI P5 XML</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 text-gray-500">CTS URN</td>
+                            <td class="py-2 text-right font-mono text-xs">urn:cts:georgian:shanidze.arthron.ed2025</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 text-gray-500">ლექსიკონის URN</td>
+                            <td class="py-2 text-right font-mono text-xs">urn:cts:georgian:shanidze.arthron.lexicon</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 text-gray-500">ჰოსტინგი</td>
+                            <td class="py-2 text-right">GitHub Pages</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 text-gray-500">რეპოზიტორია</td>
+                            <td class="py-2 text-right">
+                                <a href="" class="text-gray-600 hover:text-gray-900 underline" target="_blank">GitHub</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="mt-5 pt-5 border-t border-gray-100">
+                    <p class="text-xs text-gray-400 mb-3">TEI-XML წყაროების ჩამოტვირთვა:</p>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="data/treatise.xml" 
+                           download
+                           class="text-xs px-3 py-1.5 border border-gray-200 rounded hover:bg-gray-50 transition-colors font-mono">
+                            treatise.xml
+                        </a>
+                        <a href="data/lexicon.xml" 
+                           download
+                           class="text-xs px-3 py-1.5 border border-gray-200 rounded hover:bg-gray-50 transition-colors font-mono">
+                            lexicon.xml
+                        </a>
+                        <a href="data/research.xml" 
+                           download
+                           class="text-xs px-3 py-1.5 border border-gray-200 rounded hover:bg-gray-50 transition-colors font-mono">
+                            research.xml
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <p class="text-xs text-gray-400 mt-3">
-            დეტალური კოდიკოლოგიური აღწერილობა: <a href="manuscripts/index.html" class="underline hover:text-gray-600">ხელნაწერები →</a>
-        </p>
-    </section>
+    </details>
     
-    <!-- Georgian description -->
-    <section class="mb-12">
-        <h2 class="text-xs font-medium text-gray-400 uppercase tracking-widest mb-4">აღწერა</h2>
-        <div class="bg-white rounded border border-gray-200 p-6">
-            <div class="text-sm text-gray-700 leading-relaxed space-y-4">
-                <p>
-                    „სიტყუა ართრონთათჳს" წარმოადგენს ძველ ქართულ გრამატიკულ ტრაქტატს, 
-                    რომელიც მიეძღვნა ბერძნული განსაზღვრული არტიკლის (ἄρθρον) ქართულ ენაზე 
-                    თარგმნის პრობლემატიკას. ტექსტი სისტემატურად განიხილავს ბერძნული არტიკლის 
-                    პარადიგმებს სამივე სქესში, რიცხვსა და ბრუნვაში.
-                </p>
-                <p>
-                    ტრაქტატი განსაკუთრებულ ყურადღებას უთმობს არტიკლის თეოლოგიურ იმპლიკაციებს, 
-                    კერძოდ, ქრისტოლოგიურ კონტექსტებში, სადაც არტიკლის არსებობა ან არარსებობა 
-                    განასხვავებს „ღმერთს" (ὁ θεός — ერთი ღმერთი) „ღვთისაგან" (θεός — ღვთაება).
-                </p>
-                <p>
-                    წინამდებარე ციფრული სამეცნიერო გამოცემა (Level 4) წარმოადგენს 
-                    ტრაქტატის პირველ სრულ ინტერაქტიულ ელექტრონულ ვერსიას. ტექსტი კოდირებულია 
-                    TEI P5 XML სტანდარტით და მოიცავს კრიტიკულ აპარატს ტიპიზებული ვარიანტებით, 
-                    ლექსიკონს ბერძნულ ეკვივალენტებთან, და სემანტიკურ მარკირებას OLiA ონტოლოგიასთან 
-                    გასწორებული ლინგვისტური ტერმინებით.
-                </p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- English Summary -->
-    <section class="mb-12">
-        <h2 class="text-xs font-medium text-gray-400 uppercase tracking-widest mb-4">Abstract</h2>
-        <div class="bg-white rounded border border-gray-200 p-6" lang="en">
-            <div class="text-sm text-gray-700 leading-relaxed space-y-4" style="font-family: Georgia, serif;">
-                <p>
-                    <em>Discourse on Articles</em> (<em>Sit'q'ua Art'ront'at'vis</em>) is an Old Georgian 
-                    grammatical treatise preserved in two manuscript witnesses: <strong>A</strong> (Athos, Iviron Monastery, 
-                    A-6, ff. 32r–37r, 12th–13th c.) and <strong>S</strong> (Tbilisi, National Centre of Manuscripts, 
-                    S-1141, ff. 106r–108v, 1541 CE). The text addresses a fundamental problem in Georgian-Greek 
-                    translation: how to render the Greek definite article (ἄρθρον) in Georgian, a language that lacks articles.
-                </p>
-                <p>
-                    The treatise systematically presents the Greek article paradigms across all three genders, 
-                    three numbers (singular, dual, plural), and five cases (nominative, genitive, dative, accusative, 
-                    vocative), explaining their semantic functions and the theological implications of their 
-                    presence or absence—particularly in Christological contexts where the article distinguishes 
-                    between "God" (ὁ θεός, the one God) and "a god" (θεός).
-                </p>
-                <p>
-                    This Level 4 Digital Scholarly Edition, encoded in TEI P5 XML following CTS (Canonical Text Services) 
-                    architecture, provides the critical text with a typed apparatus (223 variants categorized as 
-                    orthographic, lexical, morphological, omission, or addition), a comprehensive lexicon of 158 
-                    grammatical terms with Greek equivalents linked to the Logeion dictionary, and semantic markup 
-                    aligned with the OLiA (Ontologies of Linguistic Annotation) ontology for Linked Open Data interoperability.
-                </p>
-                <p>
-                    Stemmatic analysis reveals that <strong>A</strong> likely represents the archetype or a copy very 
-                    close to it, while <strong>S</strong> descends from a damaged intermediate source (α), probably 
-                    dating to the 14th–15th century. This is evidenced by S's numerous omissions and mechanical errors 
-                    characteristic of copying from a physically deteriorated exemplar.
-                </p>
-            </div>
-        </div>
-    </section>
-    
-   
-    
-    <!-- Methodology -->
-    <section class="mb-12">
-        <h2 class="text-xs font-medium text-gray-400 uppercase tracking-widest mb-4">მეთოდოლოგია</h2>
-        <div class="bg-white rounded border border-gray-200 p-6">
-            <div class="text-sm text-gray-700 leading-relaxed space-y-4">
-                <p>
-                    <strong class="text-gray-800">კოდირების პრინციპები.</strong> 
-                    ტექსტი კოდირებულია TEI P5 სტანდარტით. კრიტიკული აპარატი იყენებს 
-                    <code class="text-xs bg-gray-100 px-1 rounded font-mono">&lt;app&gt;</code>, 
-                    <code class="text-xs bg-gray-100 px-1 rounded font-mono">&lt;lem&gt;</code>, 
-                    <code class="text-xs bg-gray-100 px-1 rounded font-mono">&lt;rdg&gt;</code> 
-                    ელემენტებს ვარიანტთა აღსანიშნავად. თითოეულ ვარიანტს მინიჭებული აქვს 
-                    <code class="text-xs bg-gray-100 px-1 rounded font-mono">@type</code> ატრიბუტი 
-                    კლასიფიკაციისთვის.
-                </p>
-                <p>
-                    <strong class="text-gray-800">ციტირების სისტემა.</strong> 
-                    გამოცემა იყენებს CTS URN არქიტექტურას სტაბილური იდენტიფიკატორებისთვის: 
-                    <code class="text-xs bg-gray-100 px-1 rounded font-mono">urn:cts:georgian:shanidze.arthron.ed2025</code>.
-                </p>
-                <p>
-                    <strong class="text-gray-800">ონტოლოგიური გასწორება.</strong> 
-                    ლინგვისტური ტერმინები (ბრუნვები, რიცხვები, სქესები) გასწორებულია OLiA ონტოლოგიასთან 
-                    <code class="text-xs bg-gray-100 px-1 rounded font-mono">@corresp</code> ატრიბუტით, 
-                    რაც უზრუნველყოფს ინტეროპერაბელობას Linguistic Linked Open Data ეკოსისტემაში.
-                </p>
-                <p>
-                    <strong class="text-gray-800">ლექსიკოგრაფიული რესურსები.</strong> 
-                    ლექსიკონში ბერძნული ტერმინები დაკავშირებულია Logeion ლექსიკონთან, 
-                    რაც მკითხველს საშუალებას აძლევს პირდაპირ გადავიდეს LSJ და სხვა ლექსიკოგრაფიულ რესურსებზე.
-                </p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Linked Open Data -->
-    <section class="mb-12">
-        <h2 class="text-xs font-medium text-gray-400 uppercase tracking-widest mb-4">ღია ურთიერთდაკავშირებული მონაცემები</h2>
-        <div class="bg-white rounded border border-gray-200 p-6">
-            <table class="w-full text-sm">
-                <tbody class="divide-y divide-gray-100">
-                    <tr>
-                        <td class="py-2 text-gray-500">RDF ტრიპლეტები</td>
-                        <td class="py-2 text-right font-mono">1,482</td>
-                    </tr>
-                    <tr>
-                        <td class="py-2 text-gray-500">მონაცემთა მოდელი</td>
-                        <td class="py-2 text-right">OntoLex-Lemon</td>
-                    </tr>
-                    <tr>
-                        <td class="py-2 text-gray-500">ფორმატები</td>
-                        <td class="py-2 text-right font-mono text-xs">Turtle, JSON-LD</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <div class="mt-5 pt-5 border-t border-gray-100">
-                <dl class="space-y-3 text-sm">
-                    <div class="flex items-center justify-between">
-                        <dt class="text-gray-500">DOI</dt>
+    <!-- Digital Edition Credits -->
+    <details class="about-section">
+        <summary>
+            <h2 class="text-xs font-medium text-gray-400 uppercase tracking-widest">ციფრული გამოცემა</h2>
+        </summary>
+        <div class="section-content">
+            <div class="bg-white rounded border border-gray-200 p-6">
+                <dl class="space-y-4 text-sm">
+                    <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-0">
+                        <dt class="sm:w-48 text-gray-500">ტექსტის აკრეფა</dt>
+                        <dd class="font-medium text-gray-900">ცირა ხახვიაშვილი</dd>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-0">
+                        <dt class="sm:w-48 text-gray-500">ციფრული გამოცემა</dt>
                         <dd>
-                            <a href="https://doi.org/10.5281/zenodo.18283438" 
-                               target="_blank" 
-                               rel="noopener"
-                               class="font-mono text-xs text-gray-600 hover:text-gray-900 underline">
-                                10.5281/zenodo.18283438
-                            </a>
+                            <span class="font-medium text-gray-900">თამარ კალხიტაშვილი</span>
+                            <span class="block text-gray-500 text-xs mt-1">ილიას სახელმწიფო უნივერსიტეტი</span>
+                            <span class="block text-gray-400 text-xs">ლინგვისტურ კვლევათა ინსტიტუტი</span>
                         </dd>
                     </div>
-                    <div class="flex items-center justify-between">
-                        <dt class="text-gray-500">LOD Cloud</dt>
-                        <dd>
-                            <a href="https://lod-cloud.net/dataset/arthron" 
-                               target="_blank" 
-                               rel="noopener"
-                               class="font-mono text-xs text-gray-600 hover:text-gray-900 underline">
-                                lod-cloud.net/dataset/arthron
-                            </a>
-                        </dd>
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <dt class="text-gray-500">ონტოლოგია</dt>
-                        <dd>
-                            <a href="http://purl.org/olia/olia.owl" 
-                               target="_blank" 
-                               rel="noopener"
-                               class="text-xs text-gray-600 hover:text-gray-900 underline">
-                                OLiA (Ontologies of Linguistic Annotation)
-                            </a>
-                        </dd>
+                    <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-0">
+                        <dt class="sm:w-48 text-gray-500">გამოცემის წელი</dt>
+                        <dd class="text-gray-700">2026</dd>
                     </div>
                 </dl>
             </div>
-            
-            <div class="mt-5 pt-5 border-t border-gray-100">
-                <p class="text-xs text-gray-400 mb-3">RDF მონაცემების ჩამოტვირთვა:</p>
-                <div class="flex flex-wrap gap-2">
-                    <a href="data/lexicon.ttl" 
-                       download
-                       class="text-xs px-3 py-1.5 border border-gray-200 rounded hover:bg-gray-50 transition-colors font-mono">
-                        lexicon.ttl
-                    </a>
-                    <a href="data/void.ttl" 
-                       download
-                       class="text-xs px-3 py-1.5 border border-gray-200 rounded hover:bg-gray-50 transition-colors font-mono">
-                        void.ttl
-                    </a>
-                    <a href="data/context.jsonld" 
-                       download
-                       class="text-xs px-3 py-1.5 border border-gray-200 rounded hover:bg-gray-50 transition-colors font-mono">
-                        context.jsonld
-                    </a>
-                </div>
-            </div>
         </div>
-    </section>
-    
-    <!-- Technical -->
-    <section class="mb-12">
-        <h2 class="text-xs font-medium text-gray-400 uppercase tracking-widest mb-4">ტექნიკური მახასიათებლები</h2>
-        <div class="bg-white rounded border border-gray-200 p-6">
-            <table class="w-full text-sm">
-                <tbody class="divide-y divide-gray-100">
-                    <tr>
-                        <td class="py-2 text-gray-500">კოდირების სტანდარტი</td>
-                        <td class="py-2 text-right">TEI P5 XML</td>
-                    </tr>
-                    <tr>
-                        <td class="py-2 text-gray-500">CTS URN</td>
-                        <td class="py-2 text-right font-mono text-xs">urn:cts:georgian:shanidze.arthron.ed2025</td>
-                    </tr>
-                    <tr>
-                        <td class="py-2 text-gray-500">ლექსიკონის URN</td>
-                        <td class="py-2 text-right font-mono text-xs">urn:cts:georgian:shanidze.arthron.lexicon</td>
-                    </tr>
-                    <tr>
-                        <td class="py-2 text-gray-500">ჰოსტინგი</td>
-                        <td class="py-2 text-right">GitHub Pages</td>
-                    </tr>
-                    <tr>
-                        <td class="py-2 text-gray-500">რეპოზიტორია</td>
-                        <td class="py-2 text-right">
-                            <a href="" class="text-gray-600 hover:text-gray-900 underline" target="_blank">GitHub</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <div class="mt-5 pt-5 border-t border-gray-100">
-                <p class="text-xs text-gray-400 mb-3">TEI-XML წყაროების ჩამოტვირთვა:</p>
-                <div class="flex flex-wrap gap-2">
-                    <a href="data/treatise.xml" 
-                       download
-                       class="text-xs px-3 py-1.5 border border-gray-200 rounded hover:bg-gray-50 transition-colors font-mono">
-                        treatise.xml
-                    </a>
-                    <a href="data/lexicon.xml" 
-                       download
-                       class="text-xs px-3 py-1.5 border border-gray-200 rounded hover:bg-gray-50 transition-colors font-mono">
-                        lexicon.xml
-                    </a>
-                    <a href="data/research.xml" 
-                       download
-                       class="text-xs px-3 py-1.5 border border-gray-200 rounded hover:bg-gray-50 transition-colors font-mono">
-                        research.xml
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Digital Edition Credits -->
-    <section class="mb-12">
-        <h2 class="text-xs font-medium text-gray-400 uppercase tracking-widest mb-4">ციფრული გამოცემა</h2>
-        <div class="bg-white rounded border border-gray-200 p-6">
-            <dl class="space-y-4 text-sm">
-                <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-0">
-                    <dt class="sm:w-48 text-gray-500">ტექსტის აკრეფა</dt>
-                    <dd class="font-medium text-gray-900">ცირა ხახვიაშვილი</dd>
-                </div>
-                <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-0">
-                    <dt class="sm:w-48 text-gray-500">ციფრული გამოცემა</dt>
-                    <dd>
-                        <span class="font-medium text-gray-900">თამარ კალხიტაშვილი</span>
-                        <span class="block text-gray-500 text-xs mt-1">ილიას სახელმწიფო უნივერსიტეტი</span>
-                        <span class="block text-gray-400 text-xs">ლინგვისტურ კვლევათა ინსტიტუტი</span>
-                    </dd>
-                </div>
-                <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-0">
-                    <dt class="sm:w-48 text-gray-500">გამოცემის წელი</dt>
-                    <dd class="text-gray-700">2026</dd>
-                </div>
-            </dl>
-        </div>
-    </section>
+    </details>
     
     <!-- Citation -->
-    <section class="mb-12">
-        <h2 class="text-xs font-medium text-gray-400 uppercase tracking-widest mb-4">ციტირება</h2>
-        <div class="bg-white rounded border border-gray-200 p-6">
-            <div class="text-sm text-gray-700 leading-relaxed mb-4">
-                <p>
-                    შანიძე, მ. <em>„სიტყუაჲ ართრონთათჳს" — ძველი ქართული გრამატიკული ტრაქტატი: ციფრული სამეცნიერო გამოცემა.</em> 
-                    თ. კალხიტაშვილი (ციფრული რედ.). თბილისი, 2026. 
-                    DOI: <a href="https://doi.org/10.5281/zenodo.18283438" class="underline">10.5281/zenodo.18283438</a>
-                </p>
-            </div>
-            <details class="text-xs">
-                <summary class="text-gray-400 cursor-pointer hover:text-gray-600">BibTeX</summary>
-                <pre class="mt-3 p-3 bg-gray-50 rounded font-mono text-xs overflow-x-auto text-gray-600">@misc{arthron_2025,
-  author       = {შანიძე, მზექალა},
-  editor       = {კალხიტაშვილი, თამარ},
+    <details class="about-section">
+        <summary>
+            <h2 class="text-xs font-medium text-gray-400 uppercase tracking-widest">ციტირება</h2>
+        </summary>
+        <div class="section-content">
+            <div class="bg-white rounded border border-gray-200 p-6">
+                <div class="text-sm text-gray-700 leading-relaxed mb-4">
+                    <p>
+                        შანიძე, მ. <em>„სიტყუაჲ ართრონთათჳს" — ძველი ქართული გრამატიკული ტრაქტატი: ციფრული სამეცნიერო გამოცემა.</em> 
+                        თბილისი, 2026. 
+                        DOI: <a href="https://doi.org/10.5281/zenodo.18283438" class="underline">10.5281/zenodo.18283438</a>
+                    </p>
+                </div>
+                <details class="text-xs">
+                    <summary class="text-gray-400 cursor-pointer hover:text-gray-600">BibTeX</summary>
+                    <pre class="mt-3 p-3 bg-gray-50 rounded font-mono text-xs overflow-x-auto text-gray-600">@misc{arthron_2025,
+  editor       = {შანიძე, მზექალა},
   title        = {„სიტყუაჲ ართრონთათჳს" — ძველი ქართული გრამატიკული ტრაქტატი: ციფრული სამეცნიერო გამოცემა},
   year         = {2026},
   publisher    = {Zenodo},
   doi          = {10.5281/zenodo.18283438},
   url          = {https://tamarae.github.io/Arthron/}
 }</pre>
-            </details>
-        </div>
-    </section>
-    
-    <!-- License -->
-    <section>
-        <h2 class="text-xs font-medium text-gray-400 uppercase tracking-widest mb-4">ლიცენზია</h2>
-        <div class="bg-white rounded border border-gray-200 p-6">
-            <div class="text-sm text-gray-700">
-                <p class="font-medium">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</p>
-                <p class="text-gray-500 mt-1 font-mono text-xs">CC BY-NC-SA 4.0</p>
-                <p class="text-xs text-gray-400 mt-4">
-                    თქვენ შეგიძლიათ გაავრცელოთ და გადაამუშაოთ მასალა არაკომერციული მიზნებისთვის, 
-                    ავტორობის მითითებითა და იმავე ლიცენზიით.
-                </p>
+                </details>
             </div>
         </div>
-    </section>
+    </details>
+    
+    <!-- License -->
+    <details class="about-section">
+        <summary>
+            <h2 class="text-xs font-medium text-gray-400 uppercase tracking-widest">ლიცენზია</h2>
+        </summary>
+        <div class="section-content">
+            <div class="bg-white rounded border border-gray-200 p-6">
+                <div class="text-sm text-gray-700">
+                    <p class="font-medium">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</p>
+                    <p class="text-gray-500 mt-1 font-mono text-xs">CC BY-NC-SA 4.0</p>
+                    <p class="text-xs text-gray-400 mt-4">
+                        თქვენ შეგიძლიათ გაავრცელოთ და გადაამუშაოთ მასალა არაკომერციული მიზნებისთვის, 
+                        ავტორობის მითითებითა და იმავე ლიცენზიით.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </details>
     
 </main>
 

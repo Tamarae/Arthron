@@ -32,7 +32,7 @@
         a foaf:Organization ;
         foaf:name "Digital Scholarly Edition"
     ] ;
-    dct:created "2026-01-19"^^xsd:date ;
+    dct:created "2026-01-20"^^xsd:date ;
     dct:language "ka" ;
     dct:subject <http://dbpedia.org/resource/Georgian_language> ;
     dct:subject <http://dbpedia.org/resource/Old_Georgian> ;

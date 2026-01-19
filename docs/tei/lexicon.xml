@@ -66,7 +66,7 @@
 
                 <entry xml:id="lex.aghgeba">
                     <form type="lemma"><orth xml:lang="ka">აღგება</orth></form>
-                    <sense><def xml:lang="ka">შექმნა.</def></sense>
+                    <sense><def xml:lang="ka">შექმნა</def></sense>
            
                 </entry>
 
@@ -176,10 +176,11 @@
                 <entry xml:id="lex.ganmkhilveli">
                     <form type="lemma"><orth xml:lang="ka">განმხილველი</orth></form>
                     <sense><def xml:lang="ka">განხილვა, მოფიქრება.</def></sense>
+                    <note>შესაძლოა, მთარგმნელმა ბერძნული დედნის διασκάφαντες (მთხრებელი) გაიგო, როგორ διασκεπτομαι (განხილვა მოფიქრება) ზმნის ფორმა</note>
                 </entry>
 
-                <entry xml:id="lex.ganmvedreba">
-                    <form type="lemma"><orth xml:lang="ka">განმვედრება</orth></form>
+                <entry xml:id="lex.ganmxedreba">
+                    <form type="lemma"><orth xml:lang="ka">განმჴედრება</orth></form>
                     <sense><def xml:lang="ka">გაძლიერება.</def></sense>
                 </entry>
 
@@ -286,7 +287,7 @@
                     <sense><def xml:lang="ka">დახშული, დახურული.</def></sense>
                 </entry>
 
-                <entry xml:id="lex.dajsna">
+                <entry xml:id="lex.dakhsna">
                     <form type="lemma"><orth xml:lang="ka">დაჴსნა</orth></form>
                     <sense><def xml:lang="ka">მოსპობა.</def></sense>
            
@@ -305,6 +306,15 @@
                 </entry>
 
                 <!-- ე -->
+                <entry xml:id="lex.empalastro">
+                    <form type="lemma"><orth xml:lang="ka">ემპლასტროჲ</orth>
+                        
+                        <orth type="variant" xml:lang="ka">ემპლასტო</orth>
+                    </form>
+                    <sense><def xml:lang="ka">მალამო, სალბუნი</def></sense>
+                    
+                </entry>
+                
                 <entry xml:id="lex.ertpativi">
                     <form type="lemma"><orth xml:lang="ka">ერთ-პატივი</orth></form>
                     <sense><def xml:lang="ka">თანასწორპატივდებული.</def></sense>
@@ -330,7 +340,7 @@
 
                 <entry xml:id="lex.vrcelmetqueleba">
                     <form type="lemma"><orth xml:lang="ka">ვრცელ-მეტყუელება</orth></form>
-                    <etym><lang>grc</lang><mentioned xml:lang="grc">μακρηγορία</mentioned></etym>
+                    <etym><lang>grc</lang><mentioned xml:lang="grc">πλατυλογέω</mentioned></etym>
                     <sense><def xml:lang="ka">ვრცლად, გრძლად ლაპარაკი.</def></sense>
                 </entry>
 
@@ -343,6 +353,11 @@
                 <entry xml:id="lex.tanaqceva">
                     <form type="lemma"><orth xml:lang="ka">თანა-ქცევა</orth></form>
                     <sense><def xml:lang="ka">ერთად ყოფნა.</def></sense>
+                </entry>
+                
+                <entry xml:id="lex.tanashtamomavlobiti">
+                    <form type="lemma"><orth xml:lang="ka">თანაშთამომავლობით-ი</orth></form>
+                    <sense><def xml:lang="ka">სიტყვა კონტექსტის მიხედვით „სრულის“ საწინააღმდეგო მნიშვნელობისა არის</def></sense>
                 </entry>
 
                 <entry xml:id="lex.theos">
@@ -360,14 +375,38 @@
 
                 <entry xml:id="lex.iefoba">
                     <form type="lemma"><orth xml:lang="ka">იეფობა</orth></form>
-                    <etym><lang>grc</lang><mentioned xml:lang="grc">ἐν ἐυθηნίᾳ</mentioned></etym>
+                    <etym><lang>grc</lang><mentioned xml:lang="grc">ἐν ἐυθηνίᾳ</mentioned></etym>
                     <sense><def xml:lang="ka">სიუხვე, მრავლად ყოფნა.</def></sense>
+                </entry>
+                
+                <entry xml:id="lex.iniokh">
+                    <form type="lemma"><orth xml:lang="ka">ინიოხ-ი</orth></form>
+                    <etym><lang>grc</lang><mentioned xml:lang="grc">ἡνιοχέω</mentioned></etym>
+                    <sense><def xml:lang="ka">რაინდობა</def></sense>
+                </entry>
+                
+                <entry xml:id="lex.ipqlis_gesli">
+                    <form type="lemma"><orth xml:lang="ka">იფქლის გესლ-ი</orth></form>
+                   
+                    <sense><def xml:lang="ka">უნდა აღნიშნავდეს დაავადებას (მცენარისა)</def></sense>
                 </entry>
 
                 <!-- კ -->
                 <entry xml:id="lex.kacobrivi">
                     <form type="lemma"><orth xml:lang="ka">კაცობრივი</orth></form>
                     <sense><def xml:lang="ka">ადამიანური, ადამიანისათვის დამახასიათებელი.</def></sense>
+                </entry>
+                
+                <entry xml:id="lex.ketilgoniereba">
+                    <form type="lemma"><orth xml:lang="ka">კეთილგონიერება-ჲ</orth></form>
+                    <etym><lang>grc</lang><mentioned xml:lang="grc">εὐφρόνησις</mentioned></etym>
+                    <sense><def xml:lang="ka">კეთილგონიერება</def></sense>
+                </entry>
+                
+                <entry xml:id="lex.ketilmsakhureba">
+                    <form type="lemma"><orth xml:lang="ka">კეთილმსახურება-ჲ</orth></form>
+                    <etym><lang>grc</lang><mentioned xml:lang="grc">εὐσέβεια</mentioned></etym>
+                    <sense><def xml:lang="ka">კეთილმსახურება</def></sense>
                 </entry>
 
                 <!-- ლ -->

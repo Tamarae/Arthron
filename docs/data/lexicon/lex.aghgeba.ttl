@@ -21,4 +21,4 @@
     ontolex:writtenRep "აღგება"@ka .
 
 :lex.aghgeba_sense1 a ontolex:LexicalSense ;
-    skos:definition "შექმნა."@ka .
+    skos:definition "შექმნა"@ka .

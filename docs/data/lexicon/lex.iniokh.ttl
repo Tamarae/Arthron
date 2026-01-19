@@ -11,14 +11,18 @@
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-:lex.ganmvedreba a ontolex:LexicalEntry ;
-    rdfs:label "განმვედრება"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.ganmvedreba" ;
-    ontolex:canonicalForm :lex.ganmvedreba_form ;
-    ontolex:sense :lex.ganmvedreba_sense1 .
+:lex.iniokh a ontolex:LexicalEntry ;
+    rdfs:label "ინიოხ-ი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.iniokh" ;
+    ontolex:canonicalForm :lex.iniokh_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "ἡνιοχέω"@grc
+    ] ;
+    ontolex:sense :lex.iniokh_sense1 .
 
-:lex.ganmvedreba_form a ontolex:Form ;
-    ontolex:writtenRep "განმვედრება"@ka .
+:lex.iniokh_form a ontolex:Form ;
+    ontolex:writtenRep "ინიოხ-ი"@ka .
 
-:lex.ganmvedreba_sense1 a ontolex:LexicalSense ;
-    skos:definition "გაძლიერება."@ka .
+:lex.iniokh_sense1 a ontolex:LexicalSense ;
+    skos:definition "რაინდობა"@ka .

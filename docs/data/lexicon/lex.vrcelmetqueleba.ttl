@@ -17,7 +17,7 @@
     ontolex:canonicalForm :lex.vrcelmetqueleba_form ;
     lexinfo:etymology [ 
         a lexinfo:Etymology ;
-        lexinfo:etymon "μακρηγορία"@grc
+        lexinfo:etymon "πλατυλογέω"@grc
     ] ;
     ontolex:sense :lex.vrcelmetqueleba_sense1 .
 

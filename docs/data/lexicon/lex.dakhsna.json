@@ -7,8 +7,8 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "@type": "ontolex:LexicalEntry",
-  "@id": "https://tamarae.github.io/Arthron/lexicon/lex.dajsna",
-  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.dajsna",
+  "@id": "https://tamarae.github.io/Arthron/lexicon/lex.dakhsna",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.dakhsna",
   "rdfs:label": {
     "@value": "დაჴსნა",
     "@language": "ka"
@@ -29,6 +29,13 @@
           "@language": "ka"
         }
       ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "ჰ. 10",
+      "source": "homily",
+      "context": "და ისმინე უკუე, გევედრები განმკაცრებით, აღმოსლვაჲ ესე; რამეთუ ვინაჲთგან…"
     }
   ]
 }

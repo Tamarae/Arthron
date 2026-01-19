@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://tamarae.github.io/Arthron/lexicon/lex.ketilmsakhureba",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.ketilmsakhureba",
+  "rdfs:label": {
+    "@value": "კეთილმსახურება-ჲ",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "კეთილმსახურება-ჲ",
+      "@language": "ka"
+    }
+  },
+  "lexinfo:etymology": {
+    "@type": "lexinfo:Etymology",
+    "lexinfo:etymon": {
+      "@value": "εὐσέβεια",
+      "@language": "grc"
+    }
+  },
+  "ontolex:sense": [
+    {
+      "@type": "ontolex:LexicalSense",
+      "skos:definition": [
+        {
+          "@value": "კეთილმსახურება",
+          "@language": "ka"
+        }
+      ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "ჰ. 2",
+      "source": "homily",
+      "context": "ყოვლითურთ ვიდრემე ჭეშმარიტებისმოყუარებით თქუმითა არავის კაცთაგანსა ძალ-უც…"
+    },
+    {
+      "ref": "ჰ. 4",
+      "source": "homily",
+      "context": "გაჴსოვს უკუე — და რამეთუ არა უწესო არს კუალად მოჴსენებად — თუ ვითარ…"
+    },
+    {
+      "ref": "ჰ. 36",
+      "source": "homily",
+      "context": "ისმინე უკუე წინაჲსწარმეტყველისა მეტყუელისაჲ: „აჰა [ქალწული] მიუდგეს და შვეს ძჱ…"
+    },
+    {
+      "ref": "¶ 110",
+      "source": "research",
+      "context": "კეთილმსახურებაჲ: კეთილმსახურების ძლით — ტკივილთა შინა (ჰომ. 2); განანათლებს…"
+    }
+  ]
+}

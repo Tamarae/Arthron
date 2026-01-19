@@ -23,7 +23,7 @@
   "lexinfo:etymology": {
     "@type": "lexinfo:Etymology",
     "lexinfo:etymon": {
-      "@value": "μακρηγορία",
+      "@value": "πλατυλογέω",
       "@language": "grc"
     }
   },
@@ -40,9 +40,9 @@
   ],
   "attestations": [
     {
-      "ref": "¶ 106",
-      "source": "research",
-      "context": "ვრცელ-მეტყუელება. გამომეტყველთა ზღაპარნი, რიტორთა სიტყუანი... ფილოსოფოსთა…"
+      "ref": "ჰ. 48",
+      "source": "homily",
+      "context": "და იხილე, ვითარ საცთომელ იყო სიტყუაჲ შიშულად ქადაგებული ქალაქსა შინა...…"
     }
   ]
 }

@@ -18,10 +18,10 @@
     dct:title "Discourse on Articles: Lexicon"@en ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon" ;
     dct:language "ka" ;
-    dct:created "2026-01-18"^^xsd:date ;
+    dct:created "2026-01-19"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
     lime:language "ka" ;
-    lime:lexicalEntries 157 .
+    lime:lexicalEntries 163 .
 
 # Lexical Entries
 
@@ -114,7 +114,7 @@
     ontolex:writtenRep "აღგება"@ka .
 
 :lex.aghgeba_sense1 a ontolex:LexicalSense ;
-    skos:definition "შექმნა."@ka .
+    skos:definition "შექმნა"@ka .
 
 :lex.aghvseba a ontolex:LexicalEntry ;
     rdfs:label "აღვსება"@ka ;
@@ -344,16 +344,16 @@
 :lex.ganmkhilveli_sense1 a ontolex:LexicalSense ;
     skos:definition "განხილვა, მოფიქრება."@ka .
 
-:lex.ganmvedreba a ontolex:LexicalEntry ;
-    rdfs:label "განმვედრება"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.ganmvedreba" ;
-    ontolex:canonicalForm :lex.ganmvedreba_form ;
-    ontolex:sense :lex.ganmvedreba_sense1 .
+:lex.ganmxedreba a ontolex:LexicalEntry ;
+    rdfs:label "განმჴედრება"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.ganmxedreba" ;
+    ontolex:canonicalForm :lex.ganmxedreba_form ;
+    ontolex:sense :lex.ganmxedreba_sense1 .
 
-:lex.ganmvedreba_form a ontolex:Form ;
-    ontolex:writtenRep "განმვედრება"@ka .
+:lex.ganmxedreba_form a ontolex:Form ;
+    ontolex:writtenRep "განმჴედრება"@ka .
 
-:lex.ganmvedreba_sense1 a ontolex:LexicalSense ;
+:lex.ganmxedreba_sense1 a ontolex:LexicalSense ;
     skos:definition "გაძლიერება."@ka .
 
 :lex.gansazghvreba a ontolex:LexicalEntry ;
@@ -592,16 +592,16 @@
 :lex.daqofili_sense1 a ontolex:LexicalSense ;
     skos:definition "დახშული, დახურული."@ka .
 
-:lex.dajsna a ontolex:LexicalEntry ;
+:lex.dakhsna a ontolex:LexicalEntry ;
     rdfs:label "დაჴსნა"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.dajsna" ;
-    ontolex:canonicalForm :lex.dajsna_form ;
-    ontolex:sense :lex.dajsna_sense1 .
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.dakhsna" ;
+    ontolex:canonicalForm :lex.dakhsna_form ;
+    ontolex:sense :lex.dakhsna_sense1 .
 
-:lex.dajsna_form a ontolex:Form ;
+:lex.dakhsna_form a ontolex:Form ;
     ontolex:writtenRep "დაჴსნა"@ka .
 
-:lex.dajsna_sense1 a ontolex:LexicalSense ;
+:lex.dakhsna_sense1 a ontolex:LexicalSense ;
     skos:definition "მოსპობა."@ka .
 
 :lex.dreka a ontolex:LexicalEntry ;
@@ -617,6 +617,18 @@
 :lex.dreka_sense1 a ontolex:LexicalSense ;
     skos:definition "ბრუნება (სახელთა)."@ka ;
     skos:definition "Declension."@en .
+
+:lex.empalastro a ontolex:LexicalEntry ;
+    rdfs:label "ემპლასტროჲ"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.empalastro" ;
+    ontolex:canonicalForm :lex.empalastro_form ;
+    ontolex:sense :lex.empalastro_sense1 .
+
+:lex.empalastro_form a ontolex:Form ;
+    ontolex:writtenRep "ემპლასტროჲ"@ka .
+
+:lex.empalastro_sense1 a ontolex:LexicalSense ;
+    skos:definition "მალამო, სალბუნი"@ka .
 
 :lex.ertpativi a ontolex:LexicalEntry ;
     rdfs:label "ერთ-პატივი"@ka ;
@@ -672,7 +684,7 @@
     ontolex:canonicalForm :lex.vrcelmetqueleba_form ;
     lexinfo:etymology [ 
         a lexinfo:Etymology ;
-        lexinfo:etymon "μακρηγορία"@grc
+        lexinfo:etymon "πλατυλογέω"@grc
     ] ;
     ontolex:sense :lex.vrcelmetqueleba_sense1 .
 
@@ -705,6 +717,18 @@
 
 :lex.tanaqceva_sense1 a ontolex:LexicalSense ;
     skos:definition "ერთად ყოფნა."@ka .
+
+:lex.tanashtamomavlobiti a ontolex:LexicalEntry ;
+    rdfs:label "თანაშთამომავლობით-ი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.tanashtamomavlobiti" ;
+    ontolex:canonicalForm :lex.tanashtamomavlobiti_form ;
+    ontolex:sense :lex.tanashtamomavlobiti_sense1 .
+
+:lex.tanashtamomavlobiti_form a ontolex:Form ;
+    ontolex:writtenRep "თანაშთამომავლობით-ი"@ka .
+
+:lex.tanashtamomavlobiti_sense1 a ontolex:LexicalSense ;
+    skos:definition "სიტყვა კონტექსტის მიხედვით „სრულის“ საწინააღმდეგო მნიშვნელობისა არის"@ka .
 
 :lex.theos a ontolex:LexicalEntry ;
     rdfs:label "ღმერთი"@ka ;
@@ -740,7 +764,7 @@
     ontolex:canonicalForm :lex.iefoba_form ;
     lexinfo:etymology [ 
         a lexinfo:Etymology ;
-        lexinfo:etymon "ἐν ἐυθηნίᾳ"@grc
+        lexinfo:etymon "ἐν ἐυθηνίᾳ"@grc
     ] ;
     ontolex:sense :lex.iefoba_sense1 .
 
@@ -749,6 +773,34 @@
 
 :lex.iefoba_sense1 a ontolex:LexicalSense ;
     skos:definition "სიუხვე, მრავლად ყოფნა."@ka .
+
+:lex.iniokh a ontolex:LexicalEntry ;
+    rdfs:label "ინიოხ-ი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.iniokh" ;
+    ontolex:canonicalForm :lex.iniokh_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "ἡνιοχέω"@grc
+    ] ;
+    ontolex:sense :lex.iniokh_sense1 .
+
+:lex.iniokh_form a ontolex:Form ;
+    ontolex:writtenRep "ინიოხ-ი"@ka .
+
+:lex.iniokh_sense1 a ontolex:LexicalSense ;
+    skos:definition "რაინდობა"@ka .
+
+:lex.ipqlis_gesli a ontolex:LexicalEntry ;
+    rdfs:label "იფქლის გესლ-ი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.ipqlis_gesli" ;
+    ontolex:canonicalForm :lex.ipqlis_gesli_form ;
+    ontolex:sense :lex.ipqlis_gesli_sense1 .
+
+:lex.ipqlis_gesli_form a ontolex:Form ;
+    ontolex:writtenRep "იფქლის გესლ-ი"@ka .
+
+:lex.ipqlis_gesli_sense1 a ontolex:LexicalSense ;
+    skos:definition "უნდა აღნიშნავდეს დაავადებას (მცენარისა)"@ka .
 
 :lex.kacobrivi a ontolex:LexicalEntry ;
     rdfs:label "კაცობრივი"@ka ;
@@ -761,6 +813,38 @@
 
 :lex.kacobrivi_sense1 a ontolex:LexicalSense ;
     skos:definition "ადამიანური, ადამიანისათვის დამახასიათებელი."@ka .
+
+:lex.ketilgoniereba a ontolex:LexicalEntry ;
+    rdfs:label "კეთილგონიერება-ჲ"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.ketilgoniereba" ;
+    ontolex:canonicalForm :lex.ketilgoniereba_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "εὐφρόνησις"@grc
+    ] ;
+    ontolex:sense :lex.ketilgoniereba_sense1 .
+
+:lex.ketilgoniereba_form a ontolex:Form ;
+    ontolex:writtenRep "კეთილგონიერება-ჲ"@ka .
+
+:lex.ketilgoniereba_sense1 a ontolex:LexicalSense ;
+    skos:definition "კეთილგონიერება"@ka .
+
+:lex.ketilmsakhureba a ontolex:LexicalEntry ;
+    rdfs:label "კეთილმსახურება-ჲ"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.ketilmsakhureba" ;
+    ontolex:canonicalForm :lex.ketilmsakhureba_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "εὐσέβεια"@grc
+    ] ;
+    ontolex:sense :lex.ketilmsakhureba_sense1 .
+
+:lex.ketilmsakhureba_form a ontolex:Form ;
+    ontolex:writtenRep "კეთილმსახურება-ჲ"@ka .
+
+:lex.ketilmsakhureba_sense1 a ontolex:LexicalSense ;
+    skos:definition "კეთილმსახურება"@ka .
 
 :lex.leqsi a ontolex:LexicalEntry ;
     rdfs:label "ლექსი"@ka ;

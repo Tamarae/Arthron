@@ -23,7 +23,7 @@
   "lexinfo:etymology": {
     "@type": "lexinfo:Etymology",
     "lexinfo:etymon": {
-      "@value": "ἐν ἐυθηნίᾳ",
+      "@value": "ἐν ἐυθηνίᾳ",
       "@language": "grc"
     }
   },
@@ -36,6 +36,13 @@
           "@language": "ka"
         }
       ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "¶ 23",
+      "source": "research",
+      "context": "როგორც გრამატიკულ ტრაქტატს, ისე განსაკუთრებით ი̃თ ჰომილიას ახასიათებს…"
     }
   ]
 }

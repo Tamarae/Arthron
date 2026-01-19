@@ -11,14 +11,14 @@
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-:lex.dajsna a ontolex:LexicalEntry ;
-    rdfs:label "დაჴსნა"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.dajsna" ;
-    ontolex:canonicalForm :lex.dajsna_form ;
-    ontolex:sense :lex.dajsna_sense1 .
+:lex.ipqlis_gesli a ontolex:LexicalEntry ;
+    rdfs:label "იფქლის გესლ-ი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.ipqlis_gesli" ;
+    ontolex:canonicalForm :lex.ipqlis_gesli_form ;
+    ontolex:sense :lex.ipqlis_gesli_sense1 .
 
-:lex.dajsna_form a ontolex:Form ;
-    ontolex:writtenRep "დაჴსნა"@ka .
+:lex.ipqlis_gesli_form a ontolex:Form ;
+    ontolex:writtenRep "იფქლის გესლ-ი"@ka .
 
-:lex.dajsna_sense1 a ontolex:LexicalSense ;
-    skos:definition "მოსპობა."@ka .
+:lex.ipqlis_gesli_sense1 a ontolex:LexicalSense ;
+    skos:definition "უნდა აღნიშნავდეს დაავადებას (მცენარისა)"@ka .

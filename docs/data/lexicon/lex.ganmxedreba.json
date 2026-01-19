@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://tamarae.github.io/Arthron/lexicon/lex.ganmxedreba",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.ganmxedreba",
+  "rdfs:label": {
+    "@value": "განმჴედრება",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "განმჴედრება",
+      "@language": "ka"
+    }
+  },
+  "ontolex:sense": [
+    {
+      "@type": "ontolex:LexicalSense",
+      "skos:definition": [
+        {
+          "@value": "გაძლიერება.",
+          "@language": "ka"
+        }
+      ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "ჰ. 48",
+      "source": "homily",
+      "context": "და იხილე, ვითარ საცთომელ იყო სიტყუაჲ შიშულად ქადაგებული ქალაქსა შინა...…"
+    }
+  ]
+}

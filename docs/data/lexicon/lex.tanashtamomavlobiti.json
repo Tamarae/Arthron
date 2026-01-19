@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://tamarae.github.io/Arthron/lexicon/lex.tanashtamomavlobiti",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.tanashtamomavlobiti",
+  "rdfs:label": {
+    "@value": "თანაშთამომავლობით-ი",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "თანაშთამომავლობით-ი",
+      "@language": "ka"
+    }
+  },
+  "ontolex:sense": [
+    {
+      "@type": "ontolex:LexicalSense",
+      "skos:definition": [
+        {
+          "@value": "სიტყვა კონტექსტის მიხედვით „სრულის“ საწინააღმდეგო მნიშვნელობისა არის",
+          "@language": "ka"
+        }
+      ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "¶ 107",
+      "source": "research",
+      "context": "თანა-შთამომავლობითი. ეს სიტყვა კონტექსტის მიხედვით „სრულის“ საწინააღმდეგო…"
+    }
+  ]
+}

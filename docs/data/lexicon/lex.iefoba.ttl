@@ -17,7 +17,7 @@
     ontolex:canonicalForm :lex.iefoba_form ;
     lexinfo:etymology [ 
         a lexinfo:Etymology ;
-        lexinfo:etymon "ἐν ἐυθηნίᾳ"@grc
+        lexinfo:etymon "ἐν ἐυθηνίᾳ"@grc
     ] ;
     ontolex:sense :lex.iefoba_sense1 .
 

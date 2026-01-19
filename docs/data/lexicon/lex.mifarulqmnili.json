@@ -20,13 +20,6 @@
       "@language": "ka"
     }
   },
-  "lexinfo:etymology": {
-    "@type": "lexinfo:Etymology",
-    "lexinfo:etymon": {
-      "@value": "οἰκουμένη",
-      "@language": "grc"
-    }
-  },
   "ontolex:sense": [
     {
       "@type": "ontolex:LexicalSense",
@@ -36,6 +29,23 @@
           "@language": "ka"
         }
       ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "ჰ. 47",
+      "source": "homily",
+      "context": "ხოლო საცთური იყო მრავალ-ღმერთი; ამისთჳს შეაჩრდილებულად წარმოადგენდეს სიტყუასა…"
+    },
+    {
+      "ref": "¶ 30",
+      "source": "research",
+      "context": "მრჩობლი მიმღეობური ფორმა გვაქვს ამ მაგალითში: არა თუმცა სიბრძნითა მოციქულებრითა…"
+    },
+    {
+      "ref": "¶ 42",
+      "source": "research",
+      "context": "განსაზღვრებერთათვის მთარგმნელი ნაკლებად იყენებს ზმნურ კონსტრუქციებს, ამიტომ…"
     }
   ]
 }

@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://tamarae.github.io/Arthron/lexicon/lex.ketilzhamiereba",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.ketilzhamiereba",
+  "rdfs:label": {
+    "@value": "კეთილჟამიერება-ჲ",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "კეთილჟამიერება-ჲ",
+      "@language": "ka"
+    }
+  },
+  "lexinfo:etymology": {
+    "@type": "lexinfo:Etymology",
+    "lexinfo:etymon": {
+      "@value": "εὐκαιρία",
+      "@language": "grc"
+    }
+  },
+  "ontolex:sense": [
+    {
+      "@type": "ontolex:LexicalSense",
+      "skos:definition": [
+        {
+          "@value": "კეთილჟამიერება",
+          "@language": "ka"
+        }
+      ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "¶ 21",
+      "source": "research",
+      "context": "ქონების სახელთაგან აღსანიშნავია -იერ სუფიქსით ნაწარმოები: კეთილცნობიერსა ჰ. 18;…"
+    },
+    {
+      "ref": "¶ 23",
+      "source": "research",
+      "context": "როგორც გრამატიკულ ტრაქტატს, ისე განსაკუთრებით ი̃თ ჰომილიას ახასიათებს…"
+    },
+    {
+      "ref": "¶ 29",
+      "source": "research",
+      "context": "თხზული ფორმები. გრამატიკულ ტრაქტატში, რომლის ლექსიკა, თხზულების მოცულობისა და…"
+    },
+    {
+      "ref": "¶ 112",
+      "source": "research",
+      "context": "კეთილჟამიერებაჲ: შემძლებელ კეთილჟამიერობით გან[...]თვად (ჰომ. 61). აქ უნდა…"
+    }
+  ]
+}

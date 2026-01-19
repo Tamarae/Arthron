@@ -14,7 +14,11 @@
 :lex.mkhnoba a ontolex:LexicalEntry ;
     rdfs:label "მჴნობა"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.mkhnoba" ;
-    ontolex:canonicalForm :lex.mkhnoba_form .
+    ontolex:canonicalForm :lex.mkhnoba_form ;
+    ontolex:sense :lex.mkhnoba_sense1 .
 
 :lex.mkhnoba_form a ontolex:Form ;
     ontolex:writtenRep "მჴნობა"@ka .
+
+:lex.mkhnoba_sense1 a ontolex:LexicalSense ;
+    skos:definition "განძლიერება"@ka .

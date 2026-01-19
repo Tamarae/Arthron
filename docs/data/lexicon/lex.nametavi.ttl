@@ -14,7 +14,11 @@
 :lex.nametavi a ontolex:LexicalEntry ;
     rdfs:label "ნამეტავი"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.nametavi" ;
-    ontolex:canonicalForm :lex.nametavi_form .
+    ontolex:canonicalForm :lex.nametavi_form ;
+    ontolex:sense :lex.nametavi_sense1 .
 
 :lex.nametavi_form a ontolex:Form ;
     ontolex:writtenRep "ნამეტავი"@ka .
+
+:lex.nametavi_sense1 a ontolex:LexicalSense ;
+    skos:definition "ნეშტი, ზედმეტი, უმეტესი"@ka .

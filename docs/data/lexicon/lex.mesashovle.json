@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://tamarae.github.io/Arthron/lexicon/lex.mesashovle",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.mesashovle",
+  "rdfs:label": {
+    "@value": "მესაშოვლე",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "მესაშოვლე",
+      "@language": "ka"
+    }
+  },
+  "lexinfo:etymology": {
+    "@type": "lexinfo:Etymology",
+    "lexinfo:etymon": {
+      "@value": "μεσίτης",
+      "@language": "grc"
+    }
+  },
+  "ontolex:sense": [
+    {
+      "@type": "ontolex:LexicalSense",
+      "skos:definition": [
+        {
+          "@value": "შუამავალი",
+          "@language": "ka"
+        }
+      ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "ჰ. 14",
+      "source": "homily",
+      "context": "ხედავა, ვითარ კაცობრივი მოძღურებაჲ ურჩებად იქმნების ღმრთისა? მოძღურებასა…"
+    },
+    {
+      "ref": "¶ 104",
+      "source": "research",
+      "context": "მესაშოვლე: ეს სიტყვა ნახმარია კონტექსტში, სადაც წინასწარმეტყველები მიჩნეული…"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://tamarae.github.io/Arthron/lexicon/lex.nacvalmoshurne",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.nacvalmoshurne",
+  "rdfs:label": {
+    "@value": "ნაცვალ-მოშურნე",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "ნაცვალ-მოშურნე",
+      "@language": "ka"
+    }
+  },
+  "ontolex:sense": [
+    {
+      "@type": "ontolex:LexicalSense",
+      "skos:definition": [
+        {
+          "@value": "მეტოქე",
+          "@language": "ka"
+        }
+      ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "¶ 121",
+      "source": "research",
+      "context": "ნაცვალ-მოშურნე: გვხვდება ლ̃გ ჰომილიის ტექსტში: ესე ანნა მრავალ წელ სნეულებდა…"
+    },
+    {
+      "ref": "¶ 122",
+      "source": "research",
+      "context": "სიტყვის განმარტება მოცემულია აშიაზე: „შეისწავე, რამეთუ ერთსა ერთბამად ერთისა…"
+    }
+  ]
+}

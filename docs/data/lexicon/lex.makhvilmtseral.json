@@ -1,0 +1,68 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://tamarae.github.io/Arthron/lexicon/lex.makhvilmtseral",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.makhvilmtseral",
+  "rdfs:label": {
+    "@value": "მახჳლ-მწერალ-ი",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "მახჳლ-მწერალ-ი",
+      "@language": "ka"
+    }
+  },
+  "lexinfo:etymology": {
+    "@type": "lexinfo:Etymology",
+    "lexinfo:etymon": {
+      "@value": "ὀξυγράφος",
+      "@language": "grc"
+    }
+  },
+  "ontolex:sense": [
+    {
+      "@type": "ontolex:LexicalSense",
+      "skos:definition": [
+        {
+          "@value": "ხელოვანი მწერალი",
+          "@language": "ka"
+        }
+      ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "ჰ. 17",
+      "source": "homily",
+      "context": "ესრეთვე გულისჴმა-ჰყოფდ წინაჲსწარმეტყუელისა სიტყუასა და თქუა-თა და ენათა მათთა…"
+    },
+    {
+      "ref": "¶ 14",
+      "source": "research",
+      "context": "მახვილის ნიშნის და საზოგადო პროსოდიის სხვადასხვა ნიშანთა ხმარება აგრეთვე…"
+    },
+    {
+      "ref": "¶ 116",
+      "source": "research",
+      "context": "მახჳლმწერალი: ვითარცა კალამი მწერლისა მახჳლ მწერლისაჲ (ჰომ. 17). მოყვანილი…"
+    },
+    {
+      "ref": "¶ 135",
+      "source": "research",
+      "context": "ზემოთ ნაჩვენები იყო ასეთი სხვაობის ორი მაგალითი: ფსალმუნის ციტატებში ყველა…"
+    },
+    {
+      "ref": "კვლევა ვ",
+      "source": "research",
+      "context": "იკუმშება ძალ ფუძე ბრუნებისას და მაშინაც, როდესაც იგი ახალი ფუძის საწარმოებლად…"
+    }
+  ]
+}

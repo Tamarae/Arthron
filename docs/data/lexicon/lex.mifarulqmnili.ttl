@@ -15,10 +15,6 @@
     rdfs:label "მიფარულ-ქმნილი"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.mifarulqmnili" ;
     ontolex:canonicalForm :lex.mifarulqmnili_form ;
-    lexinfo:etymology [ 
-        a lexinfo:Etymology ;
-        lexinfo:etymon "οἰκουμένη"@grc
-    ] ;
     ontolex:sense :lex.mifarulqmnili_sense1 .
 
 :lex.mifarulqmnili_form a ontolex:Form ;

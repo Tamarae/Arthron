@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "ontolex:LexicalEntry",
+  "@id": "https://tamarae.github.io/Arthron/lexicon/lex.mkwidroan",
+  "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.mkwidroan",
+  "rdfs:label": {
+    "@value": "მკჳდროან-ი",
+    "@language": "ka"
+  },
+  "ontolex:canonicalForm": {
+    "@type": "ontolex:Form",
+    "ontolex:writtenRep": {
+      "@value": "მკჳდროან-ი",
+      "@language": "ka"
+    }
+  },
+  "lexinfo:etymology": {
+    "@type": "lexinfo:Etymology",
+    "lexinfo:etymon": {
+      "@value": "οίκουμενη",
+      "@language": "grc"
+    }
+  },
+  "ontolex:sense": [
+    {
+      "@type": "ontolex:LexicalSense",
+      "skos:definition": [
+        {
+          "@value": "ქვეყნიერება.",
+          "@language": "ka"
+        }
+      ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "¶ 22",
+      "source": "research",
+      "context": "-ოან სუფიქსით ნაწარმოებია: მკჳდროანი ლ̃ ჰომ; წიდოანმან ჰ. 58. ფრთოან რთული…"
+    },
+    {
+      "ref": "კვლევა გ",
+      "source": "research",
+      "context": "ლამპარი კეთილმსახურებისაჲ და ქადაგებაჲ ღმრთისმეცნიერებისაჲ არს განათლებაჲ…"
+    }
+  ]
+}

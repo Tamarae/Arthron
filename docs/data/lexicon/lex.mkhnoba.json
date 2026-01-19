@@ -19,5 +19,28 @@
       "@value": "მჴნობა",
       "@language": "ka"
     }
-  }
+  },
+  "ontolex:sense": [
+    {
+      "@type": "ontolex:LexicalSense",
+      "skos:definition": [
+        {
+          "@value": "განძლიერება",
+          "@language": "ka"
+        }
+      ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "ჰ. 48",
+      "source": "homily",
+      "context": "და იხილე, ვითარ საცთომელ იყო სიტყუაჲ შიშულად ქადაგებული ქალაქსა შინა...…"
+    },
+    {
+      "ref": "¶ 103",
+      "source": "research",
+      "context": "ბერვა: „ათინათა შინა, სადა-იგი მჴნობდა მრავალ-ღმრთეებაჲ, სადა ჰბერვიდეს…"
+    }
+  ]
 }

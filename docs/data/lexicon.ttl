@@ -21,7 +21,7 @@
     dct:created "2026-01-19"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
     lime:language "ka" ;
-    lime:lexicalEntries 163 .
+    lime:lexicalEntries 175 .
 
 # Lexical Entries
 
@@ -846,6 +846,54 @@
 :lex.ketilmsakhureba_sense1 a ontolex:LexicalSense ;
     skos:definition "კეთილმსახურება"@ka .
 
+:lex.ketilzhamiereba a ontolex:LexicalEntry ;
+    rdfs:label "კეთილჟამიერება-ჲ"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.ketilzhamiereba" ;
+    ontolex:canonicalForm :lex.ketilzhamiereba_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "εὐκαιρία"@grc
+    ] ;
+    ontolex:sense :lex.ketilzhamiereba_sense1 .
+
+:lex.ketilzhamiereba_form a ontolex:Form ;
+    ontolex:writtenRep "კეთილჟამიერება-ჲ"@ka .
+
+:lex.ketilzhamiereba_sense1 a ontolex:LexicalSense ;
+    skos:definition "კეთილჟამიერება"@ka .
+
+:lex.ketiltsnobieri a ontolex:LexicalEntry ;
+    rdfs:label "კეთილ-ცნობიერ-ი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.ketiltsnobieri" ;
+    ontolex:canonicalForm :lex.ketiltsnobieri_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "εὐγνώμων"@grc
+    ] ;
+    ontolex:sense :lex.ketiltsnobieri_sense1 .
+
+:lex.ketiltsnobieri_form a ontolex:Form ;
+    ontolex:writtenRep "კეთილ-ცნობიერ-ი"@ka .
+
+:lex.ketiltsnobieri_sense1 a ontolex:LexicalSense ;
+    skos:definition "კეთილცნობიერი"@ka .
+
+:lex.lamparshemosili a ontolex:LexicalEntry ;
+    rdfs:label "ლამპარ-შემოსილ-ი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.lamparshemosili" ;
+    ontolex:canonicalForm :lex.lamparshemosili_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "λαμπαδοῦχος σοφία"@grc
+    ] ;
+    ontolex:sense :lex.lamparshemosili_sense1 .
+
+:lex.lamparshemosili_form a ontolex:Form ;
+    ontolex:writtenRep "ლამპარ-შემოსილ-ი"@ka .
+
+:lex.lamparshemosili_sense1 a ontolex:LexicalSense ;
+    skos:definition "ლამპარშემოსილი"@ka .
+
 :lex.leqsi a ontolex:LexicalEntry ;
     rdfs:label "ლექსი"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.leqsi" ;
@@ -877,6 +925,22 @@
 
 :lex.leqseulad_sense1 a ontolex:LexicalSense ;
     skos:definition "სიტყვა-სიტყვით."@ka .
+
+:lex.loma a ontolex:LexicalEntry ;
+    rdfs:label "ლომა-ჲ"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.loma" ;
+    ontolex:canonicalForm :lex.loma_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "λωμα"@grc
+    ] ;
+    ontolex:sense :lex.loma_sense1 .
+
+:lex.loma_form a ontolex:Form ;
+    ontolex:writtenRep "ლომა-ჲ"@ka .
+
+:lex.loma_sense1 a ontolex:LexicalSense ;
+    skos:definition "აშია"@ka .
 
 :lex.masc a ontolex:LexicalEntry ;
     rdfs:label "მამალი"@ka ;
@@ -941,6 +1005,22 @@
 :lex.martivi_sense1 a ontolex:LexicalSense ;
     skos:definition "უბრალო, განუსწავლელი."@ka .
 
+:lex.makhvilmtseral a ontolex:LexicalEntry ;
+    rdfs:label "მახჳლ-მწერალ-ი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.makhvilmtseral" ;
+    ontolex:canonicalForm :lex.makhvilmtseral_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "ὀξυγράφος"@grc
+    ] ;
+    ontolex:sense :lex.makhvilmtseral_sense1 .
+
+:lex.makhvilmtseral_form a ontolex:Form ;
+    ontolex:writtenRep "მახჳლ-მწერალ-ი"@ka .
+
+:lex.makhvilmtseral_sense1 a ontolex:LexicalSense ;
+    skos:definition "ხელოვანი მწერალი"@ka .
+
 :lex.mgulebeli a ontolex:LexicalEntry ;
     rdfs:label "მგულებელი"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.mgulebeli" ;
@@ -953,6 +1033,34 @@
 :lex.mgulebeli_sense1 a ontolex:LexicalSense ;
     skos:definition "მსურველი, განზრახველი."@ka .
 
+:lex.mezobloba a ontolex:LexicalEntry ;
+    rdfs:label "მეზობლობა"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.mezobloba" ;
+    ontolex:canonicalForm :lex.mezobloba_form ;
+    ontolex:sense :lex.mezobloba_sense1 .
+
+:lex.mezobloba_form a ontolex:Form ;
+    ontolex:writtenRep "მეზობლობა"@ka .
+
+:lex.mezobloba_sense1 a ontolex:LexicalSense ;
+    skos:definition "ახლოს ცხოვრება, მეზობლად ყოფნა"@ka .
+
+:lex.mesashovle a ontolex:LexicalEntry ;
+    rdfs:label "მესაშოვლე"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.mesashovle" ;
+    ontolex:canonicalForm :lex.mesashovle_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "μεσίτης"@grc
+    ] ;
+    ontolex:sense :lex.mesashovle_sense1 .
+
+:lex.mesashovle_form a ontolex:Form ;
+    ontolex:writtenRep "მესაშოვლე"@ka .
+
+:lex.mesashovle_sense1 a ontolex:LexicalSense ;
+    skos:definition "შუამავალი"@ka .
+
 :lex.mecnieri a ontolex:LexicalEntry ;
     rdfs:label "მეცნიერი"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.mecnieri" ;
@@ -964,6 +1072,18 @@
 
 :lex.mecnieri_sense1 a ontolex:LexicalSense ;
     skos:definition "მცოდნე."@ka .
+
+:lex.mtesvar a ontolex:LexicalEntry ;
+    rdfs:label "მთესვარ-ი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.mtesvar" ;
+    ontolex:canonicalForm :lex.mtesvar_form ;
+    ontolex:sense :lex.mtesvar_sense1 .
+
+:lex.mtesvar_form a ontolex:Form ;
+    ontolex:writtenRep "მთესვარ-ი"@ka .
+
+:lex.mtesvar_sense1 a ontolex:LexicalSense ;
+    skos:definition "მთესველი"@ka .
 
 :lex.mitualva a ontolex:LexicalEntry ;
     rdfs:label "მითუალვა"@ka ;
@@ -981,10 +1101,6 @@
     rdfs:label "მიფარულ-ქმნილი"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.mifarulqmnili" ;
     ontolex:canonicalForm :lex.mifarulqmnili_form ;
-    lexinfo:etymology [ 
-        a lexinfo:Etymology ;
-        lexinfo:etymon "οἰκουμένη"@grc
-    ] ;
     ontolex:sense :lex.mifarulqmnili_sense1 .
 
 :lex.mifarulqmnili_form a ontolex:Form ;
@@ -1004,6 +1120,22 @@
 
 :lex.miquma_sense1 a ontolex:LexicalSense ;
     skos:definition "აყვანა."@ka .
+
+:lex.mkwidroan a ontolex:LexicalEntry ;
+    rdfs:label "მკჳდროან-ი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.mkwidroan" ;
+    ontolex:canonicalForm :lex.mkwidroan_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "οίκουμενη"@grc
+    ] ;
+    ontolex:sense :lex.mkwidroan_sense1 .
+
+:lex.mkwidroan_form a ontolex:Form ;
+    ontolex:writtenRep "მკჳდროან-ი"@ka .
+
+:lex.mkwidroan_sense1 a ontolex:LexicalSense ;
+    skos:definition "ქვეყნიერება."@ka .
 
 :lex.mmcqseli a ontolex:LexicalEntry ;
     rdfs:label "მმწყსელი"@ka ;
@@ -1188,18 +1320,61 @@
 :lex.mkhnoba a ontolex:LexicalEntry ;
     rdfs:label "მჴნობა"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.mkhnoba" ;
-    ontolex:canonicalForm :lex.mkhnoba_form .
+    ontolex:canonicalForm :lex.mkhnoba_form ;
+    ontolex:sense :lex.mkhnoba_sense1 .
 
 :lex.mkhnoba_form a ontolex:Form ;
     ontolex:writtenRep "მჴნობა"@ka .
 
+:lex.mkhnoba_sense1 a ontolex:LexicalSense ;
+    skos:definition "განძლიერება"@ka .
+
 :lex.nametavi a ontolex:LexicalEntry ;
     rdfs:label "ნამეტავი"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.nametavi" ;
-    ontolex:canonicalForm :lex.nametavi_form .
+    ontolex:canonicalForm :lex.nametavi_form ;
+    ontolex:sense :lex.nametavi_sense1 .
 
 :lex.nametavi_form a ontolex:Form ;
     ontolex:writtenRep "ნამეტავი"@ka .
+
+:lex.nametavi_sense1 a ontolex:LexicalSense ;
+    skos:definition "ნეშტი, ზედმეტი, უმეტესი"@ka .
+
+:lex.nacvalmospoba a ontolex:LexicalEntry ;
+    rdfs:label "ნაცვალ-მოსპობაჲ"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.nacvalmospoba" ;
+    ontolex:canonicalForm :lex.nacvalmospoba_form ;
+    ontolex:sense :lex.nacvalmospoba_sense1 .
+
+:lex.nacvalmospoba_form a ontolex:Form ;
+    ontolex:writtenRep "ნაცვალ-მოსპობაჲ"@ka .
+
+:lex.nacvalmospoba_sense1 a ontolex:LexicalSense ;
+    skos:definition "ἀνταναιρεῖται კალკი"@ka .
+
+:lex.nacvalmoshurne a ontolex:LexicalEntry ;
+    rdfs:label "ნაცვალ-მოშურნე"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.nacvalmoshurne" ;
+    ontolex:canonicalForm :lex.nacvalmoshurne_form ;
+    ontolex:sense :lex.nacvalmoshurne_sense1 .
+
+:lex.nacvalmoshurne_form a ontolex:Form ;
+    ontolex:writtenRep "ნაცვალ-მოშურნე"@ka .
+
+:lex.nacvalmoshurne_sense1 a ontolex:LexicalSense ;
+    skos:definition "მეტოქე"@ka .
+
+:lex.nacvalsakutebel a ontolex:LexicalEntry ;
+    rdfs:label "ნაცვალ-საკუეთებელი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.nacvalsakutebel" ;
+    ontolex:canonicalForm :lex.nacvalsakutebel_form ;
+    ontolex:sense :lex.nacvalsakutebel_sense1 .
+
+:lex.nacvalsakutebel_form a ontolex:Form ;
+    ontolex:writtenRep "ნაცვალ-საკუეთებელი"@ka .
+
+:lex.nacvalsakutebel_sense1 a ontolex:LexicalSense .
 
 :lex.orghano a ontolex:LexicalEntry ;
     rdfs:label "ორღანო"@ka ;

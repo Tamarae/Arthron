@@ -408,8 +408,27 @@
                     <etym><lang>grc</lang><mentioned xml:lang="grc">εὐσέβεια</mentioned></etym>
                     <sense><def xml:lang="ka">კეთილმსახურება</def></sense>
                 </entry>
+                
+                <entry xml:id="lex.ketilzhamiereba">
+                    <form type="lemma"><orth xml:lang="ka">კეთილჟამიერება-ჲ</orth></form>
+                    <etym><lang>grc</lang><mentioned xml:lang="grc">εὐκαιρία</mentioned></etym>
+                    <sense><def xml:lang="ka">კეთილჟამიერება</def></sense>
+                </entry>
+                
+                <entry xml:id="lex.ketiltsnobieri">
+                    <form type="lemma"><orth xml:lang="ka">კეთილ-ცნობიერ-ი</orth></form>
+                    <etym><lang>grc</lang><mentioned xml:lang="grc">εὐγνώμων</mentioned></etym>
+                    <sense><def xml:lang="ka">კეთილცნობიერი</def></sense>
+                </entry>
 
                 <!-- ლ -->
+                
+                <entry xml:id="lex.lamparshemosili">
+                    <form type="lemma"><orth xml:lang="ka">ლამპარ-შემოსილ-ი</orth></form>
+                    <etym><lang>grc</lang><mentioned xml:lang="grc">λαμπαδοῦχος σοφία</mentioned></etym>
+                    <sense><def xml:lang="ka">ლამპარშემოსილი</def></sense>
+                </entry>
+                
                 <entry xml:id="lex.leqsi">
                     <form type="lemma"><orth xml:lang="ka">ლექსი</orth></form>
                     <etym><lang>grc</lang><mentioned xml:lang="grc">λέξις</mentioned></etym>
@@ -421,6 +440,12 @@
                     <form type="lemma"><orth xml:lang="ka">ლექსეულად</orth></form>
                   <etym><lang>grc</lang><mentioned xml:lang="grc">κατὰ λέξιν</mentioned></etym>
                     <sense><def xml:lang="ka">სიტყვა-სიტყვით.</def></sense>
+                </entry>
+                
+                <entry xml:id="lex.loma">
+                    <form type="lemma"><orth xml:lang="ka">ლომა-ჲ</orth></form>
+                    <etym><lang>grc</lang><mentioned xml:lang="grc">λωμα</mentioned></etym>
+                    <sense><def xml:lang="ka">აშია</def></sense>
                 </entry>
 
                 <!-- მ -->
@@ -451,15 +476,41 @@
                     <sense><def xml:lang="ka">უბრალო, განუსწავლელი.</def></sense>
                 
                 </entry>
+                
+                <entry xml:id="lex.makhvilmtseral">
+                    <form type="lemma"><orth xml:lang="ka">მახჳლ-მწერალ-ი</orth></form>
+                    <etym><lang>grc</lang><mentioned xml:lang="grc">ὀξυγράφος</mentioned></etym>
+                    
+                    <sense><def xml:lang="ka">ხელოვანი მწერალი</def></sense>
+                </entry>
 
                 <entry xml:id="lex.mgulebeli">
                     <form type="lemma"><orth xml:lang="ka">მგულებელი</orth></form>
                     <sense><def xml:lang="ka">მსურველი, განზრახველი.</def></sense>
                 </entry>
-
+                
+                <entry xml:id="lex.mezobloba">
+                    <form type="lemma"><orth xml:lang="ka">მეზობლობა</orth></form>
+                    <sense><def xml:lang="ka">ახლოს ცხოვრება, მეზობლად ყოფნა</def></sense>
+                </entry>
+                    
+                    
+                <entry xml:id="lex.mesashovle">
+                    <form type="lemma"><orth xml:lang="ka">მესაშოვლე</orth></form>
+                    <etym><lang>grc</lang><mentioned xml:lang="grc">μεσίτης</mentioned></etym>
+                    
+                    <sense><def xml:lang="ka">შუამავალი</def></sense>
+                    <note><persName ref="#saba">საბას</persName> ლექსიკონი: „მესიტი — შუამდგომელი“</note>
+                </entry>
+                    
                 <entry xml:id="lex.mecnieri">
                     <form type="lemma"><orth xml:lang="ka">მეცნიერი</orth></form>
                     <sense><def xml:lang="ka">მცოდნე.</def></sense>
+                </entry>
+                
+                <entry xml:id="lex.mtesvar">
+                    <form type="lemma"><orth xml:lang="ka">მთესვარ-ი</orth></form>
+                    <sense><def xml:lang="ka">მთესველი</def></sense>
                 </entry>
 
                 <entry xml:id="lex.mitualva">
@@ -469,13 +520,19 @@
 
                 <entry xml:id="lex.mifarulqmnili">
                     <form type="lemma"><orth xml:lang="ka">მიფარულ-ქმნილი</orth></form>
-                    <etym><lang>grc</lang><mentioned xml:lang="grc">οἰκουμένη</mentioned></etym>
+                    
                     <sense><def xml:lang="ka">დაფარული.</def></sense>
                 </entry>
 
                 <entry xml:id="lex.miquma">
                     <form type="lemma"><orth xml:lang="ka">მიქუმა</orth></form>
                     <sense><def xml:lang="ka">აყვანა.</def></sense>
+                </entry>
+                
+                <entry xml:id="lex.mkwidroan">
+                    <form type="lemma"><orth xml:lang="ka">მკჳდროან-ი</orth></form>
+                    <etym><lang>grc</lang><mentioned xml:lang="grc">οίκουμενη</mentioned></etym>
+                    <sense><def xml:lang="ka">ქვეყნიერება.</def></sense>
                 </entry>
 
                 <entry xml:id="lex.mmcqseli">
@@ -491,7 +548,7 @@
                     <form type="lemma"><orth xml:lang="ka">მოახლება</orth></form>
                     <etym><lang>grc</lang><mentioned xml:lang="grc">ἐγγίζει</mentioned></etym>
                     <sense><def xml:lang="ka">მოახლოვება.</def></sense>
-
+                    <note>შესაბამისი იკითხვისი ოშკის ტექსტში: მოახლებულ არს</note>
                 </entry>
 
                 <entry xml:id="lex.mogoneba">
@@ -561,12 +618,33 @@
 
                 <entry xml:id="lex.mkhnoba">
                     <form type="lemma"><orth xml:lang="ka">მჴნობა</orth></form>
+                    <sense><def xml:lang="ka">განძლიერება</def></sense>
+                    
                 </entry>
 
                 <!-- ნ -->
                 <entry xml:id="lex.nametavi">
                     <form type="lemma"><orth xml:lang="ka">ნამეტავი</orth></form>
-         
+                    
+                    <sense><def xml:lang="ka">ნეშტი, ზედმეტი, უმეტესი</def></sense>
+                </entry>
+                
+                <entry xml:id="lex.nacvalmospoba">
+                    <form type="lemma"><orth xml:lang="ka">ნაცვალ-მოსპობაჲ</orth></form>
+                    
+                    <sense><def xml:lang="ka">ἀνταναιρεῖται კალკი</def></sense>
+                </entry>
+                
+                <entry xml:id="lex.nacvalmoshurne">
+                    <form type="lemma"><orth xml:lang="ka">ნაცვალ-მოშურნე</orth></form>
+                    
+                    <sense><def xml:lang="ka">მეტოქე</def></sense>
+                </entry>
+                
+                <entry xml:id="lex.nacvalsakutebel">
+                    <form type="lemma"><orth xml:lang="ka">ნაცვალ-საკუეთებელი</orth></form>
+                    
+                    <sense><def xml:lang="ka"></def></sense>
                 </entry>
 
                 <!-- ო -->

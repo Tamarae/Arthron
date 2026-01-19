@@ -10,13 +10,13 @@
   "@id": "https://tamarae.github.io/Arthron/lexicon/lex.sashuro",
   "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.sashuro",
   "rdfs:label": {
-    "@value": "საშურო",
+    "@value": "საშურო-ჲ",
     "@language": "ka"
   },
   "ontolex:canonicalForm": {
     "@type": "ontolex:Form",
     "ontolex:writtenRep": {
-      "@value": "საშურო",
+      "@value": "საშურო-ჲ",
       "@language": "ka"
     }
   },
@@ -29,6 +29,13 @@
           "@language": "ka"
         }
       ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "ჰ. 19",
+      "source": "homily",
+      "context": "გუშინ ვიდრემე გჳჩუენეს წინაჲსწარმეტყუელთა ყოვლისა მპყრობელი ძე ყოვლისა…"
     }
   ]
 }

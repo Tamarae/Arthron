@@ -671,6 +671,13 @@
                     <form type="lemma"><orth xml:lang="ka">სათანამდებო</orth></form>
                     <sense><def xml:lang="ka">საჭირო, დასაშვები.</def></sense>
                 </entry>
+                
+                
+                <entry xml:id="lex.sammoktsevi">
+                    <form type="lemma"><orth xml:lang="ka">სამ-მოქცევი</orth></form>
+                    <etym><lang>grc</lang><mentioned xml:lang="grc">τρικυμία</mentioned></etym>
+                    
+                </entry>
 
                 <entry xml:id="lex.samscuali">
                     <form type="lemma"><orth xml:lang="ka">სამსჭუალი</orth></form>
@@ -691,7 +698,7 @@
                 <entry xml:id="lex.sartuli">
                     <form type="lemma"><orth xml:lang="ka">სართული</orth></form>
                     <etym><lang>grc</lang><mentioned xml:lang="grc">ὄροφος</mentioned></etym>
-                    <sense><def xml:lang="ka">სახურავი; ზეცა (მეტაფორულად).</def></sense>
+                    <sense><def xml:lang="ka">სახურავი; ზეცა</def></sense>
                 </entry>
 
                 <entry xml:id="lex.sasmeneli">
@@ -703,9 +710,16 @@
                     <form type="lemma"><orth xml:lang="ka">სასჯელის-ქუეშე</orth></form>
                     <sense><def xml:lang="ka">დასასჯელი.</def></sense>
                 </entry>
+                
+                <entry xml:id="lex.sakmieri">
+                    <form type="lemma"><orth xml:lang="ka">საქმიერი</orth></form>
+                    <etym><lang>grc</lang><mentioned xml:lang="grc">ἐνεργής</mentioned></etym>
+                    
+                    <sense><def xml:lang="ka">შემწე</def></sense>
+                </entry>
 
                 <entry xml:id="lex.sashuro">
-                    <form type="lemma"><orth xml:lang="ka">საშურო</orth></form>
+                    <form type="lemma"><orth xml:lang="ka">საშურო-ჲ</orth></form>
                     <sense><def xml:lang="ka">საჩქარო.</def></sense>
                 </entry>
 
@@ -738,7 +752,14 @@
                     <form type="lemma"><orth xml:lang="ka">სირცხჳლეული</orth></form>
                     <sense><def xml:lang="ka">შერცხვენილი.</def></sense>
                 </entry>
-
+                    
+                <entry xml:id="lex.sidzismqvanebeli">
+                    <form type="lemma"><orth xml:lang="ka">სიძის-მყვანებელ-ი</orth></form>
+                    <etym><lang>grc</lang><mentioned xml:lang="grc">νυμφαγωγός</mentioned></etym>
+                    
+                    <sense><def xml:lang="ka">მაყარი, სიძს მხლებელი</def></sense>
+                </entry>
+                    
                 <entry xml:id="lex.sruleba">
                     <form type="lemma"><orth xml:lang="ka">სრულება</orth></form>
                     <sense><def xml:lang="ka">სრულყოფილება, სავსება.</def></sense>
@@ -751,7 +772,7 @@
  
                 </entry>
 
-                <entry xml:id="lex.skntema">
+                <entry xml:id="lex.swntema">
                   <form type="lemma"><orth xml:lang="ka">სჳნთემა</orth></form>
                     <etym><lang>grc</lang><mentioned xml:lang="grc">σύνθεμα</mentioned></etym>
                     <sense><def xml:lang="ka">თან-შედგმა, შეწყობა.</def></sense>
@@ -799,7 +820,15 @@
                     <form type="lemma"><orth xml:lang="ka">უსამართლოება</orth></form>
                     <sense><def xml:lang="ka">უსამართლოების ჩადენა.</def></sense>
                 </entry>
-
+                
+                <entry xml:id="lex.umlia">
+                    <form type="lemma">
+                        <orth xml:lang="ka">უმლიაჲ</orth>
+                        <orth type="variant" xml:lang="ka">ჰომილია</orth>
+                    </form>
+                    <etym><lang>grc</lang><mentioned xml:lang="grc">ομιλία</mentioned></etym>
+                    <sense><def xml:lang="ka">უარტიკლო</def></sense>
+                </entry>
                 <entry xml:id="lex.uqorcinebeli">
                     <form type="lemma"><orth xml:lang="ka">უქორწინებელი</orth></form>
                     <sense><def xml:lang="ka">გაუთხოვარი.</def></sense>
@@ -812,7 +841,7 @@
 
                 <entry xml:id="lex.ughelvo">
                     <form type="lemma"><orth xml:lang="ka">უღელვო</orth></form>
-                  <etym><lang>grc</lang><mentioned xml:lang="grc">ἀκύμαντον</mentioned></etym>
+                    <etym><lang>grc</lang><mentioned xml:lang="grc">αχείμαστος</mentioned></etym>
                     <sense><def xml:lang="ka">დაწყნარებული, დამშვიდებული.</def></sense>
                 </entry>
 
@@ -840,8 +869,9 @@
                 </entry>
 
                 <entry xml:id="lex.quequemo">
-                    <form type="lemma"><orth xml:lang="ka">ქუე-ქუემო</orth></form>
+                    <form type="lemma"><orth xml:lang="ka">ქუე-ქუემოჲ</orth></form>
                     <sense><def xml:lang="ka">ქვედა ჩასაცმელი.</def></sense>
+                    <note>ილ. აბულაძის მასალების მიხედვით ეს სიტყვა დამოწმებულია ძველი აღთქმის ოშკურ ტექსტში (იერ, 13:22) შესაბამისი იკითხვისი οπίσθια</note>
                 </entry>
 
                 <!-- ღ -->
@@ -1035,7 +1065,7 @@
                     <etym><lang>grc</lang><mentioned xml:lang="grc">τριάς</mentioned></etym>
                     
                 </entry>
-
+              
             </div>
         </body>
     </text>

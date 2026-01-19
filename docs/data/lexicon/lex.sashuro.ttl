@@ -12,13 +12,13 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 :lex.sashuro a ontolex:LexicalEntry ;
-    rdfs:label "საშურო"@ka ;
+    rdfs:label "საშურო-ჲ"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.sashuro" ;
     ontolex:canonicalForm :lex.sashuro_form ;
     ontolex:sense :lex.sashuro_sense1 .
 
 :lex.sashuro_form a ontolex:Form ;
-    ontolex:writtenRep "საშურო"@ka .
+    ontolex:writtenRep "საშურო-ჲ"@ka .
 
 :lex.sashuro_sense1 a ontolex:LexicalSense ;
     skos:definition "საჩქარო."@ka .

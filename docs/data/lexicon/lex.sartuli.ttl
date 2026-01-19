@@ -25,4 +25,4 @@
     ontolex:writtenRep "სართული"@ka .
 
 :lex.sartuli_sense1 a ontolex:LexicalSense ;
-    skos:definition "სახურავი; ზეცა (მეტაფორულად)."@ka .
+    skos:definition "სახურავი; ზეცა"@ka .

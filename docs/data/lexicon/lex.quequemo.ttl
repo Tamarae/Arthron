@@ -12,13 +12,13 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 :lex.quequemo a ontolex:LexicalEntry ;
-    rdfs:label "ქუე-ქუემო"@ka ;
+    rdfs:label "ქუე-ქუემოჲ"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.quequemo" ;
     ontolex:canonicalForm :lex.quequemo_form ;
     ontolex:sense :lex.quequemo_sense1 .
 
 :lex.quequemo_form a ontolex:Form ;
-    ontolex:writtenRep "ქუე-ქუემო"@ka .
+    ontolex:writtenRep "ქუე-ქუემოჲ"@ka .
 
 :lex.quequemo_sense1 a ontolex:LexicalSense ;
     skos:definition "ქვედა ჩასაცმელი."@ka .

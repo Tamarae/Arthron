@@ -10,13 +10,13 @@
   "@id": "https://tamarae.github.io/Arthron/lexicon/lex.quequemo",
   "dct:identifier": "urn:cts:georgian:shanidze.arthron.lexicon:lex.quequemo",
   "rdfs:label": {
-    "@value": "ქუე-ქუემო",
+    "@value": "ქუე-ქუემოჲ",
     "@language": "ka"
   },
   "ontolex:canonicalForm": {
     "@type": "ontolex:Form",
     "ontolex:writtenRep": {
-      "@value": "ქუე-ქუემო",
+      "@value": "ქუე-ქუემოჲ",
       "@language": "ka"
     }
   },
@@ -29,6 +29,13 @@
           "@language": "ka"
         }
       ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "¶ 98",
+      "source": "research",
+      "context": "ასეთების მაგალითებია ლომა, სფეროტირი, „უკუეთუ მოვიღო ლომაჲთ ვიდრე სფეროტირადმდე…"
     }
   ]
 }

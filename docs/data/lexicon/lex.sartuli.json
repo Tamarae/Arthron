@@ -32,10 +32,17 @@
       "@type": "ontolex:LexicalSense",
       "skos:definition": [
         {
-          "@value": "სახურავი; ზეცა (მეტაფორულად).",
+          "@value": "სახურავი; ზეცა",
           "@language": "ka"
         }
       ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "კვლევა გ",
+      "source": "research",
+      "context": "ოდეს ყოვლად შეწყობილსა ამას სოფლისა დასაბამსა აღამზადებდა ღმერთი, საკჳრველთა…"
     }
   ]
 }

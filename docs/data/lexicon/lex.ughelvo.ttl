@@ -17,7 +17,7 @@
     ontolex:canonicalForm :lex.ughelvo_form ;
     lexinfo:etymology [ 
         a lexinfo:Etymology ;
-        lexinfo:etymon "ἀκύμαντον"@grc
+        lexinfo:etymon "αχείμαστος"@grc
     ] ;
     ontolex:sense :lex.ughelvo_sense1 .
 

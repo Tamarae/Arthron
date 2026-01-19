@@ -23,7 +23,7 @@
   "lexinfo:etymology": {
     "@type": "lexinfo:Etymology",
     "lexinfo:etymon": {
-      "@value": "ἀκύμαντον",
+      "@value": "αχείμαστος",
       "@language": "grc"
     }
   },
@@ -36,6 +36,13 @@
           "@language": "ka"
         }
       ]
+    }
+  ],
+  "attestations": [
+    {
+      "ref": "კვლევა გ",
+      "source": "research",
+      "context": "ანგელოსნი ზეცათა ხოროჲსა შემამტკიცებელნი ახარებდეს მწყემსთა, მეტყუელნი:…"
     }
   ]
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>ქუე-ქუემო — ლექსიკონი — სიტყუა ართრონთათჳს</title>
+    <title>ქუე-ქუემოჲ — ლექსიკონი — სიტყუა ართრონთათჳს</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -299,14 +299,14 @@
         <span class="sep">→</span>
         <a href="../lexicon/index.html">ლექსიკონი</a>
         <span class="sep">→</span>
-        <span>ქუე-ქუემო</span>
+        <span>ქუე-ქუემოჲ</span>
     </nav>
     
     <!-- Entry Header -->
     <header class="entry-header">
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
             <div>
-                <h1 class="lemma-main">ქუე-ქუემო</h1>
+                <h1 class="lemma-main">ქუე-ქუემოჲ</h1>
             </div>
             <div class="urn-display">
                 <span>URN:</span>
@@ -337,6 +337,28 @@
     <!-- Examples from lexicon.xml -->
     
     <!-- All Occurrences (from term index) -->
+    <section class="mb-8">
+        <h2 class="section-title">გვხვდება (1)</h2>
+        
+        <!-- Source legend -->
+        <div class="source-legend">
+            <span class="text-gray-400">აღნიშვნები:</span>
+            <span class="source-legend-item"><span class="ref" style="color: #b45309;">§</span> ტრაქტატი</span>
+            <span class="source-legend-item"><span class="ref" style="color: #059669;">ჰ.</span> ჰომილია</span>
+            <span class="source-legend-item"><span class="ref" style="color: #6366f1;">¶</span> კვლევა</span>
+        </div>
+        
+        <div class="occurrences-list">
+            <div class="occ-item">
+                <a href="../research/index.html#p98" class="occ-ref research">
+                    ¶ 98
+                </a>
+                <span class="occ-context">
+                    ასეთების მაგალითებია ლომა, სფეროტირი, „უკუეთუ მოვიღო ლომაჲთ ვიდრე სფეროტირადმდე…
+                </span>
+            </div>
+        </div>
+    </section>
     
     <!-- Related Entries -->
     
@@ -373,7 +395,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
                 </svg>
             </button>
-            <div id="citation-text">ქუე-ქუემო: ქვედა ჩასაცმელი.. In: <em>სიტყუა ართრონთათჳს: ციფრული სამეცნიერო გამოცემა</em>. 2025. URN: urn:cts:georgian:shanidze.arthron.lexicon:lex.quequemo</div>
+            <div id="citation-text">ქუე-ქუემოჲ: ქვედა ჩასაცმელი.. In: <em>სიტყუა ართრონთათჳს: ციფრული სამეცნიერო გამოცემა</em>. 2025. URN: urn:cts:georgian:shanidze.arthron.lexicon:lex.quequemo</div>
         </div>
     </section>
     
@@ -461,7 +483,7 @@ function showToast(message) {
 
 // Highlight term in context (KWIC)
 document.querySelectorAll('.occ-context').forEach(el => {
-    const lemma = 'ქუე-ქუემო';
+    const lemma = 'ქუე-ქუემოჲ';
     const text = el.innerHTML;
     // Simple highlight - in production use proper word boundary detection
     const highlighted = text.replace(new RegExp(`(${lemma}\\S*)`, 'gi'), '<mark>$1</mark>');
@@ -471,7 +493,7 @@ document.querySelectorAll('.occ-context').forEach(el => {
 
 <script>
 const entry_id = 'lex.quequemo';
-const entry_lemma = 'ქუე-ქუემო';
+const entry_lemma = 'ქუე-ქუემოჲ';
 const page_url = window.location.href;
 const urn = 'urn:cts:georgian:shanidze.arthron.lexicon:lex.quequemo';
 </script>

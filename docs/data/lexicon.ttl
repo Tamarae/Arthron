@@ -21,7 +21,7 @@
     dct:created "2026-01-19"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
     lime:language "ka" ;
-    lime:lexicalEntries 175 .
+    lime:lexicalEntries 179 .
 
 # Lexical Entries
 
@@ -1432,6 +1432,18 @@
 :lex.satanasdebo_sense1 a ontolex:LexicalSense ;
     skos:definition "საჭირო, დასაშვები."@ka .
 
+:lex.sammoktsevi a ontolex:LexicalEntry ;
+    rdfs:label "სამ-მოქცევი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.sammoktsevi" ;
+    ontolex:canonicalForm :lex.sammoktsevi_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "τρικυμία"@grc
+    ] .
+
+:lex.sammoktsevi_form a ontolex:Form ;
+    ontolex:writtenRep "სამ-მოქცევი"@ka .
+
 :lex.samscuali a ontolex:LexicalEntry ;
     rdfs:label "სამსჭუალი"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.samscuali" ;
@@ -1482,7 +1494,7 @@
     ontolex:writtenRep "სართული"@ka .
 
 :lex.sartuli_sense1 a ontolex:LexicalSense ;
-    skos:definition "სახურავი; ზეცა (მეტაფორულად)."@ka .
+    skos:definition "სახურავი; ზეცა"@ka .
 
 :lex.sasmeneli a ontolex:LexicalEntry ;
     rdfs:label "სასმენელი"@ka ;
@@ -1508,14 +1520,30 @@
 :lex.sasjelisqueshe_sense1 a ontolex:LexicalSense ;
     skos:definition "დასასჯელი."@ka .
 
+:lex.sakmieri a ontolex:LexicalEntry ;
+    rdfs:label "საქმიერი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.sakmieri" ;
+    ontolex:canonicalForm :lex.sakmieri_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "ἐνεργής"@grc
+    ] ;
+    ontolex:sense :lex.sakmieri_sense1 .
+
+:lex.sakmieri_form a ontolex:Form ;
+    ontolex:writtenRep "საქმიერი"@ka .
+
+:lex.sakmieri_sense1 a ontolex:LexicalSense ;
+    skos:definition "შემწე"@ka .
+
 :lex.sashuro a ontolex:LexicalEntry ;
-    rdfs:label "საშურო"@ka ;
+    rdfs:label "საშურო-ჲ"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.sashuro" ;
     ontolex:canonicalForm :lex.sashuro_form ;
     ontolex:sense :lex.sashuro_sense1 .
 
 :lex.sashuro_form a ontolex:Form ;
-    ontolex:writtenRep "საშურო"@ka .
+    ontolex:writtenRep "საშურო-ჲ"@ka .
 
 :lex.sashuro_sense1 a ontolex:LexicalSense ;
     skos:definition "საჩქარო."@ka .
@@ -1580,6 +1608,22 @@
 :lex.sircxvleuli_sense1 a ontolex:LexicalSense ;
     skos:definition "შერცხვენილი."@ka .
 
+:lex.sidzismqvanebeli a ontolex:LexicalEntry ;
+    rdfs:label "სიძის-მყვანებელ-ი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.sidzismqvanebeli" ;
+    ontolex:canonicalForm :lex.sidzismqvanebeli_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "νυμφαγωγός"@grc
+    ] ;
+    ontolex:sense :lex.sidzismqvanebeli_sense1 .
+
+:lex.sidzismqvanebeli_form a ontolex:Form ;
+    ontolex:writtenRep "სიძის-მყვანებელ-ი"@ka .
+
+:lex.sidzismqvanebeli_sense1 a ontolex:LexicalSense ;
+    skos:definition "მაყარი, სიძს მხლებელი"@ka .
+
 :lex.sruleba a ontolex:LexicalEntry ;
     rdfs:label "სრულება"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.sruleba" ;
@@ -1608,20 +1652,20 @@
 :lex.sulisambrdzoli_sense1 a ontolex:LexicalSense ;
     skos:definition "პნევმატომახი; მწვალებელი."@ka .
 
-:lex.skntema a ontolex:LexicalEntry ;
+:lex.swntema a ontolex:LexicalEntry ;
     rdfs:label "სჳნთემა"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.skntema" ;
-    ontolex:canonicalForm :lex.skntema_form ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.swntema" ;
+    ontolex:canonicalForm :lex.swntema_form ;
     lexinfo:etymology [ 
         a lexinfo:Etymology ;
         lexinfo:etymon "σύνθεμα"@grc
     ] ;
-    ontolex:sense :lex.skntema_sense1 .
+    ontolex:sense :lex.swntema_sense1 .
 
-:lex.skntema_form a ontolex:Form ;
+:lex.swntema_form a ontolex:Form ;
     ontolex:writtenRep "სჳნთემა"@ka .
 
-:lex.skntema_sense1 a ontolex:LexicalSense ;
+:lex.swntema_sense1 a ontolex:LexicalSense ;
     skos:definition "თან-შედგმა, შეწყობა."@ka .
 
 :lex.tanjva a ontolex:LexicalEntry ;
@@ -1712,6 +1756,22 @@
 :lex.usamartloeba_sense1 a ontolex:LexicalSense ;
     skos:definition "უსამართლოების ჩადენა."@ka .
 
+:lex.umlia a ontolex:LexicalEntry ;
+    rdfs:label "უმლიაჲ"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.umlia" ;
+    ontolex:canonicalForm :lex.umlia_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "ομιλία"@grc
+    ] ;
+    ontolex:sense :lex.umlia_sense1 .
+
+:lex.umlia_form a ontolex:Form ;
+    ontolex:writtenRep "უმლიაჲ"@ka .
+
+:lex.umlia_sense1 a ontolex:LexicalSense ;
+    skos:definition "უარტიკლო"@ka .
+
 :lex.uqorcinebeli a ontolex:LexicalEntry ;
     rdfs:label "უქორწინებელი"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.uqorcinebeli" ;
@@ -1742,7 +1802,7 @@
     ontolex:canonicalForm :lex.ughelvo_form ;
     lexinfo:etymology [ 
         a lexinfo:Etymology ;
-        lexinfo:etymon "ἀκύμαντον"@grc
+        lexinfo:etymon "αχείμαστος"@grc
     ] ;
     ontolex:sense :lex.ughelvo_sense1 .
 
@@ -1801,13 +1861,13 @@
     skos:definition "გამოძერწილი."@ka .
 
 :lex.quequemo a ontolex:LexicalEntry ;
-    rdfs:label "ქუე-ქუემო"@ka ;
+    rdfs:label "ქუე-ქუემოჲ"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.quequemo" ;
     ontolex:canonicalForm :lex.quequemo_form ;
     ontolex:sense :lex.quequemo_sense1 .
 
 :lex.quequemo_form a ontolex:Form ;
-    ontolex:writtenRep "ქუე-ქუემო"@ka .
+    ontolex:writtenRep "ქუე-ქუემოჲ"@ka .
 
 :lex.quequemo_sense1 a ontolex:LexicalSense ;
     skos:definition "ქვედა ჩასაცმელი."@ka .

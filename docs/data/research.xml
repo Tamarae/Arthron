@@ -151,7 +151,7 @@
                     <head>ცნობები თხზულების შემცველ ხელნაწერთა შესახებ</head>
                     
                     <!-- ბ.1: MS A (Athos N6) -->
-                    <div type="subsection" n="ბ.1" xml:id="section.b.1">
+                    <div type="subsection" xml:id="section.b.1">
                         <head>ათონის ხელნაწერი (A)</head>
                         
                         <p n="1"><placeName>ათონის ივერთა მონასტრის</placeName> წიგნსაცავის <ref type="ms" target="#ms.A">N6</ref> ხელნაწერი (ჩვენი გამოცემის <ref type="ms" target="#ms.A">A</ref>) დღემდე დაწვრილებით არავის შეუსწავლია. როგორც ზემოთ აღვნიშნეთ, პირველი ცნობები მის შესახებ მოცემულია <persName ref="#ilarioni">ილარიონის</persName> კატალოგში, სადაც ნათქვამია (ავტორისეულ ორთოგრაფიას და პუნქტუაციას უცვლელად ვტოვებთ):</p>
@@ -211,7 +211,7 @@
             
                 
                 <!-- ბ.2: MS S (Safara S-312) -->
-                <div type="subsection" n="ბ.2" xml:id="section.b.2">
+                <div type="subsection" xml:id="section.b.2">
                     <head>საფარული ხელნაწერი (S)</head>
                     
                     <p n="1"><orgName>საქართველოს მეცნიერებათა აკადემიის ხელნაწერთა ინსტიტუტის</orgName> ხელნაწერი <ref type="ms" target="#ms.S">S-312</ref> (დათქმით <ref type="ms" target="#ms.S">S</ref>), რომელიც დაწერილია 22,5 × 17 სმ. ზომის ქაღალდზე, შეიცავს 108 ფურცელს. ნაწერია წვრილი, ლამაზი ნუსხურით, კალიგრაფიული ხელით. მარგინალური შენიშვნები გამოყვანილია ვერტიკალურ ხაზებად, ანდა რთული გეომეტრიული სახის მქონე ჩარჩოებად (20v, 39r—48r, 78r და სხვ.). ხელნაწერი გადაუწერია <persName ref="#svimon">სვიმონ კარგარეთელს</persName> <placeName>საფარის ლავრაში</placeName>, რასაც მოწმობს მისი ანდერძი (გაუხსნელად ვტოვებთ ზოგიერთ ქარაგმას):</p>
@@ -232,7 +232,7 @@
                 </div>
                 
                 <!-- ბ.3: Orthographic Notes -->
-                <div type="subsection" n="ბ.3" xml:id="section.b.3">
+                <div type="subsection" xml:id="section.b.3">
                     <head>ორთოგრაფიული თავისებურებანი S ხელნაწერში</head>
                     
                     <p n="1">მთლიანად ხელნაწერში და შესაბამისად გრამატიკულ ტრაქტატშიც ორთოგრაფიის მხრივ სიჭრელე გვაქვს: <mentioned>ჱ</mentioned>-ს დაწერილობა, როგორც მოსალოდნელი იყო, აღარ გვხვდება იქ, სადაც ძველი ქართულის ნორმების მიხედვით უნდა ყოფილიყო: <mentioned xml:lang="ka-Geok">ესრეთ</mentioned> 3; <mentioned>ჱ</mentioned> გვხვდება უმარცვლო <mentioned>უ</mentioned>-ს შემდეგ: <mentioned xml:lang="ka-Geok">საძირკუჱლნი</mentioned> 3, <mentioned xml:lang="ka-Geok">შუჱნიერ</mentioned> 6, <mentioned xml:lang="ka-Geok">ქუჱ</mentioned> 19; <mentioned xml:lang="ka-Geok">სხუჱბ</mentioned> 19; <mentioned xml:lang="ka-Geok">შუჱნის</mentioned> 19; <mentioned xml:lang="ka-Geok">მეტყუჱლი</mentioned> 20, 21; <mentioned xml:lang="ka-Geok">აჩუჱნოს</mentioned> 22, <mentioned xml:lang="ka-Geok">უკუნარღუჱვს</mentioned> 21. უმარცვლო <mentioned>უ</mentioned> იხმარება არათანმიმდევრულად: <mentioned xml:lang="ka-Geok">იჴუმევენ</mentioned> 1; <mentioned xml:lang="ka-Geok">ითქუმის</mentioned> 19; <mentioned xml:lang="ka-Geok">დაუსუმენ</mentioned> 13; მაგრამ: <mentioned xml:lang="ka-Geok">ითქმოდენვე</mentioned> 8. იშვიათად უმარცვლო <mentioned>უ</mentioned>-ს <mentioned>ჳ</mentioned> გამოხატავს: <mentioned xml:lang="ka-Geok">იჴჳმია</mentioned> 20.</p>
@@ -647,18 +647,18 @@
                         
                         <p>თანხმოვანთაგან საყურადღებოა <foreign xml:lang="grc">β, γ, χ</foreign>-ს ქართული გადმოცემა. პირველის ნიმუშად შეიძლება დავასახელოთ: <mentioned xml:lang="ka-Geok">ქეროვიმთა</mentioned> <num value="31">ლ̃ა</num> ჰომ. და სახელები: <mentioned xml:lang="ka-Geok">იაკობ</mentioned> (<foreign xml:lang="grc">Ἰακώβ</foreign>), <mentioned xml:lang="ka-Geok">რუბენ</mentioned> ჰ. 75 (<foreign xml:lang="grc">Ῥουβήν</foreign>), <mentioned xml:lang="ka-Geok">ხოვარ</mentioned> (<foreign xml:lang="grc">Χοβάρ</foreign>) ჰ. 30. ამ მაგალითებიდან ჩანს, რომ მთარგმნელი კარგად ცნობილ ბიბლიურ სახელებს ძველი, ტრადიციულად ქცეული ფორმით ხმარობს, სხვაგან კი შესაძლოა განსხვავებული გადმოცემა აჩვენოს</p>
                     </div>
-                </div>
+             
                 
                 <!-- SECTION ზ: Linguistic Analysis -->
-                <div type="section" n="ზ" xml:id="section.z">
+                <div type="subsection" xml:id="section.v.language">
                     <head>ენობრივი მიმოხილვა</head>
                     
                     <p xml:id="p.z.1" n="1">
                         <mentioned xml:lang="ka-Geok">ხოვარ</mentioned> ბიბლიის ოშკურ ტექსტში ყველგან (<ref type="biblical">ეზეკ. 3, 15; 23; 10, 15; 10, 20; 10, 22</ref>) <mentioned xml:lang="ka-Geok">ქობარ</mentioned> სახით არის მოცემული<ptr target="#note153"/>, ხოლო გელათურ ბიბლიაში, რომელიც ელინოფილური მიმდინარეობის წარმომადგენლის ნაშრომად არის მიჩნეული, შესაბამის ადგილებში <mentioned xml:lang="ka-Geok">ხობარ</mentioned> იკითხვის, გვხვდება (ვახტანგისეულ გამოცემაში <mentioned xml:lang="ka-Geok">ქობარ</mentioned>). <term xml:lang="grc">χ</term>-ს გადმოცემისას ზემოთ დასახელებულ მაგალითებში ერთგვარობა არ ჩანს (<mentioned xml:lang="ka-Geok">ქეროვიმთა</mentioned>, <mentioned xml:lang="ka-Geok">ხოვარ</mentioned>); შდრ. <mentioned xml:lang="ka-Geok">ხოროთა</mentioned>, <num value="20">კ̃</num>. ჰომ; <mentioned xml:lang="ka-Geok">ინიოხობასა</mentioned> <num value="20">კ̃</num>. ჰომ. <term xml:lang="grc">γ</term>-ს შეესაბამება <mentioned>ღ</mentioned> იმ პოზიციაში, სადაც თვითონ ბერძნულში სპირანტიზებული გამოთქმა არის საგულვებელი (თანხმოვანისა და ხმოვნის წინ): <mentioned xml:lang="ka-Geok">ღრამმატიკოსთა</mentioned> 7; <term target="#lex.orghano">ორღანოსა</term> ჰ. 56.
                     </p>
-                    
+                </div>  
                     <!-- Sub-header for Morphology -->
-                    <div type="subsection" xml:id="section.z.morphology">
+                    <div type="subsection" xml:id="section.v.morphology">
                         <head>მორფოლოგიის საკითხები</head>
                         
                         <p xml:id="p.z.morph.1" n="2">
@@ -772,11 +772,7 @@
                         <p xml:id="p.z.morph.28" n="29">
                             <term target="#lex.compounds">თხზული ფორმები</term>. გრამატიკულ ტრაქტატში, რომლის ლექსიკა, თხზულების მოცულობისა და ხასიათის გამო, საზოგადოდ შეზღუდულია, კომპოზიტები და სხვა რთული სიტყვები შედარებით იშვიათია. სამაგიეროდ ოქროპირისეულ ჰომილიაში მათ მრავლად ვხვდებით. ამათგან ზოგიერთი ძველი ქართულისათვის ჩვეულებრივი ხმარებისაა, მაგრამ ერთი ნაწილი კი საკმაოდ იშვიათია და მთარგმნელის ინდივიდუალური სტილის დამახასიათებლად შეიძლება ჩაითვალოს. ტექსტში დადასტურებულ კომპოზიტთა ერთი ნაწილი ბერძნულის <term>კალკებს</term> წარმოადგენს. ხშირად კომპოზიტისაგან ნაწარმოებია სხვა (უმეტესად აბსტრაქტული) სახელი: <mentioned xml:lang="ka-Geok">ნაცვალ-მოისპოს</mentioned> ჰ. 8; <mentioned xml:lang="ka-Geok">ჴელოვანმეტყუელებენ</mentioned> ჰ. 36; <mentioned xml:lang="ka-Geok">წურილმოქმედებაჲ</mentioned> ჰ. 34; <mentioned xml:lang="ka-Geok">ვრცელმეტყუელებანი</mentioned> ჰ. 48; <mentioned xml:lang="ka-Geok">ერთხმაობად</mentioned> ჰ. 70. რამდენიმე შემთხვევაში კომპოზიტის პირველ ნაწილს <mentioned>კეთილ</mentioned> ფუძე წარმოადგენს: <term target="#lex.ketilzhamiereba">კეთილჟამიერობით</term> ჰ. 61; <mentioned xml:lang="ka-Geok">კეთილპოვნიერებისა</mentioned> <num value="32">ლ̃ბ</num> ჰომ. <mentioned xml:lang="ka-Geok">კეთილმსახურებისა</mentioned> <num value="31">ლ̃ა</num> ჰომ. ასეთივეა <term target="#lex.ketiltsnobieri">კეთილცნობიერსა</term> ჰ. 26.
                         </p>
-                    </div>
-                </div>
-                
-                <!-- Continuation of Section ჱ: სინტაქსი და სტილი -->
-                <div type="subsection" xml:id="section.syntax_style.cont">
+                 
                     <p xml:id="p.z.morph.30" n="30">
                         მრჩობლი მიმღეობური ფორმა გვაქვს ამ მაგალითში: <quote xml:lang="ka-Geok">არა თუმცა სიბრძნითა მოციქულებრითა <term target="#lex.mifarulqmnili">მიფარულ ქმნილ</term> იყო</quote> (ჰ. 47)<ptr target="#note157"/>.
                     </p>
@@ -818,7 +814,7 @@
                     </p>
                 </div>
                 
-                <div type="section" n="ჱ" xml:id="section.syntax_style_new">
+               <div type="subsection" xml:id="section.v.syntax">
                     <head>სინტაქსი და სტილი</head>
                     
                     <p xml:id="p.h.1" n="40">
@@ -850,7 +846,7 @@
                         <persName ref="#euthymius">ეფთვიმე ათონელის</persName> თარგმანებში მიმღეობური კონსტრუქციების გადმოსაცემად ჩვეულებრივ ზმნის პირიან ფორმათა შემცველი წინადადებები გვხვდება<ptr target="#note159"/>, <persName ref="#ephrem">ეფრემ მცირის</persName> ენაში მათი რაოდენობა მატულობს<ptr target="#note160"/>; მათი ჭარბი ხმარება კი, როგორც ცნობილია, პეტრიწონის სკოლის წარმომადგენელთა თხზულებებისათვის არის დამახასიათებელი<ptr target="#note161"/>.
                     </p>
                     
-                    <!-- Continuation of Section ჱ: სინტაქსი და სტილი -->
+                 
                     <p xml:id="p.h.47" n="47">
                         <term target="#lex.mmsazghvreli">მსაზღვრელისა</term> და <term target="#lex.sazghvruli">საზღვრულის</term> თანმიმდევრობა. ვრცელ განსაზღვრებებში, რომლებიც დახლართულ კონსტრუქციებს ქმნის, სხვადასხვა ტიპის მსაზღვრელები რთულ სინტაგმატურ კავშირებს ქმნიან: <quote xml:lang="ka-Geok">ღმრთეება <term target="#lex.qovlisampqrobelibri">ყოვლისა მპყრობელებრისა</term> ჴელმწიფებისა მქონებელი</quote> (ჰ. 71).
                     </p>
@@ -950,7 +946,7 @@
                     <p xml:id="p.h.71" n="71">
                         <term target="#lex.da">და</term> კავშირი <term target="#lex.ca">-ცა</term> ნაწილაკის მნიშვნელობით. ბერძნული ენის ზეგავლენით <term target="#lex.da">და</term> კავშირის ხმარება <term target="#lex.ca">-ცა</term> ნაწილაკის მნიშვნელობით საზოგადოდ ცნობილია ძველ ქართულში<ptr target="#note165"/>. ასეთი შემთხვევები ჩვენს ძეგლებშიც საკმაოდ ხშირია, ამასთან <term target="#lex.da">და</term> უპირატესად <term target="#lex.ca">-ცა</term> ნაწილაკთან ერთად გვხვდება: <quote xml:lang="ka-Geok">ამისთჳს და შუათაცა მოქენე არს ჴუმევად ართრონთა</quote> (17); <quote xml:lang="ka-Geok">ვინაჲთგან და თჳთ პირველთა ძლითიცა ესე სიტყუაჲ ნუუკუე და საწყინო უჩნდეს</quote> (23); <quote xml:lang="ka-Geok">რაჲთა და საქმენიცა გჳკვრდენ</quote> (ჰომ. 3); <quote xml:lang="ka-Geok">და წამებასაცა შემოართუამს</quote> (ჰომ. 20); <quote xml:lang="ka-Geok">კითხულ იქმენინ და ჩუენ მიერცა</quote> (ჰომ. 28); <quote xml:lang="ka-Geok">ეგრეთვე და მახარებელიცა</quote> (ჰომ. 33); <quote xml:lang="ka-Geok">ვითარმედ და მხოლოდშობილიცა ღმრთად იწოდების</quote> (ჰომ. 33); <quote xml:lang="ka-Geok">არა ხოლო... ნერგთა ზედა იწოდების, არამედ და კაცთაცა ზედა</quote> (ჰომ. 75).
                     </p>
-                    <!-- Continuation of Section ჱ: სინტაქსი და სტილი -->
+                  
                     <p xml:id="p.h.72" n="72">
                         უფრო იშვიათად <term target="#lex.da">და</term> ნაწილაკის ფუნქციით იხმარება <term target="#lex.ca">-ცა</term> ნაწილაკის გარეშეც: <quote xml:lang="ka-Geok">ესრეთვე და აქა</quote> (ჰომ. 68); <quote xml:lang="ka-Geok">ამისთჳს უკუე და ნეტარი ისაია... იტყოდა</quote> (ჰომ. 15).
                     </p>
@@ -1010,7 +1006,7 @@
                     </p>
 
                 </div>
-                <div type="section" n="თ" xml:id="section.lexis">
+                    <div type="subsection" xml:id="section.v.lexis">
                     <head>ლექსიკა</head>
                     
                     <p xml:id="p.h.86" n="86">
@@ -1204,10 +1200,10 @@
                         <mentioned xml:lang="grc">λεπτουργέω</mentioned> (ისევე როგორც <mentioned xml:lang="grc">λεπτολογέω</mentioned>) ზმნის ერთ-ერთი მნიშვნელობა არის „სოფიზმების გამოყენებით მსჯელობა, სიტყვებით თამაში, უსაფუძვლო დავა“<ptr target="#note183"/>. ბერძნულ დედანში სავარაუდებელი სიტყვა ამ ზმნისაგან ნაწარმოები აბსტრაქტული სახელი უნდა იყოს.
                     </p>
                 </div>
-              
+        
                
                 
-                <div type="section" n="ი" xml:id="section.biblical_citations">
+                    <div type="subsection" xml:id="section.v.biblical">
                     <head>ბიბლიური ციტატების გადმოცემა</head>
                     
                     <p xml:id="p.h.134" n="134">
@@ -1307,9 +1303,11 @@
                         დასახელებული მაგალითები ცხადყოფს, რომ ჰომილიაში მოყვანილი ციტატები განსხვავებულია იმ დროს არსებული ქართული ბიბლიური წიგნების შესაბამის იკითხვისთაგან. არ არის სავარაუდო, რომ მთარგმნელს ხელთ ჰქონდა რაიმე, ჩვენთვის უცნობი მთლიანი თარგმანი ძველი და ახალი აღთქმისა. ციტატების ხასიათი და მათი შეპირისპირება არსებულ ქართულ რედაქციებთან გვიჩვენებს, რომ მთარგმნელი იყენებს ძველ თარგმანებს, ოღონდ ციტატების ტექსტს ცვლის მაშინ, როდესაც ქართულ იკითხვისებს, მისი ვარაუდით, სიზუსტე აკლია.
                     </p>
                 </div>
-                
+             </div>
+                    
+                    
                 <div type="section" n="ზ" xml:id="section.authorship">
-                    <head>ზ. ვისი დაწერილია „სიტყუაჲ ართრონთათჳს?“</head>
+                    <head>ვისი დაწერილია „სიტყუაჲ ართრონთათჳს?“</head>
                     
                     <p xml:id="p.h.158" n="158">
                         <title>„სიტყუაჲ ართრონთათჳს“</title>, როგორც უკვე აღინიშნა, დაწერილია იმ პირის მიერ, რომელსაც უთარგმნია მეცხრამეტე ჰომილია და საზოგადოდ ათონურ № 6 ხელნაწერში შეტანილი ყველა თხზულება. ვინ უნდა ყოფილიყო იგი?
@@ -1624,7 +1622,8 @@
                     </p>
                 </div>
                 
-    
+      
+      
             </body>
                 <back>
                 <div type="notes">

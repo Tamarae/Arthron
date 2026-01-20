@@ -764,7 +764,7 @@
     ontolex:canonicalForm :lex.iefoba_form ;
     lexinfo:etymology [ 
         a lexinfo:Etymology ;
-        lexinfo:etymon "ἐν ἐυθηνίᾳ"@grc
+        lexinfo:etymon "ἐυθηνίᾳ"@grc
     ] ;
     ontolex:sense :lex.iefoba_sense1 .
 

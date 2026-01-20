@@ -91,7 +91,7 @@
                                     
                                     <layoutDesc>
                                         <layout columns="2" writtenLines="33">
-                                            <!-- <p>ორსვეტიანი ნაწერი, თითოეულ სვეტში 33 სტრიქონია.</p> -->
+                                           <p>ორსვეტიანი ნაწერი, თითოეულ სვეტში 33 სტრიქონია.</p>
                                         </layout>
                                     </layoutDesc>
                                 </objectDesc>

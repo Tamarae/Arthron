@@ -4,7 +4,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title xml:lang="ka">იოანე ოქროპირის ჰომილია ი̃თ</title>
+                <title xml:lang="ka">იოანე ოქროპირის ჰომილია Ი̃Თ</title>
                 <author>
                     <persName xml:lang="ka">იოანე ოქროპირი</persName>
                 </author>
@@ -14,26 +14,139 @@
                 <date when="2025">2025</date>
             </publicationStmt>
             <sourceDesc>
-                <msDesc>
-                    <msIdentifier>
-                        <repository>National Centre of Manuscripts</repository>
-                        <idno>A-6</idno>
-                    </msIdentifier>
-                </msDesc>
+                <listWit>
+                    
+                    <witness xml:id="A">
+                        <msDesc xml:id="A-6">
+                            <msIdentifier>
+                                <country>საბერძნეთი</country>
+                                <settlement>ათონის მთა</settlement>
+                                <repository>ივერთა მონასტერი</repository>
+                                <collection>ქართულ ხელნაწერთა კოლექცია</collection>
+                                <idno>A-6</idno>
+                            </msIdentifier>
+                            
+                            <msContents>
+                                <summary>იოანე ოქროპირის თხზულებათა კრებული (შემონახულია ი̃ზ - ლ̃გ თავები)</summary>
+                                <textLang mainLang="ka-Geok">ძველი ქართული</textLang>
+                                
+                                <msItem n="1" xml:id="A-main">
+                                    <locus from="1r" to="170v">170 ფ.</locus>
+                                    <title xml:lang="ka">იოანე ოქროპირის სწავლანი და გრამატიკული ტრაქტატი</title>
+                                    <rubric xml:lang="ka">იოანე ოქროპირის სწავლანი და გრამატიკული ტრაქტატი</rubric>
+                                    <incipit>თქმული იოანე ოქროპირისა «სიტყვისა მისთვს», ვითარმედ: «ქრისტე აღმოსავალი აღმოსავალთაჲ»...</incipit>
+                                    <note>ხელნაწერი წარმოადგენს კრებულს, რომელიც თავდაპირველად 33 თხზულებას შეიცავდა (შემორჩენილია 17). მათ შორის უმნიშვნელოვანესია გრამატიკული ტრაქტატის ადრეული ტექსტი, რომელიც ჩართულია ოქროპირისეული თხზულების თარგმანში.</note>
+                                </msItem>
+                                
+                                <msItem n="2" xml:id="A-arthron">
+                                    <locus from="32r" to="37r">32r—37r</locus>
+                                    <title xml:lang="ka">სიტყუაი ართრონთათჳს</title>
+                                    <rubric xml:lang="ka">სიტყუაჲ ართრონთათჳს</rubric>
+                                    <note>გრამატიკული ტრაქტატის ადრეული რედაქცია, ჩართული ოქროპირის თხზულებაში.</note>
+                                </msItem>
+                                
+                                <msItem>
+                                    <colophon>
+                                        <note>ორიგინალი ანდერძი დაკარგულია (თავ-ბოლო ნაკლული ხელნაწერი). ბოლო ფურცელზე (170v) დაცულია გვიანდელი მინაწერები:</note>
+                                        <persName role="binder" key="Michael_Chuchuashvili">მიქაელ ჭუჭაშვილი</persName> (შემკაზმელი)
+                                        <persName role="owner" key="Venedikton">ვენედიქტონ</persName> (1823 წ.)
+                                        <persName role="scholar" key="Ilarion_Ber">ილარიონ ბერი</persName> (XIX ს.)
+                                    </colophon>
+                                </msItem>
+                            </msContents>
+                            
+                            <physDesc>
+                                <objectDesc form="codex">
+                                    <supportDesc material="paper">
+                                        <support>აღმოსავლური ქაღალდი, ოდნავ გალესილი, ვერტიკალური ზოლებით („ვერჟერები").</support>
+                                        <extent>
+                                            <measure unit="leaf" quantity="170">170 ფ. (აკლია დაახლოებით 135)</measure>
+                                            <dimensions unit="mm" type="leaf">
+                                                <height>370</height>
+                                                <width>255</width>
+                                            </dimensions>
+                                            <dimensions unit="mm" type="written">
+                                                <height>275</height>
+                                                <width>165</width>
+                                            </dimensions>
+                                        </extent>
+                                        <collation>
+                                            <signatures>რვეულებრივი სათვალავი (ი̃ჱ — ლ̃ზ) გატარებულია ნუსხურით ზედა და ქვედა აშიებზე.</signatures>
+                                        </collation>
+                                        <condition>ძალზე დაზიანებული. მელანს ქაღალდი დაუწვავს (გოგირდმჟავა რკინის შემცველობის გამო), რის გამოც მრავალი ფურცელი დაშლილია.</condition>
+                                    </supportDesc>
+                                    
+                                    <layoutDesc>
+                                        <layout columns="2" writtenLines="33">
+                                            <p>ორსვეტიანი ნაწერი, თითოეულ სვეტში 33 სტრიქონია.</p>
+                                        </layout>
+                                    </layoutDesc>
+                                </objectDesc>
+                                
+                                <handDesc hands="1">
+                                    <handNote xml:id="A-scribe01" script="Nuskhuri" medium="black-ink">
+                                        <persName role="scribe">უცნობი გადამწერი (ეფრემ მცირის სკოლის მიმდევარი)</persName>
+                                        <note resp="#M_Shanidze">პალეოგრაფიული ნიშნები (პუნქტუაცია, მახვილები, პროსოდიული ნიშნები) მიუთითებს ეფრემ მცირის ლიტერატურულ სკოლასთან კავშირზე.</note>
+                                        <p>ერთგვაროვანი, სწორი, მომრგვალებული და კუთხოვანი ნუსხური. საზედაო ასოებად გამოყენებულია ასომთავრული.</p>
+                                    </handNote>
+                                </handDesc>
+                                
+                                <decoDesc>
+                                    <decoNote type="headpiece">
+                                        <p>სწორკუთხა თავსამკაულები წრეებითა და მცენარეული ორნამენტებით. შესრულებულია მუქი წითელი მელნით.</p>
+                                    </decoNote>
+                                </decoDesc>
+                                
+                                <bindingDesc>
+                                    <binding contemporary="false">
+                                        <p>ფიცარზე გადაკრული სადა შავი ტყავი.</p>
+                                    </binding>
+                                </bindingDesc>
+                            </physDesc>
+                            
+                            <history>
+                                <origin>
+                                    <origDate notBefore="1180" notAfter="1220">XII ს. დასასრული - XIII ს. დასაწყისი</origDate>
+                                    <origPlace>ათონის ივერთა მონასტერი (სავარაუდოდ)</origPlace>
+                                    <note resp="#M_Shanidze">რ. ბლეიკი ხელნაწერს XVII ს-ით ათარიღებდა, ა. ცაგარელი - XIV-XVI სს-ით, თუმცა პალეოგრაფიული ანალიზი XII-XIII სს-ზე მიუთითებს.</note>
+                                </origin>
+                                <provenance>
+                                    <p>მფლობელი: <persName role="owner">ათონის ივერთა მონასტრის წიგნსაცავი (N6)</persName></p>
+                                </provenance>
+                            </history>
+                            
+                            <additional>
+                                <adminInfo>
+                                    <custodialHist>
+                                        <custEvent type="microfilm" when="1981">მიკროფილმი გადაღებულია გურამ პატარაიას თაოსნობით.</custEvent>
+                                    </custodialHist>
+                                </adminInfo>
+                                <listBibl>
+                                    <bibl n="1">შანიძე, (1990). გრამატიკული ტრაქტატის გამოცემა.</bibl>
+                                    <bibl n="2">Blake, R. P. Catalogue of the Georgian Manuscripts in the Convent of Iviron on Mount Athos.</bibl>
+                                    <bibl n="3">ცაგარელი, ა. N 85 ხელნაწერის აღწერილობა.</bibl>
+                                </listBibl>
+                            </additional>
+                        </msDesc>
+                    </witness>
+                </listWit>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
     <text>
         <body>
+            <div type="comentary">
+                <cit><ref target="research.xml#section.d">კომენტარი</ref></cit>
+            </div>
             <!-- Homily_1.txt -->
             <div type="homily">
             <div type="section" n="1">
                 <pb n="26v" facs="A-26v"/><lb n="26vb"/>
-                <head>ი̃თ. მისივე წმიდისა მამისა ჩუენისა იოანე ოქროპირისა კონსტანტინუპოლელ მთავარეპისკოპოსიაჲ. სიტყჳსა მისთჳს, ვითარმედ: „ქრისტე აღმოსავალი არს აღმოსავალთაჲ“ და ვითარმედ „აღვიდა“ და „შთავიდა“ და სულისათჳს წმიდისა, ვითარმედ: „ყოვლისა მპყრობელ არს“.</head>
+                <head>Ი̃Თ. მისივე წმიდისა მამისა ჩუენისა იოანე ოქროპირისა კონსტანტინუპოლელ მთავარეპისკოპოსიაჲ. სიტყჳსა მისთჳს, ვითარმედ: „ქრისტე აღმოსავალი არს აღმოსავალთაჲ“ და ვითარმედ „აღვიდა“ და „შთავიდა“ და სულისათჳს წმიდისა, ვითარმედ: „ყოვლისა მპყრობელ არს“.</head>
                 <p>მ<supplied reason="lost">ამაო</supplied>, გ<supplied reason="lost">უაკურთხენ</supplied></p>
                 
                 <p n="1" xml:id="homily.1">
-                    გუშინ, ჩუენ, ჵ ქრისტეს მოყუარენო, წინაჲსწარმეტყუელთა და მახარებელთა <term target="#lex.shemosruli">შემოსრულთა</term> ჴმათა მხოლოდ-შობილისა ღმრთისმეტყუელებაჲ განგჳბრწყინვეს ქრისტეს მოყუარესა ერსა. და ეჴსენების ესე ტკივილთ-მოყუარეთა და მოსწრაფეთა მსმენელთაგანთა, თუ ვითარ ჩუენ ღმრთისმეტყუელებისა <term target="#lex.dzlit">ძლით</term> განგუემარტა სიტყუაჲ მრავლად ვიდრემე ღირსებისაგან დაკლებული, გარნა ეგრეთცა, რაოდენ <term target="#lex.dasatevneli">დასატევნელ</term> იყო ენისა უკუდავთა ფილოსოფოსობად იძულებულისა. ხოლო არარაჲს დამაკლებე<supplied reason="lost">ლ............</supplied> სასა მოქენ<supplied reason="lost">..........</supplied>არ ვიდრემე არს ჭეშმარიტებისა სიტყუაჲ და დიდსა <pb n="27r" facs="A-27r"/><lb n="27ra"/> უკუე(?) ზესთ(?) სოფლისა სიბრძნესა(?). და <term target="#lex.kacobrivi">კაცობრივი</term> სიტყუაჲ გლახაკი და უძლური და მოკუდავი დაშურების უკუდავთა <term target="#lex.carmodgineba">წარმოდგინებად</term> იძულებული.
+                    გუშინ, ჩუენ, ჵ ქრისტეს მოყუარენო, წინაჲსწარმეტყუელთა და მახარებელთა <term target="#lex.shemosruli">შემოსრულთა</term> ჴმათა მხოლოდ-შობილისა ღმრთისმეტყუელებაჲ განგჳბრწყინვეს ქრისტეს მოყუარესა ერსა. და ეჴსენების ესე ტკივილთ-მოყუარეთა და მოსწრაფეთა მსმენელთაგანთა, თუ ვითარ ჩუენ ღმრთისმეტყუელებისა <term target="#lex.dzlit">ძლით</term> განგუემარტა სიტყუაჲ მრავლად ვიდრემე ღირსებისაგან დაკლებული, გარნა ეგრეთცა, რაოდენ <term target="#lex.dasatevneli">დასატევნელ</term> იყო ენისა უკუდავთა ფილოსოფოსობად იძულებულისა. ხოლო არარაჲს დამაკლებე<supplied reason="lost">ლ............</supplied> სასა მოქენ<supplied reason="lost">..........</supplied>არ ვიდრემე არს ჭეშმარიტებისა სიტყუაჲ და დიდსა <pb n="27r" facs="A-27r"/><lb n="27ra"/> უკუე(?) ზესთ(?) სოფლისა სიბრძნესა(?). და <term target="#lex.kacobrivi">კაცობრივი</term> სიტყუაჲ გლახაკი და უძლური და მოკუდავი დაშურების უკუდავთა <term target="#lex.carmodgineba">წარმოდგინებად</term> იძულებული. <note type="editorial">ტექსტი პარაგრაფებად დაყოფილია ჩვენს მიერ. მ.შ.</note>
                 </p>
 
                 <p n="2" xml:id="homily.2">

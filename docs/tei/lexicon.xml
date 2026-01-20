@@ -375,7 +375,7 @@
 
                 <entry xml:id="lex.iefoba">
                     <form type="lemma"><orth xml:lang="ka">იეფობა</orth></form>
-                    <etym><lang>grc</lang><mentioned xml:lang="grc">ἐν ἐυθηνίᾳ</mentioned></etym>
+                    <etym><lang>grc</lang><mentioned xml:lang="grc">ἐυθηνίᾳ</mentioned></etym>
                     <sense><def xml:lang="ka">სიუხვე, მრავლად ყოფნა.</def></sense>
                 </entry>
                 

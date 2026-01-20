@@ -54,15 +54,6 @@
 :lex.adviloba_sense1 a ontolex:LexicalSense ;
     skos:definition "მარტივი, სახელობითი ბრუნვა"@ka .
 
-:lex.nom a ontolex:LexicalEntry ;
-    rdfs:label "სახელობითი"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.nom" ;
-    ontolex:canonicalForm :lex.nom_form ;
-    skos:closeMatch <http://purl.org/olia/olia.owl#Nominative> .
-
-:lex.nom_form a ontolex:Form ;
-    ontolex:writtenRep "სახელობითი"@ka .
-
 :lex.arthron a ontolex:LexicalEntry ;
     rdfs:label "ართრონი"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.arthron" ;
@@ -319,6 +310,19 @@
 
 :lex.ganmkacreba_sense1 a ontolex:LexicalSense ;
     skos:definition "დაწვრილებით გამოძიება, ჩაძიება."@ka .
+
+:lex.plural a ontolex:LexicalEntry ;
+    rdfs:label "განმრავლებითი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.plural" ;
+    ontolex:canonicalForm :lex.plural_form ;
+    skos:closeMatch <http://purl.org/olia/olia.owl#Plural> ;
+    ontolex:sense :lex.plural_sense1 .
+
+:lex.plural_form a ontolex:Form ;
+    ontolex:writtenRep "განმრავლებითი"@ka .
+
+:lex.plural_sense1 a ontolex:LexicalSense ;
+    skos:definition "მრავლობითი რიცხვი."@ka .
 
 :lex.ganmcdeloba a ontolex:LexicalEntry ;
     rdfs:label "განმცდელობა"@ka ;
@@ -604,6 +608,23 @@
 :lex.dakhsna_sense1 a ontolex:LexicalSense ;
     skos:definition "მოსპობა."@ka .
 
+:lex.fem a ontolex:LexicalEntry ;
+    rdfs:label "დედალი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.fem" ;
+    ontolex:canonicalForm :lex.fem_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "θηλυκόν"@grc
+    ] ;
+    skos:closeMatch <http://purl.org/olia/olia.owl#Feminine> ;
+    ontolex:sense :lex.fem_sense1 .
+
+:lex.fem_form a ontolex:Form ;
+    ontolex:writtenRep "დედალი"@ka .
+
+:lex.fem_sense1 a ontolex:LexicalSense ;
+    skos:definition "მდედრობითი სქესი"@ka .
+
 :lex.dreka a ontolex:LexicalEntry ;
     rdfs:label "დრეკა"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.dreka" ;
@@ -653,6 +674,19 @@
 
 :lex.ertkhmaoba_sense1 a ontolex:LexicalSense ;
     skos:definition "ერთიანობა, შეთანხმებულობა."@ka .
+
+:lex.sing a ontolex:LexicalEntry ;
+    rdfs:label "ერთობითი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.sing" ;
+    ontolex:canonicalForm :lex.sing_form ;
+    skos:closeMatch <http://purl.org/olia/olia.owl#Singular> ;
+    ontolex:sense :lex.sing_sense1 .
+
+:lex.sing_form a ontolex:Form ;
+    ontolex:writtenRep "ერთობითი"@ka .
+
+:lex.sing_sense1 a ontolex:LexicalSense ;
+    skos:definition "მხოლობითი რიცხვი."@ka .
 
 :lex.eksoria a ontolex:LexicalEntry ;
     rdfs:label "ექსორია"@ka ;
@@ -730,18 +764,6 @@
 :lex.tanashtamomavlobiti_sense1 a ontolex:LexicalSense ;
     skos:definition "სიტყვა კონტექსტის მიხედვით „სრულის“ საწინააღმდეგო მნიშვნელობისა არის"@ka .
 
-:lex.theos a ontolex:LexicalEntry ;
-    rdfs:label "ღმერთი"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.theos" ;
-    ontolex:canonicalForm :lex.theos_form ;
-    lexinfo:etymology [ 
-        a lexinfo:Etymology ;
-        lexinfo:etymon "θεός"@grc
-    ] .
-
-:lex.theos_form a ontolex:Form ;
-    ontolex:writtenRep "ღმერთი"@ka .
-
 :lex.iataki a ontolex:LexicalEntry ;
     rdfs:label "იატაკი"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.iataki" ;
@@ -814,6 +836,22 @@
 :lex.kacobrivi_sense1 a ontolex:LexicalSense ;
     skos:definition "ადამიანური, ადამიანისათვის დამახასიათებელი."@ka .
 
+:lex.ketiltsnobieri a ontolex:LexicalEntry ;
+    rdfs:label "კეთილ-ცნობიერ-ი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.ketiltsnobieri" ;
+    ontolex:canonicalForm :lex.ketiltsnobieri_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "εὐγνώμων"@grc
+    ] ;
+    ontolex:sense :lex.ketiltsnobieri_sense1 .
+
+:lex.ketiltsnobieri_form a ontolex:Form ;
+    ontolex:writtenRep "კეთილ-ცნობიერ-ი"@ka .
+
+:lex.ketiltsnobieri_sense1 a ontolex:LexicalSense ;
+    skos:definition "კეთილცნობიერი"@ka .
+
 :lex.ketilgoniereba a ontolex:LexicalEntry ;
     rdfs:label "კეთილგონიერება-ჲ"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.ketilgoniereba" ;
@@ -862,22 +900,6 @@
 :lex.ketilzhamiereba_sense1 a ontolex:LexicalSense ;
     skos:definition "კეთილჟამიერება"@ka .
 
-:lex.ketiltsnobieri a ontolex:LexicalEntry ;
-    rdfs:label "კეთილ-ცნობიერ-ი"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.ketiltsnobieri" ;
-    ontolex:canonicalForm :lex.ketiltsnobieri_form ;
-    lexinfo:etymology [ 
-        a lexinfo:Etymology ;
-        lexinfo:etymon "εὐγνώμων"@grc
-    ] ;
-    ontolex:sense :lex.ketiltsnobieri_sense1 .
-
-:lex.ketiltsnobieri_form a ontolex:Form ;
-    ontolex:writtenRep "კეთილ-ცნობიერ-ი"@ka .
-
-:lex.ketiltsnobieri_sense1 a ontolex:LexicalSense ;
-    skos:definition "კეთილცნობიერი"@ka .
-
 :lex.lamparshemosili a ontolex:LexicalEntry ;
     rdfs:label "ლამპარ-შემოსილ-ი"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.lamparshemosili" ;
@@ -894,22 +916,6 @@
 :lex.lamparshemosili_sense1 a ontolex:LexicalSense ;
     skos:definition "ლამპარშემოსილი"@ka .
 
-:lex.leqsi a ontolex:LexicalEntry ;
-    rdfs:label "ლექსი"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.leqsi" ;
-    ontolex:canonicalForm :lex.leqsi_form ;
-    lexinfo:etymology [ 
-        a lexinfo:Etymology ;
-        lexinfo:etymon "λέξις"@grc
-    ] ;
-    ontolex:sense :lex.leqsi_sense1 .
-
-:lex.leqsi_form a ontolex:Form ;
-    ontolex:writtenRep "ლექსი"@ka .
-
-:lex.leqsi_sense1 a ontolex:LexicalSense ;
-    skos:definition "სიტყვა, ტერმინი."@ka .
-
 :lex.leqseulad a ontolex:LexicalEntry ;
     rdfs:label "ლექსეულად"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.leqseulad" ;
@@ -925,6 +931,22 @@
 
 :lex.leqseulad_sense1 a ontolex:LexicalSense ;
     skos:definition "სიტყვა-სიტყვით."@ka .
+
+:lex.leqsi a ontolex:LexicalEntry ;
+    rdfs:label "ლექსი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.leqsi" ;
+    ontolex:canonicalForm :lex.leqsi_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "λέξις"@grc
+    ] ;
+    ontolex:sense :lex.leqsi_sense1 .
+
+:lex.leqsi_form a ontolex:Form ;
+    ontolex:writtenRep "ლექსი"@ka .
+
+:lex.leqsi_sense1 a ontolex:LexicalSense ;
+    skos:definition "სიტყვა, ტერმინი."@ka .
 
 :lex.loma a ontolex:LexicalEntry ;
     rdfs:label "ლომა-ჲ"@ka ;
@@ -958,40 +980,6 @@
 
 :lex.masc_sense1 a ontolex:LexicalSense ;
     skos:definition "მამრობითი სქესი"@ka .
-
-:lex.fem a ontolex:LexicalEntry ;
-    rdfs:label "დედალი"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.fem" ;
-    ontolex:canonicalForm :lex.fem_form ;
-    lexinfo:etymology [ 
-        a lexinfo:Etymology ;
-        lexinfo:etymon "θηλυκόν"@grc
-    ] ;
-    skos:closeMatch <http://purl.org/olia/olia.owl#Feminine> ;
-    ontolex:sense :lex.fem_sense1 .
-
-:lex.fem_form a ontolex:Form ;
-    ontolex:writtenRep "დედალი"@ka .
-
-:lex.fem_sense1 a ontolex:LexicalSense ;
-    skos:definition "მდედრობითი სქესი"@ka .
-
-:lex.neut a ontolex:LexicalEntry ;
-    rdfs:label "შუაჲ"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.neut" ;
-    ontolex:canonicalForm :lex.neut_form ;
-    lexinfo:etymology [ 
-        a lexinfo:Etymology ;
-        lexinfo:etymon "οὐδέτερον"@grc
-    ] ;
-    skos:closeMatch <http://purl.org/olia/olia.owl#Neuter> ;
-    ontolex:sense :lex.neut_sense1 .
-
-:lex.neut_form a ontolex:Form ;
-    ontolex:writtenRep "შუაჲ"@ka .
-
-:lex.neut_sense1 a ontolex:LexicalSense ;
-    skos:definition "საშუალო სქესი"@ka .
 
 :lex.martivi a ontolex:LexicalEntry ;
     rdfs:label "მარტივი"@ka ;
@@ -1085,6 +1073,19 @@
 :lex.mtesvar_sense1 a ontolex:LexicalSense ;
     skos:definition "მთესველი"@ka .
 
+:lex.acc a ontolex:LexicalEntry ;
+    rdfs:label "მიზეზობითი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.acc" ;
+    ontolex:canonicalForm :lex.acc_form ;
+    skos:closeMatch <http://purl.org/olia/olia.owl#Accusative> ;
+    ontolex:sense :lex.acc_sense1 .
+
+:lex.acc_form a ontolex:Form ;
+    ontolex:writtenRep "მიზეზობითი"@ka .
+
+:lex.acc_sense1 a ontolex:LexicalSense ;
+    skos:definition "ბრალდებითი ბრუნვა."@ka .
+
 :lex.mitualva a ontolex:LexicalEntry ;
     rdfs:label "მითუალვა"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.mitualva" ;
@@ -1120,6 +1121,19 @@
 
 :lex.miquma_sense1 a ontolex:LexicalSense ;
     skos:definition "აყვანა."@ka .
+
+:lex.dat a ontolex:LexicalEntry ;
+    rdfs:label "მიცემითი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.dat" ;
+    ontolex:canonicalForm :lex.dat_form ;
+    skos:closeMatch <http://purl.org/olia/olia.owl#DativeCase> ;
+    ontolex:sense :lex.dat_sense1 .
+
+:lex.dat_form a ontolex:Form ;
+    ontolex:writtenRep "მიცემითი"@ka .
+
+:lex.dat_sense1 a ontolex:LexicalSense ;
+    skos:definition "მიცემითი ბრუნვა."@ka .
 
 :lex.mkwidroan a ontolex:LexicalEntry ;
     rdfs:label "მკჳდროან-ი"@ka ;
@@ -1376,6 +1390,19 @@
 
 :lex.nacvalsakutebel_sense1 a ontolex:LexicalSense .
 
+:lex.dual a ontolex:LexicalEntry ;
+    rdfs:label "ორობითი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.dual" ;
+    ontolex:canonicalForm :lex.dual_form ;
+    skos:closeMatch <http://purl.org/olia/olia.owl#Dual> ;
+    ontolex:sense :lex.dual_sense1 .
+
+:lex.dual_form a ontolex:Form ;
+    ontolex:writtenRep "ორობითი"@ka .
+
+:lex.dual_sense1 a ontolex:LexicalSense ;
+    skos:definition "ორობითი რიცხვი."@ka .
+
 :lex.orghano a ontolex:LexicalEntry ;
     rdfs:label "ორღანო"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.orghano" ;
@@ -1443,6 +1470,18 @@
 
 :lex.sammoktsevi_form a ontolex:Form ;
     ontolex:writtenRep "სამ-მოქცევი"@ka .
+
+:lex.trias a ontolex:LexicalEntry ;
+    rdfs:label "სამება"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.trias" ;
+    ontolex:canonicalForm :lex.trias_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "τριάς"@grc
+    ] .
+
+:lex.trias_form a ontolex:Form ;
+    ontolex:writtenRep "სამება"@ka .
 
 :lex.samscuali a ontolex:LexicalEntry ;
     rdfs:label "სამსჭუალი"@ka ;
@@ -1548,6 +1587,18 @@
 :lex.sashuro_sense1 a ontolex:LexicalSense ;
     skos:definition "საჩქარო."@ka .
 
+:lex.sactomeli a ontolex:LexicalEntry ;
+    rdfs:label "საცთომელი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.sactomeli" ;
+    ontolex:canonicalForm :lex.sactomeli_form ;
+    ontolex:sense :lex.sactomeli_sense1 .
+
+:lex.sactomeli_form a ontolex:Form ;
+    ontolex:writtenRep "საცთომელი"@ka .
+
+:lex.sactomeli_sense1 a ontolex:LexicalSense ;
+    skos:definition "შესაცდენელი."@ka .
+
 :lex.sacuto a ontolex:LexicalEntry ;
     rdfs:label "საწუთო"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.sacuto" ;
@@ -1560,17 +1611,14 @@
 :lex.sacuto_sense1 a ontolex:LexicalSense ;
     skos:definition "წუთისოფელი."@ka .
 
-:lex.sactomeli a ontolex:LexicalEntry ;
-    rdfs:label "საცთომელი"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.sactomeli" ;
-    ontolex:canonicalForm :lex.sactomeli_form ;
-    ontolex:sense :lex.sactomeli_sense1 .
+:lex.nom a ontolex:LexicalEntry ;
+    rdfs:label "სახელობითი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.nom" ;
+    ontolex:canonicalForm :lex.nom_form ;
+    skos:closeMatch <http://purl.org/olia/olia.owl#Nominative> .
 
-:lex.sactomeli_form a ontolex:Form ;
-    ontolex:writtenRep "საცთომელი"@ka .
-
-:lex.sactomeli_sense1 a ontolex:LexicalSense ;
-    skos:definition "შესაცდენელი."@ka .
+:lex.nom_form a ontolex:Form ;
+    ontolex:writtenRep "სახელობითი"@ka .
 
 :lex.saxmareba a ontolex:LexicalEntry ;
     rdfs:label "საჴმარება"@ka ;
@@ -1635,6 +1683,22 @@
 
 :lex.sruleba_sense1 a ontolex:LexicalSense ;
     skos:definition "სრულყოფილება, სავსება."@ka .
+
+:lex.pneuma a ontolex:LexicalEntry ;
+    rdfs:label "სული"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.pneuma" ;
+    ontolex:canonicalForm :lex.pneuma_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "πνεῦμα"@grc
+    ] ;
+    ontolex:sense :lex.pneuma_sense1 .
+
+:lex.pneuma_form a ontolex:Form ;
+    ontolex:writtenRep "სული"@ka .
+
+:lex.pneuma_sense1 a ontolex:LexicalSense ;
+    skos:definition "სული (წმიდა); გრამატიკულად საშუალო სქესის სახელი."@ka .
 
 :lex.sulisambrdzoli a ontolex:LexicalEntry ;
     rdfs:label "სულისა მბრძოლი"@ka ;
@@ -1744,18 +1808,6 @@
 :lex.umkuetelesi_sense1 a ontolex:LexicalSense ;
     skos:definition "უფრო მჭრელი."@ka .
 
-:lex.usamartloeba a ontolex:LexicalEntry ;
-    rdfs:label "უსამართლოება"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.usamartloeba" ;
-    ontolex:canonicalForm :lex.usamartloeba_form ;
-    ontolex:sense :lex.usamartloeba_sense1 .
-
-:lex.usamartloeba_form a ontolex:Form ;
-    ontolex:writtenRep "უსამართლოება"@ka .
-
-:lex.usamartloeba_sense1 a ontolex:LexicalSense ;
-    skos:definition "უსამართლოების ჩადენა."@ka .
-
 :lex.umlia a ontolex:LexicalEntry ;
     rdfs:label "უმლიაჲ"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.umlia" ;
@@ -1771,6 +1823,18 @@
 
 :lex.umlia_sense1 a ontolex:LexicalSense ;
     skos:definition "უარტიკლო"@ka .
+
+:lex.usamartloeba a ontolex:LexicalEntry ;
+    rdfs:label "უსამართლოება"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.usamartloeba" ;
+    ontolex:canonicalForm :lex.usamartloeba_form ;
+    ontolex:sense :lex.usamartloeba_sense1 .
+
+:lex.usamartloeba_form a ontolex:Form ;
+    ontolex:writtenRep "უსამართლოება"@ka .
+
+:lex.usamartloeba_sense1 a ontolex:LexicalSense ;
+    skos:definition "უსამართლოების ჩადენა."@ka .
 
 :lex.uqorcinebeli a ontolex:LexicalEntry ;
     rdfs:label "უქორწინებელი"@ka ;
@@ -1871,6 +1935,18 @@
 
 :lex.quequemo_sense1 a ontolex:LexicalSense ;
     skos:definition "ქვედა ჩასაცმელი."@ka .
+
+:lex.theos a ontolex:LexicalEntry ;
+    rdfs:label "ღმერთი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.theos" ;
+    ontolex:canonicalForm :lex.theos_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "θεός"@grc
+    ] .
+
+:lex.theos_form a ontolex:Form ;
+    ontolex:writtenRep "ღმერთი"@ka .
 
 :lex.ghuacli a ontolex:LexicalEntry ;
     rdfs:label "ღუაწლი"@ka ;
@@ -2052,6 +2128,36 @@
 :lex.shishueli_sense1 a ontolex:LexicalSense ;
     skos:definition "დაუფარავი, აშკარა, უშუალო."@ka .
 
+:lex.gen a ontolex:LexicalEntry ;
+    rdfs:label "შობილობითი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.gen" ;
+    ontolex:canonicalForm :lex.gen_form ;
+    skos:closeMatch <http://purl.org/olia/olia.owl#Genitive> ;
+    ontolex:sense :lex.gen_sense1 .
+
+:lex.gen_form a ontolex:Form ;
+    ontolex:writtenRep "შობილობითი"@ka .
+
+:lex.gen_sense1 a ontolex:LexicalSense ;
+    skos:definition "ნათესაობითი ბრუნვა."@ka .
+
+:lex.neut a ontolex:LexicalEntry ;
+    rdfs:label "შუაჲ"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.neut" ;
+    ontolex:canonicalForm :lex.neut_form ;
+    lexinfo:etymology [ 
+        a lexinfo:Etymology ;
+        lexinfo:etymon "οὐδέτερον"@grc
+    ] ;
+    skos:closeMatch <http://purl.org/olia/olia.owl#Neuter> ;
+    ontolex:sense :lex.neut_sense1 .
+
+:lex.neut_form a ontolex:Form ;
+    ontolex:writtenRep "შუაჲ"@ka .
+
+:lex.neut_sense1 a ontolex:LexicalSense ;
+    skos:definition "საშუალო სქესი"@ka .
+
 :lex.cmeli a ontolex:LexicalEntry ;
     rdfs:label "ცმელი"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.cmeli" ;
@@ -2160,6 +2266,19 @@
 :lex.ciagh_sense1 a ontolex:LexicalSense ;
     skos:definition "კალთა, უბე."@ka .
 
+:lex.voc a ontolex:LexicalEntry ;
+    rdfs:label "წოდებითი"@ka ;
+    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.voc" ;
+    ontolex:canonicalForm :lex.voc_form ;
+    skos:closeMatch <http://purl.org/olia/olia.owl#VocativeCase> ;
+    ontolex:sense :lex.voc_sense1 .
+
+:lex.voc_form a ontolex:Form ;
+    ontolex:writtenRep "წოდებითი"@ka .
+
+:lex.voc_sense1 a ontolex:LexicalSense ;
+    skos:definition "წოდებითი ბრუნვა."@ka .
+
 :lex.khelovanmetqueleba a ontolex:LexicalEntry ;
     rdfs:label "ჴელოვან-მეტყუელება"@ka ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.khelovanmetqueleba" ;
@@ -2183,122 +2302,3 @@
 
 :lex.khumeuli_sense1 a ontolex:LexicalSense ;
     skos:definition "დაკლებული."@ka .
-
-:lex.gen a ontolex:LexicalEntry ;
-    rdfs:label "შობილობითი"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.gen" ;
-    ontolex:canonicalForm :lex.gen_form ;
-    skos:closeMatch <http://purl.org/olia/olia.owl#Genitive> ;
-    ontolex:sense :lex.gen_sense1 .
-
-:lex.gen_form a ontolex:Form ;
-    ontolex:writtenRep "შობილობითი"@ka .
-
-:lex.gen_sense1 a ontolex:LexicalSense ;
-    skos:definition "ნათესაობითი ბრუნვა."@ka .
-
-:lex.dat a ontolex:LexicalEntry ;
-    rdfs:label "მიცემითი"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.dat" ;
-    ontolex:canonicalForm :lex.dat_form ;
-    skos:closeMatch <http://purl.org/olia/olia.owl#DativeCase> ;
-    ontolex:sense :lex.dat_sense1 .
-
-:lex.dat_form a ontolex:Form ;
-    ontolex:writtenRep "მიცემითი"@ka .
-
-:lex.dat_sense1 a ontolex:LexicalSense ;
-    skos:definition "მიცემითი ბრუნვა."@ka .
-
-:lex.acc a ontolex:LexicalEntry ;
-    rdfs:label "მიზეზობითი"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.acc" ;
-    ontolex:canonicalForm :lex.acc_form ;
-    skos:closeMatch <http://purl.org/olia/olia.owl#Accusative> ;
-    ontolex:sense :lex.acc_sense1 .
-
-:lex.acc_form a ontolex:Form ;
-    ontolex:writtenRep "მიზეზობითი"@ka .
-
-:lex.acc_sense1 a ontolex:LexicalSense ;
-    skos:definition "ბრალდებითი ბრუნვა."@ka .
-
-:lex.voc a ontolex:LexicalEntry ;
-    rdfs:label "წოდებითი"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.voc" ;
-    ontolex:canonicalForm :lex.voc_form ;
-    skos:closeMatch <http://purl.org/olia/olia.owl#VocativeCase> ;
-    ontolex:sense :lex.voc_sense1 .
-
-:lex.voc_form a ontolex:Form ;
-    ontolex:writtenRep "წოდებითი"@ka .
-
-:lex.voc_sense1 a ontolex:LexicalSense ;
-    skos:definition "წოდებითი ბრუნვა."@ka .
-
-:lex.sing a ontolex:LexicalEntry ;
-    rdfs:label "ერთობითი"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.sing" ;
-    ontolex:canonicalForm :lex.sing_form ;
-    skos:closeMatch <http://purl.org/olia/olia.owl#Singular> ;
-    ontolex:sense :lex.sing_sense1 .
-
-:lex.sing_form a ontolex:Form ;
-    ontolex:writtenRep "ერთობითი"@ka .
-
-:lex.sing_sense1 a ontolex:LexicalSense ;
-    skos:definition "მხოლობითი რიცხვი."@ka .
-
-:lex.dual a ontolex:LexicalEntry ;
-    rdfs:label "ორობითი"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.dual" ;
-    ontolex:canonicalForm :lex.dual_form ;
-    skos:closeMatch <http://purl.org/olia/olia.owl#Dual> ;
-    ontolex:sense :lex.dual_sense1 .
-
-:lex.dual_form a ontolex:Form ;
-    ontolex:writtenRep "ორობითი"@ka .
-
-:lex.dual_sense1 a ontolex:LexicalSense ;
-    skos:definition "ორობითი რიცხვი."@ka .
-
-:lex.plural a ontolex:LexicalEntry ;
-    rdfs:label "განმრავლებითი"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.plural" ;
-    ontolex:canonicalForm :lex.plural_form ;
-    skos:closeMatch <http://purl.org/olia/olia.owl#Plural> ;
-    ontolex:sense :lex.plural_sense1 .
-
-:lex.plural_form a ontolex:Form ;
-    ontolex:writtenRep "განმრავლებითი"@ka .
-
-:lex.plural_sense1 a ontolex:LexicalSense ;
-    skos:definition "მრავლობითი რიცხვი."@ka .
-
-:lex.pneuma a ontolex:LexicalEntry ;
-    rdfs:label "სული"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.pneuma" ;
-    ontolex:canonicalForm :lex.pneuma_form ;
-    lexinfo:etymology [ 
-        a lexinfo:Etymology ;
-        lexinfo:etymon "πνεῦμα"@grc
-    ] ;
-    ontolex:sense :lex.pneuma_sense1 .
-
-:lex.pneuma_form a ontolex:Form ;
-    ontolex:writtenRep "სული"@ka .
-
-:lex.pneuma_sense1 a ontolex:LexicalSense ;
-    skos:definition "სული (წმიდა); გრამატიკულად საშუალო სქესის სახელი."@ka .
-
-:lex.trias a ontolex:LexicalEntry ;
-    rdfs:label "სამება"@ka ;
-    dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon:lex.trias" ;
-    ontolex:canonicalForm :lex.trias_form ;
-    lexinfo:etymology [ 
-        a lexinfo:Etymology ;
-        lexinfo:etymon "τριάς"@grc
-    ] .
-
-:lex.trias_form a ontolex:Form ;
-    ontolex:writtenRep "სამება"@ka .

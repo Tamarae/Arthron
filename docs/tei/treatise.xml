@@ -71,7 +71,7 @@
                             <physDesc>
                                 <objectDesc form="codex">
                                     <supportDesc material="paper">
-                                        <support>აღმოსავლური ქაღალდი, ოდნავ გალესილი, ვერტიკალური ზოლებით („ვერჟერები").</support>
+                                        <support>აღმოსავლური ქაღალდი, ოდნავ გალესილი, ვერტიკალური ზოლებით (<ref target="http://vocab.getty.edu/aat/300266700">„ვერჟერები"</ref>).</support>
                                         <extent>
                                             <measure unit="leaf" quantity="170">170 ფ. (აკლია დაახლოებით 135)</measure>
                                             <dimensions unit="mm" type="leaf">
@@ -119,7 +119,7 @@
                             
                             <history>
                                 <origin>
-                                    <origDate notBefore="1180" notAfter="1220">XII ს. დასასრული - XIII ს. დასაწყისი</origDate>
+                                    <origDate notBefore="1180" notAfter="1220">XII - XIII</origDate>
                                     <origPlace>ათონის ივერთა მონასტერი (სავარაუდოდ)</origPlace>
                                     <note resp="#M_Shanidze">რ. ბლეიკი ხელნაწერს XVII ს-ით ათარიღებდა, ა. ცაგარელი - XIV-XVI სს-ით, თუმცა პალეოგრაფიული ანალიზი XII-XIII სს-ზე მიუთითებს.</note>
                                 </origin>
@@ -135,7 +135,7 @@
                                     </custodialHist>
                                 </adminInfo>
                                 <listBibl>
-                                    <bibl n="1">Shanidze, M. (1990). გრამატიკული ტრაქტატის გამოცემა.</bibl>
+                                    <bibl n="1">შანიძე, მ. (1990). გრამატიკული ტრაქტატის გამოცემა.</bibl>
                                     <bibl n="2">Blake, R. P. Catalogue of the Georgian Manuscripts in the Convent of Iviron on Mount Athos.</bibl>
                                     <bibl n="3">ცაგარელი, ა. (N 85 ხელნაწერის აღწერილობა).</bibl>
                                 </listBibl>
@@ -193,11 +193,23 @@
                                             </dimensions>
                                         </extent>
                                         <collation>
-                                            <signatures>ყდის შიგნით: <persName type="attested">ძილიხან შარაშიძის ქალი</persName>.
-                                                „<persName type="attested">თუთა შანგელიას ქალი</persName>" იქვე, XVIII ს. მხედრულით.
-                                                „ღმერთო! შეიწყალე <persName type="attested">მაქსიმე მღდელ-მონაზონი</persName>" 108v. XVII ს.
-                                                ლამაზი ნუსხურით.
-                                                „კბ იანვრისას იყო <persName type="attested">დავით დადიანი</persName> გაენათს." II ყდის შიგნით XIX ს. მხედრულით
+                                            <signatures>
+                                                <seg n="1">
+                                                    <locus>I ყდის შიგნით</locus>
+                                                    <persName type="attested">ძილიხან შარაშიძის ქალი</persName>.
+                                                    „<persName type="attested">თუთა შანგელიას ქალი</persName>" 
+                                                    <date>XVIII ს.</date> მხედრული
+                                                </seg>
+                                                <seg n="2">
+                                                    <locus>108v</locus>
+                                                    „ღმერთო! შეიწყალე <persName type="attested">მაქსიმე მღდელ-მონაზონი</persName>" 
+                                                    <date>XVII ს.</date> ნუსხური
+                                                </seg>
+                                                <seg n="3">
+                                                    <locus>II ყდის შიგნით</locus>
+                                                    „კბ იანვრისას იყო <persName type="attested">დავით დადიანი</persName> გაენათს." 
+                                                    <date>XIX ს.</date> მხედრული
+                                                </seg>
                                             </signatures>
                                         </collation>
                                         <condition>ძალზე დაზიანებული 103-104 ფ.</condition>
@@ -226,7 +238,7 @@
                                 
                                 <bindingDesc>
                                     <binding contemporary="true">
-                                        <p>მაგარი, ტვიფრული ტყავით შემოსილი ფიცრული ყდა; XVIII საუკუნის უნდა იყოს (resp. ქ. შარაშიძე)</p>
+                                        <p>მაგარი, ტვიფრული ტყავით შემოსილი ფიცრული ყდა; XVIII საუკუნის უნდა იყოს (<ref target="https://prosopography.iliauni.edu.ge/persons/9401-qristine-chito-giorgis-asuli-sharashidze">resp. ქ. შარაშიძე</ref>)</p>
                                     </binding>
                                 </bindingDesc>
                             </physDesc>

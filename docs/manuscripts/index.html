@@ -122,7 +122,7 @@
                         <div class="data-strip">
                             <p class="section-label">თარიღი <span class="opacity-40 ml-1">Date</span></p>
                             <p class="font-serif text-sm mt-1 text-ink">
-XII ს. დასასრული - XIII ს. დასაწყისი
+XII - XIII
                             </p>
                         </div>
                         
@@ -144,11 +144,12 @@ XII ს. დასასრული - XIII ს. დასაწყისი
                 </div>
 
                 <!-- Tab Navigation -->
-                <div class="flex gap-6 px-6 border-b border-gray-100 text-[10px] font-mono uppercase tracking-widest bg-white">
-                    <button onclick="switchTab(this, 'physical-A')" class="tab-btn active py-3 text-ink">ფიზიკური</button>
-                    <button onclick="switchTab(this, 'paleo-A')" class="tab-btn py-3 text-gray-400">პალეოგრაფია</button>
-                    <button onclick="switchTab(this, 'history-A')" class="tab-btn py-3 text-gray-400">ისტორია</button>
-                    <button onclick="switchTab(this, 'contents-A')" class="tab-btn py-3 text-gray-400">შინაარსი</button>
+                <div class="flex gap-4 px-6 border-b border-gray-100 text-[10px] font-mono uppercase tracking-widest bg-white overflow-x-auto">
+                    <button onclick="switchTab(this, 'physical-A')" class="tab-btn active py-3 text-ink whitespace-nowrap">ფიზიკური</button>
+                    <button onclick="switchTab(this, 'paleo-A')" class="tab-btn py-3 text-gray-400 whitespace-nowrap">პალეოგრაფია</button>
+                    <button onclick="switchTab(this, 'history-A')" class="tab-btn py-3 text-gray-400 whitespace-nowrap">ისტორია</button>
+                    <button onclick="switchTab(this, 'contents-A')" class="tab-btn py-3 text-gray-400 whitespace-nowrap">შინაარსი</button>
+                    <button onclick="switchTab(this, 'colophon-A')" class="tab-btn py-3 text-gray-400 whitespace-nowrap">ანდერძი</button>
                 </div>
 
                 <!-- ========== TAB: PHYSICAL ========== -->
@@ -165,7 +166,7 @@ XII ს. დასასრული - XIII ს. დასაწყისი
 ქაღალდი
                                     </span>
                                 </p>
-                                <p class="mt-1.5 text-xs text-graphite leading-relaxed">აღმოსავლური ქაღალდი, ოდნავ გალესილი, ვერტიკალური ზოლებით („ვერჟერები&#34;).</p>
+                                <p class="mt-1.5 text-xs text-graphite leading-relaxed">აღმოსავლური ქაღალდი, ოდნავ გალესილი, ვერტიკალური ზოლებით (<a href="http://vocab.getty.edu/aat/300266700" class="ref-link" style="color:#1e4d6b;text-decoration:none;border-bottom:1px dotted #1e4d6b;" target="_blank" title="http://vocab.getty.edu/aat/300266700">„ვერჟერები&quot;</a>).</p>
                             </div>
                             
                             <!-- Extent -->
@@ -193,6 +194,19 @@ XII ს. დასასრული - XIII ს. დასაწყისი
                             <div>
                                 <p class="section-label mb-1">აკინძვა <span class="opacity-40">Binding</span></p>
                                 <p class="text-sm text-ink">ფიცარზე გადაკრული სადა შავი ტყავი.</p>
+                            </div>
+                            
+                            <!-- Decoration -->
+                            <div>
+                                <p class="section-label mb-1">შემკულობა <span class="opacity-40">Decoration</span></p>
+                                <p class="text-sm text-ink">სწორკუთხა თავსამკაულები წრეებითა და მცენარეული ორნამენტებით. შესრულებულია მუქი წითელი მელნით.</p>
+                            </div>
+                            
+                            <!-- Signatures / Inscriptions -->
+                            <!-- Fallback to raw collation_signatures if no parsed entries -->
+                            <div class="pt-4 border-t border-gray-100">
+                                <p class="section-label mb-2">კრებულები <span class="opacity-40">Quire Signatures</span></p>
+                                <p class="text-xs text-graphite font-mono">რვეულებრივი სათვალავი (ი̃ჱ — ლ̃ზ) გატარებულია ნუსხურით ზედა და ქვედა აშიებზე.</p>
                             </div>
                         </div>
                         
@@ -275,6 +289,10 @@ XII ს. დასასრული - XIII ს. დასაწყისი
                         <div>
                             <p class="section-label mb-2">წარმოშობა <span class="opacity-40">Origin</span></p>
                             <div class="p-4 bg-paper-dark rounded border-l-2 border-gold">
+                                <p class="font-serif text-ink">
+                                    ათონის ივერთა მონასტერი (სავარაუდოდ)
+                                </p>
+                                <p class="mt-2 text-xs text-graphite leading-relaxed">რ. ბლეიკი ხელნაწერს XVII ს-ით ათარიღებდა, ა. ცაგარელი - XIV-XVI სს-ით, თუმცა პალეოგრაფიული ანალიზი XII-XIII სს-ზე მიუთითებს.</p>
                             </div>
                         </div>
                         
@@ -282,13 +300,14 @@ XII ს. დასასრული - XIII ს. დასაწყისი
                         <div>
                             <p class="section-label mb-2">პროვენანსი <span class="opacity-40">Provenance</span></p>
                             <div class="space-y-2 text-sm text-graphite">
-                                <p>მფლობელი: ათონის ივერთა მონასტრის წიგნსაცავი (N6)</p>
                                 <p class="flex items-center gap-2">
                                     <span class="text-gold">•</span>
                                     <span>მფლობელი: <strong class="text-ink">ათონის ივერთა მონასტრის წიგნსაცავი (N6)</strong></span>
                                 </p>
                             </div>
                         </div>
+                        
+                        <!-- Custodial History -->
                     </div>
                 </div>
 
@@ -325,6 +344,47 @@ XII ს. დასასრული - XIII ს. დასაწყისი
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- ========== TAB: COLOPHON ========== -->
+                <div id="colophon-A" class="tab-content hidden p-6 flex-1 bg-white">
+                    <div class="space-y-6">
+                        
+                        <!-- Witness-level colophon -->
+                        
+                        <!-- Item-level colophons -->
+                        <div class="colophon-block rounded">
+                            
+                            <blockquote class="font-serif text-ink leading-relaxed italic">
+                                „მიქაელ ჭუჭაშვილი (შემკაზმელი) ვენედიქტონ (1823 წ.) ილარიონ ბერი (XIX ს.)"
+                            </blockquote>
+                            
+                            <div class="mt-4 space-y-2">
+                                <p class="text-sm flex items-center gap-2">
+                                    <span class="text-gold">•</span>
+                                    <span class="text-graphite">
+binder:                                    </span>
+                                    <strong class="text-ink">მიქაელ ჭუჭაშვილი</strong>
+                                </p>
+                                <p class="text-sm flex items-center gap-2">
+                                    <span class="text-gold">•</span>
+                                    <span class="text-graphite">
+owner:                                    </span>
+                                    <strong class="text-ink">ვენედიქტონ</strong>
+                                </p>
+                                <p class="text-sm flex items-center gap-2">
+                                    <span class="text-gold">•</span>
+                                    <span class="text-graphite">
+scholar:                                    </span>
+                                    <strong class="text-ink">ილარიონ ბერი</strong>
+                                </p>
+                            </div>
+                            
+                            
+                            <p class="mt-3 text-xs text-graphite bg-white/50 p-2 rounded">ორიგინალი ანდერძი დაკარგულია (თავ-ბოლო ნაკლული ხელნაწერი). ბოლო ფურცელზე (170v) დაცულია გვიანდელი მინაწერები:</p>
+                        </div>
+                        
                     </div>
                 </div>
 
@@ -395,11 +455,12 @@ XII ს. დასასრული - XIII ს. დასაწყისი
                 </div>
 
                 <!-- Tab Navigation -->
-                <div class="flex gap-6 px-6 border-b border-gray-100 text-[10px] font-mono uppercase tracking-widest bg-white">
-                    <button onclick="switchTab(this, 'physical-S')" class="tab-btn active py-3 text-ink">ფიზიკური</button>
-                    <button onclick="switchTab(this, 'paleo-S')" class="tab-btn py-3 text-gray-400">პალეოგრაფია</button>
-                    <button onclick="switchTab(this, 'history-S')" class="tab-btn py-3 text-gray-400">ისტორია</button>
-                    <button onclick="switchTab(this, 'contents-S')" class="tab-btn py-3 text-gray-400">შინაარსი</button>
+                <div class="flex gap-4 px-6 border-b border-gray-100 text-[10px] font-mono uppercase tracking-widest bg-white overflow-x-auto">
+                    <button onclick="switchTab(this, 'physical-S')" class="tab-btn active py-3 text-ink whitespace-nowrap">ფიზიკური</button>
+                    <button onclick="switchTab(this, 'paleo-S')" class="tab-btn py-3 text-gray-400 whitespace-nowrap">პალეოგრაფია</button>
+                    <button onclick="switchTab(this, 'history-S')" class="tab-btn py-3 text-gray-400 whitespace-nowrap">ისტორია</button>
+                    <button onclick="switchTab(this, 'contents-S')" class="tab-btn py-3 text-gray-400 whitespace-nowrap">შინაარსი</button>
+                    <button onclick="switchTab(this, 'colophon-S')" class="tab-btn py-3 text-gray-400 whitespace-nowrap">ანდერძი</button>
                 </div>
 
                 <!-- ========== TAB: PHYSICAL ========== -->
@@ -413,10 +474,9 @@ XII ს. დასასრული - XIII ს. დასაწყისი
                                 <p class="section-label mb-1">მასალა <span class="opacity-40">Material</span></p>
                                 <p class="text-sm text-ink">
                                     <span class="lod-link" title="Getty AAT: parchment">
-ეტრატი (Parchment)
+ეტრატი
                                     </span>
                                 </p>
-                                <p class="mt-1.5 text-xs text-graphite leading-relaxed">ეტრატი</p>
                             </div>
                             
                             <!-- Extent -->
@@ -436,7 +496,48 @@ XII ს. დასასრული - XIII ს. დასაწყისი
                             <!-- Binding -->
                             <div>
                                 <p class="section-label mb-1">აკინძვა <span class="opacity-40">Binding</span></p>
-                                <p class="text-sm text-ink">მაგარი, ტვიფრული ტყავით შემოსილი ფიცრული ყდა; XVIII საუკუნის უნდა იყოს (resp. ქ. შარაშიძე)</p>
+                                <p class="text-sm text-ink">მაგარი, ტვიფრული ტყავით შემოსილი ფიცრული ყდა; XVIII საუკუნის უნდა იყოს (<a href="https://prosopography.iliauni.edu.ge/persons/9401-qristine-chito-giorgis-asuli-sharashidze" class="ref-link" style="color:#1e4d6b;text-decoration:none;border-bottom:1px dotted #1e4d6b;" target="_blank" title="https://prosopography.iliauni.edu.ge/persons/9401-qristine-chito-giorgis-asuli-sharashidze">resp. ქ. შარაშიძე</a>)</p>
+                            </div>
+                            
+                            <!-- Decoration -->
+                            <div>
+                                <p class="section-label mb-1">შემკულობა <span class="opacity-40">Decoration</span></p>
+                                <p class="text-sm text-ink">სათაურები და დასაწყისები სინგურით.
+                                        თავკაზმულობა 92r. გელათიდან</p>
+                            </div>
+                            
+                            <!-- Signatures / Inscriptions -->
+                            <div class="pt-4 border-t border-gray-100">
+                                <p class="section-label mb-3">მინაწერები <span class="opacity-40">Signatures</span></p>
+                                <div class="space-y-1.5">
+                                    <div class="signature-entry flex items-start gap-2">
+                                        <span class="signature-locus flex-shrink-0">I ყდის შიგნით:</span>
+                                        <span class="flex-1 text-sm text-ink">
+                                            ძილიხან შარაშიძის ქალი. „თუთა შანგელიას ქალი"
+                                        </span>
+                                        <span class="signature-meta flex-shrink-0">
+                                            XVIII ს. · მხედრული
+                                        </span>
+                                    </div>
+                                    <div class="signature-entry flex items-start gap-2">
+                                        <span class="signature-locus flex-shrink-0">108v:</span>
+                                        <span class="flex-1 text-sm text-ink">
+                                            „ღმერთო! შეიწყალე მაქსიმე მღდელ-მონაზონი"
+                                        </span>
+                                        <span class="signature-meta flex-shrink-0">
+                                            XVII ს. · ნუსხური
+                                        </span>
+                                    </div>
+                                    <div class="signature-entry flex items-start gap-2">
+                                        <span class="signature-locus flex-shrink-0">II ყდის შიგნით:</span>
+                                        <span class="flex-1 text-sm text-ink">
+                                            „კბ იანვრისას იყო დავით დადიანი გაენათს."
+                                        </span>
+                                        <span class="signature-meta flex-shrink-0">
+                                            XIX ს. · მხედრული
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         
@@ -494,6 +595,11 @@ XII ს. დასასრული - XIII ს. დასაწყისი
                         <div>
                             <p class="section-label mb-2">წარმოშობა <span class="opacity-40">Origin</span></p>
                             <div class="p-4 bg-paper-dark rounded border-l-2 border-gold">
+                                <p class="font-serif text-ink">
+                                    საფარა, საბას ლავრა
+                                </p>
+                                <p class="mt-2 text-xs text-graphite leading-relaxed">გადაწერის თარიღს არკვევს გადამწერის შენიშვნა, რომელიც ტექსტშია ჩართული (ასტრონომიულ ტრაქტატში) 92r. „ესე ზემო დაწერილი სათუალავი შავთელის ი̃ნეს (იოანეს)  ანდერძი არს, და ქრ̃ნისა მოქცევამ̃ნ (ასეა!) მეაცამეტე ყოფილა. და ოდეს მე, სჳიმონ (ასეა!) დიაკონმან, დავწერე, ქ̃კნი იყო ს̃კთ და მოქცევი (ასეა!). 
+                                        ხოლო ბერძულად დასაბამითგანნი წელნი ვიდრე აქამომდე შვიდი ათასი წელი გარდაჴდა.</p>
                             </div>
                         </div>
                         
@@ -501,13 +607,14 @@ XII ს. დასასრული - XIII ს. დასაწყისი
                         <div>
                             <p class="section-label mb-2">პროვენანსი <span class="opacity-40">Provenance</span></p>
                             <div class="space-y-2 text-sm text-graphite">
-                                <p>შემკვეთი: იოაკიმე მაწყვერელი</p>
                                 <p class="flex items-center gap-2">
                                     <span class="text-gold">•</span>
                                     <span>შემწირველი: <strong class="text-ink">იოაკიმე მაწყვერელი</strong></span>
                                 </p>
                             </div>
                         </div>
+                        
+                        <!-- Custodial History -->
                     </div>
                 </div>
 
@@ -542,6 +649,41 @@ XII ს. დასასრული - XIII ს. დასაწყისი
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- ========== TAB: COLOPHON ========== -->
+                <div id="colophon-S" class="tab-content hidden p-6 flex-1 bg-white">
+                    <div class="space-y-6">
+                        
+                        <!-- Witness-level colophon -->
+                        
+                        <!-- Item-level colophons -->
+                        <div class="colophon-block rounded">
+                            
+                            <blockquote class="font-serif text-ink leading-relaxed italic">
+                                „ადიდოს ღმერთმან ორთავე სუფევათა შინა მღ̃დლთ მთავარი ეპისკოპოსი მაწყუჱრელი იოაკიმ , 
+                                        რომლისა ბრძანებითა დაიწერა წ̃ჲ ესე უზაკველი და ყოვლითურთ უნაკლულო საფილოსოფოსი (ასეა!) წიგნი. დღეგრძელებით ყოველნივე ცოდვანი მისნი შ̃ნს ღმერთმან. ამინ.
+                                        და მე, მონამან მისმან, კარგარეთელმან დ̃კნ ს̃ნ დავწერე. აწ გევედრები ყოველთავე, რომელნიცა მიემთხჳნეთ წიგნსა ამას, რ̃ა მეცა მომიჴსენოთ შენდობით, რ̃ა თქუენცა მოგიჴსენოს ქრისტემან ღმერთმან სასუფეველსა მისსა.
+                                        დიდებაჲ ღმერთსა. გათავდა საფარას საბა ლავრისსა (ასეა!)."
+                            </blockquote>
+                            
+                            <div class="mt-4 space-y-2">
+                                <p class="text-sm flex items-center gap-2">
+                                    <span class="text-gold">•</span>
+                                    <strong class="text-ink">მღ̃დლთ მთავარი ეპისკოპოსი მაწყუჱრელი იოაკიმ</strong>
+                                </p>
+                                <p class="text-sm flex items-center gap-2">
+                                    <span class="text-gold">•</span>
+                                    <strong class="text-ink">დ̃კნ ს̃ნ</strong>
+                                </p>
+                            </div>
+                            
+                            <p class="mt-3 text-[10px] font-mono text-graphite">108v</p>
+                            
+                            <p class="mt-3 text-xs text-graphite bg-white/50 p-2 rounded">ანდერძი მოთავსებულია ხელნაწერის უკანასკნელ გვერდზე, 108v-ზე, სამ აბზაცად, რომელთა დასაწყისი ასოები მთავრულით არის გამოყვანილი.</p>
+                        </div>
+                        
                     </div>
                 </div>
 
@@ -606,7 +748,7 @@ XII ს. დასასრული - XIII ს. დასაწყისი
                         <!-- Tooltip -->
                         <span class="absolute left-full ml-3 px-3 py-2 rounded text-[10px] font-mono whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-10 bg-ink text-ivory">
                             დაზიანებული წყაროდან<br>
-                            <span class="text-azure">202 უნიკალური წაკითხვა</span>
+                            <span class="text-azure">180 უნიკალური წაკითხვა</span>
                         </span>
                     </a>
                     
@@ -628,7 +770,7 @@ XII ს. დასასრული - XIII ს. დასაწყისი
                     <!-- Summary stats -->
                     <div class="grid grid-cols-3 gap-4 mb-6">
                         <div class="text-center p-4 bg-paper-dark rounded">
-                            <p class="text-2xl font-serif font-bold text-ink">214</p>
+                            <p class="text-2xl font-serif font-bold text-ink">192</p>
                             <p class="text-[9px] font-mono text-graphite uppercase">ვარიანტი</p>
                         </div>
                         <div class="text-center p-4 bg-gold/10 rounded border border-gold/30">
@@ -636,7 +778,7 @@ XII ს. დასასრული - XIII ს. დასაწყისი
                             <p class="text-[9px] font-mono text-graphite uppercase">A უნიკ.</p>
                         </div>
                         <div class="text-center p-4 bg-rubric/10 rounded border border-rubric/30">
-                            <p class="text-2xl font-serif font-bold text-rubric">202</p>
+                            <p class="text-2xl font-serif font-bold text-rubric">180</p>
                             <p class="text-[9px] font-mono text-graphite uppercase">S უნიკ.</p>
                         </div>
                     </div>
@@ -650,33 +792,33 @@ XII ს. დასასრული - XIII ს. დასაწყისი
                                 <div class="flex-1 h-2 bg-gray-100 rounded overflow-hidden">
                                     <div class="h-full rounded var-bar-ortho" style="width: 100%;"></div>
                                 </div>
-                                <span class="text-[10px] font-mono text-ink w-8 text-right">146</span>
+                                <span class="text-[10px] font-mono text-ink w-8 text-right">124</span>
                             </div>
                             <div class="flex items-center gap-3">
                                 <span class="text-[10px] font-mono w-28 text-graphite">გამოტოვება</span>
                                 <div class="flex-1 h-2 bg-gray-100 rounded overflow-hidden">
-                                    <div class="h-full rounded var-bar-omit" style="width: 18%;"></div>
+                                    <div class="h-full rounded var-bar-omit" style="width: 21%;"></div>
                                 </div>
                                 <span class="text-[10px] font-mono text-ink w-8 text-right">26</span>
                             </div>
                             <div class="flex items-center gap-3">
                                 <span class="text-[10px] font-mono w-28 text-graphite">მორფოლოგიური</span>
                                 <div class="flex-1 h-2 bg-gray-100 rounded overflow-hidden">
-                                    <div class="h-full rounded var-bar-morph" style="width: 14%;"></div>
+                                    <div class="h-full rounded var-bar-morph" style="width: 18%;"></div>
                                 </div>
-                                <span class="text-[10px] font-mono text-ink w-8 text-right">21</span>
+                                <span class="text-[10px] font-mono text-ink w-8 text-right">22</span>
                             </div>
                             <div class="flex items-center gap-3">
                                 <span class="text-[10px] font-mono w-28 text-graphite">ლექსიკური</span>
                                 <div class="flex-1 h-2 bg-gray-100 rounded overflow-hidden">
-                                    <div class="h-full rounded var-bar-lex" style="width: 8%;"></div>
+                                    <div class="h-full rounded var-bar-lex" style="width: 9%;"></div>
                                 </div>
-                                <span class="text-[10px] font-mono text-ink w-8 text-right">12</span>
+                                <span class="text-[10px] font-mono text-ink w-8 text-right">11</span>
                             </div>
                             <div class="flex items-center gap-3">
                                 <span class="text-[10px] font-mono w-28 text-graphite">დამატება</span>
                                 <div class="flex-1 h-2 bg-gray-100 rounded overflow-hidden">
-                                    <div class="h-full rounded var-bar-add" style="width: 6%;"></div>
+                                    <div class="h-full rounded var-bar-add" style="width: 7%;"></div>
                                 </div>
                                 <span class="text-[10px] font-mono text-ink w-8 text-right">9</span>
                             </div>

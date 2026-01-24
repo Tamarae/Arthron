@@ -307,16 +307,50 @@
                 <a href="../index.html" class="text-lg font-medium text-gray-800">
                     ᲡᲘᲢᲧᲣᲐᲲ ᲐᲠᲗᲠᲝᲜᲗᲐᲗᲳᲡ
                 </a>
-                <div class="flex items-center gap-6">
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-6">
                     <a href="../text/index.html" class="text-sm text-gray-600 hover:text-ink">ᲢᲠᲐᲥᲢᲐᲢᲘ</a>
                     <a href="../homily/index.html" class="text-sm text-gray-600 hover:text-ink">ᲰᲝᲛᲘᲚᲘᲐ</a>
                     <a href="../lexicon/index.html" class="text-sm text-ink border-b border-gray-400 pb-0.5">ᲚᲔᲥᲡᲘᲙᲝᲜᲘ</a>
                     <a href="../research/index.html" class="text-sm text-gray-600 hover:text-ink">ᲙᲕᲚᲔᲕᲐ</a>
                     <a href="../about.html" class="text-sm text-gray-600 hover:text-ink">ᲨᲔᲡᲐᲮᲔᲑ</a>
                 </div>
+                
+                <!-- Mobile Hamburger Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-600 hover:text-gray-900" aria-label="მენიუ">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 py-3">
+                <div class="flex flex-col gap-1">
+                    <a href="../text/index.html" class="px-3 py-2 rounded-lg text-sm text-gray-600 hover:bg-gray-50">ᲢᲠᲐᲥᲢᲐᲢᲘ</a>
+                    <a href="../homily/index.html" class="px-3 py-2 rounded-lg text-sm text-gray-600 hover:bg-gray-50">ᲰᲝᲛᲘᲚᲘᲐ</a>
+                    <a href="../lexicon/index.html" class="px-3 py-2 rounded-lg text-sm bg-gray-100 text-ink font-medium">ᲚᲔᲥᲡᲘᲙᲝᲜᲘ</a>
+                    <a href="../research/index.html" class="px-3 py-2 rounded-lg text-sm text-gray-600 hover:bg-gray-50">ᲙᲕᲚᲔᲕᲐ</a>
+                    <a href="../about.html" class="px-3 py-2 rounded-lg text-sm text-gray-600 hover:bg-gray-50">ᲨᲔᲡᲐᲮᲔᲑ</a>
+                </div>
             </div>
         </div>
     </nav>
+    
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            const hamburger = document.getElementById('hamburger-icon');
+            const close = document.getElementById('close-icon');
+            
+            menu.classList.toggle('hidden');
+            hamburger.classList.toggle('hidden');
+            close.classList.toggle('hidden');
+        });
+    </script>
 
 <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     
@@ -9694,17 +9728,17 @@ disabled                    title="—">
 
     <!-- Footer -->
     <footer class="border-t border-gray-200 py-6 px-4 mt-12">
-        <div class="max-w-5xl mx-auto flex items-center justify-between text-xs text-gray-400">
+        <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
             <span>2026, ლინგვისტურ კვლევათა ინსტიტუტი</span>
-            <div class="flex items-center gap-4">
+            <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
                 <span class="flex items-center gap-2">
                     <span>TEI-XML:</span>
                     <a href="../data/treatise.xml" class="hover:text-gray-600 underline" title="ტექსტი (TEI-XML)">ტექსტი</a>
                     <a href="../data/lexicon.xml" class="hover:text-gray-600 underline" title="ლექსიკონი (TEI-XML)">ლექსიკონი</a>
                 </span>
-                <span class="text-gray-300">|</span>
+                <span class="hidden sm:inline text-gray-300">|</span>
                 <a href="https://dspace.nplg.gov.ge/handle/1234/413510" class="hover:text-gray-600" target="_blank" rel="noopener">საიუბილეო გამოცემა</a>
-                <span class="text-gray-300">|</span>
+                <span class="hidden sm:inline text-gray-300">|</span>
                 <span>CC BY-NC-SA 4.0</span>
             </div>
         </div>

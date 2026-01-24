@@ -1,0 +1,11 @@
+# Robots.txt for სიტყუაჲ ართრონთათჳს Digital Edition
+# https://tamarae.github.io/Arthron
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://tamarae.github.io/Arthron/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1

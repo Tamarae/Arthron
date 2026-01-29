@@ -780,7 +780,7 @@
                 <p n="3" xml:id="sec.23.masc.sing" rend="examples">
                     <mentioned xml:lang="ka">ოს</mentioned> <gloss><foreign xml:lang="grc"><supplied>ὅς</supplied></foreign></gloss>, 
                     <app xml:id="app.23.3"><lem><mentioned xml:lang="ka">უ</mentioned></lem><rdg wit="#S" type="orthographic">ოსუ</rdg></app> <gloss><foreign xml:lang="grc"><supplied>οὗ</supplied></foreign></gloss>, 
-                    <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc"><supplied>ᾧ</supplied></foreign></gloss>, 
+                    <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc"><supplied>ὦ</supplied></foreign></gloss>, 
                     <app xml:id="app.23.4"><lem><mentioned xml:lang="ka">ონ</mentioned></lem><rdg wit="#S" type="orthographic">ონო</rdg></app> <gloss><foreign xml:lang="grc"><supplied>ὅν</supplied></foreign></gloss>;
                 </p>
                 <p n="4" xml:id="sec.23.masc.dual" rend="examples">
@@ -827,7 +827,7 @@
                     <mentioned xml:lang="ka">ჳნ</mentioned> <gloss><foreign xml:lang="grc"><supplied>οἷν</supplied></foreign></gloss>;
                 </p>
                 <p n="13" xml:id="sec.23.neut.plur" rend="examples">
-                    <app xml:id="app.23.7"><lem><mentioned xml:lang="ka">ა</mentioned> <gloss><foreign xml:lang="grc">ἅ</foreign></gloss>, 
+                    <app xml:id="app.23.7"><lem><mentioned xml:lang="ka">ა</mentioned> <gloss><foreign xml:lang="grc"><supplied>ἅ</supplied></foreign></gloss>, 
                             <mentioned xml:lang="ka">ონ</mentioned> <gloss><foreign xml:lang="grc"><supplied>ὧν</supplied></foreign></gloss>, 
                             <mentioned xml:lang="ka">ჳს</mentioned> <gloss><foreign xml:lang="grc"><supplied>οἷς</supplied></foreign></gloss>, 
                             <mentioned xml:lang="ka">ა</mentioned> <gloss><foreign xml:lang="grc"><supplied>ἅ</supplied></foreign></gloss></lem><rdg wit="#S" type="omission"><gap reason="omitted"><desc>eye-skip: scribe's eye jumped from ეს (fem. pl. dat.) to ონ (neut. pl. gen.), omitting 10 forms</desc></gap></rdg></app>.

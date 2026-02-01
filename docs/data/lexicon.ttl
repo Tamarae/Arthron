@@ -18,7 +18,7 @@
     dct:title "Discourse on Articles: Lexicon"@en ;
     dct:identifier "urn:cts:georgian:shanidze.arthron.lexicon" ;
     dct:language "ka" ;
-    dct:created "2026-01-29"^^xsd:date ;
+    dct:created "2026-02-01"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
     lime:language "ka" ;
     lime:lexicalEntries 179 .

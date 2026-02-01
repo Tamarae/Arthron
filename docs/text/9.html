@@ -831,9 +831,9 @@ section:hover .copy-urn {
         </div>
     </details>
     
-    <!-- Witness Info Bar (with integrated toggle) -->
-    <div class="witness-bar bg-gray-50 border border-gray-200 rounded-lg px-4 py-2.5 mb-6 flex items-center justify-between text-sm">
-        <div class="flex items-center gap-3">
+    <!-- Witness Info Bar (clean, identity only) -->
+    <div class="witness-bar bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 mb-3 flex items-center justify-between text-sm">
+        <div class="flex items-center gap-4">
             <!-- Witness Toggle -->
             <div class="flex items-center gap-1">
                 <button id="wit-a" class="witness-toggle active px-2.5 py-1 rounded text-xs font-medium border border-gray-300" data-witness="A" title="ხელნაწერი A (ათონი)">A</button>
@@ -853,14 +853,33 @@ section:hover .copy-urn {
         </a>
     </div>
 
-   
+    <!-- Display Options Bar (separate row for clarity) -->
+    <div class="flex items-center justify-between py-2.5 px-1 mb-4 text-xs text-gray-500">
+        <!-- Left: View Mode Toggle -->
+        <div class="view-mode-toggle">
+            <button class="view-mode-btn active" data-view="critical" title="კრიტიკული ტექსტი ინლაინ აპარატით">კრიტიკული ტექსტი</button>
+            <button class="view-mode-btn" data-view="collation" title="კოლაციური ცხრილი (Frankenstein-სტილი)">კოლაცია</button>
+        </div>
+        <!-- Right: Display options (hidden in collation view) -->
+        <div class="flex items-center gap-4 critical-view-option">
+            <span class="uppercase tracking-wide text-gray-400 font-medium">ჩვენება:</span>
+            <label class="flex items-center gap-1.5 cursor-pointer hover:text-gray-700" title="სამეცნიერო მარკირების ჩვენება">
+                <input type="checkbox" id="show-markup" checked class="w-3.5 h-3.5 rounded border-gray-300 text-gray-700 focus:ring-gray-400">
+                <span>აპარატი</span>
+            </label>
+            <label class="flex items-center gap-1.5 cursor-pointer hover:text-gray-700" title="ფოლიოს მარკერების ჩვენება">
+                <input type="checkbox" id="show-folios" checked class="w-3.5 h-3.5 rounded border-gray-300 text-gray-700 focus:ring-gray-400">
+                <span>ფოლიო</span>
+            </label>
+        </div>
+    </div>
 
     <!-- Text Container -->
     <article id="text-article" class="bg-white rounded-lg border border-gray-200 relative">
         
         <!-- Navigation bar -->
-        <div class="border-b border-gray-100 px-6 py-3 flex items-center justify-between flex-wrap gap-3">
-            <!-- Left: Section navigation -->
+        <div class="border-b border-gray-100 px-6 py-3 flex items-center justify-between">
+            <!-- Section navigation -->
             <div class="flex items-center gap-3">
                 <a href="../text/8.html" 
                    class="text-gray-400 hover:text-gray-600"
@@ -952,24 +971,6 @@ section:hover .copy-urn {
                 </a>
                 <span class="text-gray-300 mx-1">|</span>
                 <a href="../text/all.html" class="text-xs text-gray-400 hover:text-gray-600" title="აჩვენე ყველა პარაგრაფი ერთად">ყველა ერთად</a>
-            </div>
-            
-            <!-- Center: View Mode Toggle -->
-            <div class="view-mode-toggle">
-                <button class="view-mode-btn active" data-view="critical" title="კრიტიკული ტექსტი ინლაინ აპარატით">კრიტიკული ტექსტი</button>
-                <button class="view-mode-btn" data-view="collation" title="კოლაციური ცხრილი (Frankenstein-სტილი)">კოლაცია</button>
-            </div>
-            
-            <!-- Right: Display options -->
-            <div class="flex items-center gap-4">
-                <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer critical-view-option" title="სამეცნიერო მარკირების ჩვენება (აპარატი, ტერმინები, რედაქტორის ჩანართები)">
-                    <input type="checkbox" id="show-markup" checked class="rounded border-gray-300 text-gray-800 focus:ring-gray-400">
-                    აპარატი
-                </label>
-                <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer critical-view-option" title="ფოლიოს მარკერების ჩვენება">
-                    <input type="checkbox" id="show-folios" checked class="rounded border-gray-300 text-gray-800 focus:ring-gray-400">
-                    ფოლიო
-                </label>
             </div>
         </div>
         

@@ -582,7 +582,9 @@
                 
                 <!-- Singular forms that overlap with dual -->
                 <p n="2" xml:id="sec.5.sing" rend="examples">
-                    <app xml:id="app.5.3"><lem><mentioned xml:lang="ka">ო</mentioned></lem><rdg wit="#S" type="orthographic">ო ო</rdg></app> <gloss><foreign xml:lang="grc"><supplied>ὁ</supplied></foreign></gloss> <mentioned xml:lang="ka">ტო</mentioned> <gloss><foreign xml:lang="grc"><supplied>τώ</supplied></foreign></gloss>, 
+                    <app xml:id="app.5.3"><lem><mentioned xml:lang="ka">ო</mentioned></lem><rdg wit="#S" type="orthographic">ო ო</rdg></app> <gloss><foreign xml:lang="grc"><supplied>ὁ</supplied></foreign></gloss> 
+                    <mentioned xml:lang="ka">ტუ</mentioned> <gloss><foreign xml:lang="grc"><supplied>τοῦ</supplied></foreign></gloss>,
+                    <mentioned xml:lang="ka">ტო</mentioned> <gloss><foreign xml:lang="grc"><supplied>τῷ</supplied></foreign></gloss>, 
                     <mentioned xml:lang="ka">ტოინ</mentioned> <gloss><foreign xml:lang="grc"><supplied>τοῖν</supplied></foreign></gloss>, 
                     <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc"><supplied>ὦ</supplied></foreign></gloss>;
                 </p>
@@ -592,7 +594,7 @@
                 <!-- Dual forms -->
                 <p n="4" xml:id="sec.5.dual" rend="examples">
                     <mentioned xml:lang="ka">ტო</mentioned> <gloss><foreign xml:lang="grc"><supplied>τώ</supplied></foreign></gloss>, 
-                    <mentioned xml:lang="ka">ტოინ</mentioned> <gloss><foreign xml:lang="grc"><supplied>τοῖν</supplied></foreign></gloss>, 
+                    <mentioned xml:lang="ka">ტჳინ</mentioned> <gloss><foreign xml:lang="grc"><supplied>τοῖν</supplied></foreign></gloss>, 
                     <mentioned xml:lang="ka">ო</mentioned> <gloss><foreign xml:lang="grc"><supplied>ὦ</supplied></foreign></gloss>;
                 </p>
                 

@@ -827,7 +827,7 @@
                         <orth type="variant" xml:lang="ka">ჰომილია</orth>
                     </form>
                     <etym><lang>grc</lang><mentioned xml:lang="grc">ομιλία</mentioned></etym>
-                    <sense><def xml:lang="ka">უარტიკლო</def></sense>
+                    <sense><def xml:lang="ka">ჰომილია</def></sense>
                 </entry>
                 <entry xml:id="lex.uqorcinebeli">
                     <form type="lemma"><orth xml:lang="ka">უქორწინებელი</orth></form>

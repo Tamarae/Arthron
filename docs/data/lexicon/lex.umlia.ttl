@@ -25,4 +25,4 @@
     ontolex:writtenRep "უმლიაჲ"@ka .
 
 :lex.umlia_sense1 a ontolex:LexicalSense ;
-    skos:definition "უარტიკლო"@ka .
+    skos:definition "ჰომილია"@ka .
